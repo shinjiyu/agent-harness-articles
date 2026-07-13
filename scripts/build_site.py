@@ -194,36 +194,83 @@ def md_to_html(text: str) -> str:
     return joined
 
 
+def short_date(iso: str) -> str:
+    if not iso:
+        return ""
+    # 2026-07-13T17:32:31+08:00 → 2026-07-13
+    return iso[:10]
+
+
+def chinese_blurb(p: dict) -> tuple[str, str]:
+    """Return (headline, subline) prioritizing Chinese notes / tier_reason."""
+    notes = (p.get("notes") or "").strip()
+    reason = (p.get("tier_reason") or "").strip()
+    if notes and reason:
+        return notes, reason
+    if reason:
+        return reason, ""
+    if notes:
+        return notes, ""
+    return p.get("title") or "", ""
+
+
+def has_analysis(p: dict) -> bool:
+    rel = p.get("core_intro_path")
+    if not rel:
+        return False
+    return (ROOT / "indexes" / "agent-harness" / rel).exists()
+
+
 def paper_card(p: dict, *, show_intro: bool = False, intro_html: str = "") -> str:
     tags = " ".join(f'<span class="pill">{html.escape(t)}</span>' for t in p.get("tags", []))
     tier = p.get("tier", "?")
     tier_cls = {"A": "tier-a", "B": "tier-b", "C": "tier-c"}.get(tier, "")
-    meta = (
-        f'<div class="paper-meta">'
-        f'<span class="tier-badge {tier_cls}">Tier {html.escape(tier)}</span>'
-        f'<a href="{html.escape(p.get("url", "#"))}" target="_blank" rel="noopener noreferrer">'
-        f'arXiv:{html.escape(p["arxiv_id"])}</a>'
-        f'<span>入库 {html.escape(p.get("indexed_at", ""))}</span>'
-        f'<span>公布 {html.escape(p.get("published", ""))}</span>'
-        f"</div>"
+    arxiv_id = p["arxiv_id"]
+    url = p.get("url") or f"http://arxiv.org/abs/{arxiv_id}"
+    headline, subline = chinese_blurb(p)
+    analysis = has_analysis(p)
+
+    # Actions: 详细分析优先，原文其次
+    actions: list[str] = []
+    if analysis and not show_intro:
+        actions.append(
+            f'<a class="paper-btn paper-btn-primary" href="#paper-{html.escape(arxiv_id)}">'
+            f"阅读详细分析</a>"
+        )
+    actions.append(
+        f'<a class="paper-btn paper-btn-ghost" href="{html.escape(url)}" '
+        f'target="_blank" rel="noopener noreferrer">原文 arXiv</a>'
     )
-    reason = html.escape(p.get("tier_reason", ""))
-    notes = html.escape(p.get("notes", "") or "")
-    body = (
-        f'<article class="paper-card" id="paper-{html.escape(p["arxiv_id"])}">'
-        f'<h3><a href="{html.escape(p.get("url", "#"))}" target="_blank" rel="noopener noreferrer">'
-        f'{html.escape(p["title"])}</a></h3>'
-        f"{meta}"
-        f'<p class="paper-reason">{reason}</p>'
+    if analysis and show_intro:
+        # On the analysis page itself, keep a soft jump to top of this card is useless;
+        # still show 原文 as secondary.
+        pass
+
+    meta_bits = [
+        f'<span class="tier-badge {tier_cls}">{html.escape(tier)} 档</span>',
+        f'<span>入库 {html.escape(short_date(p.get("indexed_at", "")))}</span>',
+    ]
+    if p.get("published"):
+        meta_bits.append(f'<span>公布 {html.escape(p["published"])}</span>')
+
+    body = [
+        f'<article class="paper-card" id="paper-{html.escape(arxiv_id)}">',
+        f'<p class="paper-headline">{html.escape(headline)}</p>',
+    ]
+    if subline:
+        body.append(f'<p class="paper-subline">{html.escape(subline)}</p>')
+    body.append(f'<div class="paper-actions">{"".join(actions)}</div>')
+    body.append(
+        f'<p class="paper-title-en" title="{html.escape(p.get("title", ""))}">'
+        f'{html.escape(p.get("title", ""))}</p>'
     )
-    if notes:
-        body += f'<p class="paper-notes">{notes}</p>'
+    body.append(f'<div class="paper-meta">{" ".join(meta_bits)}</div>')
     if tags:
-        body += f'<div class="paper-tags">{tags}</div>'
+        body.append(f'<div class="paper-tags">{tags}</div>')
     if show_intro and intro_html:
-        body += f'<div class="paper-intro">{intro_html}</div>'
-    body += "</article>"
-    return body
+        body.append(f'<div class="paper-intro">{intro_html}</div>')
+    body.append("</article>")
+    return "\n".join(body)
 
 
 def load_intro_html(p: dict) -> str:
@@ -233,10 +280,14 @@ def load_intro_html(p: dict) -> str:
     path = ROOT / "indexes" / "agent-harness" / rel
     if not path.exists():
         return ""
-    # Skip the duplicate title block; render from "## 核心介绍" or full
     text = path.read_text(encoding="utf-8")
-    # Drop first H1 if present
     text = re.sub(r"^# .*\n+", "", text, count=1)
+    # Drop redundant meta bullets already shown on the card chrome
+    text = re.sub(r"^- ArXiv:.*\n", "", text, flags=re.M)
+    text = re.sub(r"^- 作者：.*\n", "", text, flags=re.M)
+    text = re.sub(r"^- Tier:.*\n", "", text, flags=re.M)
+    text = re.sub(r"^- Indexed:.*\n", "", text, flags=re.M)
+    text = re.sub(r"^- 技术详解更新：.*\n", "", text, flags=re.M)
     return md_to_html(text)
 
 
@@ -302,7 +353,7 @@ def papers_section(papers: list[dict], chapter: dict) -> str:
 
     blocks = [
         f'<h2>相关论文 <span class="muted">({len(papers)})</span></h2>',
-        '<p class="section-note">由论文 <code>tags</code> / <code>knowledge_ids</code> 自动挂载到本章；入库时间见卡片。</p>',
+        '<p class="section-note">按标签自动归入本章。有详细分析的优先点「阅读详细分析」；需要原文再开 arXiv。</p>',
         '<div class="paper-list">',
     ]
     for p in papers:

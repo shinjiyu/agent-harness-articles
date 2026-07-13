@@ -52,8 +52,26 @@
     return chapters.findIndex((c) => c.id === id);
   }
 
-  function render(id) {
-    const idx = findIndex(id);
+  function scrollToPaper(paperDomId) {
+    const el = document.getElementById(paperDomId);
+    if (!el) return;
+    requestAnimationFrame(() => {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }
+
+  function resolveRoute(raw) {
+    const id = raw || "home";
+    // #paper-2607.06906 → open A档精读 and scroll to analysis
+    if (id.startsWith("paper-")) {
+      return { chapterId: "tier-a-reading", scrollId: id };
+    }
+    return { chapterId: id, scrollId: null };
+  }
+
+  function render(rawId) {
+    const { chapterId, scrollId } = resolveRoute(rawId);
+    const idx = findIndex(chapterId);
     const ch = chapters[idx] || chapters[0];
     if (!ch) return;
     currentId = ch.id;
@@ -62,7 +80,11 @@
     buildNav(search.value);
     prevBtn.disabled = idx <= 0;
     nextBtn.disabled = idx >= chapters.length - 1;
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    if (scrollId) {
+      scrollToPaper(scrollId);
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
   }
 
   function go(delta) {
