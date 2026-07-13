@@ -1,0 +1,220 @@
+{
+  "site": {
+    "title": "Agent Harness 知识库",
+    "brand": "AH",
+    "brand_text": "Agent Harness 知识库",
+    "footer": "Agent Harness 知识库 · 教程知识点 × 论文索引持续更新",
+    "description": "把 agent harness 工程知识点与每日入库论文对照阅读：成本、上下文、编排、合约、评估、安全。"
+  },
+  "modules": [
+    {
+      "id": "intro",
+      "title": "导论",
+      "chapters": ["home", "what-is-harness", "how-to-use"]
+    },
+    {
+      "id": "cost",
+      "title": "成本与 Token 经济学",
+      "chapters": ["token-economics"]
+    },
+    {
+      "id": "context",
+      "title": "上下文与记忆",
+      "chapters": ["context-memory"]
+    },
+    {
+      "id": "orchestration",
+      "title": "编排与演化",
+      "chapters": ["orchestration-evolution"]
+    },
+    {
+      "id": "governance",
+      "title": "合约、审计与治理",
+      "chapters": ["contracts-audit"]
+    },
+    {
+      "id": "evals",
+      "title": "评估与评测偏差",
+      "chapters": ["evaluation"]
+    },
+    {
+      "id": "security",
+      "title": "安全与权限",
+      "chapters": ["security-permissions"]
+    },
+    {
+      "id": "embodied",
+      "title": "具身与多模态",
+      "chapters": ["embodied-multimodal"]
+    },
+    {
+      "id": "papers",
+      "title": "论文索引",
+      "chapters": ["paper-index", "tier-a-reading"]
+    }
+  ],
+  "chapters": [
+    {
+      "id": "home",
+      "module": "导论",
+      "title": "知识库首页",
+      "file": "home.md",
+      "keywords": "home 首页 introduction harness",
+      "tags": [],
+      "papers_mode": "none"
+    },
+    {
+      "id": "what-is-harness",
+      "module": "导论",
+      "title": "1. 什么是 Agent Harness",
+      "file": "what-is-harness.md",
+      "keywords": "harness 定义 编排层 orchestration",
+      "tags": ["orchestration"],
+      "papers_mode": "related",
+      "papers_limit": 6
+    },
+    {
+      "id": "how-to-use",
+      "module": "导论",
+      "title": "2. 怎么用这套知识库",
+      "file": "how-to-use.md",
+      "keywords": "阅读路径 分档 A B C 更新",
+      "tags": [],
+      "papers_mode": "none"
+    },
+    {
+      "id": "token-economics",
+      "module": "成本与 Token 经济学",
+      "title": "3. 成本与 Token 经济学",
+      "file": "token-economics.md",
+      "keywords": "cost token CPM cache 成本 经济学",
+      "tags": ["cost", "token-economics", "token-efficiency", "slm"],
+      "papers_mode": "related"
+    },
+    {
+      "id": "context-memory",
+      "module": "上下文与记忆",
+      "title": "4. 上下文工程与记忆",
+      "file": "context-memory.md",
+      "keywords": "context memory compaction GC long-horizon",
+      "tags": ["context", "memory", "long-horizon", "gc", "grace"],
+      "papers_mode": "related"
+    },
+    {
+      "id": "orchestration-evolution",
+      "module": "编排与演化",
+      "title": "5. 编排、适配与测试时演化",
+      "file": "orchestration-evolution.md",
+      "keywords": "orchestration adaptation evolution test-time self-evolution skill",
+      "tags": [
+        "orchestration",
+        "adaptation",
+        "evolution",
+        "test-time",
+        "self-evolution",
+        "skill",
+        "meta-agent",
+        "harnessopt",
+        "hase",
+        "swarm",
+        "control",
+        "rl"
+      ],
+      "papers_mode": "related"
+    },
+    {
+      "id": "contracts-audit",
+      "module": "合约、审计与治理",
+      "title": "6. 从提示到合约：可审计治理",
+      "file": "contracts-audit.md",
+      "keywords": "contracts audit governance enterprise compliance",
+      "tags": [
+        "contracts",
+        "audit",
+        "governance",
+        "enterprise",
+        "compliance",
+        "ltl",
+        "validation",
+        "transactions",
+        "verification",
+        "formal-methods"
+      ],
+      "papers_mode": "related"
+    },
+    {
+      "id": "evaluation",
+      "module": "评估与评测偏差",
+      "title": "7. 评估、基准与 Harness 偏差",
+      "file": "evaluation.md",
+      "keywords": "evaluation benchmark belief methodology harness-lab",
+      "tags": [
+        "evaluation",
+        "benchmark",
+        "belief",
+        "methodology",
+        "harness-lab",
+        "tool-calling",
+        "observational",
+        "testbed"
+      ],
+      "papers_mode": "related"
+    },
+    {
+      "id": "security-permissions",
+      "module": "安全与权限",
+      "title": "8. 安全、MCP 与权限",
+      "file": "security-permissions.md",
+      "keywords": "security mcp permissions underspec safety",
+      "tags": [
+        "security",
+        "mcp",
+        "permissions",
+        "underspec",
+        "safety",
+        "hci",
+        "biosecurity",
+        "refusal",
+        "devops"
+      ],
+      "papers_mode": "related"
+    },
+    {
+      "id": "embodied-multimodal",
+      "module": "具身与多模态",
+      "title": "9. 具身、VLA 与多模态 Harness",
+      "file": "embodied-multimodal.md",
+      "keywords": "embodied vla multimodal robotics video",
+      "tags": [
+        "embodied",
+        "vla",
+        "multimodal",
+        "robotics",
+        "video",
+        "planning",
+        "handoff",
+        "cma-harness",
+        "graph"
+      ],
+      "papers_mode": "related"
+    },
+    {
+      "id": "paper-index",
+      "module": "论文索引",
+      "title": "论文总览（按档）",
+      "file": "paper-index.md",
+      "keywords": "index 索引 A B C 全部论文",
+      "tags": [],
+      "papers_mode": "all_by_tier"
+    },
+    {
+      "id": "tier-a-reading",
+      "module": "论文索引",
+      "title": "A 档精读入口",
+      "file": "tier-a-reading.md",
+      "keywords": "A档 精读 core intro",
+      "tags": [],
+      "papers_mode": "tier_a"
+    }
+  ]
+}

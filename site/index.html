@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agent Harness 知识库</title>
+  <meta name="description" content="Harness 工程知识点 × 持续更新的论文索引：成本、上下文、编排、合约、评估、安全。" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <button id="menuToggle" class="menu-toggle" type="button" aria-label="菜单">☰</button>
+    <a class="brand" href="#home">
+      <span class="brand-mark">AH</span>
+      <span class="brand-text">Agent Harness 知识库</span>
+    </a>
+    <div class="topbar-spacer"></div>
+    <span id="buildStamp" class="build-stamp"></span>
+    <input id="search" class="search" type="search" placeholder="搜索章节 / 论文…" aria-label="搜索" />
+  </header>
+
+  <div class="layout">
+    <nav id="sidebar" class="sidebar" aria-label="章节导航"></nav>
+    <div id="overlay" class="overlay" hidden></div>
+    <main class="content">
+      <article id="chapter" class="chapter"></article>
+      <div class="pager">
+        <button id="prevBtn" class="pager-btn" type="button">← 上一章</button>
+        <button id="nextBtn" class="pager-btn pager-next" type="button">下一章 →</button>
+      </div>
+      <footer class="page-footer">
+        <p>Agent Harness 知识库 · 教程知识点 × 论文索引 · 数据来自 <code>indexes/agent-harness</code></p>
+        <p class="footer-links">
+          <a href="https://github.com/shinjiyu/agent-harness-articles" target="_blank" rel="noopener noreferrer">GitHub</a>
+          ·
+          <a href="https://onlyclaws.world/harness/" target="_blank" rel="noopener noreferrer">Harness Engineering 教程</a>
+        </p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

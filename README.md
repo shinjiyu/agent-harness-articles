@@ -1,13 +1,37 @@
 # agent-harness-articles
 
-本地持续更新的 **agent harness** 论文索引：分档（A/B/C）、入库时间，以及 A 档核心介绍。
+**Agent Harness 知识库**：教程知识点 + 持续更新的论文索引（分档 A/B/C、入库时间、A 档核心介绍）。
+
+站点交互参考 [Harness Engineering 教程](https://onlyclaws.world/harness/)，论文按标签挂到对应知识点章节，并由 GitHub Actions 自动发布 Pages。
 
 ## 快速入口
 
-- 索引总览：[`indexes/agent-harness/README.md`](indexes/agent-harness/README.md)
-- 权威数据：[`indexes/agent-harness/index.json`](indexes/agent-harness/index.json)
-- 更新约定：[`indexes/agent-harness/SCHEMA.md`](indexes/agent-harness/SCHEMA.md)
-- 变更记录：[`indexes/agent-harness/CHANGELOG.md`](indexes/agent-harness/CHANGELOG.md)
+| 用途 | 路径 |
+|------|------|
+| 学习站（构建产物） | [`site/`](site/) |
+| 知识点文稿 | [`curriculum/`](curriculum/) |
+| 论文索引 | [`indexes/agent-harness/`](indexes/agent-harness/) |
+| 构建脚本 | [`scripts/build_site.py`](scripts/build_site.py) |
+
+## 本地预览
+
+```bash
+python scripts/build_site.py
+# 用任意静态服务器打开 site/，例如：
+python -m http.server 8080 --directory site
+```
+
+浏览器打开 `http://localhost:8080`。
+
+## 每日更新流程
+
+1. 用 `_add_paper.py` 或直接改 `indexes/agent-harness/index.json` 入库（填 `indexed_at`、`tier`、`tags`）
+2. A 档补充 `papers/a/<arxiv_id>.md`
+3. 需要强制挂章时加 `knowledge_ids: ["token-economics"]`（章节 id 见 `curriculum/catalog.json`）
+4. `python scripts/build_site.py`
+5. 提交并推送 `main` → Actions 部署 GitHub Pages
+
+首次启用 Pages：仓库 **Settings → Pages → Source = GitHub Actions**。
 
 ## 分档说明
 

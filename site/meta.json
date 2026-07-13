@@ -1,0 +1,17 @@
+{
+  "built_from_index_updated_at": "2026-07-13T17:32:31+08:00",
+  "paper_counts": {
+    "A": 6,
+    "B": 32,
+    "C": 12,
+    "total": 50
+  },
+  "chapter_count": 12,
+  "site": {
+    "title": "Agent Harness 知识库",
+    "brand": "AH",
+    "brand_text": "Agent Harness 知识库",
+    "footer": "Agent Harness 知识库 · 教程知识点 × 论文索引持续更新",
+    "description": "把 agent harness 工程知识点与每日入库论文对照阅读：成本、上下文、编排、合约、评估、安全。"
+  }
+}

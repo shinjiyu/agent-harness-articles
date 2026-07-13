@@ -2,6 +2,18 @@
 
 按时间倒序记录批量变更。单篇微调也可记一行。
 
+## 2026-07-13（站点）
+
+- 新增学习站 `site/`（交互对齐 onlyclaws harness 教程）
+- 新增知识点文稿 `curriculum/` + 构建脚本 `scripts/build_site.py`
+- 论文按 `tags` / `knowledge_ids` 自动挂到对应章节
+- GitHub Actions：`deploy-pages.yml` 推送 `main` 后自动构建并发布 Pages
+
+## 2026-07-13（晚）
+
+- 扩展 A 档技术详解：`papers/a/2607.06906.md`（The Harness Effect）
+  - 补充 token 经济学公式、两区 prompt / compaction / offload 等六族机制、实验设计与 harness leverage 结果表
+
 ## 2026-07-13
 
 - **创建索引库** `indexes/agent-harness/`

@@ -44,6 +44,7 @@ indexes/agent-harness/
 | `tags` | string[] | 否 | 主题标签 |
 | `core_intro_path` | string | A 必填 | 相对路径，如 `papers/a/2607.06906.md` |
 | `notes` | string | 否 | 短备注 |
+| `knowledge_ids` | string[] | 否 | 强制挂到站点章节 id（见 `curriculum/catalog.json`）；不填则按 `tags` 自动匹配 |
 
 ## 更新流程
 
