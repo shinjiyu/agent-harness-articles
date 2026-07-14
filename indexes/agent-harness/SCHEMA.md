@@ -7,6 +7,9 @@
 ```
 indexes/agent-harness/
   index.json              # 主索引（唯一权威数据源）
+  monitor.json            # 监控关键词与数据源开关（对齐 Paper Trends API）
+  watchlist.json          # 监控候选项收件箱（未分档）
+  inbox/YYYY-MM-DD.json   # 每日新增快照
   README.md               # 人类可读总览（可由 index 同步）
   CHANGELOG.md            # 每次批量变更记录
   SCHEMA.md               # 本约定
@@ -15,6 +18,20 @@ indexes/agent-harness/
     b/<arxiv_id>.md       # B 档可选补充笔记
     c/<arxiv_id>.md       # C 档可选补充笔记
 ```
+
+## 监控数据源
+
+与 Paper Trends 扩展 host 权限对齐：
+
+| 源 | API | 默认 |
+|----|-----|------|
+| ArXiv | `export.arxiv.org/api/query` | 开 |
+| Semantic Scholar | `api.semanticscholar.org/graph/v1/paper/search` | 开 |
+| DBLP | `dblp.org/search/publ/api` | 开 |
+| Crossref | `api.crossref.org/works` | 关（噪声大） |
+| PubMed | `eutils.ncbi.nlm.nih.gov` | 关 |
+
+流程：`scripts/monitor_papers.py` → 去重（对照 `index.json` + `watchlist.json`）→ 写入候选项。正式入库仍需设 `tier` 后调用 `_add_paper.py`。
 
 ## `index.json` 字段
 

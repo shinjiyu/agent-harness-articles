@@ -23,13 +23,28 @@ python -m http.server 8080 --directory site
 
 浏览器打开 `http://localhost:8080`。
 
-## 每日更新流程
+## 论文监控（与 Paper Trends 同源）
 
-1. 用 `_add_paper.py` 或直接改 `indexes/agent-harness/index.json` 入库（填 `indexed_at`、`tier`、`tags`）
-2. A 档补充 `papers/a/<arxiv_id>.md`
-3. 需要强制挂章时加 `knowledge_ids: ["token-economics"]`（章节 id 见 `curriculum/catalog.json`）
-4. `python scripts/build_site.py`
-5. 提交并推送 `main` → Actions 部署 GitHub Pages
+日更候选项会写入 `watchlist.json` / `inbox/`，**不会自动入库**（分档仍需人工或 Agent 审阅）。
+
+```bash
+# 本地跑一遍（默认启用 arxiv / semanticscholar / dblp）
+python scripts/monitor_papers.py
+
+# 只查部分源
+python scripts/monitor_papers.py --sources arxiv,semanticscholar
+```
+
+配置：`indexes/agent-harness/monitor.json`（关键词、源开关、年份与标题相关性过滤）。
+
+GitHub Actions：`.github/workflows/monitor-papers.yml` 每天自动拉取并提交 watchlist。
+
+从候选项正式入库仍用：
+
+```bash
+python indexes/agent-harness/_add_paper.py --arxiv-id ... --title "..." --tier B --tier-reason "..."
+python scripts/build_site.py
+```
 
 首次启用 Pages：仓库 **Settings → Pages → Source = GitHub Actions**。
 

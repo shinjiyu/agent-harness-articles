@@ -1,0 +1,50 @@
+{
+  "topic": "agent harness",
+  "min_year": 2024,
+  "max_year": 2026,
+  "title_must_match_any": [
+    "harness",
+    "agentic",
+    "llm agent",
+    "tool-using agent",
+    "orchestration"
+  ],
+  "keywords": [
+    "agent harness",
+    "\"LLM agent\" harness",
+    "test-time harness evolution"
+  ],
+  "sources": {
+    "arxiv": {
+      "enabled": true,
+      "max_results_per_keyword": 15,
+      "sort_by": "submittedDate",
+      "sort_order": "descending",
+      "note": "与 Paper Trends 相同：export.arxiv.org/api/query；注意限流，请求间隔 ≥3s"
+    },
+    "crossref": {
+      "enabled": false,
+      "max_results_per_keyword": 10,
+      "rows": 10,
+      "note": "噪声较大，默认关闭；需要时可开启并由 title_must_match_any + 年份过滤"
+    },
+    "semanticscholar": {
+      "enabled": true,
+      "max_results_per_keyword": 10,
+      "fields": "paperId,externalIds,title,authors,abstract,publicationDate,url,year"
+    },
+    "dblp": {
+      "enabled": true,
+      "max_results_per_keyword": 10
+    },
+    "pubmed": {
+      "enabled": false,
+      "max_results_per_keyword": 10,
+      "note": "偏生医；agent harness 主题默认关闭，按需开启"
+    }
+  },
+  "dedupe": {
+    "against_index": true,
+    "against_watchlist": true
+  }
+}

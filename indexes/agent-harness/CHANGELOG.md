@@ -2,6 +2,13 @@
 
 按时间倒序记录批量变更。单篇微调也可记一行。
 
+## 2026-07-14
+
+- 接入与 Paper Trends 同源的论文监控：`scripts/monitor_papers.py`
+  - 数据源：arxiv / semanticscholar / dblp（crossref、pubmed 可开关）
+  - 产出：`watchlist.json` + `inbox/YYYY-MM-DD.json`（不自动分档入库）
+  - Actions：`.github/workflows/monitor-papers.yml` 每日定时拉取
+
 ## 2026-07-13（站点）
 
 - 新增学习站 `site/`（交互对齐 onlyclaws harness 教程）
