@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "topic": "agent harness",
-  "updated_at": "2026-07-14T09:53:57+08:00",
+  "updated_at": "2026-07-14T17:32:32+08:00",
   "candidates": [
     {
       "source": "dblp",
-      "arxiv_id": "",
+      "arxiv_id": "2604.25850",
       "title": "Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses",
       "authors": [
         "Jiahang Lin",
@@ -30,13 +30,15 @@
       "matched_keywords": [
         "agent harness"
       ],
-      "status": "new",
+      "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-14T09:53:57+08:00"
+      "last_seen_at": "2026-07-14T09:53:57+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-14T17:32:32+08:00"
     },
     {
       "source": "dblp",
-      "arxiv_id": "",
+      "arxiv_id": "2606.10106",
       "title": "What makes a harness a harness: necessary and sufficient conditions for an agent harness",
       "authors": [
         "Sanderson Oliveira de Macedo"
@@ -53,13 +55,15 @@
       "matched_keywords": [
         "agent harness"
       ],
-      "status": "new",
+      "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-14T09:53:57+08:00"
+      "last_seen_at": "2026-07-14T09:53:57+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-14T17:32:32+08:00"
     },
     {
       "source": "dblp",
-      "arxiv_id": "",
+      "arxiv_id": "2601.15322",
       "title": "Replayable Financial Agents: A Determinism-Faithfulness Assurance Harness for Tool-Using LLM Agents",
       "authors": [
         "Raffi Khatchadourian"
@@ -77,13 +81,15 @@
         "agent harness",
         "\"LLM agent\" harness"
       ],
-      "status": "new",
+      "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-14T09:53:57+08:00"
+      "last_seen_at": "2026-07-14T09:53:57+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-14T17:32:32+08:00"
     },
     {
       "source": "dblp",
-      "arxiv_id": "",
+      "arxiv_id": "2602.22480",
       "title": "VeRO: An Evaluation Harness for Agents to Optimize Agents",
       "authors": [
         "Varun Ursekar",
@@ -104,13 +110,15 @@
       "matched_keywords": [
         "agent harness"
       ],
-      "status": "new",
+      "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-14T09:53:57+08:00"
+      "last_seen_at": "2026-07-14T09:53:57+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-14T17:32:32+08:00"
     },
     {
       "source": "dblp",
-      "arxiv_id": "",
+      "arxiv_id": "2604.07236",
       "title": "How Much Heavy Lifting Can an Agent Harness Do?: Measuring the LLM&apos;s Residual Role in a Planning Agent",
       "authors": [
         "Sungwoo Jung",
@@ -129,13 +137,15 @@
         "agent harness",
         "\"LLM agent\" harness"
       ],
-      "status": "new",
+      "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-14T09:53:57+08:00"
+      "last_seen_at": "2026-07-14T09:53:57+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-14T17:32:32+08:00"
     },
     {
       "source": "dblp",
-      "arxiv_id": "",
+      "arxiv_id": "2605.15184",
       "title": "Is Grep All You Need? How Agent Harnesses Reshape Agentic Search",
       "authors": [
         "Sahil Sen",
@@ -156,13 +166,15 @@
       "matched_keywords": [
         "agent harness"
       ],
-      "status": "new",
+      "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-14T09:53:57+08:00"
+      "last_seen_at": "2026-07-14T09:53:57+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-14T17:32:32+08:00"
     },
     {
       "source": "dblp",
-      "arxiv_id": "",
+      "arxiv_id": "2605.15218",
       "title": "CAX-Agent: A Lightweight Agent Harness for Reliable APDL Automation",
       "authors": [
         "Chenying Lin",
@@ -184,13 +196,15 @@
       "matched_keywords": [
         "agent harness"
       ],
-      "status": "new",
+      "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-14T09:53:57+08:00"
+      "last_seen_at": "2026-07-14T09:53:57+08:00",
+      "promoted_tier": "C",
+      "promoted_at": "2026-07-14T17:32:32+08:00"
     },
     {
       "source": "dblp",
-      "arxiv_id": "",
+      "arxiv_id": "2605.27922",
       "title": "Harness-Bench: Measuring Harness Effects across Models in Realistic Agent Workflows",
       "authors": [
         "Yilun Yao",
@@ -218,13 +232,15 @@
       "matched_keywords": [
         "agent harness"
       ],
-      "status": "new",
+      "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-14T09:53:57+08:00"
+      "last_seen_at": "2026-07-14T09:53:57+08:00",
+      "promoted_tier": "A",
+      "promoted_at": "2026-07-14T17:32:32+08:00"
     },
     {
       "source": "dblp",
-      "arxiv_id": "",
+      "arxiv_id": "2605.30621",
       "title": "Harness Updating Is Not Harness Benefit: Disentangling Evolution Capabilities in Self-Evolving LLM Agents",
       "authors": [
         "Minhua Lin",
@@ -258,13 +274,15 @@
         "agent harness",
         "\"LLM agent\" harness"
       ],
-      "status": "new",
+      "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-14T09:53:57+08:00"
+      "last_seen_at": "2026-07-14T09:53:57+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-14T17:32:32+08:00"
     },
     {
       "source": "dblp",
-      "arxiv_id": "",
+      "arxiv_id": "2606.08348",
       "title": "Bayesian-Agent: Posterior-Guided Skill Evolution for LLM Agent Harnesses",
       "authors": [
         "Xiaojun Wu 0007",
@@ -290,13 +308,15 @@
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
-      "status": "new",
+      "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-14T09:53:57+08:00"
+      "last_seen_at": "2026-07-14T09:53:57+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-14T17:32:32+08:00"
     },
     {
       "source": "dblp",
-      "arxiv_id": "",
+      "arxiv_id": "2606.11686",
       "title": "Layer-Isolated Evaluation: Gating the Deterministic Scaffold of a Production LLM Agent with a No-LLM, Regression-Locked Test Harness",
       "authors": [
         "Sawyer Zhang",
@@ -315,13 +335,15 @@
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
-      "status": "new",
+      "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-14T09:53:57+08:00"
+      "last_seen_at": "2026-07-14T09:53:57+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-14T17:32:32+08:00"
     },
     {
       "source": "dblp",
-      "arxiv_id": "",
+      "arxiv_id": "2606.12882",
       "title": "HarnessBridge: Learnable Bidirectional Controller for LLM Agent Harness",
       "authors": [
         "Xiaoxuan Wang",
@@ -343,13 +365,15 @@
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
-      "status": "new",
+      "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-14T09:53:57+08:00"
+      "last_seen_at": "2026-07-14T09:53:57+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-14T17:32:32+08:00"
     },
     {
       "source": "dblp",
-      "arxiv_id": "",
+      "arxiv_id": "2606.15874",
       "title": "LLM-as-Code: Agentic Programming for Agent Harness",
       "authors": [
         "Junjia Qi",
@@ -372,13 +396,15 @@
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
-      "status": "new",
+      "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-14T09:53:57+08:00"
+      "last_seen_at": "2026-07-14T09:53:57+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-14T17:32:32+08:00"
     },
     {
       "source": "dblp",
-      "arxiv_id": "",
+      "arxiv_id": "2606.20631",
       "title": "Harnessing Agent Skills: Architectural Patterns and a Reference Architecture for Skill-Mediated LLM Agents",
       "authors": [
         "Boming Xia",
@@ -400,13 +426,15 @@
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
-      "status": "new",
+      "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-14T09:53:57+08:00"
+      "last_seen_at": "2026-07-14T09:53:57+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-14T17:32:32+08:00"
     },
     {
       "source": "dblp",
-      "arxiv_id": "",
+      "arxiv_id": "2606.21856",
       "title": "Harness-MU: A Safe, Governed, and Effective Harness for Multi-User LLM Agents",
       "authors": [
         "Wangxuan Fan",
@@ -425,9 +453,11 @@
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
-      "status": "new",
+      "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-14T09:53:57+08:00"
+      "last_seen_at": "2026-07-14T09:53:57+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-14T17:32:32+08:00"
     },
     {
       "source": "dblp",
@@ -449,9 +479,10 @@
       "matched_keywords": [
         "agent harness"
       ],
-      "status": "new",
+      "status": "skipped",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-14T09:53:57+08:00"
+      "last_seen_at": "2026-07-14T09:53:57+08:00",
+      "skip_reason": "book / weak harness sense"
     }
   ],
   "last_run": {

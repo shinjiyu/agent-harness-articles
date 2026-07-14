@@ -2,8 +2,8 @@
 
 - 主题关键词：`agent harness`
 - 创建时间：`2026-07-13T17:32:31+08:00`
-- 最近更新：`2026-07-13T17:32:31+08:00`
-- 条目数：**50**（A 6 / B 32 / C 12）
+- 最近更新：`2026-07-14T17:32:32+08:00`
+- 条目数：**65**（A 7 / B 45 / C 13）
 - 评级依据：abstract-level review (titles/authors/abstracts); not full-text peer review
 
 权威数据源是 [`index.json`](index.json)。更新约定见 [`SCHEMA.md`](SCHEMA.md)。变更历史见 [`CHANGELOG.md`](CHANGELOG.md)。
@@ -60,6 +60,13 @@
 - ArXiv 公布：`2026-07-01`
 - [核心介绍](papers/a/2607.02577.md)
 
+### [2605.27922](http://arxiv.org/abs/2605.27922) · Harness-Bench: Measuring Harness Effects across Models in Realistic Agent Workflows
+
+- 分档：`A` — 跨模型实测 harness 效应；与 Harness Effect 互补的评测基建。
+- 入库时间：`2026-07-14T17:32:32+08:00`
+- ArXiv 公布：`2026-05-27`
+- [核心介绍](papers/a/2605.27922.md)
+
 ## B 档
 
 | ArXiv | 标题 | 入库时间 | 理由 |
@@ -96,6 +103,19 @@
 | [2607.00871](http://arxiv.org/abs/2607.00871) | Self-Evolving Agents with Anytime-Valid Certificates | `2026-07-13T17:32:31+08:00` | 门控证书机制诚实；摘要已承认单次 run/方差未确认。 |
 | [2607.02588](http://arxiv.org/abs/2607.02588) | Homer: Understanding Long-form Videos with Hierarchical Memory and Agentic Reasoning | `2026-07-13T17:32:31+08:00` | 分层记忆+多 backbone 提升；属视频代理相邻域。 |
 | [2607.02599](http://arxiv.org/abs/2607.02599) | AgentLTL: A Trace-Verification Framework for Measuring, Enforcing, and Training Procedural Compliance in Tool-Using LLM Agents | `2026-07-13T17:32:31+08:00` | FO-LTL 过程合规框架清晰；基准覆盖与外推待核。 |
+| [2606.21856](http://arxiv.org/abs/2606.21856) | Harness-MU: A Safe, Governed, and Effective Harness for Multi-User LLM Agents | `2026-07-14T17:32:32+08:00` | 多用户 LLM 代理的安全治理 harness；领域专用。 |
+| [2606.15874](http://arxiv.org/abs/2606.15874) | LLM-as-Code: Agentic Programming for Agent Harness | `2026-07-14T17:32:32+08:00` | LLM-as-Code 架构主张清晰；实证偏案例，外推待核。 |
+| [2606.12882](http://arxiv.org/abs/2606.12882) | HarnessBridge: Learnable Bidirectional Controller for LLM Agent Harness | `2026-07-14T17:32:32+08:00` | 可学习双向 harness 控制器；工程贡献明确，域覆盖待核。 |
+| [2606.11686](http://arxiv.org/abs/2606.11686) | Layer-Isolated Evaluation: Gating the Deterministic Scaffold of a Production LLM Agent with a No-LLM, Regression-Locked Test Harness | `2026-07-14T17:32:32+08:00` | 对确定性脚手架做无 LLM 回归锁定测试；工程评测味道浓。 |
+| [2606.10106](http://arxiv.org/abs/2606.10106) | What makes a harness a harness: necessary and sufficient conditions for an agent harness | `2026-07-14T17:32:32+08:00` | 给出 harness 必要充分条件的概念框架；偏定义文。 |
+| [2606.08348](http://arxiv.org/abs/2606.08348) | Bayesian-Agent: Posterior-Guided Skill Evolution for LLM Agent Harnesses | `2026-07-14T17:32:32+08:00` | 后验引导的技能演化；自演化+harness 交叉。 |
+| [2606.20631](http://arxiv.org/abs/2606.20631) | Harnessing Agent Skills: Architectural Patterns and a Reference Architecture for Skill-Mediated LLM Agents | `2026-07-14T17:32:32+08:00` | 技能中介 LLM 代理的架构模式与参考架构；综述/模式文。 |
+| [2605.30621](http://arxiv.org/abs/2605.30621) | Harness Updating Is Not Harness Benefit: Disentangling Evolution Capabilities in Self-Evolving LLM Agents | `2026-07-14T17:32:32+08:00` | 区分「能更新 harness」与「更新带来收益」；对自演化叙事有纠偏。 |
+| [2605.15184](http://arxiv.org/abs/2605.15184) | Is Grep All You Need? How Agent Harnesses Reshape Agentic Search | `2026-07-14T17:32:32+08:00` | 讨论 harness 如何重塑 agentic search；偏经验/系统设计。 |
+| [2604.25850](http://arxiv.org/abs/2604.25850) | Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses | `2026-07-14T17:32:32+08:00` | 可观测驱动的编码 harness 自动演化；自演化路线实证。 |
+| [2604.07236](http://arxiv.org/abs/2604.07236) | How Much Heavy Lifting Can an Agent Harness Do?: Measuring the LLM's Residual Role in a Planning Agent | `2026-07-14T17:32:32+08:00` | 度量 harness 承担多少重活 vs LLM 残差角色；测量设计清楚。 |
+| [2602.22480](http://arxiv.org/abs/2602.22480) | VeRO: A Harness for Agents to Optimize Agents | `2026-07-14T17:32:32+08:00` | 用代理优化代理的评估 harness（VeRO）；评测基建。 |
+| [2601.15322](http://arxiv.org/abs/2601.15322) | Replayable Financial Agents: A Determinism-Faithfulness Assurance Harness for Tool-Using LLM Agents | `2026-07-14T17:32:32+08:00` | 金融工具调用代理的可重放/确定性保真 harness。 |
 
 ## C 档
 
@@ -113,6 +133,7 @@
 | [2607.01120](http://arxiv.org/abs/2607.01120) | Next-Generation Agentic Reinforcement Learning Systems Enable Self-Evolving Agents | `2026-07-13T17:32:31+08:00` | 系统愿景与支柱论述强；实例化偏路线图。 |
 | [2607.01152](http://arxiv.org/abs/2607.01152) | AGC-Bench: Measuring Artificial General Creativity | `2026-07-13T17:32:31+08:00` | 创造力基准与 harness 主线弱相关；作地图收录。 |
 | [2607.02598](http://arxiv.org/abs/2607.02598) | Evaluating Agentic Harness Systems for Autonomous Computational Pathology | `2026-07-13T17:32:31+08:00` | ACP-Bench 病理专域审计基准；端到端成熟度仍低。 |
+| [2605.15218](http://arxiv.org/abs/2605.15218) | CAX-Agent: A Lightweight Agent Harness for Reliable APDL Automation | `2026-07-14T17:32:32+08:00` | APDL/CAE 专域轻量 harness；与通用 harness 主线关联弱。 |
 
 ## 持续更新
 

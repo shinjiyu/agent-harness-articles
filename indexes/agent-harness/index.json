@@ -2,14 +2,14 @@
   "topic": "agent harness",
   "schema_version": 1,
   "created_at": "2026-07-13T17:32:31+08:00",
-  "updated_at": "2026-07-13T17:32:31+08:00",
+  "updated_at": "2026-07-14T17:32:32+08:00",
   "query_keyword": "agent harness",
   "rating_basis": "abstract-level review (titles/authors/abstracts); not full-text peer review",
   "tier_counts": {
-    "A": 6,
-    "B": 32,
-    "C": 12,
-    "total": 50
+    "A": 7,
+    "B": 45,
+    "C": 13,
+    "total": 65
   },
   "papers": [
     {
@@ -158,6 +158,42 @@
       "source": "arxiv",
       "indexed_at": "2026-07-13T17:32:31+08:00",
       "url": "http://arxiv.org/abs/2607.02577"
+    },
+    {
+      "arxiv_id": "2605.27922",
+      "arxiv_version": "v1",
+      "title": "Harness-Bench: Measuring Harness Effects across Models in Realistic Agent Workflows",
+      "authors": [
+        "Yilun Yao",
+        "Xinyu Tan",
+        "Chao-Hsuan Liu",
+        "Yaoming Li",
+        "Zhengyang Wang",
+        "Wenhan Yu",
+        "Zhewen Tan",
+        "Yuxuan Tian",
+        "Guangxiang Zhao",
+        "Lin Sun",
+        "Xiangzheng Zhang",
+        "Tong Yang"
+      ],
+      "published": "2026-05-27",
+      "url": "http://arxiv.org/abs/2605.27922",
+      "source": "arxiv",
+      "tier": "A",
+      "tier_reason": "跨模型实测 harness 效应；与 Harness Effect 互补的评测基建。",
+      "tags": [
+        "evaluation",
+        "benchmark",
+        "methodology",
+        "orchestration"
+      ],
+      "notes": "Harness-Bench：模型–harness 配置是能力单位",
+      "indexed_at": "2026-07-14T17:32:32+08:00",
+      "knowledge_ids": [
+        "evaluation"
+      ],
+      "core_intro_path": "papers/a/2605.27922.md"
     },
     {
       "arxiv_id": "2607.08716",
@@ -875,6 +911,325 @@
       "url": "http://arxiv.org/abs/2607.02599"
     },
     {
+      "arxiv_id": "2606.21856",
+      "arxiv_version": "v1",
+      "title": "Harness-MU: A Safe, Governed, and Effective Harness for Multi-User LLM Agents",
+      "authors": [
+        "Wangxuan Fan",
+        "Xiaoyu Nie",
+        "Zhongxiang Dai"
+      ],
+      "published": "2026-06-20",
+      "url": "http://arxiv.org/abs/2606.21856",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "多用户 LLM 代理的安全治理 harness；领域专用。",
+      "tags": [
+        "security",
+        "governance",
+        "multi-agent",
+        "permissions"
+      ],
+      "notes": "Harness-MU",
+      "indexed_at": "2026-07-14T17:32:32+08:00"
+    },
+    {
+      "arxiv_id": "2606.15874",
+      "arxiv_version": "v2",
+      "title": "LLM-as-Code: Agentic Programming for Agent Harness",
+      "authors": [
+        "Junjia Qi",
+        "Zichuan Fu",
+        "Jingtong Gao",
+        "Wenlin Zhang",
+        "Hanyu Yan",
+        "Xian Wu",
+        "Xiangyu Zhao"
+      ],
+      "published": "2026-06-14",
+      "url": "http://arxiv.org/abs/2606.15874",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "LLM-as-Code 架构主张清晰；实证偏案例，外推待核。",
+      "tags": [
+        "orchestration",
+        "control",
+        "architecture"
+      ],
+      "notes": "控制流归程序，LLM 只作自适应组件",
+      "indexed_at": "2026-07-14T17:32:32+08:00"
+    },
+    {
+      "arxiv_id": "2606.12882",
+      "arxiv_version": "v1",
+      "title": "HarnessBridge: Learnable Bidirectional Controller for LLM Agent Harness",
+      "authors": [
+        "Xiaoxuan Wang",
+        "Haixin Wang",
+        "Alexander Taylor",
+        "Jason Cong",
+        "Yizhou Sun",
+        "Wei Wang"
+      ],
+      "published": "2026-06-11",
+      "url": "http://arxiv.org/abs/2606.12882",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "可学习双向 harness 控制器；工程贡献明确，域覆盖待核。",
+      "tags": [
+        "control",
+        "adaptation",
+        "orchestration"
+      ],
+      "notes": "HarnessBridge：冻结执行器上的可学习控制层",
+      "indexed_at": "2026-07-14T17:32:32+08:00"
+    },
+    {
+      "arxiv_id": "2606.11686",
+      "arxiv_version": "v1",
+      "title": "Layer-Isolated Evaluation: Gating the Deterministic Scaffold of a Production LLM Agent with a No-LLM, Regression-Locked Test Harness",
+      "authors": [
+        "Sawyer Zhang",
+        "Alexander Wang",
+        "Sophie Lei"
+      ],
+      "published": "2026-06-10",
+      "url": "http://arxiv.org/abs/2606.11686",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "对确定性脚手架做无 LLM 回归锁定测试；工程评测味道浓。",
+      "tags": [
+        "evaluation",
+        "testing",
+        "enterprise"
+      ],
+      "notes": "Layer-Isolated Evaluation",
+      "indexed_at": "2026-07-14T17:32:32+08:00"
+    },
+    {
+      "arxiv_id": "2606.10106",
+      "arxiv_version": "v1",
+      "title": "What makes a harness a harness: necessary and sufficient conditions for an agent harness",
+      "authors": [
+        "Sanderson Oliveira de Macedo"
+      ],
+      "published": "2026-06-08",
+      "url": "http://arxiv.org/abs/2606.10106",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "给出 harness 必要充分条件的概念框架；偏定义文。",
+      "tags": [
+        "orchestration",
+        "methodology"
+      ],
+      "notes": "What makes a harness a harness",
+      "indexed_at": "2026-07-14T17:32:32+08:00"
+    },
+    {
+      "arxiv_id": "2606.08348",
+      "arxiv_version": "v1",
+      "title": "Bayesian-Agent: Posterior-Guided Skill Evolution for LLM Agent Harnesses",
+      "authors": [
+        "Xiaojun Wu",
+        "Cehao Yang",
+        "Honghao Liu",
+        "Xueyuan Lin",
+        "Wenjie Zhang",
+        "Zhichao Shi",
+        "Xuhui Jiang",
+        "Chengjin Xu",
+        "Jia Li",
+        "Jian Guo"
+      ],
+      "published": "2026-06-06",
+      "url": "http://arxiv.org/abs/2606.08348",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "后验引导的技能演化；自演化+harness 交叉。",
+      "tags": [
+        "self-evolution",
+        "skill",
+        "bayesian"
+      ],
+      "notes": "Bayesian-Agent skill evolution",
+      "indexed_at": "2026-07-14T17:32:32+08:00"
+    },
+    {
+      "arxiv_id": "2606.20631",
+      "arxiv_version": "v1",
+      "title": "Harnessing Agent Skills: Architectural Patterns and a Reference Architecture for Skill-Mediated LLM Agents",
+      "authors": [
+        "Boming Xia",
+        "Liming Zhu",
+        "Zhenchang Xing",
+        "Qinghua Lu",
+        "Dino Sejdinovic",
+        "Xiwei Xu"
+      ],
+      "published": "2026-05-29",
+      "url": "http://arxiv.org/abs/2606.20631",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "技能中介 LLM 代理的架构模式与参考架构；综述/模式文。",
+      "tags": [
+        "skill",
+        "architecture",
+        "orchestration"
+      ],
+      "notes": "Agent Skills reference architecture",
+      "indexed_at": "2026-07-14T17:32:32+08:00"
+    },
+    {
+      "arxiv_id": "2605.30621",
+      "arxiv_version": "v1",
+      "title": "Harness Updating Is Not Harness Benefit: Disentangling Evolution Capabilities in Self-Evolving LLM Agents",
+      "authors": [
+        "Minhua Lin",
+        "Juncheng Wu",
+        "Zijun Wang",
+        "Zhan Shi",
+        "Yisi Sang",
+        "Bing He",
+        "Zewen Liu",
+        "Tianxin Wei",
+        "Zongyu Wu",
+        "Zhiwei Zhang",
+        "Dakuo Wang",
+        "Xiang Zhang"
+      ],
+      "published": "2026-05-28",
+      "url": "http://arxiv.org/abs/2605.30621",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "区分「能更新 harness」与「更新带来收益」；对自演化叙事有纠偏。",
+      "tags": [
+        "self-evolution",
+        "evaluation",
+        "methodology"
+      ],
+      "notes": "Harness Updating ≠ Harness Benefit",
+      "indexed_at": "2026-07-14T17:32:32+08:00"
+    },
+    {
+      "arxiv_id": "2605.15184",
+      "arxiv_version": "v1",
+      "title": "Is Grep All You Need? How Agent Harnesses Reshape Agentic Search",
+      "authors": [
+        "Sahil Sen",
+        "Akhil Kasturi",
+        "Elias Lumer",
+        "Anmol Gulati",
+        "Vamse Kumar Subbiah"
+      ],
+      "published": "2026-05-14",
+      "url": "http://arxiv.org/abs/2605.15184",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "讨论 harness 如何重塑 agentic search；偏经验/系统设计。",
+      "tags": [
+        "orchestration",
+        "search"
+      ],
+      "notes": "Is Grep All You Need?",
+      "indexed_at": "2026-07-14T17:32:32+08:00"
+    },
+    {
+      "arxiv_id": "2604.25850",
+      "arxiv_version": "v4",
+      "title": "Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses",
+      "authors": [
+        "Jiahang Lin",
+        "Shichun Liu",
+        "Chengjun Pan",
+        "Lizhi Lin",
+        "Shihan Dou",
+        "Zhiheng Xi",
+        "Xuanjing Huang",
+        "Hang Yan",
+        "Zhenhua Han",
+        "Tao Gui",
+        "Yu-Gang Jiang"
+      ],
+      "published": "2026-04-28",
+      "url": "http://arxiv.org/abs/2604.25850",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "可观测驱动的编码 harness 自动演化；自演化路线实证。",
+      "tags": [
+        "self-evolution",
+        "observability",
+        "code-agent",
+        "orchestration"
+      ],
+      "notes": "Agentic Harness Engineering",
+      "indexed_at": "2026-07-14T17:32:32+08:00"
+    },
+    {
+      "arxiv_id": "2604.07236",
+      "arxiv_version": "v4",
+      "title": "How Much Heavy Lifting Can an Agent Harness Do?: Measuring the LLM's Residual Role in a Planning Agent",
+      "authors": [
+        "Sungwoo Jung",
+        "Seonil Son"
+      ],
+      "published": "2026-04-08",
+      "url": "http://arxiv.org/abs/2604.07236",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "度量 harness 承担多少重活 vs LLM 残差角色；测量设计清楚。",
+      "tags": [
+        "evaluation",
+        "orchestration",
+        "planning"
+      ],
+      "notes": "规划代理中 harness 的重活占比",
+      "indexed_at": "2026-07-14T17:32:32+08:00"
+    },
+    {
+      "arxiv_id": "2602.22480",
+      "arxiv_version": "v4",
+      "title": "VeRO: A Harness for Agents to Optimize Agents",
+      "authors": [
+        "Varun Ursekar",
+        "Apaar Shanker",
+        "Veronica Chatrath",
+        "Yuan Xue",
+        "Samuel Marc Denton"
+      ],
+      "published": "2026-02-25",
+      "url": "http://arxiv.org/abs/2602.22480",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "用代理优化代理的评估 harness（VeRO）；评测基建。",
+      "tags": [
+        "evaluation",
+        "benchmark"
+      ],
+      "notes": "VeRO evaluation harness",
+      "indexed_at": "2026-07-14T17:32:32+08:00"
+    },
+    {
+      "arxiv_id": "2601.15322",
+      "arxiv_version": "v2",
+      "title": "Replayable Financial Agents: A Determinism-Faithfulness Assurance Harness for Tool-Using LLM Agents",
+      "authors": [
+        "Raffi Khatchadourian"
+      ],
+      "published": "2026-01-17",
+      "url": "http://arxiv.org/abs/2601.15322",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "金融工具调用代理的可重放/确定性保真 harness。",
+      "tags": [
+        "audit",
+        "validation",
+        "enterprise",
+        "tool-calling"
+      ],
+      "notes": "Replayable Financial Agents",
+      "indexed_at": "2026-07-14T17:32:32+08:00"
+    },
+    {
       "arxiv_id": "2607.07859",
       "arxiv_version": "v1",
       "title": "Feedback Manipulation Regularization: Enabling Offline Agent Alignment for Imitation Learning",
@@ -1135,6 +1490,30 @@
       "notes": "",
       "indexed_at": "2026-07-13T17:32:31+08:00",
       "url": "http://arxiv.org/abs/2607.02598"
+    },
+    {
+      "arxiv_id": "2605.15218",
+      "arxiv_version": "v1",
+      "title": "CAX-Agent: A Lightweight Agent Harness for Reliable APDL Automation",
+      "authors": [
+        "Chenying Lin",
+        "Yichen Hai",
+        "Yi He",
+        "Ran Wang",
+        "Haiyan Qiang",
+        "Liang Yu"
+      ],
+      "published": "2026-05-12",
+      "url": "http://arxiv.org/abs/2605.15218",
+      "source": "arxiv",
+      "tier": "C",
+      "tier_reason": "APDL/CAE 专域轻量 harness；与通用 harness 主线关联弱。",
+      "tags": [
+        "domain",
+        "code-agent"
+      ],
+      "notes": "CAX-Agent APDL",
+      "indexed_at": "2026-07-14T17:32:32+08:00"
     }
   ]
 }
