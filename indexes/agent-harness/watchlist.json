@@ -1,8 +1,544 @@
 {
   "schema_version": 1,
   "topic": "agent harness",
-  "updated_at": "2026-07-16T12:11:20+08:00",
+  "updated_at": "2026-07-17T12:11:04+08:00",
   "candidates": [
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.15272",
+      "arxiv_version": "v1",
+      "title": "SciDiagramEdit: Learning to Edit Scientific Diagrams from Paper Revisions",
+      "authors": [
+        "Yasheng Sun",
+        "Zezi Zeng",
+        "Yifan Yang",
+        "Chong Luo",
+        "Wenyi Wang",
+        "Ziwei Liu",
+        "Jürgen Schmidhuber"
+      ],
+      "published": "2026-07-16",
+      "url": "https://arxiv.org/abs/2607.15272",
+      "abstract": "Editing the figures in a research paper is a routine and time-consuming part of everyday research practice: authors relabel components, rearrange panels, and restyle visuals as they revise their manuscripts. Automating this editing workflow under a natural-language instruction, however, is challenging, because a scientific figure is a dense infographic in which heterogeneous visual elements such as schematics, plots, photos, captions, and arrows are composed under a tight visual grammar to advance a specific argument. To address this, we present SciDiagramEdit, a benchmark and skill-evolution framework that learns from natural paper revisions and operates on the figure's editable vector source, where users can inspect and co-edit individual primitives alongside the agent. Our benchmark mines before/after figure pairs from arXiv version histories, each grounded in the authors' own revision intent. To accommodate the diversity of editing instructions, we adopt agentic learning via skill evolution: an agentic proposer continually refines the agent's skill specification from execution traces over multiple epochs. The resulting skill progressively lifts edit accuracy on a held-out validation set, providing evidence that natural paper revisions are an effective training signal for instruction-driven figure editing.",
+      "external_ids": [
+        "arxiv:2607.15272"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-17T12:11:04+08:00",
+      "last_seen_at": "2026-07-17T12:11:04+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.15257",
+      "arxiv_version": "v1",
+      "title": "SearchOS-V1: Towards Robust Open-Domain Information-Seeking Agent Collaboration",
+      "authors": [
+        "Yuyao Zhang",
+        "Junjie Gao",
+        "Zhengxian Wu",
+        "Jiaming Fan",
+        "Jin Zhang",
+        "Shihan Ma",
+        "Yao Yao",
+        "Weiran Qi",
+        "Chuyan Jin",
+        "Guiyu Ma",
+        "Xingzhong Xu",
+        "Kai Yang",
+        "Ji-Rong Wen",
+        "Zhicheng Dou"
+      ],
+      "published": "2026-07-16",
+      "url": "https://arxiv.org/abs/2607.15257",
+      "abstract": "Recent advances in Tool-Integrated Large Language Models have made web search a core capability of information-seeking agents. However, as interaction histories grow, agents increasingly struggle to track task progress. When search attempts fail to yield useful evidence, current single- and multi-agent systems can become trapped in repetitive loops, wasting search budgets and ultimately compromising the quality and completeness of the final output. We introduce SearchOS, a system-level multi-agent framework that turns fragile, implicit search progress into explicit, persistent, and shared state. First, we formulate open-domain information seeking as relational schema completion with grounded citations, where agents discover entities, populate attributes across linked tables, and anchor each value to source evidence. Then we design Search-Oriented Context Management (SOCM), which externalizes the evolving state into Frontier Task, an Evidence Graph, a Coverage Map, and Failure Memory. Built on SOCM, SearchOS applies a pipeline-parallel scheduling mechanism that overlaps the execution of sub-agents and continuously refills freed slots with tasks targeting unresolved coverage gaps to improve utilization and throughput. To schedule and control the execution of search agents, SearchOS introduces a Search Tool Middleware Harness that intercepts model and tool interactions to record grounded evidence and react to stalls or budget exhaustion, and provides a reusable hierarchical skill system comprising strategy and access skills to augment the agents' search process and avoid repeating failed search patterns across runs. On WideSearch and GISA, SearchOS leads all metrics among the evaluated single- and multi-agent baselines, paving the way toward robust information-seeking collaboration.",
+      "external_ids": [
+        "arxiv:2607.15257"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-17T12:11:04+08:00",
+      "last_seen_at": "2026-07-17T12:11:04+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.15253",
+      "arxiv_version": "v1",
+      "title": "Bridge Evidence: Static Retrieval Utility Does Not Predict Causal Utility in Multi-Step Agentic Search",
+      "authors": [
+        "Debayan Mukhopadhyay",
+        "Utshab Kumar Ghosh",
+        "Shubham Chatterjee"
+      ],
+      "published": "2026-07-16",
+      "url": "https://arxiv.org/abs/2607.15253",
+      "abstract": "Retrieval systems are trained and evaluated on a static idea of usefulness: hand a document and a question to a reader model, see whether the answer improves, and score the document accordingly. The idea holds up when a document is read on its own. It breaks when a language model works as a search agent, issuing several queries and reasoning across turns, because a document can matter for what it lets the agent do next rather than for what it says about the current question. We measure that gap rather than argue it. Using a ReAct style agent over HotpotQA, we replay 1000 development questions and, for every document the agent read, delete it and re-run the rest of the trajectory from that point. Comparing the original run against its counterfactual gives a Counterfactual Trajectory Utility (CTU) score from three deltas: final answer quality, next query retrieval quality, and turn count. Crossing CTU against Static RAG Utility (SRU) over 23,322 document observations, the two are close to statistically independent (Spearman rho = -0.026). Roughly a third of the documents the agent reads are causally load bearing while looking useless to a static reader; we call these bridge documents. The pattern survives when the reader based axis is swapped for a BM25 and cross encoder proxy, giving a bridge cell of 27.2% on an evenly spread axis. A second experiment pins down the mechanism. Using the Observable Entity Relevance (OER) measure from prior work, entities that discriminate relevant from non-relevant candidates appear in the agent's next query 4.02 times more often than entities found only in non-relevant documents (6.1% vs 1.5%, n = 227,139). A bridge document earns its keep by handing the agent a discriminative entity that redirects the search. Static relevance and causal usefulness are different quantities in agentic retrieval, and optimizing the first does not deliver the second.",
+      "external_ids": [
+        "arxiv:2607.15253"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-17T12:11:04+08:00",
+      "last_seen_at": "2026-07-17T12:11:04+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.15247",
+      "arxiv_version": "v1",
+      "title": "AutoSynthesis: An agentic system for automated meta-analysis",
+      "authors": [
+        "Moein Taherinezhad",
+        "Sebastian Maier",
+        "Gerardo Vitagliano",
+        "Francesco Pierri",
+        "Stefan Feuerriegel"
+      ],
+      "published": "2026-07-16",
+      "url": "https://arxiv.org/abs/2607.15247",
+      "abstract": "Evidence synthesis is crucial for turning primary research into reliable knowledge for science, medicine, education, and policy. Yet, quantitative evidence synthesis remains largely manual and difficult to scale. Here, we introduce AutoSynthesis, an end-to-end multi-agent system for automated meta-analysis. Given a research question in natural language, AutoSynthesis formulates a search strategy, retrieves scientific literature, screens candidate studies, assesses full-text eligibility, extracts quantitative statistics, computes standardized effect sizes, and finally performs random-effects meta-analysis. AutoSynthesis further supports heterogeneity analysis to examine how effect sizes vary across moderators, as well as risk-of-bias assessment. As output, AutoSynthesis produces a transparent report aligned with PRISMA guidelines. In our application, AutoSynthesis screened over 28 studies and extracted more than 20 quantitative claims. The pooled effect estimates produced by AutoSynthesis are similar to Hedges' $g$ of expert-conducted meta-analyses, indicating close agreement with manual evidence synthesis. Together, these results show that AutoSynthesis can make quantitative evidence synthesis more scalable, thereby supporting evidence-based decision-making across disciplines.",
+      "external_ids": [
+        "arxiv:2607.15247"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-17T12:11:04+08:00",
+      "last_seen_at": "2026-07-17T12:11:04+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.15246",
+      "arxiv_version": "v1",
+      "title": "ARMOR++: Agentic Orchestration of a Multi-Domain Primitive Set for Transferable Attacks on Deepfake Detectors",
+      "authors": [
+        "Christos Korgialas",
+        "Gabriel Lee Jun Rong",
+        "Dion Jia Xu Ho",
+        "Pai Chet Ng",
+        "Xiaoxiao Miao",
+        "Konstantinos N. Plataniotis"
+      ],
+      "published": "2026-07-16",
+      "url": "https://arxiv.org/abs/2607.15246",
+      "abstract": "The reliability of deepfake detectors frequently degrades under black-box adversarial transfer, as these models often rely on fragile, architecture-dependent forensic cues. Existing transfer attacks often lack semantic awareness and struggle to maintain effectiveness under strict no-query constraints, particularly when perturbations are transferred from convolutional surrogates to transformer-based targets. To address these limitations, this paper introduces ARMOR++, a robust multi-agent framework designed for high-transferability deepfake evasion. The framework leverages the Qwen2.5-VL Vision-Language Model (VLM) to supply spatial semantic priors, while the Qwen3 Large Language Model (LLM) orchestrates primitive selection, adaptive hyperparameter reparameterization, and entropy-regularized perturbation mixing. By integrating five complementary primitives, spanning dense optimization, saliency-based methods, spatial transformations, frequency-domain perturbations, and block-structured modifications, ARMOR++ effectively targets heterogeneous inductive biases. Rigorous evaluation on the AADD-2025 benchmark demonstrates that ARMOR++ significantly outperforms existing agentic and non-agentic baselines across both low- and high-quality image regimes. Statistical analysis confirms a substantial gain in blind-target Attack Success Rate (ASR) over the state-of-the-art agentic baseline, with further performance advantages evidenced against non-agentic benchmarks and under robust defensive configurations. These findings highlight a significant residual reliability gap in current deepfake detector deployments and demonstrate the efficacy of agentic orchestration in identifying latent vulnerabilities.",
+      "external_ids": [
+        "arxiv:2607.15246"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-17T12:11:04+08:00",
+      "last_seen_at": "2026-07-17T12:11:04+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.15143",
+      "arxiv_version": "v1",
+      "title": "Setup Complete, Now You Are Compromised: Weaponizing Setup Instructions Against AI Coding Agents",
+      "authors": [
+        "Aadesh Bagmar",
+        "Pushkar Saraf"
+      ],
+      "published": "2026-07-16",
+      "url": "https://arxiv.org/abs/2607.15143",
+      "abstract": "AI coding agents set up projects by reading documentation and installing the dependencies it lists, without verifying their names, sources, or known vulnerabilities. By editing only a README, requirements file, or Makefile, an attacker can redirect the agent to an untrusted registry, a known-vulnerable version, or a wrong-but-plausible name: documentation becomes a vector for code execution. We present the first systematic evaluation of package-install-time supply-chain attacks delivered through ordinary project-setup documentation across production coding-agent harnesses, probing frontier models on twelve scenarios in five attack classes, grounded in documented incidents. The same model catches an attack through one harness and installs it through another: install-time security rests on the harness-model combination, not the model alone. Agents catch blatant typosquats reliably, but plausible separator-confusion names (azurecore for azure-core) slip through, and how often depends on the harness-model pairing. Source-based attacks like registry redirection are missed almost everywhere. The source blind spot recurs on npm and Cargo, where nearly every model installs the untrusted dependency; name detection carries over less consistently across ecosystems. Security-oriented prompts recover part of the gap but only for the dimension they name; a deterministic pre-install check that verifies names, sources, and versions before any code runs closes most of it.",
+      "external_ids": [
+        "arxiv:2607.15143"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-17T12:11:04+08:00",
+      "last_seen_at": "2026-07-17T12:11:04+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.15095",
+      "arxiv_version": "v1",
+      "title": "Digital Pantheon: Simulating and Auditing Coalition Formation with LLM Agents",
+      "authors": [
+        "Dylan Van Mulders",
+        "Matthias Bogaert",
+        "Dirk Van den Poel"
+      ],
+      "published": "2026-07-16",
+      "url": "https://arxiv.org/abs/2607.15095",
+      "abstract": "The formation of political coalitions is a complex negotiation driven by both concrete policy objectives and deep-seated ideological convictions. While Large Language Models (LLMs) open new avenues for computational political science, the neutrality and helpfulness biases instilled by Reinforcement Learning from Human Feedback (RLHF) prevent them from sustaining steadfast partisan behaviour. We present a multi-agent framework that reconciles factual grounding with ideological alignment by combining Supervised Fine-Tuning (SFT), Direct Preference Optimization (DPO), and Retrieval-Augmented Generation (RAG): DPO instils aggressive party-specific personas, while a per-party RAG pipeline keeps each agent bounded to its official manifesto. We operationalize the framework on the 2019 Flemish election, deploying the partisan agents in a hub-and-spoke negotiation arbitrated by a formateur. To make the emergent negotiation interpretable, we introduce a Multi-Layered Information Lineage Topology (MILT) that traces every clause in the final agreement back to its manifesto origin and classifies it into five provenance states, a Coalition Influence Score (CIS) that aggregates these traceable contributions to identify which party shaped the agreement, and a real-world grounding pass that benchmarks each simulated provision against the historically adopted coalition agreement. Across three independent simulations the framework yields a stable winner and ranking (N-VA ahead of CD\\&V and Open Vld), and manifesto-anchored lineage reliably predicts real-world materialization whereas hallucinated content does not. The result is a transparent, scalable testbed for the ex-ante exploration of party compatibility and formateur-mediated compromise.",
+      "external_ids": [
+        "arxiv:2607.15095"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-17T12:11:04+08:00",
+      "last_seen_at": "2026-07-17T12:11:04+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.14944",
+      "arxiv_version": "v1",
+      "title": "Harnessing Machine Learning for Hybrid Constitutive Modelling of Viscoelastic Fluid Flows in Computational Rheology",
+      "authors": [
+        "J. L. Cummings",
+        "C. Fernandes",
+        "F. Dong",
+        "M. A. Alves",
+        "M. S. N. Oliveira"
+      ],
+      "published": "2026-07-16",
+      "url": "https://arxiv.org/abs/2607.14944",
+      "abstract": "Recent advances in data-driven modelling have highlighted the potential of hybrid approaches which combine Tensor Basis Neural Networks (TBNN) with Universal Differential Equations (UDE) to discover frame-invariant, non-linear viscoelastic constitutive models. These hybrid models enable the creation of digital twins for complex viscoelastic fluids, offering direct transferability to computational fluid dynamics simulations. In this work, we introduce a reduced dimensional tensor basis formulation that enhances both the physical consistency of the learned representations with respect to the training data and the numerical stability of subsequent simulations. The UDE architecture is embedded into an open-source finite volume solver in which the constitutive response is generated dynamically at runtime based on local fluid flow conditions. Training on synthetic datasets generated using a range of well established viscoelastic models in oscillatory shear flows alone, the performance of the resulting UDEs is evaluated under extrapolation to unseen conditions and flow-types. These include deploying the UDEs in viscometric extensional flows as well as 2D and 3D benchmark flows, such as the 4:1 sudden contraction and cross-slot, providing a quantitative analysis of their capabilities, limitations and failure modes. The proposed reduced-basis framework enables data-efficient discovery of frame-invariant constitutive models that generalise beyond their training regime, capturing key flow features such as the onset and growth of flow-induced elastic instabilities in strong extensional flows even though trained solely on shear data. Quantitative accuracy decreases as extrapolation increases, but incorporating first normal stress difference information further improves quantitative accuracy and extends predictive fidelity to higher Deborah numbers.",
+      "external_ids": [
+        "arxiv:2607.14944"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-17T12:11:04+08:00",
+      "last_seen_at": "2026-07-17T12:11:04+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.14896",
+      "arxiv_version": "v1",
+      "title": "StructureClaw: Traceable LLM Agents and an Executable Benchmark for Structural Engineering Workflows",
+      "authors": [
+        "Sizhong Qin",
+        "Yi Gu",
+        "Yao Jiang",
+        "Ao Cai",
+        "Changjian Zhou",
+        "Shaoxuan Shuai",
+        "Jiachang Wang",
+        "Tianhao Shen",
+        "Yueqiang Li",
+        "Xinhao Li",
+        "Li Zeng",
+        "Yueshi Chen",
+        "Dachen Gao",
+        "Genrong Xu",
+        "Wenjie Liao",
+        "Xinzheng Lu"
+      ],
+      "published": "2026-07-16",
+      "url": "https://arxiv.org/abs/2607.14896",
+      "abstract": "Addressing a structural-engineering request requires more than a single answer; it requires a chain of interdependent artifacts: interpreted requirements, a computable model, validation records, solver outputs, code-check records, and a final report. Evaluations centered on question answering or script generation rarely verify this complete evidence chain and may therefore reward fluent outputs even when the underlying engineering workflow is incomplete, internally inconsistent, or non-executable. To address this limitation, we present StructureClaw, an artifact-centered workbench in which LLM agents operate through governed engineering skills, typed tools, shared artifact state, and local analysis backends. We also introduce StructureClaw-Bench, an executable benchmark of 150 controlled scenarios spanning standard workflow execution, interactive robustness, and multimodal structural-model reconstruction. A scenario succeeds only when all required artifact- and execution-level assertions pass in a single run. Across ten agent-model configurations, each evaluated on the same 50 standard cases, the average Success Rate rises from 56.8% with the generic-skill baseline to 88.6% with the full automatic workflow. The interactive and multimodal evaluations identify two prominent remaining challenges: safe handling of invalid numerical inputs and fixture-consistent reconstruction of structural models. These findings show that artifact-centered evaluation can expose workflow-level failures that are difficult to identify from final responses alone, providing a more rigorous basis for evaluating and improving structural-engineering agents. The code and benchmark are available at https://github.com/structureclaw/structureclaw.",
+      "external_ids": [
+        "arxiv:2607.14896"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-17T12:11:04+08:00",
+      "last_seen_at": "2026-07-17T12:11:04+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.14846",
+      "arxiv_version": "v1",
+      "title": "RW-Voice-EQ Bench: A Real World Benchmark for Evaluating Voice AI Systems",
+      "authors": [
+        "David Ayllon",
+        "Alice Baird",
+        "Jeffrey Brooks",
+        "Franc Camps-Febrer",
+        "Jakub Piotr Cłapa",
+        "Theo Lebryk",
+        "Jens Madsen",
+        "Olya Ossipova",
+        "Sharath Rao",
+        "Hoon Shin",
+        "Tigran Soghbatyan",
+        "Georg Streich",
+        "Rashish Tandon",
+        "Panagiotis Tzirakis"
+      ],
+      "published": "2026-07-16",
+      "url": "https://arxiv.org/abs/2607.14846",
+      "abstract": "Current voice AI benchmarks typically evaluate isolated capabilities such as speech intelligibility, word error rate, or text-based dialogue quality, but they rarely test whether systems harness the acoustic information that distinguishes spoken language from its textual representation. To this end, we introduce the Real World Voice EQ Bench, a multidimensional benchmark for evaluating voice AI across text-to-speech (TTS), speech-to-speech (STS), speech understanding (SU), and automatic speech recognition (ASR). Our evaluations indicate that performance is highly dimension-specific. For TTS, naturalness, expressiveness, identity stability, and reliability are largely independent evaluation dimensions. For STS, access to audio does not guarantee use of vocal affect, and some agents remain largely transcript-driven. For SU, models perform unevenly across paralinguistic tasks. For ASR, real world accent, emotion, noise, and conversational conditions expose failures that are not captured by established clean-speech benchmarks. Together, these results show that voice AI should be evaluated as a profile of acoustic, expressive, interactional, and robustness capabilities rather than by a single aggregate score.",
+      "external_ids": [
+        "arxiv:2607.14846"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-17T12:11:04+08:00",
+      "last_seen_at": "2026-07-17T12:11:04+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.14754",
+      "arxiv_version": "v1",
+      "title": "FlowGuard: From Signals to Evidence for MCP Security Detection",
+      "authors": [
+        "Baichao An",
+        "Pei Chen",
+        "Geng Hong",
+        "Yueyue Chen",
+        "Mengying Wu"
+      ],
+      "published": "2026-07-16",
+      "url": "https://arxiv.org/abs/2607.14754",
+      "abstract": "The Model Context Protocol (MCP) enables LLM agents to interact with external tools through metadata exchange, tool invocation, and response consumption. Existing MCP security scanners primarily reason about suspicious semantic signals rather than real execution behaviors, which can lead to unreliable risk assessment. For example, credential-like strings may simply be placeholders rather than actual leakage. This gap requires runtime evidence for execution-related risks and careful semantic analysis for risks carried in metadata or returned content. We present FlowGuard, an evidence-grounded MCP security detection system. FlowGuard combines semantic risk triage, recon-guided payload narrowing, schema-valid probe generation, evidence adjudication, and history-guided refinement. It verifies execution-related risks through runtime evidence and detects semantic risks in tool metadata and returned content. We evaluate FlowGuard on an executable benchmark containing 1,880 MCP cases across five vulnerability categories. FlowGuard achieves F1 scores of 0.879 and 0.942 on the execution-related Command Injection and File System Access categories, respectively. Compared with existing dynamic scanners, FlowGuard reduces end-to-end latency by up to 2.23x. In the real-world evaluation, FlowGuard reports 523 findings across 326 servers. These results show that evidence-grounded detection can assess both execution-related and semantic risks in MCP interactions.",
+      "external_ids": [
+        "arxiv:2607.14754"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-17T12:11:04+08:00",
+      "last_seen_at": "2026-07-17T12:11:04+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.14710",
+      "arxiv_version": "v1",
+      "title": "Variational Inference for Bird's Eye View Segmentation in Autonomous Driving",
+      "authors": [
+        "Jingyue Shi",
+        "Huaicheng Li",
+        "Junhui Zhao",
+        "Yanxiang Jiang"
+      ],
+      "published": "2026-07-16",
+      "url": "https://arxiv.org/abs/2607.14710",
+      "abstract": "The bird's eye view (BEV) has emerged as a pivotal approach for environmental perception in autonomous driving, providing a unified spatial representation for vehicles. Nevertheless, despite BEV's significance in addressing the challenges inherent to autonomous driving, effectively fusing data from multiple camera sensors and operating in complex external driving environments remains a considerable challenge. To mitigate this issue, we recast the BEV segmentation problem within a variational inference framework. In this paper, we propose a novel transformer-based variational flow transformation network for BEV segmentation, denoted as TVB. Our architecture implicitly learns the mapping from multiple camera views to a unified canonical BEV map during training by exploiting posterior BEV supervision. TVB employs a conditional variational auto encoder (CVAE) as its backbone and produces multiple BEV map candidates. To augment the realism of the generated BEV maps, we integrate normalizing flows into the map generation process, enabling the construction of more complex and expressive probability distributions. Furthermore, we design a BEV-attention fusion (BAF) module that harnesses attention mechanisms to adaptively integrate the multiple candidate BEV maps. Experimental results, evaluated on both the nuScenes and OPV2Vdatasets, demonstrate that our proposed method achieves superior performance in multi-camera view BEV segmentation and lane environment perception.",
+      "external_ids": [
+        "arxiv:2607.14710"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-17T12:11:04+08:00",
+      "last_seen_at": "2026-07-17T12:11:04+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.14707",
+      "arxiv_version": "v1",
+      "title": "Harnessing LLMs for Reliable Academic Supervision: A Comparative Study",
+      "authors": [
+        "Akash Raj"
+      ],
+      "published": "2026-07-16",
+      "url": "https://arxiv.org/abs/2607.14707",
+      "abstract": "Large language models routinely produce fluent answers to single-shot prompts, yet deploying them as reliable components of a domain decision system is substantially harder. Closing this gap is the work of harness engineering: the deliberate composition of deterministic scaffolding (symbolic filters, retrieval, schema-typed I/O, LLM-as-judge loops, HITL gates, persistent state, audit trails) around an LLM core. We present a case study in academic supervision, a domain combining high-stakes recommendation, longitudinal accountability, and structured operational workflows. We compare a baseline (ASA), a GPT-5 chatbot with no scaffolding, against a multi-module system (ASuS) that wraps the much smaller GPT-4o-mini in a LangGraph harness with symbolic-semantic retrieval, schema-validated outputs, LLM-as-judge with bounded retry, HITL gates, deterministic weighted risk scoring with LLM narration, and a per-node SQLite audit trail. The evaluation rubric is retargeted at six harness-mechanism dimensions (grounding, explainability, consistency, process integrity, cognitive load, constraint adherence). A blind ten-rater hybrid evaluation, supplemented by a 2 x 2 model-harness ablation, finds that ASuS, despite using a much smaller base model, outscores ASA on every dimension. Across ten raters the pooled mean for ASuS is 4.08 versus 1.23 for ASA, and 8 of 10 raters reject the null at alpha = 0.05 on a paired Wilcoxon test; full numbers are in Sections 6.4 and 6.7. The ablation confirms that the structural contributions of the harness are largely model-invariant. We extract seven recurring harness-engineering patterns and argue that where reliability, traceability, and institutional consistency matter more than open-ended fluency, harness engineering challenges the prevailing 'bigger model is better' intuition.",
+      "external_ids": [
+        "arxiv:2607.14707"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-17T12:11:04+08:00",
+      "last_seen_at": "2026-07-17T12:11:04+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.14651",
+      "arxiv_version": "v1",
+      "title": "MemPoison: Uncovering Persistent Memory Threats and Structural Blind Spots in LLM Agents",
+      "authors": [
+        "Jifeng Gao",
+        "Kang Xia",
+        "Yi Zhang",
+        "Xiaobin Hong",
+        "Mingkai Lin",
+        "Xingshen Wei",
+        "Wenzhong Li",
+        "Sanglu Lu"
+      ],
+      "published": "2026-07-16",
+      "url": "https://arxiv.org/abs/2607.14651",
+      "abstract": "Persistent external memory enhances agent continuity but introduces persistent security vulnerabilities: adversarial content can be injected via standard interaction channels, retained across turns, and later distort downstream behavior. To address this challenge, we propose MemPoison, a comprehensive benchmark and analysis framework featuring 1227 hand-validated cases across four attack types, three injection channels, and three representative memory substrates, evaluated on seven open-weight and three closed-weight model families. We introduce a three-tier taxonomy: (L1) direct single-record corruption, (L2) compositional multi-record corruption and (L3) context-triggered dormant corruption. Our evaluations reveal a distinct defense frontier: while baseline write-time defenses, such as consistency checks, substantially suppress direct L1 attacks, they fail to reliably suppress L2 and L3 attacks. Through mechanistic influence decomposition (MID), we demonstrate structural blind spots in write-time defenses, which admit seemingly benign records that later become harmful through joint retrieval composition or trigger-conditioned activation. Our findings advocate for shifting from static filtering to adaptive, context-sensitive memory defense strategies.",
+      "external_ids": [
+        "arxiv:2607.14651"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-17T12:11:04+08:00",
+      "last_seen_at": "2026-07-17T12:11:04+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.14642",
+      "arxiv_version": "v1",
+      "title": "MCPEvol-Bench: Benchmarking LLM Agent Performance Across Dynamic Evolutions of MCP Servers",
+      "authors": [
+        "Huanxi Liu",
+        "Kun Hu",
+        "Jiaqi Liao",
+        "Qiang Wang",
+        "Pengfei Qian",
+        "YuanZhao Zhai",
+        "Dawei Feng",
+        "Bo Ding",
+        "Huaimin Wang"
+      ],
+      "published": "2026-07-16",
+      "url": "https://arxiv.org/abs/2607.14642",
+      "abstract": "As Model Context Protocol (MCP) servers emerge as the core infrastructure for connecting LLMs with external tools, existing benchmarks leverage real-world MCP servers to evaluate LLM agents' tool-using capabilities. However, these benchmarks overlook the continuous evolution of tool interfaces and functionalities within MCP servers, resulting in flawed assessments that fail to capture the agent's adaptability in changing tool landscapes. To bridge this gap, we introduce \\textbf{MCPEvol-Bench}, a novel benchmark for evaluating the task-solving capabilities of LLM agents under dynamic toolset evolution. Inspired by large-scale empirical study, we propose 11 mutation operators to simulate realistic tool evolution within 123 MCP servers. We benchmark 12 state-of-the-art LLMs on multiple versions of MCP servers, revealing that even frontier models struggle to adapt to evolving tools. For instance, GPT-5.4 and Claude-Sonnet-4-6 exhibit performance declines of 13.7\\% and 14.4\\% in evolved MCP servers, respectively, accompanied by substantial increases in planning and reasoning errors. These findings highlight the vulnerability of LLM-driven workflows, establishing MCPEvol-Bench as a standard for evaluating agent adaptability in dynamic tool environments.",
+      "external_ids": [
+        "arxiv:2607.14642"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-17T12:11:04+08:00",
+      "last_seen_at": "2026-07-17T12:11:04+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.14574",
+      "arxiv_version": "v1",
+      "title": "Collaborative Spatial Learning with Multi-LLM Agents in Networked Social Experiments",
+      "authors": [
+        "Hao He",
+        "Chris J. Kuhlman",
+        "Xinwei Deng"
+      ],
+      "published": "2026-07-16",
+      "url": "https://arxiv.org/abs/2607.14574",
+      "abstract": "Collective problem solving often requires that group members consider the tradeoff between exploitation of known solutions and exploration for new ones, where information of known solutions can be disseminated among individual members through communication networks. The Mason--Watts experiment (PNAS 2012) showed that human groups in shorter-path networks outperform those in longer-path networks on a two-dimensional search task. In this work, we focus on the investigation of such network-efficiency effects in the setting of a group of large language model (LLM) agents. Specifically, we consider groups of sixteen LLM agents playing the Mason--Watts experiment on the eight Mason--Watts network topologies. Moreover, we develop mechanistic Bayesian optimization agents such that the performance of LLM agents can be compared with both the mechanistic agents and the human experimental data. Our computational experiments indicate that the LLM agents show a significant network-efficiency effect when instructed to randomize their first-round choices, but not under the default initialization. In this experiment, adding a one-sentence first-round randomization instruction improves collective payoff by more than three times the estimated payoff difference across the eight network topologies. Also, the Bayesian optimization agents obtain higher payoffs than the evaluated LLM agents on this spatial search task. We further compare the agents' exploration--exploitation behavior, copying, and spatial diversity.",
+      "external_ids": [
+        "arxiv:2607.14574"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-17T12:11:04+08:00",
+      "last_seen_at": "2026-07-17T12:11:04+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.14512",
+      "arxiv_version": "v1",
+      "title": "RetroAgent: Harnessing LLMs to Search Over Structured Memory for Agentic Retrosynthesis Planning",
+      "authors": [
+        "Yanqiao Zhu",
+        "Jingru Gan",
+        "Xiaoqi Sun",
+        "Fang Sun",
+        "Yidan Shi",
+        "Md Mofijul Islam",
+        "Chao Shang",
+        "Wenhao Gao",
+        "Connor W. Coley",
+        "Yizhou Sun",
+        "Wei Wang"
+      ],
+      "published": "2026-07-16",
+      "url": "https://arxiv.org/abs/2607.14512",
+      "abstract": "Multi-step retrosynthesis planning seeks to decompose a target molecule into commercially available building blocks through a sequence of feasible reactions. The vast combinatorial search space makes this task challenging even for expert chemists. Traditional methods combine tree search with offline-trained value networks that score candidates in isolation, without reasoning about complete multi-step routes. Recent work leverages Large Language Models (LLMs) for this task, but relies on simple interfaces that limit exploration of the full search space. We introduce RetroAgent, an LLM agent that bridges symbolic search and neural reasoning through a harness with structured memory. Through memory and chemistry tools, the agent observes the full search state, including explored routes, available alternatives, and properties of intermediates, enabling informed decisions grounded in both global progress and domain knowledge. Experiments on in-distribution and out-of-distribution benchmarks demonstrate that RetroAgent delivers strong performance and generalization.",
+      "external_ids": [
+        "arxiv:2607.14512"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-17T12:11:04+08:00",
+      "last_seen_at": "2026-07-17T12:11:04+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.14336",
+      "arxiv_version": "v1",
+      "title": "Copy-on-Write Scoring: Application-Specific Agent Evaluations",
+      "authors": [
+        "Joanna Roy",
+        "Sven Hoelzel"
+      ],
+      "published": "2026-07-15",
+      "url": "https://arxiv.org/abs/2607.14336",
+      "abstract": "Trustworthy deployment of LLM-based agents in software systems requires evaluating how they perform on application-specific workflows, with enough granularity to localize where they succeed and fail. Yet existing agent evaluation mechanisms are limited: benchmarks have low construct validity for application-specific workflows and environments, and replica evaluation environments are expensive and prone to drift. We propose Copy-on-Write (CoW) Scoring, a framework that evaluates agent operations directly within application environments using a PostgreSQL-level Copy-on-Write mechanism to isolate agent writes. CoW Scoring produces session- and operation-level scores that highlight where agents' database write operations succeed and fail in a given application environment, enabling inexpensive evaluation and iteration on agent harnesses and tool surfaces. We demonstrate the framework on Plane, an open-source project-management platform, where analysis surfaced specific issues in the tool surface, and corresponding fixes produced measurable improvements on affected models. Python library: https://github.com/trail-ml/agent-cow-python",
+      "external_ids": [
+        "arxiv:2607.14336"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-17T12:11:04+08:00",
+      "last_seen_at": "2026-07-17T12:11:04+08:00"
+    },
     {
       "source": "arxiv",
       "arxiv_id": "2607.14082",
@@ -1352,7 +1888,7 @@
       ],
       "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00",
+      "last_seen_at": "2026-07-17T12:11:04+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -1377,7 +1913,7 @@
       ],
       "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00",
+      "last_seen_at": "2026-07-17T12:11:04+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -1403,7 +1939,7 @@
       ],
       "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00",
+      "last_seen_at": "2026-07-17T12:11:04+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -1432,7 +1968,7 @@
       ],
       "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00",
+      "last_seen_at": "2026-07-17T12:11:04+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -1488,7 +2024,7 @@
       ],
       "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00",
+      "last_seen_at": "2026-07-17T12:11:04+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -1518,7 +2054,7 @@
       ],
       "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00",
+      "last_seen_at": "2026-07-17T12:11:04+08:00",
       "promoted_tier": "C",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -1554,7 +2090,7 @@
       ],
       "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00",
+      "last_seen_at": "2026-07-17T12:11:04+08:00",
       "promoted_tier": "A",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -1596,7 +2132,7 @@
       ],
       "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00",
+      "last_seen_at": "2026-07-17T12:11:04+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -1630,7 +2166,7 @@
       ],
       "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00",
+      "last_seen_at": "2026-07-17T12:11:04+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -1657,7 +2193,7 @@
       ],
       "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00",
+      "last_seen_at": "2026-07-17T12:11:04+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -1687,7 +2223,7 @@
       ],
       "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00",
+      "last_seen_at": "2026-07-17T12:11:04+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -1718,7 +2254,7 @@
       ],
       "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00",
+      "last_seen_at": "2026-07-17T12:11:04+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -1748,7 +2284,7 @@
       ],
       "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00",
+      "last_seen_at": "2026-07-17T12:11:04+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -1775,7 +2311,7 @@
       ],
       "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00",
+      "last_seen_at": "2026-07-17T12:11:04+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -1801,12 +2337,12 @@
       ],
       "status": "skipped",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00",
+      "last_seen_at": "2026-07-17T12:11:04+08:00",
       "skip_reason": "book / weak harness sense"
     }
   ],
   "last_run": {
-    "at": "2026-07-16T12:11:20+08:00",
+    "at": "2026-07-17T12:11:04+08:00",
     "sources": [
       "arxiv",
       "semanticscholar",
@@ -1817,8 +2353,8 @@
       "\"LLM agent\" harness",
       "test-time harness evolution"
     ],
-    "fetched": 85,
-    "merged": 49,
-    "new": 27
+    "fetched": 65,
+    "merged": 34,
+    "new": 18
   }
 }
