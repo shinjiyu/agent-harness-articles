@@ -1,8 +1,269 @@
 {
   "schema_version": 1,
   "topic": "agent harness",
-  "updated_at": "2026-07-18T11:58:26+08:00",
+  "updated_at": "2026-07-19T12:24:40+08:00",
   "candidates": [
+    {
+      "source": "semanticscholar",
+      "arxiv_id": "2606.14249",
+      "doi": "",
+      "title": "HarnessX: A Composable, Adaptive, and Evolvable Agent Harness Foundry",
+      "authors": [
+        "Tingyang Chen",
+        "Shuo Lu",
+        "Kangjia Zhao",
+        "Weicheng Meng",
+        "H. Teng",
+        "Tianhao Li",
+        "Chao Li",
+        "Xule Liu",
+        "Jian Liang",
+        "Zhizhong Zhang",
+        "Yuan Xie",
+        "Hengxu Qu",
+        "Kun Shao",
+        "Jian Luan"
+      ],
+      "published": "2026-06-12",
+      "url": "https://arxiv.org/abs/2606.14249",
+      "abstract": "AI agent performance depends critically on the runtime harness, comprising the prompts, tools, memory, and control flow that mediate how a model observes, reasons, and acts. Yet today's harnesses remain largely hand-crafted and static: each new model or task still demands bespoke scaffolding, and the rich traces produced during execution are rarely distilled back into systematic improvement. We introduce HarnessX, a foundry for composable, adaptive, and evolvable agent harnesses. HarnessX assembles typed harness primitives via a substitution algebra, adapts them through AEGIS, a trace-driven multi-agent evolution engine grounded in an operational mirror between symbolic adaptation and reinforcement learning, and closes the harness-model loop by turning trajectories into both harness updates and model training signal. Across five benchmarks (ALFWorld, GAIA, WebShop, tau^3-Bench, and SWE-bench Verified), HarnessX yields an average gain of +14.5% (up to +44.0%), with gains largest where baselines are lowest. These results suggest that agent progress need not come from model scaling alone: composing and evolving runtime interfaces from execution feedback is an actionable and complementary lever. The complete codebase will be open-sourced in a future release.",
+      "external_ids": [
+        "s2:6cf1b4d69f71c923cfeaeb8546da9c2ba563d941",
+        "arxiv:2606.14249"
+      ],
+      "sources": [
+        "semanticscholar"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-19T12:24:40+08:00",
+      "last_seen_at": "2026-07-19T12:24:40+08:00"
+    },
+    {
+      "source": "semanticscholar",
+      "arxiv_id": "2605.21825",
+      "doi": "10.48550/arXiv.2605.21825",
+      "title": "Toward AI VIS Co-Scientists: A General and End-to-End Agent Harness for Solving Complex Data Visualization Tasks",
+      "authors": [
+        "Haichao Miao",
+        "Zhimin Li",
+        "Kuangshi Ai",
+        "Kaiyuan Tang",
+        "Chaoli Wang",
+        "P. Bremer",
+        "Shusen Liu"
+      ],
+      "published": "2026-05-20",
+      "url": "https://arxiv.org/abs/2605.21825",
+      "abstract": "The ability to inspect, interpret, and communicate complex data is crucial for virtually any scientific endeavor, but often requires significant expertise outside the core domain ranging from data management and analysis to visualization design and implementation. We present an end-to-end agentic harness that, based on only the data and a high level description of the tasks, independently designs custom visual analysis applications (VIS apps). This represents an important step towards a general AI co-scientist envisioned by many as an autonomous system that can autonomously execute long horizon tasks based on high-level directions. Our proposed VIS co-scientist is an essential component of this broader AI co-scientist vision: a harness that can autonomously analyze data and design visualization solutions using a collection of agents and specialized skills that coordinate exploratory analysis, plan, configure the environment, implement, validate the interface, and most importantly evaluate the overall task completion. Each stage produces document and instruction artifacts that guide downstream work and enable iterative refinement. We validate this approach on IEEE SciVis Contests spanning multiple science and engineering fields. These contests serve as ideal proving grounds because they encode real-world complexity: ambiguous requirements, diverse data modalities, design trade-offs, and task-driven validation. Given only the data and target tasks, our system autonomously produces functional single-page VIS Apps with verified linked-view behavior, highly customized to domain experts'specified tasks and needs.",
+      "external_ids": [
+        "s2:725c84656b531c47bd2052c3ea387ce6a7c51cfe",
+        "arxiv:2605.21825",
+        "doi:10.48550/arxiv.2605.21825"
+      ],
+      "sources": [
+        "semanticscholar"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-19T12:24:40+08:00",
+      "last_seen_at": "2026-07-19T12:24:40+08:00"
+    },
+    {
+      "source": "semanticscholar",
+      "arxiv_id": "2605.18747",
+      "doi": "10.48550/arXiv.2605.18747",
+      "title": "Code as Agent Harness",
+      "authors": [
+        "Xuying Ning",
+        "Katherine Tieu",
+        "Dongqi Fu",
+        "Tianxin Wei",
+        "Zihao Li",
+        "Yuanchen Bei",
+        "Jiaru Zou",
+        "Mengting Ai",
+        "Zhining Liu",
+        "Tingxi Li",
+        "Lingjie Chen",
+        "Yanjun Zhao",
+        "K. Yang",
+        "Bingxuan Li",
+        "Chen Qian",
+        "Gaotang Li",
+        "Xia Lin",
+        "Zhichen Zeng",
+        "Ruizhong Qiu",
+        "Sirui Chen",
+        "Yifan Sun",
+        "Xiyuan Yang",
+        "Ruida Wang",
+        "Rui Pan",
+        "Chenyuan Yang",
+        "Dylan Zhang",
+        "Liri Fang",
+        "Zikun Cui",
+        "Yang Cao",
+        "Pan Chen",
+        "Dorothy Sun",
+        "Ren Chen",
+        "Mahesh Srinivasan",
+        "N. Mathur",
+        "Yinglong Xia",
+        "Hong Li",
+        "Hong Yan",
+        "Pan Lu",
+        "Lingming Zhang",
+        "Tong Zhang",
+        "Hanghang Tong",
+        "Jingrui He"
+      ],
+      "published": "2026-05-18",
+      "url": "https://arxiv.org/abs/2605.18747",
+      "abstract": "Recent large language models (LLMs) have demonstrated strong capabilities in understanding and generating code, from competitive programming to repository-level software engineering. In emerging agentic systems, code is no longer only a target output. It increasingly serves as an operational substrate for agent reasoning, acting, environment modeling, and execution-based verification. We frame this shift through the lens of agent harnesses and introduce code as agent harness: a unified view that centers code as the basis for agent infrastructure. To systematically study this perspective, we organize the survey around three connected layers. First, we study the harness interface, where code connects agents to reasoning, action, and environment modeling. Second, we examine harness mechanisms: planning, memory, and tool use for long-horizon execution, together with feedback-driven control and optimization that make harness reliable and adaptive. Third, we discuss scaling the harness from single-agent systems to multi-agent settings, where shared code artifacts support multi-agent coordination, review, and verification. Across these layers, we summarize representative methods and practical applications of code as agent harness, spanning coding assistants, GUI/OS automation, embodied agents, scientific discovery, personalization and recommendation, DevOps, and enterprise workflows. We further outline open challenges for harness engineering, including evaluation beyond final task success, verification under incomplete feedback, regression-free harness improvement, consistent shared state across multiple agents, human oversight for safety-critical actions, and extensions to multimodal environments. By centering code as the harness of agentic AI, this survey provides a unified roadmap toward executable, verifiable, and stateful AI agent systems.",
+      "external_ids": [
+        "s2:3546d029ae83ba06a36410a1eea6c99e0d8001fb",
+        "arxiv:2605.18747",
+        "doi:10.48550/arxiv.2605.18747"
+      ],
+      "sources": [
+        "semanticscholar"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-19T12:24:40+08:00",
+      "last_seen_at": "2026-07-19T12:24:40+08:00"
+    },
+    {
+      "source": "semanticscholar",
+      "arxiv_id": "2605.14271",
+      "doi": "10.48550/arXiv.2605.14271",
+      "title": "Auditing Agent Harness Safety",
+      "authors": [
+        "Chengzhi Liu",
+        "Yicheng Guo",
+        "Yepeng Liu",
+        "Yuzhe Yang",
+        "Qianqi Yan",
+        "Xuandong Zhao",
+        "Wenyue Hua",
+        "Shengchao Liu",
+        "Sharon Li",
+        "Yuheng Bu",
+        "X. Wang"
+      ],
+      "published": "2026-05-14",
+      "url": "https://arxiv.org/abs/2605.14271",
+      "abstract": "LLM agents increasingly run inside execution harnesses that dispatch tools, allocate resources, and route messages between specialized components. However, a harness can return a correct, benign answer over a trajectory that accesses unauthorized resources or leaks context to the wrong agent. Output-level evaluation cannot see these failures, yet most safety benchmarks score only final outputs or terminal states, even though many violations occur mid-trajectory rather than at termination. The central question is whether the harness respects user intent, permission boundaries, and information-flow constraints throughout execution. To address this gap, we propose HarnessAudit, a framework that audits full execution trajectories across boundary compliance, execution fidelity, and system stability, with a focus on multi-agent harnesses where these risks are most pronounced. We further introduce HarnessAudit-Bench, a benchmark of 210 tasks across eight real-world domains, instantiated in both single-agent and multi-agent configurations with embedded safety constraints. Evaluating ten harness configurations across frontier models and three multi-agent frameworks, we find that: (i) task completion is misaligned with safe execution, and violations accumulate with trajectory length; (ii) safety risks vary across domains, task types, and agent roles; (iii) most violations concentrate in resource access and inter-agent information transfer; and (iv) multi-agent collaboration expands the safety risk surface, while harness design sets the upper bound of safe deployment.",
+      "external_ids": [
+        "s2:7d89c6d4c6b401f4d8e6e9759f25b3578e206e0f",
+        "arxiv:2605.14271",
+        "doi:10.48550/arxiv.2605.14271"
+      ],
+      "sources": [
+        "semanticscholar"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-19T12:24:40+08:00",
+      "last_seen_at": "2026-07-19T12:24:40+08:00"
+    },
+    {
+      "source": "semanticscholar",
+      "arxiv_id": "2605.00663",
+      "doi": "10.48550/arXiv.2605.00663",
+      "title": "Affordance Agent Harness: Verification-Gated Skill Orchestration",
+      "authors": [
+        "Haojian Huang",
+        "Jiahao Shi",
+        "Yinchuan Li",
+        "Ying-Cong Chen"
+      ],
+      "published": "2026-05-01",
+      "url": "https://arxiv.org/abs/2605.00663",
+      "abstract": "Affordance grounding requires identifying where and how an agent should interact in open-world scenes, where actionable regions are often small, occluded, reflective, and visually ambiguous. Recent systems therefore combine multiple skills (e.g., detection, segmentation, interaction-imagination), yet most orchestrate them with fixed pipelines that are poorly matched to per-instance difficulty, offer limited targeted recovery from intermediate errors, and fail to reuse experience from recurring objects. These failures expose a systems problem: test-time grounding must acquire the right evidence, decide whether that evidence is reliable enough to commit, and do so under bounded inference cost without access to labels. We propose Affordance Agent Harness, a closed-loop runtime that unifies heterogeneous skills with an evidence store and cost control, retrieves episodic memories to provide priors for recurring categories, and employs a Router to adaptively select and parameterize skills. An affordance-specific Verifier then gates commitments using self-consistency, cross-scale stability, and evidence sufficiency, triggering targeted retries before a final judge fuses accumulated evidence and trajectories into the prediction. Experiments on multiple affordance benchmarks and difficulty-controlled subsets show a stronger accuracy-cost Pareto frontier than fixed-pipeline baselines, improving grounding quality while reducing average skill calls and latency. Project page: https://tenplusgood.github.io/a-harness-page/.",
+      "external_ids": [
+        "s2:48dbe3b9802b06efda124a6d85400f541af67a78",
+        "arxiv:2605.00663",
+        "doi:10.48550/arxiv.2605.00663"
+      ],
+      "sources": [
+        "semanticscholar"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-19T12:24:40+08:00",
+      "last_seen_at": "2026-07-19T12:24:40+08:00"
+    },
+    {
+      "source": "semanticscholar",
+      "arxiv_id": "2603.20380",
+      "doi": "",
+      "title": "Herding CATs: ALARA for Agent Harness Engineering in Portable Composable Multi-Agent Teams",
+      "authors": [
+        "Christopher J. Agostino",
+        "Nayan D'Souza"
+      ],
+      "published": "2026-03-20",
+      "url": "https://arxiv.org/abs/2603.20380",
+      "abstract": "Industry practitioners and academic researchers regularly use multi-agent systems to accelerate their work, but the applications through which users operate these systems do not provide a simple, unified mechanism for scalably managing critical components of the agent harness. This lack of control adversely impacts both the quality of individual human-agent interactions and reduces the capacity for practitioners to coordinate context engineering efforts. The behavioral specifications that define what agents in such systems can do remain fragmented across prose instruction files -- for which compliance cannot be guaranteed -- or framework-internal configurations, making these specifications difficult to share, version, or collaboratively maintain across teams and projects. Applying the ALARA principle from radiation safety (exposures kept as low as reasonably achievable) to context, we introduce a context-agent-tool (CAT) data layer expressed through interrelated plain-text files, allowing users to directly declare tool access for each agent and to modify the tools themselves that are used by the agents when processing. We demonstrate capability of this CAT data layer to enable real agentic usage by using a command-line shell that loads the team and executes agent runs -- \\texttt{npcsh} -- and evaluating 22 locally-hosted models from 0.6B to 35B parameters across 115 practical tasks spanning file operations, web search, multi-step scripting, tool chaining, and multi-agent delegation. We characterize which model families succeed in certain task categories and where they break down across $\\sim$2500 total executions.",
+      "external_ids": [
+        "s2:5a27d00a27964d299975fe48f6406630781ff985",
+        "arxiv:2603.20380"
+      ],
+      "sources": [
+        "semanticscholar"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-19T12:24:40+08:00",
+      "last_seen_at": "2026-07-19T12:24:40+08:00"
+    },
+    {
+      "source": "semanticscholar",
+      "arxiv_id": "2504.04785",
+      "doi": "10.48550/arXiv.2504.04785",
+      "title": "Weak-for-Strong: Training Weak Meta-Agent to Harness Strong Executors",
+      "authors": [
+        "Fan Nie",
+        "Lang Feng",
+        "Haotian Ye",
+        "Weixin Liang",
+        "Pan Lu",
+        "Huaxiu Yao",
+        "Alexandre Alahi",
+        "James Zou"
+      ],
+      "published": "2025-04-07",
+      "url": "https://arxiv.org/abs/2504.04785",
+      "abstract": "Efficiently leveraging of the capabilities of contemporary large language models (LLMs) is increasingly challenging, particularly when direct fine-tuning is expensive and often impractical. Existing training-free methods, including manually or automated designed workflows, typically demand substantial human effort or yield suboptimal results. This paper proposes Weak-for-Strong Harnessing (W4S), a novel framework that customizes smaller, cost-efficient language models to design and optimize workflows for harnessing stronger models. W4S formulates workflow design as a multi-turn markov decision process and introduces reinforcement learning for agentic workflow optimization (RLAO) to train a weak meta-agent. Through iterative interaction with the environment, the meta-agent learns to design increasingly effective workflows without manual intervention. Empirical results demonstrate the superiority of W4S that our 7B meta-agent, trained with just one GPU hour, outperforms the strongest baseline by 2.9% ~ 24.6% across eleven benchmarks, successfully elevating the performance of state-of-the-art models such as GPT-3.5-Turbo and GPT-4o. Notably, W4S exhibits strong generalization capabilities across both seen and unseen tasks, offering an efficient, high-performing alternative to directly fine-tuning strong models.",
+      "external_ids": [
+        "s2:a45091a43189ae7657dbdc7e1a79b6684209c6f8",
+        "arxiv:2504.04785",
+        "doi:10.48550/arxiv.2504.04785"
+      ],
+      "sources": [
+        "semanticscholar"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-19T12:24:40+08:00",
+      "last_seen_at": "2026-07-19T12:24:40+08:00"
+    },
     {
       "source": "arxiv",
       "arxiv_id": "2607.15272",
@@ -32,7 +293,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-07-17T12:11:04+08:00",
-      "last_seen_at": "2026-07-18T11:58:26+08:00"
+      "last_seen_at": "2026-07-19T12:24:40+08:00"
     },
     {
       "source": "arxiv",
@@ -71,7 +332,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-07-17T12:11:04+08:00",
-      "last_seen_at": "2026-07-18T11:58:26+08:00"
+      "last_seen_at": "2026-07-19T12:24:40+08:00"
     },
     {
       "source": "arxiv",
@@ -97,7 +358,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-07-17T12:11:04+08:00",
-      "last_seen_at": "2026-07-18T11:58:26+08:00"
+      "last_seen_at": "2026-07-19T12:24:40+08:00"
     },
     {
       "source": "arxiv",
@@ -125,7 +386,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-07-17T12:11:04+08:00",
-      "last_seen_at": "2026-07-18T11:58:26+08:00"
+      "last_seen_at": "2026-07-19T12:24:40+08:00"
     },
     {
       "source": "arxiv",
@@ -154,7 +415,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-07-17T12:11:04+08:00",
-      "last_seen_at": "2026-07-18T11:58:26+08:00"
+      "last_seen_at": "2026-07-19T12:24:40+08:00"
     },
     {
       "source": "arxiv",
@@ -180,7 +441,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-07-17T12:11:04+08:00",
-      "last_seen_at": "2026-07-18T11:58:26+08:00"
+      "last_seen_at": "2026-07-19T12:24:40+08:00"
     },
     {
       "source": "arxiv",
@@ -206,7 +467,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-07-17T12:11:04+08:00",
-      "last_seen_at": "2026-07-18T11:58:26+08:00"
+      "last_seen_at": "2026-07-19T12:24:40+08:00"
     },
     {
       "source": "arxiv",
@@ -234,7 +495,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-07-17T12:11:04+08:00",
-      "last_seen_at": "2026-07-18T11:58:26+08:00"
+      "last_seen_at": "2026-07-19T12:24:40+08:00"
     },
     {
       "source": "arxiv",
@@ -273,7 +534,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-07-17T12:11:04+08:00",
-      "last_seen_at": "2026-07-18T11:58:26+08:00"
+      "last_seen_at": "2026-07-19T12:24:40+08:00"
     },
     {
       "source": "arxiv",
@@ -310,7 +571,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-07-17T12:11:04+08:00",
-      "last_seen_at": "2026-07-18T11:58:26+08:00"
+      "last_seen_at": "2026-07-19T12:24:40+08:00"
     },
     {
       "source": "arxiv",
@@ -338,7 +599,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-07-17T12:11:04+08:00",
-      "last_seen_at": "2026-07-18T11:58:26+08:00"
+      "last_seen_at": "2026-07-19T12:24:40+08:00"
     },
     {
       "source": "arxiv",
@@ -365,7 +626,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-07-17T12:11:04+08:00",
-      "last_seen_at": "2026-07-18T11:58:26+08:00"
+      "last_seen_at": "2026-07-19T12:24:40+08:00"
     },
     {
       "source": "arxiv",
@@ -389,7 +650,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-07-17T12:11:04+08:00",
-      "last_seen_at": "2026-07-18T11:58:26+08:00"
+      "last_seen_at": "2026-07-19T12:24:40+08:00"
     },
     {
       "source": "arxiv",
@@ -420,7 +681,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-07-17T12:11:04+08:00",
-      "last_seen_at": "2026-07-18T11:58:26+08:00"
+      "last_seen_at": "2026-07-19T12:24:40+08:00"
     },
     {
       "source": "arxiv",
@@ -452,7 +713,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-07-17T12:11:04+08:00",
-      "last_seen_at": "2026-07-18T11:58:26+08:00"
+      "last_seen_at": "2026-07-19T12:24:40+08:00"
     },
     {
       "source": "arxiv",
@@ -478,7 +739,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-07-17T12:11:04+08:00",
-      "last_seen_at": "2026-07-18T11:58:26+08:00"
+      "last_seen_at": "2026-07-19T12:24:40+08:00"
     },
     {
       "source": "arxiv",
@@ -512,7 +773,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-07-17T12:11:04+08:00",
-      "last_seen_at": "2026-07-18T11:58:26+08:00"
+      "last_seen_at": "2026-07-19T12:24:40+08:00"
     },
     {
       "source": "arxiv",
@@ -537,7 +798,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-07-17T12:11:04+08:00",
-      "last_seen_at": "2026-07-18T11:58:26+08:00"
+      "last_seen_at": "2026-07-19T12:24:40+08:00"
     },
     {
       "source": "arxiv",
@@ -1888,7 +2149,7 @@
       ],
       "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-18T11:58:26+08:00",
+      "last_seen_at": "2026-07-19T12:24:40+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -1913,7 +2174,7 @@
       ],
       "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-18T11:58:26+08:00",
+      "last_seen_at": "2026-07-19T12:24:40+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -1939,7 +2200,7 @@
       ],
       "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-18T11:58:26+08:00",
+      "last_seen_at": "2026-07-19T12:24:40+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -1968,7 +2229,7 @@
       ],
       "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-18T11:58:26+08:00",
+      "last_seen_at": "2026-07-19T12:24:40+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -2024,7 +2285,7 @@
       ],
       "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-18T11:58:26+08:00",
+      "last_seen_at": "2026-07-19T12:24:40+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -2054,7 +2315,7 @@
       ],
       "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-18T11:58:26+08:00",
+      "last_seen_at": "2026-07-19T12:24:40+08:00",
       "promoted_tier": "C",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -2090,7 +2351,7 @@
       ],
       "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-18T11:58:26+08:00",
+      "last_seen_at": "2026-07-19T12:24:40+08:00",
       "promoted_tier": "A",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -2132,7 +2393,7 @@
       ],
       "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-18T11:58:26+08:00",
+      "last_seen_at": "2026-07-19T12:24:40+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -2166,7 +2427,7 @@
       ],
       "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-18T11:58:26+08:00",
+      "last_seen_at": "2026-07-19T12:24:40+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -2193,7 +2454,7 @@
       ],
       "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-18T11:58:26+08:00",
+      "last_seen_at": "2026-07-19T12:24:40+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -2223,7 +2484,7 @@
       ],
       "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-18T11:58:26+08:00",
+      "last_seen_at": "2026-07-19T12:24:40+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -2254,7 +2515,7 @@
       ],
       "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-18T11:58:26+08:00",
+      "last_seen_at": "2026-07-19T12:24:40+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -2284,7 +2545,7 @@
       ],
       "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-18T11:58:26+08:00",
+      "last_seen_at": "2026-07-19T12:24:40+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -2311,7 +2572,7 @@
       ],
       "status": "promoted",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-18T11:58:26+08:00",
+      "last_seen_at": "2026-07-19T12:24:40+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -2337,12 +2598,12 @@
       ],
       "status": "skipped",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-18T11:58:26+08:00",
+      "last_seen_at": "2026-07-19T12:24:40+08:00",
       "skip_reason": "book / weak harness sense"
     }
   ],
   "last_run": {
-    "at": "2026-07-18T11:58:26+08:00",
+    "at": "2026-07-19T12:24:40+08:00",
     "sources": [
       "arxiv",
       "semanticscholar",
@@ -2355,6 +2616,6 @@
     ],
     "fetched": 75,
     "merged": 44,
-    "new": 0
+    "new": 7
   }
 }
