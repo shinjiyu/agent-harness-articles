@@ -1,0 +1,629 @@
+{
+  "date": "2026-07-20",
+  "run": {
+    "at": "2026-07-20T12:38:34+08:00",
+    "sources": [
+      "arxiv",
+      "semanticscholar",
+      "dblp"
+    ],
+    "keywords": [
+      "agent harness",
+      "\"LLM agent\" harness",
+      "test-time harness evolution"
+    ],
+    "fetched": 75,
+    "merged": 41,
+    "new": 20
+  },
+  "new_candidates": [
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.16189",
+      "arxiv_version": "v1",
+      "title": "Searching Videos as Trees: Self-Correcting Agents for Grounded Long Video QA",
+      "authors": [
+        "Ce Zhang",
+        "Ziyang Wang",
+        "Yulu Pan",
+        "Oluwatumininu Oguntola",
+        "Pranav Wagh",
+        "Qiyu Wu",
+        "Hiromi Wakaki",
+        "Mohit Bansal",
+        "Gedas Bertasius"
+      ],
+      "published": "2026-07-17",
+      "url": "https://arxiv.org/abs/2607.16189",
+      "abstract": "Grounded long-video question answering (Grounded LVQA) requires answering a question about a long video while localizing the short evidence interval that supports the answer. Recent agentic methods frame this task as multi-turn exploration with a single crop_video(start, end) action, which supports coarse-to-fine narrowing but provides no primitive for fine-to-coarse backtracking. As a result, these agents typically converge prematurely and cannot recover from an early mistake. We propose VideoTreeSearch (VTS), a framework that casts grounded LVQA as iterative self-correcting search over an adaptive temporal tree. VTS constructs a non-uniform tree from visual scene boundaries so that each node corresponds to a semantically coherent segment, and trains an agent to navigate the tree through four discrete operations: zoom_in, zoom_out, shift, and answer. These operations expose backtracking and recovery as explicit, learnable primitives rather than implicit behaviors. To train this navigation, we introduce a trajectory synthesis pipeline that produces multi-step paths through the tree, including deliberate detours into incorrect branches followed by recovery. We use these trajectories for supervised fine-tuning, followed by reinforcement learning with grounding and answer-accuracy rewards. On three Grounded LVQA benchmarks (CG-Bench, Haystack-LVBench, Haystack-Ego4D), VTS outperforms the strongest prior agentic methods by +12.5 mIoU on CG-Bench and +7.4 T-F1 on Haystack-Ego4D. The learned policy also transfers to general long-video QA, surpassing all prior agentic baselines on Video-MME, MLVU, and LVBench by up to +7.1 accuracy points. Ablations confirm that self-correcting hierarchical search is the central mechanism behind these gains: removing either adaptive descent or explicit backtracking substantially degrades performance. Code is available at https://github.com/CeeZh/VTS.",
+      "external_ids": [
+        "arxiv:2607.16189"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-20T12:38:34+08:00",
+      "last_seen_at": "2026-07-20T12:38:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.16169",
+      "arxiv_version": "v1",
+      "title": "When Does Muon Help Agentic Reinforcement Learning?",
+      "authors": [
+        "Kai Ruan",
+        "Jinghao Lin",
+        "Zihe Huang",
+        "Ziqi Zhou",
+        "Qianshan Wei",
+        "Xuan Wang",
+        "Hao Sun"
+      ],
+      "published": "2026-07-17",
+      "url": "https://arxiv.org/abs/2607.16169",
+      "abstract": "Muon is competitive with AdamW in large-scale pre-training, but its value for reinforcement-learning (RL) post-training remains unclear. We study vanilla Muon in sparse-reward agentic RL through matched single-seed comparisons with AdamW on ALFWorld using Qwen2.5-0.5B-Instruct. Under Group-in-Group Policy Optimization (GiGPO), applying Muon only to hidden weight matrices raises final-window validation success from 0.290 to 0.546 (+88%); high-rate AdamW controls retain no post-update success. The effect depends on the advantage estimator and learning rate. At 3e-5, Muon improves GRPO from 0.161 to 0.268, whereas GraphGPO's late-window gap narrows near saturation. At 1e-5, GraphGPO Muon reaches 0.901, raises normalized validation AUC from 0.399 to 0.556, and reaches 0.5 and 0.75 success 30 and 60 updates earlier, respectively. These exploratory results show that Muon can benefit agentic RL and motivate studying the policy optimizer, advantage estimator, and learning rate jointly. Multi-seed and cross-task validation remain open.",
+      "external_ids": [
+        "arxiv:2607.16169"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-20T12:38:34+08:00",
+      "last_seen_at": "2026-07-20T12:38:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.16109",
+      "arxiv_version": "v1",
+      "title": "The Honest Quorum Problem: Epistemic Byzantine Fault Tolerance for Agentic Infrastructure",
+      "authors": [
+        "Jun He",
+        "Deying Yu"
+      ],
+      "published": "2026-07-17",
+      "url": "https://arxiv.org/abs/2607.16109",
+      "abstract": "State machine replication (SMR) and Byzantine fault-tolerant (BFT) consensus guarantee agreement despite a bounded number of arbitrary, colluding faulty participants. However, these guarantees rely on participants outside this set correctly executing the protocol's transition semantics. Agentic validators expose a weaker boundary: an authenticated, responsive, non-equivocating, and protocol-compliant reasoning participant may still endorse a semantically invalid transition due to reasoning errors. We call this failure mode an epistemic fault, and the collective phenomenon the Honest Quorum Problem (where \"honest\" means protocol-compliant, not semantically correct). Such a quorum can satisfy ordinary checks while forming a certificate for an invalid transition. Thus, agreement alone does not guarantee semantic validity or execution safety. Furthermore, because agentic validators often share model weights, training distributions, prompts, or toolchains, they are highly susceptible to correlated epistemic faults. We define Epistemic Byzantine Fault Tolerance (EBFT), a fault-tolerance model for agentic infrastructure and post-deterministic distributed systems. EBFT augments the conventional Byzantine fault bound with two separate, confidence-indexed quantities: $e_δ$ bounds coherent invalid endorsements outside the Byzantine set, and $u_ε$ bounds unusable validator support that degrades liveness. These quantities characterize semantic safety risk and liveness degradation independently. We derive quorum-threshold conditions for semantic validity, consensus agreement, liveness, and feasible threshold selection, and outline a calibration methodology for estimating these budgets. We show that adding nominally distinct agents improves fault tolerance only when it measurably reduces the upper-tail concentration of invalid endorsements or unusable support.",
+      "external_ids": [
+        "arxiv:2607.16109"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-20T12:38:34+08:00",
+      "last_seen_at": "2026-07-20T12:38:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.16066",
+      "arxiv_version": "v1",
+      "title": "LLM-Powered Agentic AI for 5G/6G Networks: A Tutorial and Survey on Architectures, Protocols, and Standardization",
+      "authors": [
+        "Mazene Ameur",
+        "Abdelkader Mekrache",
+        "Bouziane Brik",
+        "Adlen Ksentini"
+      ],
+      "published": "2026-07-17",
+      "url": "https://arxiv.org/abs/2607.16066",
+      "abstract": "Agentic Artificial Intelligence (AI), enabled by Large Language Models, marks a shift from rule-based automation toward autonomous, goal-driven control of Next-Generation Networks (NGNs). Existing surveys treat the two domains in isolation, leaving protocol integration, evaluation, and standardization alignment underexplored. To address this gap, a two-part tutorial-and-survey is presented. Part I formalises the control, management, and AI-native planes of 5G and 6G. It then covers the foundations of agentic systems: reasoning, planning, tool use, multi-agent coordination, and evaluation. Part II maps agentic capabilities onto 5G/6G control surfaces, standardization, and major 6G initiatives. Finally, it identifies open challenges shaping autonomous telecommunications.",
+      "external_ids": [
+        "arxiv:2607.16066"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-20T12:38:34+08:00",
+      "last_seen_at": "2026-07-20T12:38:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.16057",
+      "arxiv_version": "v1",
+      "title": "Frontier AI performance across the business disciplines: a case-grounded benchmark of knowledge work and analytical reasoning",
+      "authors": [
+        "Ajay Patel",
+        "Kartik Hosanagar",
+        "Ramayya Krishnan",
+        "Chris Callison-Burch",
+        "Karim Lakhani",
+        "Mitch Weiss"
+      ],
+      "published": "2026-07-17",
+      "url": "https://arxiv.org/abs/2607.16057",
+      "abstract": "Large language models (LLMs) are improving rapidly as reflected in benchmark scores, yet these AI benchmarks largely test capabilities such as factual recall, narrow question answering, mathematical problem-solving, and coding and agentic tool-use. What remains poorly measured is AI progress on the analytical knowledge work white-collar professionals perform daily, including synthesizing complex information, exercising judgment under uncertainty and incomplete information, applying strategic and adversarial thinking in multi-stakeholder settings, weighing trade-offs, and producing defensible, structured analyses. This gap is even more pronounced for subjective components of such work, where success can be challenging to define. The \"case method\" form of education practiced by top business schools provides a natural foundation for addressing this measurement gap, and we construct BusinessCaseBench, a benchmark spanning hundreds of questions drawn from business cases across eighteen disciplines, each paired with a grading rubric derived from the expert-written instructor case solution. On BusinessCaseBench, frontier AI models already score highly against instructor rubrics, and capability within one model family improves substantially over two years. These results provide strong evidence that AI performance on this class of work is already high and rapidly improving, with implications for business schools, where case pedagogy trains undergraduates and MBAs in this kind of analytical reasoning, and for entry-level professional roles, where such skills have historically anchored early-career work.",
+      "external_ids": [
+        "arxiv:2607.16057"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-20T12:38:34+08:00",
+      "last_seen_at": "2026-07-20T12:38:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.16038",
+      "arxiv_version": "v1",
+      "title": "SciForge: An AI-Native, Multimodal Workbench for Scientific Discovery",
+      "authors": [
+        "SciForge Team",
+        "Zhangyang Gao",
+        "Minghao Fang",
+        "Yifei Liu",
+        "Hanhui Yang",
+        "Xinyu Gu",
+        "Shixiang Tang",
+        "Siqi Sun",
+        "Lei Bai",
+        "Cheng Tan",
+        "Mengdi Liu",
+        "Hao Wu",
+        "Shuizhou Chen"
+      ],
+      "published": "2026-07-17",
+      "url": "https://arxiv.org/abs/2607.16038",
+      "abstract": "Scientific work increasingly spans heterogeneous artifacts -- papers, code, datasets, scientific file formats, model outputs, figures, manuscripts, and team decisions -- yet general-purpose AI assistants rarely preserve these objects as a coherent, auditable research state. We present SciForge, a multimodal research-native AI workbench that reserves the graphical interface for human judgment while search, parsing, model routing, workflow execution, plotting, writing, and presentation generation run as modular agent-accessible services. SciForge is built around five pillars: (i) \\emph{goal-scoped scientific decision governance} for \\textbf{goal-oriented} research, with review gates and shared review surfaces; (ii) \\emph{translate-then-reason} for \\textbf{multimodal} input, routing scientific objects through domain translators before the agent reasons; (iii) \\emph{evidence governance} for \\textbf{auditable} traceability, linking claims to provenance chains and audit findings; (iv) \\emph{collaborative team science} for \\textbf{collaborative} research, enabling multi-role decision governance, with shared team workspaces planned for future releases; and (v) \\emph{real-world application scenarios} for \\textbf{practical} impact, demonstrated through eight end-to-end user cases, with flagship demonstrations including multi-day agentic research sprints for gene discovery, AI-guided de novo protein design, molecular optimization, and genome-to-BGC discovery. The system combines a thin interaction layer, contextual research capability patterns, an Agent Runtime and Workflow Engine, an Evidence-DAG audit sidecar and a Scientific Model Router. SciForge currently runs as a desktop application, with mobile supervision support; future releases will deepen team collaboration. The system is open-source and available at https://github.com/AGI4Sci/SciForge",
+      "external_ids": [
+        "arxiv:2607.16038"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-20T12:38:34+08:00",
+      "last_seen_at": "2026-07-20T12:38:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.15976",
+      "arxiv_version": "v1",
+      "title": "Harnessing resonant dipolar interactions in a hybrid atom-molecule quantum system",
+      "authors": [
+        "Daniel K. Ruttley",
+        "Tom R. Hepworth",
+        "Juan M. García-Garrido",
+        "Caleb J. H. Rich",
+        "Rosario González-Férez",
+        "Alexander Guttridge",
+        "Simon L. Cornish"
+      ],
+      "published": "2026-07-17",
+      "url": "https://arxiv.org/abs/2607.15976",
+      "abstract": "Hybrid quantum systems offer a route to combining the complementary strengths of distinct quantum platforms while mitigating their limitations. A particularly promising architecture combines neutral atoms and polar molecules: atoms provide fast, controllable interactions through excitation to Rydberg states, while molecules possess long-lived rotational states that are attractive for quantum memories and qudits. Although dipolar interactions between atoms and molecules have been observed in gas-phase and beam experiments, they have not previously been explored in a scalable optical tweezer platform that enables the controlled coherent interactions needed for quantum state transfer and entanglement. Here, we realise this goal, demonstrating coherent dipolar interactions between an individual Rydberg atom and an individual polar molecule. The separation of the particles is controlled using species-specific optical tweezers and their dipolar interactions are made strongly state-dependent by tuning two atom-molecule pair states into resonance. We exploit these interactions to demonstrate atom-mediated state readout of a molecular qubit, observe coherent spin exchange between the particles, and generate entanglement using a blockade-based controlled-NOT operation. Together, these results establish a coherent atom-molecule interface in which long-lived molecular quantum information can be rapidly mapped onto internal states of a Rydberg atom for readout or onward coherent transfer. This platform can be scaled to realise hybrid quantum processors utilising atom-mediated readout and entanglement of molecular qubits and mixed-species quantum simulators of dipolar systems.",
+      "external_ids": [
+        "arxiv:2607.15976"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-20T12:38:34+08:00",
+      "last_seen_at": "2026-07-20T12:38:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.15899",
+      "arxiv_version": "v1",
+      "title": "ContinuityBench: A Benchmark and Systems Study of Stateful Failover in Multi-Provider LLM Routing",
+      "authors": [
+        "Vishal Pandey",
+        "Gopal Singh"
+      ],
+      "published": "2026-07-17",
+      "url": "https://arxiv.org/abs/2607.15899",
+      "abstract": "In production large language model (LLM) deployments, high API availability guarantees do not equate to conversational continuity. When a primary provider experiences an outage or strict rate-limiting, naive stateless failover mechanisms successfully maintain uptime but silently discard conversation history, severely disrupting the user experience. To rigorously quantify and resolve this failure mode, we introduce two novel metrics: Continuity Preservation Rate (CPR) and Continuity Latency Overhead (CLO). We propose a stateful, multi-provider proxy architecture utilizing a History-Forwarding strategy to seamlessly reconstruct conversational state across heterogeneous LLM endpoints during failover events. Furthermore, we release continuity-bench, https://github.com/Vishal-sys-code/continuity-bench, an open evaluation harness designed to stress-test context preservation under high-concurrency provider failure conditions. Our empirical evaluation ($N=750$ failover events) demonstrates that our stateful proxy achieves a 99.20\\% CPR [95\\% CI: 98.27\\%, 99.63\\%], cleanly transferring deep conversational context to fallback providers, compared to a near-0\\% preservation rate for standard stateless architectures. Finally, we characterize failover latency distributions, identifying the critical necessity of asynchronous exponential backoff with jitter to prevent cascading retry storms against strict-limit fallback APIs. Our results provide a principled foundation for building robust, state-preserving multi-model inference systems.",
+      "external_ids": [
+        "arxiv:2607.15899"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-20T12:38:34+08:00",
+      "last_seen_at": "2026-07-20T12:38:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.15715",
+      "arxiv_version": "v1",
+      "title": "Behavioral Controllability of Agentic Models for Information Extraction: From Fixed Workflows to Reflective Agents",
+      "authors": [
+        "Lujia Zhang",
+        "Xingzhou Chen",
+        "Hongwei Feng"
+      ],
+      "published": "2026-07-17",
+      "url": "https://arxiv.org/abs/2607.15715",
+      "abstract": "Large language model (LLM) agents are increasingly used for complex information-extraction tasks, yet it remains unclear whether agentic components such as reflection and memory lead to observable and controllable improvements over fixed LLM workflows. We study this question through conference-paper dataset extraction, where a system must identify datasets mentioned in scholarly PDFs and produce structured records. We compare a fixed workflow baseline with reflective agent variants and specify an optimized agent condition (S2) that extends the same task with richer PDF tools and dynamic tool selection. Our evaluation emphasizes process-level behavior--including tool execution, retries, reflection, memory use, runtime, and failure recovery--while treating extraction coverage and field completeness as secondary outcome measures. The paper characterizes when agentic mechanisms change system behavior, whether these changes improve task completion, and how the observed failure modes motivate an optimized agent design under the same evaluation harness.",
+      "external_ids": [
+        "arxiv:2607.15715"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-20T12:38:34+08:00",
+      "last_seen_at": "2026-07-20T12:38:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.15684",
+      "arxiv_version": "v1",
+      "title": "Understanding Agent-Reactive Bugs at the Model-Harness Boundary: An Empirical Study of LLM Agent Issue Reports",
+      "authors": [
+        "Jingyi Chen",
+        "Songqiang Chen",
+        "Hengcheng Zhu",
+        "Jialun Cao",
+        "Jiasi Shen",
+        "Shing-Chi Cheung"
+      ],
+      "published": "2026-07-17",
+      "url": "https://arxiv.org/abs/2607.15684",
+      "abstract": "LLM agents span command-line interfaces (e.g., Codex) and agent frameworks (e.g., LangChain), integrating backend LLMs with harness code that parses model outputs, controls agent loops, and manages context. Both the harness and LLM-generated responses jointly shape an agent's execution. This architecture gives rise to bugs that cannot be readily understood by inspecting either component alone, because some bugs occur only when a particular LLM response elicits an abnormal reaction from the agent. Prior empirical studies of agent bugs have largely attributed failures either to limited model capabilities or to harness-side defects, such as outdated APIs and configuration misalignment, without characterizing these AR bugs. We conduct the first empirical study focused on agent-reactive (AR) bugs. Through manual analysis of 255 bug reports from Codex, Gemini-CLI, LangChain, and CrewAI, we construct a two-axis taxonomy covering observable symptoms and the LLM behaviors that trigger them. Our findings show that many AR bugs manifest as silent errors without well-defined test oracles, which makes detection difficult. The stochasticity of LLM responses further complicates bug reproduction. We additionally examine fixes proposed by users and implemented by developers. This analysis exposes a mismatch: users frequently advocate harness-side guardrails, whereas developers may attribute the issue to the LLM or respond slowly to user-proposed fixes. These findings point to the need for mechanisms that help users and developers understand the root causes and resolutions of AR bugs. Overall, the study highlights challenges specific to LLM agents and motivates the design of test oracles, reproduction support, and fault-localization techniques for AR bugs.",
+      "external_ids": [
+        "arxiv:2607.15684"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-20T12:38:34+08:00",
+      "last_seen_at": "2026-07-20T12:38:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.15660",
+      "arxiv_version": "v1",
+      "title": "ToolVerse: Unlocking Massive Environments and Long-Horizon Tasks for Agentic Reinforcement Learning",
+      "authors": [
+        "Shuaiyu Zhou",
+        "Fengpeng Yue",
+        "Zengjie Hu",
+        "Yuanzhe Shen",
+        "Chenyang Zhang",
+        "feng hong",
+        "Cao Liu",
+        "Ke Zeng"
+      ],
+      "published": "2026-07-17",
+      "url": "https://arxiv.org/abs/2607.15660",
+      "abstract": "While LLM agents demonstrate strong reasoning abilities in compact and well-defined scenarios, they struggle to maintain robustness and effectiveness when faced with large-scale, diverse, and dynamic real-world environments that demand seamless tool integration. To address this gap, we introduce ToolVerse, a comprehensive framework that scales up agentic RL environments and enables agents to perform complex long-horizon reasoning in Tool-Integrated Reasoning (TIR) tasks. First, ToolVerse automatically builds the massive executable agent training environments from nearly 400 real-world Model Context Protocols (MCPs) that contain about 4500 tools. Second, we propose a task design strategy based on a tool dependency graph, utilizing Dynamic Unlocking Sampling Algorithm to generate long-horizon tasks, and produce GUST (Graph Unlocking Sampling Tasks) dataset. Third, to alleviate the credit assigment problem in long-horizon agentic RL, we propose a fine-grained Turn-Aware Relative Advantage algorithm. We conduct extensive Agentic RL training using ToolVerse and evaluate our framework on serveral agentic benchmarks. Experimental results demonstrate that our framework significantly strengthens LLMs' capabilities in long-horizon tool use, achieving a marked performance boost and showcasing robust reasoning within dynamic environments.",
+      "external_ids": [
+        "arxiv:2607.15660"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-20T12:38:34+08:00",
+      "last_seen_at": "2026-07-20T12:38:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.15610",
+      "arxiv_version": "v1",
+      "title": "Process Reward Informed Tree Rollout for Effective Multi-Turn RL",
+      "authors": [
+        "Xintong Li",
+        "Sha Li",
+        "Yuwei Zhang",
+        "Changlong Yu",
+        "Rongmei Lin",
+        "Hongye Jin",
+        "Shuyi Guan",
+        "Xin Liu",
+        "Linwei Li",
+        "Qingyu Yin",
+        "Jingbo Shang"
+      ],
+      "published": "2026-07-17",
+      "url": "https://arxiv.org/abs/2607.15610",
+      "abstract": "Reinforcement learning (RL) has become a key approach for training LLM agents, yet popular methods such as GRPO/RLOO rely on multiple independently sampled complete trajectories for advantage estimation. In long-horizon agentic tasks, such a uniform rollout strategy can waste budget on uninformative dead-end attempts, while promising intermediate states do not receive sufficient exploration. The multi-turn structure of agentic trajectories, with interleaved actions and observations, naturally supports organizing a trajectory group as a tree, where each turn serves as a decision point for exploration. This perspective reframes effective exploration as the problem of deciding where to branch. We propose Process-Scorer Guided Adaptive Tree Rollout (PATR), a quality-aware rollout framework for multi-turn agent RL. PATR uses task-appropriate process feedback to score partial trajectories, selectively branches from promising states, reuses shared prefixes, and conservatively stops degenerate paths to reduce wasted sampling. The resulting rollout groups remain compatible with standard policy optimization while providing more efficient exploration under the same training budget. We evaluate PATR on FrozenLake and the challenging SWE-Bench, which is largely unexplored by prior tree-rollout agent RL methods. Experiments show that PATR improves performance by up to +5.0 points on SWE-Bench and +9.3 points on FrozenLake, highlighting process-guided tree rollouts as an effective strategy for scalable multi-turn RL.",
+      "external_ids": [
+        "arxiv:2607.15610"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-20T12:38:34+08:00",
+      "last_seen_at": "2026-07-20T12:38:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.15596",
+      "arxiv_version": "v1",
+      "title": "From Neural Intent to Cryptographic Authorization: Governing Agentic Workflows",
+      "authors": [
+        "Jiasi Weng",
+        "Jian Weng",
+        "Minrong Chen",
+        "Ming Li",
+        "Jia-Nan Liu",
+        "Zhi Li",
+        "Yue Zhang"
+      ],
+      "published": "2026-07-17",
+      "url": "https://arxiv.org/abs/2607.15596",
+      "abstract": "The rapid adoption of artificial intelligence (AI)-driven and agentic workflows is transforming traditional government and enterprise systems into language-based, tool-using and increasingly autonomous infrastructures. Conventional key management services authenticate who may invoke a cryptographic primitive, but remain agnostic to which workflow steps are authorized at runtime: an authenticated agent can still be hijacked by direct or indirect prompt injection into executing malicious actions that satisfy identity checks yet violate user intent. We present \\emph{Neural Cryptographic Services} (NCS), an active security governance plane grounded in a neural-symbolic design and interposed between LLM agents and privileged tools. Under NCS, an untrusted neural planner compiles natural-language instructions into structured plan drafts but holds no execution authority. Execution is instead gated by a deterministic symbolic controller operating over an offline-signed, hash-chained instruction stream. NCS verifies the signature, incrementally validates the hash chain, releases exactly one instruction payload at a time, and enforces strict binding between the agent's proposed tool parameters and the verified payload. Mismatched or out-of-order tool calls are rejected fail-closed, while previously verified states are retained for post-hoc auditing. We evaluate NCS on AgentDojo and a custom argument-hijacking benchmark. NCS drives attack success rates to near zero while preserving acceptable utility on benign workflows. NCS thus reframes agent security from asking whether a model's intent complied to asking whether a proposed dispatch matches a cryptographically authorized step.",
+      "external_ids": [
+        "arxiv:2607.15596"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-20T12:38:34+08:00",
+      "last_seen_at": "2026-07-20T12:38:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.15593",
+      "arxiv_version": "v1",
+      "title": "Scalable LLM Agent Tool Access in the Cloud",
+      "authors": [
+        "Mingxin Li",
+        "Enge Song",
+        "Yueshang Zuo",
+        "Xiaodong Liu",
+        "Rong Wen",
+        "Qiang Fu",
+        "Gianni Antichi",
+        "Jian He",
+        "Jing Tie",
+        "Zhou Shao",
+        "Xiaobo Xue",
+        "Xiong Xiao",
+        "Luyao Zhong",
+        "Shaokai Zhang",
+        "Jiangu Zhao",
+        "Jianyuan Lu",
+        "Shize Zhang",
+        "Xiaoqing Sun",
+        "Changgang Zheng",
+        "Zihao Fan",
+        "Haonan Li",
+        "Tian Pan",
+        "Xiaomin Wu",
+        "Yang Song",
+        "Xing Li",
+        "Biao Lyu",
+        "Meng Li",
+        "Haipeng Dai",
+        "Guihai Chen",
+        "Shunmin Zhu"
+      ],
+      "published": "2026-07-17",
+      "url": "https://arxiv.org/abs/2607.15593",
+      "abstract": "LLM agents increasingly rely on tool calling to act on external systems, and the Model Context Protocol (MCP) has quickly become its de facto interface. Operating MCP at cloud scale, however, becomes difficult. On the tool provider side, legacy services are not directly callable through MCP; the rapid protocol development also creates ongoing compatibility cost. On the agent side, the number of accessible tool is limited by the LLM context window and inference overhead; mounting a large tool set increases token usage and inference latency and can reduce task success rate. Moreover, for stateful MCP backends with multiple replicas, preserving session affinity increases client-side complexity. We present a cloud-scale gateway system for MCP service. It breaks the direct-connect model on the data plane and offloads legacy service integration, consolidating incompatible MCP variants, access control, tool recommendation, and session-aware routing to the gateway. Hybrid retrieval sustains 98% Top-15 recall; it scales agent tool access to 3,000+ with high tool selection accuracy, and reduces tool selection time by $8.9\\times$ and token usage by $23.8\\times$, with low per-call overhead, stable under scale-out. Finally, we share the lessons learned from deploying the gateway system in production.",
+      "external_ids": [
+        "arxiv:2607.15593"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-20T12:38:34+08:00",
+      "last_seen_at": "2026-07-20T12:38:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.15557",
+      "arxiv_version": "v1",
+      "title": "SkillCorpus: Consolidating and Evaluating the Open Skill Ecosystem for Real-World LLM Agents",
+      "authors": [
+        "Yanze Wang",
+        "Pengfei Yao",
+        "Tianyi Sun",
+        "Chuanrui Hu",
+        "Yan Xiao",
+        "Yunyun Han",
+        "Jun Sun",
+        "Yafeng Deng"
+      ],
+      "published": "2026-07-17",
+      "url": "https://arxiv.org/abs/2607.15557",
+      "abstract": "Agent skills, SKILL.md files that package reusable procedural knowledge for an LLM agent, are a popular mechanism for extending agent capabilities. Public repositories now host them in large and growing numbers, yet these artifacts are fragmented, redundant, and uneven in quality, and their value in practice is unclear. A core question remains open, namely how to consolidate this open-source SKILL.md ecosystem into a single usable corpus, and what bounds its benefit on real-world agent tasks. We present SkillCorpus, a framework that aggregates, curates, matches, and evaluates the open skill ecosystem at scale. It filters ~821,000 crawled skills through a multi-stage pipeline into 96,401 skills organised by a 16-class taxonomy and three quality facets (utility, robustness, safety), and pairs them with a fine-tuned retrieval-and-selection stack that matches task-relevant skills. We evaluate end-to-end across three benchmarks (SkillsBench, GDPVal, QwenClawBench), two harnesses, and two open backbones with a frontier robustness check. Integrating SkillCorpus yields consistent gains across all three benchmarks, largest on SkillsBench (+7.5 pp). An operational analysis traces the gains to a coverage boundary and a harness boundary. SkillCorpus is, to our knowledge, the first end-to-end account of when a curated, retrieval-served community corpus improves real agent tasks, and where it does not. The dataset, models, and code will be released upon acceptance.",
+      "external_ids": [
+        "arxiv:2607.15557"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-20T12:38:34+08:00",
+      "last_seen_at": "2026-07-20T12:38:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.15547",
+      "arxiv_version": "v1",
+      "title": "Pinching Antenna-Assisted ISAC with Waveguide Mode Selection",
+      "authors": [
+        "Ruotong Zhao",
+        "Yijia Zhang",
+        "Shaokang Hu",
+        "Derrick Wing Kwan Ng"
+      ],
+      "published": "2026-07-17",
+      "url": "https://arxiv.org/abs/2607.15547",
+      "abstract": "Conventional pinching antenna (PA)-assisted integrated sensing and communication (ISAC) architectures typically assume static receiver locations or predetermined receive waveguides, thereby underutilizing the inherent spatial degrees of freedom. This paper proposes a novel mode-selectable PA-assisted ISAC framework to maximize the post-combining sensing signal-to-noise ratio while satisfying multi-user quality-of-service constraints by jointly optimizing the waveguide mode selection, transmit beamforming, and transmit/receive PA positions. To tackle the resulting mixed-integer nonconvex optimization problem, we develop a low-complexity block-coordinate descent algorithm that leverages a penalty-based majorization-minimization method to achieve high-quality suboptimal solutions. Numerical results demonstrate that the proposed design significantly outperforms both traditional PA and fixed-antenna benchmarks by synergistically harnessing spatial adaptability and modal reconfigurability. In particular, the mode-selectable design enables the coordinated optimization of transmit/receive operations and sensing-communication resource allocation, thereby maintaining sensing robustness under stringent communication requirements.",
+      "external_ids": [
+        "arxiv:2607.15547"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-20T12:38:34+08:00",
+      "last_seen_at": "2026-07-20T12:38:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.15541",
+      "arxiv_version": "v1",
+      "title": "StarCodex: Dynamic Coding Harness for Starlink Measurement Analysis and Experiment Automation",
+      "authors": [
+        "Pengcheng Luo",
+        "Zhiming Shao",
+        "Bowen Zhang",
+        "Genke Yang",
+        "Jian Chu"
+      ],
+      "published": "2026-07-17",
+      "url": "https://arxiv.org/abs/2607.15541",
+      "abstract": "Starlink and other low Earth orbit (LEO) satellite broadband systems are producing increasingly diverse measurement data across regions, time periods, and access conditions. These measurements are valuable for throughput prediction, adaptive bitrate (ABR) evaluation, and network experimentation, but converting continuously arriving data into reusable experimental evidence still relies heavily on manually developed analysis code and expert-guided data inspection and failure-case organization. This paper proposes StarCodex, a dynamic coding harness for Starlink measurement analysis and experiment automation. StarCodex detects analysis gaps from the current measurement state, converts them into structured coding tasks, uses Codex to generate or repair executable analysis artifacts, and accepts artifacts through code, data-interface, measurement-semantics, and output validation. Experiments on real Starlink measurements show that StarCodex discovers 49 of 56 uncovered system-risk cases, attains higher average precision than the strongest predefined analysis baseline, and constructs a benchmark with denser and broader system-risk evidence. The generated prediction and replay artifacts further reveal prediction risks and quality-of-experience (QoE)--risk differences among ABR controllers. These results demonstrate the feasibility of using a dynamic coding harness to convert evolving Starlink measurements into validated analysis artifacts for automated experiment workflows.",
+      "external_ids": [
+        "arxiv:2607.15541"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-20T12:38:34+08:00",
+      "last_seen_at": "2026-07-20T12:38:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.15535",
+      "arxiv_version": "v1",
+      "title": "Symbolic Predicate-Guided Language Agents for Inverse Design of Perovskite Oxides",
+      "authors": [
+        "Dong Hyeon Mok",
+        "Seoin Back",
+        "Victor Fung",
+        "Guoxiang Hu"
+      ],
+      "published": "2026-07-17",
+      "url": "https://arxiv.org/abs/2607.15535",
+      "abstract": "Efficient discovery of high-performance materials has been pursued through a variety of data- and AI-driven strategies, among which inverse design, generating materials from desired target properties, has emerged as an important paradigm. Large language models (LLMs) offer a complementary route for inverse materials design because their reasoning and in-context learning capability can be used not only to propose candidates but also to demonstrate interpretable design principles. In this work, we introduce a domain specific language (DSL)-guided strategy to improve the reasoning and design capability of LLM agents by translating natural language design rules into symbolic predicates encoded in a predefined chemistry DSL. These predicates allow the LLM agent to obtain statistical evidence from the accumulated materials data, enabling the agent to evaluate and refine its own reasoning during the design loop. Based on this strategy, we developed a multi-agent materials design framework, called Operational Rule-grounded CHEmical Search Through Reasoning Agents (ORCHESTRA), and applied it to the inverse design of double perovskite oxides under multiple target-property objectives. The results show that symbolic predicates help the LLM identify unsupported rules, validate newly proposed rules and improve the rule store over iterative design cycles. Compared with a strategy relying only on natural language rules, the DSL-guided framework showed the potential to improve materials design performance, particularly for challenging target properties. These findings suggest that mathematical and statistical grounding can enhance the reasoning capability of LLM agents in materials science and that LLM-based inverse design can be performed effectively without large task-specific datasets or additional model training.",
+      "external_ids": [
+        "arxiv:2607.15535"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-20T12:38:34+08:00",
+      "last_seen_at": "2026-07-20T12:38:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.15524",
+      "arxiv_version": "v1",
+      "title": "Recursive Harness Self-Improvement",
+      "authors": [
+        "Hyunin Lee",
+        "Jinglue Xu",
+        "Jeffrey Seely",
+        "Donghyun Lee",
+        "Matei Zaharia",
+        "Yujin Tang"
+      ],
+      "published": "2026-07-17",
+      "url": "https://arxiv.org/abs/2607.15524",
+      "abstract": "Under model--harness co-evolution, harnesses are not merely inference-time scaffolds but data-generating components whose execution traces can shape future foundation models. This motivates harness-in-the-loop learning: optimizing harnesses for both immediate agent performance and the quality of traces used for future model training. However, continually updating provider-built scaffolds is costly and labor-intensive. We therefore investigate whether optimizing user-constructed harnesses in a task-specific manner can improve execution-trace quality while remaining computationally lightweight and requiring only a few update iterations. To this end, we introduce Recursive Harness Self-Improvement (RHI), which represents the harness as a prompt-level specification of the agent loop and iteratively refines it using pairwise feedback over its own revision history. Across 30 synthetic machine-learning research tasks spanning quantitative finance, robotics, and pharmacy, a few RHI iterations suffice to substantially raise the performance ceiling of low-reasoning-effort agents, exceeding the corresponding maximum-reasoning-effort setting while reducing inference cost by up to 60%. We show that these gains arise primarily from improved task-specific context management through more effective inter-agent information flow rather than longer reasoning traces. Finally, we formalize this behavior as an information-theoretic hypothesis for RHI's implicit optimization objective, suggesting RHI as a practical algorithm for continual learning within the paradigm of model--harness co-evolution.",
+      "external_ids": [
+        "arxiv:2607.15524"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-20T12:38:34+08:00",
+      "last_seen_at": "2026-07-20T12:38:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.15420",
+      "arxiv_version": "v1",
+      "title": "Harnessing GPU Acceleration in Large-Scale Process Optimization",
+      "authors": [
+        "Boxun Huang",
+        "David Y. Shu",
+        "Michel Schanen",
+        "Mihai Anitescu",
+        "Rahul Gandhi",
+        "Sungho Shin"
+      ],
+      "published": "2026-07-16",
+      "url": "https://arxiv.org/abs/2607.15420",
+      "abstract": "This paper presents a proof-of-concept workflow for equation-oriented process optimization that runs entirely on a GPU. Process optimization models often incorporate complex interconnected unit operations, dynamics, and uncertainties, resulting in large nonlinear programs that can be computationally demanding for conventional CPU-based solvers. Although emerging GPU-based solvers offer substantial computational benefits, their application to process optimization has been limited by the lack of GPU-compatible process modeling tools. We address this gap by prototyping the GPU-compatible process optimization models using an existing GPU-capable optimization software stack, including ExaModels (algebraic modeling system), MadNLP (optimization solver), and cuDSS (linear solver). ExaModels formulates the process optimization problem in a GPU-compatible way by exposing its repeated algebraic structure, while MadNLP and cuDSS solve the resulting nonlinear program on the GPU. This workflow is demonstrated on a CO2 absorber design problem under feed uncertainty, in which a shared column diameter is minimized subject to equilibrium and hydraulic constraints in all scenarios. For the largest case with 5,000 scenarios and 1.5 million variables, the GPU workflow achieves a speedup of approximately 21\\times over a single-threaded CPU baseline using JuMP, Ipopt, and MA57.",
+      "external_ids": [
+        "arxiv:2607.15420"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-20T12:38:34+08:00",
+      "last_seen_at": "2026-07-20T12:38:34+08:00"
+    }
+  ]
+}
