@@ -2,16 +2,131 @@
   "topic": "agent harness",
   "schema_version": 1,
   "created_at": "2026-07-13T17:32:31+08:00",
-  "updated_at": "2026-07-14T17:32:32+08:00",
+  "updated_at": "2026-07-21T17:18:19+08:00",
   "query_keyword": "agent harness",
   "rating_basis": "abstract-level review (titles/authors/abstracts); not full-text peer review",
   "tier_counts": {
-    "A": 7,
-    "B": 45,
-    "C": 13,
-    "total": 65
+    "A": 12,
+    "B": 71,
+    "C": 23,
+    "total": 106
   },
   "papers": [
+    {
+      "arxiv_id": "2607.18235",
+      "arxiv_version": "v1",
+      "title": "Automated Discovery Has No Universally Superior Harness",
+      "authors": [
+        "Akshat Gupta",
+        "Jermaine Lei",
+        "Alexander Lu",
+        "Gopala Anumanchipalli",
+        "Leshem Choshen"
+      ],
+      "published": "2026-07-20",
+      "url": "http://arxiv.org/abs/2607.18235",
+      "source": "arxiv",
+      "tier": "A",
+      "tier_reason": "30 个预算对齐 harness×12 模型-问题对、310 万 rollout 重复试验；无普适最优 harness，应作超参调。",
+      "tags": [
+        "evaluation",
+        "orchestration",
+        "methodology",
+        "discovery"
+      ],
+      "notes": "自动发现无普适最优 harness：harness 是超参数",
+      "indexed_at": "2026-07-21T17:18:19+08:00",
+      "knowledge_ids": [
+        "evaluation",
+        "orchestration-evolution"
+      ],
+      "core_intro_path": "papers/a/2607.18235.md"
+    },
+    {
+      "arxiv_id": "2607.17598",
+      "arxiv_version": "v1",
+      "title": "Is Progressive Disclosure All You Need for Long-Context Agents?",
+      "authors": [
+        "Yifeng He",
+        "Yinzhe Zhao",
+        "Jicheng Wang",
+        "Hao Chen"
+      ],
+      "published": "2026-07-20",
+      "url": "http://arxiv.org/abs/2607.17598",
+      "source": "arxiv",
+      "tier": "A",
+      "tier_reason": "3 harness×3 模型族受控研究 Agent Skills 渐进披露；增益取决于 harness，一层足够。",
+      "tags": [
+        "context",
+        "skill",
+        "evaluation",
+        "retrieval"
+      ],
+      "notes": "渐进披露买的是上下文而非智能；强 harness 下近零增益",
+      "indexed_at": "2026-07-21T17:18:19+08:00",
+      "knowledge_ids": [
+        "context-memory",
+        "evaluation"
+      ],
+      "core_intro_path": "papers/a/2607.17598.md"
+    },
+    {
+      "arxiv_id": "2607.14004",
+      "arxiv_version": "v1",
+      "title": "Do Agent Optimizers Compound? A Continual-Learning Evaluation on Terminal-Bench 2.0",
+      "authors": [
+        "Wenxiao Wang",
+        "Priyatham Kattakinda",
+        "Soheil Feizi"
+      ],
+      "published": "2026-07-15",
+      "url": "http://arxiv.org/abs/2607.14004",
+      "source": "arxiv",
+      "tier": "A",
+      "tier_reason": "三方法×两阶段 continual 对照；回归控制决定 harness 优化增益能否复利。",
+      "tags": [
+        "self-evolution",
+        "orchestration",
+        "evaluation",
+        "methodology"
+      ],
+      "notes": "agent 优化器增益能否复利：回归控制是关键",
+      "indexed_at": "2026-07-16T17:53:42+08:00",
+      "knowledge_ids": [
+        "orchestration-evolution",
+        "evaluation"
+      ],
+      "core_intro_path": "papers/a/2607.14004.md"
+    },
+    {
+      "arxiv_id": "2607.13683",
+      "arxiv_version": "v1",
+      "title": "Self-Evolving Agent Harnesses via Gated Semantic Quality-Diversity",
+      "authors": [
+        "Xiaotian Luo",
+        "Fengxingyu Wang",
+        "Chuanrui Hu",
+        "Dizhan Xue",
+        "Yafeng Deng"
+      ],
+      "published": "2026-07-15",
+      "url": "http://arxiv.org/abs/2607.13683",
+      "source": "arxiv",
+      "tier": "A",
+      "tier_reason": "提案与计分分离；密封测试上 +9–15.5pp，病理键归档抗过拟合。",
+      "tags": [
+        "self-evolution",
+        "orchestration",
+        "adaptation"
+      ],
+      "notes": "门控语义质量多样性驱动的自演化 harness",
+      "indexed_at": "2026-07-16T17:53:42+08:00",
+      "knowledge_ids": [
+        "orchestration-evolution"
+      ],
+      "core_intro_path": "papers/a/2607.13683.md"
+    },
     {
       "arxiv_id": "2607.08938",
       "arxiv_version": "v1",
@@ -194,6 +309,559 @@
         "evaluation"
       ],
       "core_intro_path": "papers/a/2605.27922.md"
+    },
+    {
+      "arxiv_id": "2605.14271",
+      "arxiv_version": "v2",
+      "title": "Auditing Agent Harness Safety",
+      "authors": [
+        "Chengzhi Liu",
+        "Yichen Guo",
+        "Yepeng Liu",
+        "Yuzhe Yang",
+        "Qianqi Yan",
+        "Xuandong Zhao",
+        "Wenyue Hua",
+        "Sheng Liu",
+        "Sharon Li",
+        "Yuheng Bu",
+        "Xin Eric Wang"
+      ],
+      "published": "2026-05-14",
+      "url": "http://arxiv.org/abs/2605.14271",
+      "source": "arxiv",
+      "tier": "A",
+      "tier_reason": "轨迹级 harness 安全审计：210 任务×8 域×10 配置；完成率与安全执行错位、违规随轨迹长度累积。",
+      "tags": [
+        "security",
+        "audit",
+        "evaluation",
+        "multi-agent"
+      ],
+      "notes": "HarnessAudit：输出正确≠执行安全",
+      "indexed_at": "2026-07-21T17:18:19+08:00",
+      "knowledge_ids": [
+        "security-permissions",
+        "evaluation"
+      ],
+      "core_intro_path": "papers/a/2605.14271.md"
+    },
+    {
+      "arxiv_id": "2607.18171",
+      "arxiv_version": "v1",
+      "title": "FlashRT: Agent Harness for Guiding Agents to Deploy Real-Time Multimodal Applications",
+      "authors": [
+        "Krish Agarwal",
+        "Zhuoming Chen",
+        "Yanyuan Qin",
+        "Zhenyu Gu",
+        "Atri Rudra",
+        "Beidi Chen"
+      ],
+      "published": "2026-07-20",
+      "url": "http://arxiv.org/abs/2607.18171",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "chain-of-program 引导编码代理产出多 GPU 部署；数字亮但域限实时多模态服务。",
+      "tags": [
+        "orchestration",
+        "code-agent",
+        "systems"
+      ],
+      "notes": "FlashRT：引导代理做实时多模态部署优化",
+      "indexed_at": "2026-07-21T17:18:19+08:00"
+    },
+    {
+      "arxiv_id": "2607.18161",
+      "arxiv_version": "v1",
+      "title": "TRIM: Reducing AI-Generated CodeSlop via Agent Trajectory Minimization",
+      "authors": [
+        "Alex Mathai",
+        "Shobini Iyer",
+        "Aleksandr Nogikh",
+        "Petros Maniatis",
+        "Franjo Ivancic",
+        "Junfeng Yang",
+        "Baishakhi Ray"
+      ],
+      "published": "2026-07-20",
+      "url": "http://arxiv.org/abs/2607.18161",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "定义 CodeSlop 并以轨迹最小化削减 17.9–32.9%；对代码库长期可维护性有工程价值。",
+      "tags": [
+        "code-agent",
+        "trajectory",
+        "quality"
+      ],
+      "notes": "TRIM：最小化轨迹以减少 AI 代码冗余",
+      "indexed_at": "2026-07-21T17:18:19+08:00"
+    },
+    {
+      "arxiv_id": "2607.18064",
+      "arxiv_version": "v1",
+      "title": "Autoresearch with Coding Agents: Generalizers and Metric-Maximizers on Quran Recitation Data",
+      "authors": [
+        "Nursultan Askarbekuly",
+        "Mohamad Al Mdfaa",
+        "Ahmed Helaly",
+        "Gonzalo Ferrer",
+        "Manuel Mazzara"
+      ],
+      "published": "2026-07-20",
+      "url": "http://arxiv.org/abs/2607.18064",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "生产任务上自然捕获 spec gaming（逐行背答案）；加 held-out 后消失。样本小但预注册。",
+      "tags": [
+        "evaluation",
+        "code-agent",
+        "empirical"
+      ],
+      "notes": "autoresearch 中的 metric-maximizer 行为",
+      "indexed_at": "2026-07-21T17:18:19+08:00"
+    },
+    {
+      "arxiv_id": "2607.18063",
+      "arxiv_version": "v1",
+      "title": "Adaptive Adversaries: A Multi-Turn, Multi-LLM Benchmark for LLM Agent Security",
+      "authors": [
+        "Devina Jain",
+        "David Hartmann",
+        "Chuan Li"
+      ],
+      "published": "2026-07-20",
+      "url": "http://arxiv.org/abs/2607.18063",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "自适应多轮攻击基准：15 轮 ASR 升至 5.4–14%；排名跨场景不一致。属安全评测基建。",
+      "tags": [
+        "security",
+        "benchmark",
+        "multi-agent"
+      ],
+      "notes": "Adaptive Adversaries：适应性攻击者×无记忆防御者",
+      "indexed_at": "2026-07-21T17:18:19+08:00",
+      "knowledge_ids": [
+        "security-permissions"
+      ]
+    },
+    {
+      "arxiv_id": "2607.18039",
+      "arxiv_version": "v1",
+      "title": "Evidence-in-the-Loop: Trace-Driven Optimization for Customer-Service LLM Agents",
+      "authors": [
+        "Chunming Wu",
+        "Dafei Qiu",
+        "Congde Yuan",
+        "Charles Quan",
+        "Jun Wu",
+        "Suipeng Li",
+        "Mo Wu",
+        "Gavin Xie",
+        "Hope Chen",
+        "Max Yao"
+      ],
+      "published": "2026-07-20",
+      "url": "http://arxiv.org/abs/2607.18039",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "客服代理三个可复用部署模式；真实部署但属经验文，无对照数字。",
+      "tags": [
+        "enterprise",
+        "rag",
+        "orchestration"
+      ],
+      "notes": "Evidence-in-the-Loop：trace 驱动的客服代理优化",
+      "indexed_at": "2026-07-21T17:18:19+08:00"
+    },
+    {
+      "arxiv_id": "2607.17979",
+      "arxiv_version": "v1",
+      "title": "Harness Engineering for LLM-Driven GPU Kernel Generation",
+      "authors": [
+        "Yue Shui",
+        "Chenyu Ma",
+        "Hangfei Xu",
+        "Shengzhao Wen",
+        "Yanpeng Wang"
+      ],
+      "published": "2026-07-20",
+      "url": "http://arxiv.org/abs/2607.17979",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "评测 harness 与优化控制器分离的内核生成系统；Agent-Assisted 胜 Full-Agent，域限竞赛。",
+      "tags": [
+        "code-agent",
+        "evaluation",
+        "systems"
+      ],
+      "notes": "GPU kernel 生成的 harness 工程",
+      "indexed_at": "2026-07-21T17:18:19+08:00"
+    },
+    {
+      "arxiv_id": "2607.17900",
+      "arxiv_version": "v1",
+      "title": "Harness TTS: Towards Context-Aware Expressive Speech Synthesis with Harness Layer",
+      "authors": [
+        "Shengfan Shen",
+        "Di Wu",
+        "Xingchen Song",
+        "Dinghao Zhou",
+        "Pengyu Cheng",
+        "Sixiang Lyu",
+        "Jian Luan",
+        "Shuai Wang"
+      ],
+      "published": "2026-07-20",
+      "url": "http://arxiv.org/abs/2607.17900",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "把 harness 层思想搬到 TTS 表达控制；路由+合成双评测，领域专属。",
+      "tags": [
+        "domain",
+        "control",
+        "orchestration"
+      ],
+      "notes": "Harness TTS：TTS 引擎外的表达控制层",
+      "indexed_at": "2026-07-21T17:18:19+08:00"
+    },
+    {
+      "arxiv_id": "2607.17719",
+      "arxiv_version": "v1",
+      "title": "SR-Agent: An Experience-Driven Agentic Framework for Post-Ranking Strategies Refinement in E-Commerce Recommendation",
+      "authors": [
+        "Hanchen Yang",
+        "Kaiwen Yang",
+        "Junpeng Zhuang",
+        "Yang He",
+        "Keting Cen",
+        "Bochao Liu",
+        "Zhongbo Sun",
+        "An Liu",
+        "Zhongteng Han",
+        "Chenyi Lei"
+      ],
+      "published": "2026-07-20",
+      "url": "http://arxiv.org/abs/2607.17719",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "工业推荐后排策略精炼 harness；快手一个月 A/B 在线部署，域专属。",
+      "tags": [
+        "enterprise",
+        "self-evolution",
+        "domain"
+      ],
+      "notes": "SR-Agent：约束式策略精炼 harness + 可回滚门控",
+      "indexed_at": "2026-07-21T17:18:19+08:00"
+    },
+    {
+      "arxiv_id": "2607.17641",
+      "arxiv_version": "v1",
+      "title": "Verify, Repair, Repeat, or Stop? Robust Stopping for Noisy Verify-Repair Loops in LLM Agents",
+      "authors": [
+        "Yitao Wu",
+        "Si Shen",
+        "Rui Yang",
+        "Hong Peng",
+        "Bin Hu"
+      ],
+      "published": "2026-07-20",
+      "url": "http://arxiv.org/abs/2607.17641",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "噪声 verify-repair 环的鲁棒停机理论+GSM8K 压力测试 +60.6pp；实证域窄。",
+      "tags": [
+        "reliability",
+        "verification",
+        "methodology"
+      ],
+      "notes": "VRR-Stop：修复该停就停",
+      "indexed_at": "2026-07-21T17:18:19+08:00"
+    },
+    {
+      "arxiv_id": "2607.17420",
+      "arxiv_version": "v1",
+      "title": "The Librarian Who Refused to Code: Model-Dependent Identity Enactment in LLM Code Generation",
+      "authors": [
+        "Shayell Aharon Salomon",
+        "Noam Israel",
+        "Ido Safruti",
+        "Amir Shaked"
+      ],
+      "published": "2026-07-19",
+      "url": "http://arxiv.org/abs/2607.17420",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "预注册人格 prompt 对照：效应依模型而异；对 harness 提示层设计有纠偏价值。",
+      "tags": [
+        "prompting",
+        "empirical",
+        "evaluation"
+      ],
+      "notes": "人格是模型依赖的行为策略偏置，非普适质量干预",
+      "indexed_at": "2026-07-21T17:18:19+08:00"
+    },
+    {
+      "arxiv_id": "2607.14047",
+      "arxiv_version": "v1",
+      "title": "PhysClaw-0: A Symbiotic Agentic System for Robot Autonomy via Language Corrections",
+      "authors": [
+        "Boyuan Wang",
+        "Zhenyuan Zhang",
+        "Zhiqin Yang",
+        "Peijun Gu",
+        "Shuya Wang",
+        "Xiaofeng Wang",
+        "Xianghui Ze",
+        "Yifan Chang",
+        "Guosheng Zhao",
+        "Jiangnan Shao",
+        "Guan Huang",
+        "Hengyu Liu"
+      ],
+      "published": "2026-07-15",
+      "url": "http://arxiv.org/abs/2607.14047",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "纠正记忆跨轮复用降人工成本；具身数据采集设定，复现门槛高。",
+      "tags": [
+        "embodied",
+        "memory",
+        "human-in-the-loop"
+      ],
+      "notes": "PhysClaw-0：语言纠正可复用的具身采集 harness",
+      "indexed_at": "2026-07-16T17:53:42+08:00",
+      "knowledge_ids": [
+        "embodied-multimodal"
+      ]
+    },
+    {
+      "arxiv_id": "2607.14037",
+      "arxiv_version": "v1",
+      "title": "Early Adoption of Agentic Coding Tools by GitHub Projects",
+      "authors": [
+        "Maliha Noushin Raida",
+        "Daqing Hou"
+      ],
+      "published": "2026-07-15",
+      "url": "http://arxiv.org/abs/2607.14037",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "大规模 GitHub agentic PR 采用实证；观测性早期快照，非方法贡献。",
+      "tags": [
+        "code-agent",
+        "empirical",
+        "human-agent"
+      ],
+      "notes": "开源项目对 agentic coding 工具的早期采用",
+      "indexed_at": "2026-07-16T17:53:42+08:00"
+    },
+    {
+      "arxiv_id": "2607.14006",
+      "arxiv_version": "v1",
+      "title": "Rethinking Penetration Testing for AI-Enabled Systems: From Resource Compromise to Behavioral Objective Violation",
+      "authors": [
+        "Mohammad Allahbakhsh",
+        "Mohammad Hassan Bahari",
+        "Moslem Attar-Raouf"
+      ],
+      "published": "2026-07-15",
+      "url": "http://arxiv.org/abs/2607.14006",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "把 AI 渗透测从基础设施攻陷扩展到行为目标违背；框架/定义文。",
+      "tags": [
+        "security",
+        "evaluation",
+        "methodology"
+      ],
+      "notes": "AI 系统渗透测：行为目标违背范式",
+      "indexed_at": "2026-07-16T17:53:42+08:00",
+      "knowledge_ids": [
+        "security-permissions"
+      ]
+    },
+    {
+      "arxiv_id": "2607.13988",
+      "arxiv_version": "v1",
+      "title": "TRACE: Turn-level Reward Assignment via Credit Estimation for Long-Horizon Agents",
+      "authors": [
+        "Leitian Tao",
+        "Baolin Peng",
+        "Wenlin Yao",
+        "Tao Ge",
+        "Hao Cheng",
+        "Mike Hang Wang",
+        "Jianfeng Gao",
+        "Sharon Li"
+      ],
+      "published": "2026-07-15",
+      "url": "http://arxiv.org/abs/2607.13988",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "回合级信用分配显著提升长程工具使用；属 agentic RL，非 harness 编排主线。",
+      "tags": [
+        "rl",
+        "tool-calling",
+        "long-horizon"
+      ],
+      "notes": "TRACE：工具边界上的 TD 信用估计",
+      "indexed_at": "2026-07-16T17:53:42+08:00"
+    },
+    {
+      "arxiv_id": "2607.13918",
+      "arxiv_version": "v1",
+      "title": "Partially Correlated Verifier Cascades in LLM Harnesses: Concave Log-Odds, Polynomial Reliability, and Blind-Spot Ceilings",
+      "authors": [
+        "Jiangang Han"
+      ],
+      "published": "2026-07-15",
+      "url": "http://arxiv.org/abs/2607.13918",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "部分相关 verifier cascade 理论清晰；实证偏合成，工程外推待核。",
+      "tags": [
+        "evaluation",
+        "reliability",
+        "methodology"
+      ],
+      "notes": "LLM harness 中串行验证门的相关性与盲区天花板",
+      "indexed_at": "2026-07-16T17:53:42+08:00"
+    },
+    {
+      "arxiv_id": "2607.13705",
+      "arxiv_version": "v1",
+      "title": "AgentCompass: A Unified Evaluation Infrastructure for Agent Capabilities",
+      "authors": [
+        "Zichen Ding",
+        "Jiaye Ge",
+        "Shufan Jiang",
+        "Kai Chen",
+        "Mo Li",
+        "Qingqiu Li",
+        "Zehao Li",
+        "Zonglin Li",
+        "Tiaohao Liang",
+        "Shudong Liu",
+        "Zerun Ma",
+        "Zixing Shang"
+      ],
+      "published": "2026-07-15",
+      "url": "http://arxiv.org/abs/2607.13705",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "Benchmark/Harness/Environment 解耦的评测基建；覆盖广但非因果实验。",
+      "tags": [
+        "evaluation",
+        "benchmark",
+        "orchestration"
+      ],
+      "notes": "AgentCompass 统一 agent 评测基础设施",
+      "indexed_at": "2026-07-16T17:53:42+08:00",
+      "knowledge_ids": [
+        "evaluation"
+      ]
+    },
+    {
+      "arxiv_id": "2607.13618",
+      "arxiv_version": "v1",
+      "title": "STOCKTAKE: Measuring the Gap Between Perception and Action in LLM Agents with a Fair Oracle",
+      "authors": [
+        "Sagar Deb",
+        "Ashwanth Krishnan"
+      ],
+      "published": "2026-07-15",
+      "url": "http://arxiv.org/abs/2607.13618",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "公平 oracle 拆开「感知 vs 行动」缺口；供应链专域，样本模型有限。",
+      "tags": [
+        "evaluation",
+        "benchmark",
+        "methodology"
+      ],
+      "notes": "STOCKTAKE：测量 LLM agent 的 knowing-doing gap",
+      "indexed_at": "2026-07-16T17:53:42+08:00"
+    },
+    {
+      "arxiv_id": "2607.13594",
+      "arxiv_version": "v1",
+      "title": "SAFETY SENTRY: Context-Aware Human Intervention via EXECUTE-ASK-REFUSE Routing",
+      "authors": [
+        "Tianyu Chen",
+        "Chujia Hu",
+        "Wenjie Wang"
+      ],
+      "published": "2026-07-15",
+      "url": "http://arxiv.org/abs/2607.13594",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "EXECUTE/ASK/REFUSE 三路路由比二元护栏更贴近部署；护栏模型评测，非完整 harness。",
+      "tags": [
+        "security",
+        "permissions",
+        "governance"
+      ],
+      "notes": "Safety Sentry：上下文感知人机介入路由",
+      "indexed_at": "2026-07-16T17:53:42+08:00",
+      "knowledge_ids": [
+        "security-permissions"
+      ]
+    },
+    {
+      "arxiv_id": "2607.13591",
+      "arxiv_version": "v1",
+      "title": "Memory as a Controlled Process: Learned Adaptive Memory Management for LLM Agents",
+      "authors": [
+        "Eric Hanchen Jiang",
+        "Zhi Zhang",
+        "Yuchen Wu",
+        "Levina Li",
+        "Dong Liu",
+        "Xiao Liang",
+        "Rui Sun",
+        "Yubei Li",
+        "Edward Sun",
+        "Haozheng Luo",
+        "Zhaolu Kang",
+        "Aylin Caliskan"
+      ],
+      "published": "2026-07-15",
+      "url": "http://arxiv.org/abs/2607.13591",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "把记忆当可控过程并用轻量策略学习；多基准增益明确，属记忆层非全 harness。",
+      "tags": [
+        "memory",
+        "context",
+        "adaptation"
+      ],
+      "notes": "MemCon：自适应记忆检索/注入/巩固",
+      "indexed_at": "2026-07-16T17:53:42+08:00",
+      "knowledge_ids": [
+        "context-memory"
+      ]
+    },
+    {
+      "arxiv_id": "2607.13474",
+      "arxiv_version": "v1",
+      "title": "MyAG: A Graph-Based Framework for Designing and Analyzing Composable LLM Agent Systems",
+      "authors": [
+        "Zhisong Zhang"
+      ],
+      "published": "2026-07-15",
+      "url": "http://arxiv.org/abs/2607.13474",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "组件/工作流/搜索三图抽象便于组合分析；框架文，实证偏代表性应用。",
+      "tags": [
+        "orchestration",
+        "architecture",
+        "multi-agent"
+      ],
+      "notes": "MyAG：可组合 LLM agent 系统的图框架",
+      "indexed_at": "2026-07-16T17:53:42+08:00"
     },
     {
       "arxiv_id": "2607.08716",
@@ -960,6 +1628,37 @@
       "indexed_at": "2026-07-14T17:32:32+08:00"
     },
     {
+      "arxiv_id": "2606.14249",
+      "arxiv_version": "v2",
+      "title": "HarnessX: A Composable, Adaptive, and Evolvable Agent Harness Foundry",
+      "authors": [
+        "Tingyang Chen",
+        "Shuo Lu",
+        "Kang Zhao",
+        "Weicheng Meng",
+        "Hanlin Teng",
+        "Tianhao Li",
+        "Chao Li",
+        "Xule Liu",
+        "Jian Liang",
+        "Zhizhong Zhang",
+        "Yuan Xie",
+        "Heng Qu"
+      ],
+      "published": "2026-06-12",
+      "url": "http://arxiv.org/abs/2606.14249",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "可组合/可演化 harness foundry，5 基准平均 +14.5%；严谨性细节与开源待核。",
+      "tags": [
+        "orchestration",
+        "self-evolution",
+        "architecture"
+      ],
+      "notes": "HarnessX：类型化 harness 原语 + trace 驱动演化",
+      "indexed_at": "2026-07-21T17:18:19+08:00"
+    },
+    {
       "arxiv_id": "2606.12882",
       "arxiv_version": "v1",
       "title": "HarnessBridge: Learnable Bidirectional Controller for LLM Agent Harness",
@@ -1111,6 +1810,63 @@
       "indexed_at": "2026-07-14T17:32:32+08:00"
     },
     {
+      "arxiv_id": "2605.21825",
+      "arxiv_version": "v1",
+      "title": "Toward AI VIS Co-Scientists: A General and End-to-End Agent Harness for Solving Complex Data Visualization Tasks",
+      "authors": [
+        "Haichao Miao",
+        "Zhimin Li",
+        "Kuangshi Ai",
+        "Kaiyuan Tang",
+        "Chaoli Wang",
+        "Peer-Timo Bremer",
+        "Shusen Liu"
+      ],
+      "published": "2026-05-20",
+      "url": "http://arxiv.org/abs/2605.21825",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "端到端 VIS 应用设计 harness，SciVis 竞赛验证；域专属。",
+      "tags": [
+        "domain",
+        "orchestration",
+        "skill"
+      ],
+      "notes": "AI VIS co-scientist harness",
+      "indexed_at": "2026-07-21T17:18:19+08:00"
+    },
+    {
+      "arxiv_id": "2605.18747",
+      "arxiv_version": "v1",
+      "title": "Code as Agent Harness",
+      "authors": [
+        "Xuying Ning",
+        "Katherine Tieu",
+        "Dongqi Fu",
+        "Tianxin Wei",
+        "Zihao Li",
+        "Yuanchen Bei",
+        "Jiaru Zou",
+        "Mengting Ai",
+        "Zhining Liu",
+        "Ting-Wei Li",
+        "Lingjie Chen",
+        "Yanjun Zhao"
+      ],
+      "published": "2026-05-18",
+      "url": "http://arxiv.org/abs/2605.18747",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "「代码即 harness」三层统一视角综述；覆盖广，属综述非新实证。",
+      "tags": [
+        "survey",
+        "code-agent",
+        "orchestration"
+      ],
+      "notes": "Code as Agent Harness 综述",
+      "indexed_at": "2026-07-21T17:18:19+08:00"
+    },
+    {
       "arxiv_id": "2605.15184",
       "arxiv_version": "v1",
       "title": "Is Grep All You Need? How Agent Harnesses Reshape Agentic Search",
@@ -1132,6 +1888,32 @@
       ],
       "notes": "Is Grep All You Need?",
       "indexed_at": "2026-07-14T17:32:32+08:00"
+    },
+    {
+      "arxiv_id": "2605.00663",
+      "arxiv_version": "v2",
+      "title": "Affordance Agent Harness: Verification-Gated Skill Orchestration",
+      "authors": [
+        "Haojian Huang",
+        "Jiahao Shi",
+        "Yinchuan Li",
+        "Yingcong Chen"
+      ],
+      "published": "2026-05-01",
+      "url": "http://arxiv.org/abs/2605.00663",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "验证门控技能编排改善 affordance 接地的精度-成本前沿；具身专域。",
+      "tags": [
+        "embodied",
+        "verification",
+        "orchestration"
+      ],
+      "notes": "Affordance Agent Harness：Router+Verifier 闭环",
+      "indexed_at": "2026-07-21T17:18:19+08:00",
+      "knowledge_ids": [
+        "embodied-multimodal"
+      ]
     },
     {
       "arxiv_id": "2604.25850",
@@ -1186,6 +1968,27 @@
       "indexed_at": "2026-07-14T17:32:32+08:00"
     },
     {
+      "arxiv_id": "2603.20380",
+      "arxiv_version": "v2",
+      "title": "Herding CATs: ALARA for Agent Harness Engineering in Portable Composable Multi-Agent Teams",
+      "authors": [
+        "Christopher J. Agostino",
+        "Nayan D'Souza"
+      ],
+      "published": "2026-03-20",
+      "url": "http://arxiv.org/abs/2603.20380",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "CAT 纯文本数据层管理多代理 harness；22 模型×115 任务评测，工具偏小众。",
+      "tags": [
+        "multi-agent",
+        "context",
+        "tooling"
+      ],
+      "notes": "Herding CATs：ALARA 式上下文-代理-工具声明层",
+      "indexed_at": "2026-07-21T17:18:19+08:00"
+    },
+    {
       "arxiv_id": "2602.22480",
       "arxiv_version": "v4",
       "title": "VeRO: A Harness for Agents to Optimize Agents",
@@ -1228,6 +2031,254 @@
       ],
       "notes": "Replayable Financial Agents",
       "indexed_at": "2026-07-14T17:32:32+08:00"
+    },
+    {
+      "arxiv_id": "2504.04785",
+      "arxiv_version": "v1",
+      "title": "Weak-for-Strong: Training Weak Meta-Agent to Harness Strong Executors",
+      "authors": [
+        "Fan Nie",
+        "Lan Feng",
+        "Haotian Ye",
+        "Weixin Liang",
+        "Pan Lu",
+        "Huaxiu Yao",
+        "Alexandre Alahi",
+        "James Zou"
+      ],
+      "published": "2025-04-07",
+      "url": "http://arxiv.org/abs/2504.04785",
+      "source": "arxiv",
+      "tier": "B",
+      "tier_reason": "弱 meta-agent 经 RL 学会设计工作流驾驭强执行器；11 基准增益，2025 文补录。",
+      "tags": [
+        "orchestration",
+        "rl",
+        "workflow"
+      ],
+      "notes": "W4S：weak-for-strong 工作流优化",
+      "indexed_at": "2026-07-21T17:18:19+08:00"
+    },
+    {
+      "arxiv_id": "2607.18152",
+      "arxiv_version": "v1",
+      "title": "jina-reranker-v3.5: An Efficient Listwise Reranker with Hybrid Attention and Self-Distillation",
+      "authors": [
+        "Christina Nasika",
+        "Feng Wang",
+        "Antonis Krasakis",
+        "Han Xiao"
+      ],
+      "published": "2026-07-20",
+      "url": "http://arxiv.org/abs/2607.18152",
+      "source": "arxiv",
+      "tier": "C",
+      "tier_reason": "listwise reranker 模型发布；agentic 检索组件，与 harness 主线关联弱。",
+      "tags": [
+        "retrieval",
+        "model-release"
+      ],
+      "notes": "jina-reranker-v3.5",
+      "indexed_at": "2026-07-21T17:18:19+08:00"
+    },
+    {
+      "arxiv_id": "2607.18147",
+      "arxiv_version": "v1",
+      "title": "LLMs and Agentic AI Systems for Smart Grids: A Tutorial on Architectures and Applications",
+      "authors": [
+        "Daniela Rojas",
+        "Abdulwahab Albassam",
+        "Aidan G. Leung",
+        "Jett Ngo",
+        "Ryan Luo",
+        "Peter R. Quawas",
+        "Junpyung Kim",
+        "Kangkai Liang",
+        "Mansi Nanavati",
+        "Jonathan Mai",
+        "Meng-Chi Tsai",
+        "Yun-Tong Tsai"
+      ],
+      "published": "2026-07-20",
+      "url": "http://arxiv.org/abs/2607.18147",
+      "source": "arxiv",
+      "tier": "C",
+      "tier_reason": "智能电网 agentic 系统教程 + solver-grounded 原则；教程/领域文。",
+      "tags": [
+        "domain",
+        "tutorial",
+        "tool-calling"
+      ],
+      "notes": "solver-grounded：数值必须出自可信工具",
+      "indexed_at": "2026-07-21T17:18:19+08:00"
+    },
+    {
+      "arxiv_id": "2607.18138",
+      "arxiv_version": "v1",
+      "title": "AI Agent Communications in AI-Native 6G Network: Status, Challenges and Opportunities",
+      "authors": [
+        "Qiang Duan"
+      ],
+      "published": "2026-07-20",
+      "url": "http://arxiv.org/abs/2607.18138",
+      "source": "arxiv",
+      "tier": "C",
+      "tier_reason": "6G 网络承载 AI agent 通信的差距分析；愿景/标准化文。",
+      "tags": [
+        "networking",
+        "vision"
+      ],
+      "notes": "AI-native 6G 与 agent 通信",
+      "indexed_at": "2026-07-21T17:18:19+08:00"
+    },
+    {
+      "arxiv_id": "2607.18116",
+      "arxiv_version": "v1",
+      "title": "SGA: Plug&Play Geometric Verification for Educational Video Synthesis",
+      "authors": [
+        "Lopez Jhon",
+        "Hinojosa Carlos",
+        "Ghanem Bernard"
+      ],
+      "published": "2026-07-20",
+      "url": "http://arxiv.org/abs/2607.18116",
+      "source": "arxiv",
+      "tier": "C",
+      "tier_reason": "教育视频合成的几何验证插件；专域验证模块。",
+      "tags": [
+        "domain",
+        "verification"
+      ],
+      "notes": "SGA：Manim 动画几何验证",
+      "indexed_at": "2026-07-21T17:18:19+08:00"
+    },
+    {
+      "arxiv_id": "2607.18029",
+      "arxiv_version": "v1",
+      "title": "Natural Language Access to Domain-Specific Metadata: A Reusable Framework for LLM Query Generation",
+      "authors": [
+        "Blake G. Fitch",
+        "Cato Elia Kurtz"
+      ],
+      "published": "2026-07-20",
+      "url": "http://arxiv.org/abs/2607.18029",
+      "source": "arxiv",
+      "tier": "C",
+      "tier_reason": "OWL 本体 + LLM 生成 SPARQL 的元数据查询 harness；专域框架。",
+      "tags": [
+        "domain",
+        "retrieval"
+      ],
+      "notes": "NLKGQ：自然语言查询知识图谱",
+      "indexed_at": "2026-07-21T17:18:19+08:00"
+    },
+    {
+      "arxiv_id": "2607.17437",
+      "arxiv_version": "v1",
+      "title": "Empirical Grounding Improves the Realism of LLM Agents Simulating Human Behavior During Disruptions",
+      "authors": [
+        "Chen Xia",
+        "Zexi Kuang",
+        "Yuqing Hu"
+      ],
+      "published": "2026-07-19",
+      "url": "http://arxiv.org/abs/2607.17437",
+      "source": "arxiv",
+      "tier": "C",
+      "tier_reason": "经验接地提升 LLM 代理行为仿真真实度；仿真相邻域。",
+      "tags": [
+        "simulation",
+        "empirical"
+      ],
+      "notes": "灾害中断下的人类行为仿真接地",
+      "indexed_at": "2026-07-21T17:18:19+08:00"
+    },
+    {
+      "arxiv_id": "2607.14082",
+      "arxiv_version": "v1",
+      "title": "Building Shor's Algorithm in Lean: An Agentic Formalization of Quantum Attacks on RSA-2048 and P-256",
+      "authors": [
+        "Lei Zhang",
+        "Yusheng Zhao",
+        "Hongshun Yao",
+        "Xin Wang"
+      ],
+      "published": "2026-07-15",
+      "url": "http://arxiv.org/abs/2607.14082",
+      "source": "arxiv",
+      "tier": "C",
+      "tier_reason": "Lean 中 agentic 形式化 Shor；与 LLM agent harness 主线关联弱。",
+      "tags": [
+        "formal-methods",
+        "quantum"
+      ],
+      "notes": "agentic 量子密码分析形式化",
+      "indexed_at": "2026-07-16T17:53:42+08:00"
+    },
+    {
+      "arxiv_id": "2607.14044",
+      "arxiv_version": "v1",
+      "title": "AI-accelerated End-to-End Framework for Rapid Professional Upskilling",
+      "authors": [
+        "Tam Nguyen",
+        "Hung Nguyen",
+        "Robert Ogburn"
+      ],
+      "published": "2026-07-15",
+      "url": "http://arxiv.org/abs/2607.14044",
+      "source": "arxiv",
+      "tier": "C",
+      "tier_reason": "企业 upskilling 端到端框架；产品/培训叙事，非 harness 方法。",
+      "tags": [
+        "education",
+        "enterprise"
+      ],
+      "notes": "AI 加速专业再培训框架",
+      "indexed_at": "2026-07-16T17:53:42+08:00"
+    },
+    {
+      "arxiv_id": "2607.13998",
+      "arxiv_version": "v1",
+      "title": "The Dynamic Verifiable Multi-Agent Human Agentic Loyalty Loop (DVM-HALL) Model and the Net Human-Agent Score (NHAS) in Autonomous Commerce",
+      "authors": [
+        "Sai Srikanth Madugula",
+        "Peplluis Esteva de la Rosa",
+        "Daya Shankar"
+      ],
+      "published": "2026-07-15",
+      "url": "http://arxiv.org/abs/2607.13998",
+      "source": "arxiv",
+      "tier": "C",
+      "tier_reason": "自主商务忠诚度概念模型；愿景/理论，待三阶段实证。",
+      "tags": [
+        "commerce",
+        "multi-agent",
+        "theory"
+      ],
+      "notes": "DVM-HALL / NHAS 忠诚度模型",
+      "indexed_at": "2026-07-16T17:53:42+08:00"
+    },
+    {
+      "arxiv_id": "2607.13602",
+      "arxiv_version": "v1",
+      "title": "Analogical Deep Research: Retrieving and Integrating Historical Analogies for Foresight Analysis",
+      "authors": [
+        "Yongqiang Chen",
+        "Guangyi Chen",
+        "Yuewen Sun",
+        "Kun Zhang"
+      ],
+      "published": "2026-07-15",
+      "url": "http://arxiv.org/abs/2607.13602",
+      "source": "arxiv",
+      "tier": "C",
+      "tier_reason": "历史类比 deep research；与 harness 编排主线相邻偏弱。",
+      "tags": [
+        "research-agent",
+        "retrieval"
+      ],
+      "notes": "Analogical Deep Research / CANA",
+      "indexed_at": "2026-07-16T17:53:42+08:00"
     },
     {
       "arxiv_id": "2607.07859",

@@ -1,7 +1,7 @@
 {
   "date": "2026-07-16",
   "run": {
-    "at": "2026-07-16T12:11:20+08:00",
+    "at": "2026-07-16T17:52:46+08:00",
     "sources": [
       "arxiv",
       "semanticscholar",
@@ -12,9 +12,9 @@
       "\"LLM agent\" harness",
       "test-time harness evolution"
     ],
-    "fetched": 85,
-    "merged": 49,
-    "new": 27
+    "fetched": 65,
+    "merged": 35,
+    "new": 19
   },
   "new_candidates": [
     {
@@ -41,8 +41,8 @@
         "agent harness"
       ],
       "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00"
     },
     {
       "source": "arxiv",
@@ -68,8 +68,8 @@
         "test-time harness evolution"
       ],
       "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00"
     },
     {
       "source": "arxiv",
@@ -110,8 +110,8 @@
         "agent harness"
       ],
       "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00"
     },
     {
       "source": "arxiv",
@@ -136,8 +136,8 @@
         "agent harness"
       ],
       "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00"
     },
     {
       "source": "arxiv",
@@ -161,8 +161,8 @@
         "agent harness"
       ],
       "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00"
     },
     {
       "source": "arxiv",
@@ -197,8 +197,8 @@
         "test-time harness evolution"
       ],
       "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00"
     },
     {
       "source": "arxiv",
@@ -223,8 +223,8 @@
         "agent harness"
       ],
       "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00"
     },
     {
       "source": "arxiv",
@@ -251,8 +251,8 @@
         "test-time harness evolution"
       ],
       "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00"
     },
     {
       "source": "arxiv",
@@ -277,8 +277,8 @@
         "agent harness"
       ],
       "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00"
     },
     {
       "source": "arxiv",
@@ -308,8 +308,8 @@
         "agent harness"
       ],
       "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00"
     },
     {
       "source": "arxiv",
@@ -332,8 +332,8 @@
         "\"LLM agent\" harness"
       ],
       "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00"
     },
     {
       "source": "arxiv",
@@ -366,8 +366,8 @@
         "\"LLM agent\" harness"
       ],
       "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00"
     },
     {
       "source": "arxiv",
@@ -412,8 +412,8 @@
         "\"LLM agent\" harness"
       ],
       "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00"
     },
     {
       "source": "arxiv",
@@ -440,8 +440,8 @@
         "\"LLM agent\" harness"
       ],
       "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00"
     },
     {
       "source": "arxiv",
@@ -465,8 +465,8 @@
         "\"LLM agent\" harness"
       ],
       "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00"
     },
     {
       "source": "arxiv",
@@ -492,8 +492,8 @@
         "\"LLM agent\" harness"
       ],
       "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00"
     },
     {
       "source": "arxiv",
@@ -518,8 +518,8 @@
         "\"LLM agent\" harness"
       ],
       "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00"
     },
     {
       "source": "arxiv",
@@ -555,8 +555,8 @@
         "\"LLM agent\" harness"
       ],
       "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00"
     },
     {
       "source": "arxiv",
@@ -579,238 +579,8 @@
         "\"LLM agent\" harness"
       ],
       "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
-    },
-    {
-      "source": "semanticscholar",
-      "arxiv_id": "2607.12227",
-      "doi": "",
-      "title": "Rethinking the Evaluation of Harness Evolution for Agents",
-      "authors": [
-        "Yike Wang",
-        "Huaisheng Zhu",
-        "Zhengyu Hu",
-        "Yige Yuan",
-        "Zhengyu Chen",
-        "Shakti Senthil",
-        "Hanna Hajishirzi",
-        "Yulia Tsvetkov",
-        "Pradeep Dasigi",
-        "Teng Xiao"
-      ],
-      "published": "2026-07-14",
-      "url": "https://arxiv.org/abs/2607.12227",
-      "abstract": "We revisit the evaluation of automatic harness evolution for LLM agents. Existing harness evolution methods use unit test cases to search for harness configurations and then report final performance on the same public benchmark. This protocol raises two fundamental concerns. First, harness evolution is itself an iterative search procedure that repeatedly evaluates and revises candidate harnesses using task feedback. As in agentic test-time scaling, it should therefore be compared with simple task-level search baselines under matched feedback and inference budgets to determine whether its gains arise from improved harness design or from additional search alone. Second, because the search and the final evaluation share the same benchmark, the reported gains risk overfitting to that specific task set. To address these concerns, we conduct an extensive evaluation comparing harness evolution with simple test-time scaling and discovery baselines under comparable feedback and inference budgets, and also evaluate evolved harnesses on held-out tasks to assess whether the discovered improvements generalize. Experiments on Terminal-Bench 2.1 with GPT-5.4 and Claude Opus 4.6 show that automatic harness evolution does not consistently outperform simple test-time scaling methods and exhibits limited generalization. Our results raise important questions about the effectiveness of automatic harness evolution and highlight the need for fairer evaluation protocols and benchmarks for automatic harness design. Our code is available at https://github.com/rethinking-harness-evolution.",
-      "external_ids": [
-        "s2:5d40736b1d9dccba508a2af90680ed3baff357e5",
-        "arxiv:2607.12227"
-      ],
-      "sources": [
-        "semanticscholar"
-      ],
-      "matched_keywords": [
-        "test-time harness evolution"
-      ],
-      "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
-    },
-    {
-      "source": "semanticscholar",
-      "arxiv_id": "2606.11144",
-      "doi": "",
-      "title": "OncoTraj: a public benchmark for longitudinal resistance prediction in EGFR-mutant non-small-cell lung cancer on osimertinib",
-      "authors": [
-        "A. Sarkar",
-        "Aarchi Singh Thakur"
-      ],
-      "published": "2026-06-09",
-      "url": "https://arxiv.org/abs/2606.11144",
-      "abstract": "Resistance to first-line osimertinib in EGFR-mutant non-small-cell lung cancer (NSCLC) is the canonical example of predictable clonal evolution under therapeutic pressure, yet no public benchmark exists for training or evaluating computational models on the corresponding longitudinal patient trajectories. We introduce OncoTraj, a public benchmark of 813 EGFR-mutant NSCLC patients receiving first-line osimertinib, harmonized from three real-world clinical-genomic sources: MSK-CHORD (672 patients), AACR Project GENIE BPC NSCLC (34 patients), and the FLAURA molecular-resistance supplement (107 patients). OncoTraj defines three locked tasks: (A) binary classification of progression by a fixed 12-month landmark, (B) regression of time-to-first-progression in days, and (C) six-class classification of the dominant resistance mechanism. We release the harmonized dataset, patient-level train/validation/test splits with an audited no-leakage guarantee, an open-source evaluation harness, and six reference baselines spanning a majority-class predictor, logistic regression, random forest, XGBoost, an LSTM, and a multi-task transformer. With v1's single-timepoint snapshot features, no task clears chance on clean within-source evaluation: the uniformity of this ceiling across every model class localizes the limit to the input modality (single-snapshot tissue NGS rather than serial ctDNA), not the algorithm. The benchmark does recover a reproducible literature-consistent association: TP53 co-mutation raises the 12-month progression rate from 29% to 59% cohort-wide. OncoTraj establishes a reproducible, leakage-audited baseline and converts the modality limit into concrete design requirements for a serial-ctDNA-enriched v2.",
-      "external_ids": [
-        "s2:864a3b36e5f85c04a4b34b74106e47e45d5eaebb",
-        "arxiv:2606.11144"
-      ],
-      "sources": [
-        "semanticscholar"
-      ],
-      "matched_keywords": [
-        "test-time harness evolution"
-      ],
-      "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
-    },
-    {
-      "source": "semanticscholar",
-      "arxiv_id": "",
-      "doi": "10.70211/bafr.v2i1.384",
-      "title": "LLM-Agent-Style Automated Usability Testing on MiniWoB++: A Reproducible Chunked Full-Run with ReAct, Plan-Execute, and Self-Reflect Policies",
-      "authors": [
-        "Qi Xin"
-      ],
-      "published": "2026-05-30",
-      "url": "https://www.semanticscholar.org/paper/79329285cf381c2b036344fad7f82246ebd8e8e2",
-      "abstract": "Automated usability testing can reduce the cost of repeatedly checking whether a web interface supports reliable and efficient task completion, but existing scripted tests are brittle and many agent evaluations report benchmark scores without translating failures into usability diagnostics. This study asks how three LLM-agent-style strategies—ReAct, Plan-Execute, and Self-Reflect—differ in effectiveness, efficiency, and failure modes when applied to MiniWoB++ tasks, and whether their logged traces can support actionable UI analysis. We conducted a controlled experimental benchmark on 130 MiniWoB++ web tasks, running each strategy once under a fixed seed with the same deterministic DOM-grounded controller, headless Chromium harness, 10-step limit, and 2.0 s episode budget, producing 390 episodes. We analyzed task success, steps, wall-clock time, interaction category, difficulty bins, and failure categories using paired per-task comparisons and descriptive aggregation. Plan-Execute achieved the highest success rate (14.6%, 19/130), compared with 10.8% (14/130) for both ReAct and Self-Reflect; its advantage was most evident in form/transaction and selection tasks, while all strategies performed similarly on simple click/button tasks and failed on drag/scroll tasks. Failure analysis showed that wrong outcomes and element-grounding errors were the dominant bottlenecks, indicating that explicit planning improves coverage only when target elements can be reliably grounded. The findings contribute a reproducible baseline and a usability-oriented failure taxonomy for automated web-agent testing, suggesting that future frameworks should prioritize semantic grounding, plan validation, richer action primitives, and designer-facing diagnostics.",
-      "external_ids": [
-        "s2:79329285cf381c2b036344fad7f82246ebd8e8e2",
-        "doi:10.70211/bafr.v2i1.384"
-      ],
-      "sources": [
-        "semanticscholar"
-      ],
-      "matched_keywords": [
-        "\"LLM agent\" harness"
-      ],
-      "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
-    },
-    {
-      "source": "semanticscholar",
-      "arxiv_id": "2606.20629",
-      "doi": "",
-      "title": "Specialize Roles, Mix Deployments: Pushing the Cost-Accuracy Frontier of LLM Agent Teams",
-      "authors": [
-        "Yinsicheng Jiang",
-        "Liang Cheng",
-        "Yeqi Huang",
-        "Yufan Zhao",
-        "Zhan Lu",
-        "Li Dong",
-        "Wenda Li",
-        "E. Ponti",
-        "Luo Mai"
-      ],
-      "published": "2026-05-28",
-      "url": "https://arxiv.org/abs/2606.20629",
-      "abstract": "LLM agents are increasingly deployed as multi-role teams, where tasks are divided across specialized roles such as planner, executor, and verifier. In these systems, cost and accuracy are no longer properties of a single model: they depend on which model fills each role and where it is hosted, including API, self-hosted, and hybrid deployment. Existing agentic benchmarks typically evaluate fixed models or fixed agent configurations, and therefore offer limited guidance for cost-accuracy-optimal deployment. We introduce AgentCARD, a role-aware benchmark suite for evaluating LLM agent teams across role assignment and deployment mode. AgentCARD combines a role-decomposed evaluation harness, a unified API/self-hosted cost model, Pareto-frontier analysis, and a Shapley-based diagnostic for identifying role bottlenecks. Our evaluation shows that heterogeneous teams consistently occupy the cost-accuracy frontier. They improve accuracy by up to $44\\%$ over cost-equivalent homogeneous teams, or match the strongest homogeneous team at up to $12\\times$ lower per-task cost through hybrid deployment. We further find that the best role assignment is domain-dependent: some domains are planner-bottlenecked, while others are executor-bottlenecked. Finally, AgentCARD extends beyond planner--executor teams to workflows with additional roles such as verification, and supports continual evaluation as new domains and team structures emerge. Our code is released at: https://github.com/Auto-CAP/AgentCAP",
-      "external_ids": [
-        "s2:a7b9f1da935190664031765f94717c492894759f",
-        "arxiv:2606.20629"
-      ],
-      "sources": [
-        "semanticscholar"
-      ],
-      "matched_keywords": [
-        "\"LLM agent\" harness"
-      ],
-      "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
-    },
-    {
-      "source": "semanticscholar",
-      "arxiv_id": "2605.26731",
-      "doi": "10.48550/arXiv.2605.26731",
-      "title": "It's Not the Capability: Harness Sensitivity Is Non-Monotone Across LLM Agent Tiers",
-      "authors": [
-        "Yongkyu Cho"
-      ],
-      "published": "2026-05-26",
-      "url": "https://arxiv.org/abs/2605.26731",
-      "abstract": "A prevalent assumption in LLM agent deployment holds that more structured harnesses universally improve reliability, and that higher-capability models need proportionally less structural guidance -- together implying a monotone inverse relationship between model capability tier and optimal harness complexity. We test this hypothesis through a controlled 432-run experiment crossing six models across four capability tiers with three harness conditions (light, balanced, strict) on HEAT-24, a 24-task synthetic benchmark with git-based workspace verification. Our results refute the monotone inverse relationship on two fronts. First, for the frontier chat model evaluated (Gemini 2.5 Flash), increased harness verbosity lowers VTSR by 29-38 percentage points -- a harness-complexity paradox. Second, for the frontier reasoning model evaluated (Qwen3.5-122B, extended thinking enabled), strict harness achieves the highest VTSR (91.7%) and the lowest latency, the opposite of the prediction. Within the constrained tier, a 2B model (Gemma4:e2B) matches strong-open-tier stability at 91.7% across all harnesses. Because each tier is represented by a single model in this study, these results should be interpreted as model-specific observations; harness sensitivity appears non-monotone across the models evaluated, and depends critically on model type (chat vs. reasoning). We introduce a six-label failure taxonomy showing that format_violation dominates capable-model failures while wrong_file dominates low-capability failures, and we derive practical tier-aware harness selection guidelines.",
-      "external_ids": [
-        "s2:abf255074039ebf3939b256bbb26f21cf31a2d3f",
-        "arxiv:2605.26731",
-        "doi:10.48550/arxiv.2605.26731"
-      ],
-      "sources": [
-        "semanticscholar"
-      ],
-      "matched_keywords": [
-        "\"LLM agent\" harness"
-      ],
-      "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
-    },
-    {
-      "source": "semanticscholar",
-      "arxiv_id": "2605.21404",
-      "doi": "10.48550/arXiv.2605.21404",
-      "title": "What Twelve LLM Agent Benchmark Papers Disclose About Themselves: A Pilot Audit and an Open Scoring Schema",
-      "authors": [
-        "M. Naser-Moghadasi",
-        "Faezeh Ghaderi"
-      ],
-      "published": "2026-05-20",
-      "url": "https://arxiv.org/abs/2605.21404",
-      "abstract": "We read twelve well-known LLM agent benchmark papers and recorded, dimension by dimension, what each paper actually says about how its evaluation was run. The motivation came from a familiar frustration: two papers will report results on the same benchmark with the same model name and disagree, and you cannot tell why -- the scaffold, the sampling settings, the subset, or the evaluator version. In many cases the published artifact does not let you answer. This paper is an implementation report on the attempt. We designed a small audit schema (five fields: benchmark identity, harness specification, inference settings, cost reporting, failure breakdown), wrote a scoring codebook with the boundary cases we hit during pilot scoring, applied it to twelve canonical papers (eight agent, four classical static), and recorded what we saw. We score the disclosure of an agent run, not its correctness, and make no claim that disclosure implies a trustworthy result. The mean audit score across the eight agent-benchmark papers is 0.38 (out of 1.0), and across the four classical static benchmarks 0.66; the largest gap is on cost (none of the eight agent benchmark papers disclose inference cost in any form) and on harness specification (none fully disclose a content-addressed container image of the evaluation environment). We release the schema as a JSON Schema file, the codebook as a Markdown document, and the raw scoring sheet as a CSV. The scoring was performed by a single auditor in one pass; a multi-rater audit is the natural next step, and we discuss what we think it would change.",
-      "external_ids": [
-        "s2:c4d28ea85c8b006a8d0389e24112d7f6827672ff",
-        "arxiv:2605.21404",
-        "doi:10.48550/arxiv.2605.21404"
-      ],
-      "sources": [
-        "semanticscholar"
-      ],
-      "matched_keywords": [
-        "\"LLM agent\" harness"
-      ],
-      "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
-    },
-    {
-      "source": "semanticscholar",
-      "arxiv_id": "2604.11378",
-      "doi": "10.48550/arXiv.2604.11378",
-      "title": "From Agent Loops to Structured Graphs:A Scheduler-Theoretic Framework for LLM Agent Execution",
-      "authors": [
-        "HU Wei"
-      ],
-      "published": "2026-04-13",
-      "url": "https://arxiv.org/abs/2604.11378",
-      "abstract": "The dominant paradigm for building LLM based agents is the Agent Loop, an iterative cycle where a single language model decides what to do next by reading an ever growing context window. This paradigm has three structural weaknesses: implicit dependencies between steps, unbounded recovery loops, and mutable execution history that complicates debugging. We characterize the Agent Loop as a single ready unit scheduler: at any moment, at most one executable unit is active, and the choice of which unit to activate comes from opaque LLM inference rather than an inspectable policy. This perspective places Agent Loops and graph based execution engines on a single semantic continuum. We propose SGH, Structured Graph Harness, which lifts control flow from implicit context into an explicit static DAG. SGH makes three commitments: execution plans are immutable within a plan version, planning execution and recovery are separated into three layers, and recovery follows a strict escalation protocol. These choices trade some expressiveness for controllability, verifiability, and implementability. Our contributions are fourfold: a scheduler unified framework that applies classical scheduling theory to LLM agent execution and identifies challenges introduced by non deterministic LLM nodes; a trade off analysis of controllability, expressiveness, and implementability across 70 surveyed systems; a formal specification including a node state machine with termination and soundness guarantees; and an attributable experimental framework with a seven group design for future validation. This is a position paper and design proposal. We provide a theoretical framework, design analysis, and experimental protocol, not a production implementation or empirical results.",
-      "external_ids": [
-        "s2:72084ca6d595f3b83fbfb083c1b95eefe418f690",
-        "arxiv:2604.11378",
-        "doi:10.48550/arxiv.2604.11378"
-      ],
-      "sources": [
-        "semanticscholar"
-      ],
-      "matched_keywords": [
-        "\"LLM agent\" harness"
-      ],
-      "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
-    },
-    {
-      "source": "semanticscholar",
-      "arxiv_id": "2501.14955",
-      "doi": "10.3847/1538-4357/adaf1f",
-      "title": "A Data-driven M Dwarf Model and Detailed Abundances for ∼17,000 M Dwarfs in SDSS-V",
-      "authors": [
-        "Aida Behmard",
-        "Melissa K. Ness",
-        "Andrew R. Casey",
-        "Ruth Angus",
-        "Katia Cunha",
-        "D. Souto",
-        "Y. Lu",
-        "Jennifer A. Johnson"
-      ],
-      "published": "2025-01-24",
-      "url": "https://arxiv.org/abs/2501.14955",
-      "abstract": "The cool temperatures of M dwarf atmospheres enable complex molecular chemistry, making robust characterization of M dwarf compositions a long-standing challenge. Recent modifications to spectral synthesis pipelines have enabled more accurate modeling of M dwarf atmospheres, but these methods are too slow for characterizing more than a handful of stars at a time. Data-driven methods such as The Cannon are viable alternatives, and can harness the information content of many M dwarfs from large spectroscopic surveys. Here, we train The Cannon on M dwarfs with FGK binary companions from the Sloan Digital Sky Survey-V/Milky Way Mapper (SDSS-V/MWM), with spectra from the Apache Point Observatory Galactic Evolution Experiment. The FGK-M pairs are assumed to be chemically homogeneous and span −0.56 < [Fe/H] < 0.31 dex. The resulting model is capable of inferring M dwarf Teff and elemental abundances for Fe, Mg, Al, Si, C, N, O, Ca, Ti, Cr, and Ni with median uncertainties of 13 K and 0.018–0.029 dex, respectively. We test the model by verifying that it reproduces the reported abundance values of M dwarfs in open clusters and benchmark M dwarf data sets, as well as the expected metallicity trends from stellar evolution. We apply the model to 16,590 M dwarfs in SDSS-V/MWM and provide their detailed abundances in our accompanying catalog.",
-      "external_ids": [
-        "s2:7f1f76642f9a90f790d74341c8639744c7f446d9",
-        "arxiv:2501.14955",
-        "doi:10.3847/1538-4357/adaf1f"
-      ],
-      "sources": [
-        "semanticscholar"
-      ],
-      "matched_keywords": [
-        "test-time harness evolution"
-      ],
-      "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00"
     }
   ]
 }

@@ -176,11 +176,282 @@ RATINGS: dict[str, dict] = {
         "tags": ["domain", "code-agent"],
         "notes": "CAX-Agent APDL",
     },
+    # --- 2026-07-16 inbox ---
+    "2607.14004": {
+        "tier": "A",
+        "tier_reason": "三方法×两阶段 continual 对照；回归控制决定 harness 优化增益能否复利。",
+        "tags": ["self-evolution", "orchestration", "evaluation", "methodology"],
+        "notes": "agent 优化器增益能否复利：回归控制是关键",
+        "knowledge_ids": ["orchestration-evolution", "evaluation"],
+    },
+    "2607.13683": {
+        "tier": "A",
+        "tier_reason": "提案与计分分离；密封测试上 +9–15.5pp，病理键归档抗过拟合。",
+        "tags": ["self-evolution", "orchestration", "adaptation"],
+        "notes": "门控语义质量多样性驱动的自演化 harness",
+        "knowledge_ids": ["orchestration-evolution"],
+    },
+    "2607.13918": {
+        "tier": "B",
+        "tier_reason": "部分相关 verifier cascade 理论清晰；实证偏合成，工程外推待核。",
+        "tags": ["evaluation", "reliability", "methodology"],
+        "notes": "LLM harness 中串行验证门的相关性与盲区天花板",
+    },
+    "2607.13705": {
+        "tier": "B",
+        "tier_reason": "Benchmark/Harness/Environment 解耦的评测基建；覆盖广但非因果实验。",
+        "tags": ["evaluation", "benchmark", "orchestration"],
+        "notes": "AgentCompass 统一 agent 评测基础设施",
+        "knowledge_ids": ["evaluation"],
+    },
+    "2607.13988": {
+        "tier": "B",
+        "tier_reason": "回合级信用分配显著提升长程工具使用；属 agentic RL，非 harness 编排主线。",
+        "tags": ["rl", "tool-calling", "long-horizon"],
+        "notes": "TRACE：工具边界上的 TD 信用估计",
+    },
+    "2607.13618": {
+        "tier": "B",
+        "tier_reason": "公平 oracle 拆开「感知 vs 行动」缺口；供应链专域，样本模型有限。",
+        "tags": ["evaluation", "benchmark", "methodology"],
+        "notes": "STOCKTAKE：测量 LLM agent 的 knowing-doing gap",
+    },
+    "2607.13591": {
+        "tier": "B",
+        "tier_reason": "把记忆当可控过程并用轻量策略学习；多基准增益明确，属记忆层非全 harness。",
+        "tags": ["memory", "context", "adaptation"],
+        "notes": "MemCon：自适应记忆检索/注入/巩固",
+        "knowledge_ids": ["context-memory"],
+    },
+    "2607.13594": {
+        "tier": "B",
+        "tier_reason": "EXECUTE/ASK/REFUSE 三路路由比二元护栏更贴近部署；护栏模型评测，非完整 harness。",
+        "tags": ["security", "permissions", "governance"],
+        "notes": "Safety Sentry：上下文感知人机介入路由",
+        "knowledge_ids": ["security-permissions"],
+    },
+    "2607.13474": {
+        "tier": "B",
+        "tier_reason": "组件/工作流/搜索三图抽象便于组合分析；框架文，实证偏代表性应用。",
+        "tags": ["orchestration", "architecture", "multi-agent"],
+        "notes": "MyAG：可组合 LLM agent 系统的图框架",
+    },
+    "2607.14047": {
+        "tier": "B",
+        "tier_reason": "纠正记忆跨轮复用降人工成本；具身数据采集设定，复现门槛高。",
+        "tags": ["embodied", "memory", "human-in-the-loop"],
+        "notes": "PhysClaw-0：语言纠正可复用的具身采集 harness",
+        "knowledge_ids": ["embodied-multimodal"],
+    },
+    "2607.14037": {
+        "tier": "B",
+        "tier_reason": "大规模 GitHub agentic PR 采用实证；观测性早期快照，非方法贡献。",
+        "tags": ["code-agent", "empirical", "human-agent"],
+        "notes": "开源项目对 agentic coding 工具的早期采用",
+    },
+    "2607.14006": {
+        "tier": "B",
+        "tier_reason": "把 AI 渗透测从基础设施攻陷扩展到行为目标违背；框架/定义文。",
+        "tags": ["security", "evaluation", "methodology"],
+        "notes": "AI 系统渗透测：行为目标违背范式",
+        "knowledge_ids": ["security-permissions"],
+    },
+    "2607.14082": {
+        "tier": "C",
+        "tier_reason": "Lean 中 agentic 形式化 Shor；与 LLM agent harness 主线关联弱。",
+        "tags": ["formal-methods", "quantum"],
+        "notes": "agentic 量子密码分析形式化",
+    },
+    "2607.14044": {
+        "tier": "C",
+        "tier_reason": "企业 upskilling 端到端框架；产品/培训叙事，非 harness 方法。",
+        "tags": ["education", "enterprise"],
+        "notes": "AI 加速专业再培训框架",
+    },
+    "2607.13998": {
+        "tier": "C",
+        "tier_reason": "自主商务忠诚度概念模型；愿景/理论，待三阶段实证。",
+        "tags": ["commerce", "multi-agent", "theory"],
+        "notes": "DVM-HALL / NHAS 忠诚度模型",
+    },
+    "2607.13602": {
+        "tier": "C",
+        "tier_reason": "历史类比 deep research；与 harness 编排主线相邻偏弱。",
+        "tags": ["research-agent", "retrieval"],
+        "notes": "Analogical Deep Research / CANA",
+    },
+    # --- 2026-07-21 inbox ---
+    "2607.18235": {
+        "tier": "A",
+        "tier_reason": "30 个预算对齐 harness×12 模型-问题对、310 万 rollout 重复试验；无普适最优 harness，应作超参调。",
+        "tags": ["evaluation", "orchestration", "methodology", "discovery"],
+        "notes": "自动发现无普适最优 harness：harness 是超参数",
+        "knowledge_ids": ["evaluation", "orchestration-evolution"],
+    },
+    "2607.17598": {
+        "tier": "A",
+        "tier_reason": "3 harness×3 模型族受控研究 Agent Skills 渐进披露；增益取决于 harness，一层足够。",
+        "tags": ["context", "skill", "evaluation", "retrieval"],
+        "notes": "渐进披露买的是上下文而非智能；强 harness 下近零增益",
+        "knowledge_ids": ["context-memory", "evaluation"],
+    },
+    "2605.14271": {
+        "tier": "A",
+        "tier_reason": "轨迹级 harness 安全审计：210 任务×8 域×10 配置；完成率与安全执行错位、违规随轨迹长度累积。",
+        "tags": ["security", "audit", "evaluation", "multi-agent"],
+        "notes": "HarnessAudit：输出正确≠执行安全",
+        "knowledge_ids": ["security-permissions", "evaluation"],
+    },
+    "2607.18171": {
+        "tier": "B",
+        "tier_reason": "chain-of-program 引导编码代理产出多 GPU 部署；数字亮但域限实时多模态服务。",
+        "tags": ["orchestration", "code-agent", "systems"],
+        "notes": "FlashRT：引导代理做实时多模态部署优化",
+    },
+    "2607.18161": {
+        "tier": "B",
+        "tier_reason": "定义 CodeSlop 并以轨迹最小化削减 17.9–32.9%；对代码库长期可维护性有工程价值。",
+        "tags": ["code-agent", "trajectory", "quality"],
+        "notes": "TRIM：最小化轨迹以减少 AI 代码冗余",
+    },
+    "2607.18064": {
+        "tier": "B",
+        "tier_reason": "生产任务上自然捕获 spec gaming（逐行背答案）；加 held-out 后消失。样本小但预注册。",
+        "tags": ["evaluation", "code-agent", "empirical"],
+        "notes": "autoresearch 中的 metric-maximizer 行为",
+    },
+    "2607.18063": {
+        "tier": "B",
+        "tier_reason": "自适应多轮攻击基准：15 轮 ASR 升至 5.4–14%；排名跨场景不一致。属安全评测基建。",
+        "tags": ["security", "benchmark", "multi-agent"],
+        "notes": "Adaptive Adversaries：适应性攻击者×无记忆防御者",
+        "knowledge_ids": ["security-permissions"],
+    },
+    "2607.18039": {
+        "tier": "B",
+        "tier_reason": "客服代理三个可复用部署模式；真实部署但属经验文，无对照数字。",
+        "tags": ["enterprise", "rag", "orchestration"],
+        "notes": "Evidence-in-the-Loop：trace 驱动的客服代理优化",
+    },
+    "2607.17979": {
+        "tier": "B",
+        "tier_reason": "评测 harness 与优化控制器分离的内核生成系统；Agent-Assisted 胜 Full-Agent，域限竞赛。",
+        "tags": ["code-agent", "evaluation", "systems"],
+        "notes": "GPU kernel 生成的 harness 工程",
+    },
+    "2607.17900": {
+        "tier": "B",
+        "tier_reason": "把 harness 层思想搬到 TTS 表达控制；路由+合成双评测，领域专属。",
+        "tags": ["domain", "control", "orchestration"],
+        "notes": "Harness TTS：TTS 引擎外的表达控制层",
+    },
+    "2607.17719": {
+        "tier": "B",
+        "tier_reason": "工业推荐后排策略精炼 harness；快手一个月 A/B 在线部署，域专属。",
+        "tags": ["enterprise", "self-evolution", "domain"],
+        "notes": "SR-Agent：约束式策略精炼 harness + 可回滚门控",
+    },
+    "2607.17641": {
+        "tier": "B",
+        "tier_reason": "噪声 verify-repair 环的鲁棒停机理论+GSM8K 压力测试 +60.6pp；实证域窄。",
+        "tags": ["reliability", "verification", "methodology"],
+        "notes": "VRR-Stop：修复该停就停",
+    },
+    "2607.17420": {
+        "tier": "B",
+        "tier_reason": "预注册人格 prompt 对照：效应依模型而异；对 harness 提示层设计有纠偏价值。",
+        "tags": ["prompting", "empirical", "evaluation"],
+        "notes": "人格是模型依赖的行为策略偏置，非普适质量干预",
+    },
+    "2606.14249": {
+        "tier": "B",
+        "tier_reason": "可组合/可演化 harness foundry，5 基准平均 +14.5%；严谨性细节与开源待核。",
+        "tags": ["orchestration", "self-evolution", "architecture"],
+        "notes": "HarnessX：类型化 harness 原语 + trace 驱动演化",
+    },
+    "2605.21825": {
+        "tier": "B",
+        "tier_reason": "端到端 VIS 应用设计 harness，SciVis 竞赛验证；域专属。",
+        "tags": ["domain", "orchestration", "skill"],
+        "notes": "AI VIS co-scientist harness",
+    },
+    "2605.18747": {
+        "tier": "B",
+        "tier_reason": "「代码即 harness」三层统一视角综述；覆盖广，属综述非新实证。",
+        "tags": ["survey", "code-agent", "orchestration"],
+        "notes": "Code as Agent Harness 综述",
+    },
+    "2605.00663": {
+        "tier": "B",
+        "tier_reason": "验证门控技能编排改善 affordance 接地的精度-成本前沿；具身专域。",
+        "tags": ["embodied", "verification", "orchestration"],
+        "notes": "Affordance Agent Harness：Router+Verifier 闭环",
+        "knowledge_ids": ["embodied-multimodal"],
+    },
+    "2603.20380": {
+        "tier": "B",
+        "tier_reason": "CAT 纯文本数据层管理多代理 harness；22 模型×115 任务评测，工具偏小众。",
+        "tags": ["multi-agent", "context", "tooling"],
+        "notes": "Herding CATs：ALARA 式上下文-代理-工具声明层",
+    },
+    "2504.04785": {
+        "tier": "B",
+        "tier_reason": "弱 meta-agent 经 RL 学会设计工作流驾驭强执行器；11 基准增益，2025 文补录。",
+        "tags": ["orchestration", "rl", "workflow"],
+        "notes": "W4S：weak-for-strong 工作流优化",
+    },
+    "2607.18152": {
+        "tier": "C",
+        "tier_reason": "listwise reranker 模型发布；agentic 检索组件，与 harness 主线关联弱。",
+        "tags": ["retrieval", "model-release"],
+        "notes": "jina-reranker-v3.5",
+    },
+    "2607.18147": {
+        "tier": "C",
+        "tier_reason": "智能电网 agentic 系统教程 + solver-grounded 原则；教程/领域文。",
+        "tags": ["domain", "tutorial", "tool-calling"],
+        "notes": "solver-grounded：数值必须出自可信工具",
+    },
+    "2607.18138": {
+        "tier": "C",
+        "tier_reason": "6G 网络承载 AI agent 通信的差距分析；愿景/标准化文。",
+        "tags": ["networking", "vision"],
+        "notes": "AI-native 6G 与 agent 通信",
+    },
+    "2607.18116": {
+        "tier": "C",
+        "tier_reason": "教育视频合成的几何验证插件；专域验证模块。",
+        "tags": ["domain", "verification"],
+        "notes": "SGA：Manim 动画几何验证",
+    },
+    "2607.18029": {
+        "tier": "C",
+        "tier_reason": "OWL 本体 + LLM 生成 SPARQL 的元数据查询 harness；专域框架。",
+        "tags": ["domain", "retrieval"],
+        "notes": "NLKGQ：自然语言查询知识图谱",
+    },
+    "2607.17437": {
+        "tier": "C",
+        "tier_reason": "经验接地提升 LLM 代理行为仿真真实度；仿真相邻域。",
+        "tags": ["simulation", "empirical"],
+        "notes": "灾害中断下的人类行为仿真接地",
+    },
 }
 
 
 SKIP_TITLES = {
     "agentic artificial intelligence - harnessing ai agents to reinvent business, work, and life",
+}
+
+# 检索噪声（物理 Rashba / 工业线束 / 足迹生物识别 / MHD 模拟器 / 视频异常检测 / KV cache 服务 / 类增量学习）
+SKIP_IDS = {
+    "2607.14069",
+    "2607.14021",
+    "2607.13905",
+    "2607.18176",
+    "2607.18142",
+    "2607.18141",
+    "2607.17593",
 }
 
 
@@ -230,13 +501,14 @@ def main() -> None:
 
     for c in watch.get("candidates", []):
         title = html.unescape(c.get("title") or "").strip()
-        if title.lower() in SKIP_TITLES:
+        aid = c.get("arxiv_id") or arxiv_id_from_url(c.get("url") or "")
+
+        if title.lower() in SKIP_TITLES or aid in SKIP_IDS:
             c["status"] = "skipped"
-            c["skip_reason"] = "book / weak harness sense"
-            skipped.append(title)
+            c["skip_reason"] = "noise / weak harness sense"
+            skipped.append(f"{aid} {title}" if aid else title)
             continue
 
-        aid = c.get("arxiv_id") or arxiv_id_from_url(c.get("url") or "")
         if not aid:
             c["status"] = "needs_manual"
             skipped.append(title)

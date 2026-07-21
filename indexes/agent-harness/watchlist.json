@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "topic": "agent harness",
-  "updated_at": "2026-07-21T12:18:00+08:00",
+  "updated_at": "2026-07-21T17:18:19+08:00",
   "candidates": [
     {
       "source": "arxiv",
@@ -29,9 +29,11 @@
         "\"LLM agent\" harness",
         "test-time harness evolution"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-21T12:18:00+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00"
+      "status": "promoted",
+      "first_seen_at": "2026-07-21T17:15:25+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
+      "promoted_tier": "A",
+      "promoted_at": "2026-07-21T17:18:19+08:00"
     },
     {
       "source": "arxiv",
@@ -55,9 +57,10 @@
       "matched_keywords": [
         "agent harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-21T12:18:00+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00"
+      "status": "skipped",
+      "first_seen_at": "2026-07-21T17:15:25+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
+      "skip_reason": "noise / weak harness sense"
     },
     {
       "source": "arxiv",
@@ -86,9 +89,11 @@
         "\"LLM agent\" harness",
         "test-time harness evolution"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-21T12:18:00+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00"
+      "status": "promoted",
+      "first_seen_at": "2026-07-21T17:15:25+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-21T17:18:19+08:00"
     },
     {
       "source": "arxiv",
@@ -116,9 +121,11 @@
       "matched_keywords": [
         "agent harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-21T12:18:00+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00"
+      "status": "promoted",
+      "first_seen_at": "2026-07-21T17:15:25+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-21T17:18:19+08:00"
     },
     {
       "source": "arxiv",
@@ -143,9 +150,11 @@
       "matched_keywords": [
         "agent harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-21T12:18:00+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00"
+      "status": "promoted",
+      "first_seen_at": "2026-07-21T17:15:25+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
+      "promoted_tier": "C",
+      "promoted_at": "2026-07-21T17:18:19+08:00"
     },
     {
       "source": "arxiv",
@@ -180,9 +189,11 @@
       "matched_keywords": [
         "agent harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-21T12:18:00+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00"
+      "status": "promoted",
+      "first_seen_at": "2026-07-21T17:15:25+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
+      "promoted_tier": "C",
+      "promoted_at": "2026-07-21T17:18:19+08:00"
     },
     {
       "source": "arxiv",
@@ -212,9 +223,10 @@
         "agent harness",
         "test-time harness evolution"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-21T12:18:00+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00"
+      "status": "skipped",
+      "first_seen_at": "2026-07-21T17:15:25+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
+      "skip_reason": "noise / weak harness sense"
     },
     {
       "source": "arxiv",
@@ -239,9 +251,10 @@
       "matched_keywords": [
         "agent harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-21T12:18:00+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00"
+      "status": "skipped",
+      "first_seen_at": "2026-07-21T17:15:25+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
+      "skip_reason": "noise / weak harness sense"
     },
     {
       "source": "arxiv",
@@ -263,9 +276,11 @@
       "matched_keywords": [
         "agent harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-21T12:18:00+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00"
+      "status": "promoted",
+      "first_seen_at": "2026-07-21T17:15:25+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
+      "promoted_tier": "C",
+      "promoted_at": "2026-07-21T17:18:19+08:00"
     },
     {
       "source": "arxiv",
@@ -289,9 +304,11 @@
       "matched_keywords": [
         "agent harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-21T12:18:00+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00"
+      "status": "promoted",
+      "first_seen_at": "2026-07-21T17:15:25+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
+      "promoted_tier": "C",
+      "promoted_at": "2026-07-21T17:18:19+08:00"
     },
     {
       "source": "arxiv",
@@ -318,9 +335,11 @@
         "\"LLM agent\" harness",
         "test-time harness evolution"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-21T12:18:00+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00"
+      "status": "promoted",
+      "first_seen_at": "2026-07-21T17:15:25+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-21T17:18:19+08:00"
     },
     {
       "source": "arxiv",
@@ -345,9 +364,11 @@
         "\"LLM agent\" harness",
         "test-time harness evolution"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-21T12:18:00+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00"
+      "status": "promoted",
+      "first_seen_at": "2026-07-21T17:15:25+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-21T17:18:19+08:00"
     },
     {
       "source": "arxiv",
@@ -378,9 +399,11 @@
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-21T12:18:00+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00"
+      "status": "promoted",
+      "first_seen_at": "2026-07-21T17:15:25+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-21T17:18:19+08:00"
     },
     {
       "source": "arxiv",
@@ -403,9 +426,11 @@
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-21T12:18:00+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00"
+      "status": "promoted",
+      "first_seen_at": "2026-07-21T17:15:25+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
+      "promoted_tier": "C",
+      "promoted_at": "2026-07-21T17:18:19+08:00"
     },
     {
       "source": "arxiv",
@@ -431,9 +456,11 @@
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-21T12:18:00+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00"
+      "status": "promoted",
+      "first_seen_at": "2026-07-21T17:15:25+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-21T17:18:19+08:00"
     },
     {
       "source": "arxiv",
@@ -462,9 +489,11 @@
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-21T12:18:00+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00"
+      "status": "promoted",
+      "first_seen_at": "2026-07-21T17:15:25+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-21T17:18:19+08:00"
     },
     {
       "source": "arxiv",
@@ -495,9 +524,11 @@
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-21T12:18:00+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00"
+      "status": "promoted",
+      "first_seen_at": "2026-07-21T17:15:25+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-21T17:18:19+08:00"
     },
     {
       "source": "arxiv",
@@ -523,9 +554,11 @@
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-21T12:18:00+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00"
+      "status": "promoted",
+      "first_seen_at": "2026-07-21T17:15:25+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-21T17:18:19+08:00"
     },
     {
       "source": "arxiv",
@@ -550,9 +583,11 @@
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-21T12:18:00+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00"
+      "status": "promoted",
+      "first_seen_at": "2026-07-21T17:15:25+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
+      "promoted_tier": "A",
+      "promoted_at": "2026-07-21T17:18:19+08:00"
     },
     {
       "source": "arxiv",
@@ -578,9 +613,10 @@
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-21T12:18:00+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00"
+      "status": "skipped",
+      "first_seen_at": "2026-07-21T17:15:25+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
+      "skip_reason": "noise / weak harness sense"
     },
     {
       "source": "arxiv",
@@ -604,9 +640,11 @@
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-21T12:18:00+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00"
+      "status": "promoted",
+      "first_seen_at": "2026-07-21T17:15:25+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
+      "promoted_tier": "C",
+      "promoted_at": "2026-07-21T17:18:19+08:00"
     },
     {
       "source": "arxiv",
@@ -631,9 +669,11 @@
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-21T12:18:00+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00"
+      "status": "promoted",
+      "first_seen_at": "2026-07-21T17:15:25+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-21T17:18:19+08:00"
     },
     {
       "source": "arxiv",
@@ -1277,9 +1317,11 @@
       "matched_keywords": [
         "agent harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-19T12:24:40+08:00",
-      "last_seen_at": "2026-07-19T12:24:40+08:00"
+      "status": "promoted",
+      "first_seen_at": "2026-07-21T17:15:25+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-21T17:18:19+08:00"
     },
     {
       "source": "semanticscholar",
@@ -1309,9 +1351,11 @@
       "matched_keywords": [
         "agent harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-19T12:24:40+08:00",
-      "last_seen_at": "2026-07-19T12:24:40+08:00"
+      "status": "promoted",
+      "first_seen_at": "2026-07-21T17:15:25+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-21T17:18:19+08:00"
     },
     {
       "source": "semanticscholar",
@@ -1376,9 +1420,11 @@
       "matched_keywords": [
         "agent harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-19T12:24:40+08:00",
-      "last_seen_at": "2026-07-19T12:24:40+08:00"
+      "status": "promoted",
+      "first_seen_at": "2026-07-21T17:15:25+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-21T17:18:19+08:00"
     },
     {
       "source": "semanticscholar",
@@ -1412,9 +1458,11 @@
       "matched_keywords": [
         "agent harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-19T12:24:40+08:00",
-      "last_seen_at": "2026-07-19T12:24:40+08:00"
+      "status": "promoted",
+      "first_seen_at": "2026-07-21T17:15:25+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
+      "promoted_tier": "A",
+      "promoted_at": "2026-07-21T17:18:19+08:00"
     },
     {
       "source": "semanticscholar",
@@ -1441,9 +1489,11 @@
       "matched_keywords": [
         "agent harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-19T12:24:40+08:00",
-      "last_seen_at": "2026-07-19T12:24:40+08:00"
+      "status": "promoted",
+      "first_seen_at": "2026-07-21T17:15:25+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-21T17:18:19+08:00"
     },
     {
       "source": "semanticscholar",
@@ -1467,9 +1517,11 @@
       "matched_keywords": [
         "agent harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-19T12:24:40+08:00",
-      "last_seen_at": "2026-07-19T12:24:40+08:00"
+      "status": "promoted",
+      "first_seen_at": "2026-07-21T17:15:25+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-21T17:18:19+08:00"
     },
     {
       "source": "semanticscholar",
@@ -1500,9 +1552,11 @@
       "matched_keywords": [
         "agent harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-19T12:24:40+08:00",
-      "last_seen_at": "2026-07-19T12:24:40+08:00"
+      "status": "promoted",
+      "first_seen_at": "2026-07-21T17:15:25+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-21T17:18:19+08:00"
     },
     {
       "source": "arxiv",
@@ -2063,9 +2117,11 @@
       "matched_keywords": [
         "agent harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "status": "already_indexed",
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00",
+      "promoted_tier": "C",
+      "promoted_at": "2026-07-16T17:53:42+08:00"
     },
     {
       "source": "arxiv",
@@ -2090,9 +2146,10 @@
         "\"LLM agent\" harness",
         "test-time harness evolution"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "status": "skipped",
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00",
+      "skip_reason": "noise / weak harness sense"
     },
     {
       "source": "arxiv",
@@ -2132,9 +2189,11 @@
       "matched_keywords": [
         "agent harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "status": "already_indexed",
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-16T17:53:42+08:00"
     },
     {
       "source": "arxiv",
@@ -2158,9 +2217,11 @@
       "matched_keywords": [
         "agent harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "status": "already_indexed",
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00",
+      "promoted_tier": "C",
+      "promoted_at": "2026-07-16T17:53:42+08:00"
     },
     {
       "source": "arxiv",
@@ -2183,9 +2244,11 @@
       "matched_keywords": [
         "agent harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "status": "already_indexed",
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-16T17:53:42+08:00"
     },
     {
       "source": "arxiv",
@@ -2219,9 +2282,10 @@
         "\"LLM agent\" harness",
         "test-time harness evolution"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "status": "skipped",
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00",
+      "skip_reason": "noise / weak harness sense"
     },
     {
       "source": "arxiv",
@@ -2245,9 +2309,11 @@
       "matched_keywords": [
         "agent harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "status": "already_indexed",
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-16T17:53:42+08:00"
     },
     {
       "source": "arxiv",
@@ -2273,9 +2339,11 @@
         "\"LLM agent\" harness",
         "test-time harness evolution"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "status": "already_indexed",
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00",
+      "promoted_tier": "A",
+      "promoted_at": "2026-07-16T17:53:42+08:00"
     },
     {
       "source": "arxiv",
@@ -2299,9 +2367,11 @@
       "matched_keywords": [
         "agent harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "status": "already_indexed",
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00",
+      "promoted_tier": "C",
+      "promoted_at": "2026-07-16T17:53:42+08:00"
     },
     {
       "source": "arxiv",
@@ -2330,9 +2400,11 @@
       "matched_keywords": [
         "agent harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "status": "already_indexed",
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-16T17:53:42+08:00"
     },
     {
       "source": "arxiv",
@@ -2354,9 +2426,11 @@
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "status": "already_indexed",
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-16T17:53:42+08:00"
     },
     {
       "source": "arxiv",
@@ -2388,9 +2462,10 @@
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "status": "skipped",
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00",
+      "skip_reason": "noise / weak harness sense"
     },
     {
       "source": "arxiv",
@@ -2434,9 +2509,11 @@
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "status": "already_indexed",
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-16T17:53:42+08:00"
     },
     {
       "source": "arxiv",
@@ -2462,9 +2539,11 @@
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "status": "already_indexed",
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00",
+      "promoted_tier": "A",
+      "promoted_at": "2026-07-16T17:53:42+08:00"
     },
     {
       "source": "arxiv",
@@ -2487,9 +2566,11 @@
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "status": "already_indexed",
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-16T17:53:42+08:00"
     },
     {
       "source": "arxiv",
@@ -2514,9 +2595,11 @@
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "status": "already_indexed",
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00",
+      "promoted_tier": "C",
+      "promoted_at": "2026-07-16T17:53:42+08:00"
     },
     {
       "source": "arxiv",
@@ -2540,9 +2623,11 @@
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "status": "already_indexed",
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-16T17:53:42+08:00"
     },
     {
       "source": "arxiv",
@@ -2577,9 +2662,11 @@
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "status": "already_indexed",
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-16T17:53:42+08:00"
     },
     {
       "source": "arxiv",
@@ -2601,9 +2688,11 @@
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
-      "status": "new",
-      "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-16T12:11:20+08:00"
+      "status": "already_indexed",
+      "first_seen_at": "2026-07-16T17:52:46+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00",
+      "promoted_tier": "B",
+      "promoted_at": "2026-07-16T17:53:42+08:00"
     },
     {
       "source": "semanticscholar",
@@ -3387,9 +3476,9 @@
       "matched_keywords": [
         "agent harness"
       ],
-      "status": "promoted",
+      "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -3412,9 +3501,9 @@
       "matched_keywords": [
         "agent harness"
       ],
-      "status": "promoted",
+      "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -3438,9 +3527,9 @@
         "agent harness",
         "\"LLM agent\" harness"
       ],
-      "status": "promoted",
+      "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -3467,9 +3556,9 @@
       "matched_keywords": [
         "agent harness"
       ],
-      "status": "promoted",
+      "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -3494,9 +3583,9 @@
         "agent harness",
         "\"LLM agent\" harness"
       ],
-      "status": "promoted",
+      "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00",
+      "last_seen_at": "2026-07-14T09:53:57+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -3523,9 +3612,9 @@
       "matched_keywords": [
         "agent harness"
       ],
-      "status": "promoted",
+      "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -3553,9 +3642,9 @@
       "matched_keywords": [
         "agent harness"
       ],
-      "status": "promoted",
+      "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00",
       "promoted_tier": "C",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -3589,9 +3678,9 @@
       "matched_keywords": [
         "agent harness"
       ],
-      "status": "promoted",
+      "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00",
+      "last_seen_at": "2026-07-16T17:52:46+08:00",
       "promoted_tier": "A",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -3631,9 +3720,9 @@
         "agent harness",
         "\"LLM agent\" harness"
       ],
-      "status": "promoted",
+      "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -3665,9 +3754,9 @@
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
-      "status": "promoted",
+      "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -3692,9 +3781,9 @@
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
-      "status": "promoted",
+      "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -3722,9 +3811,9 @@
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
-      "status": "promoted",
+      "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -3753,9 +3842,9 @@
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
-      "status": "promoted",
+      "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -3783,9 +3872,9 @@
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
-      "status": "promoted",
+      "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -3810,9 +3899,9 @@
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
-      "status": "promoted",
+      "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00",
+      "last_seen_at": "2026-07-21T17:15:25+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -3838,12 +3927,12 @@
       ],
       "status": "skipped",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00",
-      "skip_reason": "book / weak harness sense"
+      "last_seen_at": "2026-07-16T17:52:46+08:00",
+      "skip_reason": "noise / weak harness sense"
     }
   ],
   "last_run": {
-    "at": "2026-07-21T12:18:00+08:00",
+    "at": "2026-07-21T17:15:25+08:00",
     "sources": [
       "arxiv",
       "semanticscholar",
@@ -3854,8 +3943,8 @@
       "\"LLM agent\" harness",
       "test-time harness evolution"
     ],
-    "fetched": 85,
-    "merged": 52,
-    "new": 22
+    "fetched": 65,
+    "merged": 41,
+    "new": 29
   }
 }
