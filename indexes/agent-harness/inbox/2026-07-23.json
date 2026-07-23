@@ -1,0 +1,457 @@
+{
+  "date": "2026-07-23",
+  "run": {
+    "at": "2026-07-23T12:19:43+08:00",
+    "sources": [
+      "arxiv",
+      "semanticscholar",
+      "dblp"
+    ],
+    "keywords": [
+      "agent harness",
+      "\"LLM agent\" harness",
+      "test-time harness evolution"
+    ],
+    "fetched": 75,
+    "merged": 40,
+    "new": 14
+  },
+  "new_candidates": [
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.20346",
+      "arxiv_version": "v1",
+      "title": "IteraSim RAG: A Multi-Stage Retrieval-Augmented Agentic Back-End for OpenFOAM-Based Computational Fluid Dynamics",
+      "authors": [
+        "Pratyush Kumar"
+      ],
+      "published": "2026-07-22",
+      "url": "https://arxiv.org/abs/2607.20346",
+      "abstract": "Configuring a computational fluid dynamics (CFD) case in OpenFOAM requires assembling a multi-directory input deck of mutually consistent solver, discretisation and boundary-condition dictionaries -- a task that remains a substantial barrier to non-specialist use of open-source CFD software. Large language models (LLMs) coupled with retrieval-augmented generation (RAG) can lower this barrier, but existing systems retrieve with a single flat query, apply one retrieval strategy to operationally distinct requests, and let a single agent both draft and review its own output. We present IteraSim RAG, a retrieval-augmented software back-end for automated OpenFOAM case generation built around these three limitations. An LLM first expands the query into physics, solver-keyword and troubleshooting variants, Reciprocal Rank Fusion then merges the resulting ranked lists, and Maximal Marginal Relevance re-ranks the fused candidates against an HNSW-indexed dense vector store. A deterministic keyword router dispatches tool-conditioned workflow queries and corpus-wide physics queries down separate retrieval paths, and generation is split across an Architect, an InputWriter and a Reviewer agent, backed by a static canonical-knowledge layer covering solver selection, turbulence closures, boundary conditions and finite-volume defaults. On an openly released 28-case benchmark spanning zero-shot setup, few-shot generalisation, single-parameter modifications and turbulence-model swaps, the pipeline attains a mean retrieval coverage of 77.9% (median 79.1%), with the parameter-modification category exceeding 90%. All six reference configurations run to completion on OpenFOAM v2506, and two synthetically corrupted cases are diagnosed and repaired within the bounded Reviewer loop using only the solver log and the canonical layer. The benchmark, scoring rubric and figure scripts are released for reproducibility.",
+      "external_ids": [
+        "arxiv:2607.20346"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-23T12:19:43+08:00",
+      "last_seen_at": "2026-07-23T12:19:43+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.20255",
+      "arxiv_version": "v1",
+      "title": "The Ethics of Autonomous AI Agents for Offensive Security",
+      "authors": [
+        "Andreas Happe",
+        "Jürgen Cito",
+        "Jasmin Wachter"
+      ],
+      "published": "2026-07-22",
+      "url": "https://arxiv.org/abs/2607.20255",
+      "abstract": "LLM-driven autonomous agents are reshaping offensive security. Unlike traditional penetration-testing tooling -- deterministic, narrowly scoped, and operated by trained practitioners -- agentic security tools exhibit \\textit{indeterminacy} along three independent dimensions. First, their actions are drawn from a non-deterministic policy whose outputs resist both ex-ante and ex-post explanation, frustrating incident attribution and pre-deployment safety review. Second, their impact is open-ended due to the non-deterministic actions, agency of utilized models, and opaque LLM supply-chains. Third, their user population is indeterminate in both size and required skill: the operating skill floor for using or developing offensive capabilities has dropped sharply. These three properties are linked thematically, but are not derivable from one another. Combined with the structural cost asymmetry between offense and defense, they enable the industrialization of offensive capability. The net short-term effect favors attackers, even if the same technology may, in the long run, democratize access to defensive practice. Existing dual-use cybersecurity and AI-ethics frameworks were not designed for this combination. Our work analyzes how moral attribution becomes diffuse between users, tool-makers, and third parties when employing autonomous AI agents for offensive security. We also examine the stakeholder impact of this technology and provide stratified recommendations.",
+      "external_ids": [
+        "arxiv:2607.20255"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-23T12:19:43+08:00",
+      "last_seen_at": "2026-07-23T12:19:43+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.20216",
+      "arxiv_version": "v1",
+      "title": "Small, Free, and Effective: Orchestrating Open-Weight Small Language Models to Outperform Single LLM for Malware Analysis",
+      "authors": [
+        "Adel ElZemity",
+        "Shujun Li",
+        "Budi Arief"
+      ],
+      "published": "2026-07-22",
+      "url": "https://arxiv.org/abs/2607.20216",
+      "abstract": "Malware analysis demands rapid interpretation of complex detonation reports spanning filesystem, network, and process behaviours. While large language models (LLMs) demonstrate impressive capabilities for technical artifact interpretation, the opacity and escalating API costs of closed-weight frontier models motivate exploration of open-weight alternatives. However, many open-weight models are large, demanding significant compute resources and incurring non-trivial hosting costs that place them beyond reach for resource-constrained deployments. This paper investigates whether orchestrated ensembles of small language models (SLMs) can match or exceed single LLM performance on structured questions about malware detonation reports. We established baselines by testing eleven open-weight SLMs, three cyber security pre-trained models, and six frontier LLMs on Meta's CyberSecEval Malware Analysis benchmark. We then designed and evaluated four orchestration architectures: (i) a multi-agent pipeline that decomposes analysis into structured evidence-collection and reasoning stages, (ii) an adversarial debate framework in which two agents iteratively critique each other's reasoning, (iii) a hierarchical consultation system that pairs a general-purpose SLM with a cyber-specialised expert model, and (iv) a hybrid architecture that combines evidence-grounded pipelines with adversarial debate reasoning. The hybrid system (Qwen3-4B with Foundation-Sec-8B) achieved 35.30% overall accuracy, exceeding the strongest cyber-specialised baseline (22.54%) and the strongest ungrounded frontier baseline (34.77%); when given the same evidence pipeline, grounded Gemini remained the strongest configuration at 38.22%. These findings show that evidence-grounded orchestration can substantially improve the performance of collaborative SLMs for supporting interpretation of malware detonation reports.",
+      "external_ids": [
+        "arxiv:2607.20216"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-23T12:19:43+08:00",
+      "last_seen_at": "2026-07-23T12:19:43+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.20064",
+      "arxiv_version": "v1",
+      "title": "PRO-LONG: Programmatic Memory Enables Long-Horizon Reasoning",
+      "authors": [
+        "Alexis Fox",
+        "Junlin Wang",
+        "Paul Rosu",
+        "Bhuwan Dhingra"
+      ],
+      "published": "2026-07-22",
+      "url": "https://arxiv.org/abs/2607.20064",
+      "abstract": "Long-horizon tasks require sustained perception, reasoning, and exploration, and are a persistent challenge for large language model (LLM) agents. This gap is reflected in their limited performance on continual learning benchmarks such as ARC-AGI-3, especially when models are evaluated out of the box. Various agent harnesses have been proposed to close this gap, and each commits to a strategy for handling long sequences of observations, i.e., what information to save from the environment and how to load it into model context, a choice we argue is particularly consequential. Existing methods for context management face a significant tradeoff, as preserving more information makes retrieving relevant details less tractable. We propose PRO-LONG, a minimal context management framework built around programmatic memory for LLM agents in long-horizon, exploratory settings. PRO-LONG addresses the tradeoff by keeping a complete, structured interaction log and capitalizing on recent progress in coding agents to search this history efficiently. On the full ARC-AGI-3 public game set, PRO-LONG improves over a base coding agent by an average of 18.0 percentage points across frontier models, and matches or exceeds state-of-the-art specialized harnesses (up to 76.1% pass@1) while using 4.2-5.8x fewer tokens. With Fable 5, PRO-LONG achieves 97.4% best@2 at a total cost of \\$1,750. Relevant code and logs are available at https://github.com/alexisfox7/PRO-LONG.",
+      "external_ids": [
+        "arxiv:2607.20064"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-23T12:19:43+08:00",
+      "last_seen_at": "2026-07-23T12:19:43+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.20062",
+      "arxiv_version": "v1",
+      "title": "Solar Open 2 Technical Report",
+      "authors": [
+        "Sungrae Park",
+        "Sanghoon Kim",
+        "Gyoungjin Gim",
+        "Jungho Cho",
+        "Hyunwoong Ko",
+        "Minbyul Jeong",
+        "Minjeong Kim",
+        "Keunwoo Choi",
+        "Chaehun Shin",
+        "Chanwoong Yoon",
+        "Dongjun Kim",
+        "Eunwon Kim",
+        "Gyungin Shin",
+        "Hyeonju Lee",
+        "Hyungkyu Kang",
+        "Inseo Song",
+        "Jisu Bae",
+        "Jiyoon Han",
+        "Jiyun Lee",
+        "Joonkee Kim",
+        "Junyeop Lee",
+        "Mikyoung Cha",
+        "Sangwon Yu",
+        "Sehwan Joo",
+        "Seokyoon Kang",
+        "Seonghoon Yang",
+        "Seung Shin",
+        "Seunghyun Lee",
+        "Seungseop Lim",
+        "Seungyoun Shin",
+        "Sukyung Lee",
+        "Taegyeong Eo",
+        "Taehwan Oh",
+        "Taewhoo Lee",
+        "Wonho Song",
+        "Wonjun Oh",
+        "Wonseok Hwang",
+        "Yunsu Kim",
+        "Yura Shim",
+        "Hwalsuk Lee",
+        "Sunghun Kim",
+        "Du-Seong Chang",
+        "Kyunghyun Cho",
+        "Seungju Han",
+        "Yejin Choi",
+        "Junsuk Choe",
+        "Hwaran Lee",
+        "Minjeong Ban",
+        "Yun Taewon",
+        "Hwanjun Song",
+        "Jae-Gil Lee",
+        "KyungTae Lim",
+        "Alice Oh"
+      ],
+      "published": "2026-07-22",
+      "url": "https://arxiv.org/abs/2607.20062",
+      "abstract": "We present Solar Open 2, a 250B-A15B Mixture-of-Experts language model built for long-horizon agentic tasks, scaled up from Solar Open 1 (Solar Open 100B). To hold entire agent trajectories in a single context, Solar Open 2 reaches a 1M-token window through a hybrid attention stack that interleaves one softmax layer among every three linear-attention layers, using no positional encoding and a gated delta rule extended to negative eigenvalues. To train at this scale under a fixed compute budget, we make training efficient in two ways: a stronger starting point, and higher-value data. For the starting point, we initialize Solar Open 2 from Solar Open 1, transferring the 5.69B-parameter shared skeleton that survives the architectural change and learning everything else through full pre-training. For the data, we curate for value per token: quality- and rarity-aware data curation and mixture-ratio optimization refine a 20T pool into a 10T mixture that, at equal token budget, outperforms the Solar Open 1 recipe. To build its agent skills, we train twelve domain specialists across purpose-built scenarios, then consolidate them into a single model by Multi-teacher On-Policy Distillation (MOPD). Against comparably sized open-weight models on English benchmarks, Solar Open 2 leads on MMLU-Pro, LiveCodeBench, and the APEX-Agents agentic suite, and stays competitive with the strongest (DeepSeek-V4-Flash and MiMo-V2.5) elsewhere. On Korean benchmarks, Solar Open 2 records the highest average of any model compared, including fast-tier closed APIs, and on Ko-GDPval, an in-house Korean officework-agent benchmark, it is competitive with DeepSeek-V4-Pro (1.6T) at less than a sixth of its size.",
+      "external_ids": [
+        "arxiv:2607.20062"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-23T12:19:43+08:00",
+      "last_seen_at": "2026-07-23T12:19:43+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.20045",
+      "arxiv_version": "v1",
+      "title": "PN-QNN: Harnessing Physical Noise as a Native Regularizer in Photonic Hybrid Quantum Neural Networks",
+      "authors": [
+        "Farah Elnakhal",
+        "Alberto Marchisio",
+        "Nouhaila Innan",
+        "Gabriel Falcao",
+        "Muhammad Shafique"
+      ],
+      "published": "2026-07-22",
+      "url": "https://arxiv.org/abs/2607.20045",
+      "abstract": "Physical noise in near-term quantum hardware is usually treated as a nuisance to suppress. We ask whether it can instead act as a hardware-native regularizer for photonic hybrid quantum-classical neural networks (PHQCNNs), analogous to noise-injection regularization in classical deep learning. Using Quandela's Perceval simulator and the MerLin framework, we build PHQCNNs for Iris, Digits, and MNIST and inject Perceval's seven-parameter physical noise model directly into training. A genetic algorithm searches the six continuous noise dimensions and 1 boolean parameter to find, per dataset, the configuration maximizing validation accuracy, compared against a noiseless baseline across five seeds. GA-tuned noise yields modest accuracy gains on Iris (+0.82pp) and Digits (+1.45pp), but a clear degradation on MNIST (-1.21pp). Per-parameter sweeps show that no individual noise parameter is consistently beneficial, motivating the joint search, while a second-order loss expansion shows that physical noise induces a Tikhonov-like regularization term whose effect is dataset-dependent. Physical photonic noise can thus act as a free regularizer, but not universally.",
+      "external_ids": [
+        "arxiv:2607.20045"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-23T12:19:43+08:00",
+      "last_seen_at": "2026-07-23T12:19:43+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.20040",
+      "arxiv_version": "v1",
+      "title": "Exploring Multifunctionality in MgO-Based Magnetic Tunnel Junctions with Coexisting Magnetoresistance and Memristive Properties",
+      "authors": [
+        "Alejandro Schulman",
+        "Elvira Paz",
+        "Tim Böhnert",
+        "Alex Steven Jenkins",
+        "Ricardo Ferreira"
+      ],
+      "published": "2026-07-22",
+      "url": "https://arxiv.org/abs/2607.20040",
+      "abstract": "Magnetic tunnel junctions (MTJs) and memristors are two key emerging nanotechnologies that attracted significant interest for potential applications at the forefront of the digital revolution, including sensing, data storage, and non-conventional computation. The co-integration of these phenomena into a single multifunctional device is an important step toward harnessing the re-programmability of memristive systems with the high yield and varied functionality of MTJs. This study demonstrates the co-existence of magnetoresistance and memristive properties on MgO-based MTJs. These devices show a magnetoresistance with a linear response as a function of a magnetic field and no hysteresis, which are the requirements for good magnetic field sensors, as well as demonstrating a non-volatile and quasi-analogue memristive behavior as a function of an applied electrical field down to nanosecond pulses. Furthermore, by doping the oxide barrier, the memristive power consumption is lowered by 20% giving the multi-functionality of the devices a promising scalability potential. This study also shows that, memristive switching can be reversibly used to completely suppress and recover the spintronic functionalities. These results can pave the way for a seamless co-integration of memristors and spintronic devices in complex reprogrammable circuits addressing applications such as reprogrammable multifunctional field sensor arrays and neuromorphic computing.",
+      "external_ids": [
+        "arxiv:2607.20040"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-23T12:19:43+08:00",
+      "last_seen_at": "2026-07-23T12:19:43+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.19899",
+      "arxiv_version": "v1",
+      "title": "Harnessing Disagreement: Detecting Correlated Agreement Blindness in Multi-Agent Triage",
+      "authors": [
+        "Shay Seiya McDonnell",
+        "Avantika Singh",
+        "Quoc-Viet Pham",
+        "Vratislav Havlik",
+        "Gregory M. P. O'Hare"
+      ],
+      "published": "2026-07-22",
+      "url": "https://arxiv.org/abs/2607.19899",
+      "abstract": "Disagreement-triggered escalation can create a structural blind spot in multi-agent arbitration: as base learners improve, they tend to converge, weakening safety monitoring where correlated failures concentrate. We term this correlated agreement blindness and present ARAT (Arbitrated Reasoning Agents for Alarm Triage), a directed-star system combining an inductive Random Forest (RF) agent, an analogical case-based k-nearest neighbour (k-NN) agent, and a calibrated meta-model to mitigate this effect. On 82,332 holdout samples from the UNSW-NB15 network intrusion detection dataset, 57.2% of errors occur under agreement and 90.6% of dangerous under-predictions evade disagreement-based monitoring even after conservative override; ablation shows that strengthening base learners increases error correlation while reducing disagreement. ARAT reduces under-prediction relative to soft voting from 4.80% to 1.70% via conservative override (-2.6pp) and a safety-flag gate (-0.5pp), demonstrating architectural gains. Cross-dataset validation on clinical readmission supports these indicators, suggesting that diversification improves safety only when it generates productive disagreement rather than convergence. These results indicate that disagreement-triggered escalation can be blind to correlated failure, a risk that may intensify as agentic pipelines deploy increasingly capable, correlated models.",
+      "external_ids": [
+        "arxiv:2607.19899"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-23T12:19:43+08:00",
+      "last_seen_at": "2026-07-23T12:19:43+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.19865",
+      "arxiv_version": "v1",
+      "title": "DocOps: A Verifiable Benchmark for Autonomous Agents in Complex Document Operations",
+      "authors": [
+        "Jiazhen Jiang",
+        "Boxi Cao",
+        "Lingyong Yan",
+        "Yaojie Lu",
+        "Hongyu Lin",
+        "Shuaiqiang Wang",
+        "Dawei Yin",
+        "Xianpei Han",
+        "Le Sun"
+      ],
+      "published": "2026-07-22",
+      "url": "https://arxiv.org/abs/2607.19865",
+      "abstract": "As autonomous agents rapidly evolve, their ability to reliably manipulate ubiquitous digital documents has become critical for enabling general-purpose AI assistants and automating complex workspace workflows. In this paper, we introduce DocOps, a deterministically verifiable evaluation framework underpinned by a hierarchical taxonomy that deconstructs document operations inspired by real-world practices into atomic dimensions and escalating workflow complexities. Based on DocOps, we systematically evaluate representative closed- and open-source models across various agentic harnesses, revealing that even the most advanced frontier configurations still exhibit profound limitations when handling highly coupled, long-range tasks. Furthermore, a fine-grained analysis of existing agents' manipulation behaviors uncovers 3 key failure modes: long-term state tracking collapse, shallow semantic verification, and destructive editing of structural metadata. Ultimately, our work exposes the capability boundaries of agents in maintaining global document consistency, shedding light on the future design of robust, non-destructive agents for complex digital ecosystems.",
+      "external_ids": [
+        "arxiv:2607.19865"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-23T12:19:43+08:00",
+      "last_seen_at": "2026-07-23T12:19:43+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.19785",
+      "arxiv_version": "v1",
+      "title": "Not Birds of a Feather: Personality-Based Partner Selection in LLM Agents",
+      "authors": [
+        "Tao Wang",
+        "Hsiang-Ling Chiu",
+        "Chihang Wei",
+        "Yang Xiu",
+        "Zhonghao Hou"
+      ],
+      "published": "2026-07-22",
+      "url": "https://arxiv.org/abs/2607.19785",
+      "abstract": "Multi-agent LLM systems increasingly let one agent choose which other agents to work with, and agents are increasingly given personalities through personas. We test whether Big Five personality alone influences partner selection when capability is explicitly held constant. Host agents chose among six validated candidate archetypes -- five marked high on one trait (openness, conscientiousness, extraversion, agreeableness, neuroticism) plus a balanced control -- presented with randomized names and ordering across five task categories (375 trials). With neutral hosts (Study 1, n=150), selection departed drastically from chance ($χ^2(5)=325.8$, $p<.001$), following a task-stereotype map: the open archetype won 100% of creative trials, the conscientious archetype 90-97% of strategic, synthesis, and problem-solving trials, and the neurotic archetype 37% of analytical trials (Cramer's V=.74); the extraverted, agreeable, and balanced archetypes were almost never chosen, although human meta-analyses identify team agreeableness as among the strongest personality predictors of team performance. With personality-assigned hosts (Study 2, n=225), and contrary to human similarity-attraction, self-similar partners were selected below chance (11.1% vs. 16.7%, p=.025) and at greater-than-chance trait distance (p<.0001); conscientious hosts diversified away from their own archetype, recruiting vigilant and open partners. Personality-based selection in LLM agents is real, strong, task-stereotyped, non-homophilous, and miscalibrated against human team-performance evidence -- with direct implications for bias auditing in agent marketplaces.",
+      "external_ids": [
+        "arxiv:2607.19785"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-23T12:19:43+08:00",
+      "last_seen_at": "2026-07-23T12:19:43+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.19761",
+      "arxiv_version": "v1",
+      "title": "Harnessing Heterogeneous Data for Conditional Optimization via Optimal Transport",
+      "authors": [
+        "Jonathan Yu-Meng Li",
+        "Qinyu Wu"
+      ],
+      "published": "2026-07-22",
+      "url": "https://arxiv.org/abs/2607.19761",
+      "abstract": "Conditional optimization tailors decisions to contextual or event information, but its practical use is often limited by the difficulty of learning the relevant conditional distribution from finite samples of a target joint distribution. This challenge is especially acute when target joint data are scarce or unavailable, or when few observations fall in the conditioning region of interest. Related joint data may be available from multiple sources, such as different stores, markets, populations, or operating environments, but these sources may be biased relative to the target distribution and cannot be pooled naively. We develop a distributionally robust framework based on optimal transport (OT) for harnessing such heterogeneous data in conditional optimization. The framework constructs ambiguity sets over joint distributions using OT distances to empirical source distributions and optimizes worst-case conditional performance over plausible target laws. We propose three OT ambiguity sets that capture different ways of using heterogeneous sources: enforcing simultaneous source consistency, aggregating source discrepancies through weights, and centering the ambiguity set at an OT barycenter. We derive tractable reformulations, establish feasibility conditions, discuss parameter choices, and characterize the relationships among the formulations, revealing trade-offs between robustness, information aggregation, and computational complexity. We demonstrate the value of the framework through a conditional assortment problem using demand and product-feature data from multiple stores.",
+      "external_ids": [
+        "arxiv:2607.19761"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-23T12:19:43+08:00",
+      "last_seen_at": "2026-07-23T12:19:43+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.19652",
+      "arxiv_version": "v1",
+      "title": "An integrated super resolution THz 3D imaging system based on a linear nonlocal achromatic freeform Bessel beam lens and high power oscillator radiator array",
+      "authors": [
+        "Jin Chen",
+        "Liang Gao",
+        "Hao Guo",
+        "Zhi Chao Chen",
+        "Kang Jie Lin",
+        "Kam Man Shum",
+        "Ka Fai Chan",
+        "Chi Hou Chan"
+      ],
+      "published": "2026-07-22",
+      "url": "https://arxiv.org/abs/2607.19652",
+      "abstract": "High performance terahertz (THz) 3D imaging is critical for non-destructive evaluation. However, conventional architectures are fundamentally limited by severe chromatic aberrations, modest spatial resolution, restricted depths of focus (DOF), and the bulky nature of commercial transceivers. While metasurfaces offer a compact alternative, achieving broadband achromatic super-resolution with an extended DOF remains a formidable challenge. Here, we present a highly integrated 3D THz imaging platform that synergizes a 3D printed nonlocal freeform Bessel-beam lens with a high power, 65nm CMOS oscillator radiator array. Harnessing nonlocal interactions within the lens, we generate an achromatic super resolution Bessel beam (0.3 to 1 THz) with a subdiffraction full width at half maximum (FWHM) of 0.65λ and a robust 4.7-mm DOF. Crucially, the system overcomes conventional sidelobe limitations, enabling high-fidelity 2D imaging of intricate sub-millimeter targets (e.g., USAF 1951 charts and QR codes) alongside robust 3D volumetric imaging through highly scattering media, such as printed circuit boards. By converging standard CMOS technology with additive manufacturing, this work establishes a versatile, cost-effective paradigm for next-generation integrated THz photonics",
+      "external_ids": [
+        "arxiv:2607.19652"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-23T12:19:43+08:00",
+      "last_seen_at": "2026-07-23T12:19:43+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.19592",
+      "arxiv_version": "v1",
+      "title": "Knowledge-Centric Self-Improvement",
+      "authors": [
+        "Xuefei Julie Wang",
+        "Lauren Hyoseo Yoon",
+        "Chengrui Qu",
+        "Amanda Zichang Wang",
+        "Atharva Sehgal",
+        "Eric Mazumdar",
+        "Yisong Yue"
+      ],
+      "published": "2026-07-21",
+      "url": "https://arxiv.org/abs/2607.19592",
+      "abstract": "Self-improving AI systems typically treat the agent as the object that improves, by optimizing prompts, workflows, harnesses, or even the agent's own code. This agent-centric view can make improvements expensive to maintain and difficult to transfer, because gains become tied to a particular agent design, task distribution, or adaptation run. We study a complementary paradigm: knowledge-centric self-improvement, in which agents remain generic and disposable while the persistent object is a curated knowledge base that agents can leverage for future tasks. We conduct controlled case studies to operationalize this idea via a simple protocol. Agents attempt one task, then contribute evidence-grounded insights to a shared knowledge base via task-level and cross-task forums, followed by knowledge distillation. Because self-improvement is contained in the knowledge rather than the agent, improvement can be more inspectable, transferable, and portable. Across abstract reasoning, coding, and terminal benchmarks, this protocol improves solve rates while reducing dollar cost relative to agent-centric baselines. The resulting distilled knowledge also transfers to held-out tasks and across LLM families, indicating that the improvement is not merely an LLM- or run-specific behavior. These results support a new view of self-improving agentic systems: progress can be driven primarily by the curated persistent knowledge. Code is available at https://github.com/recursive-knowledge/KSI.",
+      "external_ids": [
+        "arxiv:2607.19592"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-23T12:19:43+08:00",
+      "last_seen_at": "2026-07-23T12:19:43+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.19526",
+      "arxiv_version": "v1",
+      "title": "The C-index illusion: discrimination without calibration in published survival models",
+      "authors": [
+        "Rafael da Silva",
+        "Danilo Alvares"
+      ],
+      "published": "2026-07-21",
+      "url": "https://arxiv.org/abs/2607.19526",
+      "abstract": "\"Stop Chasing the C-index when Evaluating Survival Analysis Models\" (ICML 2026, Spotlight) argued normatively, on synthetic data, that evaluating survival models by discrimination alone, i.e. the concordance index, produces systematically misleading model comparisons, because the metric ignores calibration and time-dependent accuracy. Whether this matters for real, published, non-clinical models has not been tested. We reproduce three published survival-ML models across three structurally distinct domains (hard-drive failure, peer-to-peer credit default, and user disengagement on digital platforms), validate our evaluation instrument against the anchor paper's own synthetic experiment, and test five pre-registered hypotheses under a Holm-corrected family-wise error rate. Three of five reject. A model that reproduces the published discrimination almost exactly (C = 0.9595 vs. 0.958 reported) fails a formal calibration test at p = 2.6e-136; a broad feature-ablation search finds no single attribute responsible for this discrimination, so the calibration failure is not an artifact of a trivial shortcut. A lender's estimated default risk is biased upward by roughly two percentage points, growing to nearly four points in the riskiest segment, when loan prepayment is treated as non-informative censoring rather than as a competing risk. A platform's churn model shows probability estimates that degrade with the prediction horizon even as its global discrimination stays within the pre-registered C-index band. A direct test of whether metric choice inverts which model is preferred does not reject, though with limited power given only two to three models per domain; the failure mode we document is better characterized as misplaced confidence in a chosen model than as choice of the wrong one. We release a reusable, pre-registered evaluation harness with full code and a single annotated notebook.",
+      "external_ids": [
+        "arxiv:2607.19526"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-23T12:19:43+08:00",
+      "last_seen_at": "2026-07-23T12:19:43+08:00"
+    }
+  ]
+}
