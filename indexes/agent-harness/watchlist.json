@@ -1,8 +1,571 @@
 {
   "schema_version": 1,
   "topic": "agent harness",
-  "updated_at": "2026-07-26T12:30:30+08:00",
+  "updated_at": "2026-07-27T12:41:51+08:00",
   "candidates": [
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.22520",
+      "arxiv_version": "v1",
+      "title": "The Regression Tax: Decomposing Why Skills Help and Hurt LLM Agents",
+      "authors": [
+        "Darshan Tank",
+        "Baran Nama"
+      ],
+      "published": "2026-07-24",
+      "url": "https://arxiv.org/abs/2607.22520",
+      "abstract": "Adding procedural skills to an LLM agent is typically evaluated by average improvement in task success. However, this metric hides an important cost: skills can also make agents worse. We measure both sides by comparing agents with and without skills across nearly 6,000 runs spanning two office automation benchmarks and three model harness stacks. This allows us to distinguish two outcomes. A regression is a task solved without skills but failed after skills are added. A residual failure is a task that fails both with and without skills. We find that regressions are substantial enough that the best performing skills outperform others primarily by regressing less, not by gaining more. We identify three causes of regression: (i) skill description osmosis, a skill changes an agent's behavior simply by being present in context, even when it is never invoked; (ii) grounding displacement, a skill's prescribed procedure overrides how the agent interprets its inputs; and (iii) verification displacement, where the procedure suppresses checks the agent would otherwise perform on its outputs. Analysing persistent failures reveals the same underlying pattern. Existing skills overemphasize procedural guidance the stage least often responsible for failure while under supporting grounding and verification, the dominant sources of remaining errors. After correcting evaluation artifacts and studying traces, we find many regressions and persistent failures recoverable through better grounding and verification. Procedural skills should be evaluated by decomposing their net effect into gains and regressions, not by aggregate improvement alone. We identify three regression modes skills should avoid, and find that reliability depends more on grounding and verification than on procedural skill choice.",
+      "external_ids": [
+        "arxiv:2607.22520"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-27T12:41:51+08:00",
+      "last_seen_at": "2026-07-27T12:41:51+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.22511",
+      "arxiv_version": "v1",
+      "title": "CausalForge: A Formally Grounded, Self-Improving Agentic Framework for Automated Research in Causal Inference",
+      "authors": [
+        "Jiyuan Tan",
+        "Vasilis Syrgkanis"
+      ],
+      "published": "2026-07-24",
+      "url": "https://arxiv.org/abs/2607.22511",
+      "abstract": "Automating theoretical research is constrained not only by the generation of candidate results, but also by their reliable evaluation. A common approach is to close the research loop with a large language model (LLM) reviewer. However, such reviewers remain empirically unreliable: they may accept fabricated papers and detect them at rates close to chance (Bad Scientist, 2025). We present CausalForge, a framework for automated theoretical research in causal inference grounded in the Lean proof assistant. CausalForge combines Causalean, a foundational Lean library for causal inference containing 7,035 machine-checked declarations developed with language-model assistance under human design and review, with CausalSmith, a self-improving agentic pipeline that selects research topics, proposes results, formalizes statements, constructs proofs, and presents the resulting artifacts for human inspection. Because a machine-checked proof establishes only that a formal statement follows from its assumptions, not that the statement faithfully captures the intended scientific claim, the pipeline augments kernel verification with a statement audit that compares each formal theorem against the informal claim it is intended to express. We evaluate the system using artifacts produced by completed autonomous research runs. The source code, formal library, and run records are available at https://github.com/Jiyuan-Tan/CausalForge.",
+      "external_ids": [
+        "arxiv:2607.22511"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-27T12:41:51+08:00",
+      "last_seen_at": "2026-07-27T12:41:51+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.22465",
+      "arxiv_version": "v1",
+      "title": "TRACE-ROUTER: Task-Consistent and Adaptive Online Routing for Agentic AI",
+      "authors": [
+        "Ritik Raj",
+        "Souvik Kundu",
+        "Sarbartha Banerjee",
+        "Dheemanth Joshi",
+        "Ishita Vohra",
+        "Tushar Krishna"
+      ],
+      "published": "2026-07-24",
+      "url": "https://arxiv.org/abs/2607.22465",
+      "abstract": "Routing to select large language models (LLMs) with different cost-quality trade-offs has become a fundamental deployment feature of enterprise AI. Existing routers, primarily make independent routing decisions for each LLM call. However, agentic applications execute as long-horizon workflows whose quality is determined only by a delayed, task-level outcome. This mismatch prevents per-call routers from correctly attributing feedback to individual routing decisions. Towards mitigating this, we present TRACE-Router, a task-level routing framework that aligns routing with the unit of supervision. TRACE-Router assigns each task to a model once at admission using a contextual bandit, pins all subsequent LLM calls to the selected backend, and updates its policy using the task's terminal reward, jointly accounting for accuracy and latency. By leveraging delayed task feedback, TRACE-Router learns routing policies that adapt to the workload while avoiding explicit task-complexity estimation. Across three agentic benchmarks, TRACE-Router consistently improves the accuracy-latency trade-off, achieving non-dominated Pareto frontier points. On tau2-Bench, it outperforms latency-matched interpolation between individual models by 7-8 accuracy points, while on Terminal-Bench it achieves 7.1 higher accuracy points than the strongest single model baseline with 36% lower latency.",
+      "external_ids": [
+        "arxiv:2607.22465"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-27T12:41:51+08:00",
+      "last_seen_at": "2026-07-27T12:41:51+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.22448",
+      "arxiv_version": "v1",
+      "title": "Where FactsGo Missing: A LayerwiseTaxonomy and Per-Layer Attribution of Information Omissionin Air-Gapped LLM Agent Pipelines",
+      "authors": [
+        "Santhiya Rajan"
+      ],
+      "published": "2026-07-24",
+      "url": "https://arxiv.org/abs/2607.22448",
+      "abstract": "Air-gapped and on-premises deployments in regulated settings (clinical FHIR services, legal review, sovereign infrastructure) cannot call frontier APIs; they run quantized 4-8B models via llama.cpp or vLLM behind tool servers. The dominant reliability failure is omission: the silent absence of a decision-critical fact, such as an agent reading 20 of 400 records and reporting \"no anomalies.\" We argue omission is a pipeline phenomenon, not a model phenomenon, and make four contributions. First, a nine-layer taxonomy (L0-L8) locating every omission mechanism from ingestion through the agent loop. Second, an attribution methodology separating deterministic layers (L0-L3) from behavioral layers (L4-L8) via controlled ablation and logit decomposition, quantifying each with an omission waterfall. Third, an open cross-architecture harness comparing sliding-window-hybrid, full-attention, and SSM-hybrid models across engines and frameworks. Fourth, a runtime-detection framework for air-gapped settings where you own the logits. Results from a 75,476-trial sweep across five models and two engines show a pooled omission rate of 0.62; 68% originates in deterministic middleware (L0-L3), relocating where operators should intervene. Server-side profile factors (weight quantization, KV-cache type, RoPE scaling) were fixed and left for future work.",
+      "external_ids": [
+        "arxiv:2607.22448"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-27T12:41:51+08:00",
+      "last_seen_at": "2026-07-27T12:41:51+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.22445",
+      "arxiv_version": "v1",
+      "title": "Dynamic Capability Scoping for Enterprise AI Agents: A Synthetic Dataset and Three-Source Permission Architecture",
+      "authors": [
+        "Halil Burak Noyan"
+      ],
+      "published": "2026-07-24",
+      "url": "https://arxiv.org/abs/2607.22445",
+      "abstract": "Enterprise AI agents are typically granted static credential sets at configuration time, holding every tool the role might need for every task they perform. This persistent over-privilege expands the attack surface. We argue that capability scoping must follow a dynamic least-privilege principle and be treated as a prevention mechanism before a detection one. A credential that does not exist in an agent's context cannot be misused regardless of the agent's reasoning or evasion sophistication. We outline a three-source architecture instantiating this principle: role-based ceilings, a task-context classifier, and policy-derived combination prohibitions creating a layered proactive defense against LLM agent misalignment and misuse cases. The architecture supports both enforcing and observe-only deployment; the latter records agent permission requests inconsistent with task context, producing a behavioral signal usable in misalignment research. As a first step toward evaluating this architecture, we contribute a synthetic dataset of 600 enterprise task prompts grounded in a multi-department company policy, labeled with minimum required permissions across a 15-permission tool-based taxonomy that maps directly to deployable credentials or enforceable guardrails. The dataset is constructed via a two-pass pipeline that separates prompt generation from permission labeling to avoid circularity, and is validated against a 60-record/688 decisions human-reviewed sample (Cohen's $κ= 0.917$ pre-review and $κ= 0.967$ post-review). Iterating between dataset and policy reduced ceiling violations from 46 to 3, a 93% reduction. This shows that synthetic prompt generation can drive policy refinement when the two are developed together. The dataset, environment specification, and generation pipeline are released to support evaluation of dynamic scoping mechanisms.",
+      "external_ids": [
+        "arxiv:2607.22445"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-27T12:41:51+08:00",
+      "last_seen_at": "2026-07-27T12:41:51+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.22443",
+      "arxiv_version": "v1",
+      "title": "A Human-Augmenting Agentic Workflow for Observational Causal Inference",
+      "authors": [
+        "Winston Chou",
+        "Adrien Alexandre",
+        "Lars Olds",
+        "Yi Zhang",
+        "Nathan Kallus"
+      ],
+      "published": "2026-07-24",
+      "url": "https://arxiv.org/abs/2607.22443",
+      "abstract": "Data analysis agents are becoming increasingly common tools for applied and scientific research. Yet, for highly specialized tasks such as Observational Causal Inference (OCI), human oversight remains necessary to ensure the validity of results. We introduce `oci-agent`, an open-source Python package that implements a human-in-the-loop agentic workflow for observational causal inference. `oci-agent` is designed to automate vital but laborious aspects of applied causal inference, such as covariate balance checking, propensity score trimming, and sensitivity analysis, so that humans can focus on more nuanced tasks, such as framing questions, scrutinizing assumptions, and evaluating diagnostics and results. We initially open-sourced `oci-agent` in June 2026 with support for doubly robust learning of the average treatment effect of a single binary treatment. Since then, we have added support for heterogeneous treatment effect estimation and for multiple continuous treatments via partially linear models. In this paper, we describe the principles behind `oci-agent` and offer internal Netflix case studies and evaluations on public data of its capabilities. Across numerous evaluations, `oci-agent` outperforms less structured baselines while remaining competitive with hand-tuned benchmarks. `oci-agent` is used extensively for causal inference at Netflix and has orchestrated more than 100 analyses per month since its release in June.",
+      "external_ids": [
+        "arxiv:2607.22443"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-27T12:41:51+08:00",
+      "last_seen_at": "2026-07-27T12:41:51+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.22406",
+      "arxiv_version": "v1",
+      "title": "Vibe Coding: An Experiment with Test-Driven Development",
+      "authors": [
+        "Moritz Mock",
+        "Barbara Russo"
+      ],
+      "published": "2026-07-24",
+      "url": "https://arxiv.org/abs/2607.22406",
+      "abstract": "Context: Conversational Large Language Models (CLLMs) can automatically generate code by collaborating with users through natural language. However, poor collaboration can lead to poor quality output. Objective: This exploratory study aims to investigate how humans and CLLMs can collaborate as peers through vibe coding, an approach that integrates principles from prompt engineering, agile design, and human-AI co-creation to enhance collaboration. Method: We designed four interaction models representing different collaboration patterns in the software development process: the solo model (human-only development), the collaborative model (human-CLLM collaboration), the fully automated model (development autonomously performed by a CLLM), and the agentic model (development autonomously performed by the MetaGPT~X platform). Based on these models, we implemented corresponding Test-Driven Development (TDD) workflows using structured prompts and Python scripts. We then conducted a controlled pre-experimental study with TDD professionals to compare the solo and collaborative workflows. In addition, we performed repeated exploratory executions of fully automated and agentic workflows on the same development tasks to obtain complementary evidence. Results: Our findings suggest that the choice of interaction model should depend on the development objective. Agentic workflows are best suited for rapid development and functionally correct production code but may introduce additional implementation complexity. However, they may also introduce additional implementation decisions that are not explicitly required by the functional specifications, resulting in untested decision points. In contrast, collaborative workflows produce higher-quality, better-organized test suites. Conclusions: Our work explored how...",
+      "external_ids": [
+        "arxiv:2607.22406"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-27T12:41:51+08:00",
+      "last_seen_at": "2026-07-27T12:41:51+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.22400",
+      "arxiv_version": "v1",
+      "title": "A Self-Calibrating Agentic AI Framework for Autonomous Edge Resource Allocation",
+      "authors": [
+        "Fin Gentzen",
+        "Marla Grunewald",
+        "Iulisloi Zacarias",
+        "Mounir Bensalem",
+        "Admela Jukan"
+      ],
+      "published": "2026-07-24",
+      "url": "https://arxiv.org/abs/2607.22400",
+      "abstract": "Large Language Models (LLMs) are increasingly deployed as autonomous agents, transitioning from static conversational interfaces to dynamic systems capable of complex reasoning, tool execution, and decision-making. However, the operational reliability of these agentic AI systems is fundamentally challenged by the absence of reliable ground truth in open-ended environments and the risk of increasing operational drift over time. To address this challenge, we propose and experimentally evaluate an agentic AI framework, designed to enforce autonomous integrity within LLM-driven systems. We design a self-calibration mechanism that mitigates drift and dynamically approximates ground truth by incorporating an ARIMA forecaster, without requiring continuous human oversight. To demonstrate the effectiveness and reliability of our methodology, we apply it to the complex domain of profiling the resource usage of zero-knowledge workloads in edge computing networks. Experimental results show that the proposed self-calibrating agentic framework successfully profiles the zero-knowledge workloads, achieving a higher accuracy than baseline LLM agents by 91.7% for resource usage prediction and improving the prediction speed by 71.7% compared to pure profiling, establishing a robust foundation for deploying autonomous AI in decentralized infrastructures. Furthermore, the ground truth generation using the proposed ARIMA leaping algorithm is 52% faster than a standard ARIMA forecasting algorithm, while achieving the same accuracy.",
+      "external_ids": [
+        "arxiv:2607.22400"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-27T12:41:51+08:00",
+      "last_seen_at": "2026-07-27T12:41:51+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.22385",
+      "arxiv_version": "v1",
+      "title": "Agentic Root Cause Analysis through Evidence-Grounded Reasoning",
+      "authors": [
+        "Amaury Wei",
+        "Olga Fink"
+      ],
+      "published": "2026-07-24",
+      "url": "https://arxiv.org/abs/2607.22385",
+      "abstract": "Diagnosing the root cause of anomalies is essential for safe industrial operation. Despite extensive sensor instrumentation, formulating hypotheses and gathering evidence remains a manual process, creating a major operational bottleneck. While existing data-driven approaches aim to automate this, two critical limitations restrict their deployment: their operate as black boxes unable to justify their diagnosis, and they require scarce labeled examples of faulty operation. To address this gap, we introduce AgentRCA, a zero-shot agentic framework for evidence-grounded root cause analysis. Rather than learning fault-specific mappings, AgentRCA performs inference-time reasoning by combining a data-driven digital twin (modeling normal system dynamics) with a tool-augmented large language model. The agent iteratively gathers statistical evidence, evaluates competing hypotheses, and identifies the physical fault that best explains the observed behavior. Evaluated on a real-world multiphase-flow facility and a large-scale chemical plant, AgentRCA achieves diagnostic performance competitive with fully supervised baselines without relying on fault-specific training. Crucially, it produces transparent reasoning traces that explicitly link observed symptoms to their underlying physical causes. These results establish autonomous hypothesis-driven reasoning as a practical foundation for scalable industrial root cause analysis.",
+      "external_ids": [
+        "arxiv:2607.22385"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-27T12:41:51+08:00",
+      "last_seen_at": "2026-07-27T12:41:51+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.22375",
+      "arxiv_version": "v1",
+      "title": "IDEAgent: Agentic Quality-Diversity Search for Research Idea Generation",
+      "authors": [
+        "Varun Gumma",
+        "Navonil Majumder",
+        "Soumitra Sinhahajari",
+        "Soujanya Poria"
+      ],
+      "published": "2026-07-24",
+      "url": "https://arxiv.org/abs/2607.22375",
+      "abstract": "Large Language Models (LLMs) have significantly automated the process of scientific discovery over the past few years. However, existing systems share one core limitation: they generate and optimize ideas independently for either Quality or Diversity. This often leads to the generation of ideas in close proximity to one another or to a large set of trivial, unsound, or unclear concepts. In this work, we instead argue that research ideation should be treated as a conjunction of both objectives and framed as a Quality-Diversity (QD) search. In line with this perspective, we introduce IDEAgent, a multi-agent framework that manages the evolution of ideas through lineages. We jointly drive Quality using multi-objective feedback for dedicated repair and refinement, while Diversity is achieved through lightweight sequential memory and explicit comparison against completed ideas, their historical ancestors, and rejected proposals. To systematically evaluate this QD conjunction, we develop Yield, a joint metric that computes the largest set of mutually diverse ideas that satisfy a predetermined quality threshold. Finally, through evaluations across 32 topics spanning 8 domains of Computer Science, we show that IDEAgent outperforms the best baseline by 3.89x on Yield, while achieving non-zero Yield on 8x more topics. We further corroborate these findings through an analysis of quality improvements, showing that repair and refinement are crucial for building logical rigor and clarity while preserving non-obviousness. To encourage future research on QD-search-based ideation, we open-source IDEAgent at https://github.com/declare-lab/IDEAgent.",
+      "external_ids": [
+        "arxiv:2607.22375"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-27T12:41:51+08:00",
+      "last_seen_at": "2026-07-27T12:41:51+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.22368",
+      "arxiv_version": "v1",
+      "title": "Do Agent Benchmarks Measure Capability? Protocol Validity in the Age of Agentic AI",
+      "authors": [
+        "Jiaqi Shao",
+        "Hanck Chen",
+        "Wei Zhang",
+        "Maxm Pan",
+        "Bing Luo"
+      ],
+      "published": "2026-07-24",
+      "url": "https://arxiv.org/abs/2607.22368",
+      "abstract": "Agent benchmarks increasingly evaluate repository editing, web research, terminal use, and long-horizon interaction. Their scores support capability claims only when the evaluation protocol keeps the intended capability necessary for success. Recent reward-hacking benchmarks and system reports show that agents can instead recover public solutions, read evaluation artifacts, infer generator structure, manipulate feedback, or benefit from invalid scoring paths; existing responses do not provide a common procedure for attributing these shortcuts and quantifying their effect across benchmarks. We formulate protocol validity and introduce HackDetect, a post-hoc audit that identifies an exposure, determines how the agent used it, and assesses whether the resulting score is misleading. We quantify score inflation with the Mislead gap, defined as the exploit score minus the intended score. We audit 2,385 traces across 15 agent benchmarks and find evidence of exposures and reward hacking in 67.0% of Frontier Science traces and 66.7% of AutoLab tasks. Across paired comparisons, we measure score inflation of 0.45-1.00, showing that benchmark reports should provide evidence that scores reflect the intended capability.",
+      "external_ids": [
+        "arxiv:2607.22368"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-27T12:41:51+08:00",
+      "last_seen_at": "2026-07-27T12:41:51+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.22242",
+      "arxiv_version": "v1",
+      "title": "Agentic CPU-GPU Scheduling for Heterogeneous AI Workloads",
+      "authors": [
+        "Tianxi Lu",
+        "Sherief Reda"
+      ],
+      "published": "2026-07-24",
+      "url": "https://arxiv.org/abs/2607.22242",
+      "abstract": "Agentic AI systems compose heterogeneous tool workloads on shared GPU/CPU infrastructure, yet existing frameworks assign all GPU-capable tools to the GPU by default. We profile 19 AI tools across GPU and CPU and find that 11 are GPU-preferred, 4 are ambiguous, 1 is CPU-preferred due to PCIe transfer dominance, and 3 are device-neutral, establishing that blanket GPU-first scheduling is suboptimal. We formulate device scheduling as assigning each tool to one of three options: immediate GPU execution, queued GPU execution, or CPU offload, under a VRAM budget, and identify two runtime factors that cause end-to-end latency to diverge from static profiles: GPU utilization contention and VRAM capacity contention. We present an agentic scheduler that pairs an LLM agent with an algorithmic runtime monitor, where the monitor expands what the LLM can observe via running averages, symmetric reprobing, swap reprobing, and exploration hints, without ever prescribing which mapping to adopt. Across 13 scenarios spanning serial execution, parallel contention, and memory-constrained execution, the agentic scheduler reaches the brute-force optimal mapping in all 13 scenarios, matching the best classical baseline on mapping accuracy while avoiding bandit-style exploration over complete mappings, and outperforming HEFT, StarPU, and the all-GPU policy while requiring zero offline training.",
+      "external_ids": [
+        "arxiv:2607.22242"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-27T12:41:51+08:00",
+      "last_seen_at": "2026-07-27T12:41:51+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.22161",
+      "arxiv_version": "v1",
+      "title": "HarnessLLM: Rust Verification Harness Generation with Large Language Models",
+      "authors": [
+        "Minghua Wang",
+        "Yuwei Liu",
+        "Lin Huang"
+      ],
+      "published": "2026-07-24",
+      "url": "https://arxiv.org/abs/2607.22161",
+      "abstract": "Rust's ownership model and type system offer strong memory safety guarantees, but unsafe code and runtime panics still present significant risks. Formal verification is essential to ensure memory safety, but developing verification harnesses remains a challenging and manual task. Although large language models (LLMs) have shown strong performance in various code analysis tasks, directly applying them to harness generation often results in inaccurate API invocations, inefficient nondeterministic data generation, and fabricated fixes. In this paper, we present HarnessLLM, an automated workflow that leverages LLMs to generate verification harnesses for Rust code directly from existing test suites. HarnessLLM automatically extracts calling scenarios from test cases, generates nondeterministic arguments based on dependency analysis, and incrementally synthesizes harnesses. It then iteratively refines the harnesses, preserving critical code regions and reporting fabricated types or functions to LLMs for correction. In our evaluation on 9 real-world Rust codebases, HarnessLLM extracted 294 calling scenarios from 494 test cases with 94.66% precision and generated harnesses for all scenarios in an average of 145 seconds each. It outperformed the existing approach, Autoharness, which succeeded on only 41% of those scenarios. Finally, 6 real-world memory safety bugs were detected using the generated harnesses, demonstrating the practical utility of our approach in verification. To our knowledge, this is the first work to use LLMs for generating harnesses aimed at memory safety verification in real-world Rust projects.",
+      "external_ids": [
+        "arxiv:2607.22161"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-27T12:41:51+08:00",
+      "last_seen_at": "2026-07-27T12:41:51+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.22157",
+      "arxiv_version": "v1",
+      "title": "Learning on the Job: Continual Learning from Deployment Feedback for Frozen-Weights Agents",
+      "authors": [
+        "Valentin Tablan",
+        "Scott Taylor",
+        "Kristoffer Bernhem"
+      ],
+      "published": "2026-07-24",
+      "url": "https://arxiv.org/abs/2607.22157",
+      "abstract": "AI agents encounter learning opportunities in every episode they run, and discard nearly all of them: the underlying models are frozen at deployment, so an agent that resolves a difficult request today starts from zero when it recurs tomorrow. Yet ordinary operation already produces feedback, in the form of outcome verdicts and after-the-fact corrections. We show that this feedback is a sufficient signal for continual learning when the frozen model is paired with an external memory that distils each episode into retrievable natural-language rules. On the banking domain of $τ$-bench, against a static-RAG control retrieving over the complete policy corpus, learning from the one-bit outcome verdict lifts single-trial success to 1.6$\\times$ the baseline, and learning from corrections to 2.6$\\times$, converting 22 of the 84 tasks the baseline never solves. The result spans the deployment spectrum, measured on Mistral Large, an open-weights model that organisations with data sovereignty requirements can self-host, and replicated on a frontier model, Claude Sonnet 5. The accumulated memory also transfers: each model, reading the store built by the other, rises above its own no-memory baseline. The harness, protocol, and data are released.",
+      "external_ids": [
+        "arxiv:2607.22157"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-27T12:41:51+08:00",
+      "last_seen_at": "2026-07-27T12:41:51+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.22098",
+      "arxiv_version": "v1",
+      "title": "Reasoning Denoiser: Denoising Reasoning Traces for Hallucination Detection in Large Reasoning Models",
+      "authors": [
+        "Junlin Fang",
+        "Do Nguyen-Thanh",
+        "Xiaogang Xu",
+        "Zhen Fang",
+        "Sean Du"
+      ],
+      "published": "2026-07-24",
+      "url": "https://arxiv.org/abs/2607.22098",
+      "abstract": "Large reasoning models (LRMs) generate long reasoning traces before producing final answers. While these traces may contain useful signals for hallucination detection, harnessing them is non-trivial because long trajectories often include noisy steps that obscure the cues relevant to truthfulness assessment. In this paper, we identify two prevalent forms of reasoning noises, i.e., irrelevant steps and repetitive steps, and show that both substantially degrade hallucination detection performance. Existing confidence-based scores and naive embedding-based filtering fail to reliably separate noisy from informative steps. To address this challenge, we propose REDE, a novel learning framework for denoising reasoning traces for hallucination detection. Specifically, REDE leverages final-answer attention as an automatic supervision signal to shape the step-level representation space, yielding refined embeddings in which noisy steps can be reliably identified and filtered. REDE can be readily plugged into diverse hallucination detectors by operating on the filtered reasoning trajectory after removing noisy steps. Extensive experiments on multiple reasoning benchmarks show that REDE consistently improves detection performance over competitive baselines.",
+      "external_ids": [
+        "arxiv:2607.22098"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-27T12:41:51+08:00",
+      "last_seen_at": "2026-07-27T12:41:51+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.21962",
+      "arxiv_version": "v1",
+      "title": "Ground Truth First: A Longitudinal Evaluation Instrument for Agent Memory, and the Tenure Crossover in Memory-Architecture Rankings",
+      "authors": [
+        "Quentin Spencer"
+      ],
+      "published": "2026-07-24",
+      "url": "https://arxiv.org/abs/2607.21962",
+      "abstract": "Benchmarks for LLM-agent memory typically generate conversations first and extract answer keys afterwards -- with documented label-error and contamination problems -- and they overwhelmingly measure short interaction histories. We invert the pipeline: a seeded life-script sampler emits facts with validity intervals, volatility classes, and source channels before any text exists; an LLM renderer writes chat and email from per-event fact manifests; a fidelity verifier confirms every planted fact; and questions are instantiated mechanically from the script, so gold answers are script-valid by construction and separately validated for answerability. The synthetic, fictionalized corpus (~380 questions, 15 types) embeds features absent from the benchmarks we survey: per-fact validity intervals, sent/received trust distinctions, injection probes in a benign harness, and as-of-date question sets. Benchmarking five memory architectures against a no-memory control (fixed answerer, versioned LLM judge, three replicates, two horizons), we find backend rankings invert with history length: the budgeted curated-map memory that leads at three weeks loses recall of evicted content by nine weeks (96% to 72%) while a provenance-typed graph rises to 90%; the inversion is positive for all six users under complete cross-family re-judging (exact p=0.031). A full-rendered-history baseline ties or exceeds the best memory system at the short horizon but shows no judge-independent advantage at nine weeks, at about twice the read cost. Write-stage quality strongly correlates with downstream quality (weakly-written facts fail 24% vs 2%), and injection resistance tracked whether provenance boundaries survive representation. A layered architecture performs best among the memory systems in both regimes (96.8% short-horizon) and is released as Veracium, an open-source library, with the corpus generator and harness.",
+      "external_ids": [
+        "arxiv:2607.21962"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-27T12:41:51+08:00",
+      "last_seen_at": "2026-07-27T12:41:51+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.21957",
+      "arxiv_version": "v1",
+      "title": "KaPilot: LLM-Assisted Generation of Kani Specifications for Unsafe Rust Verification",
+      "authors": [
+        "Minghua Wang",
+        "Yuxi Ling",
+        "Mingzhi Gao",
+        "Yuwei Liu",
+        "Lin Huang"
+      ],
+      "published": "2026-07-24",
+      "url": "https://arxiv.org/abs/2607.21957",
+      "abstract": "Rust's ownership and type system provide strong memory safety guarantees, but unsafe code still presents memory safety risks. Formal verification is crucial for ensuring memory safety, but writing precise specifications for unsafe Rust is challenging and largely manual. Large language models (LLMs) have shown promise in generating formal specifications but are often code-centric, prone to inheriting implementation flaws, and lack systematic quality assessment. In this paper, we present KaPilot, a multi-agent framework for automatically generating specifications to verify unsafe Rust memory safety using Kani. The process begins with lightweight program analysis and proof harness generation. The SafetyReq agent extracts a concise, refined list of safety requirements from the target Rust function's documentation, which guides the SpecGenerate agent in producing initial specifications that specify memory safety concerns. Then, the specifications are iteratively refined through a generate-precheck-verify loop involving SpecGenerate, SpecPrecheck, and SpecVerify agents, which assess quality and feed errors back. By executing this loop multiple times, KaPilot generates a set of candidate specifications. Finally, the shuffle-and-implication strategy is applied to systematically determine the best specification from these candidates. We evaluated KaPilot on 54 unsafe Rust functions with ground truth and 70 without. KaPilot achieved 88.9% and 71.4% specification generation success, respectively, with 57.4% of generated specifications equivalent to or stronger than the ground truth. Compared with AutoSpec, KaPilot produces 14.8% more verifiable specifications and 25.9% more equivalent-or-better specifications.",
+      "external_ids": [
+        "arxiv:2607.21957"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-27T12:41:51+08:00",
+      "last_seen_at": "2026-07-27T12:41:51+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.21920",
+      "arxiv_version": "v1",
+      "title": "Systematic Literature Reviews With Two Multi-Agentic Systems And Human-In-The-Loop",
+      "authors": [
+        "Zexin Ren",
+        "Zixuan Zhao",
+        "Qiyun Li",
+        "Yawen Wu",
+        "Lanjing Wang",
+        "Renjie Luo",
+        "Yi Xu",
+        "Qing Guo",
+        "Jin Shi",
+        "En Xie",
+        "Feifang Hu",
+        "Qian Shi"
+      ],
+      "published": "2026-07-24",
+      "url": "https://arxiv.org/abs/2607.21920",
+      "abstract": "Systematic literature review of clinical trials drives regulatory decision-making, but conventional screening and extraction are time-consuming, labor-intensive, and vulnerable to study selection bias. We propose two fit-to-purpose multi-agentic systems (MAS) for systematic literature review, with human-in-the-loop. The screening MAS uses multiple LLM agents with heterogeneous personas and multiround cross-review, and uniformly improves accuracy over a single-LLM baseline. The extraction MAS combines standardization, an iterative correction loop, and retrieval-based context control to ensure accuracy and scalability. Both MAS are specifically designed to support Human-In-The-Loop which is essential for clinical decisions. The novelty of the proposed approach lies in the system architecture rather than in any single foundation tools: the system can naturally benefit from future improvements in the underlying tools, for instance, stronger LLM agents, retrieval engines, image recognition methods, etc. As a real-world application, a published network meta-analysis is reproduced by the MAS. The result recovers all trials from the original study and identifies additional eligible trials missed by manual review, leading to updated clinical conclusions.",
+      "external_ids": [
+        "arxiv:2607.21920"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-27T12:41:51+08:00",
+      "last_seen_at": "2026-07-27T12:41:51+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.21887",
+      "arxiv_version": "v1",
+      "title": "Towards Reducing Foreign Language Anxiety Using Level-Appropriate Embodied Conversational Agents",
+      "authors": [
+        "Krishan Rajaratnam",
+        "Wenbin Gan",
+        "Yuan Sun"
+      ],
+      "published": "2026-07-24",
+      "url": "https://arxiv.org/abs/2607.21887",
+      "abstract": "Foreign language anxiety (FLA) can be a major barrier to second language acquisition (SLA), especially in conversational contexts. With the proliferation of large language models (LLMs) throughout all areas of life, recent work suggests that interacting with LLM agents can be instrumental within the field of SLA and foreign language education, especially for reducing FLA. Related work also suggests that linguistic demands and task complexity can be predictors of FLA, implying that the use of demanding, complex language could lead to learners experiencing higher FLA. In this paper, we propose a novel multi-agent embodied conversational system that generates level-appropriate dialogue for English language learners. These levels are based on those defined by the Common European Framework of Reference for Languages (CEFR) to describe non-native listener and speaker proficiency. Using a \"generate-evaluate-regenerate\" loop with multiple LLM agents and a level classifier, it achieves a desired simplicity that is adaptive to the user's proficiency level. We also share the results of a preliminary small-sample pilot study that tested this system with Japanese university students, to see whether it would yield lower FLA levels than an unsimplified embodied conversational agent. Analysis of conversational output showed that 87.4% of dialogue sentences generated by the proposed multi-agent system fell within one predicted CEFR level of the learner's self-assessed proficiency, compared to 54.1% for the unsimplified agent. This suggests that the novel system is better able to produce output at an appropriate level for the learner. Though this study did not yield statistically significant evidence that the system reduces FLA levels in Japanese learners of English, likely due to a small sample size, it provides usability findings and culturally-informed design insights that will inform future study.",
+      "external_ids": [
+        "arxiv:2607.21887"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-27T12:41:51+08:00",
+      "last_seen_at": "2026-07-27T12:41:51+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.21835",
+      "arxiv_version": "v1",
+      "title": "ToolGuardian: Declarative Security for AI Agent-Tool Interactions",
+      "authors": [
+        "Arun Ravindran",
+        "Saurabh Deochake"
+      ],
+      "published": "2026-07-23",
+      "url": "https://arxiv.org/abs/2607.21835",
+      "abstract": "LLM agents increasingly rely on external tools, expanding capability while creating a new security boundary: third-party tools may appear benign at the interface level while embedding unsafe behavior in implementation. Existing defenses rely on weak metadata, collapse characterization and policy judgment into a single decision, or use heuristic/LLM enforcement that lacks deterministic, auditable reasoning over task context and multi-tool composition. This paper presents ToolGuardian, a policy-driven framework for securing agent-tool interactions through pre-admission vetting and task-aware runtime authorization. ToolGuardian uses progressive characterization to convert evidence into structured facts: descriptions capture declared intent, system-call traces expose coarse behavior, mock execution reveals observed effects, and source analysis identifies latent behavior. ToolGuardian's core contribution is an Answer Set Programming (ASP)-based declarative policy layer that reasons explicitly over capabilities, effects, task context, and composition. We compare ASP against heuristic and LLM-based policy realizations using identical inputs and output contracts. We evaluate ToolGuardian on 16 MCP-style tools, including 8 malicious variants derived from real open-source tools, and 20 runtime scenarios. For vetting, ASP reaches a deny-class F1 of 0.86 and 88% accuracy using description, syscall, and observed-effect evidence. For runtime authorization, fully specified realizations classify all scenarios correctly, while ablations show that removing compositional and conformance rules substantially degrades performance.",
+      "external_ids": [
+        "arxiv:2607.21835"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-27T12:41:51+08:00",
+      "last_seen_at": "2026-07-27T12:41:51+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.21799",
+      "arxiv_version": "v1",
+      "title": "Agentic Evaluation of Copyright Law Compliance",
+      "authors": [
+        "Zheng Hui",
+        "Doni Bloomfield",
+        "Noam Kolt"
+      ],
+      "published": "2026-07-23",
+      "url": "https://arxiv.org/abs/2607.21799",
+      "abstract": "Large language model (LLM) agents increasingly perform commercial tasks that involve retrieving external content such as images and, where appropriate, reproducing that content. LLM agents should comply with the law, including copyright law. Presently, however, we lack adequate frameworks to assess whether they do so in practice. To that end, we introduce \\textbf{Copyright-Bench}, a benchmark designed to evaluate \\textit{LLM agents' compliance with} \\emph{copyright law}. Copyright-Bench is comprised of realistic commercial tasks---website development, merchandise design, and pitch deck production---that involve agents selecting between public-domain content (the use of which is \\textit{legal}) and copyrighted content (the use of which is \\textit{infringing} in this setting).The evaluation introduces prompt variations that simulate different user preferences, as well as time pressure.Comparing state-of-the-art LLM agents against a human baseline, we find that: (1) agents select copyrighted works despite the availability of public-domain alternatives; and (2) for open-weights models, violation rates increase in response to certain user preferences and simulated time pressure.",
+      "external_ids": [
+        "arxiv:2607.21799"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-27T12:41:51+08:00",
+      "last_seen_at": "2026-07-27T12:41:51+08:00"
+    },
     {
       "source": "arxiv",
       "arxiv_id": "2607.21557",
@@ -5151,7 +5714,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-26T12:30:30+08:00",
+      "last_seen_at": "2026-07-27T12:41:51+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -5344,7 +5907,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-26T12:30:30+08:00",
+      "last_seen_at": "2026-07-27T12:41:51+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -5378,7 +5941,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-26T12:30:30+08:00",
+      "last_seen_at": "2026-07-27T12:41:51+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -5405,7 +5968,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-26T12:30:30+08:00",
+      "last_seen_at": "2026-07-27T12:41:51+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -5435,7 +5998,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-26T12:30:30+08:00",
+      "last_seen_at": "2026-07-27T12:41:51+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -5466,7 +6029,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-26T12:30:30+08:00",
+      "last_seen_at": "2026-07-27T12:41:51+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -5496,7 +6059,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-26T12:30:30+08:00",
+      "last_seen_at": "2026-07-27T12:41:51+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -5523,7 +6086,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-26T12:30:30+08:00",
+      "last_seen_at": "2026-07-27T12:41:51+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -5554,7 +6117,7 @@
     }
   ],
   "last_run": {
-    "at": "2026-07-26T12:30:30+08:00",
+    "at": "2026-07-27T12:41:51+08:00",
     "sources": [
       "arxiv",
       "semanticscholar",
@@ -5565,8 +6128,8 @@
       "\"LLM agent\" harness",
       "test-time harness evolution"
     ],
-    "fetched": 65,
-    "merged": 36,
-    "new": 0
+    "fetched": 55,
+    "merged": 30,
+    "new": 21
   }
 }
