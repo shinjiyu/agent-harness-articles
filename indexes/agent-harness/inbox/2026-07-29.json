@@ -1,0 +1,518 @@
+{
+  "date": "2026-07-29",
+  "run": {
+    "at": "2026-07-29T12:17:05+08:00",
+    "sources": [
+      "arxiv",
+      "semanticscholar",
+      "dblp"
+    ],
+    "keywords": [
+      "agent harness",
+      "\"LLM agent\" harness",
+      "test-time harness evolution"
+    ],
+    "fetched": 65,
+    "merged": 34,
+    "new": 18
+  },
+  "new_candidates": [
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.26042",
+      "arxiv_version": "v1",
+      "title": "VetClaw: An Edge-Cloud Multimodal Agentic System for Veterinary Disease Screening",
+      "authors": [
+        "Syed Mhamudul Hasan",
+        "Anas AlSobeh",
+        "Hussein Zangoti",
+        "Abdur R. Shahid"
+      ],
+      "published": "2026-07-28",
+      "url": "https://arxiv.org/abs/2607.26042",
+      "abstract": "We present VetClaw, an edge-cloud multimodal agentic system for early veterinary disease screening. VetClaw uses a camera module as an edge sensing device and sends captured images, together with optional symptom descriptions, to a server-hosted vision-language model for zero-shot disease classification. The system separates agent interaction from workflow orchestration: OpenClaw provides scheduling, tool access, user interaction, and notification services on the edge device, while LangGraph manages the stateful screening workflow, including input validation, image transmission, model invocation, safety checks, conditional routing, failure handling, and structured logging. This design moves beyond static image classification by enabling the system to collect visual evidence, invoke external models, apply deterministic safety rules, and generate diagnostic-support alerts. Results show that image-only VLM prediction remains limited, whereas symptom-guided and multimodal inputs improve zero-shot classification performance. Thus, VetClaw transforms a static prediction model into a coordinated, safety-aware system that can use tools, manage workflows, handle failures, and escalate uncertain cases.",
+      "external_ids": [
+        "arxiv:2607.26042"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-29T12:17:05+08:00",
+      "last_seen_at": "2026-07-29T12:17:05+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.26024",
+      "arxiv_version": "v1",
+      "title": "LLM4OSC: Profile-Bound Natural Language Control with Deterministic Validation for Open Sound Control",
+      "authors": [
+        "Yuan-Yi Fan"
+      ],
+      "published": "2026-07-28",
+      "url": "https://arxiv.org/abs/2607.26024",
+      "abstract": "Open Sound Control (OSC) is the dominant wire protocol for real-time parametric control in professional audio, live performance, and virtual production. Large language models can emit plausible OSC, but they hallucinate addresses, mishandle type tags, and fail under paraphrase- unacceptable in show-critical contexts. We present LLM4OSC, a local-first architecture in which models propose structured intent JSON over a human-reviewed device profile, and deterministic code validates, clamps, and encodes before any UDP send. We introduce a frozen evaluation harness with CI gates on wrong-send rate: mismatches that would still pass validation and transmit. On a Max/MSP hero profile (12 patterns; 8 literal + 8 paraphrase + 4 refusal cases), after profile tag enrichment, symbolic slot fill, NL refine, and a retrieval confidence gate, backends B0--B3 all pass frozen gates (100% semantic accuracy, 0% wrong-send). B0 (rules) remains the production default at ~0.05ms; LLM backends remain ~3-4s. Historical few-shot B2 accuracy of 62.5% rises to 100% on this suite only after symbolic post-processing- not because the 0.5B model alone becomes show-safe. We argue for propose-validate-send and wrong-send rate as first-class metrics for language-to-control systems.",
+      "external_ids": [
+        "arxiv:2607.26024"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-29T12:17:05+08:00",
+      "last_seen_at": "2026-07-29T12:17:05+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.26017",
+      "arxiv_version": "v1",
+      "title": "UniMem: Complementary Episodic-to-Parametric Memory for Boundary-Agnostic Task Streams",
+      "authors": [
+        "Siyu Xia",
+        "Chenheng Zhang",
+        "Yanting Wu",
+        "Haoxuan Li",
+        "Jiajun Chai",
+        "Xiaohan Wang",
+        "Guojun Yin",
+        "Wei Lin",
+        "Zhouchen Lin",
+        "Haifeng Zhang",
+        "Jun Wang"
+      ],
+      "published": "2026-07-28",
+      "url": "https://arxiv.org/abs/2607.26017",
+      "abstract": "Memory is essential for LLM agents to accumulate task experience and reuse task-specific execution strategies. However, real-world deployment over boundary-agnostic and evolving task streams exposes a fundamental stability-plasticity dilemma. External retrieval-based memory can rapidly absorb new evidence, but it often fails to internalize recurring execution patterns and incurs inference-time retrieval overhead. Parametric memory enables stable and efficient execution once learned, but typically relies on explicit task boundaries and fixed parameter budgets. Inspired by the human brain, which balances plasticity and stability through complementary episodic storage and gradual consolidation, we propose UniMem, a self-routing framework for autonomous memory management. UniMem uses learnable routing tokens as memory controllers, enabling adaptive coordination between complementary memory pathways: novel or sparse tasks are retained in an episodic buffer for retrieval-augmented execution, while recurring and reliable patterns are consolidated into expandable parametric memory. By decoupling task identification from task execution with routing tokens and parametric memory blocks, UniMem expands memory on demand without task labels during deployment or uncontrolled parameter growth. Experiments on long-horizon streaming task sequences show that UniMem consistently outperforms baselines while maintaining execution fidelity, achieving an average gain of 4.0 EM points across three backbone models.",
+      "external_ids": [
+        "arxiv:2607.26017"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-29T12:17:05+08:00",
+      "last_seen_at": "2026-07-29T12:17:05+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.25975",
+      "arxiv_version": "v1",
+      "title": "Who is scientific code for? Maintaining human-readable landmarks in agent-written code",
+      "authors": [
+        "Elle O'Brien"
+      ],
+      "published": "2026-07-28",
+      "url": "https://arxiv.org/abs/2607.25975",
+      "abstract": "Scientific research involving code has long rested on the assumption that at least one person understands why the code exists. As scientists adopt coding agents, this assumption is breaking down. Drawing on an ongoing contextual inquiry of scientific programmers working with agentic tools (four cases to date), a survey of over 800 scientific programmers, and my own analysis workflows, this position piece describes how scientists are inventing personal conventions, \"landmarking strategies\", for marking which artifacts in a codebase are meant for human understanding and which are context for agents. They repurpose shared infrastructure (version control especially) in idiosyncratic ways, and I argue that this quiet de-standardization could complicate collaboration in teams with heterogeneous software practices. Alternatively, teams that explicitly delineate what is human-readable versus agent context will be better able to develop, document, and maintain scientific code.",
+      "external_ids": [
+        "arxiv:2607.25975"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-29T12:17:05+08:00",
+      "last_seen_at": "2026-07-29T12:17:05+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.25890",
+      "arxiv_version": "v1",
+      "title": "Distributing Security Controls Through Harness Engineering",
+      "authors": [
+        "William Robert Gore"
+      ],
+      "published": "2026-07-28",
+      "url": "https://arxiv.org/abs/2607.25890",
+      "abstract": "AI coding agents are being adopted at historic speed, yet security and risk concerns remain the primary barrier to scaling agentic AI across organizations. Existing security controls for coding agents are not systematically distributed to engineering teams, and vendor-native solutions introduce ecosystem dependencies that may not suit every deployment context. This paper investigates whether off-the-shelf security controls can be implemented on commercial AI coding agents and scaled to a distributed user base via a custom agent harness. A phased testing methodology was applied across four agent configurations --- two commercial agents with and without controls, a baseline harness, and a security-hardened harness --- using a 23-test suite derived from the OWASP Top 10 for Agentic Applications. SHarD (Secure Harness Distribution), a distributable harness built on the Pi agent harness, demonstrated that three categories of security controls --- OS sandboxing, skill scanning, and tool restriction --- can be embedded and distributed via a single install command while retaining equivalent efficacy to direct installation on commercial agents. SHarD achieved an adjusted score of 100\\%, matching the best securely configured commercial agent, with no regression across any test category. Notable observations include evidence that model non-determinism produces inconsistent security outcomes and that autonomous agent behavior can cross system boundaries in ways that OS sandboxing directly mitigates. Initial characteristics toward a control harness fitness framework are proposed, and a third research question is identified for future investigation.",
+      "external_ids": [
+        "arxiv:2607.25890"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-29T12:17:05+08:00",
+      "last_seen_at": "2026-07-29T12:17:05+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.25886",
+      "arxiv_version": "v1",
+      "title": "RSIBench-Data: Benchmarking Data-Centric Research for Recursive Self-Improvement",
+      "authors": [
+        "Fanqing Meng",
+        "Lingxiao Du",
+        "Qiguang Chen",
+        "Ziqi Zhao",
+        "Haocheng Lu",
+        "Mengkang Hu",
+        "Michael Qizhe Shieh"
+      ],
+      "published": "2026-07-28",
+      "url": "https://arxiv.org/abs/2607.25886",
+      "abstract": "Recursive self-improvement requires turning evidence of model failures into better models. Data-centric post-training research entails diagnosing capability gaps, designing and validating training-data strategies, and learning from checkpoint feedback. Can LLM agents automate this loop? Existing benchmarks entangle research decisions with optimization, serving, evaluation, and systems implementation, obscuring agents' research capability. We introduce RSIBench-Data, a controlled benchmark of LLM agents as data-centric researchers with a fixed post-training stack. Agents iteratively revise training-data strategies for a fixed target model; training and serving use Tinker-backed services, official evaluation runs through Harbor and E2B sandboxes, and budgets are fixed across agents. We evaluate four frontier agents on six benchmarks across software engineering, terminal use, scientific question answering, and mathematics. Agents demonstrate core data-centric research capabilities: in 58.33\\% of settings, they improve upon the first valid attempt by refining strategies from feedback. However, improvement is inconsistent. Among searches continuing after the best observed score, 78.26\\% end with a lower-scoring final attempt, while the rest only recover the same peak. A strong candidate may therefore appear early or midway through a run even as later revisions fail. Trajectory analysis identifies four patterns in stronger runs: accurate hypotheses, validation-grounded supervision, behavior-aligned data, and preservation of strong checkpoints. These findings suggest that current agents can make useful data-centric discoveries but cannot yet translate feedback into consistent improvements. RSIBench-Data provides a measurable, auditable testbed for the research capabilities required for recursive self-improvement. We open-source our code at https://github.com/evolvent-ai/RSIBench-Data.",
+      "external_ids": [
+        "arxiv:2607.25886"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-29T12:17:05+08:00",
+      "last_seen_at": "2026-07-29T12:17:05+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.25883",
+      "arxiv_version": "v1",
+      "title": "Towards a Systems Foundation for Agentic Cloud Management",
+      "authors": [
+        "Minghao Li",
+        "Ziqian Liu",
+        "Ziyu Mao",
+        "Daqian Ding",
+        "Yu Kang",
+        "Qingwei Lin",
+        "Tianyin Xu",
+        "Yiming Qiu"
+      ],
+      "published": "2026-07-28",
+      "url": "https://arxiv.org/abs/2607.25883",
+      "abstract": "Agentic cloud management is emerging as a practice to automate laborious operations, minimize toil, and improve responsiveness. Despite the rapid development of autonomous management agents, we argue that the fundamental missing piece is a systems foundation to enable safe, effective operations across agents and between agents and human operators. In this paper, we advocate for the need of such a systems foundation and share our efforts on developing CloudWeaver, an agentic management substrate that works across existing cloud-user interfaces and future agent-native interfaces. Specifically, we discuss how CloudWeaver (1) scopes the context of individual agent sessions with local views of cloud resources and (2) coordinates concurrent management operations on shared cloud resources. CloudWeaver offers strong safety guarantees and attributable feedback in the presence of conflicting intents, while preserving concurrency between independent operations. We validate CloudWeaver using a representative Azure API workload.",
+      "external_ids": [
+        "arxiv:2607.25883"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-29T12:17:05+08:00",
+      "last_seen_at": "2026-07-29T12:17:05+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.25853",
+      "arxiv_version": "v1",
+      "title": "HiSkill: Empowering LLM Agents with Hierarchical Skill Graphs",
+      "authors": [
+        "Yu Hao",
+        "Jinxuan Cai",
+        "Qi Zhang",
+        "Yawen Li",
+        "Zhiqiang Zhang",
+        "Chuan Shi",
+        "Cheng Yang"
+      ],
+      "published": "2026-07-28",
+      "url": "https://arxiv.org/abs/2607.25853",
+      "abstract": "Skills have become an important abstraction for enabling large language model (LLM) agents to reuse past experience in long-horizon interactive tasks. However, existing trajectory-to-skill methods often produce flat collections of high-level textual skills that are stored and retrieved independently, leaving skill relations underutilized and maintaining a gap between high-level skills and executable actions. In this paper, we propose HiSkill, a hierarchical skill graph framework that organizes interaction trajectories into a directed graph with skill nodes, AtomicOp nodes, and typed edges. Specifically, the graph connects reusable high-level skills with executable action templates, while also capturing decomposition, temporal transition, compatibility, support, and recovery relations among them. At inference time, HiSkill retrieves a compact task-relevant subgraph and performs subgraph-guided task execution, where a symbolic task state, an active skill, and the retrieved subgraph guide the LLM agent to switch skills, select AtomicOps, and ground executable actions iteratively. Experiments on three interactive environments show that HiSkill outperforms state-of-the-art baselines while reducing inference token consumption, demonstrating the effectiveness of bridging high-level skills and executable action grounding through a hierarchical skill graph. Our data and code is available at https://github.com/BUPT-GAMMA/HiSkill.",
+      "external_ids": [
+        "arxiv:2607.25853"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-29T12:17:05+08:00",
+      "last_seen_at": "2026-07-29T12:17:05+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.25825",
+      "arxiv_version": "v1",
+      "title": "CHILL-Harness: Counterfactual Harness Learning for Efficient Reasoning in Long-Horizon Agents",
+      "authors": [
+        "Jiarun Fu",
+        "Lizhong Ding",
+        "Sida Chen",
+        "Honglei Xin",
+        "Chunhui Zhang",
+        "Pengqi Li",
+        "Qiuning Wei",
+        "Ye Yuan",
+        "Guoren Wang"
+      ],
+      "published": "2026-07-28",
+      "url": "https://arxiv.org/abs/2607.25825",
+      "abstract": "Agent harnesses have become the operational infrastructure of modern large language model agents, coordinating context, tools, verification, and execution control to translate latent model capability into reliable long-horizon behavior. However, reliable long-horizon behavior requires harness control to adapt to task demands, execution environments, and evolving execution states, whereas current harnesses predominantly rely on hand-crafted or globally fixed policies; this mismatch manifests as unnecessary computational overhead and, in adverse cases, reduced task success. To address this limitation, we formulate the task of enabling adaptive orchestration in harness systems as a causal learning problem and propose Counterfactual Harness Intervention Learning for Long-Horizon Agents (CHILL-Harness). CHILL-Harness intervenes at the orchestration layer to enable advantage-guided workflow adaptation, thereby improving reasoning and execution efficiency while preserving task performance. Specifically, we develop causal intervention effect learning as the effect-estimation component of CHILL-Harness to estimate intervention-relative workflow advantage from confidence-weighted execution evidence and identify advantageous workflow adaptations. We further introduce advantage-realizing causal orchestration as its realization component to adaptively allocate counterfactual reasoning and realize only workflow adjustments supported by sufficient expected advantage. Finally, we incorporate a success-preserving objective and advantage-margin authorization constraints into CHILL-Harness to promote reliable adaptation. Extensive experiments on heterogeneous long-horizon tasks spanning information seeking, software engineering, and terminal interaction show that CHILL-Harness consistently preserves or improves task success while substantially reducing token consumption and execution time.",
+      "external_ids": [
+        "arxiv:2607.25825"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-29T12:17:05+08:00",
+      "last_seen_at": "2026-07-29T12:17:05+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.25765",
+      "arxiv_version": "v1",
+      "title": "WorkSurface-Bench: Benchmarking Enterprise Agents on Multi-Surface Knowledge Routing",
+      "authors": [
+        "Hao Liang",
+        "Meiyi Qiang",
+        "Sizhe Qiu",
+        "Linzhuang Sun",
+        "Wentao Zhang"
+      ],
+      "published": "2026-07-28",
+      "url": "https://arxiv.org/abs/2607.25765",
+      "abstract": "Enterprise agents often need to integrate heterogeneous knowledge sources: documents for narrative facts, tables for computation, and dependency graphs for file relationships. Existing benchmarks typically evaluate retrieval or tool use without distinguishing whether an agent first selects the appropriate knowledge sources. We introduce WorkSurface-Bench, a benchmark for evaluating this capability as surface routing. It contains 1,151 atomic tasks derived from persona-scoped Workspace-Bench-Lite workspaces, spanning document, table, graph, and cross-surface questions. Its reference answers are auditable: table answers are reproduced through executed DuckDB queries, document answers are grounded in verified text spans, and graph answers are traced to source dependency annotations. We evaluate four model backbones across six controlled agent settings, yielding 27,624 protocol-error-free trajectories. Under gold-constrained tool access, agents achieve 98.7-99.8 Route F1, while Answer remains only 56.1-75.3 percent, showing that correct surface selection is necessary but insufficient for task completion. Matched interventions further show that surface hints improve Answer for three of four models, whereas removing irrelevant tools primarily improves routing and efficiency. In an independent three-annotator audit, all 200 sampled tasks pass all six quality criteria by majority vote, with 192 receiving unanimous judgments on every criterion. We release the dataset, construction pipeline, scoring code, and agent harness at https://github.com/haolpku/WorkSurface-Bench.",
+      "external_ids": [
+        "arxiv:2607.25765"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-29T12:17:05+08:00",
+      "last_seen_at": "2026-07-29T12:17:05+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.25718",
+      "arxiv_version": "v1",
+      "title": "Tools Are Not Islands: Set-Level Tool Retrieval for LLM Agents via Query-Conditioned Hyperedge Prediction",
+      "authors": [
+        "Xinyi Hong",
+        "Pinjun Dong",
+        "Xinyang Yu",
+        "Binyan Jiang"
+      ],
+      "published": "2026-07-28",
+      "url": "https://arxiv.org/abs/2607.25718",
+      "abstract": "Large language model (LLM) agents increasingly rely on invoking external tools to complete real-world tasks. Tool retrieval, which selects a small task-relevant subset from a library of thousands of tools before the agent acts, has therefore become a critical component of LLM agent pipelines. However, existing retrievers either score each tool in isolation or assemble the tool set sequentially, so the joint utility of a candidate set is never evaluated as a whole. In this paper, we propose HYSET, short for HYperedge-based SEt-level Tool retrieval. Our contributions are threefold: (i) we formulate tool retrieval as query-conditioned hyperedge prediction on a tool co-invocation hypergraph, under which the tool set itself becomes the unit of scoring and most existing retrieval paradigms reduce to restricted instances; (ii) we capture size-dependent tool compatibility through cardinality-specific interactions; and (iii) we design HYSET as a pre-selection module requiring no modification to the downstream agent. Experiments on ToolBench demonstrate that HYSET consistently outperforms state-of-the-art baselines in both tool retrieval performance and end-to-end task success. Beyond the in-domain setting, HYSET further supports zero-shot/few-shot transfer, generalizing to held-out tools/categories and unseen domains with minimal supervision.",
+      "external_ids": [
+        "arxiv:2607.25718"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-29T12:17:05+08:00",
+      "last_seen_at": "2026-07-29T12:17:05+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.25643",
+      "arxiv_version": "v1",
+      "title": "Nonlocal Magnonic Cat States in Hybrid Magnon-Qubit Architectures",
+      "authors": [
+        "Urmimala Dewan",
+        "Roson Nongthombam",
+        "Sampreet Kalita",
+        "Amarendra K. Sarma"
+      ],
+      "published": "2026-07-28",
+      "url": "https://arxiv.org/abs/2607.25643",
+      "abstract": "The quantum superpositions of coherent states offer an alternative to the conventional qubit-based encodings by harnessing the large Hilbert space available in bosonic modes, including those realised in microwave and optical cavities, magnons, and mechanical resonators. Beyond their advantages for local information processing, establishing long-distance quantum networks for such bosonic states is crucial for scalable quantum communication and distributed quantum computation. In this work, we propose an entanglement-swapping-based protocol to generate a bipartite magnonic cat state shared between spatially separated subsystems. Each subsystem comprises a hybrid architecture consisting of a superconducting transmon qubit coupled to a yttrium iron garnet (YIG) sphere that supports magnon modes. By performing a projective Bell-state measurement on the qubits, the initially established magnon-qubit entanglement is coherently transferred to the remote magnon modes, resulting in a nonlocal magnonic cat state. For experimental characterisation of the gener- ated states, we perform quantum state tomography through reconstruction of the Wigner function using joint displaced parity measurements of the magnon modes. Our scheme provides a feasible route towards realising long-distance magnonic entanglement and contributes to the advancement of hybrid quantum network architectures.",
+      "external_ids": [
+        "arxiv:2607.25643"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-29T12:17:05+08:00",
+      "last_seen_at": "2026-07-29T12:17:05+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.25566",
+      "arxiv_version": "v1",
+      "title": "ARCHER: Agentic Rule and Compliance Harness for Executable Regulations",
+      "authors": [
+        "Chiraag Singh Anand",
+        "Xue Wen Tan",
+        "Lionel Teo",
+        "Eric Tan"
+      ],
+      "published": "2026-07-28",
+      "url": "https://arxiv.org/abs/2607.25566",
+      "abstract": "Verifying building compliance requires validating thousands of rules against large Building Information Modeling (BIM) designs, which is laborious, capital-intensive, and unscalable. Existing Automated Compliance Checkers (ACCs) are often difficult to generalize across different scenarios, as they are typically developed for highly specific rule sets and use cases. In addition, many ACCs are proprietary, meaning the underlying verification code is not released to end users, so users cannot verify whether their regulatory intent can be accurately captured. We introduce ARCHER (Agentic Rule and Compliance Harness for Executable Regulations), a test-driven, deterministically orchestrated multi-agent program-synthesis harness that generates auditable verification code from regulatory Codes of Practice, enabling transparent, adaptable, and scalable compliance checking. To characterize what makes agentic synthesis work, we evaluate a taxonomy of six harnesses of increasing agentic sophistication across four backbone models, spanning realistic data-governance tiers (from frontier third-party APIs to a fully on-premise open-weights model) on a novel dataset derived from real-world compliance scenarios. ARCHER's deterministic multi-agent orchestration achieves the highest accuracy for every backbone, improving mean union accuracy by 82% over a naive single-pass prompting baseline. Our cost-accuracy analysis further shows that using the ARCHER harness, a self-hosted open-weights model can reach 97.8% of frontier-API accuracy at a quarter of the cost, making data-sovereign compliance checking practical.",
+      "external_ids": [
+        "arxiv:2607.25566"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-29T12:17:05+08:00",
+      "last_seen_at": "2026-07-29T12:17:05+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.25554",
+      "arxiv_version": "v1",
+      "title": "Distilling Temporal Search and Reasoning: Evolving LLMs for Future Prediction via Harness-Assisted Efficient Data Synthesis",
+      "authors": [
+        "Wanxu Cai",
+        "Zhengyu Chen",
+        "Huaisheng Zhu",
+        "Wei Wang",
+        "Jingang Wang",
+        "Qiang Xu"
+      ],
+      "published": "2026-07-28",
+      "url": "https://arxiv.org/abs/2607.25554",
+      "abstract": "Future event prediction carries broad social impact yet remains challenging. SOTA approaches augment LLMs with external agent frameworks whose predictive capability vanishes once the harness is removed. While recent Tool-Integrated Reasoning (TIR) internalizes deep search for multi-hop retrieval of facts, forecasting further demands temporal search and reasoning over historical trends and dynamic shifts. The key obstacle is data: historical queries induce temporal leakage that degrades forecasting into retrieval. Prior works either freeze information gathering with static observations, or rely on rejection sampling or unresolved fresh queries that discard vast amounts of data, degrading synthesis efficiency. We propose a time-truncation harness that enforces a temporal cut-off at every turn, enabling TIR-style sampling from historical events, reducing temporal leakage and reliance of rejection sampling or unsolved queries, increasing the sampling efficiency. We further build a large-scale corpus and a process-based metric and show that our harness naturally induces a broader temporal breadth of search and raises the proportion of high-quality data, further increasing the efficiency and reducing the reliance on complex rubrics. Distillation experiments show that students trained on harness-intervened data achieve the best performance, demonstrating harness-assisted model evolving that turns higher quality temporal search and reasoning data into a parametric advancement of the students.",
+      "external_ids": [
+        "arxiv:2607.25554"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-29T12:17:05+08:00",
+      "last_seen_at": "2026-07-29T12:17:05+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.25458",
+      "arxiv_version": "v1",
+      "title": "Resilience: Understand Breakdown, Foster Recovery, and Choose the Right Perspective",
+      "authors": [
+        "Frank Schweitzer"
+      ],
+      "published": "2026-07-28",
+      "url": "https://arxiv.org/abs/2607.25458",
+      "abstract": "Resilience denotes the capacity of a system to withstand shocks and to recover from them. We distinguish between two different types of dynamics. The first allows for a separation between phases of normalcy and phases of rapid breakdown followed by slow recovery. The second applies to volatile organizations in which such phases are intertwined. Breakdown is often self-inflicted. Situation awareness is impaired by psychological mechanisms that lead to incorrect expectations regarding societal dynamics. Through positive feedback, the failure of a few elements is amplified into a failure cascade. However, positive feedback can also be harnessed to enable recovery. In volatile systems, resilience must be understood as an emergent property arising from the interaction of agents. This necessitates a data-driven approach to inform agent-based models, drawing on repositories, knowledge graphs, or tools from artificial intelligence. Such models help demonstrate that resilience represents a compromise between robustness and adaptivity. Maximizing performance frequently comes at the expense of resilience, and second-order solutions aimed at transforming the system prove more promising than attempts to reconstruct past conditions.",
+      "external_ids": [
+        "arxiv:2607.25458"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-29T12:17:05+08:00",
+      "last_seen_at": "2026-07-29T12:17:05+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.25415",
+      "arxiv_version": "v1",
+      "title": "A Control System, a Dataset, and a Recipe for Making Frozen LLM Agents Learn a Domain",
+      "authors": [
+        "Debjyoti Paul"
+      ],
+      "published": "2026-07-28",
+      "url": "https://arxiv.org/abs/2607.25415",
+      "abstract": "Production LLM agents are increasingly assembled from a frozen model wrapped in a harness: a prompt template, a tool set, a memory/retrieval layer, a planning strategy, and a verification policy. Two 2026 systems, Meta-Harness (Lee et al., 2026) and HyperAgents (Meta AI, 2026), show that this harness can itself be optimized or even self-rewritten by an agentic proposer -- at the cost of either an expensive code-search loop or unconstrained self-modifying code, neither of which is auditable or usable with a fully black-box model API. We take a narrower, more constrained position: treat the harness as a small, fixed, human-legible action space and learn a policy over it online with classic sample-efficient reinforcement learning (an $ε$-greedy contextual bandit and REINFORCE), scored against a multi-objective reward (task success, verifier score, policy compliance, cost, latency, and an unsupported-claim penalty). We instantiate this control system with DSPy (Khattab et al., 2024) as both the context assembler and the source of the strongest non-adaptive baseline (a DSPy BootstrapFewShot static prompt), and evaluate it across three verifiable task domains -- tool-use workflows, code generation (HumanEval), and multi-hop retrieval QA (HotpotQA) -- and two model providers (a local Ollama model and AWS Bedrock). We release the harness-control-system code, the cross-domain verifiable task suite, the full trajectory/reward-decomposition logs from training, and a provider-agnostic deployment recipe for applying this to a new organization's domain and verification setup.",
+      "external_ids": [
+        "arxiv:2607.25415"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-29T12:17:05+08:00",
+      "last_seen_at": "2026-07-29T12:17:05+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.25408",
+      "arxiv_version": "v1",
+      "title": "Context Assembly as the Controlled Variable: A Control-Theoretic View of Harness Policies for Frozen LLM Agents",
+      "authors": [
+        "Debjyoti Paul"
+      ],
+      "published": "2026-07-28",
+      "url": "https://arxiv.org/abs/2607.25408",
+      "abstract": "A growing body of 2026 work applies control theory to LLM agents: Lyapunov-certified stability for tool-mediated controllers (Prinos et al., \"Stable Agentic Control\", 2026), sample-complexity bounds for sparse policies over massive discrete tool universes (Majumdar, \"Sparse Agentic Control\", 2026), and regulatory-control decompositions of multi-agent systems into auditable feedback loops (Nogueira and Skogestad, 2026). We do not claim to introduce control theory to LLM agents -- that ship has sailed. Our narrower claim is about what the controlled variable is. Prior work controls tool selection, inter-agent message routing, or the agent's raw action stream. We instead treat context assembly itself -- which prompt template, which few-shot demonstrations, how much retrieved context, how many planning/verification passes -- as the controlled variable, learned online by a contextual bandit or REINFORCE policy sitting outside a frozen model. This paper develops the formal decomposition (inner frozen policy $π_θ$, outer context policy $π_φ$), gives a stability argument for the online controller in the sense used by Zhang et al. (2026) (non-decreasing expected reward under bounded policy change), and reports an uncertainty-calibration analysis of the controller's own confidence against realized task outcomes. The applied counterpart to this paper instantiates the same controller across three domains and two model providers and releases the dataset, trajectory logs, and a deployment recipe; here we focus on the formal framing and the stability/uncertainty evidence a control-theoretic claim requires.",
+      "external_ids": [
+        "arxiv:2607.25408"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-29T12:17:05+08:00",
+      "last_seen_at": "2026-07-29T12:17:05+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2607.25400",
+      "arxiv_version": "v1",
+      "title": "COVENANT: Natural-Language Workflow Compilation for Aligned Agent Execution",
+      "authors": [
+        "Jincheng Wang",
+        "Min Zheng",
+        "Tao Wei"
+      ],
+      "published": "2026-07-28",
+      "url": "https://arxiv.org/abs/2607.25400",
+      "abstract": "Large language model (LLM) agents are increasingly entrusted with natural-language workflow instructions (e.g., retail-payment policies) that specify not only what outcome to achieve, but also which steps, branches, and tool interactions are permitted. When these instructions are supplied as prompt context, however, the model retains control over both procedure selection and step execution. As interactions accumulate, an agent can skip required steps, take unsupported branches, or execute a valid step with unsupported arguments or effects--a failure mode we call workflow misalignment. In this work, we propose COVENANT, a compiler-and-interpreter architecture for workflow-aligned agent execution. Our key insight is to treat workflow instructions as source programs rather than prompts. COVENANT converts the instructions into a workflow abstract syntax tree (WAST) and lowers it to a workflow control-flow graph (WCFG). At runtime, a controller interprets the WCFG one node at a time, checks each proposal against requirements extracted from the instructions before committing controller state or advancing the graph, and returns diagnostic feedback for repair. To evaluate COVENANT, we use 120 cases from three existing benchmarks, spanning seven workflow scenarios. Compared with state-of-the-art LLM agents, COVENANT improves benchmark success from 50.00% to 83.33% and reduces the workflow-misalignment failure rate from 42.50% to 15.83% (62.75% relative). These results show that COVENANT substantially mitigates workflow misalignment, moving LLM-agent alignment beyond isolated prompt following toward reliable execution of complex and multi-step workflows.",
+      "external_ids": [
+        "arxiv:2607.25400"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-07-29T12:17:05+08:00",
+      "last_seen_at": "2026-07-29T12:17:05+08:00"
+    }
+  ]
+}
