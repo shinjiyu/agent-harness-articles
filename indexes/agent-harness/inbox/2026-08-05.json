@@ -1,0 +1,667 @@
+{
+  "date": "2026-08-05",
+  "run": {
+    "at": "2026-08-05T12:18:13+08:00",
+    "sources": [
+      "arxiv",
+      "semanticscholar",
+      "dblp"
+    ],
+    "keywords": [
+      "agent harness",
+      "\"LLM agent\" harness",
+      "test-time harness evolution"
+    ],
+    "fetched": 55,
+    "merged": 28,
+    "new": 21
+  },
+  "new_candidates": [
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.03999",
+      "arxiv_version": "v1",
+      "title": "Agogic: Performance-Timed Music Tokens for LLM-Native Text-to-Symbolic-Music Generation",
+      "authors": [
+        "Junhao Chen",
+        "Mingjin Chen",
+        "Jingjia Mao",
+        "Lin Chen",
+        "Saining Zhang",
+        "Minglin Chen",
+        "Ruocheng Wu",
+        "Liaoyuan Fan",
+        "Wenyi Li",
+        "Mingju Gao",
+        "Henghaofan Zhang",
+        "Zhihao Li",
+        "Hao Zhao",
+        "Yufei Wang",
+        "Ruqi Huang"
+      ],
+      "published": "2026-08-04",
+      "url": "https://arxiv.org/abs/2608.03999",
+      "abstract": "Text-to-music language models begin with a choice usually made by default: how to tokenize music. Normally entangled with backbone, data, and recipe, its effect has never been measured in isolation. We fix pretrained Qwen3.5 (0.8B-27B), data, budget, and decoding, and swap only the representation across seven tokenizations, anchoring texture metrics to each representation's model-free ceiling. The ordering is clean and surprising: representation, not model size, is the binding variable for distributional fidelity. Scaling the backbone 34x barely moves Frechet Music Distance (FMD), whereas switching representation halves it. PMT, a performance-resolution stream we release (10 ms timing, per-note velocity, multi-track texture; 609 symbols), reaches FMD 159 at 0.8B against 272-286 for beat grids (1.7-1.8x lower, up to 2.8x elsewhere; non-overlapping bootstrap CIs), so a 0.8B performance-resolution model beats a 27B beat grid. It reappears on a 26M from-scratch backbone and a second performance-resolution tokenizer: a property of the class, not one lucky vocabulary. Nor is it a finer-lattice artifact: snapping PMT's onsets to the beat grids' resolution still leaves it 67-129 FMD ahead of both (n=500). The effect is distributional; whether it is audible is a separate question, left open by our probe, with a human study pre-registered. Native caption adherence is weak but separable: a lightweight decode-time constraint doubles instrument-F1 (.28 to .60) and Correct-Key (.16 to .35) at no distributional cost. We release the harness, 25+ checkpoints, two corpora (86.6k aligned across caption/MIDI/ABC/audio; 6.25M captioned, the largest for music), and an imprinting diagnostic: published text-to-MIDI systems reproduce their training distribution near-invariant to the caption (72% vs. 71% chord-time on disjoint domains). The field's next representation claim can now be measured, not asserted.",
+      "external_ids": [
+        "arxiv:2608.03999"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-05T12:18:13+08:00",
+      "last_seen_at": "2026-08-05T12:18:13+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.03971",
+      "arxiv_version": "v1",
+      "title": "UniWorld-Design: From Pixel Generation to Layer-Native Design",
+      "authors": [
+        "Zongjian Li",
+        "Zhiyuan Yan",
+        "Chenxu Bai",
+        "Chen Chen",
+        "Haoxiang Sun",
+        "Shaodong Wang",
+        "Feize Wu",
+        "Shenghai Yuan",
+        "Bin Lin",
+        "Zheyuan Liu",
+        "Yuwei Niu",
+        "Li Yuan"
+      ],
+      "published": "2026-08-04",
+      "url": "https://arxiv.org/abs/2608.03971",
+      "abstract": "We introduce UniWorld-Design, a framework that redefines image generation from flat pixel synthesis to structured visual composition, with semantic RGBA layers as the atomic units of generation, understanding, and editing. Our key insight is that pixels define how an image is rendered, whereas layers define how an image is created, understood, and edited. Just as human designers create and manipulate visual content through layers rather than raw pixels, UniWorld-Design equips multimodal generative models with a layer-native design space. UniWorld-Design comprises two models. The Text-to-RGBA (T2RGBA) model generates standalone RGBA assets directly from text. The Image-to-Layer (I2L) model conditions on a finished image, a global instruction and per-layer prompts, and jointly produces ordered, complete semantic RGBA layers. Its instruction interface supports top-level decomposition, recursive decomposition and targeted extraction, making layering an instruction-addressable operation for agentic editing. Because I2L learns complete semantic objects rather than visible-pixel partitions, its layers stay usable when moved or removed. On the Crello benchmark, I2L reduces per-layer RGB L1 error by 37% and achieves a 34% relative improvement in Alpha Soft IoU over Qwen-Image-Layered. Separately, T2RGBA achieves the highest CLIP Score, outperforming LayerDiffuse and OmniAlpha.",
+      "external_ids": [
+        "arxiv:2608.03971"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-05T12:18:13+08:00",
+      "last_seen_at": "2026-08-05T12:18:13+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.03970",
+      "arxiv_version": "v1",
+      "title": "Should We Type or Talk to LLM Agents? A Comprehensive Study of Voice and Keyboard Input Perturbations",
+      "authors": [
+        "Zizhao Hu",
+        "Nathan Elijah Segura",
+        "Mohammad Rostami",
+        "Jesse Thomason"
+      ],
+      "published": "2026-08-04",
+      "url": "https://arxiv.org/abs/2608.03970",
+      "abstract": "Human input reaches language models by typing or speaking, and each channel leaves a distinct signature: orthographic noise for keyboards; for voice, disfluency from conventional transcription and restructuring from AI-backed dictation tools. How do they impact an LLM's performance? In this paper we present HIVE (Human Input-Variation Engine), a suite of voice transcription perturbations and QWERTY keyboard perturbations. We use HIVE to evaluate how robust models are to these perturbations. We present seven findings. (i) Voice transcription perturbations lower accuracy across every instruction-tuned model we test, and it is the structure of the transcription rather than its fillers that carries the cost. (ii) QWERTY keyboard perturbations cost less, and a model absorbs a lot of them before accuracy falls away. (iii) Both trace back to one cause, how many of the question's tokens survive the perturbation: destroying a token is what hurts, while adding new ones alongside it costs little. (iv) The gap between the two channels appears only where the answer must be constructed or deduced; on multiple choice there is none. (v) The harm does not solely come from test-set contamination. (vi) It cannot be trained away with lightweight adaptation. (vii) A thinking budget recovers the keyboard channel almost entirely but leaves the spoken registers untouched, and compressed speech is worse with it.",
+      "external_ids": [
+        "arxiv:2608.03970"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-05T12:18:13+08:00",
+      "last_seen_at": "2026-08-05T12:18:13+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.03924",
+      "arxiv_version": "v1",
+      "title": "ETA: A New Agentic Paradigm for Embodied Tasks",
+      "authors": [
+        "Yitong Chen",
+        "Zezheng Huai",
+        "Sixian Li",
+        "Yubang Wang",
+        "Haozhe Zhang",
+        "Yifei Zhang",
+        "Hechang Chen",
+        "Jingjing Gong",
+        "Yu-Gang Jiang",
+        "Xipeng Qiu"
+      ],
+      "published": "2026-08-04",
+      "url": "https://arxiv.org/abs/2608.03924",
+      "abstract": "When will robots have their ChatGPT moment? Such a breakthrough requires a general-purpose robot that can handle unfamiliar tasks in unfamiliar environments, remain controllable over long interactions, and learn from experience. Today's embodied systems largely follow an end-to-end observation-to-action path. Despite rapid progress, they remain far from this goal: their generalization depends heavily on the coverage of robot training data, while long task execution remains difficult to control and inspect. To realize this goal, we introduce the Embodied Task Agent (ETA), a new paradigm for extending digital agents into the physical world, and release OpenETA as its open-source implementation. ETA centers the robot around a Planner that chooses one Tool call at a time, an Interface that controls execution, and a World that returns the result and a fresh observation. This loop allows the agent to verify outcomes, adapt its plan, and turn successful and failed interactions into reusable experience. OpenETA provides replaceable Planners, composable Tools and Skills, auditable memory, replayable trajectories, and common interfaces for simulation and real robots. For Codex, OpenETA can operate as a lightweight plugin that exposes only observe, mark_point, and move_to.",
+      "external_ids": [
+        "arxiv:2608.03924"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-05T12:18:13+08:00",
+      "last_seen_at": "2026-08-05T12:18:13+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.03910",
+      "arxiv_version": "v1",
+      "title": "Socially Grounded Agentic AI: Coordinating Plural Perspectives through Social Theory",
+      "authors": [
+        "Matt Ratto",
+        "Abhishek Moturu",
+        "Daniel Silver"
+      ],
+      "published": "2026-08-04",
+      "url": "https://arxiv.org/abs/2608.03910",
+      "abstract": "As AI systems are deployed across increasingly diverse social contexts, alignment can no longer be framed as the optimization of a single, unified set of values. Instead, systems must be able to recognize, represent, and respond to multiple legitimate perspectives. This has led to growing interest in pluralistic alignment, which seeks to move beyond one-size-fits-all models of appropriate behaviour. However, current approaches often lack a clear account of how values are socially organized, contested, and coordinated in practice. In this paper, we argue that social theory provides essential conceptual and design resources for addressing these challenges. Drawing on established traditions in sociology, we show how perspectives can be understood as structured by roles, shaped through interaction, and distributed across fields of power and expertise. We translate these insights into concrete implications for AI system design, including role-based representations, structured coordination among perspectives, and context-sensitive evaluation. For agentic systems, this requires aligning not only final outputs, but also the role activations, deliberative traces, aggregation rules, and feedback loops through which those outputs are produced. Our contribution is to reposition pluralistic alignment as a problem of socially grounded coordination rather than output diversification. We outline a design space for systems that engage multiple perspectives in structured and accountable ways, and we identify directions for future work to implement and empirically evaluate these approaches in real-world settings.",
+      "external_ids": [
+        "arxiv:2608.03910"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-05T12:18:13+08:00",
+      "last_seen_at": "2026-08-05T12:18:13+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.03882",
+      "arxiv_version": "v1",
+      "title": "MultiGlobeQA: A Multilingual and Globally Diverse Benchmark for Geospatial Reasoning",
+      "authors": [
+        "Martin Böckling",
+        "Elizaveta Nosova",
+        "Heiko Paulheim",
+        "Andreea Iana"
+      ],
+      "published": "2026-08-04",
+      "url": "https://arxiv.org/abs/2608.03882",
+      "abstract": "Geospatial reasoning, i.e., computing distances, containment, and other spatial relations over real-world entities, is central to navigation and logistics, yet large language models (LLMs) struggle with the required geometric and topological computation despite storing considerable geographic knowledge. Existing benchmarks localize these failures only partially: they are synthetic or smallscale, largely monolingual, and offer limited control over geographic coverage. We introduce MultiGlobeQA, a multilingual benchmark of 46,060 question-answer pairs spanning 14 spatial-function families and 15 answer formats, with execution-based ground truth over three knowledge graphs. It covers 201 countries and territories via income- and density-stratified sampling, with parallel questions in English and 16 additional high- and low-resource languages. Across parametric, reasoning, and agentic settings, LLMs collapse on tasks requiring grid indexing and shape computation, while topological relations and directions fare best. Retrieval and tool use yield considerable gains, yet performance plateaus below two thirds even when gold facts are supplied, indicating that computation, not access to knowledge, is the bottleneck. Models also underperform on low-income regions, a gap that gold facts widen rather than close.",
+      "external_ids": [
+        "arxiv:2608.03882"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-05T12:18:13+08:00",
+      "last_seen_at": "2026-08-05T12:18:13+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.03874",
+      "arxiv_version": "v1",
+      "title": "ContinualSkillBench: Can LLM Agents Truly Evolve Their Capabilities?",
+      "authors": [
+        "Tianyi Guan",
+        "Yiding Wang",
+        "Haotong Yang",
+        "Siyuan Cao",
+        "Shirui Liu",
+        "Yi Hu",
+        "Jiaqi Li",
+        "Muhan Zhang"
+      ],
+      "published": "2026-08-04",
+      "url": "https://arxiv.org/abs/2608.03874",
+      "abstract": "Modern agent frameworks equip large language models with external skill libraries to solve complex tasks. However, it remains unclear whether these systems can effectively evolve their skills and whether the resulting skills improve task-solving capabilities. To bridge this gap, we introduce ContinualSkillBench, a dynamic evaluation framework for in-context continual skill learning. It covers five representative domains, each containing 100 interconnected subtasks ordered by increasing difficulty and opportunities for cross-task skill reuse. Our experiments show that sequential execution generally improves performance, but the gains vary substantially across models and domains. Moreover, in-context learning performs comparably to explicit skill maintenance on average, suggesting that much of the improvement arises from adaptation to prior context and feedback rather than reusable skill abstraction alone. Explicit skills nevertheless provide selective benefits for tasks requiring reusable procedures or precise outputs. We further find that less capable models tend to accumulate larger, more fragmented collections of task-specific skills. These findings show that current in-context skill evolution mechanisms can support continual adaptation, but still struggle to consistently consolidate experience into robust and transferable skills.",
+      "external_ids": [
+        "arxiv:2608.03874"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-05T12:18:13+08:00",
+      "last_seen_at": "2026-08-05T12:18:13+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.03844",
+      "arxiv_version": "v1",
+      "title": "MAFIA: Query-Only Memory Attacks via Probing and Factual Injection against Audited LLM Agents",
+      "authors": [
+        "Jiaming Chen",
+        "Yisen Gao",
+        "Yanping Li",
+        "Zifan Liu",
+        "Yumeng Zhang",
+        "Jun Zhang"
+      ],
+      "published": "2026-08-04",
+      "url": "https://arxiv.org/abs/2608.03844",
+      "abstract": "Memory-augmented LLM agents rely on rich context for long-horizon reasoning and acting, yet their memory modules expose a persistent attack surface for malicious records, making the study of memory poisoning threats imperative. However, existing query-only attacks often fail to remain effective in two realistic and prevalent settings: large-scale benign memory pools and active input auditing. Consequently, current approaches fall short when facing the dual challenges of high retrieval competitiveness and rigorous semantic checks. To overcome these limitations, we propose MAFIA, a query-only Memory Attack framework via probing and Factual Injection against Audit, tailored to this extended threat model. Specifically, MAFIA introduces: (1) a placement strategy that ensures retrieval-competitive injection via memory probing, budget allocation, and scheduling; and (2) a payload design that bypasses audits using compact factual cloaks, preserving malicious effects while maintaining high semantic similarity. Extensive evaluations reveal that MAFIA achieves up to a 90.7% attack success rate while suppressing audit detection from a peak of 83.3% to at most 7.4%, exposing critical vulnerabilities across agentic memory systems. Code will be made publicly available at https://github.com/JiamingChen1234/MAFIA.",
+      "external_ids": [
+        "arxiv:2608.03844"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-05T12:18:13+08:00",
+      "last_seen_at": "2026-08-05T12:18:13+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.03842",
+      "arxiv_version": "v1",
+      "title": "Sensitivity, Causality, and Repair Dissociate: A Layer-Wise Analysis of Perturbation Robustness and Its Scaling",
+      "authors": [
+        "Nathan Labiosa",
+        "David Buff",
+        "Ena Nayak",
+        "Erica Donno"
+      ],
+      "published": "2026-08-04",
+      "url": "https://arxiv.org/abs/2608.03842",
+      "abstract": "When a language model fails on surface-perturbed input (typos, OCR noise, homophones), \"which layer is responsible\" has three natural operationalizations: where representations diverge most (sensitivity), where restoring clean activations recovers the prediction (causality), and where a small adapter can repair the damage (compensatory capacity) - and we show these three layer maps dissociate. Across a five-model panel we identify two propagation regimes - spike-and-suppress (Phi-3.5, Gemma-2-9B) and late-accumulation (Llama-3, Mistral, Qwen2.5-7B) - and on the two models meeting an 80% identity-patch gate, sensitivity and causality are anti-correlated (rho = -0.72 to -0.88). Within-family scaling on Qwen2.5 (1.5B to 14B) shows the late-accumulation signature strengthening monotonically with scale, corroborated on a second family. We propose cascade disruption as the mechanism behind the dissociation: adapters placed at causally implicated early layers break intact downstream computation, making diagnostic-flagged sites the worst adapter placements. A fixed-harness layer sweep across four models (3.8-8B) confirms the core prediction on chain-of-thought GSM8K - the flagged sites are the most damaging adapter windows on every adjudicable model - and is sign-consistent but strongly attenuated on a multiple-choice control, consistent with damage that compounds with generation length. The sweep yields practical guidance: a training-free LRD pre-screen and a default-deepest placement rule, though absolute gains over no-adapter baselines remain small. Finally, apparent gains from a representation-stability loss reverse under an adequate generation budget - truncated chain-of-thought had been scored as empty - a methodological warning for any intervention evaluated on chain-of-thought tasks.",
+      "external_ids": [
+        "arxiv:2608.03842"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-05T12:18:13+08:00",
+      "last_seen_at": "2026-08-05T12:18:13+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.03839",
+      "arxiv_version": "v1",
+      "title": "Oilbird: Training-Free Speculative Decoding with Keys the Verifier Already Computes",
+      "authors": [
+        "Tao Jin",
+        "Phuong Minh Nguyen",
+        "Zhenzhu Yan",
+        "Teeradaj Racharak",
+        "Naoya Inoue"
+      ],
+      "published": "2026-08-04",
+      "url": "https://arxiv.org/abs/2608.03839",
+      "abstract": "Training-free speculative decoding drafts by matching an exact suffix of the context against a pool of earlier context. That lookup misses correct drafts already in the pool, most visibly on tool-calling traffic, where a request repeats almost everything but the few values minted for it, and where one rejected token discards the correct continuation behind it. We diagnose the failure position by position across ten benchmarks and find it to be a problem of addressing rather than of coverage: on our densest tool-calling benchmark, about half of what the strongest exact-match drafter misses is present in the pool yet unreachable by exact matching. We therefore propose a second, semantic draft source: the same pool, re-keyed by the hidden state the verifier has already computed at each committed token, together with a merge that lets it ride inside an existing lexical drafter's tree. In three published drafters, at matched pool and budget, it lifts accepted length by 24-29%. Oilbird reaches 4.4x autoregressive decoding speed on API-Bank, against 3.9x for the strongest training-free baseline in our harness and 2.0x for EAGLE-3.",
+      "external_ids": [
+        "arxiv:2608.03839"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-05T12:18:13+08:00",
+      "last_seen_at": "2026-08-05T12:18:13+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.03836",
+      "arxiv_version": "v1",
+      "title": "Resume Means Resume: A Machine-Checked Conformance Contract for Checkpoint, Interrupt, and Resume Semantics in Workflow Persistence Layers",
+      "authors": [
+        "Sajjad Khan"
+      ],
+      "published": "2026-08-04",
+      "url": "https://arxiv.org/abs/2608.03836",
+      "abstract": "A framework that persists execution state so a run can be interrupted, survive a crash, and continue must decide what a resume means for effects that already fired. Five widely deployed agent workflow frameworks answer differently, none exposes a machine-checkable contract, and behavior violates even the fragments they state. The RESUME CONTRACT states six properties over the persistence API (prefix continuation, effect exactly-once, fork determinism, checkpoint validity, consume-once, recovery determinism), plus fork-intent and liveness obligations. A TLA+ model checks a reference semantics exhaustively, unchanged at scaled bounds (7.4 million states); a 39-cell fault matrix yields the separating models independence requires, and consume-once splits, its consumption clause independent of all six others. A deterministic, LLM-free harness measures them at pinned releases. LangGraph 1.2.9 durably records a second resume value and never consults it, persists schema-invalid state silently, and re-executes durably recorded work after a real SIGKILL: exactly-once across interrupts, at-least-once across crashes, on one API. CrewAI 1.15.2 re-executes completed effect-bearing methods against its written claim; pydantic-graph 1.x cannot resume after a mid-node crash; no two probed frameworks share a conformance profile. Consume-once holds sequentially and fails under concurrent delivery: k processes resuming one parked interrupt fire the gated effect k times, saturation 1.0 in 36 of 40 cells, and the failure crosses hosts. REMIT, a reference sequencer whose Verus-verified recovery core is line-identical to the shipped executable, repairs the fork and validity cells. The cross-process cell is repaired at the read path, and that repair ships: an opt-in gate claims consumption in the shared store, serving one racer and refusing the rest before any node executes.",
+      "external_ids": [
+        "arxiv:2608.03836"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-05T12:18:13+08:00",
+      "last_seen_at": "2026-08-05T12:18:13+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.03809",
+      "arxiv_version": "v1",
+      "title": "Controllable interaction between photons and distant spins via vacuum Rabi oscillations",
+      "authors": [
+        "Xiao Xue",
+        "Jurgen Dijkema",
+        "Tobias Bonsen",
+        "Patrick Harvey-Collard",
+        "Maximilian Rimbach-Russ",
+        "Sander L. de Snoo",
+        "Guoji Zheng",
+        "Amir Sammak",
+        "Giordano Scappucci",
+        "Lieven M. K. Vandersypen"
+      ],
+      "published": "2026-08-04",
+      "url": "https://arxiv.org/abs/2608.03809",
+      "abstract": "Vacuum Rabi oscillations between a single photon and a single spin demonstrate the capability of harnessing light-matter interaction at the level of a single quantum of energy. Since the observation of strong spin-photon coupling in gate-defined quantum dots, probing this interaction in the time-domain has been a major objective. Here, we carefully engineer a device composed of two spatially separated double quantum dots hosting single electron spin qubits and a superconducting cavity to accommodate microwave photons. We observe multiple vacuum Rabi oscillations between each spin qubit and the cavity. By concatenating vacuum Rabi oscillations involving the two spins, an energy excitation in one qubit can be emitted as a photon and then transferred to the other qubit. When a single photon is emitted, the cavity is prepared in a Fock state, leading to an accelerated vacuum Rabi frequency. These results serve as building blocks not only in exploring light-matter interactions, but also in interfacing semiconductor spin qubits to photonic links.",
+      "external_ids": [
+        "arxiv:2608.03809"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-05T12:18:13+08:00",
+      "last_seen_at": "2026-08-05T12:18:13+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.03764",
+      "arxiv_version": "v1",
+      "title": "GDPevo: Evaluating Agent Self-Evolution on Real Business Tasks",
+      "authors": [
+        "Leijun Zhou",
+        "Zhihao Liu",
+        "Xiang Qu",
+        "Chenxu Liu",
+        "Yifei Liu",
+        "Yanke Yu",
+        "Jingzhe Xu",
+        "Xuejun Wu",
+        "Buyue Qian",
+        "Xi Chen",
+        "Yaowei Zheng",
+        "Junhao Hu"
+      ],
+      "published": "2026-08-04",
+      "url": "https://arxiv.org/abs/2608.03764",
+      "abstract": "Agent self-evolution updates an agent's persistent state from prior experience and reuses it to solve related tasks more effectively. Evaluating self-evolution is difficult: existing benchmarks provide limited coverage of economically valuable task domains, do not always design training and test tasks such that test-time gains can be attributed to training experience, and remain vulnerable to data contamination. We present GDPevo, an evolution-native benchmark grounded in GDP-related enterprise workflows, together with the fully automated data pipeline that generates it. Its core mechanism, rule hybridization, decomposes each enterprise workflow into atomic business rules, distributes subsets of these rules across training tasks, and recombines them in held-out test tasks so that test-time gains are attributable. GDPevo spans CRM, ERP, finance, healthcare, legal, and data-centric workflows. Its V1 release contains 120 tasks in 12 groups, with five training and five held-out test tasks per group. Full automation enables the pipeline to expand the suite to 240 tasks in 24 groups (V2) within two days, providing a practical response to contamination. Using GDPevo, we evaluate four agents, each comprising a harness and a model, under four supervision types. Self-evolution consistently improves held-out accuracy by up to 16.44 percentage points. But the best evolved agents remain far below the fully informed oracle ceiling of 91.6%, indicating that the self-evolution ability of current agents remains far from fully realized. We publicly release the pipeline, benchmark, and full evaluation results at https://github.com/Prism-Shadow/GDPevo.",
+      "external_ids": [
+        "arxiv:2608.03764"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-05T12:18:13+08:00",
+      "last_seen_at": "2026-08-05T12:18:13+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.03609",
+      "arxiv_version": "v1",
+      "title": "Formal Verification of Agentic Systems over Operational Data",
+      "authors": [
+        "Alejandro J. Mercado",
+        "Alessio Lomuscio"
+      ],
+      "published": "2026-08-04",
+      "url": "https://arxiv.org/abs/2608.03609",
+      "abstract": "Agentic systems driven by large language models (LLMs) are increasingly deployed in real-world workflows where they act on persistent operational data. Before deployment, these systems need to be verified against business requirements that govern workflow execution and data evolution. However, existing approaches do not provide such system-level guarantees, as they mainly constrain or analyse behaviour at the agent's interface level. We study here the verification of agentic systems comprising a single LLM and a tool orchestration harness over relational operational data. We formalise them as Stateful Tool-Enabled Agentic Deployments (STEADs), give their semantics, define the problem of verifying them against First-Order Computation Tree Logic (FO-CTL) specifications, and show that it is undecidable. We identify sufficient conditions for exact preservation of FO-CTL specifications under a finite-domain restriction, over which verification is PSPACE-complete. The key requirement is that renaming opaque identifiers in the data must correspondingly rename the selected tool calls. We show that LLM-driven agents can violate this condition and introduce a canonical deployment wrapper that guarantees it for arbitrary base agents while preserving already-equivariant behaviour. We prove that computing canonical representations required by this construction is graph-isomorphism-hard. Finally, we illustrate our framework on an LLM agent orchestrating a case-management workflow.",
+      "external_ids": [
+        "arxiv:2608.03609"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-05T12:18:13+08:00",
+      "last_seen_at": "2026-08-05T12:18:13+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.03606",
+      "arxiv_version": "v1",
+      "title": "Learning Clinical-Trial Strategy: Offline Policy Training for Decision Agents",
+      "authors": [
+        "William Bolton",
+        "Philip Torr"
+      ],
+      "published": "2026-08-04",
+      "url": "https://arxiv.org/abs/2608.03606",
+      "abstract": "Clinical development is sequential decision-making under uncertainty, where a sponsor must plan a portfolio of experiments from heterogeneous evidence. We study this setting by framing oncology clinical development as an offline decision-making problem in which an agent predicts the next six-month trial portfolio of an oncology drug program from information available at the decision date. To support this, we construct a temporal dataset that combines 31.7k heterogeneous public data records, including trial registries, regulatory reviews, sponsor filings, utilization data, and epidemiology, into 881 offline decision episodes across 45 historical programs. We compare four offline objectives: behavioral cloning, reward-weighted behavioral cloning, learned-reward training, and value-based implicit Q-learning against four frontier LLM agents that share a common date-gated retrieval scaffold across held-out drug, sponsor, drug-class, and temporal splits. Models trained offline outperform the non-fine-tuned baselines, particularly in the post-August 2025 contamination-clean holdout. Reward-weighted behavioral cloning performs the best, obtaining 46.2% indication F1 and 14.2% strict F1 against 25.0% and 2.1%, respectively, for the best-performing tool agent on each metric. These results suggest that structured offline learning can teach agents to plan clinical experiments.",
+      "external_ids": [
+        "arxiv:2608.03606"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-05T12:18:13+08:00",
+      "last_seen_at": "2026-08-05T12:18:13+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.03591",
+      "arxiv_version": "v1",
+      "title": "DiagChain: A Diagnostic Benchmark for Evaluating LLM Agents on Evidence-Grounded Attack Chain Reconstruction",
+      "authors": [
+        "Xuyang Liu",
+        "Yibin Han",
+        "Zhenwei Zhang",
+        "Kai Chang",
+        "Zhiwei Xu",
+        "Tian Qiu",
+        "Weixian Deng",
+        "Jiabao Gao",
+        "Xiaolin Peng",
+        "Hai Wan",
+        "Xibin Zhao"
+      ],
+      "published": "2026-08-04",
+      "url": "https://arxiv.org/abs/2608.03591",
+      "abstract": "Large Language Model (LLM) agents offer a promising approach to attack chain reconstruction by retrieving and interpreting heterogeneous telemetry to infer ordered attacker actions. However, existing benchmarks mainly evaluate final outputs or aggregate accuracy, providing limited insight into how errors arise and propagate across intermediate reasoning stages. We present DiagChain, a diagnostic benchmark for evidence-grounded attack chain reconstruction that enables stage-wise evaluation of LLM agents. DiagChain includes MAIN-69, a suite of 69 scenarios spanning multiple operating systems, evidence noise levels, and chain lengths. It further introduces Evidence-Centric Retrieval-Augmented Generation (ECRAG), which couples evidence retrieval with an evolving structured representation of the reconstructed chain. Five complementary metrics are introduced to assess distinct stages of the reconstruction process and support systematic failure diagnosis. Based on evaluations using 6 LLMs, DiagChain reveals that even the strongest configuration succeeds on only 39.6% of the 849 reference steps in MAIN-69. Our analysis further shows that smaller models struggle with the more basic task of incorporating retrieved evidence into their outputs, whereas larger models can proceed to later steps, where correctly ordering that evidence becomes the main bottleneck. These results validate the importance of diagnostic evaluation beyond end-to-end accuracy and provide actionable insights for improving evidence-grounded cybersecurity agents.",
+      "external_ids": [
+        "arxiv:2608.03591"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-05T12:18:13+08:00",
+      "last_seen_at": "2026-08-05T12:18:13+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.03571",
+      "arxiv_version": "v1",
+      "title": "Beyond Simply Environment Scaling: Designing Effective Environment Distributions for Multimodal Agent Learning",
+      "authors": [
+        "Kejian Zhu",
+        "Zhuoran Jin",
+        "Dongqi Huang",
+        "Hongbang Yuan",
+        "Yupu Hao",
+        "Kang Liu",
+        "Jun Zhao"
+      ],
+      "published": "2026-08-04",
+      "url": "https://arxiv.org/abs/2608.03571",
+      "abstract": "Recent works train agents by constructing large-scale multimodal environment pools. However, we find that simply increasing the number of multimodal environments does not always benefit. We further analyze the limitations in current multimodal environment distributions through a series of experiments. Based on these findings, we study how to build more effective training environment distributions from two dimensions: **diversity** and **difficulty structure**. For diversity, we propose **Ability-aware Environment Selection (AES)** to obtain diverse environment sets. For difficulty structure, we propose **Hierarchical Difficulty Curriculum (HDC)**, which organizes curriculum learning through two difficulty levels: harness weakening and state-scale progression. Experiments show that AES and HDC effectively improve multimodal agent training.",
+      "external_ids": [
+        "arxiv:2608.03571"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-05T12:18:13+08:00",
+      "last_seen_at": "2026-08-05T12:18:13+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.03463",
+      "arxiv_version": "v1",
+      "title": "LeanMem: Simple and Efficient Long-Term Memory for LLM Agents",
+      "authors": [
+        "Yuxin Liao",
+        "Le Wu",
+        "Min Hou",
+        "Hao Liu",
+        "Han Wu",
+        "Zishu Wang"
+      ],
+      "published": "2026-08-04",
+      "url": "https://arxiv.org/abs/2608.03463",
+      "abstract": "Long-term memory is essential for LLM-based agents to sustain interactions and reliably leverage distant history. However, existing memory systems typically process heterogeneous dialogue content through a uniform summarization and retrieval pipeline, leading to either excessive token consumption or irreversible loss of fine-grained evidence. We argue that historical dialogue content should be handled differently according to its compressibility, temporal dynamics, and fidelity requirements. Based on this insight, we propose LeanMem, a lightweight long-term memory framework. LeanMem first filters out low-value content, then stores informative segments as compact profile memory, temporally structured event memory, or source-grounded record memory, depending on the nature of the information. During maintenance, only dynamically evolving event memories are selectively updated, avoiding redundant consolidation of stable profiles and immutable records. During inference, LeanMem dynamically selects memory types and allocates retrieval budgets according to query-specific evidence demands, assembling relevant evidence on demand. On LoCoMo and LongMemEval-S with GPT-4.1-mini and Qwen3-8B, LeanMem improves accuracy over the strongest memory-based baseline in every setting, by up to 15.1 points, at the lowest or near-lowest construction cost, inference tokens, and latency. The code and datasets are included in the supplementary materials.",
+      "external_ids": [
+        "arxiv:2608.03463"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-05T12:18:13+08:00",
+      "last_seen_at": "2026-08-05T12:18:13+08:00"
+    },
+    {
+      "source": "semanticscholar",
+      "arxiv_id": "2607.03691",
+      "doi": "",
+      "title": "Don't Blame the Large Language Model: How Agent Harness Evolution Shapes Coding Agent Quality",
+      "authors": [
+        "O. Sghaier",
+        "Hao Li",
+        "Bram Adams",
+        "Ahmed E. Hassan"
+      ],
+      "published": "2026-07-04",
+      "url": "https://arxiv.org/abs/2607.03691",
+      "abstract": "Coding agents, autonomous systems that use large language models (LLMs) to resolve software engineering tasks, rely on agent harness: a middleware layer in between a developer and a large language model that orchestrates system prompts, tool execution, context management, and iterative reasoning loops. While these agent harnesses evolve at extreme velocities, no study has examined how this evolution affects agent quality (i.e., effectiveness and efficiency) over time. Practitioners regularly report quality regressions after agent harness updates, yet consistently attribute them to the underlying model rather than the harness itself. In this paper, we address this gap by conducting the first controlled longitudinal study that isolates the agent harness contribution. Unlike prior work that fixes the agent harness and varies the model, we fix the model and vary only the agent harness, evaluating 35 sequential releases to measure their impact on agent effectiveness and efficiency. We first empirically study the development and release evolution of five major open-source agent harnesses (i.e., Codex, Qwen Code, Gemini, OpenCode, and OpenHands), revealing extreme release velocities exceeding two releases per day and thousands of issues within months. We then perform a controlled deep dive into 35 sequential releases of the Qwen Code CLI, evaluating each against 50 stratified SWE-bench Verified tasks while holding the underlying LLM constant. We trace the resulting quality fluctuations to specific development patterns and architectural components, and illustrate our findings with concrete qualitative evidence linking individual pull requests to measured quality shifts.",
+      "external_ids": [
+        "s2:1101837ffe4dd78c083c500c35ebb6a18b49f120",
+        "arxiv:2607.03691"
+      ],
+      "sources": [
+        "semanticscholar"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-05T12:18:13+08:00",
+      "last_seen_at": "2026-08-05T12:18:13+08:00"
+    },
+    {
+      "source": "semanticscholar",
+      "arxiv_id": "2606.27243",
+      "doi": "",
+      "title": "NOVA: A Verification-Aware Agent Harness for Architecture Evolution in Industrial Recommender Systems",
+      "authors": [
+        "Shaohua Liu",
+        "Liang Fang",
+        "Yilong Sun",
+        "Shudong Huang",
+        "Qin-Wen Luo",
+        "Shaoxin Liu",
+        "Xiaoyang Chen",
+        "Dongqiang Liu",
+        "Chuangang Ma",
+        "Z. Chai",
+        "Heng Wang",
+        "Shijie Quan",
+        "Chang Cui",
+        "Zhangbin Zhu",
+        "Peng Chen",
+        "Wei Xu",
+        "Lei Xiao",
+        "Haijie Gu",
+        "Jie Jiang"
+      ],
+      "published": "2026-06-25",
+      "url": "https://arxiv.org/abs/2606.27243",
+      "abstract": "Industrial advertising recommender systems are continually improved through architecture modifications, yet production iteration remains expert-intensive because coordinated changes to model topology, feature configuration, and interaction modules must satisfy strict interface, resource, and serving constraints. AutoML is limited to predefined search spaces, while generic coding agents verify runnability rather than recommender-specific semantic validity. Executable candidates may therefore violate architectural contracts, while the lack of structured reuse of semantic diagnostics and evaluation outcomes can lead to repeated invalid or ineffective modifications. We present NOVA, a verification-aware agent harness that organizes production architecture modification as multi-round search over concrete implementations within a fixed evaluation budget. At each round, NOVA generates multiple candidates under production constraints, rejects semantic violations, and ranks the valid survivors for local testing and offline evaluation. Across rounds, trajectory memory synthesizes semantic diagnostics, local-test outcomes, and offline metric changes into modification directions and forbidden patterns that guide subsequent search. Under the same maximum offline-evaluation budget for automated methods, NOVA achieves the highest effective pass rate, reaching 53.3% on ScaleUp and 51.7% on Literature-to-Production tasks. In a production A/B test covering 5% of traffic in an advertising system serving over one billion users, the selected Literature-to-Production candidate yields GMV gains of +1.25%, +1.70%, and +2.02% across three major pCVR objectives, with corresponding relative reductions in absolute pCVR bias of 58.8%, 66.7%, and 37.3%, respectively.",
+      "external_ids": [
+        "s2:5c46adaa59cdde852655ad740c0c51071e70ada5",
+        "arxiv:2606.27243"
+      ],
+      "sources": [
+        "semanticscholar"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-05T12:18:13+08:00",
+      "last_seen_at": "2026-08-05T12:18:13+08:00"
+    },
+    {
+      "source": "semanticscholar",
+      "arxiv_id": "2605.30611",
+      "doi": "10.48550/arXiv.2605.30611",
+      "title": "Crafter: A Multi-Agent Harness for Editable Scientific Figure Generation from Diverse Inputs",
+      "authors": [
+        "Haozhe Zhao",
+        "Shuzheng Si",
+        "Zhenhailong Wang",
+        "Zheng Wang",
+        "Liang Chen",
+        "Xiaotong Li",
+        "Zhixiang Liang",
+        "Maosong Sun",
+        "Minjia Zhang"
+      ],
+      "published": "2026-05-28",
+      "url": "https://arxiv.org/abs/2605.30611",
+      "abstract": "Scientific figures are among the most effective means of communicating complex research ideas, yet producing publication-quality illustrations remains one of the most labor-intensive parts of paper preparation. Existing automated systems each target a single figure type under text-only input, leaving the diversity of types and conditions researchers actually use unaddressed; their raster outputs further cannot be locally revised. Because scientific figures are structured compositions of discrete semantic components, the localized errors generators produce on such layouts demand not a stronger backbone but a harness. We instantiate this harness in two complementary systems: Crafter, a multi-agent harness for figure generation that generalizes across figure types and input conditions without architectural changes, and CraftEditor, which applies the same pattern to convert raster outputs into editable SVGs. Moreover, we introduce CraftBench, a benchmark spanning three figure types and four input conditions with human quality annotation. Experiments show that Crafter substantially outperforms both standalone generators and the agentic baseline on PaperBanana-Bench and CraftBench, with ablations confirming each component's independent contribution; CraftEditor faithfully converts outputs into editable SVGs that surpass all baselines. Our code and benchmark are available at https://github.com/HaozheZhao/Crafter.",
+      "external_ids": [
+        "s2:ef1530727228713e8f1c34373477e1ffcac1bda4",
+        "arxiv:2605.30611",
+        "doi:10.48550/arxiv.2605.30611"
+      ],
+      "sources": [
+        "semanticscholar"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-05T12:18:13+08:00",
+      "last_seen_at": "2026-08-05T12:18:13+08:00"
+    }
+  ]
+}
