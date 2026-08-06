@@ -1,8 +1,496 @@
 {
   "schema_version": 1,
   "topic": "agent harness",
-  "updated_at": "2026-08-05T12:18:13+08:00",
+  "updated_at": "2026-08-06T12:17:46+08:00",
   "candidates": [
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.05144",
+      "arxiv_version": "v1",
+      "title": "Argus: A General-Purpose Agentic Runtime for Long-Horizon Reasoning",
+      "authors": [
+        "Boxiu Li",
+        "Zimo Wen",
+        "Yijia Fan",
+        "Junxiang Lei",
+        "Sufeng Guo",
+        "Jiaao Wu",
+        "Ruize Tang",
+        "Mukai Li",
+        "Yifei Shen",
+        "Xiaoyu Chen",
+        "Wanbo Zhang",
+        "Runjing Gu",
+        "Yifei Gao",
+        "Yuheng Wu",
+        "Xuyao Huang",
+        "Zelong Zhao",
+        "Jiachen Zhang",
+        "Shibo Hu",
+        "Hangxi Guo",
+        "Yilin Chen",
+        "Yuzhe Zhang",
+        "Fan Yang",
+        "Chuan Wen",
+        "Xian Zhang",
+        "Xuanhe Zhou",
+        "Zhijie Deng"
+      ],
+      "published": "2026-08-05",
+      "url": "https://arxiv.org/abs/2608.05144",
+      "abstract": "Long-horizon reasoning requires an agentic runtime that can persist when evidence supports its current approach and pivot when measurements reveal failure, hidden constraints, or a misspecified objective. We present Argus, a persistent, self-evolving runtime in which Manager, Planner, Engineer, and Reviewer execute bounded missions over durable project state. Argus separates stable user intent from operational objectives, constraints, and verification criteria, and admits memories, skills, procedures, verifiers, routing decisions, and rejected routes only after role-owned review and, when available, task-native verification. Model weights remain fixed; self-evolution occurs through persistent runtime state and control policy, with autonomous execution between operator-owned escalation points. Across seven GPT-5.5 benchmark arenas, Argus achieves about 78% on SWE-Bench Pro versus 59% for Direct Copilot while using 1.41 times the aggregate tokens. After verification-gated self-evolution, mature SWE-Bench waves use 21% fewer solve-input tokens and 15% less active workflow time per task than startup waves, while recording 34 verifier recoveries and 22 strict review-loop rescues. Argus also reaches 76.8% on AARRI-Bench and a 28.0-point gap on mathematical data synthesis, with competitive GPU-kernel and language-model-training results. Beyond benchmarks, an optimized RWKV6 kernel was merged upstream; a multi-day mathematics campaign retained falsified routes and proof-backed frontier updates; and six paper pipelines completed 254 missions with 16 stage rollbacks. These results show that a fixed-weight, self-evolving harness can revise, recover, and accumulate verified approaches while producing structured trajectories for future supervised and reinforcement learning.",
+      "external_ids": [
+        "arxiv:2608.05144"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-06T12:17:46+08:00",
+      "last_seen_at": "2026-08-06T12:17:46+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.05141",
+      "arxiv_version": "v1",
+      "title": "OctoLong: Mid-Training On Cross-Repository Code Contexts Enhances Long-Context Modeling",
+      "authors": [
+        "Indraneil Paul",
+        "Falko Helm",
+        "Goran Glavaš",
+        "Iryna Gurevych"
+      ],
+      "published": "2026-08-05",
+      "url": "https://arxiv.org/abs/2608.05141",
+      "abstract": "Context lengths of language models (LMs) have dramatically increased, driven by the demands for in-context learning, self-improvement, and long-horizon agentic workflows. Existing long-context corpora, however, are dominated by books, academic articles, and code repositories, which are finite resources and often scarce in long-distance dependencies. In this work, we introduce OctoLong, a context engineering pipeline that instruments an AST parser, a language server backend, and a package manager to facilitate the recursive retrieval of code references, enabling the curation of dependency-rich code contexts of millions of tokens in length. We then train OctoLong-Instruct, a suite of capable long-context open LMs, derived from base models ranging in size from 600M to 14B parameters, via context-extension mid-training on a ~50B-token mixture containing ~6.2B tokens of OctoLong code contexts, followed by ~10B tokens of instruction tuning. Our training ablations and experimental evaluations against 18 state-of-the-art open-weight long-context LMs show that supplanting just 12% of traditional context-extension corpora with OctoLong data yields substantial gains in long-range retrieval, long-term state tracking, repository-level code understanding, and downstream agentic tasks, while also enhancing API usage in short-context coding scenarios.",
+      "external_ids": [
+        "arxiv:2608.05141"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-06T12:17:46+08:00",
+      "last_seen_at": "2026-08-06T12:17:46+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.05108",
+      "arxiv_version": "v1",
+      "title": "Agent Against Agent: An Agentic System for Automatic Prompt Injection Red Teaming",
+      "authors": [
+        "Yanting Wang",
+        "Chenlong Yin",
+        "Runpeng Geng",
+        "Jinyuan Jia"
+      ],
+      "published": "2026-08-05",
+      "url": "https://arxiv.org/abs/2608.05108",
+      "abstract": "Prompt injection poses significant security risks to LLM agents. Efficient and effective red-teaming is therefore critical, both for evaluating these risks and for collecting training data to improve defenses. Existing state-of-the-art prompt injection red-teaming methods primarily rely on reinforcement learning (RL), producing attacker models that often generalize poorly to new target LLMs. In this work, we develop PIMiner, an agentic system for prompt injection red-teaming. During training, PIMiner is trained on a sequence of (dataset, target model) pairs and builds a strategy library from scratch. At test time, the learned strategy library can be directly transferred to a previously unseen target LLM without additional training. PIMiner requires only a small number of queries to a target agent (e.g., 10) per test sample. Experimental results demonstrate that PIMiner achieves strong performance. On IPIArena, it attains a 76.2% ASR against Gemini-2.5-Pro, 61.9% ASR against GPT-5.1, and 42.9% ASR against Claude-Sonnet-4.5. On AgentDojo, it achieves an 86.7% ASR against Gemini-2.5-Pro, 53.3% ASR against GPT-5.1, and 40.0% ASR against Claude-Sonnet-4.5.",
+      "external_ids": [
+        "arxiv:2608.05108"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-06T12:17:46+08:00",
+      "last_seen_at": "2026-08-06T12:17:46+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.05095",
+      "arxiv_version": "v1",
+      "title": "Hierarchical Graph Memory for LLM Agents with Path-level Localization and Rewrite",
+      "authors": [
+        "Xiawei Yue",
+        "Boran Wang",
+        "Xiaoqing Zhang",
+        "Shuxin Zheng",
+        "Ziwei Zhang"
+      ],
+      "published": "2026-08-05",
+      "url": "https://arxiv.org/abs/2608.05095",
+      "abstract": "Agents for long term reasoning require a memory that can be efficiently and effectively updated over time, as new facts and external feedback continue to arrive. Recently, graph memory has been adopted to offer structural organization for multi-hop retrieval and reasoning. However, existing methods store all memories in a flat graph, and accumulated historical memories can introduce irrelevant contexts and increase the cost of evidence selection during retrieval. Moreover, they typically update memory units independently, requiring repeated unit-wise rewrite to cover related changes. To address these issues, we propose HiGram, an evolving hierarchical graph memory framework with path-level localization and rewriting. Specifically, we first propose a hierarchical graph memory, which organizes the memory into coarse-to-fine architecture composed of upper-level nodes and MemoryUnits, thereby reducing the amount of irrelevant information during retrieval. We further propose MicroGraph-based path-level localization, which leverages query and update conditioned MicroGraphs to identify support subgraph and evidence path before rewrite. Finally, we propose a coordinated rewriting method that jointly revises intra-unit memory and inter-unit dependencies, enable valid dependency structures updating in the localized evidence path. Experiments on benchmarks for long-term conversational question answering and conflict-aware memory evaluation demonstrate that our method demonstrate substantial improvements over baselines in answer quality and token efficiency. Besides, our method improves answer accuracy and query-valid evidence selection under dynamic, static, and conditional conflicts.",
+      "external_ids": [
+        "arxiv:2608.05095"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-06T12:17:46+08:00",
+      "last_seen_at": "2026-08-06T12:17:46+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.05033",
+      "arxiv_version": "v1",
+      "title": "SparseDitto: Customizing GPU Kernels for Different Sparsity Patterns with LLM-Based Agentic System",
+      "authors": [
+        "Shiyang Li",
+        "Guangyan Sun",
+        "Jinwei Tang",
+        "Yanzhi Wang",
+        "Mingyi Hong",
+        "Caiwen Ding"
+      ],
+      "published": "2026-08-05",
+      "url": "https://arxiv.org/abs/2608.05033",
+      "abstract": "Sparse matrix kernels are fundamental to scientific computing, graph analytics, and machine learning. Their GPU performance depends strongly on the input sparsity pattern and execution strategy. For the same SpMM on the same matrix, cuSPARSE exhibits a 350x performance gap between CSR and Blocked-ELL. Our study of multiple data formats, specialized systems, and sparse compilers shows that no single implementation consistently dominates across sparsity patterns and operators. This motivates a system that can adapt its representation, execution strategy, and hardware mapping to each workload and target GPU. We present SparseDitto, an LLM-based system that constructs a GPU kernel for each matrix, operator, and target GPU. SparseDitto supports SpMV, SpMM, and SpGEMM within a unified design framework. A lightweight additive model ranks established strategies using structural features of the input matrix. An architecture-aware planner then proposes several candidate designs. Coding and verification agents implement and refine them using measurements from the target GPU. Across three sparse operators and a diverse set of matrices, SparseDitto achieves a geometric-mean speedup of 2.68x over cuSPARSE on an NVIDIA RTX PRO 6000 GPU, with a maximum of 146.61x. On an NVIDIA H200 GPU, it achieves 2.79x, with a maximum of 78.5x. Its generated SpMM kernels also accelerate full-batch GCN training by up to 3.39x.",
+      "external_ids": [
+        "arxiv:2608.05033"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-06T12:17:46+08:00",
+      "last_seen_at": "2026-08-06T12:17:46+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.05030",
+      "arxiv_version": "v1",
+      "title": "From Score Matrices to Football-Aware Match-State Simulation: An Auditable LLM Harness for Exact-Score Reranking",
+      "authors": [
+        "Shaopeng Liang"
+      ],
+      "published": "2026-08-05",
+      "url": "https://arxiv.org/abs/2608.05030",
+      "abstract": "Football score forecasting combines a strong statistical core with a difficult contextual edge. Dynamic Poisson-family models estimate team strength, expected goals, and coherent score probabilities, but do not directly understand roles, tactical matchups, motivation, or how a first goal changes behaviour. Large language models (LLMs) can reason about such concepts, yet are not calibrated probability engines. We combine both components through an auditable information harness. This paper documents four iterations: V1, a dynamic score-driven Dixon-Coles baseline; V2, which maps LLM contextual ratings back into expected-goal parameters; V3, which replaces scalar correction with goal-by-goal simulations over a frozen score-candidate set; and V4, which adds shared first-breakthrough and post-goal cascade judgments, time-aware stopping, and deterministic tail candidates. The harness defines input semantics, supplies pre-match evidence, and constrains the LLM to an inspectable reasoning route. On a chronological replay of the first 150 matches of the 2025-26 English Premier League, V1 achieved 10.0% Top-1 and 26.7% Top-3 exact-score accuracy. V3 reached 12.0% and 30.0%, while V4 reached 14.7% and 30.7%. V4 increased candidate coverage from 77.3% to 84.7%, although no added tail candidate became a Top-3 exact hit. V1's native 1X2 distribution achieved 53.3% argmax accuracy, 0.9878 log loss, 0.5870 Brier score, and 0.2095 ranked probability score. These results are exploratory: the development slice is not an untouched benchmark, and temporal input isolation cannot exclude outcome memory in a closed LLM. The contribution is an auditable hybrid architecture, a clear design evolution, and negative findings showing where football-aware simulation does and does not improve score selection.",
+      "external_ids": [
+        "arxiv:2608.05030"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-06T12:17:46+08:00",
+      "last_seen_at": "2026-08-06T12:17:46+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.05026",
+      "arxiv_version": "v1",
+      "title": "ArtAnno: Annotating Implicit Semantics in Artworks through LLM Agent-Driven Bidirectional Human-AI Augmentation",
+      "authors": [
+        "Xiaoyan Gu",
+        "Yifang Wang",
+        "Wenqing Zheng",
+        "Haozhong Liu",
+        "Yixia Zheng",
+        "Peiyi Jiang",
+        "Wenjie Ning",
+        "Wei Zhang",
+        "Wei Chen"
+      ],
+      "published": "2026-08-05",
+      "url": "https://arxiv.org/abs/2608.05026",
+      "abstract": "High-quality annotation of artworks is essential for computational art research, yet extracting implicit semantics remains challenging due to the reliance on culturally grounded meanings and deep contextual knowledge behind the images. Current AI-assisted annotation tools often lack assistance or rely on one-way workflows where experts have to perform extra manual calibrations to improve AI models, resulting in limited efficiency. To address this, we propose Bidirectional Human-AI Augmentation(BiHAA), a closed-loop framework in which skills and domain knowledge base evolve through real-time interaction and bidirectional HAI augmentation. Informed by a formative study with 20 artwork annotators from different backgrounds, we implement this framework in ArtAnno, an artwork annotation system driven by a multi-agent architecture. The system includes a Proactive Agentic Support Module, where AI augments humans through semantic mining and label suggestion, and an Interaction-Driven Evolution Module, where human expertise continuously enhances the AI through distilling annotation trajectories into reusable experience. Evaluation through a user study and two case studies demonstrates that our framework and system improve annotation efficiency, enable knowledge accumulation, and reduce the effort of information seeking and verification for annotators with limited domain expertise. We conclude by discussing broader implications and future directions.",
+      "external_ids": [
+        "arxiv:2608.05026"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-06T12:17:46+08:00",
+      "last_seen_at": "2026-08-06T12:17:46+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.04968",
+      "arxiv_version": "v1",
+      "title": "EvolveNet: Collaborative Harness Evolution for Agent Self-Improvement",
+      "authors": [
+        "Jun Nie",
+        "Yonggang Zhang",
+        "Qianshu Cai",
+        "Yiu-ming Cheung",
+        "Xinmei Tian",
+        "Bo Han"
+      ],
+      "published": "2026-08-05",
+      "url": "https://arxiv.org/abs/2608.04968",
+      "abstract": "The capabilities of an LLM agent depend not only on its model but on the harness: the executable program that constructs context, invokes tools, verifies results, and recovers from failure. Recent work shows that evolving the harness yields persistent improvements without updating model weights. Existing approaches, however, assume that all execution experience can be routed to a single optimizer, which evolves one harness along a sequential trajectory. Real agent ecosystems violate that assumption: users, organizations, and environments generate isolated streams of experience that cannot be pooled, so the experience most worth learning from is exactly the experience that cannot be directly centralized. We introduce EvolveNet, a paradigm of collaborative harness evolution that moves experience extraction to the data. A shared harness is broadcast to data-local agent deployments, each of which evolves it on its own workload. Only the resulting program adaptations are composed into an updated shared harness and redistributed, so that every participating agent inherits operational experience discovered by the others. By shifting the aggregation boundary from raw workloads to learned adaptations, EvolveNet keeps workloads local and allows multiple evolutionary searches to proceed concurrently with reduced serial depth. Because independently modified programs cannot be averaged like model parameters and may conflict when composed, EvolveNet introduces scope-typed, evidence-guided program aggregation. Across five settings spanning text-to-SQL, data-science coding, competitive programming, software engineering, and agentic workflows, EvolveNet improves the shared harness in all five, with the largest gains under heterogeneous workloads, and ablations attribute the improvement to composition of adaptations from different agents rather than to selecting among them.",
+      "external_ids": [
+        "arxiv:2608.04968"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-06T12:17:46+08:00",
+      "last_seen_at": "2026-08-06T12:17:46+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.04934",
+      "arxiv_version": "v1",
+      "title": "State2State: Environment-Derived Mid-Training for LLM Agents",
+      "authors": [
+        "Xuanyu Lei",
+        "Yiqi Zhu",
+        "Chenliang Li",
+        "Kaiming Liu",
+        "Peng Li",
+        "Ming Yan",
+        "Jieping Ye",
+        "Ya-Qin Zhang",
+        "Yang Liu"
+      ],
+      "published": "2026-08-05",
+      "url": "https://arxiv.org/abs/2608.04934",
+      "abstract": "Training LLM agents commonly relies on supervised fine-tuning from expert trajectories or online reinforcement learning over human-specified tasks with handcrafted verifiers. Though effective, both remain bottlenecked by externally specified tasks and supervision signals, limiting the scalability and diversity of agent training. We study an environment learning paradigm in which agents acquire interaction and manipulation capabilities solely through environment interaction, without externally specified tasks. We propose State2State, an environment-derived mid-training method that converts explored environment states into training objectives, challenging agents to reach a specified target state. By deriving tasks from environment exploration and verifying success through rule-based state matching, State2State provides scalable and verifiable training objectives without expert supervision or manual task design. Experiments on ALFWorld and ScienceWorld show that State2State improves agent performance as a standalone environment-learning stage in most settings. As initialization for downstream RL, it further improves final performance and learning efficiency, with promising evidence of cross-environment generalization.",
+      "external_ids": [
+        "arxiv:2608.04934"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-06T12:17:46+08:00",
+      "last_seen_at": "2026-08-06T12:17:46+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.04843",
+      "arxiv_version": "v1",
+      "title": "MemoryCPT: An End-to-End Agent Memory Framework for Cost-Performance Trade-off",
+      "authors": [
+        "Songxin Lei",
+        "Kun Ouyang",
+        "Weilin Ruan",
+        "Yuqian Wu",
+        "Zhijiang Guo",
+        "Yushi Sun",
+        "Fugee Tsung"
+      ],
+      "published": "2026-08-05",
+      "url": "https://arxiv.org/abs/2608.04843",
+      "abstract": "Long-horizon LLM agents require memory systems that recover useful evidence from large interaction histories without passing excessive context to downstream models. Existing memory pipelines often rely on hand-crafted heuristics and repeated LLM calls, which can introduce redundant context and high inference cost. We propose MemoryCPT, an end-to-end trainable agent memory pipeline that spans offline memory construction and online query-conditioned context generation. MemoryCPT consists of two stages: Query-agnostic Distillation (QAD), which distills a modular memory-construction pipeline into a compact model using explicit reasoning traces; and Query-aware Retrieval and Summarization (QAR), which combines reciprocal rank fusion (RRF) with a LoRA-based summarizer trained via Group Relative Policy Optimization (GRPO) under a cost-aware reward. We further introduce Quality per Cost (QPC) to quantify answer quality per unit inference cost. Experiments on LoCoMo and LongMemEval show that MemoryCPT improves the cost-performance trade-off over the evaluated baselines, while ablation and sensitivity analyses characterize the contributions of its components and the effects of key design choices.",
+      "external_ids": [
+        "arxiv:2608.04843"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-06T12:17:46+08:00",
+      "last_seen_at": "2026-08-06T12:17:46+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.04828",
+      "arxiv_version": "v1",
+      "title": "Skill-Use: Can LLMs Actually Use Skills in Agentic Harnesses?",
+      "authors": [
+        "Jinyi Han",
+        "Yuanjian Xu",
+        "Ying Liao",
+        "Xinyi Wang",
+        "Zishang Jiang",
+        "Zixiang Di",
+        "Fanyang Lu",
+        "Zhichao Hu",
+        "Yanghua Xiao"
+      ],
+      "published": "2026-08-05",
+      "url": "https://arxiv.org/abs/2608.04828",
+      "abstract": "Large language model (LLM) agents increasingly rely on skills, structured documents that specify when to act, which procedure to follow, and which tools are allowed. Existing evaluations mostly judge the quality of a skill or its contribution to task success, leaving unexamined whether an agent can recognize a relevant skill and apply it on its own. We introduce Skill-Use, a benchmark that evaluates skill use under progressive disclosure, where an agent sees only a skill's name and short description and must retrieve the full procedure before following it. Skill-Use separates three facets of skill use. Trigger measures whether the agent invokes the relevant skill, Compliance measures how faithfully it follows the prescribed procedure, and Boundary measures whether it avoids forbidden operations. A Skill-Use (SU) score combines the three and credits execution only after the skill is triggered. Skill-Use pairs 79 real skills with 177 executable tasks across nine domains, each grounded in real files, run in an isolated Docker sandbox, and scored by a trajectory-based rubric. Evaluating eight LLMs under two agent harnesses, we find that reliable skill use remains out of reach, as the strongest configuration reaches an SU of only 0.613. Triggering and procedural compliance fail as independent bottlenecks, and both scores and model rankings shift with the harness, so skill use behaves as a capability conditioned on the harness rather than a fixed property of the model.",
+      "external_ids": [
+        "arxiv:2608.04828"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-06T12:17:46+08:00",
+      "last_seen_at": "2026-08-06T12:17:46+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.04746",
+      "arxiv_version": "v1",
+      "title": "Caching for the Future: Scrub Jay Episodic Memory Principles for Agent Memory Systems",
+      "authors": [
+        "Kartikey Singh Bhandari",
+        "Aarya Wadhwani",
+        "Dhruv Kumar",
+        "Pratik Narang"
+      ],
+      "published": "2026-08-05",
+      "url": "https://arxiv.org/abs/2608.04746",
+      "abstract": "LLM agents that persist across sessions accumulate stored memories whose validity varies enormously by content type, yet existing memory architectures treat all memories as equally persistent and systematically contaminate retrieved context with outdated facts. We show that per-memory, type-conditioned temporal decay, a property of western scrub jay episodic memory, can be operationalized as an auto-classified coefficient $π_i$ in an external LLM-agent memory store, yielding ScrubJay-MEM: each memory is encoded as a jointly-bound What--Where--When tuple with an estimated perishability $π_i$ and utility horizon $τ_i$, retrieved by query-adaptive scoring, and revised retroactively at $O(1)$ LLM calls per update. We introduce the Temporal Generalization Test (TGT), a benchmark with held-out retention intervals and a Generalization Gap (GenGap) metric. On TGT, ScrubJay-MEM is the only retrieval-based system with substantially positive GenGap ($+0.108$); on MemoryAgentBench EventQA-64k it improves F1 by $+2.66$ over Mem0 and $+3.09$ over Qwen3-Embedding-4B under a llm backbone. A decay ablation collapses GenGap by $5.7\\times$, establishing type-conditioned decay as necessary for the result. Gains narrow under stronger backbones and reverse on fact-consolidation tasks, scoping the contribution to temporal reasoning over perishable facts.",
+      "external_ids": [
+        "arxiv:2608.04746"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-06T12:17:46+08:00",
+      "last_seen_at": "2026-08-06T12:17:46+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.04719",
+      "arxiv_version": "v1",
+      "title": "Diagnosing Tool-Selection Reasoning in LLM Agents with Canary Tools",
+      "authors": [
+        "Atul Anand",
+        "Sourav Chattaraj"
+      ],
+      "published": "2026-08-05",
+      "url": "https://arxiv.org/abs/2608.04719",
+      "abstract": "Agent evaluations tell us that a model picked the wrong tool, but rarely why. We introduce canary tools: diagnostic probe tools planted in an agent's Model Context Protocol (MCP) tool set, each engineered to probe one specific tool-selection weakness. A six-type taxonomy (semantic decoys, parameter traps, capability mirages, prerequisite blindness, temporal decoys, and granularity traps) turns a single \"wrong tool\" outcome into a multi-dimensional profile of how a model reasons about tools. We evaluate eight models -- six hosted and two 8B open-weight -- spanning three capability tiers, on 120 tasks across three canary-density conditions and three seeds (8,640 runs), plus a 2,880-run subtlety ablation. Task success is graded by a provider-independent judge, corroborated by a second independent judge (Cohen's kappa = 0.75). We report three findings. First, susceptibility drops sharply as models get more capable: the per-task canary susceptibility rate (CSR) ranges about 36x across models, lowest for Claude Opus 4.8 and highest for Llama 3.1 8B. Second, capability tier alone does not predict safety: the most susceptible hosted model is mid-tier, and within a provider the cheaper model can be the safer one. Third, the taxonomy is capability-stratified: capability mirages most reliably trap frontier models, while the other types are largely inert on strong models but fire on small open models, so they discriminate by capability rather than being weak. Softening each canary's give-away phrase leaves frontier CSR essentially unchanged, evidence that the probes measure reasoning, not phrase-spotting. Susceptibility also predicts task failure (Spearman rho = -0.34), while the most robust models are not significantly degraded by canary pressure. We release the framework, canary schemas, tasks, and logs.",
+      "external_ids": [
+        "arxiv:2608.04719"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-06T12:17:46+08:00",
+      "last_seen_at": "2026-08-06T12:17:46+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.04507",
+      "arxiv_version": "v1",
+      "title": "Emergence of Reputation-Based Cooperation in LLM Agents",
+      "authors": [
+        "Kazuya Horibe",
+        "Kenji Itao",
+        "Wataru Toyokawa"
+      ],
+      "published": "2026-08-05",
+      "url": "https://arxiv.org/abs/2608.04507",
+      "abstract": "Can cooperation among large language model (LLM) agents be evolutionarily stable against free-rider invasion? We study an indirect reciprocity donation game where LLM agents observe behavioral traces and donate on a continuous scale. Strategies, represented as natural language prompts, evolve through cultural transmission across generations. Across four LLM backends, robustness to free-rider invasion varies by more than an order of magnitude. The strongest predictor of this robustness is opponent endowment sensitivity, the degree to which agents discriminate between cooperative and uncooperative opponents, operationalizing the classical Image Scoring mechanism. By contrast, adherence to the Leading-Eight L1 norm does not predict robustness. Robustness depends on defector exclusion: while both cooperator reward and defector punishment vary across models, only the stringency of defector exclusion predicts resistance to free-rider invasion. These findings reveal that LLM agents are confined to Image Scoring-like discrimination and fail to develop the more robust Leading-Eight norms, highlighting a fundamental vulnerability in culturally evolved LLM cooperation and motivating bottom-up approaches to norm construction.",
+      "external_ids": [
+        "arxiv:2608.04507"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-06T12:17:46+08:00",
+      "last_seen_at": "2026-08-06T12:17:46+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.04418",
+      "arxiv_version": "v1",
+      "title": "Monolithic integration of optically anisotropic GeSe-based films on GaAs by templated solid-phase epitaxy",
+      "authors": [
+        "Kira J. Martin",
+        "Autumn Y. Lee",
+        "Pranav Mahaadev",
+        "Pooja D. Reddy",
+        "Kelly Xiao",
+        "Tri Nguyen",
+        "Ashlee M. García",
+        "Aaron M. Lindenberg",
+        "Kunal Mukherjee"
+      ],
+      "published": "2026-08-05",
+      "url": "https://arxiv.org/abs/2608.04418",
+      "abstract": "Layered IV-VI semiconductors such as GeSe exhibit strong in-plane optical anisotropy, making them promising candidates for polarization-sensitive photonic devices. However, realizing these properties in scalable platforms requires heteroepitaxial integration on technologically relevant substrates like GaAs. Direct growth of GeSe is complicated by its glass formation at low temperatures and high vapor pressure at elevated temperatures. To overcome this, we develop a method for ex-situ solid-phase epitaxy utilizing a SnSe buffer and offcut GaAs substrate to enable single-orientation crystalline GeSe films. Using polarized reflection measurements, we find that stabilizing a single-in-plane-orientation results in a 2x increase in anisotropic response between the armchair and zigzag directions. This work provides a new integration route to harness the anisotropic optical properties of GeSe and its alloys for polarization-sensitive technologies.",
+      "external_ids": [
+        "arxiv:2608.04418"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-06T12:17:46+08:00",
+      "last_seen_at": "2026-08-06T12:17:46+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.04361",
+      "arxiv_version": "v1",
+      "title": "RIS-Enabled Energy-Efficient ISAC for Vehicular Applications",
+      "authors": [
+        "Shengyu Yang",
+        "Yuhan Wang",
+        "Shuhao Zeng",
+        "Haobo Zhang",
+        "Boya Di",
+        "Lingyang Song"
+      ],
+      "published": "2026-08-05",
+      "url": "https://arxiv.org/abs/2608.04361",
+      "abstract": "By incorporating integrated sensing and communication (ISAC) into vehicle-to-infrastructure (V2I) networks, roadside units (RSUs) can support data transmission while providing additional sensing capabilities, thereby enabling intelligent transportation services. By deploying large-scale antenna arrays at RSU, the V2I network can realize more reliable connectivity and more accurate vehicle tracking by harnessing the significant beamforming gains provided by the enlarged antenna aperture. However, it is not energy efficient to realize such arrays using conventional phased arrays, which rely on numerous power-hungry phase shifters. To address this, this demo presents the first reconfigurable intelligent surface (RIS)-based ISAC-empowered vehicular network prototype, which operates at sub-6 GHz band to be compatible with existing vehicular systems. The RIS has a low power consumption of 6.8W. Experimental results show that compared with the system without RIS, the proposed RIS-based prototype enables more accurate vehicle trajectory tracking with an average localization error of 0.11m and supports more robust data transmission, as evidenced by a 41.9% reduction in error vector magnitude (EVM). These results validate the effectiveness of the RIS-based ISAC system for supporting vehicular networks.",
+      "external_ids": [
+        "arxiv:2608.04361"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-06T12:17:46+08:00",
+      "last_seen_at": "2026-08-06T12:17:46+08:00"
+    },
     {
       "source": "arxiv",
       "arxiv_id": "2608.03999",
@@ -9834,7 +10322,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-03T12:34:07+08:00",
+      "last_seen_at": "2026-08-06T12:17:46+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -9859,7 +10347,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-05T12:18:13+08:00",
+      "last_seen_at": "2026-08-06T12:17:46+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -9885,7 +10373,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-04T12:19:01+08:00",
+      "last_seen_at": "2026-08-06T12:17:46+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -9914,7 +10402,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-03T12:34:07+08:00",
+      "last_seen_at": "2026-08-06T12:17:46+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -9970,7 +10458,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-03T12:34:07+08:00",
+      "last_seen_at": "2026-08-06T12:17:46+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -10000,7 +10488,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-03T12:34:07+08:00",
+      "last_seen_at": "2026-08-06T12:17:46+08:00",
       "promoted_tier": "C",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -10036,7 +10524,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-03T12:34:07+08:00",
+      "last_seen_at": "2026-08-06T12:17:46+08:00",
       "promoted_tier": "A",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -10078,7 +10566,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-04T12:19:01+08:00",
+      "last_seen_at": "2026-08-06T12:17:46+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -10112,7 +10600,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-04T12:19:01+08:00",
+      "last_seen_at": "2026-08-06T12:17:46+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -10139,7 +10627,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-04T12:19:01+08:00",
+      "last_seen_at": "2026-08-06T12:17:46+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -10169,7 +10657,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-05T12:18:13+08:00",
+      "last_seen_at": "2026-08-06T12:17:46+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -10200,7 +10688,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-04T12:19:01+08:00",
+      "last_seen_at": "2026-08-06T12:17:46+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -10230,7 +10718,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-04T12:19:01+08:00",
+      "last_seen_at": "2026-08-06T12:17:46+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -10257,7 +10745,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-04T12:19:01+08:00",
+      "last_seen_at": "2026-08-06T12:17:46+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -10283,12 +10771,12 @@
       ],
       "status": "skipped",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-03T12:34:07+08:00",
+      "last_seen_at": "2026-08-06T12:17:46+08:00",
       "skip_reason": "noise / weak harness sense"
     }
   ],
   "last_run": {
-    "at": "2026-08-05T12:18:13+08:00",
+    "at": "2026-08-06T12:17:46+08:00",
     "sources": [
       "arxiv",
       "semanticscholar",
@@ -10299,8 +10787,8 @@
       "\"LLM agent\" harness",
       "test-time harness evolution"
     ],
-    "fetched": 55,
-    "merged": 28,
-    "new": 21
+    "fetched": 65,
+    "merged": 32,
+    "new": 16
   }
 }
