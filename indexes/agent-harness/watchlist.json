@@ -1,8 +1,574 @@
 {
   "schema_version": 1,
   "topic": "agent harness",
-  "updated_at": "2026-08-10T11:14:42+08:00",
+  "updated_at": "2026-08-11T11:09:54+08:00",
   "candidates": [
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.09885",
+      "arxiv_version": "v1",
+      "title": "SHE: Trajectory-driven Safety Harness Evolution for LLM Agents",
+      "authors": [
+        "Wanying Qu",
+        "Qinghua Mao",
+        "Yu Li",
+        "Jiyao Liu",
+        "Xin Zhang",
+        "Dadi Guo",
+        "Yanxu Zhu",
+        "Qingyu Liu",
+        "Leitao Yuan",
+        "Xi Lin",
+        "Shanfeng Zhu",
+        "Yanwei Fu",
+        "Jing Shao",
+        "Xia Hu",
+        "Dongrui Liu"
+      ],
+      "published": "2026-08-10",
+      "url": "https://arxiv.org/abs/2608.09885",
+      "abstract": "The safety of large language model (LLM) agents depends not only on model weights but also on the agent harness that manages context, memory, tools, permissions, and runtime control. Existing safety mechanisms often treat the harness as a fixed deployment artifact, limiting their ability to evolve with emerging risks. Moreover, coupled functions across harness components obscure safety responsibility attribution, making localized evolution difficult. We propose Safety Harness Evolution (SHE), a framework that learns evolving safe boundaries from rollout trajectories. SHE decomposes the harness into four artifacts with explicit safety responsibilities, including the System Prompt, Rule Bank, Safety Memory, and Tool Policy, defining clear functional boundaries for localized evolution. Based on this decomposition, SHE introduces an attribution-guided evolution loop that converts trajectory failures into structured diagnoses, learns artifact-specific boundary refinements, and selects evolved harnesses through safety-utility validation. Experiments on Agent-SafetyBench demonstrate that SHE effectively enhances safety through harness evolution, achieving a 3.1x ASR reduction compared with static SafeHarness, while also improving benign utility. The evolved harness further generalizes to unseen risks on the held-out AgentHarm benchmark and transfers across agent models without additional evolution.",
+      "external_ids": [
+        "arxiv:2608.09885"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-11T11:09:54+08:00",
+      "last_seen_at": "2026-08-11T11:09:54+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.09874",
+      "arxiv_version": "v1",
+      "title": "ArchAgent v2: A Case Study with the Data Prefetching Championship",
+      "authors": [
+        "Abraham Gonzalez",
+        "Raghav Gupta",
+        "Akanksha Jain",
+        "Hanna Alam",
+        "Alexander Novikov",
+        "Po-Sen Huang",
+        "Matej Balog",
+        "Marvin Eisenberger",
+        "Sergey Shirobokov",
+        "Ngân Vũ",
+        "Hank Levy",
+        "Borivoje Nikolić",
+        "Sagar Karandikar",
+        "Martin Dixon",
+        "Parthasarathy Ranganathan"
+      ],
+      "published": "2026-08-10",
+      "url": "https://arxiv.org/abs/2608.09874",
+      "abstract": "Agentic artificial intelligence has shown great promise in automating algorithm design, but scaling similar techniques to computer microarchitecture discovery remains challenging due to vast search spaces, strict hardware budgets, and long simulation times. In this work, we present ArchAgent v2, a framework which scales automated microarchitecture search to multi-level data prefetching. While the original ArchAgent successfully discovered single-level cache replacement policies in competition settings, it does not scale to multi-level prefetching where the design space and degrees of freedom are larger. To overcome this, we introduce two new additions to ArchAgent: a cascaded evolutionary search that subdivides the design space by sequentially evolving and freezing prefetchers at individual cache levels, and a hardware-realizability feedback loop that embeds real-time size-estimation directly into the evolution process. Evaluated under identical rules of the 4th Data Prefetching Championship (DPC4), ArchAgent v2 automatically designs a three-level prefetcher that outperforms the winning hand-designed solution, further demonstrating automated agentic discovery as a useful tool for computer architects. Our discovered policy achieves a 3.8\\% geometric mean IPC speedup over the baseline overall and a 0.3\\% improvement over the prior champion, BertiGO. On low-bandwidth single-core configurations, our policy yields a 4.6\\% performance speedup compared to only 2.6\\% for BertiGO. However, multi-core evolution still remains a significant challenge due to simulation latency impeding evolution speed. Finally, our profiling of an ArchAgent evolution of over 12,000 candidate designs provides key insights into how automated evolutionary agents explore and synthesize complex microarchitectural logic.",
+      "external_ids": [
+        "arxiv:2608.09874"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-11T11:09:54+08:00",
+      "last_seen_at": "2026-08-11T11:09:54+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.09867",
+      "arxiv_version": "v1",
+      "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
+      "authors": [
+        "Alexander Panfilov",
+        "David Schmotz",
+        "Ilia Shumailov",
+        "Luca Beurer-Kellner",
+        "Joachim Schaeffer",
+        "Ameya Prabhu",
+        "Jonas Geiping",
+        "Maksym Andriushchenko"
+      ],
+      "published": "2026-08-10",
+      "url": "https://arxiv.org/abs/2608.09867",
+      "abstract": "Leading large language model providers now conceal their models' step-by-step reasoning, or chain-of-thought, to protect intellectual property and limit information leakage. Rather than storing these traces server-side, providers return them to the client as blocks of encrypted text, which the client passes back with each subsequent request. Building on prior research, we identify an architectural vulnerability: these encrypted blocks are fully compatible and interchangeable across different sessions, users, and models within a provider's ecosystem. We exploit this compatibility to develop a scalable decryption jailbreak. By injecting an encrypted reasoning trace from a given model into a weaker, and less safeguarded model from the same provider, we force it to decode and output the trace verbatim in plaintext, without ever jailbreaking the more capable model directly. This vulnerability enables four distinct attack vectors. First, it circumvents anti-distillation mechanisms, allowing adversaries to extract a proprietary model's reasoning, as we demonstrate across Anthropic, OpenAI, and Google. Second, it allows for large-scale private data extraction. Developers frequently share session logs publicly, unaware of contents of the encrypted blocks. By decoding 315,320 reasoning blocks scraped from public repositories, we recovered 367 Personally Identifiable Information (PII) artifacts and 182 credentials. Third, it inadvertently reveals hazardous information hidden within the reasoning process, even in cases where the model's final, visible output safely rejects a malicious request. Fourth, attackers can leverage this flaw to execute invisible prompt injections, embedding malicious payloads entirely within encrypted blocks to poison public agentic rollouts. Following responsible disclosure, we propose concrete cryptographic and system-level mitigations to secure client-side reasoning.",
+      "external_ids": [
+        "arxiv:2608.09867"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-11T11:09:54+08:00",
+      "last_seen_at": "2026-08-11T11:09:54+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.09857",
+      "arxiv_version": "v1",
+      "title": "Agentic Harnesses: LLM-Driven Verification Layers for Robot Autonomy",
+      "authors": [
+        "Rohan Bhagra",
+        "Mahantesh Halapannavar",
+        "Uddhav Bhattarai"
+      ],
+      "published": "2026-08-10",
+      "url": "https://arxiv.org/abs/2608.09857",
+      "abstract": "Advances in advanced artificial intelligence tools have sparked research in robot autonomy, but the development of such systems has largely focused on execution rather than verifying the feasibility actions planning models propose. Like general-purpose LLMs, robotics planning models carry risks: biased toward user-specified goals, they may suggest actions misaligned with scientific ethics, they may be unsafe due to an inability to \"remember\" prior safety risks, or they may be vulnerable to adversarial attacks on the autonomy ecosystem. We propose a LLM-driven verification layer between planning and execution to evaluate action permissibility. Our LLM-as-a-Judge ensemble combines chain-of-thought reasoning across models and synthesizes those expert judge outputs, mirroring a combination of a mixture of experts and self-consistency approach. This layer serves as middleware, gating plans from the server's planning module before they reach the MCP server and therefore the robot's low-level controls: plans are approved, rejected for reformulation, or escalated for human review. With this system, we achieve near 85% precision across accept/escalate/reject categories 97% containment of adversarial attacks, with negligible errors between accepting and rejecting tasks, and errors mostly manifesting at the escalate boundary.",
+      "external_ids": [
+        "arxiv:2608.09857"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-11T11:09:54+08:00",
+      "last_seen_at": "2026-08-11T11:09:54+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.09855",
+      "arxiv_version": "v1",
+      "title": "Agentic Auto-Research is Fuzz Testing",
+      "authors": [
+        "Yifeng He",
+        "Jicheng Wang",
+        "Yinzhe Zhao",
+        "Jiachen Liu",
+        "Hao Chen"
+      ],
+      "published": "2026-08-10",
+      "url": "https://arxiv.org/abs/2608.09855",
+      "abstract": "Autonomous research agents can generate experiments faster than researchers can validate them. Researchers have responded by scaling the proposer and ranking more samples with a learned judge or human reviewers. We argue that this *generate-and-rank* paradigm misses the problem of sparse feedback. Within a declared research problem, an agent follows the control loop of a greybox fuzzer: it proposes a candidate, executes it, observes feedback, and chooses what to try next. A fuzzer rarely finds a bug, but coverage makes partial progress observable on every execution. Fuzzers then use that signal to mutate inputs and allocate effort, rather than only to rank completed runs. Auto-research needs the same two capabilities. First, each experiment should expose a cheap, dense signal of epistemic progress before final scientific validation is available. Second, that signal should determine the next intervention so that the agent searches rather than repeatedly samples. Because the optimized progress signal is guidance rather than a verdict, final validation must still decide what counts as a discovery using evidence protected from adaptive reuse. We propose controlled tests of whether candidate signals predict validated progress, whether feedback-directed search yields more validated discoveries per unit cost than repeated sampling, and whether protected validation reduces false discoveries. Feedback architecture, not only generation, is a central bottleneck in auto-research.",
+      "external_ids": [
+        "arxiv:2608.09855"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-11T11:09:54+08:00",
+      "last_seen_at": "2026-08-11T11:09:54+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.09842",
+      "arxiv_version": "v1",
+      "title": "From Diagnosis to Correction: Benchmarking and Improving Real-World Table Parsing",
+      "authors": [
+        "Jutao Xiao",
+        "Yuan Qu",
+        "Dongsheng Ma",
+        "Fan Wu",
+        "Tianyao He",
+        "Weihong Li",
+        "Jie Yang",
+        "Yu Qiao",
+        "Bin Wang",
+        "Conghui He"
+      ],
+      "published": "2026-08-10",
+      "url": "https://arxiv.org/abs/2608.09842",
+      "abstract": "Recent document parsers achieve table TEDS scores above 93 on OmniDocBench v1.6, yet community feedback and our audit reveal persistent failures on complex real-world tables. To quantify this gap, we introduce TableParseMap, a diagnostic benchmark of 916 real-world tables organized into five challenging scenarios and nine failure types. The strongest evaluated parser achieves only 85.03 TEDS, showing that aggregate benchmark scores conceal substantial weaknesses. Our analysis attributes these failures to three complementary limitations: large tables exceed the reliable processing scale of a single pass, weak or ambiguous visual cues hinder structure perception, and the reconstructed table may remain visually inconsistent with the image. We therefore propose DEC (Decompose--Enhance--Correct), a visual-consistency-guided agentic framework that improves frozen table parsers without retraining. DEC uses a general VLM as the controller: Decompose partitions large tables along structure-aware boundaries, Enhance exposes weak visual evidence and reparses transformed views, and Correct diagnoses and repairs residual errors. A Visual Consistency Gate (VC-Gate) selectively triggers intervention, while a Visual Consistency Ranker (VC-Ranker) verifies candidate updates and supports rollback without ground-truth HTML at inference time. We further derive a 1,977-table Consensus-Hard Set from 4,556 candidates through offline metrics and cross-model consensus. Across three frozen parsers, DEC improves TEDS by 1.57 points on average; on TableParseMap, gains reach 1.89 points overall, 2.62 on structural errors, and 5.66 on large tables.",
+      "external_ids": [
+        "arxiv:2608.09842"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-11T11:09:54+08:00",
+      "last_seen_at": "2026-08-11T11:09:54+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.09819",
+      "arxiv_version": "v1",
+      "title": "Macaron-V1: Towards Open Continual Learning with Self-Improvement and Mixture-of-LoRA",
+      "authors": [
+        "Mind Lab",
+        ":",
+        "Vin Bo",
+        "Asher Cai",
+        "Jingwei Cao",
+        "Song Cao",
+        "Vic Cao",
+        "Amelia Chen",
+        "Andrew Chen",
+        "Kaijie Chen",
+        "Cleon Cheng",
+        "Steven Chiang",
+        "Kaixuan Fan",
+        "Hera Feng",
+        "Huan Feng",
+        "Arthur Fu",
+        "Jun Gao",
+        "Pyke Han",
+        "Nolan Ho",
+        "Ori Hong",
+        "Hailee Hou",
+        "Piers Hua",
+        "Charles Huang",
+        "Miles Jiang",
+        "Nora Jiang",
+        "Yuyi Jiang",
+        "Qiuyu Jin",
+        "Fancy Kong",
+        "Kuss Koo",
+        "Jaron Lee",
+        "Andrew Lei",
+        "Alexy Li",
+        "Dawn Li",
+        "Lucian Li",
+        "Ray Li",
+        "Ricardo Li",
+        "Smith Li",
+        "Theo Li",
+        "Allen Lin",
+        "Elliot Lin",
+        "Fan Lin",
+        "Chen Ling",
+        "Kairus Liu",
+        "Kieran Liu",
+        "Logan Liu",
+        "Neo Liu",
+        "Xiang Liu",
+        "Yuxin Lu",
+        "Maeve Luo",
+        "Pony Ma",
+        "Verity Niu",
+        "Cole Qiao",
+        "Guian Qiu",
+        "Vince Qu",
+        "Sentry",
+        "Niko Song",
+        "Vincent Wang",
+        "Bo Wu",
+        "Rio Yang",
+        "Evelyn Ye",
+        "Fiona Ye",
+        "Ina Ye",
+        "Regis Ye",
+        "Josh Ying",
+        "Atlas Zeng",
+        "Danney Zeng",
+        "Salmon Zhan",
+        "Anya Zhang",
+        "Di Zhang",
+        "Mia Zhang",
+        "Sueky Zhang",
+        "Wei Zhao",
+        "Ada Zhou",
+        "Adrian Zhou",
+        "Yuhua Zhou",
+        "Juno Zhu",
+        "Murphy Zhuang"
+      ],
+      "published": "2026-08-10",
+      "url": "https://arxiv.org/abs/2608.09819",
+      "abstract": "Macaron-V1 is an open agent-model family for experiential intelligence: learning from experience in real environments and continuing to learn after deployment. It is organized around two system goals. Adaptation is pursued through recursive improvement of versioned model-harness pairs, where experience from one configuration is evaluated under an external contract and used to construct its successor. Collaboration is pursued via the Mixture-of-LoRA (MoL) architecture that freezes a base model, composes specialist LoRA adapters, and selects one LoRA per user turn. The flagship Macaron-V1-Venti combines a 744B GLM-5.2 base with four LoRAs for chat, agent, coding, and GenUI; the Qwen3.6-based Macaron-V1-Tall (50B) uses the same design for local deployment. This report presents Macaron-V1 as a co-designed system spanning architecture, algorithms, and infrastructure. The MoL architecture supports continual learning through extensible LoRA specialists. The algorithm combines Model-Harness Co-design and recursive self-improvement loop, including the UI4A component-native GenUI harness, a stateful action substrate, versioned HCP contract, and the agentic RL framework MindForge. The supporting infrastructure includes the post-training platform MinT, the long-context RL method LongStraw, and stability techniques for sparse MoE and DSA base models. We evaluate Macaron-V1 on Personal Intelligence, GenUI, and general capability benchmarks against frontier baselines. Our results validate the current system, while compounding gains from continual learning and collective intelligence remain open questions.",
+      "external_ids": [
+        "arxiv:2608.09819"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-11T11:09:54+08:00",
+      "last_seen_at": "2026-08-11T11:09:54+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.09605",
+      "arxiv_version": "v1",
+      "title": "TSPORec: Token Selection via Preference Optimization for LLM-Based Sequential Recommendation",
+      "authors": [
+        "Wenqiao Zhu",
+        "Chao Xu",
+        "Haipang Wu",
+        "Ji Liu"
+      ],
+      "published": "2026-08-10",
+      "url": "https://arxiv.org/abs/2608.09605",
+      "abstract": "Large Language Models (LLMs) have emerged as powerful tools for improving recommendation systems. The effectiveness of LLMs arises from their ability to harness rich textual information and their capacity to model heterogeneous user preferences based on users' interaction history. However, due to the large-scale and deep architectures, LLM-based sequential recommendation approaches generally incur high inference costs, resulting in a low return on investment. To mitigate this cost, many existing approaches resort to using only the first few tokens of item descriptions, which inadvertently discards valuable information contained in the full text, thereby leading to suboptimal recommendation performance. To address this limitation, we propose a novel Token Selection approach for Preference Optimization in LLM-based sequential Recommendation, i.e., TSPORec, which accurately pinpoints informative tokens throughout the entire textual content to improve recommendation performance. Specifically, we design a three-stage pipeline to select informative tokens and introduce a novel proxy reward to facilitate the implementation. TSPORec not only enhances recommendation performance but also improves computational efficiency. Extensive experiments across two models and datasets demonstrate the superb performance (up to 31.25%) and efficiency (up to 63.4%) of our approach compared with six baseline approaches. Code is available at https://github.com/WNQzhu/TSPORec.git.",
+      "external_ids": [
+        "arxiv:2608.09605"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-11T11:09:54+08:00",
+      "last_seen_at": "2026-08-11T11:09:54+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.09577",
+      "arxiv_version": "v1",
+      "title": "ElasticBack: Stealthy Conditional Backdoor in LLM-Agent Skills via Coupled Trigger-Rule Optimization",
+      "authors": [
+        "Hao Sui",
+        "Simeng Qin",
+        "Jie Liao",
+        "Xiaojun Jia",
+        "Bing Chen",
+        "Yang Liu"
+      ],
+      "published": "2026-08-10",
+      "url": "https://arxiv.org/abs/2608.09577",
+      "abstract": "Agent skills, bundles of instructions and resources that an LLM agent loads on demand, form an emerging supply chain where a single poisoned skill can persistently compromise every agent that installs it. However, existing skill attacks either fire on every request or rely on fine-tuned weights or multiple skills, leaving a conditional and low-cost backdoor unexplored. In this work, we present ElasticBack, an effective conditional single-skill backdoor that plants a rule R in the skill document and a benign-looking trigger T in the user query, so the malicious payload fires only when both co-occur. ElasticBack binds the two sides through a trigger-as-switch construction, generating R via semantic-anchored rule injection. It then freezes R and evolves T against it with a stealth-constrained genetic search, so that effectiveness and stealth are optimized, keeping the backdoor weight-free and dormant on benign inputs. Extensive experiments across three target behaviors (50 skills each) and four agent LLMs show that ElasticBack attains a high attack success rate at a near-zero false-positive rate with preserved clean accuracy, transfers across models, and evades deployment-time defenses. These results motivate stronger defenses for the skill supply chain.",
+      "external_ids": [
+        "arxiv:2608.09577"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-11T11:09:54+08:00",
+      "last_seen_at": "2026-08-11T11:09:54+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.09574",
+      "arxiv_version": "v1",
+      "title": "The Politician, the Liar, and the Obedient Worker: Emerging Behavior of LLM Agents in Hierarchical Games",
+      "authors": [
+        "Fatemeh Seyedin",
+        "Adrian Weller",
+        "Jinhyuk Yun",
+        "Mahmoudreza Babaei"
+      ],
+      "published": "2026-08-10",
+      "url": "https://arxiv.org/abs/2608.09574",
+      "abstract": "LLMs are rapidly embedding themselves into daily life: drafting our emails, managing our schedules, and making decisions on our behalf. As they move from individual tools to participants in multi-agent organizations, an important question arises: do they reproduce the governance failures like free-riding, corruption, and entrenched leadership that plague human institutions? We introduce the Hierarchical Game (HG), a public goods game extended with managerial authority, democratic elections, and private communication. Testing six frontier models across twelve experiments that add institutions one at a time (speech, peers, government, wages, oversight, elections), we find distinct behavioral profiles: Qwen promises and lies (13.3\\% broken promises); Grok refuses to cooperate on its own but becomes fully cooperative once a manager can punish it (16\\%$\\to$100\\%); Claude and GPT-4o cooperate reliably at baseline. But honesty proves fragile. When the manager role comes with a salary, all models except GPT-4o start cutting private deals to win or keep the position. When punishment is made anonymous, honest models begin to cheat. When all agents share the same model family, the first elected manager stays in power indefinitely. Leadership change only happens in groups that mix different families.",
+      "external_ids": [
+        "arxiv:2608.09574"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-11T11:09:54+08:00",
+      "last_seen_at": "2026-08-11T11:09:54+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.09555",
+      "arxiv_version": "v1",
+      "title": "Bidirectional Context Self-Distillation for Reinforcement Learning of Skill-Based LLM Agents",
+      "authors": [
+        "Tianjun Pan",
+        "Yuan Li",
+        "Hongda Wang",
+        "Linbo Jin",
+        "Mengfei Song",
+        "Lei Gao",
+        "Qiming Shi",
+        "Shaokang Fu",
+        "Jiarong Zhao",
+        "Chengyu Wang",
+        "Chengfu Huo"
+      ],
+      "published": "2026-08-10",
+      "url": "https://arxiv.org/abs/2608.09555",
+      "abstract": "External natural-language skills provide large language model (LLM) agents with reusable and editable guidance for solving complex tasks. Yet their effectiveness depends not only on skill quality, but also on whether the policy can translate the provided guidance into appropriate actions. However, methods specifically designed to improve this skill-utilization ability remain largely underexplored. In practice, skill-based agents are commonly trained with reinforcement learning objectives centered on task-level rewards, which offer limited supervision and struggle to capture subtle differences in how effectively the policy uses the provided skills. We propose BCSD (Bidirectional Context Self-Distillation), a framework that combines self-distillation with reinforcement learning to train LLM agents to use external skills more effectively. Unlike prior self-distillation methods that rely on a single privileged context, BCSD evaluates each trajectory from two complementary skill-context views. The augmented view introduces higher-level Meta-Skill guidance, while the reduced view prunes general guidance to highlight task-specific skills. Their complementary token-level signals are combined to rescale the RL advantage. Experiments on ALFWorld and WebShop demonstrate that BCSD achieves the strongest overall performance across model scales, enabling agents to utilize external skills more effectively. Ablation studies further verify the complementary contributions of the augmented and reduced context views. Code will be released to ensure full reproducibility.",
+      "external_ids": [
+        "arxiv:2608.09555"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-11T11:09:54+08:00",
+      "last_seen_at": "2026-08-11T11:09:54+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.09526",
+      "arxiv_version": "v1",
+      "title": "RangeFactory: Scalable Construction of Multi-Hop Cyber Ranges",
+      "authors": [
+        "Hanlin Jiang",
+        "Puyi Wang",
+        "Jiandong Jin",
+        "Shaofei Li",
+        "Zhan Shen",
+        "Pengli Wang",
+        "Ziming Wang",
+        "Yifeng Cai",
+        "Ning Jia",
+        "Yuxin Ren",
+        "Peng Jiang",
+        "Yao Guo",
+        "Ding Li"
+      ],
+      "published": "2026-08-10",
+      "url": "https://arxiv.org/abs/2608.09526",
+      "abstract": "Real-world cyberattacks often require sustained progress across multiple hosts and network segments, making multi-hop cyber ranges essential infrastructure for studying and improving LLM agents' ability to sustain complete attack chains. Prior work has scaled isolated vulnerability tasks and constructed multi-host scenarios from manually specified vulnerability semantics. However, they are still unable to automatically orchestrate the growing supply of vulnerability environments into end-to-end validated multi-hop ranges. To this end, we present RangeFactory, an automated cyber-range orchestration framework that constructs multi-hop cyber ranges at scale from isolated vulnerability environments. RangeFactory formulates range construction as dependency resolution: it extracts dependency information from agents' actual attacks against real vulnerabilities, resolves known dependencies through template-guided orchestration, and uses end-to-end attack execution to validate runtime dependencies that emerge after composition. Using RangeFactory, we construct RangeBench with 1,148 validated range instances spanning 287 distinct attack chains and evaluate frontier attack agents across attack depth, network scale, and task information. Among runs that compromise the entry vulnerability, 24.5-47.0% still fail to complete the remaining attack path, revealing a substantial sustained-compromise gap between establishing an initial foothold and completing a multi-hop attack. RangeFactory further produces a corpus of 5,541 outcome-annotated multi-hop attack trajectories, providing execution data for attack-process analysis and future agent training.",
+      "external_ids": [
+        "arxiv:2608.09526"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-11T11:09:54+08:00",
+      "last_seen_at": "2026-08-11T11:09:54+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.09524",
+      "arxiv_version": "v1",
+      "title": "STAIR: Effective Incident Response Using an End-to-End Agentic Planning Framework",
+      "authors": [
+        "Hanlin Jiang",
+        "Jionghao Huang",
+        "Shaofei Li",
+        "Bojia Yu",
+        "Peng Jiang",
+        "Yuxin Ren",
+        "Ning Jia",
+        "Yao Guo",
+        "Ding Li"
+      ],
+      "published": "2026-08-10",
+      "url": "https://arxiv.org/abs/2608.09524",
+      "abstract": "Incident response planning is critical for restoring compromised software systems after cyberattacks. Common practice relies on expert-driven playbooks that encode fixed response procedures, but these static workflows struggle to adapt to evolving incident states, changing recovery objectives, and execution feedback. Recent LLM-based planners and tool-using agents improve automation, yet they remain unstable in long-horizon response because they lack a unified basis for maintaining incident state, aligning actions with the current recovery stage, and reusing historical experience. We present STAIR, an end-to-end agentic planning framework for incident response. The framework maintains the current incident as Graph-as-State, uses a Stage Router to dispatch planning to stage-specialized agents, and retrieves historical experiences to guide action selection. An Execution Harness executes actions, returns feedback to update the incident state, and validates action effects for future experience reuse. Across 100 Docker-based cyber ranges, our framework achieves a normalized defense score of 0.94 and improves over the strongest baseline by 9.5%.",
+      "external_ids": [
+        "arxiv:2608.09524"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-11T11:09:54+08:00",
+      "last_seen_at": "2026-08-11T11:09:54+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.09485",
+      "arxiv_version": "v1",
+      "title": "Capability Is Not Propensity: Measuring Pressure-Robust Cooperative Behavior in Civic LLM Agents",
+      "authors": [
+        "Neel Tushar Shah",
+        "Manglam Kartik",
+        "Akshat Karkar"
+      ],
+      "published": "2026-08-10",
+      "url": "https://arxiv.org/abs/2608.09485",
+      "abstract": "Cooperative capabilities in language models are dual-use. The same social reasoning that supports civic deliberation can also enable strategic omission, false consensus, and manipulative framing. We argue that Cooperative AI evaluations should separate what models can do under benign instructions from what they tend to do under realistic civic pressure. We introduce DiffCoop-Civic, a 10-scenario pilot evaluation suite spanning preference understanding, evidence and persuasion, commitment design, asymmetric information, and dissent preservation. Across seven models from four model families, subtle omission pressure produces a near-uniform shift: manipulative enablement rises by 1.17 points and dissent preservation falls by 1.67 points on a 5-point scale. Overt false-consensus pressure behaves differently: it triggers refusal or redirection in some aligned API models, but direct compliance in several open-weight models. A lightweight Pareto-Trace prompting intervention improves pressure robustness without simply relying on hard refusal. An anonymous reproducibility package is available at https://anonymous.4open.science/r/diffcoop-civil-771C.",
+      "external_ids": [
+        "arxiv:2608.09485"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-11T11:09:54+08:00",
+      "last_seen_at": "2026-08-11T11:09:54+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.09480",
+      "arxiv_version": "v1",
+      "title": "From Prompt to Harness: Coderlet from Scratch",
+      "authors": [
+        "Mengfan Li"
+      ],
+      "published": "2026-08-10",
+      "url": "https://arxiv.org/abs/2608.09480",
+      "abstract": "A model alone does not determine how a programming agent acts. What the model sees, how actions enter the environment, how feedback returns, and how one run affects the next all depend on how the harness is organized. Minimal examples usually show only the basic interaction between a model and tools, while production systems spread these relationships across complex components and dependencies. This paper studies a compact harness design by following a single request through context formation, model decision, environmental action, observation return, and state continuation. Three boundaries---model, execution, and state---connect the model service, tool environment, and persistent state, while the request lifecycle determines the order in which these transitions occur. Together, they show the harness's core role: turning model generations into environmental actions, carrying runtime feedback into later decisions, and allowing state to continue across requests. On top of this runtime structure, a harness can also be gradually refined across runs through continued bootstrapping. The design is realized in the executable artifact https://github.com/lilinxi/Coderlet.",
+      "external_ids": [
+        "arxiv:2608.09480"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-11T11:09:54+08:00",
+      "last_seen_at": "2026-08-11T11:09:54+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.09476",
+      "arxiv_version": "v1",
+      "title": "ActBench: Self-Evolving Benchmark of Behavioral Safety in Cowork Agents",
+      "authors": [
+        "Hongwei Yao",
+        "Yiming Liu",
+        "Meihui Chen",
+        "Jieling Chen",
+        "Zikun Chen",
+        "Yiling He",
+        "Wangze Ni",
+        "Cong Wang",
+        "Kui Ren"
+      ],
+      "published": "2026-08-10",
+      "url": "https://arxiv.org/abs/2608.09476",
+      "abstract": "Cowork agents may complete benign tasks while disclosing protected data, manipulating unauthorized state, invocate unauthorized API. We define behavioral safety and introduce ActBench, a self-evolving benchmark that evaluates such behavior risk from execution trajectories rather than final responses. Each case pairs a benign task with an adversarial variant that preserves its instruction, configuration, initial state, rating model, and trusted records while injecting a task-reachable payload. ActBench contains 600 cases from 213 scenarios, spanning 15 risk behaviors, six execution spaces, and 48 web-service APIs.To move beyond static payloads, we propose a reward-guided beam search method that jointly optimizes attack effectiveness and task utility, while reflection diagnoses failed execution checkpoint and guides payload revision. Besides, we propose a dual evidence verification mechanism that verifies agent execution safety and utility through log evidence and LLM-based trajectory evidence.We evaluate 15 LLMs and 6 open-source cowork agents over 24,000 trajectories. Under a fixed harness, attack success rates ranges from 10.1% to 94.4% across models, while under a fixed base model, they range from 73.7% to 94.4% across agents.These results show greater variation across models than agent harness, while attacks remain highly successful across all tested harnesses.Our benchmark is released at: https://github.com/zjuicsr/ActBench.",
+      "external_ids": [
+        "arxiv:2608.09476"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-11T11:09:54+08:00",
+      "last_seen_at": "2026-08-11T11:09:54+08:00"
+    },
     {
       "source": "arxiv",
       "arxiv_id": "2608.07454",
@@ -11662,7 +12228,7 @@
     }
   ],
   "last_run": {
-    "at": "2026-08-10T11:14:42+08:00",
+    "at": "2026-08-11T11:09:54+08:00",
     "sources": [
       "arxiv",
       "semanticscholar",
@@ -11673,8 +12239,8 @@
       "\"LLM agent\" harness",
       "test-time harness evolution"
     ],
-    "fetched": 66,
-    "merged": 33,
-    "new": 15
+    "fetched": 45,
+    "merged": 16,
+    "new": 16
   }
 }
