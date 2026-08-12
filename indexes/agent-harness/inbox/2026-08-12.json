@@ -1,0 +1,492 @@
+{
+  "date": "2026-08-12",
+  "run": {
+    "at": "2026-08-12T11:26:28+08:00",
+    "sources": [
+      "arxiv",
+      "semanticscholar",
+      "dblp"
+    ],
+    "keywords": [
+      "agent harness",
+      "\"LLM agent\" harness",
+      "test-time harness evolution"
+    ],
+    "fetched": 66,
+    "merged": 36,
+    "new": 17
+  },
+  "new_candidates": [
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.11166",
+      "arxiv_version": "v1",
+      "title": "Agentic Configuration Management (ACM): A Reference Configuration Model for Governed Agentic Systems",
+      "authors": [
+        "Audrey Quessada-Vial"
+      ],
+      "published": "2026-08-11",
+      "url": "https://arxiv.org/abs/2608.11166",
+      "abstract": "Agentic systems are increasingly composed of heterogeneous agents, prompts, tools, models, skills, composite subsystems, policies, and execution workflows whose configurations evolve across frameworks and runtime environments. Existing LLMOps and AgentOps platforms support orchestration and observability but do not provide a common configuration-governance model for representing and governing these systems as coherent, versioned configurations. This paper introduces Agentic Configuration Management (ACM), a framework-independent governance and configuration reference model for heterogeneous agentic systems. ACM combines typed and independently versioned Agentic Configuration Items, immutable revisions and baselines, explicit configuration-runtime separation, lifecycle and assurance semantics, dependency-aware impact propagation, and runtime provenance. Heterogeneous native configurations are normalized through semantic projection into a canonical Configuration Graph on which common governance semantics operate. We provide a Python reference implementation with adapters for LangGraph, CrewAI, and the OpenAI Agents SDK. The evaluation combines 27 governance scenarios with nine quantitative impact-propagation cases. For the evaluated configurations, the three frameworks yield governance-equivalent ACM representations and reproducible governance outcomes after projection. The impact semantics are formalized as monotone propagation over a finite lattice, establishing convergence, termination, and uniqueness of the least fixed point above the initial impact valuation. These results provide evidence that common governance semantics can support reproducibility, auditability, dependency analysis, and interoperability across heterogeneous agentic execution abstractions within the evaluated scope.",
+      "external_ids": [
+        "arxiv:2608.11166"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-12T11:26:28+08:00",
+      "last_seen_at": "2026-08-12T11:26:28+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.11152",
+      "arxiv_version": "v1",
+      "title": "Scheduling Mixed RL Rollouts Beyond Prefix Locality",
+      "authors": [
+        "Zetao Hong",
+        "Song Yuan",
+        "Yuanhao Ding",
+        "Yibo Zhu",
+        "Daxin Jiang",
+        "Zhibin Wang",
+        "Chen Tian"
+      ],
+      "published": "2026-08-11",
+      "url": "https://arxiv.org/abs/2608.11152",
+      "abstract": "Modern reinforcement learning (RL) post-training pipelines for large language models (LLMs) increasingly combine rollout workloads across multiple domains and feedback paradigms. Prefix-aware routing improves inference efficiency through cache reuse and load balancing, but it does not control how heterogeneous rollout sessions compete for KV-cache capacity. When reinforcement learning with verifiable rewards (RLVR), reinforcement learning from human feedback (RLHF), and agentic rollouts share an asynchronous inference service, their distinct sequence structures, interaction patterns, and KV-residency times create substantially different serving demands. Rollout scheduling must account for this heterogeneity without distorting the workload mixture specified by the trainer. We present MISA-T, a routing-layer admission policy for mixed rollout serving. MISA-T combines adaptive session admission, workload-aware KV-capacity allocation, and residency-time-aware KV accounting. In rollout-only ablations on Step3.7 and Qwen3.6-35B-A3B, MISA-T improves rollout throughput over a sweep-tuned cache-aware vLLM Router by 53.3% and 43.6%, respectively, while maintaining high prefix-cache hit rates. In a matched 50-iteration Step3.7 experiment, it increases rollout throughput by 35.6% and reduces mean iteration time by 22.8%, while keeping the consumed workload mixture close to the trainer target and achieving comparable task scores.",
+      "external_ids": [
+        "arxiv:2608.11152"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-12T11:26:28+08:00",
+      "last_seen_at": "2026-08-12T11:26:28+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.11110",
+      "arxiv_version": "v1",
+      "title": "Actions Speak Louder than Words: Measuring Cross-Lingual Policy Retention in Tool-Using Agents",
+      "authors": [
+        "Sourabrata Mukherjee",
+        "Kalika Bali",
+        "Sunayana Sitaram"
+      ],
+      "published": "2026-08-11",
+      "url": "https://arxiv.org/abs/2608.11110",
+      "abstract": "When a tool-using agent is given the same task in a different language, does it still take the same steps? Multilingual evaluation rarely asks: it compares final answers and discards the actions. Yet those actions are the product: they fix cost and latency, decide how the system fails, and are the only auditable part of its behaviour. We make the action policy the measured object across 8 models, 6 parallel benchmarks and 41 languages (2.38M rollouts). The naive measurement fails: five confounds sit between raw trace similarity and any defensible claim, each able to flip a conclusion. Short traces score higher, empty traces score perfectly, unrelated traces agree by chance over half the time, the gap is capped by each model's reproducibility, and a model asked the same question twice in one language answers differently, leaving no baseline. We remove all five, and every correction makes the effect larger. Divergence proves structural, not sampling noise: it survives greedy decoding in every cell and stays flat as temperature rises, even as models grow less self-consistent. Normalised by their own reproducibility, four very different frontier models converge under greedy decoding, each keeping 71-73% of its action policy across languages, with model identity explaining only 5.7% of the variance. Below roughly 10B parameters it breaks down, and the ordering among smaller models is largely an artifact of a chance floor we measure by permutation rather than assume. Agents route non-English tasks through English; this pivot is causally load-bearing, confirmed by a pre-registered prediction across four models, and models will not abandon it when told to. Finally, a single trace-extraction regex, not the model, manufactured a multilingual failure: two worked examples raise one model's measured accuracy twenty-sixfold while its accuracy on readable outputs barely moves.",
+      "external_ids": [
+        "arxiv:2608.11110"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-12T11:26:28+08:00",
+      "last_seen_at": "2026-08-12T11:26:28+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.11095",
+      "arxiv_version": "v1",
+      "title": "Why Does CLAUDE.md Keep Growing? Catastrophic Remembering in Agentic Coding",
+      "authors": [
+        "Kushal Chakrabarti"
+      ],
+      "published": "2026-08-11",
+      "url": "https://arxiv.org/abs/2608.11095",
+      "abstract": "Agentic coding READMEs like CLAUDE.md grow without bound in real repositories, stopping only when the repository retires or someone rewrites the file wholesale. We trace this to imperfect recall: appending an instruction is always cheap, but once an instruction's rationale is gone, deleting it without risking a correctness regression costs O(2^|D|) in a prompt of |D| instructions. We name the resulting divergence catastrophic remembering, the inverse of catastrophic forgetting around which continual learning is organized. First, we characterize this phenomenon across 247,694 instruction lifetimes in 1,867 repositories: agentic prompts grow without bound, more than tripling over their lifetime (+226%), gaining +4.9 net instructions every commit; further, the older an instruction gets, the less likely it is to be deleted (log-hazard -0.032/commit). Then, we show that prompt comments can halt the growth: inverting IFEval yields verifiable worlds whose optimal prompts are known, and there comments encoding latent reasoning remove 99.3% of excess instructions (+211.3% to +1.4%). Finally, applying the same inversion to WildIFEval, we show that prompt comments can improve real-world agentic instruction-following by up to 23.1%. If English is the new code, why don't we have comments yet?",
+      "external_ids": [
+        "arxiv:2608.11095"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-12T11:26:28+08:00",
+      "last_seen_at": "2026-08-12T11:26:28+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.11033",
+      "arxiv_version": "v1",
+      "title": "Who Are You Explaining To? A Multi-Agent System for Audience-Aware XAI Narratives",
+      "authors": [
+        "Francesco Musicco",
+        "Danilo Danese",
+        "Giuseppe Fasano",
+        "Angela Lombardi",
+        "Alberto Carlo Maria Mancino",
+        "Tommaso Di Noia"
+      ],
+      "published": "2026-08-11",
+      "url": "https://arxiv.org/abs/2608.11033",
+      "abstract": "Feature-attribution methods such as SHAP provide useful evidence about individual model predictions, but their numerical outputs are rarely sufficient for audiences with different expertise, goals, and risks of misinterpretation. In medical AI, the same local explanation must reach patients, clinicians, and data scientists through markedly different forms of communication, and naive verbalization through large language models (LLMs) is prone to weak grounding, conflation of attribution with causal language, and outputs that are persuasive without being faithful to the underlying model evidence. We introduce XstrAI, an audience-aware multi-agent framework that treats local explanations as fixed evidence and structures how it is communicated to each target reader. Each prediction case is encoded as an immutable structured representation, shared identically across audiences so the underlying evidence remains fixed. Generation is factored into three specialized LLM agents responsible for audience-aware planning, linguistic realization, and validation for grounding, attribution consistency, communicative risk, and audience appropriateness, with a bounded revision loop triggered on detected inconsistencies. We evaluate XstrAI on diabetes and stroke risk prediction against 11 baselines, ranging from direct verbalization to a re-implementation of a state-of-the-art narrator. The evaluation combines an intra-narrative regime measuring fidelity to SHAP evidence with an extra-narrative regime assessing audience appropriateness through reference corpora, multi-family LLM judges, and a survey with target readers. In both evaluations, XstrAI's narratives are consistently assigned to their intended audience by independent judges, and preferred over all baselines on Clinician and Patient audiences, with competitive performance on Data Scientist, where audience-conditioned single-prompt baselines lead.",
+      "external_ids": [
+        "arxiv:2608.11033"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-12T11:26:28+08:00",
+      "last_seen_at": "2026-08-12T11:26:28+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.10986",
+      "arxiv_version": "v1",
+      "title": "What Iterated Self-Feeding Probes of Language Models Measure, and a test that separates the construction from the model",
+      "authors": [
+        "Nicolás Vera Zúñiga"
+      ],
+      "published": "2026-08-11",
+      "url": "https://arxiv.org/abs/2608.10986",
+      "abstract": "A growing class of methods probes a language model by feeding it its own output: self-consistency, iterated refinement, agentic loops. We ask what such a probe measures, in a construction chosen to make the question sharp: a ring of token cells resampled in place by the model's own windowed conditional p_r(x_i | x_{i+-r}). The substrate is Glauber dynamics on token sequences and is not new; what we change is the coupling. Advancing two rings that differ in one token under common random numbers makes undamaged copies diverge by exactly zero, so damage spreading becomes measurable where a maximal coupling gives mixing times instead. The answer is that it measures two different things at once, in readings that look alike. Some quantities are fixed by the construction: the damage light cone is kinematic, and the radius scaling of the token-space Lyapunov exponent lambda_ca(r) is model-invariant across 19 models and two scale ladders spanning 70x. Others genuinely track the model: lambda_ca crosses zero at a reproducible point in training, and the attractor share ranks models consistently however the lattice is built. Left undistinguished, the first kind is readily mistaken for the second -- we did so ourselves for four months, and report a phase transition we measured to three decimal places that belongs to the probe rather than to any language model. We give the test that separates them: hold the construction fixed and vary the model, or hold the model fixed and vary the construction, and see which readings move. We validate the instrument by reproduction first, recovering a Domany-Kinzel damage field bit-exactly against an independent prediction, and we report the estimator failures that this discipline caught -- four retracted verdicts, each on a quantity that looked like a measurement. The methodology ships as a package.",
+      "external_ids": [
+        "arxiv:2608.10986"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-12T11:26:28+08:00",
+      "last_seen_at": "2026-08-12T11:26:28+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.10760",
+      "arxiv_version": "v1",
+      "title": "A Gateway Architecture for Enterprise MCP Authentication: Unifying Heterogeneous Auth, Identity Delegation, and the User / Non-User Persona Problem",
+      "authors": [
+        "Suraj Kumar",
+        "Amy Wang",
+        "Srinivasan Manoharan"
+      ],
+      "published": "2026-08-11",
+      "url": "https://arxiv.org/abs/2608.10760",
+      "abstract": "The Model Context Protocol (MCP) has become the de-facto interface for connecting LLM agents to enterprise tools, and adoption has been explosive: within a year, large organizations went from zero to dozens of internally built MCP servers. That speed created a governance crisis. Each team implemented authentication independently -- some with no auth, some with API keys, some with full OAuth -- producing a fragmented landscape with no consistent way to authorize callers, track who did what, or offboard a departing employee across the fleet. This paper reports an industry deployment that resolves the crisis with a centralized MCP gateway: a single aggregation, governance, and authentication layer that fronts every downstream MCP server. We make four contributions grounded in production experience. First, a two-axis authentication model crossing persona (interactive user vs. automated non-user) with credential type (no-auth, static/dynamic API key, PKCE, client credentials, platform app-context). Second, a gateway authentication layer supporting three enterprise SSO grants and three token-provisioning models: Bring-Your-Own-Token, Generate-Your-Own-Token, and delegated OAuth via RFC 8693 token exchange. Third, three end-to-end identity flows -- User-to-OAuth2, Non-user-to-Service-Account, and User-to-Service-Account -- composing client, gateway, and server. Fourth, the deployment evolution from CDN/WAF/edge perimeter to private MCP tunnels and enterprise-wide connectors. The architecture is in production, fronting dozens of MCP servers across web, desktop, custom-SDK, and low-code clients.",
+      "external_ids": [
+        "arxiv:2608.10760"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-12T11:26:28+08:00",
+      "last_seen_at": "2026-08-12T11:26:28+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.10669",
+      "arxiv_version": "v1",
+      "title": "REDAgentBench: Executable Red Teaming and Faithful Measurement of LLM Agent Systems",
+      "authors": [
+        "Zixing Chen",
+        "Xingyuan Liu",
+        "Jie Zhu",
+        "Huaixia Dou",
+        "Shuo Jiang",
+        "Junhui Li",
+        "Lifan Guo",
+        "Feng Chen",
+        "Chi Zhang"
+      ],
+      "published": "2026-08-11",
+      "url": "https://arxiv.org/abs/2608.10669",
+      "abstract": "Large language model (LLM) agents combine language-based reasoning with external tools to perform complex tasks. Adversarial inputs can exploit interactions between the agent and its environment, causing the agent to violate safety policies during execution. Yet existing evaluations often reduce agent safety to a single attack success rate (ASR), collapsing exposure, execution, observation, and adjudication and potentially conflating actual violations with evidence visibility. We introduce REDAgentBench, an executable framework for autonomous red-teaming and faithful measurement. It derives attacks from explicit safety constraints and associated agent-system vulnerabilities, runs them in isolated service sandboxes, and verifies harmful effects from service receipts and final-state changes. The benchmark contains 1,661 cases across five service surfaces. Across six models and three agent harnesses, macro-average ASR is 65.69%; reported ASR varies with harness and evidence view, while evaluation-context disclosure changes execution behavior. In a state-grounded diagnostic cohort, almost one in five confirmed violations with resolved action anchors occurs after the agent states the relevant constraint or risk, revealing a Recognition--Execution Gap. Finally, a training-free policy reminder reduces confirmed violations by more than 70 percentage points in matched replay. These findings show that executable evaluation can improve safety measurement and identify actionable intervention points.",
+      "external_ids": [
+        "arxiv:2608.10669"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-12T11:26:28+08:00",
+      "last_seen_at": "2026-08-12T11:26:28+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.10538",
+      "arxiv_version": "v1",
+      "title": "SKILLER: Language-Level Reinforcement Learning for Reusable Skill Extraction in Small Language Models",
+      "authors": [
+        "Chenhao Dang",
+        "Siyuan Xiong",
+        "Conghui He",
+        "Weijia Li"
+      ],
+      "published": "2026-08-11",
+      "url": "https://arxiv.org/abs/2608.10538",
+      "abstract": "Agent skills represent a standardized format for packaging procedural knowledge and domain expertise, serving within agent harness systems as an essential mechanism to continually constrain a language model's behavior space for repeatable, high-quality task execution. However, because strong closed-source models entail high inference costs, current popular agent harnesses, such as Codex and OpenClaw, remain prohibitively expensive when deploying these skills to accomplish real-world tasks. The rapid capability enhancement of open-source models deployable on consumer-grade GPUs presents a compelling opportunity to drastically reduce these costs by leveraging skill-based behavioral constraints. Nevertheless, automatically generating effective skills tailored specifically for such compact models remains a significant practical challenge. To address this, we propose SKILLER, a natural-language-driven reinforcement learning framework designed to automatically generate executor-specific skills for small models, which employs a strong model as the actor and critic, treats the small-model agent system as the environment, and propagates all reinforcement learning signals entirely via natural language. Extensive experimental evaluations across five relevant benchmarks using Qwen3.5-9B and Qwen3.5-4B demonstrate that SKILLER outperforms three open-source and one closed-source skill generation or evolution methods, achieving absolute gains ranging from 4.3 to 20.4 percentage points for the 9B model and 1.8 to 13.3 points for the 4B model, while remarkably matching the performance of strong closed-source models on single-skill tasks in SkillsBench. The project is available at https://github.com/DANG-ai/SKILLER.",
+      "external_ids": [
+        "arxiv:2608.10538"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-12T11:26:28+08:00",
+      "last_seen_at": "2026-08-12T11:26:28+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.10471",
+      "arxiv_version": "v1",
+      "title": "RLMOpt: Adaptive Prompt Optimization via Recursive Language Models",
+      "authors": [
+        "Subhash Bangalore Satheesha",
+        "Nirvik Pande",
+        "Deepthi Duddempudi",
+        "Bharath Dandala"
+      ],
+      "published": "2026-08-11",
+      "url": "https://arxiv.org/abs/2608.10471",
+      "abstract": "Prompt optimizers automate the search for prompts that improve language-model performance, but existing methods rely on a predefined optimization procedure: the algorithm determines which candidates to explore and how the search progresses, while the language model generates or refines prompt proposals. We introduce RLMOpt, a prompt optimizer that makes the search policy itself language-model-driven through a recursive language model (RLM). The RLM agent operates over a tool-based environment, inspecting task information, analyzing failures, generating candidates, allocating evaluation budget, and deciding when to stop. A deterministic harness complements the agent by enforcing objective scoring, Pareto-based selection, and regression constraints. We evaluate RLMOpt across four benchmarks spanning structured clinical information extraction (Chia), multi-hop question answering (HotpotQA), verifiable instruction following (IFBench-2025), and multi-turn tool-calling agents (BFCL). In a matched comparison at a single seed, RLMOpt obtains the best held-out score on all four benchmarks and leads the four-task mean (0.610 against 0.589 for GEPA). Repeating each benchmark across seeds yields 11 matched benchmark-seed comparisons, in which RLMOpt outperforms GEPA in 9 cases. Across all 11 runs, it never produced a prompt that underperformed its seed, whereas GEPA fell below its starting point twice. It is also more efficient, achieving these results with fewer search rollouts while producing prompts that are 27-79% the size of those produced by GEPA. Our results further show that optimization gains are determined primarily by the headroom available in the seed prompt, rather than by the search budget. Efficient optimization therefore depends on reaching the available headroom reliably and with minimal search",
+      "external_ids": [
+        "arxiv:2608.10471"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-12T11:26:28+08:00",
+      "last_seen_at": "2026-08-12T11:26:28+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.10333",
+      "arxiv_version": "v1",
+      "title": "MERA: Model Evolution and Routing with Skill Adaptation for Agentic Systems at Scale",
+      "authors": [
+        "Yuhang Yao",
+        "Zeyu Wang",
+        "Wanyi Chen",
+        "Tongyun Yang",
+        "Yuhang Han",
+        "Jie Xiao",
+        "Chengke Bao",
+        "Tianyi Zhao",
+        "Lynn Ai",
+        "Eric Yang",
+        "Tianyu Shi"
+      ],
+      "published": "2026-08-11",
+      "url": "https://arxiv.org/abs/2608.10333",
+      "abstract": "LLM agents execute heterogeneous sequences of model calls within a single task: some invocations require careful reasoning, while others are structured steps such as formatting or tool-argument construction. Prior routing methods exploit this asymmetry by assigning easy invocations to a cheaper small model and difficult ones to a large model. Such policies reduce inference cost, but they leave the small model's capability unchanged, so attainable savings remain bounded by the work the student can already solve. MERA instead improves the small model itself, using a single model invocation as the unit of adaptation. In each cycle, MERA replays failed student invocations to obtain execution-verified teacher demonstrations, distills recurring procedures into an iteratively updated SkillBook, and fine-tunes a student LoRA adapter via supervised learning and optional GRPO. Routing serves as supporting machinery for deployment: the improved student is served behind a cost-calibrated router with verifier-backed fallback, and a candidate SkillBook, adapter, or router is admitted only when joint replay preserves task quality. Empirically, four-cycle adaptation raises Qwen2.5-Coder-1.5B from 28.7% to 49.7% pass on held-out HumanEval+MBPP. Under verifier-backed fallback, the deployed policy retains 88.3% pass at 60.8% of always-Luna cost. On TAU-2, a fine-tuned Qwen3.5-2B improves from 14/35 to 18/35 and matches an unadapted 4B model. These results indicate that verifier-backed multi-cycle adaptation can increase small-model capability, rather than only routing around a fixed student.",
+      "external_ids": [
+        "arxiv:2608.10333"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-12T11:26:28+08:00",
+      "last_seen_at": "2026-08-12T11:26:28+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.10262",
+      "arxiv_version": "v1",
+      "title": "Not a Monolith: Lab-Level Divergence in the Cooperative Equilibria of Chinese Frontier LLM Agents",
+      "authors": [
+        "Francisco León Zúñiga Bolívar"
+      ],
+      "published": "2026-08-10",
+      "url": "https://arxiv.org/abs/2608.10262",
+      "abstract": "Does the cooperative bias documented for Western frontier LLM agents extend to a different alignment lineage, and should the Chinese models that embody it be treated as a single bloc or as distinct laboratories? We study four frontier-tier Chinese models - DeepSeek V4 Pro, Qwen3-Max, Kimi K2.5 and GLM-5.1 - in an evolutionary Iterated Prisoner's Dilemma, under a design that removes a confound present in prior work. Rather than letting each model convert its own natural-language strategies into code, which entangles strategic disposition with coding ability, we hold the converter fixed (GPT-5.4 Mini) across all labs, so every cross-lab comparison is a comparison of generation alone. We run the full protocol: all-play-all tournaments and a Moran process at n=500 runs per condition, across three prompt styles and four population regimes. Two pre-registered hypotheses are evaluated. H6 (not monolithic) is supported: the four labs differ significantly in aggressive-equilibrium proportion, P_A running from 1% for Qwen3-Max to 9% for DeepSeek V4 Pro, with four of six pairwise comparisons surviving Holm-Bonferroni. The spread across the four labs (P_A range 8pp) is larger than the difference between the Chinese and Western ecosystems' mean P_A (5.0% vs 5.0%): on this measure, within-ecosystem variation exceeds the East-West gap. H5 (cooperative-bias generality) is consistent but qualified: a cooperative plurality holds in 6 of 12 lab-prompt combinations against the 9 of 12 reported for Western models, a difference we do not treat as firm, since the count rests on Cooperative-Neutral near-ties and rises to 9/12 under an alternate converter in our pre-registered robustness check. The lab, not the ecosystem, is the unit at which cooperative disposition is set; treating \"Chinese models\" as a monolith is not supported by the evidence.",
+      "external_ids": [
+        "arxiv:2608.10262"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-12T11:26:28+08:00",
+      "last_seen_at": "2026-08-12T11:26:28+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.10216",
+      "arxiv_version": "v1",
+      "title": "Similarity Gates Approve Reversals: A Validity Audit of Embedding-Cosine Thresholds in Agent Systems",
+      "authors": [
+        "Scott E. Frias"
+      ],
+      "published": "2026-08-10",
+      "url": "https://arxiv.org/abs/2608.10216",
+      "abstract": "Agent frameworks ship quality gates that compare text blocks by embedding-cosine similarity and decide at a fixed cutoff. Deduplication filters, semantic caches, drift guards, and answer grader gates deploy to answer the question: \"Does this text still mean the same thing?\" But the score answers a different question: \"How much did the wording change?\" We audit this gate class as a measurement instrument. In the cases these gates exist to catch, the two can run in opposite ways. Many times, reversing an instruction is a single word edit, while agreement often rephrases a sentence. The consequence is a safety check that fires backwards. The production drift guard we audited caught 0 of 56 meaning-breaking mutations, and one approved item, \"withhold the study drug\" -> \"administer the study drug\", came in at cosine 0.9608. We observed five shipped operating points, and balanced accuracy across 90 configuration-threshold-task cells never exceeded 0.700 (median 0.525). The same confounder also corrupted evaluations. A naively built corpus inherits this confounder and can return an inverted verdict, with a decision AUROC exactly 0.000 in 13 of 18 configuration-task cells (at most 0.040 in all 18) against 0.440-0.815 for the same nine configurations under a balanced 2x2 design. Twice in the effort it captured our own headline claims. Obvious repairs fail: an encoder swap and an overlap-conditioned gate (0.750 in-sample, 0.533 held-out) land at chance on separately authored held-out data, and an NLI drop-in did no better. Embeddings do still bear hope here, as the strongest two of nine configurations separated reversal from paraphrase at matched overlap (AUROC 0.79-0.90), but only a matched-pair audit reveals the deployment regime. We release the corpus method, harness, and frozen results, and contend that scores gated this way measure the wrong thing. We believe a valid instrument is buildable.",
+      "external_ids": [
+        "arxiv:2608.10216"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-12T11:26:28+08:00",
+      "last_seen_at": "2026-08-12T11:26:28+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.10178",
+      "arxiv_version": "v1",
+      "title": "One Recipe, Many Harnesses: What Self-Evolution Encodes Across Languages and Models",
+      "authors": [
+        "Siqi Yang",
+        "Qianlan Yang",
+        "Yu-Xiong Wang",
+        "Saurabh Pujar",
+        "Martin Hirzel"
+      ],
+      "published": "2026-08-10",
+      "url": "https://arxiv.org/abs/2608.10178",
+      "abstract": "Self-evolving harnesses are closed-loop systems in which an agent inspects its own rollouts and edits its prompts, tools, and memory. They reliably improve coding agents in evaluations, but prior work reports aggregate gains rather than analyzing what the evolved artifacts encode. It therefore remains unclear whether they encode benchmark-specific adaptations, language-specific engineering knowledge, or compensation for limitations of the underlying model. We disentangle these factors by holding an evolution recipe fixed across a grid of eight programming languages (Multi-SWE-Bench) and three base models, and analyzing the resulting harnesses. The recipe routes every edit through a typed failure signal and records it as a falsifiable contract, making each modification attributable after evolution. Four findings emerge. (1)The loop improves held-out solve rates over both a minimal seed and the manually designed mini-SWE-agent scaffold in most cells, but with two null regions. (2)Gains compensate recoverable execution defects, where defect mass is near zero, and gain is near zero; which defect dominates is cell-specific. A harness closes the gap between what a policy can do and what it does. (3)Evolved harnesses share an abstract playbook across languages but instantiate it with almost disjoint language ecosystem machinery. (4)The shared core transfers and can be distilled into one universal harness, while an ecosystem margin resists both and requires native re-evolution. Together, these results recast the evolved harness as a legible compensation layer, shaped jointly by the language's engineering demands and the model's behavioral gaps, rather than an opaque benchmark-tuned scaffold.",
+      "external_ids": [
+        "arxiv:2608.10178"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-12T11:26:28+08:00",
+      "last_seen_at": "2026-08-12T11:26:28+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.10157",
+      "arxiv_version": "v1",
+      "title": "SBCO: Self-Supervised, Verifier-Grounded Harness Optimization For Planning Agents",
+      "authors": [
+        "Vivek Kulkarni",
+        "Sudipta Paul",
+        "Aounon Kumar",
+        "Nicholas Tzou",
+        "Srinivas Chappidi"
+      ],
+      "published": "2026-08-10",
+      "url": "https://arxiv.org/abs/2608.10157",
+      "abstract": "Self-improving agents seek to reduce the human engineering effort behind AI systems by enabling them to evolve and self-improve their performance over time. Recently, methods like the Darwin Gödel Machine and the Huxley Gödel Machine have been proposed which enable open-ended, recursive self-improvement through self-reference where a coding agent edits its own code. Such self-referential self-improvement methods require that the competence required to perform the task coincides or aligns well with the competence required for self-modification which is the case for coding tasks. For domains or tasks, which do not satisfy the alignment needed, self-referential self-improvement is not available. In such cases, it is possible to adapt the above algorithms to other tasks by removing the self-referential aspect or introducing explicit self-modification of a meta-agent -- both computationally expensive, relying on population or self-modification search over many candidate agents. For planning tasks with explicit constraints, we propose a far cheaper alternative. We introduce SBCO (Self-supervised Block Coordinate Optimizer), a verifier-grounded harness optimizer in the same closed-loop, improve-from-experience family as the Gödel-machine methods, but self-supervised rather than self-referential. Given an agentic harness, SBCO learns a decomposed bank of verifiers and a harness policy via approximate block coordinate ascent, improving the agent's outputs from its own graded feedback---with a fixed meta-agent and no human labels. Across two domains SBCO matches or exceeds a customized self-modifying baseline while using 4-5.5 times less compute budget.",
+      "external_ids": [
+        "arxiv:2608.10157"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-12T11:26:28+08:00",
+      "last_seen_at": "2026-08-12T11:26:28+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.10108",
+      "arxiv_version": "v1",
+      "title": "MESA:Task-Adaptive Multi-Structure Evidence Selection for Long-Horizon Agent Memory",
+      "authors": [
+        "Beidi Zhao",
+        "Yaoqi Chen",
+        "Yuru Feng",
+        "Menghao Li",
+        "Qianxi Zhang",
+        "Baotong Lu",
+        "Jianan Lu",
+        "Zhirui Wang",
+        "Xinjiang Wang",
+        "Shusen Xu",
+        "Zengzhong Li",
+        "Xiaoxiao Li",
+        "Qi Chen"
+      ],
+      "published": "2026-08-10",
+      "url": "https://arxiv.org/abs/2608.10108",
+      "abstract": "Long-horizon agents accumulate trajectories spanning hundreds of interleaved reasoning, action, and observation steps, where answering a query may depend on evidence buried far back in the history. External memory stores such trajectories as structured representations, yet each structure provides a distinct and incomplete view. Existing multi-memory systems either read a fixed set of structures for every query, inflating context and introducing noise, or route each query to a single structure, preventing the composition of complementary evidence. A controlled analysis on AMA-Bench shows that the optimal memory configuration is typically neither a single structure nor the full union, but a tailored composition of multiple structural memories that varies with query and task demands. Motivated by these findings, we formulate structure-level dynamic selection: selecting and fusing a query-adaptive subset from a library of specialized memory structures. We propose MESA (a Multi-structure Evidence Selection framework for long-horizon Agent), which builds five complementary structure views of each trajectory and learns from end-to-end answer-level feedback to select and fuse a query-specific subset for a frozen answer model. To learn under this weak supervision, MESA employs harness optimization with prior-guided search and UCB-guided scheduling to balance exploration and exploitation. On AMA-Bench, MESA outperforms the strongest baseline by 8.5% while using 41% fewer evidence tokens than the all-structure alternative.",
+      "external_ids": [
+        "arxiv:2608.10108"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-12T11:26:28+08:00",
+      "last_seen_at": "2026-08-12T11:26:28+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.10075",
+      "arxiv_version": "v1",
+      "title": "Phase diagram of lasing under correlated pump from GPU-accelerated Truncated Wigner dynamics",
+      "authors": [
+        "Oksana Chelpanova",
+        "Martino Stefanini",
+        "Michael O'Keeffe",
+        "Jamir Marino"
+      ],
+      "published": "2026-08-10",
+      "url": "https://arxiv.org/abs/2608.10075",
+      "abstract": "Superradiant (SR) lasers store optical coherence in the atomic medium rather than the cavity field, but the incoherent drive that sustains inversion imposes a trade-off: local pumping yields coherent light at a rate that grows linearly with the atom number $N$, heating the medium through photon recoil, whereas fully collective pumping removes this scaling but limits the emission to partial coherence. We interpolate between these limits employing a spatially correlated pump on a chain of $N$ two-level atoms, with rates decaying with distance between atoms as a power law of exponent $α$. To study systems beyond the reach of exact solutions, we employ the Truncated Wigner Approximation (TWA), whose independent trajectories are ideally suited to GPU parallelism. Harnessing this, we perform a full scan of the steady-state observables for up to $10^4$ atoms at a computational cost that is practical. Our findings indicate that ultra-narrow emission persists for all $α$, while the coherence improves as the pump becomes shorter ranged, with $g^{(2)} \\to 1$ surviving at least down to $α\\approx 1$, indicating that fully coherent light thus does not require local pumping. The drive strength needed for lasing is reduced by a factor $N^{1-α}$ for $α< 1$, and by $\\log N$ as $α\\to 1$, parametrically suppressing recoil heating; notably, $α= 1$ matches the far-field envelope of dissipative couplings in free space. The correlation range of the pump thus acts as a knob trading drive intensity, and the heating it causes, against optical coherence.",
+      "external_ids": [
+        "arxiv:2608.10075"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-12T11:26:28+08:00",
+      "last_seen_at": "2026-08-12T11:26:28+08:00"
+    }
+  ]
+}
