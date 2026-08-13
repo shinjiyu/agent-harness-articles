@@ -1,8 +1,625 @@
 {
   "schema_version": 1,
   "topic": "agent harness",
-  "updated_at": "2026-08-12T11:26:28+08:00",
+  "updated_at": "2026-08-13T11:30:10+08:00",
   "candidates": [
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.12313",
+      "arxiv_version": "v1",
+      "title": "AVA-Encoder: Towards Agent-Native Video Representation Learning",
+      "authors": [
+        "Chuyue Li",
+        "Jinpeng Yu",
+        "Haozhe Wang",
+        "Tian Xueyun",
+        "Zhijing Zhang",
+        "Bingnan Li",
+        "Shuqi Gu",
+        "Kan Ren",
+        "Jiaming Liu",
+        "Ruihua Hua"
+      ],
+      "published": "2026-08-12",
+      "url": "https://arxiv.org/abs/2608.12313",
+      "abstract": "Creative agents still lack an effective way to learn from high-quality human films, limiting their ability to produce cinematic-grade videos. A key challenge is the absence of a structured video representation that is both faithful to film content and directly usable for agentic reasoning and manipulation. To address the challenge, we propose the Agentic Video Auto-Encoder (AVA-Encoder), a framework for learning agent-native video representations via agentic auto-encoding. AVA-Encoder transforms a video into a knowledge graph (KG) representation and then reconstructs it back into video. Its hierarchy and state nodes store structured text, while a linked asset layer holds generated images, audio, and video. Typed edges preserve the relations between these text descriptions and assets in a form that agents can easily understand, query, and edit. The video reconstruction differences drive a textual-gradient optimization framework, which expresses evaluation feedback as natural-language update directions for Data-Independent Encoding Policy Pseudo-Training in the outer loop and optional Data-Dependent KG Representation Refinement in the test-time inner loop. Extensive experiments show that AVA-Encoder improves by 20.7 percentage points over the strongest external baseline. In the controlled policy-only setting, its pseudo-trained shot-level Agentic Video Encoder policy also outperforms a carefully human-tuned policy while using 74.3% fewer system-prompt tokens. We release the complete AVA-Encoder framework, a reliable agentic video reconstruction benchmark, and the first dataset of high-quality film KG representations.",
+      "external_ids": [
+        "arxiv:2608.12313"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-13T11:30:10+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.12311",
+      "arxiv_version": "v1",
+      "title": "The Role Specialization Model (RSM): Coordinating LLM-Based Tools in Agentic Software Development - An Exploratory Case Study",
+      "authors": [
+        "Carlos Alberto Fernández-y-Fernández",
+        "Jorge R. Aguilar-Cisneros"
+      ],
+      "published": "2026-08-12",
+      "url": "https://arxiv.org/abs/2608.12311",
+      "abstract": "The integration of large language models (LLMs) into software development workflows has given rise to a paradigm known as Agentic Software Engineering (SE 3.0), in which autonomous agents manage full development life cycles under human supervision. This paper presents an exploratory case study in which three LLM-based tools, Antigravity (an agentic IDE with a Gemini 2.5 backend), Gemini CLI, and Qwen Code (local execution via Ollama), are coordinated according to a role-distribution framework proposed in this work as the Role Specialization Model (RSM). Three research questions guide the study: (RQ1) how can LLM-based tools with distinct capabilities be coordinated through the RSM in a real development workflow; (RQ2) what deviations from the planned role distribution emerge during RSM execution and what factors explain them; and (RQ3) how does the resulting product compare against the ISO/IEC 25010 quality model. The objective was to propose the RSM with the incremental development of a Python desktop application for interactive climate-data visualization. The workflow, observed deviations, prompt-hardening techniques, and a qualitative quality assessment are documented. Results suggest that explicit role coordination can support development cycle organization and architectural quality, but requires deliberate coordination strategies, context management, and human verification of agent-generated outputs.",
+      "external_ids": [
+        "arxiv:2608.12311"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-13T11:30:10+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.12307",
+      "arxiv_version": "v1",
+      "title": "AI4AI at Test-Time: Strong-to-Weak Capability Transfer via Harnesses",
+      "authors": [
+        "Cheng Qian",
+        "Wenting Zhao",
+        "Liangwei Yang",
+        "Heng Wang",
+        "Jielin Qiu",
+        "Heng Ji",
+        "Silvio Savarese",
+        "Huan Wang",
+        "Shelby Heinecke"
+      ],
+      "published": "2026-08-12",
+      "url": "https://arxiv.org/abs/2608.12307",
+      "abstract": "Recent work on distillation transfers the capabilities of large models to smaller ones often by updating the latter's parameters, through teacher forcing, on-policy distillation, and related training-time methods. In this paper, we ask whether such transfer can instead occur at test time. We study strong-to-weak scaffolding: whether a stronger builder model can construct inference-time harnesses that help a weaker target model solve tasks more reliably without any parameter updates. Using four representative Theory-of-Mind benchmarks, each builder model uses 5% of the data as a validation set to iteratively refine its harness over multiple rounds, after which the finalized harness is evaluated on the full test set. Empirically, this form of test-time capability transfer is highly effective, nearly doubling average target-model performance from 0.49 to 0.91. Our analysis shows that the gains come primarily from offloading unstable model reasoning into deterministic code, benchmark-specific routing, and strict answer-format enforcement, rather than from encouraging the target model to reason more extensively or sample more broadly. We further find that builder-model reasoning effort improves harness quality monotonically, platform effects are modest relative to the builder model's own capability, and weaker target models receive the largest gains. These results suggest that inference-time harness design is an important complement to conventional training-time distillation, enabling strong models to transfer cognitive structure to weaker models without retraining.",
+      "external_ids": [
+        "arxiv:2608.12307"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-13T11:30:10+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.12292",
+      "arxiv_version": "v1",
+      "title": "Teaching a Large Language Model Tutor to Withhold the Answer: A Supervisor Architecture and an Evidence-Driven Method for Tuning Socratic Behavior",
+      "authors": [
+        "Yusuf Pisan"
+      ],
+      "published": "2026-08-12",
+      "url": "https://arxiv.org/abs/2608.12292",
+      "abstract": "An effective large language model (LLM) tutor must often decline to give an answer it could easily produce. In a randomized study, students who used an unguarded chatbot scored higher while practicing but lower on a later test taken without it, whereas a Socratically guarded version of the same model kept the practice gain and removed the later loss [4]. Reliable answer-withholding is therefore central to a tutor's value, yet a capable model pressed by a frustrated student does not withhold reliably on a prompt alone. We report a deployed tutoring system that enforces answer-withholding as a per-turn, machine-checkable contract, and a method for tuning that withholding against evidence. A non-LLM policy core, reading only trusted learner state, sets a per-turn ceiling on an eight-rung help ladder; a deterministic detector strips solution code; and a separate LLM judge checks each risky reply against the contract. We tune the behavior with an automated evaluation that uses no human subjects: scripted student personas are driven through the live pipeline and re-scored by a stronger model, and we record each rejection's stated reason so failures are fixed by cause. Doing so revealed an interpretable \"over-help ladder,\" from blatant solution leaks, to naming the exact bug, to over-citing general facts, with each fix exposing the next. The tutor reached full compliance on all four acceptance criteria. We offer the measure, diagnose, and fix loop as a reusable recipe for any LLM agent that must refuse a capability it has.",
+      "external_ids": [
+        "arxiv:2608.12292"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-13T11:30:10+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.12290",
+      "arxiv_version": "v1",
+      "title": "Beyond Trial-and-Error: Agentic Optimization for Image-to-Video Adherence",
+      "authors": [
+        "Aman Tyagi",
+        "Hemanth Boinpally",
+        "Jonathan Chen",
+        "Douglas Gebert",
+        "Steven Hickson"
+      ],
+      "published": "2026-08-12",
+      "url": "https://arxiv.org/abs/2608.12290",
+      "abstract": "Modern black-box Image-to-Video (I2V) models offer powerful capabilities in automated content creation, yet their lack of fine-grained control and reliability presents significant challenges in professional workflows. Their inherent stochasticity causes minor variations in textual prompts or hyperparameters to yield drastically different outputs often necessitating inefficient, brute-force trial-and-error processes. To address these limitations, we introduce the ``Agentic Self-Improvement\" framework, which reframes video synthesis into a closed-loop, goal-directed optimization. Our framework systematically navigates the generation parameter space using a novel two-stage approach. In the first stage, an iterative prompt optimization loop uses a multimodal Large Language Model (mLLM) to refine the input prompt. This refinement implements two automated evaluations: Davidsonian Scene Graph (DSG) queries ensure semantic adherence, and Common Mistake Questions (CMQ) for artifact detection. At the second stage, we use Bayesian optimization to efficiently co-optimize stochastic seeds and CFG scales. This search is guided by a suite of quality metrics, including the novel Video-Text Adherence (VTA) score derived from the DSG and CMQ evaluations. Our framework significantly outperforms unguided search methods: in human preference studies, videos generated via our agentic approach were strongly preferred over baseline outputs, achieving win rates up to 69\\%. This work provides a practical and extensible methodology for enhancing the predictability and control of state-of-the-art video generation models, moving the field beyond speculative curiosities toward reliable, production-ready tools.",
+      "external_ids": [
+        "arxiv:2608.12290"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-13T11:30:10+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.12282",
+      "arxiv_version": "v1",
+      "title": "VAKRA: Evaluating Multi-Hop Reasoning Across APIs and Retrieval Under Tool-Use Policies",
+      "authors": [
+        "Ankita Rajaram Naik",
+        "Anupama Murthi",
+        "Benjamin Elder",
+        "Siyu Huo",
+        "Raavi Gupta",
+        "Abhinav Jain",
+        "Praveen Venkateswaran",
+        "Abdulhamid Adebayo",
+        "Danish Contractor"
+      ],
+      "published": "2026-08-12",
+      "url": "https://arxiv.org/abs/2608.12282",
+      "abstract": "Agents deployed in enterprise settings must reason across structured APIs and document collections, yet existing benchmarks evaluate these capabilities in isolation. We introduce VAKRA (e\\textbf{V}aluating \\textbf{A}PI and \\textbf{K}nowledge \\textbf{R}etrieval \\textbf{A}gents), a benchmark of over $8{,}000$ executable APIs across $62$ domains with tasks spanning three settings of increasing difficulty: diverse API interaction styles, multi-hop reasoning over structured APIs, and multi-source reasoning with natural-language tool-use policy constraints. Correctness is verified by re-executing predicted tool calls against live APIs, accommodating multiple valid paths. Using a fixed ReAct harness to isolate model capabilities from agent architecture, we evaluate frontier and open-weight models and find that even the best model achieves only 70.4\\% on single-hop endpoint-style tasks and drops to 50--51\\% on compositional APIs; performance degrades by over 50\\% as reasoning depth increases, and policy-constrained questions expose severe failures (as low as 2.4\\% on unanswerable queries). Trace analysis shows failures concentrate at language-mediated reasoning - entity disambiguation, cross-source grounding, rather than tool invocation mechanics. Code is available https://github.com/IBM/VAKRA. Dataset is available https://huggingface.co/datasets/ibm-research/VAKRA",
+      "external_ids": [
+        "arxiv:2608.12282"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-13T11:30:10+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.12277",
+      "arxiv_version": "v1",
+      "title": "PACE-SIMS: Checkpoint-Gated Autonomous SIMS Characterization with AI-Agent Quality Control",
+      "authors": [
+        "Anton V Ievlev",
+        "Heather Hare",
+        "Yiyang Li",
+        "Sergei V Kalinin"
+      ],
+      "published": "2026-08-12",
+      "url": "https://arxiv.org/abs/2608.12277",
+      "abstract": "Time-of-flight secondary ion mass spectrometry (ToF-SIMS) is widely used for local chemical investigations across a broad range of materials and systems. However, its operation is expensive in expert time: a trained researcher must supervise acquisition throughout, dynamically tuning parameters throughout the experiment, often across a campaign spanning multiple days. Here, we present PACE-SIMS, an agentic workflow which runs a SIMS study as a human-AI collaboration. Here, the researcher specifies the scientific questions and quality requirements, and an AI agent builds the plan and, after approval, executes it autonomously, pausing at checkpoints to judge each measurement and to correct, retry, or escalate. To validate the approach, we applied it to a study of chemical composition in 18O-enriched WOx films. During this blind randomized, two-polarity study (8.1 hours, 35 measurements) the agent made three unscripted corrections a fixed script would have missed, and all four predictions held against the sealed ground truth. The same run returned transferable measurement science, including a composition calibration, a 5.3% isotope-reading offset between the two ion polarities, and the deposition's tracer-delivery mechanism, from less than two hours of researcher attention. The developed agentic architecture is not specific to SIMS and can be applied to other analytical techniques, with primary target being the destructive measurements for which optimization methods are poorly applicable.",
+      "external_ids": [
+        "arxiv:2608.12277"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-13T11:30:10+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.12273",
+      "arxiv_version": "v1",
+      "title": "Convergent Detour Hijacking: Task-Preserving Resource Amplification in Skill-Based LLM Agents",
+      "authors": [
+        "Junliang Liu",
+        "Ruoyu Li",
+        "Wenxin Tang",
+        "Jingyu Xiao",
+        "Zhenyu Liu",
+        "Jingheng Xu",
+        "Laizhong Cui"
+      ],
+      "published": "2026-08-12",
+      "url": "https://arxiv.org/abs/2608.12273",
+      "abstract": "LLM agents increasingly rely on third-party skills, using natural-language descriptions for selection and instruction bodies for planning. This progressive-disclosure design exposes two sequential control points to untrusted publishers: a static skill may steer an otherwise correct task onto an unnecessarily costly trajectory. Prior work studies selection manipulation, malicious skill instructions, and tool-chain resource amplification largely separately, leaving their end-to-end composition unclear. We introduce Convergent Detour Hijacking (CDH), a text-only, runtime-independent attack that couples these stages. Under shared semantic cover, a description establishes relevance during selection, while an aligned body reuses that rationale to fabricate plausible dependencies during planning. CDH attracts an attacker-controlled coordinator alongside legitimate skills, recruits unnecessary benign skills into a bounded detour, and then re-enters the original route to preserve task completion. We evaluate it across multiple LLM backends and 491 held-out tasks under single-task and multi-turn conditions. On DeepSeek-V4-Pro, the matched coordinator is selected in 80.02% of tasks; among coordinator-hit runs that complete tasks, token consumption and end-to-end execution time increase by 66.91% and 92.45%, respectively, while aggregate task completion remains comparable. Thus, correct outcomes do not guarantee trajectory integrity or cost safety.",
+      "external_ids": [
+        "arxiv:2608.12273"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-13T11:30:10+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.12262",
+      "arxiv_version": "v1",
+      "title": "Diagram-MMU: A Multi-Modal Benchmark for Scientific Diagrams",
+      "authors": [
+        "Weihao Bo",
+        "Shan Zhang",
+        "Yanpeng Sun",
+        "Jie Liu",
+        "Yongke Yao",
+        "Jinhao Du",
+        "Wei He",
+        "Kai Zou",
+        "Zechao Li",
+        "Jingdong Wang"
+      ],
+      "published": "2026-08-12",
+      "url": "https://arxiv.org/abs/2608.12262",
+      "abstract": "Multimodal Large Language Models (MLLMs) have been growing the capability for scientific writing and collaboration. For example, OpenAI Prism is a free workspace for scientific writing and collaboration. One important feature in Prism is turning scientific diagrams directly into LaTeX TikZ code. In this paper, we build a benchmark, Diagram-MMU, a multi-modal benchmark designed to assess MLLMs' ability for scientific diagram parsing and understanding. Diagram-MMU features 3.7k curated diagrams and 18.3k human-validated questions across six domains. It evaluates MLLMs on three tasks common in vibe writing workspaces: diagram-to-code parsing, diagram-to-code editing, and diagram question answering, alongside agentic settings per task. The evaluation of 12 MLLMs reveals that diagram-to-code tasks are more challenging than diagram question answering: models can reason well over diagrams but struggle to parse and edit them, underscoring the need for methods to enhance MLLMs' capability in diagram-to-code generation. Under agentic settings, most models improve parsing and editing performance but degrade on question answering, while Claude-4.6 Opus consistently improves across all three tasks. Project Page: https://vi-ocean.github.io/projects/diagram-mmu.",
+      "external_ids": [
+        "arxiv:2608.12262"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-13T11:30:10+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.12249",
+      "arxiv_version": "v1",
+      "title": "An Agentic Workflow for Legacy HPC Modernization: Converting the Two-Electron-Integral Core of GAMESS",
+      "authors": [
+        "Yuzhong Shen",
+        "Masha Sosonkina",
+        "Peng Xu",
+        "Mark S. Gordon"
+      ],
+      "published": "2026-08-12",
+      "url": "https://arxiv.org/abs/2608.12249",
+      "abstract": "Modernizing legacy Fortran is a problem of volume: the transformations are individually routine, but the codebases can be enormous, and across much of computational science the work simply goes undone. We propose an agentic workflow that takes this work on at production scale, and we set out to measure how far such delegation can reach. In this work, three prompt-specialized agent roles operate under a version-controlled specification that the agents themselves authored and revised, while humans hold a small number of gates. The arrangement is kept safe by an exact verification oracle inherited from the domain, and the boundary of safe delegation lies exactly where that oracle stops seeing. We apply the proposed workflow in a case study, converting the two-electron-integral routines of GAMESS (General Atomic and Molecular Electronic Structure System), a mature quantum-chemistry package with a 48-year development history, from fixed-form Fortran 77 to free-form Fortran 2008. The scope of this work was twelve source files, 56,448 lines, and 225 subroutines for computing electron repulsion integrals. The agents ran as three Claude Code roles in isolated worktrees, and the work spanned four Claude model generations. Because the GAMESS group ships a standard test suite whose printed energies its user community treats as canonical, we could adopt bit-for-bit reproduction of those energies as the merge criterion, where a deviation in the twelfth decimal place counts as a failure rather than drift. All twelve source files pass a 51-test validation battery comprising the 49 standard GAMESS tests and two additional calculations, and across 612 test runs the number of chemistry-relevant differences is zero, and every file also passes the Jenkins tests that are used for continuous integration.",
+      "external_ids": [
+        "arxiv:2608.12249"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-13T11:30:10+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.12246",
+      "arxiv_version": "v1",
+      "title": "VICBench: A Multi-Language Benchmark for Code Vulnerability Detection",
+      "authors": [
+        "Jin Lu",
+        "Xuening Han",
+        "Yang Zhong",
+        "Lin Tan",
+        "Kevin Luo",
+        "Andrew Gacek",
+        "Neha Rungta"
+      ],
+      "published": "2026-08-12",
+      "url": "https://arxiv.org/abs/2608.12246",
+      "abstract": "Evaluating security vulnerability detection tools requires benchmark datasets with vulnerability-inducing commits (VICs) - the commits that first introduce vulnerabilities into codebases. VICs are essential for determining the full range of vulnerable software versions. Existing vulnerability datasets suffer from limited programming language coverage, restricted patch complexity, and narrow project scope. Through our dual annotation by human experts and an agentic workflow, we create a benchmark - VICBench - of 100 verified VICs for 100 CVEs across 88 projects in Python, Java, and C++, covering 48 CWE types. VICBench features complex real-world vulnerability fixes averaging 38.6 lines and corresponding VICs of 252.5 lines - significantly larger than prior work. Our evaluation shows that state-of-the-art algorithms V-SZZ and LLM4SZZ achieve only 33.3%-40.1% F1, confirming that using existing approaches still entails significant manual effort. VICBench enables robust evaluation of vulnerability detection approaches.",
+      "external_ids": [
+        "arxiv:2608.12246"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-13T11:30:10+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.12203",
+      "arxiv_version": "v1",
+      "title": "GeoFlow: Efficient Driving Video Generation via Geometry-Aligned Priors",
+      "authors": [
+        "Jiazheng Liu",
+        "Hang Li",
+        "Jiawei Zhang",
+        "Jiahe Li",
+        "Xiaohan Yu",
+        "Shengyin Fan",
+        "Jin Zheng",
+        "Xiao Bai"
+      ],
+      "published": "2026-08-12",
+      "url": "https://arxiv.org/abs/2608.12203",
+      "abstract": "Generative models like Diffusion Models and Flow Matching have demonstrated remarkable capabilities in synthesizing high-fidelity driving videos, but are severely constrained by high inference latency due to the requirement of extensive sampling steps. We argue that this inefficiency stems from the prevailing reliance on a standard Gaussian source distribution, where consecutive frames are initialized as independent Gaussian noise. This paradigm disregards the rich spatiotemporal correlations inherent in driving videos, compelling the model to regenerate deterministic scene structures existing in previous frames from noise, which is both computationally redundant and prone to geometric inconsistency. To address this problem, we propose GeoFlow, a novel framework designed to achieve efficient driving video generation by harnessing explicit geometric priors. Instead of sampling from standard Gaussian noise, we leverage multi-view geometry and spatially-adaptive noise injection to construct a Geometry-Aligned Prior (GAP) distribution as starting point. This initialization bridges the gap between source distribution and data distribution, yielding a significantly straighter and shorter sampling trajectory. Extensive experiments demonstrate that GeoFlow can achieve remarkable efficiency of both training and inference: merely several hours of fine-tuning on baseline models can significantly boost few-step generation quality, while fully converged training drastically reduces number of inference steps required for state-of-the-art video generation.",
+      "external_ids": [
+        "arxiv:2608.12203"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-13T11:30:10+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.12129",
+      "arxiv_version": "v1",
+      "title": "SAG: SQL-Retrieval Augmented Generation with Query-Time Dynamic Hyperedges",
+      "authors": [
+        "Yuchao Wu",
+        "Junqin Li",
+        "XingCheng Liang",
+        "Yongjie Chen",
+        "Yinghao Liang",
+        "Linyuan Mo",
+        "Guanxian Li"
+      ],
+      "published": "2026-08-12",
+      "url": "https://arxiv.org/abs/2608.12129",
+      "abstract": "While retrieval-augmented generation (RAG) has proven effective at giving LLMs access to external knowledge, mainstream dense-retrieval implementations remain inherently limited in handling structured constraints and multi-hop reasoning. Graph-based methods address this by constructing knowledge graphs offline, but they often fragment semantics, incur high maintenance, and complicate incremental updates. We propose SAG (SQL-Retrieval Augmented Generation), a structured retrieval architecture that organizes documents into an event-entity index without building a global knowledge graph. SAG represents each chunk as a semantically complete event paired with its entities, forming a latent hyperedge that preserves n-ary relations without decomposing them into triples. At query time, SAG treats shared entities as join keys to connect related chunks. This dynamically yields a query-scoped neighborhood of events, and yet every piece of evidence remains the original chunk throughout. Experiments on HotpotQA, 2WikiMultiHopQA, and MuSiQue show that SAG achieves the best retrieval and end-to-end QA performance on every benchmark, with gains that widen as reasoning-chain complexity increases. On MuSiQue, where multi-hop evidence chaining is most demanding, SAG reaches 80.36% Recall@5, outperforming the strongest baseline by 11.52 points. This work paves the way for knowledge infrastructure that enables LLM agents to retrieve and reason over continually growing organizational knowledge.",
+      "external_ids": [
+        "arxiv:2608.12129"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-13T11:30:10+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.12002",
+      "arxiv_version": "v1",
+      "title": "CTBench: Evaluating Troubleshooting Capabilities of AI Agents in Realistic Telecom Network Operations",
+      "authors": [
+        "Xingyu Yan",
+        "Tingting Dai",
+        "Antonio De Domenico",
+        "Mohamed Sana",
+        "Nicola Piovesan",
+        "Changchang Li",
+        "Bowen Liu",
+        "Kun Jiang",
+        "Mengjie Zhang",
+        "Dingcheng Shan",
+        "Jing-Cheng Pang",
+        "Chenwei Wu",
+        "Sijie Wu",
+        "Lianying Chao",
+        "Haoran Cai",
+        "Jiantao Ye",
+        "Xubin Li",
+        "Simon Mark Lucas",
+        "Xin Chen"
+      ],
+      "published": "2026-08-12",
+      "url": "https://arxiv.org/abs/2608.12002",
+      "abstract": "Agents are increasingly considered for automating network operations and maintenance, where engineers must diagnose network faults, optimize configurations to enhance services, and reduce operational costs while acting under strict constraints. However, existing evaluations fail to accurately model real network characteristics or assess agents under partially observable telecom environments with diverse vendors, devices, protocols, and interfaces. In this paper, we introduce CTBench, a public benchmark for assessing whether an agent behaves like a competent telecom troubleshooting engineer. CTBench focuses on root cause analysis and path restoration. Each task is constructed by experts and annotated with rich task metadata, including golden evidence steps. CTBench uses expert-grounded metrics that evaluate both final answers and the diagnostic evidence. Experiments with representative harness-model combinations show that state-of-the-art agents perform very well at identifying endpoints in path-restoration tasks but, more generally, underperform in root cause analysis. In particular, agents struggle with interface state, link-layer, service-management, and other operational faults. Most importantly, even when agents produce plausible or correct final answers, they often fail to provide the evidence-grounded diagnoses required in operational practice. Our results further show that path restoration is generally more resource expensive, yet larger resource usage does not necessarily translate into better diagnosis.",
+      "external_ids": [
+        "arxiv:2608.12002"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-13T11:30:10+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.11977",
+      "arxiv_version": "v1",
+      "title": "Retry, Switch, or Abstain? Learning Strategy-Aware Tool-Use Policies via Controlled Error Injection",
+      "authors": [
+        "Chaoran Chen",
+        "Vy Nguyen",
+        "Ziji Zhang",
+        "Abhinav Gullapalli",
+        "Ziyi Wang",
+        "Yuxuan Lu",
+        "Dakuo Wang",
+        "Jing Huang",
+        "Zhou Yu",
+        "Jin Lai"
+      ],
+      "published": "2026-08-12",
+      "url": "https://arxiv.org/abs/2608.11977",
+      "abstract": "Tool-using LLM agents are commonly trained and evaluated in environments where tool calls succeed reliably, yet deployed tools can fail transiently, persistently, or silently. Robust recovery therefore requires more than repeated retries: an agent may need to retry the same path, switch to an alternative, or recognize that no viable path remains. We present BENCH2ROBUST, a framework that converts failure-free tool-use benchmarks into controlled stochastic environments with scenario-controlled solvability, where episodes explicitly require retrying, switching, or stopping after available paths are exhausted. We use BENCH2ROBUST to study two complementary interventions: structured runtime recovery context through Bayesian Tool Memory (BTM), and curriculum-controlled reinforcement learning. Across 7 models from 4 families and two multi-turn benchmark families, tool failures produce a near-universal robustness gap. On held-out Retail tasks, BTM improves robustness by up to 16.8 percentage points without retraining, while RL learns complementary recovery behavior that remains beneficial without inference-time BTM. Combining the two reaches 40.8-45.5% under injection while preserving failure-free performance. These results suggest that robust tool use benefits from combining environment-specific recovery knowledge with learned recovery behavior.",
+      "external_ids": [
+        "arxiv:2608.11977"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-13T11:30:10+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.11888",
+      "arxiv_version": "v1",
+      "title": "Agent Skills Can Be Harmful: An Empirical Study of Skill-Induced Failures in LLM Agents",
+      "authors": [
+        "Gen Dong",
+        "Yanjie Gao",
+        "Liqun Li",
+        "Tianyin Xu",
+        "Yu Hua",
+        "Fan Yang"
+      ],
+      "published": "2026-08-12",
+      "url": "https://arxiv.org/abs/2608.11888",
+      "abstract": "Agent skills are the de facto mechanism for extending LLM agents with reusable guidance. A skill can shape the agent's task execution, including planning, tool use, problem-solving, and validation. Prior work reported mixed results of agent skills: some skills improve task success rates, while others have no effect, increase token use and execution time, and even reduce success rates. This paper presents a comprehensive analysis of skill-induced agent failures by attributing task failures and cost regressions to specific loaded skills. We introduce a differential analysis framework that attributes a failure or regression to a skill by comparing a target skill-guided run against a no-skill or semantically matched skill reference run that solves the same task, or solves it more cheaply. We instantiate this framework on SkillsBench and SWE-Skills-Bench, yielding 307 skill-induced failures, including 125 functional failures and 182 efficiency regressions. We also build SkillTriage, a taxonomy-guided attribution tool that normalizes paired cases, extracts differential evidence, and produces triage reports. Our major findings include: (1) Skill induced functional failures are rarely caused by obviously irrelevant skills; instead, seemingly relevant skills often make the agent incorrectly implement or omit task-required implementation elements. (2) Skill-induced efficiency regressions are not explained by prompt length alone. (3) The largest sources within Excessive Procedure are excessive verification and heavy implementation pipelines, contributing 67 and 30 cases, respectively. This shows that skills often turn validation checklists and construction recipes into mandatory work. Based on our findings, we propose research topics and tooling improvements for safer and more cost-aware skill reuse.",
+      "external_ids": [
+        "arxiv:2608.11888"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-13T11:30:10+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.11799",
+      "arxiv_version": "v1",
+      "title": "AmbSentry: Mitigating Sensing Eavesdropping in ISAC Systems by Harnessing Ambient IoT Devices",
+      "authors": [
+        "Yifan Zhang",
+        "Yu Bai",
+        "Riku Jantti",
+        "Zhu Han",
+        "Christos Masouros"
+      ],
+      "published": "2026-08-12",
+      "url": "https://arxiv.org/abs/2608.11799",
+      "abstract": "Integrated sensing and communication (ISAC) has emerged as a pivotal paradigm for 6G networks, enabling the synergistic convergence of spectral and hardware resources to maximize system efficiency. However, the inherent openness of wireless transmission exposes ISAC systems to critical security risks, particularly regarding the privacy of the sensing information. Unauthorized sensing eavesdroppers can extract sensitive target parameters (e.g., range and velocity) by directly estimating open sensing echo channels, rendering traditional data-based protection techniques ineffective. To mitigate this threat, this paper proposes AmbSentry, an ISAC system that prevents the leakage of sensing information to sensing eavesdroppers by harnessing naturally distributed passive ambient IoT (AIoT) devices. Specifically, these AIoT devices are strategically configured to act as cooperative jammers and ghost targets, introducing controllable interference into the sensing environment. Based on the proposed system, we formulate a joint optimization problem to maximize the integrated sidelobe level at the eavesdropper under quality-of-service (QoS) constraints, thereby degrading sensing eavesdropping performance while maintaining sensing and communication performance for legitimate receivers. Since the problem is non-convex, we further develop an efficient iterative algorithm to cooperatively design the transmit beamforming at the base station and the reflection modulations of the AIoT devices based on Dinkelbach transformation and block coordinate descent methods. The detailed results also demonstrate that AmbSentry significantly enhances sensing security, allowing the legitimate sensing receiver to achieve a 14-dB SNR advantage in detection probability and a hundred times lower estimation error compared to the eavesdropper.",
+      "external_ids": [
+        "arxiv:2608.11799"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-13T11:30:10+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.11772",
+      "arxiv_version": "v1",
+      "title": "Diagnosis Before Recovery: Turning Agent Failures into Selective Self-Correction",
+      "authors": [
+        "Pan Wang",
+        "Yihao Hu",
+        "Hang Wang",
+        "Zirui Lv",
+        "Xin Zhang",
+        "Jianshe Li",
+        "Jiang-Ming Yang",
+        "Wei Wu",
+        "Yongqi Tong"
+      ],
+      "published": "2026-08-12",
+      "url": "https://arxiv.org/abs/2608.11772",
+      "abstract": "Self-correction is particularly useful when a failure constrains the next repair. Coding agents benefit from this property because compilers, tests, and execution traces turn many failures into typed recovery signals, but broad language-agent tasks often expose only a coarse task failure. This creates a tension for generic recovery playbooks: they broaden the agent's context precisely when the system needs a narrower repair interface, mixing incompatible signals for invalid actions, missing procedures, and strict-format errors. Our insight is that development-set failures can recover part of the missing diagnostic substrate by deciding which recovery interventions are admissible before test-time correction. We propose DARC, a diagnosis-guided recovery harness that profiles task-family failure modes, prunes mismatched interventions from a shared recovery library, and freezes a verifier-selected success-cost policy for deployment. This causal order makes correction selective: the harness first determines what kind of failure can be repaired, then decides how much recovery evidence to spend. In ALFWorld, AppWorld, and XBRL Finance, the same protocol yields an action-validity harness, a procedural-recovery fallback, and a format-precision retrieval policy; in each evaluated setting it improves average task performance over base agents and broad playbooks while reducing environment steps or retrieval budget. Our experiments show that failures need not trigger uniformly more context: DARC turns self-correction from prompt expansion into recovery-interface design. DARC provides a practical route toward more reliable agents in domains where compiler-like feedback is absent: making failures actionable before making contexts larger.",
+      "external_ids": [
+        "arxiv:2608.11772"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-13T11:30:10+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.11744",
+      "arxiv_version": "v1",
+      "title": "Harnessing LLMs for Document-Guided Fuzzing of Python Libraries",
+      "authors": [
+        "Bin Duan",
+        "Tarek Mahmud",
+        "Meiru Che",
+        "Yan Yan",
+        "Naipeng Dong",
+        "Dan Dongseong Kim",
+        "Guowei Yang"
+      ],
+      "published": "2026-08-12",
+      "url": "https://arxiv.org/abs/2608.11744",
+      "abstract": "Python libraries underpin deep learning, scientific computing, data analysis, and computer vision, making their reliability critical to downstream applications. Testing their APIs requires inputs that satisfy both per-parameter constraints and dependencies among parameters. Existing approaches either leave such constraints implicit in generated programs or rely on library-specific parsing rules. This paper introduces VistaFuzz, a document-guided fuzzing technique that uses a locally served open-sourced LLM to extract parameter specifications from API documents and generate inputs that satisfy both parameter constraints and inter-parameter dependencies. We evaluate VistaFuzz on 7,718 APIs across twelve Python libraries. Inter-parameter relationships occur in 40.1\\% of tested APIs, and disabling their resolution reduces the valid generation rate on those APIs from above 95\\% to 31.6\\%--52.8\\%. VistaFuzz reports 74 issues, of which 43 have been confirmed by developers and 29 have been fixed.",
+      "external_ids": [
+        "arxiv:2608.11744"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-13T11:30:10+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.11727",
+      "arxiv_version": "v1",
+      "title": "Harness-IF: Evaluating Instruction Following Across Instruction Surfaces in Coding Agents",
+      "authors": [
+        "Zining Huang",
+        "Haoran Que",
+        "Hong Zeng",
+        "Ge Zhang",
+        "Zuo Wang",
+        "Jin Chen",
+        "Haodong Wang",
+        "Zhongfei Hou",
+        "Changxin Pu",
+        "Shen Yan",
+        "Wenhao Huang"
+      ],
+      "published": "2026-08-12",
+      "url": "https://arxiv.org/abs/2608.11727",
+      "abstract": "When a coding agent obeys a rule, it may simply have been going to do that anyway. Existing instruction-following benchmarks cannot tell the difference: they concentrate rules in the user turn, while coding-agent benchmarks emphasize final task success. We introduce Harness-IF, which scores operational rules one at a time from execution evidence: 60 realistic multi-turn coding items drawn from a 642-rule library, 256 rules receiving verdicts, placed on the five configurable surfaces a deployed agent reads. To separate compliance from coincidence we introduce Against-Prior Accuracy (AP-Acc), which scores only rules labeled as opposing unprompted defaults, observed by re-running tasks with the rule withheld across nine probe builds and curated otherwise. Across 12 frontier models, accuracy spans 72.1-85.9% and AP-Acc 66.1-78.6%; every model is worse on against-prior rules, by 3.6 to 7.4 points (mean 5.81), and the direction survives a common-support analysis with item-clustered intervals. Aggregate scores therefore overstate compliance by a model-specific margin: prior control leaves the top build unchanged and exchanges three adjacent rank pairs. A counterbalanced conflict pilot on nine separate builds adds a second result: pooled precedence does not follow prompt depth, with system prompts, project files, and user instructions ahead of tool and skill descriptions.",
+      "external_ids": [
+        "arxiv:2608.11727"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-13T11:30:10+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00"
+    },
     {
       "source": "arxiv",
       "arxiv_id": "2608.11166",
@@ -4514,7 +5131,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-07-31T12:26:08+08:00",
-      "last_seen_at": "2026-08-12T11:26:28+08:00"
+      "last_seen_at": "2026-08-13T11:30:10+08:00"
     },
     {
       "source": "arxiv",
@@ -9729,7 +10346,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-07-20T12:38:34+08:00",
-      "last_seen_at": "2026-08-12T11:26:28+08:00"
+      "last_seen_at": "2026-08-13T11:30:10+08:00"
     },
     {
       "source": "arxiv",
@@ -12245,7 +12862,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-12T11:26:28+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -12270,7 +12887,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-12T11:26:28+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -12296,7 +12913,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-12T11:26:28+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -12325,7 +12942,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-12T11:26:28+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -12381,7 +12998,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-12T11:26:28+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -12411,7 +13028,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-12T11:26:28+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00",
       "promoted_tier": "C",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -12447,7 +13064,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-12T11:26:28+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00",
       "promoted_tier": "A",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -12489,7 +13106,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-12T11:26:28+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -12523,7 +13140,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-12T11:26:28+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -12550,7 +13167,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-12T11:26:28+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -12580,7 +13197,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-12T11:26:28+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -12611,7 +13228,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-12T11:26:28+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -12641,7 +13258,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-12T11:26:28+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -12668,7 +13285,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-12T11:26:28+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -12694,12 +13311,12 @@
       ],
       "status": "skipped",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-12T11:26:28+08:00",
+      "last_seen_at": "2026-08-13T11:30:10+08:00",
       "skip_reason": "noise / weak harness sense"
     }
   ],
   "last_run": {
-    "at": "2026-08-12T11:26:28+08:00",
+    "at": "2026-08-13T11:30:10+08:00",
     "sources": [
       "arxiv",
       "semanticscholar",
@@ -12711,7 +13328,7 @@
       "test-time harness evolution"
     ],
     "fetched": 66,
-    "merged": 36,
-    "new": 17
+    "merged": 39,
+    "new": 20
   }
 }
