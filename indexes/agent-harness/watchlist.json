@@ -1,8 +1,67 @@
 {
   "schema_version": 1,
   "topic": "agent harness",
-  "updated_at": "2026-08-15T10:17:02+08:00",
+  "updated_at": "2026-08-16T10:25:23+08:00",
   "candidates": [
+    {
+      "source": "semanticscholar",
+      "arxiv_id": "2607.24762",
+      "doi": "",
+      "title": "Kernel Forge: An Agent Harness for LLM-based Generation and Optimization of CUDA Kernels",
+      "authors": [
+        "J. Brodsky",
+        "Dhravid Kumar",
+        "Savini Kashmira",
+        "Jayanaka Danatanarayana",
+        "Jason Mars",
+        "K. Flautner",
+        "Lingjia Tang"
+      ],
+      "published": "2026-06-02",
+      "url": "https://arxiv.org/abs/2607.24762",
+      "abstract": "Machine learning models are increasingly embedded in everyday software, and most of their runtime is spent in a small set of compute kernels such as matrix multiplication, convolution, and normalization. Optimizing these kernels is one of the most direct ways to reduce latency and cost, but it has traditionally required expert engineers to hand-write low-level GPU code. Agentic systems built on large language models (LLMs) can now generate and optimize kernels with far less human effort, yet existing tools are largely evaluated on randomly generated tensors and isolated kernels, emit standalone CUDA code that developers must manually reintegrate, mostly target only LLM PyTorch models, and offer limited support for inspecting and debugging results. We present Kernel Forge, an open-source, end-to-end agentic harness that accepts any unmodified PyTorch model in place. Kernel Forge supports vision, diffusion, and LLM workloads, uses Monte Carlo Tree Search (MCTS) to explore multiple optimization paths rather than a single linear refinement chain, and ships with a graphical user interface for monitoring progress, inspecting candidate kernels, and debugging failures. We evaluate Kernel Forge on four PyTorch models spanning vision, diffusion, and LLM workloads on an NVIDIA DGX Spark with GB10 GPU. With only 50 optimization iterations per kernel, it optimizes 14 kernels to outperform PyTorch eager mode, reaching $1.52\\times$ on adaptive\\_avgpool2d in ResNet-50, $1.70\\times$ on group\\_norm in Stable Diffusion 3.5 Medium, $2.83\\times$ on softmax in Gemma 4 E2B, and $1.54\\times$ on softmax in Qwen 3.5 35B-A3B.",
+      "external_ids": [
+        "s2:af04acbd16f76140157ca0c4f973c807e1d1856e",
+        "arxiv:2607.24762"
+      ],
+      "sources": [
+        "semanticscholar"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-16T10:25:23+08:00",
+      "last_seen_at": "2026-08-16T10:25:23+08:00"
+    },
+    {
+      "source": "semanticscholar",
+      "arxiv_id": "2602.03238",
+      "doi": "",
+      "title": "\"LLM Agent Performance\"Is Not a Single Evaluation Target",
+      "authors": [
+        "Pengyu Zhu",
+        "Li Sun",
+        "Philip S. Yu",
+        "S. Su"
+      ],
+      "published": "2026-02-03",
+      "url": "https://arxiv.org/abs/2602.03238",
+      "abstract": "LLM agent benchmark scores are shaped not only by the model but also by the agent harness, environment, evaluator, and inference budget. Unified execution controls these non-model factors by evaluating candidate models under the same configuration, making observed differences more attributable to the models themselves. However, model comparison is only one use of agent benchmarks. Other evaluations compare complete agent systems or test whether a fixed model or system remains stable across predeclared changes in its operating conditions. These results can all be reported under the common label of\"LLM agent performance.\"Our position is that\"LLM agent performance\"does not denote a single evaluation target. Model comparisons under a reference stack and comparisons of complete agent systems answer different questions, while robustness asks whether either conclusion persists across predeclared conditions. The claim supported by a score therefore depends on the declared candidate boundary and condition policy. We derive implications for leaderboards, result reporting, and benchmark versioning, showing how distinguishing these classes preserves fair comparison while accommodating system innovation and robustness analysis.",
+      "external_ids": [
+        "s2:463cda71cbc075142fd9bcb5ae5763b79dd74862",
+        "arxiv:2602.03238"
+      ],
+      "sources": [
+        "semanticscholar"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-16T10:25:23+08:00",
+      "last_seen_at": "2026-08-16T10:25:23+08:00"
+    },
     {
       "source": "arxiv",
       "arxiv_id": "2608.13560",
@@ -40,7 +99,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-14T11:28:16+08:00",
-      "last_seen_at": "2026-08-15T10:17:02+08:00"
+      "last_seen_at": "2026-08-16T10:25:23+08:00"
     },
     {
       "source": "arxiv",
@@ -76,7 +135,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-14T11:28:16+08:00",
-      "last_seen_at": "2026-08-15T10:17:02+08:00"
+      "last_seen_at": "2026-08-16T10:25:23+08:00"
     },
     {
       "source": "arxiv",
@@ -224,7 +283,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-14T11:28:16+08:00",
-      "last_seen_at": "2026-08-15T10:17:02+08:00"
+      "last_seen_at": "2026-08-16T10:25:23+08:00"
     },
     {
       "source": "arxiv",
@@ -255,7 +314,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-14T11:28:16+08:00",
-      "last_seen_at": "2026-08-15T10:17:02+08:00"
+      "last_seen_at": "2026-08-16T10:25:23+08:00"
     },
     {
       "source": "arxiv",
@@ -287,7 +346,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-14T11:28:16+08:00",
-      "last_seen_at": "2026-08-15T10:17:02+08:00"
+      "last_seen_at": "2026-08-16T10:25:23+08:00"
     },
     {
       "source": "arxiv",
@@ -315,7 +374,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-14T11:28:16+08:00",
-      "last_seen_at": "2026-08-15T10:17:02+08:00"
+      "last_seen_at": "2026-08-16T10:25:23+08:00"
     },
     {
       "source": "arxiv",
@@ -351,7 +410,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-14T11:28:16+08:00",
-      "last_seen_at": "2026-08-15T10:17:02+08:00"
+      "last_seen_at": "2026-08-16T10:25:23+08:00"
     },
     {
       "source": "arxiv",
@@ -385,7 +444,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-14T11:28:16+08:00",
-      "last_seen_at": "2026-08-15T10:17:02+08:00"
+      "last_seen_at": "2026-08-16T10:25:23+08:00"
     },
     {
       "source": "arxiv",
@@ -409,7 +468,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-14T11:28:16+08:00",
-      "last_seen_at": "2026-08-15T10:17:02+08:00"
+      "last_seen_at": "2026-08-16T10:25:23+08:00"
     },
     {
       "source": "arxiv",
@@ -438,7 +497,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-14T11:28:16+08:00",
-      "last_seen_at": "2026-08-15T10:17:02+08:00"
+      "last_seen_at": "2026-08-16T10:25:23+08:00"
     },
     {
       "source": "arxiv",
@@ -467,7 +526,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-14T11:28:16+08:00",
-      "last_seen_at": "2026-08-15T10:17:02+08:00"
+      "last_seen_at": "2026-08-16T10:25:23+08:00"
     },
     {
       "source": "arxiv",
@@ -491,7 +550,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-14T11:28:16+08:00",
-      "last_seen_at": "2026-08-15T10:17:02+08:00"
+      "last_seen_at": "2026-08-16T10:25:23+08:00"
     },
     {
       "source": "arxiv",
@@ -522,7 +581,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-14T11:28:16+08:00",
-      "last_seen_at": "2026-08-15T10:17:02+08:00"
+      "last_seen_at": "2026-08-16T10:25:23+08:00"
     },
     {
       "source": "arxiv",
@@ -550,7 +609,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-14T11:28:16+08:00",
-      "last_seen_at": "2026-08-15T10:17:02+08:00"
+      "last_seen_at": "2026-08-16T10:25:23+08:00"
     },
     {
       "source": "arxiv",
@@ -580,7 +639,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-14T11:28:16+08:00",
-      "last_seen_at": "2026-08-15T10:17:02+08:00"
+      "last_seen_at": "2026-08-16T10:25:23+08:00"
     },
     {
       "source": "arxiv",
@@ -607,7 +666,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-14T11:28:16+08:00",
-      "last_seen_at": "2026-08-15T10:17:02+08:00"
+      "last_seen_at": "2026-08-16T10:25:23+08:00"
     },
     {
       "source": "arxiv",
@@ -5737,7 +5796,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-07-31T12:26:08+08:00",
-      "last_seen_at": "2026-08-15T10:17:02+08:00"
+      "last_seen_at": "2026-08-16T10:25:23+08:00"
     },
     {
       "source": "arxiv",
@@ -10952,7 +11011,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-07-20T12:38:34+08:00",
-      "last_seen_at": "2026-08-15T10:17:02+08:00"
+      "last_seen_at": "2026-08-16T10:25:23+08:00"
     },
     {
       "source": "arxiv",
@@ -12826,7 +12885,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00"
+      "last_seen_at": "2026-08-16T10:25:23+08:00"
     },
     {
       "source": "semanticscholar",
@@ -12853,7 +12912,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-07-16T12:11:20+08:00",
-      "last_seen_at": "2026-07-21T12:18:00+08:00"
+      "last_seen_at": "2026-08-16T10:25:23+08:00"
     },
     {
       "source": "semanticscholar",
@@ -13468,7 +13527,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-15T10:17:02+08:00",
+      "last_seen_at": "2026-08-16T10:25:23+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -13493,7 +13552,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-15T10:17:02+08:00",
+      "last_seen_at": "2026-08-16T10:25:23+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -13519,7 +13578,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-15T10:17:02+08:00",
+      "last_seen_at": "2026-08-16T10:25:23+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -13548,7 +13607,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-15T10:17:02+08:00",
+      "last_seen_at": "2026-08-16T10:25:23+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -13575,7 +13634,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-07-14T09:53:57+08:00",
+      "last_seen_at": "2026-08-16T10:25:23+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -13604,7 +13663,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-15T10:17:02+08:00",
+      "last_seen_at": "2026-08-16T10:25:23+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -13634,7 +13693,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-15T10:17:02+08:00",
+      "last_seen_at": "2026-08-16T10:25:23+08:00",
       "promoted_tier": "C",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -13670,7 +13729,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-15T10:17:02+08:00",
+      "last_seen_at": "2026-08-16T10:25:23+08:00",
       "promoted_tier": "A",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -13746,7 +13805,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-15T10:17:02+08:00",
+      "last_seen_at": "2026-08-16T10:25:23+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -13773,7 +13832,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-15T10:17:02+08:00",
+      "last_seen_at": "2026-08-16T10:25:23+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -13803,7 +13862,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-15T10:17:02+08:00",
+      "last_seen_at": "2026-08-16T10:25:23+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -13834,7 +13893,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-15T10:17:02+08:00",
+      "last_seen_at": "2026-08-16T10:25:23+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-14T17:32:32+08:00"
     },
@@ -13917,12 +13976,12 @@
       ],
       "status": "skipped",
       "first_seen_at": "2026-07-14T09:53:57+08:00",
-      "last_seen_at": "2026-08-15T10:17:02+08:00",
+      "last_seen_at": "2026-08-16T10:25:23+08:00",
       "skip_reason": "noise / weak harness sense"
     }
   ],
   "last_run": {
-    "at": "2026-08-15T10:17:02+08:00",
+    "at": "2026-08-16T10:25:23+08:00",
     "sources": [
       "arxiv",
       "semanticscholar",
@@ -13934,7 +13993,7 @@
       "test-time harness evolution"
     ],
     "fetched": 66,
-    "merged": 35,
-    "new": 0
+    "merged": 37,
+    "new": 2
   }
 }
