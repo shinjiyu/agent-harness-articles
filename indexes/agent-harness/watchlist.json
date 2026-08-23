@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "topic": "agent harness",
-  "updated_at": "2026-08-22T10:18:52+08:00",
+  "updated_at": "2026-08-23T10:26:48+08:00",
   "candidates": [
     {
       "source": "arxiv",
@@ -29,7 +29,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-21T10:27:14+08:00",
-      "last_seen_at": "2026-08-22T10:18:52+08:00"
+      "last_seen_at": "2026-08-23T10:26:48+08:00"
     },
     {
       "source": "arxiv",
@@ -63,7 +63,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-21T10:27:14+08:00",
-      "last_seen_at": "2026-08-22T10:18:52+08:00"
+      "last_seen_at": "2026-08-23T10:26:48+08:00"
     },
     {
       "source": "arxiv",
@@ -90,7 +90,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-21T10:27:14+08:00",
-      "last_seen_at": "2026-08-22T10:18:52+08:00"
+      "last_seen_at": "2026-08-23T10:26:48+08:00"
     },
     {
       "source": "arxiv",
@@ -123,7 +123,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-21T10:27:14+08:00",
-      "last_seen_at": "2026-08-22T10:18:52+08:00"
+      "last_seen_at": "2026-08-23T10:26:48+08:00"
     },
     {
       "source": "arxiv",
@@ -154,7 +154,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-21T10:27:14+08:00",
-      "last_seen_at": "2026-08-22T10:18:52+08:00"
+      "last_seen_at": "2026-08-23T10:26:48+08:00"
     },
     {
       "source": "arxiv",
@@ -182,7 +182,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-21T10:27:14+08:00",
-      "last_seen_at": "2026-08-22T10:18:52+08:00"
+      "last_seen_at": "2026-08-23T10:26:48+08:00"
     },
     {
       "source": "arxiv",
@@ -207,7 +207,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-21T10:27:14+08:00",
-      "last_seen_at": "2026-08-22T10:18:52+08:00"
+      "last_seen_at": "2026-08-23T10:26:48+08:00"
     },
     {
       "source": "arxiv",
@@ -234,7 +234,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-21T10:27:14+08:00",
-      "last_seen_at": "2026-08-22T10:18:52+08:00"
+      "last_seen_at": "2026-08-23T10:26:48+08:00"
     },
     {
       "source": "arxiv",
@@ -262,7 +262,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-21T10:27:14+08:00",
-      "last_seen_at": "2026-08-22T10:18:52+08:00"
+      "last_seen_at": "2026-08-23T10:26:48+08:00"
     },
     {
       "source": "arxiv",
@@ -290,7 +290,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-21T10:27:14+08:00",
-      "last_seen_at": "2026-08-22T10:18:52+08:00"
+      "last_seen_at": "2026-08-23T10:26:48+08:00"
     },
     {
       "source": "arxiv",
@@ -320,7 +320,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-21T10:27:14+08:00",
-      "last_seen_at": "2026-08-22T10:18:52+08:00"
+      "last_seen_at": "2026-08-23T10:26:48+08:00"
     },
     {
       "source": "arxiv",
@@ -345,7 +345,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-21T10:27:14+08:00",
-      "last_seen_at": "2026-08-22T10:18:52+08:00"
+      "last_seen_at": "2026-08-23T10:26:48+08:00"
     },
     {
       "source": "arxiv",
@@ -385,7 +385,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-21T10:27:14+08:00",
-      "last_seen_at": "2026-08-22T10:18:52+08:00"
+      "last_seen_at": "2026-08-23T10:26:48+08:00"
     },
     {
       "source": "arxiv",
@@ -415,7 +415,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-21T10:27:14+08:00",
-      "last_seen_at": "2026-08-22T10:18:52+08:00"
+      "last_seen_at": "2026-08-23T10:26:48+08:00"
     },
     {
       "source": "arxiv",
@@ -455,7 +455,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-21T10:27:14+08:00",
-      "last_seen_at": "2026-08-22T10:18:52+08:00"
+      "last_seen_at": "2026-08-23T10:26:48+08:00"
     },
     {
       "source": "arxiv",
@@ -481,7 +481,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-21T10:27:14+08:00",
-      "last_seen_at": "2026-08-22T10:18:52+08:00"
+      "last_seen_at": "2026-08-23T10:26:48+08:00"
     },
     {
       "source": "arxiv",
@@ -510,7 +510,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-21T10:27:14+08:00",
-      "last_seen_at": "2026-08-22T10:18:52+08:00"
+      "last_seen_at": "2026-08-23T10:26:48+08:00"
     },
     {
       "source": "arxiv",
@@ -543,7 +543,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-21T10:27:14+08:00",
-      "last_seen_at": "2026-08-22T10:18:52+08:00"
+      "last_seen_at": "2026-08-23T10:26:48+08:00"
     },
     {
       "source": "arxiv",
@@ -567,7 +567,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-21T10:27:14+08:00",
-      "last_seen_at": "2026-08-22T10:18:52+08:00"
+      "last_seen_at": "2026-08-23T10:26:48+08:00"
     },
     {
       "source": "dblp",
@@ -594,7 +594,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-21T10:27:14+08:00",
-      "last_seen_at": "2026-08-22T10:18:52+08:00"
+      "last_seen_at": "2026-08-23T10:26:48+08:00"
     },
     {
       "source": "dblp",
@@ -618,7 +618,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-21T10:27:14+08:00",
-      "last_seen_at": "2026-08-22T10:18:52+08:00"
+      "last_seen_at": "2026-08-23T10:26:48+08:00"
     },
     {
       "source": "arxiv",
@@ -7046,7 +7046,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-05T12:18:13+08:00",
-      "last_seen_at": "2026-08-22T10:18:52+08:00"
+      "last_seen_at": "2026-08-23T10:26:48+08:00"
     },
     {
       "source": "semanticscholar",
@@ -7089,7 +7089,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-05T12:18:13+08:00",
-      "last_seen_at": "2026-08-22T10:18:52+08:00"
+      "last_seen_at": "2026-08-23T10:26:48+08:00"
     },
     {
       "source": "semanticscholar",
@@ -7123,7 +7123,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-05T12:18:13+08:00",
-      "last_seen_at": "2026-08-22T10:18:52+08:00"
+      "last_seen_at": "2026-08-23T10:26:48+08:00"
     },
     {
       "source": "arxiv",
@@ -8579,7 +8579,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-07-31T12:26:08+08:00",
-      "last_seen_at": "2026-08-22T10:18:52+08:00"
+      "last_seen_at": "2026-08-23T10:26:48+08:00"
     },
     {
       "source": "arxiv",
@@ -13794,7 +13794,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-07-20T12:38:34+08:00",
-      "last_seen_at": "2026-08-22T10:18:52+08:00"
+      "last_seen_at": "2026-08-23T10:26:48+08:00"
     },
     {
       "source": "arxiv",
@@ -14151,7 +14151,7 @@
       ],
       "status": "promoted",
       "first_seen_at": "2026-07-21T17:15:25+08:00",
-      "last_seen_at": "2026-08-22T10:18:52+08:00",
+      "last_seen_at": "2026-08-23T10:26:48+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-21T17:18:19+08:00"
     },
@@ -14254,7 +14254,7 @@
       ],
       "status": "promoted",
       "first_seen_at": "2026-07-21T17:15:25+08:00",
-      "last_seen_at": "2026-08-22T10:18:52+08:00",
+      "last_seen_at": "2026-08-23T10:26:48+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-21T17:18:19+08:00"
     },
@@ -14323,7 +14323,7 @@
       ],
       "status": "promoted",
       "first_seen_at": "2026-07-21T17:15:25+08:00",
-      "last_seen_at": "2026-08-22T10:18:52+08:00",
+      "last_seen_at": "2026-08-23T10:26:48+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-21T17:18:19+08:00"
     },
@@ -14351,7 +14351,7 @@
       ],
       "status": "promoted",
       "first_seen_at": "2026-07-21T17:15:25+08:00",
-      "last_seen_at": "2026-08-22T10:18:52+08:00",
+      "last_seen_at": "2026-08-23T10:26:48+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-21T17:18:19+08:00"
     },
@@ -14386,7 +14386,7 @@
       ],
       "status": "promoted",
       "first_seen_at": "2026-07-21T17:15:25+08:00",
-      "last_seen_at": "2026-08-22T10:18:52+08:00",
+      "last_seen_at": "2026-08-23T10:26:48+08:00",
       "promoted_tier": "B",
       "promoted_at": "2026-07-21T17:18:19+08:00"
     },
@@ -15373,7 +15373,7 @@
       ],
       "status": "already_indexed",
       "first_seen_at": "2026-07-16T17:52:46+08:00",
-      "last_seen_at": "2026-08-22T10:18:52+08:00",
+      "last_seen_at": "2026-08-23T10:26:48+08:00",
       "promoted_tier": "A",
       "promoted_at": "2026-07-16T17:53:42+08:00"
     },
@@ -15758,7 +15758,7 @@
     }
   ],
   "last_run": {
-    "at": "2026-08-22T10:18:52+08:00",
+    "at": "2026-08-23T10:26:48+08:00",
     "sources": [
       "arxiv",
       "semanticscholar",
