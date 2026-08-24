@@ -1,0 +1,498 @@
+{
+  "date": "2026-08-24",
+  "run": {
+    "at": "2026-08-24T10:25:17+08:00",
+    "sources": [
+      "arxiv",
+      "semanticscholar",
+      "dblp"
+    ],
+    "keywords": [
+      "agent harness",
+      "\"LLM agent\" harness",
+      "test-time harness evolution"
+    ],
+    "fetched": 76,
+    "merged": 45,
+    "new": 16
+  },
+  "new_candidates": [
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.21345",
+      "arxiv_version": "v1",
+      "title": "Asymmetric Capacity Allocation in Self-Refinement Pipelines",
+      "authors": [
+        "Zhuoyi Yang",
+        "Ian G. Harris",
+        "Salar Hashemitaheri",
+        "Cassie Huang",
+        "Yuangang Li",
+        "Hyunwoo Oh",
+        "Paul Dourish",
+        "Tony Givargis",
+        "Mohsen Imani",
+        "Li Zhang"
+      ],
+      "published": "2026-08-21",
+      "url": "https://arxiv.org/abs/2608.21345",
+      "abstract": "Self-refinement, typically structured as generation, critique, and revision, is a widely adopted paradigm for improving LLM generation and serves as a core mechanism in many LLM agents. While the three stages involve different cognitive demands, most existing approaches conveniently treat the model size as an implementation detail rather than a subject of study, which may lead to a waste of resources. Little work has systematically examined how model size affects each stage or whether effective self-refinement requires equally capable models for generation, critique, and revision. We present the first stage-wise model size study of the self-refinement pipeline on 5 benchmarks from different domains using 6 model sizes of Qwen3 and 4 model sizes of Gemma 3. We conclude that larger generators and refiners generally improve the pipeline, whereas an undersized refiner can even harm performance. Second, performance is highly insensitive to the size of the critic, although including even a small critic consistently outperforms omitting critique altogether. Our findings demonstrate that model capacity should not be allocated uniformly across self-refinement pipelines. Instead, different stages exhibit distinct size scaling characteristics, providing practical guidance for designing more computationally efficient multi-stage language model systems.",
+      "external_ids": [
+        "arxiv:2608.21345"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-24T10:25:17+08:00",
+      "last_seen_at": "2026-08-24T10:25:17+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.21310",
+      "arxiv_version": "v1",
+      "title": "Beyond Fault Localization: A Trajectory-Level Study of LLM Agents for Microservice Root Cause Analysis",
+      "authors": [
+        "Qisheng Lu",
+        "Aoyang Fang",
+        "Junjielong Xu",
+        "Jin'ao Shang",
+        "Songhan Zhang",
+        "Yifan Yang",
+        "Xiaochuan Yan",
+        "Pinjia He"
+      ],
+      "published": "2026-08-21",
+      "url": "https://arxiv.org/abs/2608.21310",
+      "abstract": "Existing evaluations of automated root cause analysis (RCA) for microservices assess diagnostic performance mainly by endpoint correctness: whether a method localizes the responsible service. This criterion enables comparison but does not reveal the evidentiary basis of a diagnosis or the fault-propagation route connecting the source to observed symptoms, both of which an on-call site reliability engineer needs to judge whether action is warranted. We therefore treat RCA as an observable diagnostic process. Our trajectory-level framework evaluates agent executions against manually curated service-level fault-propagation paths. Applied to a public microservice RCA benchmark, it analyzes 3,500 diagnostic trajectories, characterizing where agents investigate and how they use retrieved telemetry. We find a disconnect between answer correctness and diagnostic quality: an agent may localize the fault source yet fail to reconstruct its propagation. Successful investigations stay on the fault-impact surface, act on retrieved evidence, and broaden their query repertoire as the search deepens. Failures arise when decisive evidence is omitted, retrieved evidence is misinterpreted, or unsupported inference substitutes for missing evidence. We operationalize this taxonomy as DiagGuard, a two-stage defense-in-depth architecture in which grounding surveys available observations before localization and verification audits the diagnosis against them. In an independent setting with a different model, benchmark, and service topology, DiagGuard raises Acc@1 from 43.5% to 52.5%. These results show that trajectory-level evaluation exposes limitations hidden by final-answer metrics and provides actionable guidance for improving automated RCA.",
+      "external_ids": [
+        "arxiv:2608.21310"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-24T10:25:17+08:00",
+      "last_seen_at": "2026-08-24T10:25:17+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.21276",
+      "arxiv_version": "v1",
+      "title": "The Coastline as a Structural Constraint: Harnessing Scene Geometry for Autonomous Surface Vessel Localization",
+      "authors": [
+        "Derek R. Benham",
+        "Joshua G. Mangelson"
+      ],
+      "published": "2026-08-21",
+      "url": "https://arxiv.org/abs/2608.21276",
+      "abstract": "Coastal environments contain rich, largely unexploited geometric structure capable of providing globally referenced localization cues. In this work, we present two complementary localization frameworks that exploit shoreline and water-surface geometry for GPS-denied autonomous surface vessel localization. The first framework leverages LiDAR observations of the water surface to estimate roll, pitch, and heave (vertical motion), while recovering global position and heading through direct registration of shoreline observations against a satellite-derived coastline map. The second framework relies solely on passive imagery to detect the shoreline and horizon through semantic segmentation. Using the proposed coastal scene geometry, shoreline distance is inferred from monocular imagery. Shoreline observations are accumulated into short-duration local submaps, registered against the same satellite-derived coastline map, and fused within a hierarchical factor graph. Evaluated across three real-world coastal datasets, the LiDAR pipeline consistently improves trajectory accuracy over standard baselines, while the monocular architecture maintains bounded long-term drift. In addition, we establish that modern zero-shot foundation models can reliably extract shoreline observations across diverse coastal environments. Together, these results demonstrate that coastal geometry provides a powerful and dependable source of globally referenced information for GPS-denied maritime localization.",
+      "external_ids": [
+        "arxiv:2608.21276"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-24T10:25:17+08:00",
+      "last_seen_at": "2026-08-24T10:25:17+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.21230",
+      "arxiv_version": "v1",
+      "title": "Utility Under Attack: Agent Memory Poisoning and the Limits of Content Screening and Provenance Ranking",
+      "authors": [
+        "Arulnidhi Karunanidhi"
+      ],
+      "published": "2026-08-21",
+      "url": "https://arxiv.org/abs/2608.21230",
+      "abstract": "Persistent memory makes false information durable: once a false statement is stored, it can be retrieved into future sessions that match it. We measure the cost of this failure mode using plainly worded false assertions generated in a single pass, with no instruction, trigger, or retriever optimization. Poisoning 1.2% of a LongMemEval corpus reduces accuracy from 0.850 to 0.300. A four-stage write-time screening pipeline that reaches 0.832 recall on indirect prompt injection while flagging 1.5% of trigger-word-laden benign text rejects 0 of 360 poisoned memories. We argue this exposes a boundary of content-only screening: distinguishing a false assertion from a true one generally requires external grounding beyond the text itself. We then evaluate provenance-weighted retrieval. The shipped weight is statistically indistinguishable from no defense (p=0.80), while a stronger weight recovers utility only by excluding untrusted content. In a mixed-provenance corpus where untrusted content is mostly benign, accuracy rises from 0.3167 to 0.7000; when the answer-bearing evidence itself arrives untrusted, evidence recall falls to zero and accuracy to 0.0417. Under the measured similarity regime, the additive provenance term has no usable setting: a weight strong enough to resist query-shaped poison is also strong enough to suppress legitimate untrusted evidence. We therefore argue for bounded occupancy constraints at retrieval rather than additive provenance penalties, and release the harnesses, corpora, and aggregate run reports.",
+      "external_ids": [
+        "arxiv:2608.21230"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-24T10:25:17+08:00",
+      "last_seen_at": "2026-08-24T10:25:17+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.21209",
+      "arxiv_version": "v1",
+      "title": "Personalized Privacy Control in LLMs via Attention Head Intervention",
+      "authors": [
+        "Junseok Kim",
+        "Nakyeong Yang",
+        "Kyomin Jung"
+      ],
+      "published": "2026-08-21",
+      "url": "https://arxiv.org/abs/2608.21209",
+      "abstract": "The rise of agentic AI enables LLMs to access diverse user data, raising critical privacy concerns. Prior work on contextual privacy studies whether LLMs regulate information disclosure according to context-dependent norms. However, acceptable disclosure boundaries may vary across users even within the same context. To address this limitation, we introduce \\textit{personalized privacy}, which incorporates user-specific disclosure preferences into privacy control. We further present P3Bench~(\\textbf{P}ersonalized \\textbf{P}rivacy \\textbf{P}reservation \\textbf{Bench}mark), a novel benchmark extending contextual privacy policies with personalized disclosure policies. Experiments show that prompt-based policies fail to reliably enforce personalized privacy policies, with Qwen2.5-7B and Gemma3-4B showing average policy ignorance ratios of 51.25\\% and 74.28\\%, respectively. Finally, to address this problem, we propose \\textsc{Repair}, a robust inference-time attention head intervention method that adjusts disclosure behavior toward policy-consistent responses. Our method significantly improves adherence to user-specific privacy preferences by reducing cases where the model fails to follow the given policy.",
+      "external_ids": [
+        "arxiv:2608.21209"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-24T10:25:17+08:00",
+      "last_seen_at": "2026-08-24T10:25:17+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.21156",
+      "arxiv_version": "v1",
+      "title": "Graph Engineering in the Era of LLM Agents: From Individual Intelligence to System Intelligence",
+      "authors": [
+        "Yuyuan Feng",
+        "Zhishang Xiang",
+        "Chaobin Yang",
+        "Qichao Ma",
+        "Zerui Chen",
+        "Yujing Zhang",
+        "Ke Huang",
+        "Chuanjie Wu",
+        "Zhaoxu Liu",
+        "Yili Wang",
+        "Xin He",
+        "Jiapu Wang",
+        "Zijin Hong",
+        "Hao Chen",
+        "Yuanchen Bei",
+        "Kun Wang",
+        "Shengyuan Chen",
+        "Ningyu Zhang",
+        "Enyan Dai",
+        "Linhao Luo",
+        "Qingyi Pan",
+        "Qi Wang",
+        "Wenqi Fan",
+        "Guangjing Wang",
+        "Na Zou",
+        "Yangqiu Song",
+        "Xin Wang",
+        "Zechao Li",
+        "Xia Hu",
+        "Qing Li",
+        "Xiao Huang",
+        "Zhihong Zhang",
+        "Jinsong Su",
+        "Qinggang Zhang",
+        "Yi Chang"
+      ],
+      "published": "2026-08-21",
+      "url": "https://arxiv.org/abs/2608.21156",
+      "abstract": "LLMs have evolved from language generators to autonomous agents capable of complex, long-horizon tasks. This evolution has produced paradigms including Prompt Engineering to elicit model capabilities, Context Engineering to manage information access, Harness Engineering to organize external tools and resources, and Loop Engineering to support continual reflection and self-improvement. Yet as tasks grow more complex, individual intelligence faces a fundamental limit: many tasks require heterogeneous expertise, interdependent subtasks, parallel execution, independent verification, and persistent state, exceeding any single agent's organizational capacity. Augmenting one agent's capabilities or context cannot resolve this architectural mismatch; intelligence must instead be distributed across specialized agents and organized at the system level. We call this System Intelligence: an agent system's ability to organize and coordinate multiple intelligent components into a coherent, adaptive whole pursuing a shared objective. Achieving it requires more than adding agents; it demands explicit structures to organize work, coordinate heterogeneous agents, and maintain evolving execution states. We introduce Graph Engineering, an emerging paradigm for next-generation agent systems. Unlike prior paradigms that mainly optimize individual interactions or agent-level behavior, Graph Engineering constructs explicit, dynamic, evolving graph structures representing tasks, agents, and system states. These abstractions provide a unified foundation for organizing complex objectives, orchestrating heterogeneous agents, modeling system dynamics, and enabling scalable agent evolution. We systematically review the principles, methodologies, and applications of Graph Engineering for LLM agents. Related papers, open-source data, and projects are collected at https://github.com/DEEP-JLU/Awesome-Graph-Engineering.",
+      "external_ids": [
+        "arxiv:2608.21156"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-24T10:25:17+08:00",
+      "last_seen_at": "2026-08-24T10:25:17+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.21126",
+      "arxiv_version": "v1",
+      "title": "TraceGrant: A Contract-Governed Security Framework for the Task-Effect Lifecycle of Networked LLM Agents",
+      "authors": [
+        "Bohao Liao",
+        "Jingchao Wang",
+        "Qipeng Song",
+        "Jin Cao",
+        "Jieling Wang",
+        "Boyu Deng"
+      ],
+      "published": "2026-08-21",
+      "url": "https://arxiv.org/abs/2608.21126",
+      "abstract": "Networked large language model (LLM) agents retrieve information from email, cloud storage, calendars, transaction platforms, and Web services to complete multistep tasks that produce persistent external effects. The same content needed for legitimate execution may also contain indirect prompt injections that redirect tool use, alter sensitive arguments, or disrupt task completion. Existing defenses mainly constrain untrusted content or individual tool calls, leaving user intent, runtime evidence, realized effects, and task completion insufficiently connected. We present TraceGrant, a security framework that governs the task-effect lifecycle of networked LLM agents through an explicit Contract. Before execution, TraceGrant establishes a task-effect boundary from the trusted user request. During execution, admitted evidence can instantiate only authority already established by the Contract. After execution, task completion is verified against actual tool results. Across 949 AgentDojo and 400 Agent Security Bench attack cases under fixed benchmark settings, TraceGrant recorded no attack successes while retaining utility under attack rates of 77.32% and 83.00%, respectively. We further evaluate TraceGrant through white-box defense-aware attacks, Contract quality analysis, stage ablations, targeted stress tests, and runtime overhead measurements. The results show that TraceGrant provides a unified governance layer that connects trusted user intent, runtime evidence, concrete tool execution, and verified task completion.",
+      "external_ids": [
+        "arxiv:2608.21126"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-24T10:25:17+08:00",
+      "last_seen_at": "2026-08-24T10:25:17+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.21107",
+      "arxiv_version": "v1",
+      "title": "Large Language Models at the Intersection of Software Engineering and Software Security:An Evidence-Centered Structured Survey and Research Agenda",
+      "authors": [
+        "Wei Lin",
+        "Tao Zhou",
+        "Zhaofei Xie",
+        "Changgui Hong"
+      ],
+      "published": "2026-08-21",
+      "url": "https://arxiv.org/abs/2608.21107",
+      "abstract": "Large Language Models (LLMs) are moving from code completion toward repository-scale agents that retrieve context, edit files, execute tools, and participate in security-sensitive workflows. The evidence for these systems, however, remains divided between software engineering evaluations centered on functional task completion and software security evaluations centered on vulnerability detection, secure generation, or exploit-oriented validation. This evidence-centered structured survey synthesizes representative work available through May 31, 2026 across software engineering tasks, software security tasks, adaptation mechanisms, artifact granularity, and evaluation design. In addition to a task taxonomy, we introduce an assurance framework that separates functional correctness, security, operational reliability, evidence provenance, and agent authority. The review shows that execution feedback and repository access can substantially improve engineering task completion, but do not by themselves establish security; conversely, static-analysis labels or vulnerability-classification scores rarely establish deployable correctness. We identify recurring validity threats--weak test oracles, duplicated and temporally leaked data, changing agent harnesses, proxy-only security checks, and under-reported budgets and human intervention--and derive a minimum reporting protocol for cross-study comparison. The resulting research agenda prioritizes jointly secure-and-functional benchmarks, repository-scale threat models, calibrated human oversight, longitudinal maintainability evidence, and reproducible agent evaluation. The central conclusion is that model capability should be judged as an assurance case supported by task-appropriate evidence, rather than by a single benchmark score.",
+      "external_ids": [
+        "arxiv:2608.21107"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-24T10:25:17+08:00",
+      "last_seen_at": "2026-08-24T10:25:17+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.21101",
+      "arxiv_version": "v1",
+      "title": "ClawSentry: A Progressive Multi-Tier Security Monitor for Safeguarding Autonomous LLM Agents",
+      "authors": [
+        "Kai Wang",
+        "Zeming Wei",
+        "BiaoJie Zeng",
+        "Chang Jin",
+        "An Wang",
+        "Xiaokun Luan",
+        "Zhixiao Lin",
+        "Jingjing Qu",
+        "Xia Hu",
+        "Xingcheng Xu"
+      ],
+      "published": "2026-08-21",
+      "url": "https://arxiv.org/abs/2608.21101",
+      "abstract": "As large language model (LLM) agents move from conversation to executing code, reading local files, and orchestrating external tools, a single agent hijacked by a malicious third-party skill can cause data exfiltration, privilege escalation, or cascading compromise. We argue that agentic risk is progressive: it can enter at four loci of the agent control loop--skill admission, invocation-time intent, execution-time effect, and post-action consequence--while a denied dangerous objective can reappear across surface forms, tools, or turns; existing safeguards are typically local to one lifecycle boundary or one call. Guided by this threat model, we present ClawSentry, an open-source, framework-agnostic security supervision gateway for agent runtimes. Before a skill package is ever executed, First-use Skill Package Review (FSPR) audits it under a deterministic evidence floor, escalating unresolved cases to bounded read-only agentic review (locus A). At runtime, a three-tier progressive decision engine--a deterministic L1 layer, a rule-anchored L2 semantic reviewer, and a read-only L3 evidence-seeking agent--spends contextual review only on the residual ambiguity, while a session-level anti-bypass mechanism recognizes tool-switching and rephrased retries (loci B--C); a post-action path feeds high-severity evidence non-retroactively into later review (locus D). An Agent Harness Protocol (AHP) abstraction applies one policy across Codex, Claude Code, Kimi CLI, and Gemini CLI without modifying agent internals. On SkillInject with Codex/GPT-5.4, contextual ASR falls from 39.55% to 2.61% while contextual TSR moves only from 83.78% to 83.05%. Across five Work Agents on the full SkillsSafety benchmark, ClawSentry confines ASR to 9.09--15.03% from 33.5--49.7% unprotected, and aggregate TSR on clean skills remains 98.7%.",
+      "external_ids": [
+        "arxiv:2608.21101"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-24T10:25:17+08:00",
+      "last_seen_at": "2026-08-24T10:25:17+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.21027",
+      "arxiv_version": "v1",
+      "title": "Don't Solve, Just Compare: Tiny Advisors for Runtime Intervention in LLM Agents",
+      "authors": [
+        "Yanze Jiang",
+        "Mingxuan Li",
+        "Yuhao Wang",
+        "Shengfang Zhai",
+        "Jiaheng Zhang"
+      ],
+      "published": "2026-08-21",
+      "url": "https://arxiv.org/abs/2608.21027",
+      "abstract": "LLM agents are emerging as an important paradigm for real-world tasks that require reasoning, tool use, and sequential decision-making. As these agents operate over longer horizons, runtime intervention offers a way to improve reliability without retraining the underlying actor. Failure detection alone is insufficient. Effective intervention must also provide a useful direction for recovery. Existing approaches often rely on an expert solver or a critic that generates task-specific corrections, incurring either the cost of another capable solver or the capacity demands of a task-capable critic. We introduce Comparison-Only Tiny Advisor (COTA), a comparison-only framework for constructive runtime intervention. In COTA, a tiny comparator judges whether sampled alternatives lead to better continuations than the actor's proposal, and repeated comparisons determine when intervention is warranted. We train the comparator using pairwise supervision constructed from same-prefix counterfactual branches. Preferred alternatives are returned as non-binding advice, leaving the original actor to replan. Across WebShop, ALFWorld, and tau^3-Retail with three actors, COTA improves all nine evaluation settings and outperforms the compared baselines. These results show that constructive runtime intervention can remain effective even when the auxiliary model has substantially weaker task-solving capability than the actor.",
+      "external_ids": [
+        "arxiv:2608.21027"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-24T10:25:17+08:00",
+      "last_seen_at": "2026-08-24T10:25:17+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.20851",
+      "arxiv_version": "v1",
+      "title": "BC-Bench: Evaluating Agentic Engineering in a Domain-Specific Language for ERP",
+      "authors": [
+        "Haoran Sun",
+        "Klaus Marius Hansen"
+      ],
+      "published": "2026-08-21",
+      "url": "https://arxiv.org/abs/2608.20851",
+      "abstract": "Agentic engineering systems have shown strong performance on general-purpose benchmarks, yet their effectiveness in enterprise resource planning (ERP) domain-specific languages (DSLs) remains underexplored. We introduce BC-Bench, a benchmark designed to evaluate agentic engineering on real-world tasks in AL, the DSL for Microsoft Dynamics 365 Business Central. BC-Bench comprises 101 manually curated tasks extracted from two Microsoft-owned production repositories, reflecting authentic ERP development workflows. Adapting the SWE-Bench methodology, we address the unique constraints of the AL ecosystem---including limited public resources and complex environment provisioning. Beyond generating functional code, BC-Bench evaluates test generation and supports multimodal problem statements where visual context is commonly present. We evaluate multiple frontier models across two agent harnesses, utilizing multi-run metrics to account for nondeterminism. In the Bug Fixing category, under our evaluated settings, between-model differences in resolution rate are larger than differences between the two evaluated agent harnesses, and improvements reported on general-purpose benchmarks do not consistently transfer to AL. These results highlight the need for domain-specific evaluation.",
+      "external_ids": [
+        "arxiv:2608.20851"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-24T10:25:17+08:00",
+      "last_seen_at": "2026-08-24T10:25:17+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.20847",
+      "arxiv_version": "v1",
+      "title": "Non-Hermitian sensing via end-to-end Green's functions",
+      "authors": [
+        "Hui-Qiang Liang",
+        "Yu-Shi Cheng",
+        "Guo-Fu Xu"
+      ],
+      "published": "2026-08-21",
+      "url": "https://arxiv.org/abs/2608.20847",
+      "abstract": "Sensing hinges on two key attributes: high sensitivity and resilience to noise. Here, we present a scheme that unites these features within a single framework. By harnessing the exponential amplification of end-to-end Green's functions-a direct signature of the non-Hermitian skin effect-our scheme achieves an exponential sensitivity scaling of exp(αL) with α a model-specific constant and L the system size. Notably, this enhanced sensitivity is protected by spectral winding numbers and endures under disorder when the non-Hermitian topological phase remains intact. We also explore its feasibility in synthetic non-Hermitian platforms, providing a pathway toward highly sensitive and noise-tolerant sensing.",
+      "external_ids": [
+        "arxiv:2608.20847"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-24T10:25:17+08:00",
+      "last_seen_at": "2026-08-24T10:25:17+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.20729",
+      "arxiv_version": "v1",
+      "title": "Calibrating Criterion Revision in LLM Agents: Failure Modes and a Trace-Anchored Protocol",
+      "authors": [
+        "Guodong Xu"
+      ],
+      "published": "2026-08-21",
+      "url": "https://arxiv.org/abs/2608.20729",
+      "abstract": "Language-model agents can improve after failure or carry text across episodes without revising what counts as success. We study the narrower attribution problem of criterion revision: when criterion K0 accepts an outcome violating a broader commitment B, what observations justify saying that the system formed and persistently used K1? We require five non-compensatory conditions: criterion-failure detection, a model-emitted proposal, new-episode transfer, intervention sensitivity on the claimed carrier, and preservation. We evaluate CMB-0.1 on twelve cross-domain cases and four arms: stateless inference, append-only history, model-generated but harness-committed state, and evaluator-written oracle state. Seven mechanism fixtures yield 84 deterministic scorer trials; four local quantized artifacts yield 96 calls and 192 model-case-arm trials. No model trial satisfies all five conditions, but this zero does not establish general capability absence. Eleven calls remain invalid after one retry; several commitments disclose the target distinction; the harness performs commits; deletion reuses a stateless call; and conflict changes multiple factors. Qwen2.5-7B answers every transfer and preservation item without revision state, exposing zero-state reconstruction. These failures make CMB-0.1 an instrument-calibration result rather than a model ranking. We derive a prospective, trace-anchored CMB-0.4 protocol requiring concealed transfer, explicit WRITE/NO-WRITE/ESCALATE actions, a separately logged policy-selected commit, matched interventions, repeated hidden items, and a frozen executable oracle. It is a successor design, not a completed confirmatory result. The paper contributes a measurement chain, an empirical diagnosis of its first implementation, and a more discriminating protocol for future tests of criterion revision.",
+      "external_ids": [
+        "arxiv:2608.20729"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-24T10:25:17+08:00",
+      "last_seen_at": "2026-08-24T10:25:17+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.20688",
+      "arxiv_version": "v1",
+      "title": "VortexChat: An agentic framework for autonomous multi-objective integrated photonic design",
+      "authors": [
+        "Faqian Chong",
+        "Yulun Wu",
+        "Shilong Li",
+        "Andrew Forbes",
+        "Hongsheng Chen",
+        "Song Han"
+      ],
+      "published": "2026-08-21",
+      "url": "https://arxiv.org/abs/2608.20688",
+      "abstract": "The advancement of modern integrated photonics is frequently bottlenecked by device design workflows that rely heavily on manual simulation and expert intuition. While inverse design offers an alternative, it remains constrained by expert supervision and a lack of end-to-end automation. To address these issues, we present VortexChat, an agentic framework for the autonomous, end-to-end inverse design of integrated photonic devices directly from natural language specifications. VortexChat couples a large language model (LLM) decision agent with topology generation, gradient-based refinement, and full-wave electromagnetic simulation. This closed-loop architecture enables the system to iteratively decompose design objectives, orchestrate computational tools, and update strategies based on feedback with minimal human intervention. Constrained by the absolute metrics of the Vortex100 Benchmark, VortexChat autonomously generates devices that strictly meet all predefined performance thresholds without any human-in-the-loop. As an experimental demonstration, we fabricated a broadband terahertz perfect vortex beam multiplexer, autonomously designed by VortexChat, with measurements confirming high-efficiency operation, high mode purity and low inter-channel crosstalk in agreement with full-wave simulations. These results demonstrate that an LLM agent can assume key aspects of expert decision-making in photonic inverse design while maintaining physical fidelity and fabrication feasibility, providing a scalable route towards autonomous design of complex integrated photonic systems.",
+      "external_ids": [
+        "arxiv:2608.20688"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-24T10:25:17+08:00",
+      "last_seen_at": "2026-08-24T10:25:17+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.20658",
+      "arxiv_version": "v1",
+      "title": "The Claws in Plain Sight: Unauthorized Context Disclosure through LLM Agent Tool Calls",
+      "authors": [
+        "Ben Dong",
+        "Zhonghao Guo",
+        "Tianyi Lu",
+        "Qian Wang"
+      ],
+      "published": "2026-08-21",
+      "url": "https://arxiv.org/abs/2608.20658",
+      "abstract": "LLM agents routinely construct tool-call arguments from user profiles, conversation history, retrieved documents, and prior tool results. However, legitimate access to contextual information does not imply authorization to transmit that information for every purpose or destination. We present Claw in Plain Sight, an authority- pressure attack in which task-adjacent content frames protected attributes as operationally or procedurally required, causing a model to include them in otherwise valid generated arguments. We evaluate Claw in Plain Sight using a controlled synthetic benchmark that crosses six pressure levels with four privacy-policy levels across five DeepSeek and Claude model configurations, producing 120 calls. Across the complete pressure-policy matrix, session-level disclosure rates range from 20.8% to 75.0% among the tested models. Stronger privacy instructions reduce aggregate disclosure but do not eliminate it consistently across models, showing that prompt-level policies do not provide a portable enforcement boundary. Our experiments use only synthetic profiles and capture proposed arguments locally; they measure policy-violating generation at the context-to-argument boundary, not completed network exfiltration or leakage from deployed users. These findings motivate purpose- and destination-aware inspection of generated tool arguments before execution.",
+      "external_ids": [
+        "arxiv:2608.20658"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-24T10:25:17+08:00",
+      "last_seen_at": "2026-08-24T10:25:17+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.20631",
+      "arxiv_version": "v1",
+      "title": "Weighted Memory Tree: Remembering What Matters for Long-Horizon LLM Agents",
+      "authors": [
+        "Quang Dao",
+        "Purvi Kathalkar",
+        "Kenneth Eaton"
+      ],
+      "published": "2026-08-21",
+      "url": "https://arxiv.org/abs/2608.20631",
+      "abstract": "Large language model (LLM) agents have demonstrated the ability to solve multi-step tasks requiring planning, tool use, and external information access, yet growing execution histories increase inference cost and expose reasoning to outdated, irrelevant, or misleading information, potentially degrading reasoning quality. Existing memory approaches organize or compress execution histories but provide limited mechanisms for deciding which memories remain active. We introduce the, a hierarchical memory system that organizes execution into tasks, subtasks, and actions while assigning each memory a dynamic retention score. Event-based updates and selection-based decay revise these scores, allowing WMT to preserve useful information, fold completed trajectories, suppress low-utility content, and retain access to folded context. We evaluate WMT on GAIA-Text using Qwen3-8B, Gemma 4 E4B, and Llama-3.1-8B, with ablations and memory-poisoning experiments. Relative to linear memory, WMT improves accuracy by an average of 9.97 percentage points while reducing prompt-token usage by 32.8%. Memory-poisoning experiments show that WMT limits the persistence and propagation of unreliable information. Our results suggest that effective long-horizon agent memory depends less on storing more information than on deciding which information should remain active.",
+      "external_ids": [
+        "arxiv:2608.20631"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-08-24T10:25:17+08:00",
+      "last_seen_at": "2026-08-24T10:25:17+08:00"
+    }
+  ]
+}
