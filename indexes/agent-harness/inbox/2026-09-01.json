@@ -1,0 +1,657 @@
+{
+  "date": "2026-09-01",
+  "run": {
+    "at": "2026-09-01T14:08:00+08:00",
+    "sources": [
+      "arxiv",
+      "semanticscholar",
+      "dblp"
+    ],
+    "keywords": [
+      "agent harness",
+      "\"LLM agent\" harness",
+      "test-time harness evolution"
+    ],
+    "fetched": 76,
+    "merged": 47,
+    "new": 19
+  },
+  "new_candidates": [
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.31161",
+      "arxiv_version": "v1",
+      "title": "Agentic research is oxymoronic",
+      "authors": [
+        "Natalie B. Hogg"
+      ],
+      "published": "2026-08-31",
+      "url": "https://arxiv.org/abs/2608.31161",
+      "abstract": "The use of agentic large language models obviates human interpretation of scientific results, and will lead to substantial distrust in the literature.",
+      "external_ids": [
+        "arxiv:2608.31161"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-01T14:08:00+08:00",
+      "last_seen_at": "2026-09-01T14:08:00+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.31111",
+      "arxiv_version": "v1",
+      "title": "Aspire: Can Models Self-Evolve from Vague Goals?",
+      "authors": [
+        "Yuhao Wu",
+        "Jingyuan Zhang",
+        "Jiajun Shi",
+        "Yuxuan Zhang",
+        "Xinping Lei",
+        "Junting Zhou",
+        "Zexuan Wang",
+        "Yuchen Wu",
+        "Huan Zhou",
+        "Duo Wang",
+        "Yinzhu Piao",
+        "Yongchang Peng",
+        "Yunfeng Shi",
+        "Jin Chen",
+        "Zuo Wang",
+        "Jinkai Liu",
+        "Jiaheng Liu",
+        "Wenxuan Zhang",
+        "Shen Yan",
+        "Wenhao Huang",
+        "Ge Zhang"
+      ],
+      "published": "2026-08-31",
+      "url": "https://arxiv.org/abs/2608.31111",
+      "abstract": "Many important forms of human learning begin with a vague goal, such as \"become a better physicist\" or \"improve at research.\" Learners must interpret the goal, identify capability gaps, decide how to learn, and determine whether they have actually improved. In contrast, existing work on LLM self-evolution typically begins with tasks and evaluation metrics specified by humans, reducing self-evolution to optimizing an explicit objective rather than deciding what and how to learn. We introduce ASPIRE, a benchmark for vague-goal-driven self-evolution. ASPIRE provides only a natural-language capability goal while downstream evaluation tasks remain hidden. The agent must operationalize the goal by choosing data and update methods, constructing training and validation signals, and deciding when to evaluate. ASPIRE supports both model-weight and agent-harness evolution in a unified interactive environment and evaluates the resulting systems on a hidden, expert-authored set of 520 items spanning six goals. Our experiments show that vague goals redirect search effort toward goal interpretation. Current agents routinely complete training and harness-editing loops, but weight-level gains remain sparse and unstable, and the strongest evolved harness remains below the engineered Qwen-Agent reference. Agents often train on mismatched data and trust narrow self-evaluations, so local gains fail to transfer to hidden evaluation and continued search and training can erase earlier improvements.",
+      "external_ids": [
+        "arxiv:2608.31111"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-01T14:08:00+08:00",
+      "last_seen_at": "2026-09-01T14:08:00+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.31082",
+      "arxiv_version": "v1",
+      "title": "Token-Efficient Data Reasoning Agents via Adaptive Structuring of Unstructured Data",
+      "authors": [
+        "Milad Rezaei Hajidehi",
+        "Qitong Wang",
+        "Stratos Idreos"
+      ],
+      "published": "2026-08-31",
+      "url": "https://arxiv.org/abs/2608.31082",
+      "abstract": "Valuable data remains embedded in unstructured sources: web pages, reports, contracts, filings, earnings calls, and PDFs. The big bet in enterprise AI is deploying LLM agents that reason over this data to answer complex questions for every knowledge worker. Agents can do this today, but at prohibitive cost. Each question repeatedly opens large documents to recover scattered evidence, consuming up to a million tokens. However, if the data were already structured, the same question would reduce to a cheap database lookup. For example, on FanOutQA benchmark, reasoning over an ideal pre-structured store is 28X cheaper, and the gap grows to orders of magnitude as questions fan out over more documents. Yet structuring everything in advance is not viable: documents hold vastly more possible structure than any workload will use, and the useful structure and documents are unknown until queries arrive. We propose agentic data cracking, a method that structures unstructured data adaptively and speculatively as a byproduct of reasoning itself. Structuring is adaptive because observed queries decide when it happens and what matters, and speculative because it goes beyond the current question. Whenever the agent opens a document to answer, a cracking sub-agent forks from the already-loaded context at marginal cost and extracts grounded structure likely to serve related future queries. Over time, an increasing share of queries is fully covered by structured data and answered without opening a document, keeping agentic accuracy at close to RAG cost. On FanOutQA, extended with merely one related question per test question, cracking cuts cost by 53% while preserving accuracy. Agentic data cracking is a first step toward next-generation data infrastructure for agentic reasoning over unstructured data: a shared substrate beneath the model where knowledge that reasoning already paid to uncover accumulates.",
+      "external_ids": [
+        "arxiv:2608.31082"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-01T14:08:00+08:00",
+      "last_seen_at": "2026-09-01T14:08:00+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.31077",
+      "arxiv_version": "v1",
+      "title": "Reconciling Process Supervision with Outcome-Based Credit in Agentic Policy Optimization",
+      "authors": [
+        "Jingxiao Yang",
+        "Wangjie Gan",
+        "Yingxuan Zhuang",
+        "Wenqi Zhang",
+        "Jintao Chen",
+        "Xuhong Zhang"
+      ],
+      "published": "2026-08-31",
+      "url": "https://arxiv.org/abs/2608.31077",
+      "abstract": "Outcome-based reinforcement learning provides verified feedback for language-model agents, but assigns trajectory-level advantage uniformly to all decisions, yielding coarse credit over long-horizon interactions. On-policy self-distillation offers finer supervision by re-evaluating sampled behavior with privileged information (PI) available only during training. However, fine-grained supervision is not necessarily fine-grained credit: PI-induced likelihood changes describe how additional information alters policy preference, but do not directly determine how an executable action should inherit the verified task outcome. This creates a supervision-credit gap. Privileged signals may be irrelevant to the current interaction state, operate at a token granularity misaligned with executable decisions, and lack the outcome semantics required for reinforcement. We introduce TASPO, which converts privileged supervision into outcome-grounded action credit. TASPO constructs decision-applicable PI from verified successful experience, aggregates PI-induced likelihood shifts at the executable-action level, and converts relative action support into positive, bounded, mean-preserving weights on the original trajectory advantage. Thus, the verified outcome determines the update direction and average scale, while PI only redistributes credit across actions. Across three agentic benchmarks, TASPO improves over GRPO by 10.6\\% and generalizes better to unseen tasks. Further analysis indicates that TASPO reduces supervision mismatch and that action-level assignment stabilizes the policy optimization process. These findings offer the community another interesting perspective.",
+      "external_ids": [
+        "arxiv:2608.31077"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-01T14:08:00+08:00",
+      "last_seen_at": "2026-09-01T14:08:00+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.31076",
+      "arxiv_version": "v1",
+      "title": "Learning to Evaluate Before Improving: Automatic Rubric Induction for Automatic Research Agents",
+      "authors": [
+        "Xuehai Wang",
+        "Haowei Qin",
+        "Tongxin Liu",
+        "Junkai Li",
+        "Buqiang Xu",
+        "Jintian Zhang",
+        "Yijun Chen",
+        "Zirui Xue",
+        "Shumin Deng"
+      ],
+      "published": "2026-08-31",
+      "url": "https://arxiv.org/abs/2608.31076",
+      "abstract": "Autonomous scientific research agents are increasingly applied to end-to-end scientific workflows, including literature review, data analysis, experimentation, and report generation. However, open-ended research tasks often do not clearly specify the analyses, methods, and success criteria required to complete the task. As a result, agents may miss important analyses, use inappropriate methods, or draw conclusions that are insufficiently supported by evidence. To address the problem, we present AutoSciRub, an evaluation-first framework that induces a task-specific executable rubric before research execution, and uses it to guide execution, criterion-level verification as well as iterative revision. AutoSciRub decomposes an underspecified instruction into atomic scientific goals, grounds them in relevant literature and task-visible data, and synthesizes specific, actionable, and verifiable criteria. The resulting rubric makes implicit experimental and evidential requirements explicit, providing guidance for experiments and analyses. During revision, rubric-guided verification identifies unmet criteria and enables targeted refinement of the research report and its supporting artifacts. On ResearchClawBench, AutoSciRub consistently improves all tested configurations, with an average gain of 2.08 points across three backbone LLMs under the fixed Codex harness and 2.95 points across three agent harnesses using a fixed DeepSeek-V4-Flash backbone. On a randomly sampled 20-task subset of AstaBench E2E Discovery, AutoSciRub further achieves an average improvement of 16.8 points across three agent harnesses, while maintaining or increasing the number of successfully completed tasks. These results demonstrate that evaluation-first guidance provides an effective and generalizable control mechanism for autonomous scientific research (Code: https://github.com/zjunlp/AutoSciRub).",
+      "external_ids": [
+        "arxiv:2608.31076"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-01T14:08:00+08:00",
+      "last_seen_at": "2026-09-01T14:08:00+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.31075",
+      "arxiv_version": "v1",
+      "title": "Scaling Large Reasoning Models beyond Human Supervision: A Path toward Superintelligence",
+      "authors": [
+        "Zhiqin Yang",
+        "Jingwen Fu",
+        "Yuhan Liu",
+        "Hengyu Liu",
+        "Yonggang Zhang",
+        "Kainan Cao",
+        "Zizhuo Zhang",
+        "Chenxin Li",
+        "Ruibin Yuan",
+        "Jiahao Pan",
+        "Jiankai Sun",
+        "Zhenyuan Zhang",
+        "Yibo Li",
+        "Yunlong Lin",
+        "Jing Xiong",
+        "Sida Lin",
+        "Bo Han",
+        "Wei Xue",
+        "Yike Guo"
+      ],
+      "published": "2026-08-31",
+      "url": "https://arxiv.org/abs/2608.31075",
+      "abstract": "Recent advances in large reasoning models (LRMs) have shown that reinforcement learning with verifiable rewards (RLVR) can substantially improve reasoning in mathematics and code, where outcomes can be checked automatically. Extending this progress to open-ended and agentic tasks remains difficult because reliable rewards are harder to obtain and direct human supervision cannot keep pace with the scale and complexity of model-generated experience. This paper studies how LRMs can continue to improve as human supervision gradually recedes from the learning loop. We examine two connected dimensions of this problem. The reward axis traces the development from per-instance human judgments to reusable verifiers and rewards that operate even without human feedback. The experience axis examines how learning can progress from human-curated tasks and environments toward self-generated curricula, constructed environments, and autonomous co-evolution. We connect these dimensions through a five-level ladder from L0 to L4 that identifies which parts of the learning process remain under continued human control. Our analysis further highlights the risks introduced by increasingly autonomous rewards and experience generation, including reward hacking, feedback drift, curriculum collapse, and environment errors. Consequently, we also provide the evaluation around three complementary objects: policy capability, feedback fidelity, and experience quality. This analysis provides a structured account of current approaches to scaling LRMs beyond human supervision and the open problems involved in developing self-sustaining learning systems toward superintelligence. Furthermore, we maintain a continuously updated \\href{https://github.com/visitworld123/Awesome-Scaling-LRM-Beyond-Human-Supervision}{GitHub repository} to track the latest advances.",
+      "external_ids": [
+        "arxiv:2608.31075"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-01T14:08:00+08:00",
+      "last_seen_at": "2026-09-01T14:08:00+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.31051",
+      "arxiv_version": "v1",
+      "title": "Orbital and Spin Edelstein Effects in KTaO$_3$(110) Two-Dimensional Electron Gases",
+      "authors": [
+        "Hugo Witt",
+        "Aravind Raji",
+        "Srijani Mallik",
+        "Börge Göbel",
+        "Luis M. Vicente-Arche",
+        "Sara Varotto",
+        "Julien Bréhin",
+        "Gerbold Ménard",
+        "Raphaël Salazar",
+        "Julien Rault",
+        "François Bertran",
+        "Patrick Le Fèvre",
+        "Isabella Boventer",
+        "Ingrid Mertig",
+        "Agnès Barthélémy",
+        "Alexandre Gloter",
+        "Annika Johansson",
+        "Nicolas Bergeal",
+        "Manuel Bibes"
+      ],
+      "published": "2026-08-31",
+      "url": "https://arxiv.org/abs/2608.31051",
+      "abstract": "The orbital Edelstein effect converts an electric field into a non-equilibrium orbital polarization, opening new opportunities for orbitronics. Although signatures of the orbital Edelstein effect have been reported, its microscopic mechanisms and quantitative validation remain underexplored. Here, by directly linking the atomic structure of KTaO$_3$(110) two-dimensional electron gases to both their calculated and measured electronic band dispersions, we predict and provide experimental evidence for an orbital Edelstein effect that largely counterbalances its spin counterpart. Scanning transmission electron microscopy and electron energy-loss spectroscopy resolve the interfacial atomic configuration, which is used as input for density-functional calculations. Angle-resolved photoemission spectroscopy then confirms the resulting band structure, which is fitted by a tight-binding model enabling computation of the spin and orbital Edelstein responses. Harmonic magnetotransport indicates that a $\\sim$20 \\% contribution from the orbital Edelstein response is necessary to describe the magnitude and anisotropy of the effect. Our results establish KTaO$_3$(110) as a model platform for orbitronics and demonstrate a pathway to generate and harness orbital polarization in quantum oxide systems while also offering new insights into pairing mechanisms in their superconducting state.",
+      "external_ids": [
+        "arxiv:2608.31051"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-01T14:08:00+08:00",
+      "last_seen_at": "2026-09-01T14:08:00+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.31041",
+      "arxiv_version": "v1",
+      "title": "Agentic Quantitative Trading: A Survey of Workflows, Systems, and Evaluation",
+      "authors": [
+        "Fengrui Hua",
+        "Hengyi Yang",
+        "Xinlei Hao",
+        "Haohan Zhang",
+        "Bokai Cao",
+        "Yiyan Qi",
+        "Jia Li",
+        "Jian Guo"
+      ],
+      "published": "2026-08-31",
+      "url": "https://arxiv.org/abs/2608.31041",
+      "abstract": "Quantitative trading is moving from isolated predictive models toward agentic workflows that combine reasoning, tool use, memory, and feedback. This survey reviews agentic quantitative trading across five stages: factor mining, signal discovery, portfolio construction, order execution, and risk management. We further examine agentic quant trading systems through architecture, coordination, and adaptation, while comparing benchmarks across strategy construction, offline trading, live market evaluation, and reliability assessment. Our review finds that current systems remain concentrated on signal discovery, while complete integration with portfolio construction, execution, and risk control is still uncommon. Multi-agent systems also rely heavily on aggregation despite increasingly diverse workflow structures. Benchmark evidence further shows that strong model or forecasting capability does not reliably translate into trading performance under live market conditions and reliability controls. We conclude with future directions for more complete trading workflows, stronger coordination, and evaluation matched to the capability being assessed.",
+      "external_ids": [
+        "arxiv:2608.31041"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-01T14:08:00+08:00",
+      "last_seen_at": "2026-09-01T14:08:00+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.31006",
+      "arxiv_version": "v1",
+      "title": "From Prompt to Prototype: Towards a Frontier LLM Driven RF Engineering Workflow",
+      "authors": [
+        "Markus Heinrichs",
+        "Oscar Moschner",
+        "Simon Tewes",
+        "Volker Wienstroer",
+        "Aydin Sezgin",
+        "Rainer Kronberger"
+      ],
+      "published": "2026-08-31",
+      "url": "https://arxiv.org/abs/2608.31006",
+      "abstract": "Agentic coding environments give a frontier large language model (LLM) direct access to a workstation's terminal, file system, and software. This work demonstrates they extend to professional RF hardware design: an active GNSS L1-band antenna - a circularly polarized patch, surface acoustic wave (SAW) prefilter, and two-stage low-noise amplifier (LNA) on one printed circuit board (PCB) - was designed, optimized, and made manufacturing-ready. The LLM agent autonomously operated CST Studio Suite, Keysight ADS, and KiCad via scripting interfaces. Engineer input was limited to the specification, trade-off decisions, and design reviews. Workflow, results, and the RF engineer's evolving role are discussed.",
+      "external_ids": [
+        "arxiv:2608.31006"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-01T14:08:00+08:00",
+      "last_seen_at": "2026-09-01T14:08:00+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.30976",
+      "arxiv_version": "v1",
+      "title": "A Human-in-the-Loop Autonomous Agent for Industry Time Series Forecasting",
+      "authors": [
+        "Xiaoyu Tao",
+        "Mingyue Cheng",
+        "Ze Guo",
+        "Bokai Pan",
+        "Qi Liu",
+        "Shijin Wang",
+        "Enhong Chen"
+      ],
+      "published": "2026-08-31",
+      "url": "https://arxiv.org/abs/2608.30976",
+      "abstract": "Real-world time-series forecasting is rarely a one-shot model invocation: practitioners must formulate tasks, connect data and models, incorporate domain expertise, assess prediction plausibility, and communicate uncertainty. Specialized forecasting models provide strong numerical predictions but usually operate in fixed pipelines, while general-purpose large language model (LLM) agents often lack forecasting-specific checks, constraints, and stopping rules. We present CastClaw, a human-in-the-loop autonomous forecasting system built through forecasting-oriented harness engineering. CastClaw connects data, specialized models, analytical tools, user input, and a versioned execution record in one runtime. Users specify the target, horizon, constraints, and hypotheses in natural language. Starting from a supplied or model-generated forecast, CastClaw checks temporal patterns and user constraints; when evidence is missing, it retrieves context, runs an analysis or another model, or asks the user. It then keeps, revises, or escalates the result under explicit stopping conditions. The output contains the final forecast and an execution report recording inputs, evidence, actions, and revisions. In this five-dataset electricity-price setting, CastClaw reports the lowest point-estimate MSE and MAE among 16 baselines. A Nord Pool case demonstrates the inspectable workflow. CastClaw was also validated offline on provincial electricity-load data from North China covering January--June 2026.",
+      "external_ids": [
+        "arxiv:2608.30976"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-01T14:08:00+08:00",
+      "last_seen_at": "2026-09-01T14:08:00+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.30968",
+      "arxiv_version": "v1",
+      "title": "CogEvol: Towards Efficient and Reliable Learning Environment Generation",
+      "authors": [
+        "Shangqing Tu",
+        "Daniel Zhang-Li",
+        "Yucheng Wang",
+        "Shiyu Gan",
+        "Yanpeng Wang",
+        "Huiqiang Rong",
+        "Mofei Chen",
+        "Shen Yang",
+        "Yini Chen",
+        "Yinuo Duan",
+        "Haoxuan Li",
+        "Binglin Liu",
+        "Ye He",
+        "Danqi Zheng",
+        "Zhanxin Hao",
+        "Yuxuan Wu",
+        "Mengting Tao",
+        "Yuqiu Liu",
+        "Jifan Yu",
+        "Juanzi Li",
+        "Bin Xu",
+        "Lei Hou",
+        "Huiqin Liu",
+        "Yu Zhang"
+      ],
+      "published": "2026-08-31",
+      "url": "https://arxiv.org/abs/2608.30968",
+      "abstract": "We present CogEvol, a family of models trained specifically for Learning Environment Generation: turning a course brief into a finished learning artifact (structured-JSON slides or self-contained interactive HTML pages) in a single pass. Across 220k production requests, CogEvol completes a slide in a median of 17 seconds and an interactive page in 59, replacing minutes-long multi-turn agent scaffolding. Reliability is enforced rather than hoped for: a production-grounded data pipeline turns real failures into 53,687 verified SFT samples, and a hybrid rule-plus-VLM reward drives GRPO-based RL, hardened after we caught and fixed a reward-hacking episode that produced visually convincing but unplayable games. CogEvol-27B scores 83.7 on slide quality and 63.7 on a 500-case interactive-HTML benchmark with 26.9x fewer parameters than flagship coding models, and, in collaboration with the OpenMAIC team, serves their live production traffic. CogEvol-4B is released openly under the Apache 2.0 license at https://github.com/CogEvol/CogEvol-4B; external flagships are measured on the same suites under the identical harness. Scaffold editing cuts interactive-page generation cost by a further ~76%, and the full stack runs on domestic Ascend accelerators at application-level parity with A800 GPUs, lowering the unit cost of AI-native education at scale.",
+      "external_ids": [
+        "arxiv:2608.30968"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-01T14:08:00+08:00",
+      "last_seen_at": "2026-09-01T14:08:00+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.30948",
+      "arxiv_version": "v1",
+      "title": "Detecting AI Impostors: How Do Middle Schoolers Identify LLM Agents in a Live Collaborative Setting?",
+      "authors": [
+        "Dan Schumacher",
+        "Pragathi Durga Rajarajan",
+        "Haven Kotara",
+        "Roman Rendon",
+        "Kosi Atupulazi",
+        "Deepti Tagare",
+        "Ismaila Temitayo Sanusi",
+        "Fred G. Martin",
+        "Anthony Rios"
+      ],
+      "published": "2026-08-31",
+      "url": "https://arxiv.org/abs/2608.30948",
+      "abstract": "LLMs can imitate how people write, which raises concerns about impersonation, trust, and detection in social settings. These concerns are especially important for adolescents, who use generative AI frequently but may struggle to recognize it. We introduce \\textit{DoppelBot}, a cooperative social deduction game designed to study how young people detect and respond to AI impersonation. Through studies with middle schoolers, we investigate whether a DoppelBot prompts reflection on privacy and impersonation, how repeated exposure affects AI-detection accuracy as agents become more personalized, and which strategies students use to identify AI doppelgängers. We find that students' detection accuracy improves over time, driven by a shift from relying on linguistic cues to leveraging shared social and contextual signals. Students also demonstrated an understanding of AI limitations such as embodiment and reflected on broader issues such as data privacy. To support future research, we release an anonymized dataset of game transcripts and voting behavior.",
+      "external_ids": [
+        "arxiv:2608.30948"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-01T14:08:00+08:00",
+      "last_seen_at": "2026-09-01T14:08:00+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.30892",
+      "arxiv_version": "v1",
+      "title": "Dual-Gradient Plasmonic qBIC Metasurface for Time-Resolved In Situ Optimization of Molecular Vibrational Sensing in Water",
+      "authors": [
+        "Tao Jiang",
+        "Michael Hirler",
+        "Lina Rohrer",
+        "Martin Barkey",
+        "Dmytro Gryb",
+        "Leonardo de S. Menezes",
+        "Silvia Holler",
+        "Stefan A. Maier",
+        "Yohan Lee",
+        "Alexander A. Antonov",
+        "Andreas Tittl"
+      ],
+      "published": "2026-08-31",
+      "url": "https://arxiv.org/abs/2608.30892",
+      "abstract": "Metaphotonic platforms based on quasi-bound states in the continuum (qBICs), harnessing strong near-field enhancement and deeply subwavelength field confinement, provide a versatile framework for surface-enhanced infrared absorption (SEIRA) spectroscopy. However, real-time molecular sensing in water using qBIC metasurfaces remains challenging. First, strong water absorption in the mid-infrared region damps qBICs and obscures weak analyte signals. Second, conventional metasurfaces rely on discrete arrays targeting individual wavelengths and coupling conditions, increasing the device footprint and fabrication effort required to match the qBIC to the molecular vibrational resonance. Here, we present a dual-gradient plasmonic qBIC metasurface with diamond-shaped resonators for in situ molecular vibrational sensing in water, where spatially encoded gradients in the scaling factor and asymmetry parameter independently control the qBIC spectral positions and radiative rates, respectively, across a 1000 um x 700 um footprint. Building on this capability, we experimentally monitor lipid vesicle dynamics in real time and resolve the carbonyl vibrational signature despite the unavoidable water absorption. We then directly identify the optimal sensing condition and track its evolution across the spatially encoded parameter space. The results establish a compact single-chip strategy that combines adsorption-kinetics monitoring, vibrational fingerprint detection, and on-chip optimization, opening opportunities for investigating biological dynamics under aqueous conditions.",
+      "external_ids": [
+        "arxiv:2608.30892"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-01T14:08:00+08:00",
+      "last_seen_at": "2026-09-01T14:08:00+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.30830",
+      "arxiv_version": "v1",
+      "title": "Adaptive KV Retention for LLM Agents at Human-Approval Timescales",
+      "authors": [
+        "Minseo Choi",
+        "Ananya Joshi"
+      ],
+      "published": "2026-08-31",
+      "url": "https://arxiv.org/abs/2608.30830",
+      "abstract": "Unlike the seconds-scale tool-call pauses targeted by prior agent-serving systems, agentic LLM requests can be suspended for minutes or hours while waiting for human approval. We study how suspension and resumption affect GPU serving performance and develop a retention policy that balances active-serving capacity against future recomputation under uncertain approval waits. The central tension is severe because retaining suspended KV preserves fast resume but can consume enough GPU capacity to reduce active-serving goodput by 41%, while evicting it avoids that residency cost at the expense of nearly $10\\times$ higher resume latency when the request returns. We develop a tiered retention controller around GPU opportunity cost, which expresses the serving capacity consumed by preserving or reconstructing a suspended request's KV state in a common GPU-time cost. Within host memory, the controller selects between indefinite retention and load-indexed expiration using calibration wait samples, without requiring per-request wait prediction. On human-scale approval workloads, our controller improves active-request goodput by 23-51% over the vLLM baselines, 22-29% over MORI, and 41-52% over Continuum.",
+      "external_ids": [
+        "arxiv:2608.30830"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-01T14:08:00+08:00",
+      "last_seen_at": "2026-09-01T14:08:00+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.30803",
+      "arxiv_version": "v1",
+      "title": "Schwarz: Solver-Aware Agentic Program Verification",
+      "authors": [
+        "Jingyu Ke",
+        "Ling-I Wu",
+        "Guoqiang Li"
+      ],
+      "published": "2026-08-31",
+      "url": "https://arxiv.org/abs/2608.30803",
+      "abstract": "Agentic verification systems can often generate source-level specifications that look plausible, but plausibility is not enough: the verifier must still turn those specifications into SMT obligations that the solver can prove. When this step fails, current LLM-driven loops usually expose only a coarse verifier error, timeout, or unknown solver result. The model cannot tell whether the specification is wrong, a helper lemma is missing, the proof context contains irrelevant facts, or the obligation needs a different theory view. This paper presents Schwarz, an agentic verification harness that makes SMT-backed proof failure local, checkable, and repairable. Schwarz turns failed verification into obligation-local repair tasks: program-point snapshots expose checked facts at a boundary, local lemmas let the agent propose missing proof steps, and theory-aware solver policies guide the agent toward solver-friendly formulations for numeric, quantified, memory, and floating-point obligations. We implement Schwarz for C and Rust/Verus and evaluate it on 1,475 tasks. On 475 benchmarks from recent agentic verification tools, Schwarz solves 95.2% of the tasks. On 1,000 tasks from the SV-COMP 2026 ReachSafety track, averaging 1,427 LOC, Schwarz solves 91.5% of the tasks, compared with 60.1% for CPAchecker. Ablations and comparison with a pure-agent baseline show that solver-aware repair is effective and scalable.",
+      "external_ids": [
+        "arxiv:2608.30803"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-01T14:08:00+08:00",
+      "last_seen_at": "2026-09-01T14:08:00+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.30785",
+      "arxiv_version": "v1",
+      "title": "SkillZip Pro: Execution-Aware Dynamic Compression of Progressively Loaded Skills for Self-Evolving Agents",
+      "authors": [
+        "Xiaofan Bai",
+        "Chao Liu",
+        "Hongqiang Lin",
+        "Di Wu",
+        "Mingli Song",
+        "Xuan Jin",
+        "Xipeng Cao",
+        "Yuhong Li"
+      ],
+      "published": "2026-08-31",
+      "url": "https://arxiv.org/abs/2608.30785",
+      "abstract": "Production agent skills are directory bundles, not isolated prompts. The root is loaded at activation; references, schemas, scripts, assets, and nested subskills are loaded only when an execution path needs them. Compressing only the root misses most deployment cost and may move branch-specific details into the always-loaded context. Flattening instead destroys progressive-loading boundaries. We introduce \\method, an evaluation-free compressor for complete, progressively loaded skill bundles. It leaves the agent harness unchanged and emits an ordinary directory. The method combines two safeguards. First, it compresses \\emph{across files}, removing content from a reference or subskill when the root or a declared environment contract already provides it. Second, it preserves routing, so every required file and directly callable entry remains reachable after rewriting. Users can configure \\method along two independent axes. \\emph{One-Shot} mode rebuilds the full bundle; \\emph{Continual} mode reuses state and applies Zip-on-Write after each evolution patch. \\emph{Persistent} compression rewrites the shipped bundle to reduce storage and runtime context. \\emph{Transient} compression keeps that bundle byte-identical and builds a task-specific view, reducing only per-run context after build cost. Entry contracts mark private, public, and conditional resources; a multi-entry audit preserves standalone public subskills. On a production content-moderation skill evaluated by our industrial multi-round harness, \\method removes \\hl{38\\%} of skill bundle tokens and \\hl{10.4\\%} of end-to-end per-run tokens with no quality loss, while an unprotected 71\\% configuration loses up to 26 accuracy points to one-sided false positives. On a multi-entry bundle, \\method effeciently reduces token cost while near-perfectly preserving every route and public entry.",
+      "external_ids": [
+        "arxiv:2608.30785"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-01T14:08:00+08:00",
+      "last_seen_at": "2026-09-01T14:08:00+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.30730",
+      "arxiv_version": "v1",
+      "title": "E-Commerce Bench: Evaluating LLM Agents on Long-Horizon Autonomous Business Operation",
+      "authors": [
+        "Wei Fan",
+        "Xinjie Shen",
+        "Xudong Guo",
+        "Jianhong Tu",
+        "Yang Su",
+        "Yinger Zhang",
+        "Lianghao Deng",
+        "Fengyu Wang",
+        "Baohua Dong",
+        "Yangqiu Song",
+        "Dayiheng Liu"
+      ],
+      "published": "2026-08-31",
+      "url": "https://arxiv.org/abs/2608.30730",
+      "abstract": "Long-horizon agentic tasks go beyond chaining short tasks over more interaction turns. Their evolving dynamic environments and long-range dependencies require Large Language Models (LLMs) to continually explore, learn from experience, and adapt their policies over thousands of steps. We introduce E-Commerce Bench, the first open-source benchmark that integrates multi-round counterpart negotiation and dynamic events into a year-long business operation. Over a 365-day year, an LLM agent concurrently runs multiple online stores, researching the market, negotiating with suppliers to source inventory, optimizing sales strategies, fulfilling orders, handling returns, and managing cash flow to maximize its end-of-year total assets. To construct a realistic merchant-side operating environment, the product and supplier data are derived from a real e-commerce platform, while a year-long calendar of promotions, natural disasters, and supply-chain shocks continually reshapes demand. For reproducibility, both sides of the market are deterministic: customer purchases and returns follow a fixed demand model, while a negotiation kernel determines supplier pricing, concessions, and decisions, with an LLM used only to verbalize them. We evaluate 18 frontier models across seven dimensions, including year-end assets, and find that no single model dominates. GPT-5.6 Sol earns the most, growing the 100,000 opening stake into 1,431,425, yet it ranks 16th of 18 on fraud avoidance and trails Fable5 in operational efficiency. Among open-weight models, Qwen3.8-Max-Preview leads with 416,252, 38% above GLM 5.2 (high), and achieves the strongest learning over the horizon, progressively bargaining down prices across repeated orders. Our code is available at https://github.com/QwenLM/E-CommerceBench.",
+      "external_ids": [
+        "arxiv:2608.30730"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-01T14:08:00+08:00",
+      "last_seen_at": "2026-09-01T14:08:00+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.30724",
+      "arxiv_version": "v1",
+      "title": "BAITBENCH: Measuring Agent Reward Hacking with Optional Shortcuts Planted in ML Tasks",
+      "authors": [
+        "Pradyumna Shyama Prasad",
+        "Meiri Anto",
+        "Leon Eshuijs",
+        "Julian Moncarz",
+        "Kaustubh Kislay",
+        "Juan J. Vazquez"
+      ],
+      "published": "2026-08-31",
+      "url": "https://arxiv.org/abs/2608.30724",
+      "abstract": "LLM agents are increasingly used to run autonomous ML experiments, iterating on target metrics with little human oversight. Prior work has documented reward hacking in these environments, bringing into question the validity of produced research and the broader safety case for AI R&D. Existing benchmarks do not measure exploits that live in the data or the modeling task itself. We introduce BAITBENCH, a suite of three synthetic tabular ML tasks that each contain a shortcut that allows agents to inflate the public test score but fail on a hidden test set. Since the shortcut is optional and using it breaks no stated rule, BAITBENCH measures how often models exploit the shortcut to achieve inflated scores. Across seven frontier agents scored by our two-stage judge pipeline, 57.1% of runs exhibit reward hacking, with five of seven above 50%. Agents cheat even under a second condition where they are prompted not to -the mean cheating rate remains above 50%. We release BAITBENCH, along with the judge implementation, and an annotated dataset of transcripts containing reward hacks as a testbed for evaluating reward-hacking mitigations head-to-head.",
+      "external_ids": [
+        "arxiv:2608.30724"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-01T14:08:00+08:00",
+      "last_seen_at": "2026-09-01T14:08:00+08:00"
+    },
+    {
+      "source": "semanticscholar",
+      "arxiv_id": "2606.23449",
+      "doi": "10.48550/arXiv.2606.23449",
+      "title": "AOHP: An Open-Source OS-Level Agent Harness for Personalized, Efficient and Secure Interaction",
+      "authors": [
+        "Shanhui Zhao",
+        "Jiacheng Liu",
+        "Guohong Liu",
+        "Jichao Yan",
+        "Jialei Ye",
+        "Yuhao Yang",
+        "Hao Wen",
+        "Shizuo Tian",
+        "Yizhen Yuan",
+        "Yuxuan Chen",
+        "Yunxin Liu",
+        "Ju Ren",
+        "Ya-Qin Zhang",
+        "Chao Huang",
+        "Yao Guo",
+        "Yuanchun Li"
+      ],
+      "published": "2026-06-22",
+      "url": "https://arxiv.org/abs/2606.23449",
+      "abstract": "AI agents are driving a new software paradigm, with the ability to autonomously call tools, extract information, manage memory, and complete tasks that span applications and data sources. Most existing end-user operating systems, however, are designed for application-centric workflows and offer little native support for AI agents. This mismatch limits the wider adoption of agents and leads to execution overhead and safety risks when running agents on conventional systems. While the concept of agent-native operating systems is emerging, the research community lacks an open testbed to explore the architectural primitives desired for agent-mediated interaction. We present AOHP (Android Open Harness Project), an OS-level agent harness built on the Android Open Source Project (AOSP). The core design principle of AOHP is to treat agents as first-class OS actors, enabling adaptive user interfaces and agent-friendly runtime environments. AOHP preserves the mature Android software and hardware ecosystem while introducing three agent-oriented system mechanisms: personalized service composition, efficient agent interfaces, and secure information flow. Based on preliminary experiments on challenging tasks covering key capabilities of OS agents, AOHP shows clear advantages in task completion (+21.12% completion rate), execution cost (-51.55% token cost), and security-policy compliance.",
+      "external_ids": [
+        "s2:4a05a54a5f34f4ca5c4284c7c99f143e20a9166a",
+        "arxiv:2606.23449",
+        "doi:10.48550/arxiv.2606.23449"
+      ],
+      "sources": [
+        "semanticscholar"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-01T14:08:00+08:00",
+      "last_seen_at": "2026-09-01T14:08:00+08:00"
+    }
+  ]
+}
