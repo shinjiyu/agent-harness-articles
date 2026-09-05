@@ -1,8 +1,42 @@
 {
   "schema_version": 1,
   "topic": "agent harness",
-  "updated_at": "2026-09-04T13:40:03+08:00",
+  "updated_at": "2026-09-05T13:24:08+08:00",
   "candidates": [
+    {
+      "source": "dblp",
+      "arxiv_id": "",
+      "title": "HarnessCompass: Guiding Automatic Harness Evolution toward Generalizable and Effective Agent Harnesses",
+      "authors": [
+        "Luan Zhang",
+        "Ruochen Zhou",
+        "Dandan Song 0005",
+        "Zhengyu Chen",
+        "Yuhang Tian 0002",
+        "Jun Yang",
+        "Huipeng Ma",
+        "Chenhao Li",
+        "Guangyuan Feng",
+        "Xudong Li",
+        "Yizhou Jin",
+        "Yan Xu"
+      ],
+      "published": "2026",
+      "url": "https://doi.org/10.48550/arXiv.2608.01918",
+      "abstract": "",
+      "external_ids": [
+        "dblp:350028"
+      ],
+      "sources": [
+        "dblp"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-05T13:24:08+08:00",
+      "last_seen_at": "2026-09-05T13:24:08+08:00"
+    },
     {
       "source": "arxiv",
       "arxiv_id": "2609.04170",
@@ -31,7 +65,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-04T13:40:03+08:00",
-      "last_seen_at": "2026-09-04T13:40:03+08:00"
+      "last_seen_at": "2026-09-05T13:24:08+08:00"
     },
     {
       "source": "arxiv",
@@ -58,7 +92,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-04T13:40:03+08:00",
-      "last_seen_at": "2026-09-04T13:40:03+08:00"
+      "last_seen_at": "2026-09-05T13:24:08+08:00"
     },
     {
       "source": "arxiv",
@@ -95,7 +129,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-04T13:40:03+08:00",
-      "last_seen_at": "2026-09-04T13:40:03+08:00"
+      "last_seen_at": "2026-09-05T13:24:08+08:00"
     },
     {
       "source": "arxiv",
@@ -123,7 +157,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-04T13:40:03+08:00",
-      "last_seen_at": "2026-09-04T13:40:03+08:00"
+      "last_seen_at": "2026-09-05T13:24:08+08:00"
     },
     {
       "source": "arxiv",
@@ -150,7 +184,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-04T13:40:03+08:00",
-      "last_seen_at": "2026-09-04T13:40:03+08:00"
+      "last_seen_at": "2026-09-05T13:24:08+08:00"
     },
     {
       "source": "arxiv",
@@ -180,7 +214,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-04T13:40:03+08:00",
-      "last_seen_at": "2026-09-04T13:40:03+08:00"
+      "last_seen_at": "2026-09-05T13:24:08+08:00"
     },
     {
       "source": "arxiv",
@@ -230,7 +264,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-04T13:40:03+08:00",
-      "last_seen_at": "2026-09-04T13:40:03+08:00"
+      "last_seen_at": "2026-09-05T13:24:08+08:00"
     },
     {
       "source": "arxiv",
@@ -254,7 +288,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-04T13:40:03+08:00",
-      "last_seen_at": "2026-09-04T13:40:03+08:00"
+      "last_seen_at": "2026-09-05T13:24:08+08:00"
     },
     {
       "source": "arxiv",
@@ -282,7 +316,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-04T13:40:03+08:00",
-      "last_seen_at": "2026-09-04T13:40:03+08:00"
+      "last_seen_at": "2026-09-05T13:24:08+08:00"
     },
     {
       "source": "arxiv",
@@ -318,7 +352,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-04T13:40:03+08:00",
-      "last_seen_at": "2026-09-04T13:40:03+08:00"
+      "last_seen_at": "2026-09-05T13:24:08+08:00"
     },
     {
       "source": "arxiv",
@@ -343,7 +377,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-04T13:40:03+08:00",
-      "last_seen_at": "2026-09-04T13:40:03+08:00"
+      "last_seen_at": "2026-09-05T13:24:08+08:00"
     },
     {
       "source": "arxiv",
@@ -368,7 +402,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-04T13:40:03+08:00",
-      "last_seen_at": "2026-09-04T13:40:03+08:00"
+      "last_seen_at": "2026-09-05T13:24:08+08:00"
     },
     {
       "source": "arxiv",
@@ -396,7 +430,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-04T13:40:03+08:00",
-      "last_seen_at": "2026-09-04T13:40:03+08:00"
+      "last_seen_at": "2026-09-05T13:24:08+08:00"
     },
     {
       "source": "arxiv",
@@ -427,7 +461,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-04T13:40:03+08:00",
-      "last_seen_at": "2026-09-04T13:40:03+08:00"
+      "last_seen_at": "2026-09-05T13:24:08+08:00"
     },
     {
       "source": "arxiv",
@@ -451,7 +485,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-04T13:40:03+08:00",
-      "last_seen_at": "2026-09-04T13:40:03+08:00"
+      "last_seen_at": "2026-09-05T13:24:08+08:00"
     },
     {
       "source": "arxiv",
@@ -475,7 +509,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-04T13:40:03+08:00",
-      "last_seen_at": "2026-09-04T13:40:03+08:00"
+      "last_seen_at": "2026-09-05T13:24:08+08:00"
     },
     {
       "source": "arxiv",
@@ -2955,7 +2989,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-28T20:35:42+08:00",
-      "last_seen_at": "2026-09-04T13:40:03+08:00"
+      "last_seen_at": "2026-09-05T13:24:08+08:00"
     },
     {
       "source": "semanticscholar",
@@ -4663,7 +4697,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-25T10:20:24+08:00",
-      "last_seen_at": "2026-08-31T14:49:15+08:00"
+      "last_seen_at": "2026-09-05T13:24:08+08:00"
     },
     {
       "source": "semanticscholar",
@@ -4690,7 +4724,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-25T10:20:24+08:00",
-      "last_seen_at": "2026-08-31T14:49:15+08:00"
+      "last_seen_at": "2026-09-05T13:24:08+08:00"
     },
     {
       "source": "semanticscholar",
@@ -4723,7 +4757,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-25T10:20:24+08:00",
-      "last_seen_at": "2026-08-31T14:49:15+08:00"
+      "last_seen_at": "2026-09-05T13:24:08+08:00"
     },
     {
       "source": "arxiv",
@@ -5793,7 +5827,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-21T10:27:14+08:00",
-      "last_seen_at": "2026-09-04T13:40:03+08:00"
+      "last_seen_at": "2026-09-05T13:24:08+08:00"
     },
     {
       "source": "dblp",
@@ -5817,7 +5851,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-21T10:27:14+08:00",
-      "last_seen_at": "2026-09-04T13:40:03+08:00"
+      "last_seen_at": "2026-09-05T13:24:08+08:00"
     },
     {
       "source": "arxiv",
@@ -10927,7 +10961,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-07T11:52:28+08:00",
-      "last_seen_at": "2026-08-31T14:49:15+08:00"
+      "last_seen_at": "2026-09-05T13:24:08+08:00"
     },
     {
       "source": "arxiv",
@@ -13778,7 +13812,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-07-31T12:26:08+08:00",
-      "last_seen_at": "2026-09-04T13:40:03+08:00"
+      "last_seen_at": "2026-09-05T13:24:08+08:00"
     },
     {
       "source": "arxiv",
@@ -15718,92 +15752,10 @@
       "status": "new",
       "first_seen_at": "2026-07-28T12:15:03+08:00",
       "last_seen_at": "2026-07-28T12:15:03+08:00"
-    },
-    {
-      "source": "arxiv",
-      "arxiv_id": "2607.23740",
-      "arxiv_version": "v1",
-      "title": "Zing: Social Mind for LLMs",
-      "authors": [
-        "Zing Team",
-        "Ao Xiang",
-        "Bi Jingping",
-        "Chen Jiahui",
-        "Chen Lehan",
-        "Chen Yilin",
-        "Cheng Xueqi",
-        "Fan Yixing",
-        "Gan Kairong",
-        "Gao Haowen",
-        "Gao Jinhua",
-        "Gao Shuxuan",
-        "Gong Chang",
-        "Guo Jiafeng",
-        "Guo Ruijie",
-        "Han Zhouyu",
-        "He Guangfu",
-        "He Yichun",
-        "Jiang Shuo",
-        "Jing Shaoling",
-        "Jing Ya",
-        "Lei Chenhao",
-        "Lei Yan",
-        "Li Anqi",
-        "Li Chengao",
-        "Li Haoyu",
-        "Li Shitian",
-        "Liang Xinjian",
-        "Liu Zhaoge",
-        "Lyu Xingyu",
-        "Nie Zhuwei",
-        "Pang Liang",
-        "Quan Zeping",
-        "Shan Shiguang",
-        "Shen Huawei",
-        "Tang Xinran",
-        "Tian Feng",
-        "Wang Qian",
-        "Wang Ruiping",
-        "Wang Xiaohong",
-        "Xia Zaiyu",
-        "Xiao Yi",
-        "Xu Jiayuan",
-        "Xu Kehan",
-        "Xu Qianqian",
-        "Xu Tianyu",
-        "Xu Yongjun",
-        "Yang Haoming",
-        "Yang Jun",
-        "Yao Di",
-        "Yu Xiaoming",
-        "Zhang Futong",
-        "Zhang Jie",
-        "Zhang Shixuan",
-        "Zhang Yuxuan",
-        "Zhao Xinyu",
-        "Zhao Zhuoran",
-        "Zhong Yunfei",
-        "Zhu Shengyu"
-      ],
-      "published": "2026-07-26",
-      "url": "https://arxiv.org/abs/2607.23740",
-      "abstract": "As large language models move from isolated task solving toward long-term service in human environments, they require social intelligence: the ability to infer mental states, track social relations, reason over norms, and adapt behavior under context. This report presents Zhijing, an integrated framework for measuring, internalizing, and grounding social intelligence. For measurement, we introduce SoMBench, a psychology-grounded benchmark spanning 3 primary dimensions, 17 secondary dimensions, and 71 task paradigms. It controls question format, narrative perspective, and context length across 284 shared scenarios and 3,481 expert-verified instances. Evaluation of 20 representative LLMs reveals substantial headroom: the best model achieves only 72.08% overall accuracy, and none of the 17 secondary dimensions reaches the 90% near-ceiling band. For internalization, we develop Zing, a diagnosis-driven training recipe combining supervised fine-tuning, on-policy distillation, and rubric-based reinforcement learning. Across five social-cognition benchmarks, Zing consistently outperforms its base models, with Zing-27B-Stage2 achieving the best average score and Zing-32B-Stage2 remaining competitive with DeepSeek-V4-Pro. For deployment-time grounding, we build Actio, a harness-controlled inference architecture that routes four typed supports into reasoning: PRISM for procedural guidance, Starling for runtime mental-state representation, SAGE for reusable experience, and gated RAG for external social and normative knowledge. Across five base models and three benchmarks, the full harness improves 14 of 15 model-benchmark pairs and is best or tied for best in 8, demonstrating the effectiveness of typed runtime support. Together, these results show that socially intelligent LLMs require coordinated advances in evaluation, parametric internalization, and deployment-time grounding.",
-      "external_ids": [
-        "arxiv:2607.23740"
-      ],
-      "sources": [
-        "arxiv"
-      ],
-      "matched_keywords": [
-        "\"LLM agent\" harness"
-      ],
-      "status": "new",
-      "first_seen_at": "2026-07-28T12:15:03+08:00",
-      "last_seen_at": "2026-07-28T12:15:03+08:00"
     }
   ],
   "last_run": {
-    "at": "2026-09-04T13:40:03+08:00",
+    "at": "2026-09-05T13:24:08+08:00",
     "sources": [
       "arxiv",
       "semanticscholar",
@@ -15814,8 +15766,8 @@
       "\"LLM agent\" harness",
       "test-time harness evolution"
     ],
-    "fetched": 66,
-    "merged": 35,
-    "new": 16
+    "fetched": 76,
+    "merged": 40,
+    "new": 1
   }
 }

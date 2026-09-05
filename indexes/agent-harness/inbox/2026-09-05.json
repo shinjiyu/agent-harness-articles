@@ -1,0 +1,55 @@
+{
+  "date": "2026-09-05",
+  "run": {
+    "at": "2026-09-05T13:24:08+08:00",
+    "sources": [
+      "arxiv",
+      "semanticscholar",
+      "dblp"
+    ],
+    "keywords": [
+      "agent harness",
+      "\"LLM agent\" harness",
+      "test-time harness evolution"
+    ],
+    "fetched": 76,
+    "merged": 40,
+    "new": 1
+  },
+  "new_candidates": [
+    {
+      "source": "dblp",
+      "arxiv_id": "",
+      "title": "HarnessCompass: Guiding Automatic Harness Evolution toward Generalizable and Effective Agent Harnesses",
+      "authors": [
+        "Luan Zhang",
+        "Ruochen Zhou",
+        "Dandan Song 0005",
+        "Zhengyu Chen",
+        "Yuhang Tian 0002",
+        "Jun Yang",
+        "Huipeng Ma",
+        "Chenhao Li",
+        "Guangyuan Feng",
+        "Xudong Li",
+        "Yizhou Jin",
+        "Yan Xu"
+      ],
+      "published": "2026",
+      "url": "https://doi.org/10.48550/arXiv.2608.01918",
+      "abstract": "",
+      "external_ids": [
+        "dblp:350028"
+      ],
+      "sources": [
+        "dblp"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-05T13:24:08+08:00",
+      "last_seen_at": "2026-09-05T13:24:08+08:00"
+    }
+  ]
+}
