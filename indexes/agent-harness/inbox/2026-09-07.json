@@ -1,0 +1,545 @@
+{
+  "date": "2026-09-07",
+  "run": {
+    "at": "2026-09-07T13:51:13+08:00",
+    "sources": [
+      "arxiv",
+      "semanticscholar",
+      "dblp"
+    ],
+    "keywords": [
+      "agent harness",
+      "\"LLM agent\" harness",
+      "test-time harness evolution"
+    ],
+    "fetched": 66,
+    "merged": 37,
+    "new": 18
+  },
+  "new_candidates": [
+    {
+      "source": "arxiv",
+      "arxiv_id": "2609.05395",
+      "arxiv_version": "v1",
+      "title": "Multi-Step Tool-Calling over Korean Open Public APIs: A Benchmark and a Data-Synthesis Recipe",
+      "authors": [
+        "Dain Kim",
+        "Eungi Cho",
+        "Kyumin Kim",
+        "Shinyeong Noh",
+        "Kyuseong Lim"
+      ],
+      "published": "2026-09-04",
+      "url": "https://arxiv.org/abs/2609.05395",
+      "abstract": "Data-sovereignty regulations increasingly require public institutions to deploy open-source, on-premise LLM agents that chain multiple tool-calls across live government APIs. However, open-source models consistently underperform in this multi-step setting, and no existing benchmark measures the gap. We introduce the Korean Open Public API Benchmark (KOPA-Bench), comprising 145 real-world tasks. To close this gap, we present EDGE, an Execution-grounded Dynamic Graph for tool-calling data synthEsis driven by live execution. EDGE builds a graph of how each tool's output can feed another's input, keeps only the links that succeed when actually called against the live APIs, and traverses these verified links to synthesize executable multi-step trajectories. Fine-tuned via GRPO on the resulting dataset, our 9B model nearly matches the untuned 27B model from the same family, improving substantially not only on KOPA-Bench but also on the BFCL benchmark.",
+      "external_ids": [
+        "arxiv:2609.05395"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-07T13:51:13+08:00",
+      "last_seen_at": "2026-09-07T13:51:13+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2609.05374",
+      "arxiv_version": "v1",
+      "title": "CUA-Universe: A Scalable and Dynamic Environment for Hybrid GUI+CLI Agents",
+      "authors": [
+        "Haoting Shi",
+        "Wenhao Wang",
+        "Weicheng Fang",
+        "Yaozhong Liang",
+        "Tian Jin",
+        "Pengxiang Zhao",
+        "Guangyi Liu",
+        "Siheng Chen",
+        "Yanfeng Wang"
+      ],
+      "published": "2026-09-04",
+      "url": "https://arxiv.org/abs/2609.05374",
+      "abstract": "Computer-use agents have advanced on benchmarks like OSWorld and AndroidWorld, but still act mostly through the GUI, often producing inefficient trajectories. Real-world computer work is hybrid, combining visual-state inspection with precise, high-throughput command-line operations, so capable agents must coordinate both modalities over shared application state. Yet scalable hybrid environments remain scarce because supporting both GUI and CLI over real applications typically requires substantial manual engineering for each application. Existing agents also struggle to use the two interfaces complementarily: CLI-native agents lack visual perception for tasks involving interface state or layout, while GUI-native agents are inefficient for operations better executed through commands. We introduce CUA-Universe, a scalable environment-to-data pipeline that turns real desktop software into hybrid GUI+CLI environments. App-Forge adapts applications into reproducible VMs and command-line surfaces it discovers, wraps, or generates, scaling to 16 applications; Task-Weave synthesizes diverse hybrid tasks of controllable difficulty from reusable operations over seed files; and Path-Steer steers rollouts along efficient hybrid paths and harvests verified trajectories for post-training. Training on this data shifts behavior from inefficient GUI interaction and brittle CLI scripting toward effective GUI+CLI orchestration. Our 9B model improves both success and efficiency on CUA-Verse (Score +39.3 pts; -37% steps, -60% tokens), OSWorld (SR +16.8 pts; -57% steps, -44% tokens), and OSWorld-MCP (Score +7.84 pts; -27% steps, -30% tokens). CUA-Universe provides a scalable path toward more capable and efficient computer-use agents.",
+      "external_ids": [
+        "arxiv:2609.05374"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-07T13:51:13+08:00",
+      "last_seen_at": "2026-09-07T13:51:13+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2609.05365",
+      "arxiv_version": "v1",
+      "title": "Remote epitaxy beyond polarity",
+      "authors": [
+        "Ching-Tai Fu",
+        "Pei-Jan Hung",
+        "Xudong Li",
+        "Xiaolong Zhu",
+        "Yu Han",
+        "Sayantan Mahapatra",
+        "Zhiheng Zhao",
+        "Qingsong Fan",
+        "Xubing Wu",
+        "Qizhang Li",
+        "Chenxi Sui",
+        "Zirui Zhou",
+        "Ting-Hsuan Chen",
+        "Cheng-Hao Lei",
+        "Ivan Kuzmenko",
+        "Xiaobing Zuo",
+        "Byeongdu Lee",
+        "Alexander S. Filatov",
+        "Jeffrey R. Guest",
+        "Fengyuan Shi",
+        "Yuzi Liu",
+        "Hua Zhou",
+        "Yunfeng Shi",
+        "Po-Chun Hsu"
+      ],
+      "published": "2026-09-04",
+      "url": "https://arxiv.org/abs/2609.05365",
+      "abstract": "Remote epitaxy through a monolayer two-dimensional material-covered substrate establishes a crystallographic registry across the van der Waals (vdW) surface that enables the epitaxial growth, lift-off and transfer of single-crystalline films. A central belief in remote epitaxy is that the substrate facilitating the phenomenon must be a material with strong ionicity, as the interatomic electrostatic potential fluctuation in covalent and metallic materials is substantially attenuated by two-dimensional materials. Here, we show remote epitaxy is possible when the substrate is a metallic or covalently bonded material and experimentally demonstrate non-polar remote homo- and heteroepitaxy across a wide range of material systems, including both metals and semiconductors. The achieved non-polar remote interactions are designed and engineered by harnessing substrate conductivity and vicinal surface step-edge density. These findings indicate that remote epitaxy is universal and applicable to ionic, metallic, and covalent materials, expanding its capabilities and stimulating a plethora of new fundamental scientific questions about the mechanism of remote epitaxy.",
+      "external_ids": [
+        "arxiv:2609.05365"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-07T13:51:13+08:00",
+      "last_seen_at": "2026-09-07T13:51:13+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2609.05318",
+      "arxiv_version": "v1",
+      "title": "Optimal Rates for Agentic Networked Information Aggregation",
+      "authors": [
+        "MohammadHossein Bateni",
+        "Zahra Hadizadeh",
+        "MohammadTaghi Hajiaghayi",
+        "Mahdi JafariRaviz",
+        "Shayan Taherijam"
+      ],
+      "published": "2026-09-04",
+      "url": "https://arxiv.org/abs/2609.05318",
+      "abstract": "Building on the pioneering paper of Kearns, Roth, and Ryu (SODA'26), we study information aggregation in a networked learning model. The model captures a central pattern in agentic AI: each agent sees only part of the data and passes on only its own conclusion. Their model considers a linear regression problem with the mean squared error (MSE) loss. Agents sit in a DAG and each sees only a subset of the features and its parents' predictions, fits a linear predictor, and passes only its prediction forward. The benchmark is the full-feature learner that sees all raw features. A path of depth $D$ is $M$-covered if every block of $M$ consecutive agents collectively sees all raw features. Kearns, Roth, and Ryu proved that the excess mean squared error of the last agent on such a path is $O(M/\\sqrt D)$, and gave a cyclic instance with excess error $Ω(M/D)$ for $D<M^2$. We close this gap: the correct rate is constant up to depth $M^2$, and $Θ(M^2/D)$ beyond it. We first give a sharper analysis of the cyclic instance and improve its lower bound to $Ω(\\sqrt{M/D})$ for $D<M^2$. We then construct, for every depth $D\\ge M^2$, an $M$-covered path of depth $D$ with excess error $Ω(M^2/D)$. The same instance gives the constant lower bound for all $D < M^2$. We also show that for any fixed distribution the excess error contracts geometrically along the path, ruling out any single instance that witnesses any polynomial lower bound at every depth. Finally, we prove the same optimal rate for logistic classification in the logit-passing model of Bateni et al., which considers the binary cross-entropy (BCE) loss. The same improved upper bound of $O(M^2/D)$ holds, and we transfer all the regression lower bounds by showing that on those examples the logistic path follows the least-squares path up to rescaling.",
+      "external_ids": [
+        "arxiv:2609.05318"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-07T13:51:13+08:00",
+      "last_seen_at": "2026-09-07T13:51:13+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2609.05314",
+      "arxiv_version": "v1",
+      "title": "Large Language Models for HVAC Operations in Building Energy Systems: A Critical Review of Methods, Applications, and Deployment Readiness",
+      "authors": [
+        "Alexander Neubauer",
+        "Tianzhen Hong",
+        "Han Li",
+        "Mengbo Yu",
+        "Amin Darbandi",
+        "Yannick Fürst",
+        "Martin Kriegel"
+      ],
+      "published": "2026-09-04",
+      "url": "https://arxiv.org/abs/2609.05314",
+      "abstract": "Building automation systems generate rich sensor data yet remain insight-poor because heterogeneous point naming, missing metadata, and fragmented documentation obstruct their operational use. This systematic review analyses and codes 66 peer-reviewed studies on large language models (LLMs) for HVAC operations published between 2023 and March 2026. Each study is classified across five application families and three LLM method families and assessed for evidence realism, deployment readiness, and the responsibility boundary between the LLM and physical HVAC decisions. The corpus is concentrated in building energy modelling (BEM, 32 of 66 papers), while load forecasting remains too sparse for subfield-level conclusions. Only four studies reach pilot-level evidence, and none reports sustained operational deployment. No study was classified as ready-now for industry adoption; three were near-term and 63 research-only. Nevertheless, several bounded, human-in-the-loop uses merit near-term trials, including point-name normalisation, document-grounded operator support, BEM workflow assistance, and advisory interfaces around physics-based controllers. Conventional machine learning (ML), model predictive control (MPC), reinforcement learning (RL) and ontology-based tools remain more adopted for high-frequency control, short-horizon numerical forecasting, and well-posed ontology mapping, while autonomous agentic operation and unvalidated occupant proxies remain research-stage. Current evidence therefore supports LLMs primarily as semantic and workflow layers rather than autonomous HVAC controllers. Future work should prioritise field-validated benchmarks, orchestration evaluation under operational constraints, and LLM-MPC/RL architectures with bounded latency and verifiable safety properties.",
+      "external_ids": [
+        "arxiv:2609.05314"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-07T13:51:13+08:00",
+      "last_seen_at": "2026-09-07T13:51:13+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2609.05296",
+      "arxiv_version": "v1",
+      "title": "LexFlip: A Dissociation Diagnostic for Legal Meaning Preservation Metrics",
+      "authors": [
+        "Gaurab Baral"
+      ],
+      "published": "2026-09-04",
+      "url": "https://arxiv.org/abs/2609.05296",
+      "abstract": "Does a simplified legal clause still say what the original said? The checks in current use cannot establish that it does: requiring an identical pair to score highest and an unrelated pair lowest moves lexical overlap and legal force together, so any monotone function of token overlap satisfies both. Our remedy is a dissociation, an item holding surface form fixed while legal force moves. We release LexFlip, 373 minimal perturbations of Quebec statutory French that reverse legal force while preserving 0.93 of the tokens, with a harness scoring metrics, regressors and prompted judges alike. The seven embedding and BERTScore metrics we test spend only 0.022 to 0.039 of their identical-to-unrelated range on such an edit, against 0.670 for bidirectional NLI, the one family the identical-pair check would disqualify. On FrJudge, against a measured human ceiling of r=0.597, a bare length feature outscores every semantic metric and has the lowest margin we measure.",
+      "external_ids": [
+        "arxiv:2609.05296"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-07T13:51:13+08:00",
+      "last_seen_at": "2026-09-07T13:51:13+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2609.05279",
+      "arxiv_version": "v1",
+      "title": "Testing Interchangeability in LLM Agent Teams",
+      "authors": [
+        "Jianxin Gao",
+        "Tianyi Yu",
+        "Linna Deng",
+        "Runze Li",
+        "Zining Wang"
+      ],
+      "published": "2026-09-04",
+      "url": "https://arxiv.org/abs/2609.05279",
+      "abstract": "Production multi-agent systems replace agents constantly, on the assumption that an agent filling a role is interchangeable with any other agent that can do the job. We test that assumption. Eight teams per setting are formed independently from one base model on the same tasks, each agent keeping a private notebook across ten formation episodes; we then trade role-matched agents between teams and measure what changes on held-out tasks. Against a placebo that reproduces the disruption of a roster change without changing who occupies the seat, a swap costs little in task score but raises the communication a team spends per unit of progress by 16 to 63 percent, and in Hanabi a swapped agent is more expensive than an inexperienced one, consistent with interference from conventions learned with its former partner. In Collab-Overcooked, when the agent that sets the agenda is replaced, most of the extra communication comes from the agent that stayed. Three ablations, over base models, decoding temperature and formation length, move the swap penalty alongside one other quantity: how far independently formed teams drift apart. Greedy decoding lowers both; doubling a team's history raises both. In these settings, agents are more fungible in task outcome than in coordination efficiency, with larger swap effects after longer formation histories.",
+      "external_ids": [
+        "arxiv:2609.05279"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-07T13:51:13+08:00",
+      "last_seen_at": "2026-09-07T13:51:13+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2609.05274",
+      "arxiv_version": "v1",
+      "title": "How to Speculate about Uncertainty in Agentic Coding? A Draft-Model Gate Method",
+      "authors": [
+        "Konstantin Grotov",
+        "Valentin Malykh"
+      ],
+      "published": "2026-09-04",
+      "url": "https://arxiv.org/abs/2609.05274",
+      "abstract": "LLM agents deployed for software engineering fail expensively: they act confidently wrong, and bad actions are recognized only after costly execution and retry. We present Speculative Uncertainty (SU), a method that recovers a predictive failure signal for a black-box agent from its output tokens alone, with no access to logits, weights, activations, or repeated sampling. Inverting speculative decoding, a small open-weight draft model scores the agent's already-generated trajectory in a single forward pass. From these speculative cross-likelihoods we extract phase-aware features by separating the reasoning and action spans, and calibrate them against a verifiable objective. SU produces a failure-likelihood score that any downstream policy, such as routing, human intervention, or extra test-time compute, can consume directly. To show the signal is actionable, we instantiate one such policy, a pre-execution veto gate, on software engineering agents Qwen3-Coder-480B and closed-source Claude 3.5 Sonnet, cutting execution error rate by 6-8 percentage points and token cost by 14-19% in deployment, transferring to out-of-distribution benchmarks without retraining, and generalizing across agent models.",
+      "external_ids": [
+        "arxiv:2609.05274"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-07T13:51:13+08:00",
+      "last_seen_at": "2026-09-07T13:51:13+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2609.05269",
+      "arxiv_version": "v1",
+      "title": "CONTINUITY: Security-Context Contracts for Composable LLM Agent Controls",
+      "authors": [
+        "Chris Zheng",
+        "Geng Yang"
+      ],
+      "published": "2026-09-04",
+      "url": "https://arxiv.org/abs/2609.05269",
+      "abstract": "LLM agent systems increasingly combine provenance tracking, authorization, policy enforcement, protocol adapters, and execution controls. However, individually correct security mechanisms do not necessarily compose into an end-to-end secure system: security-critical context may be dropped, widened, rebound, or reinterpreted as actions cross component boundaries. We identify this failure mode as security-context discontinuity and introduce CONTINUITY, a framework for verifiable composition of agent security controls. CONTINUITY models each component with an assume-guarantee contract and carries authenticated security context across transitions using signed root grants, provenance commitments, role-bound transition receipts, bounded typed releases, transformation witnesses, and effect-bound execution permits. We formalize end-to-end consequence integrity, requiring every realized external effect to be backed by a valid and current authorization witness linking the principal, task, provenance, delegation, policy state, canonical action, and finality boundary. We implement a reference verifier and deterministic cross-layer fault-injection suite covering 32 fault classes across four application domains. In 2,560 parameterized attack instances spanning 128 fault-domain classes, the full CONTINUITY configuration commits no harmful external effect, while completing all 700 benign tasks and escalating all 200 ambiguous cases. These results show that secure agent execution requires not only sound individual controls, but explicit contracts that preserve their guarantees across the complete instruction-to-effect path.",
+      "external_ids": [
+        "arxiv:2609.05269"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-07T13:51:13+08:00",
+      "last_seen_at": "2026-09-07T13:51:13+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2609.05261",
+      "arxiv_version": "v1",
+      "title": "Trace2Tower: Transition-Aware EigenTrace Induction of Multi-Level Skills for LLM Agents",
+      "authors": [
+        "Jiazheng Sun",
+        "Boyu Yang",
+        "Binhao Yuan",
+        "Mingxuan Li",
+        "Xin Peng"
+      ],
+      "published": "2026-09-04",
+      "url": "https://arxiv.org/abs/2609.05261",
+      "abstract": "Large language model agents increasingly rely on execution traces to master complex interactive tasks. However, current paradigms are bottlenecked by shallow trajectory retrieval and flat skill summarization, fundamentally ignoring the temporal dependencies and outcome-conditioned topology of agent behavior. We introduce Trace2Tower, a transition-aware EigenTrace framework that distills raw trajectories into a robust skill hierarchy. Trace2Tower abstracts step-level interactions into canonical events, constructing a unified graph governed by semantic compatibility, transition dynamics, and outcome evidence. Through a novel contrastive spectral decomposition, it isolates stable, success-aligned behavioral modes while rigorously suppressing failure-prone shortcuts. These modes organically populate a dynamic skill tower of action templates, procedural routines, and overarching task strategies, continuously refined via verifier-guided feedback. On ALFWorld, Trace2Tower achieves 87.31% success requiring only 10.35 steps and 0.26 invalid actions; on WebShop, it reaches 50.67% exact success. Across both benchmarks, Trace2Tower significantly outperforms existing baselines in task mastery and context-efficient experience reuse.",
+      "external_ids": [
+        "arxiv:2609.05261"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-07T13:51:13+08:00",
+      "last_seen_at": "2026-09-07T13:51:13+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2609.05171",
+      "arxiv_version": "v1",
+      "title": "WeAgent-MMGenEdit: A Full-Stack Recipe for Multimodal Agentic Image Generation and Editing",
+      "authors": [
+        "Hui Zhang",
+        "Zongkai Liu",
+        "Liqiang Niu",
+        "Juntao Liu",
+        "Han Li",
+        "Zhen Cao",
+        "Wenchao Chen",
+        "Chengduo Zhao",
+        "Fandong Meng"
+      ],
+      "published": "2026-09-04",
+      "url": "https://arxiv.org/abs/2609.05171",
+      "abstract": "Image generation and editing models have advanced rapidly, yet remain unreliable when prompts require external world knowledge. Bounded and long-tail parametric knowledge prevents direct or reason-then-generate approaches from recovering the required facts and visual appearances. Existing agentic generation and editing methods mitigate this limitation with retrieval tools, yet remain constrained by insufficient visual verification, overloaded policy models, and weak integration of retrieved textual and visual evidence. To address these limitations, we present WeAgent-MMGenEdit, a full-stack recipe including a multimodal harness, a scalable data construction pipeline, a comprehensive benchmark, and post-training methods for the agent policy and image backend. We first introduce WeAgent-Harness, a multimodal runtime with persistent evidence management and dedicated verification and integration tools that organize retrieved multimodal evidence into a dense carrier. Upon this, we develop a scalable pipeline for prompt synthesis and agentic trajectory collection, yielding 23K supervised trajectories and 14.7K RL tasks with three-layer verifiable checklists. We further introduce WeBench-MMGenEdit, a bilingual benchmark covering both knowledge-intensive image generation and multi-image editing. Finally, a two-sided post-training recipe based on SFT and RL improves the agent policy and image backend. Together, WeAgent-MMGenEdit enables a 30B-total/3B-active policy to outperform similarly sized policy models and approach the performance of a 1T-parameter agent.",
+      "external_ids": [
+        "arxiv:2609.05171"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-07T13:51:13+08:00",
+      "last_seen_at": "2026-09-07T13:51:13+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2609.05036",
+      "arxiv_version": "v1",
+      "title": "Moral Competence Before Moral Content: Why LLM Agents Lack the Prerequisites for Coherent Alignment",
+      "authors": [
+        "Arno Libert",
+        "Derck W. E. Prinzhorn",
+        "Daan R. Henselmans"
+      ],
+      "published": "2026-09-04",
+      "url": "https://arxiv.org/abs/2609.05036",
+      "abstract": "AI alignment requires AI systems to adhere to human norms, values, or intentions. Under value pluralism there is no correct target, but a shared prerequisite is that the system's behavior expresses a coherent policy: a mapping from situations to verdicts that is invariant while a situation's morally relevant features are preserved, and sensitive when they change. We introduce four structural conditions for such coherent policies: verdict stability, monotonicity, decisiveness, and Pareto viability. Together they measure a form of moral competence that is evaluable from behavior alone, without reference to a moral standard or expert baseline, forming a structural floor for alignment rather than a normative target. We demonstrate the methodology on three simulated deployments featuring LLM-based agents facing moral dilemmas. Evaluating nine frontier models under a factorial design of five paraphrases, five escalation levels, and three dominance conditions, we show no model expresses a coherent policy across the three deployments: surface-form perturbation alone produces verdict-rate shifts of up to $99$ percentage points at a single escalation level, and a model's success on one scenario does not predict its competence on another. This suggests LLM-based agents are not currently the kind of object to which alignment can meaningfully apply.",
+      "external_ids": [
+        "arxiv:2609.05036"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-07T13:51:13+08:00",
+      "last_seen_at": "2026-09-07T13:51:13+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2609.04915",
+      "arxiv_version": "v1",
+      "title": "Compact-Memory LLM Agents via Online Max-Member Clustering and Atom-Aware Packing",
+      "authors": [
+        "Jiahe Geng",
+        "Jinpeng Wang",
+        "Kun Yuan"
+      ],
+      "published": "2026-09-04",
+      "url": "https://arxiv.org/abs/2609.04915",
+      "abstract": "Many long-horizon LLM deployments face tight prompt budgets: latency, cost, and context limits make full-context prompting impractical as interaction length grows. The key question is then not raw recall alone, but which memory design gives the best quality--token trade-off in the compact-memory regime. We present \\textbf{RSM-full}, an online clustered-memory pipeline designed for a strong quality--token Pareto point. RSM-full combines two design choices: a cosine-gated \\emph{max-member merge} write rule and an atom-aware grouped context packer. On AMA-Bench, our primary compact-memory benchmark, it reaches $83%$ of Full-Context quality at $32%$ of the token cost at a $4$k budget; under four-seed averaging it beats the closest streaming-clustered baseline (Online K-Means) by $+3.5$--$6.0$,pp ($p{<}.001$) across the whole ${\\sim}2.6$k--${\\sim}5$k regime. Three-seed ablations show most of this gain comes from the merge rule ($+5.7$,pp over Online K-Means and matched-$τ$ DP-means) and the grouped packer ($+5.0$,pp over flat concatenation). The pattern reproduces on RealMem, an independent long-horizon persona-memory benchmark: RSM-full improves on Budget-RAG ($+0.69$,pp, $p{=}.006$), is on par with BM25-RAG (paired $Δ{=}{+}0.27$,pp, $p{=}.47$; we do \\emph{not} claim BM25 equivalence in the equivalence-test sense), and significantly outperforms Streaming-Proto ($+2.97$,pp) and the closest reproduced 2025 agentic-memory baseline A-MEM ($+1.65$,pp, $p{<}.001$). Across benchmarks the message is consistent: under tight budgets, compact-memory performance is driven mainly by how streaming memories are merged and how retrieved content is assembled. Overall, RSM-full is most useful when answeroughly $2k$--$5k$ prompt tokens, where itdefines a strong compact-memory Pareto point; higher-token baselines remain stronger outside this regime.",
+      "external_ids": [
+        "arxiv:2609.04915"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-07T13:51:13+08:00",
+      "last_seen_at": "2026-09-07T13:51:13+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2609.04905",
+      "arxiv_version": "v1",
+      "title": "Ancilla mediated steady-state engineering in open quantum systems",
+      "authors": [
+        "Soham Pal",
+        "Karen Hovhannisyan",
+        "Omri Porat",
+        "Shovan Dutta",
+        "Janet Anders",
+        "Helena Knowles"
+      ],
+      "published": "2026-09-04",
+      "url": "https://arxiv.org/abs/2609.04905",
+      "abstract": "Engineering the properties of a reservoir and its coupling to a quantum system is a powerful tool for simulating quantum thermodynamic processes and for generating otherwise inaccessible steady states. Yet tailoring both the reservoir and its coupling within a single platform remains challenging. Here we introduce a platform, in which an ancilla qubit mediates the coupling of a target system to a reservoir, providing independent control over the interaction form, coupling strength, and effective reservoir temperature. Our implementation uses the electron spin of a single nitrogen-vacancy center in diamond as the ancilla and a proximal $^{13}$C nuclear spin as the target. By alternating engineered unitary interactions with dissipative ancilla resets, we realize dynamics naturally described by a collision model, enabling straight-forward tracking of the work, heat, coherence, and entropy generated at every collision. We experimentally demonstrate conventional thermalization and also realize anti-thermalization: the stabilization of the target system in a temperature opposite to that of its reservoir. Finally, harnessing this steady-state engineering, we utilize the nuclear spin as a quantum battery, achieving a steady-state ergotropy exceeding $70\\%$ of the theoretical maximum.",
+      "external_ids": [
+        "arxiv:2609.04905"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-07T13:51:13+08:00",
+      "last_seen_at": "2026-09-07T13:51:13+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2609.04898",
+      "arxiv_version": "v1",
+      "title": "RefactorPlatform: An Open-Source Harness for Controlled Evaluation of Repository-Scale Refactoring Agents",
+      "authors": [
+        "Aziz Ben Amor",
+        "Drish Mali",
+        "Mann Acharya",
+        "Vijayasri Iyer",
+        "Sébastien Bratières"
+      ],
+      "published": "2026-09-04",
+      "url": "https://arxiv.org/abs/2609.04898",
+      "abstract": "Repository-scale refactoring requires coding agents to propagate a single change across many interdependent files without altering program behavior, yet to our knowledge no existing harness isolates the design choices that determine agent success on this task. We present RefactorPlatform, an open-source evaluation harness that holds the environment fixed and varies each design axis explicitly: model backbone (via OpenRouter and GitHub Copilot CLI), execution regime (baseline, retrieval-augmented, and multi-agent), and prompt specificity. Each run executes in an isolated workspace with live terminal streaming, per-task logging of tokens, diffs, and transcripts, AST-based verification, and exportable telemetry for audit and reproduction. Demonstrating the platform on 100 multi-file RefactorBench tasks across four model families, we illustrate the analyses it supports: AST-aware chunking outperforms naive token-window chunking by 25-30% across prompt modes, whereas naive retrieval falls below the retrieval-free baseline; a lean retrieval-augmented single agent (86%) beats the sub-agent configuration we evaluated (66%) on matched tasks with no task passing under delegation that fails under retrieval; and retrieval's accuracy gains absorb its token overhead, leaving cost per successful refactoring unchanged. RefactorPlatform is open-sourced to make refactoring-agent evaluation reproducible and auditable.",
+      "external_ids": [
+        "arxiv:2609.04898"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-07T13:51:13+08:00",
+      "last_seen_at": "2026-09-07T13:51:13+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2609.04894",
+      "arxiv_version": "v1",
+      "title": "From Language Models to World-Acting Systems: Progress and Limits of Agentic AI across Digital, Social, Virtual, and Physical Environments",
+      "authors": [
+        "Linsen Zhu",
+        "Mengqing Cai"
+      ],
+      "published": "2026-09-04",
+      "url": "https://arxiv.org/abs/2609.04894",
+      "abstract": "Large language models become consequential agents when surrounding systems let outputs change external state. Models now call tools, operate interfaces, delegate work, retain state, inhabit generated worlds, and control robots or laboratory equipment. Such advances are often narrated as one march toward autonomy, conflating model competence, system integration, persistence, and safe authority. This critical review synthesizes primary research and official technical specifications available by 31 August 2026. We organize the evidence along delegated authority, temporal persistence, and environmental coupling, while separating model, harness, and environment. Within the evidence examined, action-interface expansion is documented more convincingly than robust completion, recovery, authorization, or independent verification. Model Context Protocol and Agent2Agent improve interoperability but do not establish trustworthy delegation; multi-agent organization adds specialization alongside cost and correlated failure. Persistent simulations and world models support training and planning but do not themselves demonstrate agency; robotics and self-driving laboratories establish bounded feasibility rather than unattended open-world reliability. We propose justified delegation as an analytical and normative heuristic, not an observed law or certified score: expand action scope only where evidence supports provenance, bounded authority, failure detection, safe recovery, and calibrated human control. This framing yields a research agenda for coupled model-harness evaluation, capability-based permissions, durable state, cross-agent accountability, and staged physical validation.",
+      "external_ids": [
+        "arxiv:2609.04894"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-07T13:51:13+08:00",
+      "last_seen_at": "2026-09-07T13:51:13+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2609.04875",
+      "arxiv_version": "v1",
+      "title": "Forgetting Without Restarting: Execution-State Unlearning for Stateful LLM Agents",
+      "authors": [
+        "Chao Yao",
+        "Yangbo Wei",
+        "Zhen Huang",
+        "Junhong Qian",
+        "Chenle Chen",
+        "Shaoqiang Lu",
+        "Chen Wu",
+        "Lei He"
+      ],
+      "published": "2026-09-04",
+      "url": "https://arxiv.org/abs/2609.04875",
+      "abstract": "Long-running LLM agents are stateful: beyond the transcript they accrete compressed summaries, plaintext memory, pending tool plans, and, under every serving API, a KV cache. Yet today's \"forget\" operations delete a plaintext memory record and stop, leaving every artifact derived from the revoked information intact. We formalize execution-state unlearning: after a forget request, the agent must behave as if it had never observed the target. Modeling the runtime as a deterministic transition system, we prove that the pre-target trajectory prefix is shared with this counterfactual world for free, that the post-target suffix is irreducibly tainted without token-level attribution, and that exact unlearning requires at least $T-τ+1$ recomputed transitions, where $τ$ is the target's injection step. Provenance-Guided Selective Replay attains this bound as a cross-layer contract spanning prompt, compressed memory, and cache: a provenance graph locates the injection point, checkpoint restoration reduces to cropping the KV cache, and sanitized replay regenerates the counterfactual suffix. Audited with elicitation, stochastic, and string-free behavioral tests across three agent suites, nine baselines, and three model families, memory deletion leaves leakage unchanged, instruction-based forgetting collapses under elicitation (Leak@probes = 1.00), and source redaction still acts on a revoked preference in 80% of episodes, while selective replay is indistinguishable from a full reset at up to 9x fewer recomputed tokens.",
+      "external_ids": [
+        "arxiv:2609.04875"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-07T13:51:13+08:00",
+      "last_seen_at": "2026-09-07T13:51:13+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2609.04871",
+      "arxiv_version": "v1",
+      "title": "AutoLR: Automating the Path from Research to Launch Review in Industrial Recommender Systems",
+      "authors": [
+        "Qi Zhang",
+        "Yanlin Chen",
+        "Wenchao Xiao"
+      ],
+      "published": "2026-09-04",
+      "url": "https://arxiv.org/abs/2609.04871",
+      "abstract": "Improving an industrial recommender is an iterative research-and-engineering process rather than a direct path from idea to deployment. In \\textbf{DASHEN, NetEase's gaming-community app}, algorithm engineers typically identify promising directions from research papers, technical reports, and prior production experiments; reproduce or adapt the underlying methods; implement them in the production codebase; and evaluate the resulting models through training and offline experiments. Promising candidates are then advanced to online A/B tests, and those demonstrating robust gains are submitted to Launch Review---the internal gate for full-traffic rollout. Large language models (LLMs) can assist with individual stages of this workflow, but the overall process remains human-dependent without a harness that can reliably coordinate them across long-running, often multi-day experimental cycles. We present \\textbf{AutoLR}, initially built as \\textbf{Auto Launch Review} and later extended upstream into an autonomous research-to-launch harness. AutoLR combines three system mechanisms: a \\textbf{multi-expert council} that debates and adversarially reviews proposals; a \\textbf{deterministic evidence-weighted exploration--exploitation selector} that allocates a limited trial budget across candidate directions and uses Council reranking; and a layered knowledge system that combines external research, production-system knowledge, and DASHEN-specific domain knowledge---such as game communities, player characteristics, and content-interaction patterns---with posterior evidence from configurations, patches, logs, failures, and offline outcomes. LLM agents perform semantic reasoning and code generation, while deterministic controllers retain authority over execution, metric extraction, guardrails, and persistent state transitions.",
+      "external_ids": [
+        "arxiv:2609.04871"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-07T13:51:13+08:00",
+      "last_seen_at": "2026-09-07T13:51:13+08:00"
+    }
+  ]
+}
