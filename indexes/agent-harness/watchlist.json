@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "topic": "agent harness",
-  "updated_at": "2026-09-07T13:51:13+08:00",
+  "updated_at": "2026-09-08T13:42:44+08:00",
   "candidates": [
     {
       "source": "arxiv",
@@ -30,7 +30,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-07T13:51:13+08:00",
-      "last_seen_at": "2026-09-07T13:51:13+08:00"
+      "last_seen_at": "2026-09-08T13:42:44+08:00"
     },
     {
       "source": "arxiv",
@@ -62,7 +62,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-07T13:51:13+08:00",
-      "last_seen_at": "2026-09-07T13:51:13+08:00"
+      "last_seen_at": "2026-09-08T13:42:44+08:00"
     },
     {
       "source": "arxiv",
@@ -111,7 +111,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-07T13:51:13+08:00",
-      "last_seen_at": "2026-09-07T13:51:13+08:00"
+      "last_seen_at": "2026-09-08T13:42:44+08:00"
     },
     {
       "source": "arxiv",
@@ -139,7 +139,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-07T13:51:13+08:00",
-      "last_seen_at": "2026-09-07T13:51:13+08:00"
+      "last_seen_at": "2026-09-08T13:42:44+08:00"
     },
     {
       "source": "arxiv",
@@ -169,7 +169,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-07T13:51:13+08:00",
-      "last_seen_at": "2026-09-07T13:51:13+08:00"
+      "last_seen_at": "2026-09-08T13:42:44+08:00"
     },
     {
       "source": "arxiv",
@@ -195,7 +195,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-07T13:51:13+08:00",
-      "last_seen_at": "2026-09-07T13:51:13+08:00"
+      "last_seen_at": "2026-09-08T13:42:44+08:00"
     },
     {
       "source": "arxiv",
@@ -223,7 +223,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-07T13:51:13+08:00",
-      "last_seen_at": "2026-09-07T13:51:13+08:00"
+      "last_seen_at": "2026-09-08T13:42:44+08:00"
     },
     {
       "source": "arxiv",
@@ -249,7 +249,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-07T13:51:13+08:00",
-      "last_seen_at": "2026-09-07T13:51:13+08:00"
+      "last_seen_at": "2026-09-08T13:42:44+08:00"
     },
     {
       "source": "arxiv",
@@ -274,7 +274,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-07T13:51:13+08:00",
-      "last_seen_at": "2026-09-07T13:51:13+08:00"
+      "last_seen_at": "2026-09-08T13:42:44+08:00"
     },
     {
       "source": "arxiv",
@@ -302,7 +302,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-07T13:51:13+08:00",
-      "last_seen_at": "2026-09-07T13:51:13+08:00"
+      "last_seen_at": "2026-09-08T13:42:44+08:00"
     },
     {
       "source": "arxiv",
@@ -334,7 +334,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-07T13:51:13+08:00",
-      "last_seen_at": "2026-09-07T13:51:13+08:00"
+      "last_seen_at": "2026-09-08T13:42:44+08:00"
     },
     {
       "source": "arxiv",
@@ -360,7 +360,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-07T13:51:13+08:00",
-      "last_seen_at": "2026-09-07T13:51:13+08:00"
+      "last_seen_at": "2026-09-08T13:42:44+08:00"
     },
     {
       "source": "arxiv",
@@ -386,7 +386,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-07T13:51:13+08:00",
-      "last_seen_at": "2026-09-07T13:51:13+08:00"
+      "last_seen_at": "2026-09-08T13:42:44+08:00"
     },
     {
       "source": "arxiv",
@@ -415,7 +415,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-07T13:51:13+08:00",
-      "last_seen_at": "2026-09-07T13:51:13+08:00"
+      "last_seen_at": "2026-09-08T13:42:44+08:00"
     },
     {
       "source": "arxiv",
@@ -443,7 +443,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-07T13:51:13+08:00",
-      "last_seen_at": "2026-09-07T13:51:13+08:00"
+      "last_seen_at": "2026-09-08T13:42:44+08:00"
     },
     {
       "source": "arxiv",
@@ -468,7 +468,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-07T13:51:13+08:00",
-      "last_seen_at": "2026-09-07T13:51:13+08:00"
+      "last_seen_at": "2026-09-08T13:42:44+08:00"
     },
     {
       "source": "arxiv",
@@ -499,7 +499,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-07T13:51:13+08:00",
-      "last_seen_at": "2026-09-07T13:51:13+08:00"
+      "last_seen_at": "2026-09-08T13:42:44+08:00"
     },
     {
       "source": "arxiv",
@@ -525,7 +525,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-07T13:51:13+08:00",
-      "last_seen_at": "2026-09-07T13:51:13+08:00"
+      "last_seen_at": "2026-09-08T13:42:44+08:00"
     },
     {
       "source": "dblp",
@@ -2518,7 +2518,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-01T14:08:00+08:00",
-      "last_seen_at": "2026-09-01T14:08:00+08:00"
+      "last_seen_at": "2026-09-08T13:42:44+08:00"
     },
     {
       "source": "arxiv",
@@ -3513,7 +3513,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-28T20:35:42+08:00",
-      "last_seen_at": "2026-09-07T13:51:13+08:00"
+      "last_seen_at": "2026-09-08T13:42:44+08:00"
     },
     {
       "source": "semanticscholar",
@@ -3539,7 +3539,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-28T20:35:42+08:00",
-      "last_seen_at": "2026-08-30T14:20:49+08:00"
+      "last_seen_at": "2026-09-08T13:42:44+08:00"
     },
     {
       "source": "semanticscholar",
@@ -3566,7 +3566,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-28T20:35:42+08:00",
-      "last_seen_at": "2026-08-30T14:20:49+08:00"
+      "last_seen_at": "2026-09-08T13:42:44+08:00"
     },
     {
       "source": "arxiv",
@@ -5221,7 +5221,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-25T10:20:24+08:00",
-      "last_seen_at": "2026-09-05T13:24:08+08:00"
+      "last_seen_at": "2026-09-08T13:42:44+08:00"
     },
     {
       "source": "semanticscholar",
@@ -5248,7 +5248,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-25T10:20:24+08:00",
-      "last_seen_at": "2026-09-05T13:24:08+08:00"
+      "last_seen_at": "2026-09-08T13:42:44+08:00"
     },
     {
       "source": "semanticscholar",
@@ -5281,7 +5281,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-25T10:20:24+08:00",
-      "last_seen_at": "2026-09-05T13:24:08+08:00"
+      "last_seen_at": "2026-09-08T13:42:44+08:00"
     },
     {
       "source": "arxiv",
@@ -8572,7 +8572,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-16T10:25:23+08:00",
-      "last_seen_at": "2026-08-30T14:20:49+08:00"
+      "last_seen_at": "2026-09-08T13:42:44+08:00"
     },
     {
       "source": "semanticscholar",
@@ -8600,7 +8600,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-16T10:25:23+08:00",
-      "last_seen_at": "2026-08-30T14:20:49+08:00"
+      "last_seen_at": "2026-09-08T13:42:44+08:00"
     },
     {
       "source": "arxiv",
@@ -11485,7 +11485,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-07T11:52:28+08:00",
-      "last_seen_at": "2026-09-05T13:24:08+08:00"
+      "last_seen_at": "2026-09-08T13:42:44+08:00"
     },
     {
       "source": "arxiv",
@@ -12803,7 +12803,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-05T12:18:13+08:00",
-      "last_seen_at": "2026-09-01T14:08:00+08:00"
+      "last_seen_at": "2026-09-08T13:42:44+08:00"
     },
     {
       "source": "semanticscholar",
@@ -12846,7 +12846,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-05T12:18:13+08:00",
-      "last_seen_at": "2026-09-01T14:08:00+08:00"
+      "last_seen_at": "2026-09-08T13:42:44+08:00"
     },
     {
       "source": "semanticscholar",
@@ -12880,7 +12880,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-05T12:18:13+08:00",
-      "last_seen_at": "2026-09-01T14:08:00+08:00"
+      "last_seen_at": "2026-09-08T13:42:44+08:00"
     },
     {
       "source": "arxiv",
@@ -15352,7 +15352,7 @@
     }
   ],
   "last_run": {
-    "at": "2026-09-07T13:51:13+08:00",
+    "at": "2026-09-08T13:42:44+08:00",
     "sources": [
       "arxiv",
       "semanticscholar",
@@ -15363,8 +15363,8 @@
       "\"LLM agent\" harness",
       "test-time harness evolution"
     ],
-    "fetched": 66,
-    "merged": 37,
-    "new": 18
+    "fetched": 75,
+    "merged": 43,
+    "new": 0
   }
 }
