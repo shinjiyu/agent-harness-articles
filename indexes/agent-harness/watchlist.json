@@ -1,8 +1,42 @@
 {
   "schema_version": 1,
   "topic": "agent harness",
-  "updated_at": "2026-09-11T13:43:39+08:00",
+  "updated_at": "2026-09-12T13:29:23+08:00",
   "candidates": [
+    {
+      "source": "semanticscholar",
+      "arxiv_id": "2606.20629",
+      "doi": "10.48550/arXiv.2606.20629",
+      "title": "Specialize Roles, Mix Deployments: Pushing the Cost-Accuracy Frontier of LLM Agent Teams",
+      "authors": [
+        "Yinsicheng Jiang",
+        "Liang Cheng",
+        "Yeqi Huang",
+        "Yufan Zhao",
+        "Zhan Lu",
+        "Li Dong",
+        "Wenda Li",
+        "E. Ponti",
+        "Luo Mai"
+      ],
+      "published": "2026-05-28",
+      "url": "https://arxiv.org/abs/2606.20629",
+      "abstract": "LLM agents are increasingly deployed as multi-role teams, where tasks are divided across specialized roles such as planner, executor, and verifier. In these systems, cost and accuracy are no longer properties of a single model: they depend on which model fills each role and where it is hosted, including API, self-hosted, and hybrid deployment. Existing agentic benchmarks typically evaluate fixed models or fixed agent configurations, and therefore offer limited guidance for cost-accuracy-optimal deployment. We introduce AgentCARD, a role-aware benchmark suite for evaluating LLM agent teams across role assignment and deployment mode. AgentCARD combines a role-decomposed evaluation harness, a unified API/self-hosted cost model, Pareto-frontier analysis, and a Shapley-based diagnostic for identifying role bottlenecks. Our evaluation shows that heterogeneous teams consistently occupy the cost-accuracy frontier. They improve accuracy by up to $44\\%$ over cost-equivalent homogeneous teams, or match the strongest homogeneous team at up to $12\\times$ lower per-task cost through hybrid deployment. We further find that the best role assignment is domain-dependent: some domains are planner-bottlenecked, while others are executor-bottlenecked. Finally, AgentCARD extends beyond planner--executor teams to workflows with additional roles such as verification, and supports continual evaluation as new domains and team structures emerge. Our code is released at: https://github.com/Auto-CAP/AgentCAP",
+      "external_ids": [
+        "s2:a7b9f1da935190664031765f94717c492894759f",
+        "arxiv:2606.20629",
+        "doi:10.48550/arxiv.2606.20629"
+      ],
+      "sources": [
+        "semanticscholar"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-12T13:29:23+08:00",
+      "last_seen_at": "2026-09-12T13:29:23+08:00"
+    },
     {
       "source": "arxiv",
       "arxiv_id": "2609.11911",
@@ -27,7 +61,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-11T13:43:39+08:00",
-      "last_seen_at": "2026-09-11T13:43:39+08:00"
+      "last_seen_at": "2026-09-12T13:29:23+08:00"
     },
     {
       "source": "arxiv",
@@ -59,7 +93,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-11T13:43:39+08:00",
-      "last_seen_at": "2026-09-11T13:43:39+08:00"
+      "last_seen_at": "2026-09-12T13:29:23+08:00"
     },
     {
       "source": "arxiv",
@@ -89,7 +123,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-11T13:43:39+08:00",
-      "last_seen_at": "2026-09-11T13:43:39+08:00"
+      "last_seen_at": "2026-09-12T13:29:23+08:00"
     },
     {
       "source": "arxiv",
@@ -113,7 +147,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-11T13:43:39+08:00",
-      "last_seen_at": "2026-09-11T13:43:39+08:00"
+      "last_seen_at": "2026-09-12T13:29:23+08:00"
     },
     {
       "source": "arxiv",
@@ -142,7 +176,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-11T13:43:39+08:00",
-      "last_seen_at": "2026-09-11T13:43:39+08:00"
+      "last_seen_at": "2026-09-12T13:29:23+08:00"
     },
     {
       "source": "arxiv",
@@ -175,7 +209,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-11T13:43:39+08:00",
-      "last_seen_at": "2026-09-11T13:43:39+08:00"
+      "last_seen_at": "2026-09-12T13:29:23+08:00"
     },
     {
       "source": "arxiv",
@@ -213,7 +247,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-11T13:43:39+08:00",
-      "last_seen_at": "2026-09-11T13:43:39+08:00"
+      "last_seen_at": "2026-09-12T13:29:23+08:00"
     },
     {
       "source": "arxiv",
@@ -242,7 +276,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-11T13:43:39+08:00",
-      "last_seen_at": "2026-09-11T13:43:39+08:00"
+      "last_seen_at": "2026-09-12T13:29:23+08:00"
     },
     {
       "source": "arxiv",
@@ -267,7 +301,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-11T13:43:39+08:00",
-      "last_seen_at": "2026-09-11T13:43:39+08:00"
+      "last_seen_at": "2026-09-12T13:29:23+08:00"
     },
     {
       "source": "arxiv",
@@ -298,7 +332,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-11T13:43:39+08:00",
-      "last_seen_at": "2026-09-11T13:43:39+08:00"
+      "last_seen_at": "2026-09-12T13:29:23+08:00"
     },
     {
       "source": "arxiv",
@@ -324,7 +358,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-11T13:43:39+08:00",
-      "last_seen_at": "2026-09-11T13:43:39+08:00"
+      "last_seen_at": "2026-09-12T13:29:23+08:00"
     },
     {
       "source": "arxiv",
@@ -349,7 +383,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-11T13:43:39+08:00",
-      "last_seen_at": "2026-09-11T13:43:39+08:00"
+      "last_seen_at": "2026-09-12T13:29:23+08:00"
     },
     {
       "source": "arxiv",
@@ -378,7 +412,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-11T13:43:39+08:00",
-      "last_seen_at": "2026-09-11T13:43:39+08:00"
+      "last_seen_at": "2026-09-12T13:29:23+08:00"
     },
     {
       "source": "arxiv",
@@ -414,7 +448,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-11T13:43:39+08:00",
-      "last_seen_at": "2026-09-11T13:43:39+08:00"
+      "last_seen_at": "2026-09-12T13:29:23+08:00"
     },
     {
       "source": "arxiv",
@@ -450,7 +484,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-11T13:43:39+08:00",
-      "last_seen_at": "2026-09-11T13:43:39+08:00"
+      "last_seen_at": "2026-09-12T13:29:23+08:00"
     },
     {
       "source": "arxiv",
@@ -474,7 +508,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-11T13:43:39+08:00",
-      "last_seen_at": "2026-09-11T13:43:39+08:00"
+      "last_seen_at": "2026-09-12T13:29:23+08:00"
     },
     {
       "source": "arxiv",
@@ -3888,7 +3922,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-01T14:08:00+08:00",
-      "last_seen_at": "2026-09-10T13:43:36+08:00"
+      "last_seen_at": "2026-09-12T13:29:23+08:00"
     },
     {
       "source": "arxiv",
@@ -4883,7 +4917,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-28T20:35:42+08:00",
-      "last_seen_at": "2026-09-08T13:42:44+08:00"
+      "last_seen_at": "2026-09-12T13:29:23+08:00"
     },
     {
       "source": "semanticscholar",
@@ -4909,7 +4943,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-28T20:35:42+08:00",
-      "last_seen_at": "2026-09-08T13:42:44+08:00"
+      "last_seen_at": "2026-09-12T13:29:23+08:00"
     },
     {
       "source": "semanticscholar",
@@ -4936,7 +4970,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-28T20:35:42+08:00",
-      "last_seen_at": "2026-09-08T13:42:44+08:00"
+      "last_seen_at": "2026-09-12T13:29:23+08:00"
     },
     {
       "source": "arxiv",
@@ -9942,7 +9976,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-16T10:25:23+08:00",
-      "last_seen_at": "2026-09-08T13:42:44+08:00"
+      "last_seen_at": "2026-09-12T13:29:23+08:00"
     },
     {
       "source": "semanticscholar",
@@ -9970,7 +10004,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-16T10:25:23+08:00",
-      "last_seen_at": "2026-09-08T13:42:44+08:00"
+      "last_seen_at": "2026-09-12T13:29:23+08:00"
     },
     {
       "source": "arxiv",
@@ -14173,7 +14207,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-05T12:18:13+08:00",
-      "last_seen_at": "2026-09-10T13:43:36+08:00"
+      "last_seen_at": "2026-09-12T13:29:23+08:00"
     },
     {
       "source": "semanticscholar",
@@ -14216,7 +14250,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-05T12:18:13+08:00",
-      "last_seen_at": "2026-09-10T13:43:36+08:00"
+      "last_seen_at": "2026-09-12T13:29:23+08:00"
     },
     {
       "source": "semanticscholar",
@@ -14250,7 +14284,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-08-05T12:18:13+08:00",
-      "last_seen_at": "2026-09-10T13:43:36+08:00"
+      "last_seen_at": "2026-09-12T13:29:23+08:00"
     },
     {
       "source": "arxiv",
@@ -15297,36 +15331,10 @@
       "status": "new",
       "first_seen_at": "2026-08-03T12:34:07+08:00",
       "last_seen_at": "2026-08-03T12:34:07+08:00"
-    },
-    {
-      "source": "arxiv",
-      "arxiv_id": "2607.29087",
-      "arxiv_version": "v1",
-      "title": "Harnessing the Wisdom of LLM Crowds through Complementarity-Driven Iterative Collaboration",
-      "authors": [
-        "Yanbin Fang",
-        "Xuan Wei",
-        "Wei Chen"
-      ],
-      "published": "2026-07-31",
-      "url": "https://arxiv.org/abs/2607.29087",
-      "abstract": "Large language models (LLMs) are increasingly deployed in enterprise settings, yet individual models remain bounded by model-specific capability limitations. These heterogeneous boundaries pose a deployment challenge, but also create an opportunity: strategically coordinating multiple LLMs may unlock collective intelligence exceeding any single model. Existing approaches fix how models are combined in advance, overlooking the dynamic, state-dependent role of complementarity in complex problem solving. Drawing on the wisdom-of-crowds paradigm, we reconceptualize collective LLM intelligence as relay-style complementarity: a sequential process in which each successor model is selected to address the specific bottleneck identified in its predecessor's output. To operationalize this, we propose WILC (Wisdom Integration of LLM Crowds), a framework grounded in two design principles. First, iterative reflection-and-refinement establishes a state-preserving workflow through which models diagnose and refine prior outputs. Second, complementarity-driven model selection governs transitions via a dual-gate mechanism: prospective complementarity fit (PCF) identifies the worker most suited to the current bottleneck, while posterior complementarity gain (PCG) evaluates whether the selected transition improves the evolving solution. Experiments across four diverse benchmarks show that WILC outperforms existing approaches, including single-model self-refinement, ensemble methods, and query-routing methods. Under standardized pricing assumptions, WILC matches the average benchmark performance of GPT-5.2 at roughly 7 times lower estimated per-query cost, while facilitating data sovereignty through self-hosted deployment. This study extends wisdom-of-crowds theory from static aggregation to sequential AI complementarity and provides transferable design principles for multi-AI coordination.",
-      "external_ids": [
-        "arxiv:2607.29087"
-      ],
-      "sources": [
-        "arxiv"
-      ],
-      "matched_keywords": [
-        "\"LLM agent\" harness"
-      ],
-      "status": "new",
-      "first_seen_at": "2026-08-03T12:34:07+08:00",
-      "last_seen_at": "2026-08-03T12:34:07+08:00"
     }
   ],
   "last_run": {
-    "at": "2026-09-11T13:43:39+08:00",
+    "at": "2026-09-12T13:29:23+08:00",
     "sources": [
       "arxiv",
       "semanticscholar",
@@ -15337,8 +15345,8 @@
       "\"LLM agent\" harness",
       "test-time harness evolution"
     ],
-    "fetched": 45,
-    "merged": 16,
-    "new": 16
+    "fetched": 65,
+    "merged": 36,
+    "new": 1
   }
 }

@@ -1,0 +1,55 @@
+{
+  "date": "2026-09-12",
+  "run": {
+    "at": "2026-09-12T13:29:23+08:00",
+    "sources": [
+      "arxiv",
+      "semanticscholar",
+      "dblp"
+    ],
+    "keywords": [
+      "agent harness",
+      "\"LLM agent\" harness",
+      "test-time harness evolution"
+    ],
+    "fetched": 65,
+    "merged": 36,
+    "new": 1
+  },
+  "new_candidates": [
+    {
+      "source": "semanticscholar",
+      "arxiv_id": "2606.20629",
+      "doi": "10.48550/arXiv.2606.20629",
+      "title": "Specialize Roles, Mix Deployments: Pushing the Cost-Accuracy Frontier of LLM Agent Teams",
+      "authors": [
+        "Yinsicheng Jiang",
+        "Liang Cheng",
+        "Yeqi Huang",
+        "Yufan Zhao",
+        "Zhan Lu",
+        "Li Dong",
+        "Wenda Li",
+        "E. Ponti",
+        "Luo Mai"
+      ],
+      "published": "2026-05-28",
+      "url": "https://arxiv.org/abs/2606.20629",
+      "abstract": "LLM agents are increasingly deployed as multi-role teams, where tasks are divided across specialized roles such as planner, executor, and verifier. In these systems, cost and accuracy are no longer properties of a single model: they depend on which model fills each role and where it is hosted, including API, self-hosted, and hybrid deployment. Existing agentic benchmarks typically evaluate fixed models or fixed agent configurations, and therefore offer limited guidance for cost-accuracy-optimal deployment. We introduce AgentCARD, a role-aware benchmark suite for evaluating LLM agent teams across role assignment and deployment mode. AgentCARD combines a role-decomposed evaluation harness, a unified API/self-hosted cost model, Pareto-frontier analysis, and a Shapley-based diagnostic for identifying role bottlenecks. Our evaluation shows that heterogeneous teams consistently occupy the cost-accuracy frontier. They improve accuracy by up to $44\\%$ over cost-equivalent homogeneous teams, or match the strongest homogeneous team at up to $12\\times$ lower per-task cost through hybrid deployment. We further find that the best role assignment is domain-dependent: some domains are planner-bottlenecked, while others are executor-bottlenecked. Finally, AgentCARD extends beyond planner--executor teams to workflows with additional roles such as verification, and supports continual evaluation as new domains and team structures emerge. Our code is released at: https://github.com/Auto-CAP/AgentCAP",
+      "external_ids": [
+        "s2:a7b9f1da935190664031765f94717c492894759f",
+        "arxiv:2606.20629",
+        "doi:10.48550/arxiv.2606.20629"
+      ],
+      "sources": [
+        "semanticscholar"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-12T13:29:23+08:00",
+      "last_seen_at": "2026-09-12T13:29:23+08:00"
+    }
+  ]
+}
