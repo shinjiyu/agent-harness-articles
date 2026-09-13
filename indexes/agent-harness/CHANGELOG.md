@@ -1,3 +1,50 @@
+
+## 2026-09-13
+
+Watchlist 积压入库：+306（A5 / B115 / C186）。摘要级分档；A 档已补 `papers/a/*.md`。
+
+- [B] `2605.30611` Crafter: A Multi-Agent Harness for Editable Scientific Figure Generation from Diverse Inputs
+- [B] `2608.14015` MedClaw: Heuristic Agent Harness for Long-Horizon Surgical Video Reasoning
+- [B] `2607.29241` RecHarness: A Bandit-Routed Agentic Harness for Self-Evolving Recommender Systems
+- [A] `2608.09885` SHE: Trajectory-driven Safety Harness Evolution for LLM Agents
+- [A] `2608.06301` HarnessOpt-Bench: Evaluating LLMs at Harness Optimization
+- [A] `2609.01437` HarnessDev: Can LLMs Create and Evolve Their Own Agent Harness?
+- [B] `2608.23473` MetaCaster: Meta-Harness-Optimized Agent for End-to-End Few-Shot Learning of Lightweight Time Series...
+- [A] `2607.12227` Rethinking the Evaluation of Harness Evolution for Agents
+- [A] `2608.17597` HarnessRisk: A Lifecycle-Oriented Benchmark for Agent Harness Safety
+- [B] `2607.24762` Kernel Forge: An Agent Harness for LLM-based Generation and Optimization of CUDA Kernels
+- [B] `2608.04828` Skill-Use: Can LLMs Actually Use Skills in Agentic Harnesses?
+- [B] `2609.03718` What Do CAE Simulation Agents Really Need Beyond a Generic Harness?
+- [B] `2608.25593` JIT-Agent: Scaling Harness Intelligence via Just-in-Time Harness Evolution
+- [B] `2608.27299` When Context Gets Root: Privilege Escalation in LLM Harnesses
+- [B] `2608.17393` LEGO-RL: Harness-Native Reinforcement Learning for Coding Agents
+- [B] `2608.10157` SBCO: Self-Supervised, Verifier-Grounded Harness Optimization For Planning Agents
+- [B] `2606.27243` NOVA: A Verification-Aware Agent Harness for Architecture Evolution in Industrial Recommender System...
+- [B] `2608.13228` Capability Sheaves for Compositional Agent-Harness Repair: Controlled Quotients and a Real-Repositor...
+- [B] `2608.18565` SemaPLC: A Project-Grounded, Verification-Gated Agent Harness for PLC Code Generation
+- [B] `2608.05030` From Score Matrices to Football-Aware Match-State Simulation: An Auditable LLM Harness for Exact-Sco...
+- [B] `2606.23449` AOHP: An Open-Source OS-Level Agent Harness for Personalized, Efficient and Secure Interaction
+- [B] `2608.06984` HarnessSafe: Evaluating Safety Across Persistent Carriers in Agent Harnesses
+- [B] `2608.20169` Task-CoEvolve: Efficient Harness Optimization via Adaptive Validation Task Selection
+- [B] `2608.16798` ClawGym II: Exploring Black-Box RL on Agent Harness
+- [B] `2608.28553` Logos: An Agent Harness on a Cross-Process Bus
+- [B] `2608.02276` Harness-R1: Learning to Edit Executable Runtime Harnesses from Agent Failure Trajectories
+- [B] `2608.04968` EvolveNet: Collaborative Harness Evolution for Agent Self-Improvement
+- [B] `2607.03691` Don't Blame the Large Language Model: How Agent Harness Evolution Shapes Coding Agent Quality
+- [B] `2609.02786` SafeEvolve: Harness-Policy Co-Evolution from Agent Experience for Safety Alignment
+- [B] `2609.04898` RefactorPlatform: An Open-Source Harness for Controlled Evaluation of Repository-Scale Refactoring A...
+- [B] `2607.15684` Understanding Agent-Reactive Bugs at the Model-Harness Boundary: An Empirical Study of LLM Agent Iss...
+- [B] `2608.09857` Agentic Harnesses: LLM-Driven Verification Layers for Robot Autonomy
+- [B] `2605.26731` It's Not the Capability: Harness Sensitivity Is Non-Monotone Across LLM Agent Tiers
+- [B] `2609.01600` CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses?
+- [B] `2608.23041` AutoSaddler: Automatic Harness Optimization with Durable Updates from Agent Execution Traces
+- [B] `2608.28363` EvoUndo: Recoverability-Constrained Self-Evolution for LLM Agent Harnesses
+- [B] `2608.17433` Task-Aware Harness Provisioning for LLM Agents in Mission-Critical Infrastructure Operations
+- [B] `2608.13560` AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design
+- [B] `2608.21101` ClawSentry: A Progressive Multi-Tier Security Monitor for Safeguarding Autonomous LLM Agents
+- [B] `2608.20851` BC-Bench: Evaluating Agentic Engineering in a Domain-Specific Language for ERP
+- … 另有 266 篇见 index.json
+
 # Changelog — agent-harness 索引
 
 按时间倒序记录批量变更。单篇微调也可记一行。
