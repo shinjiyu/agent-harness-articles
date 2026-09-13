@@ -222,7 +222,7 @@ def has_analysis(p: dict) -> bool:
 
 
 def paper_card(p: dict, *, show_intro: bool = False, intro_html: str = "") -> str:
-    tags = " ".join(f'<span class="pill">{html.escape(t)}</span>' for t in p.get("tags", []))
+    tags = " ".join(f'<span class="pill">{html.escape(t)}</span>' for t in (p.get("tags") or []))
     tier = p.get("tier", "?")
     tier_cls = {"A": "tier-a", "B": "tier-b", "C": "tier-c"}.get(tier, "")
     arxiv_id = p["arxiv_id"]
