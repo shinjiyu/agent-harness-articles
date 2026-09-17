@@ -462,7 +462,7 @@
       ],
       "first_seen_at": "2026-09-12T13:29:23+08:00",
       "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-09-15T14:00:19+08:00",
+      "last_seen_at": "2026-09-17T13:52:59+08:00",
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
@@ -5443,7 +5443,7 @@
       ],
       "first_seen_at": "2026-08-28T20:35:42+08:00",
       "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-09-15T14:00:19+08:00",
+      "last_seen_at": "2026-09-17T13:52:59+08:00",
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
@@ -5470,7 +5470,7 @@
       ],
       "first_seen_at": "2026-08-28T20:35:42+08:00",
       "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-09-15T14:00:19+08:00",
+      "last_seen_at": "2026-09-17T13:52:59+08:00",
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
@@ -5498,7 +5498,7 @@
       ],
       "first_seen_at": "2026-08-28T20:35:42+08:00",
       "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-09-15T14:00:19+08:00",
+      "last_seen_at": "2026-09-17T13:52:59+08:00",
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
@@ -7187,7 +7187,7 @@
       ],
       "first_seen_at": "2026-08-25T10:20:24+08:00",
       "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-09-10T13:43:36+08:00",
+      "last_seen_at": "2026-09-17T13:52:59+08:00",
       "matched_keywords": [
         "test-time harness evolution"
       ],
@@ -7214,7 +7214,7 @@
         "doi:10.48550/arxiv.2606.11144"
       ],
       "first_seen_at": "2026-08-25T10:20:24+08:00",
-      "last_seen_at": "2026-09-10T13:43:36+08:00",
+      "last_seen_at": "2026-09-17T13:52:59+08:00",
       "matched_keywords": [
         "test-time harness evolution"
       ],
@@ -7248,7 +7248,7 @@
       ],
       "first_seen_at": "2026-08-25T10:20:24+08:00",
       "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-09-10T13:43:36+08:00",
+      "last_seen_at": "2026-09-17T13:52:59+08:00",
       "matched_keywords": [
         "test-time harness evolution"
       ],
@@ -10611,7 +10611,7 @@
       ],
       "first_seen_at": "2026-08-16T10:25:23+08:00",
       "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-09-15T14:00:19+08:00",
+      "last_seen_at": "2026-09-17T13:52:59+08:00",
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
@@ -10640,7 +10640,7 @@
       ],
       "first_seen_at": "2026-08-16T10:25:23+08:00",
       "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-09-15T14:00:19+08:00",
+      "last_seen_at": "2026-09-17T13:52:59+08:00",
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
@@ -13578,7 +13578,7 @@
         "arxiv:2608.06216"
       ],
       "first_seen_at": "2026-08-07T11:52:28+08:00",
-      "last_seen_at": "2026-09-10T13:43:36+08:00",
+      "last_seen_at": "2026-09-17T13:52:59+08:00",
       "matched_keywords": [
         "\"LLM agent\" harness",
         "test-time harness evolution"
@@ -15634,7 +15634,7 @@
     }
   ],
   "last_run": {
-    "at": "2026-09-16T13:46:03+08:00",
+    "at": "2026-09-17T13:52:59+08:00",
     "sources": [
       "arxiv",
       "semanticscholar",
@@ -15645,11 +15645,11 @@
       "\"LLM agent\" harness",
       "test-time harness evolution"
     ],
-    "fetched": 45,
+    "fetched": 20,
     "merged": 15,
-    "new": 15
+    "new": 0
   },
   "schema_version": 1,
   "topic": "agent harness",
-  "updated_at": "2026-09-16T13:46:03+08:00"
+  "updated_at": "2026-09-17T13:52:59+08:00"
 }
