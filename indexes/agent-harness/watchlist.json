@@ -1,6 +1,37 @@
 {
   "candidates": [
     {
+      "source": "semanticscholar",
+      "arxiv_id": "",
+      "doi": "10.3390/electronics15184166",
+      "title": "ReliHarness: A Self-Learning Reliability Harness for LLM Agent Tool Execution",
+      "authors": [
+        "Wen-Zhi Chen",
+        "Peng-Han Song",
+        "Qi-Chao Lu",
+        "Li-Bo Cao",
+        "B. Cheng",
+        "Wen-Di Feng",
+        "Chuanchang Liu"
+      ],
+      "published": "2026-09-14",
+      "url": "https://www.semanticscholar.org/paper/31c99a3ae8dd1cddf0939892cc9d8735b0867ed1",
+      "abstract": "Large language model agents invoke external tools through the Model Context Protocol to perform actions beyond text generation. Once a background thread is dispatched, even the latest Model Context Protocol Tasks extension exposes only coarse-grained, self-reported task states, so a thread that deadlocks or crashes silently remains reported as working and invisible to the client, which is not acceptable in some industrial applications that need long monitoring. We present ReliHarness, a self-learning dual-channel execution-layer reliability harness framework that instead probes each worker thread at a lower level through two independent checks: heartbeat timeout detection and operating system-level thread liveness detection. The proposed framework contributes a five-state lifecycle machine, dual-channel detection, bi-layer evidence logging, a four-stage cascade pipeline, and a self-learning command-matching module. Experiments on a Phytium S5000C and Ascend 310P platform achieve 100% detection coverage for the tested crash and deadlock scenarios with zero false positives. The self-learning module expands the knowledge base and lifts matching accuracy from 74.5% to 90.2% across 102 real-world test queries. The per-task overhead is 0.004 ms, and regex responses are 670 to 63,300 times faster than large language model inference. The architecture is application and logic decoupled and deployable in Model Context Protocol-compatible systems.",
+      "external_ids": [
+        "s2:31c99a3ae8dd1cddf0939892cc9d8735b0867ed1",
+        "doi:10.3390/electronics15184166"
+      ],
+      "sources": [
+        "semanticscholar"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-21T13:59:46+08:00",
+      "last_seen_at": "2026-09-21T13:59:46+08:00"
+    },
+    {
       "source": "arxiv",
       "arxiv_id": "2609.17527",
       "arxiv_version": "v1",
@@ -3652,7 +3683,7 @@
       ],
       "first_seen_at": "2026-09-02T13:34:02+08:00",
       "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-09-18T13:38:40+08:00",
+      "last_seen_at": "2026-09-21T13:59:46+08:00",
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
@@ -4428,7 +4459,7 @@
       ],
       "first_seen_at": "2026-09-01T14:08:00+08:00",
       "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-09-18T13:38:40+08:00",
+      "last_seen_at": "2026-09-21T13:59:46+08:00",
       "matched_keywords": [
         "agent harness"
       ],
@@ -5443,7 +5474,7 @@
       ],
       "first_seen_at": "2026-08-28T20:35:42+08:00",
       "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-09-17T13:52:59+08:00",
+      "last_seen_at": "2026-09-21T13:59:46+08:00",
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
@@ -5470,7 +5501,7 @@
       ],
       "first_seen_at": "2026-08-28T20:35:42+08:00",
       "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-09-17T13:52:59+08:00",
+      "last_seen_at": "2026-09-21T13:59:46+08:00",
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
@@ -5498,7 +5529,7 @@
       ],
       "first_seen_at": "2026-08-28T20:35:42+08:00",
       "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-09-17T13:52:59+08:00",
+      "last_seen_at": "2026-09-21T13:59:46+08:00",
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
@@ -10611,7 +10642,7 @@
       ],
       "first_seen_at": "2026-08-16T10:25:23+08:00",
       "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-09-17T13:52:59+08:00",
+      "last_seen_at": "2026-09-21T13:59:46+08:00",
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
@@ -10640,7 +10671,7 @@
       ],
       "first_seen_at": "2026-08-16T10:25:23+08:00",
       "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-09-17T13:52:59+08:00",
+      "last_seen_at": "2026-09-21T13:59:46+08:00",
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
@@ -14919,7 +14950,7 @@
       ],
       "first_seen_at": "2026-08-05T12:18:13+08:00",
       "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-09-15T14:00:19+08:00",
+      "last_seen_at": "2026-09-21T13:59:46+08:00",
       "matched_keywords": [
         "agent harness"
       ],
@@ -14963,7 +14994,7 @@
       ],
       "first_seen_at": "2026-08-05T12:18:13+08:00",
       "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-09-18T13:38:40+08:00",
+      "last_seen_at": "2026-09-21T13:59:46+08:00",
       "matched_keywords": [
         "agent harness"
       ],
@@ -14998,7 +15029,7 @@
       ],
       "first_seen_at": "2026-08-05T12:18:13+08:00",
       "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-09-18T13:38:40+08:00",
+      "last_seen_at": "2026-09-21T13:59:46+08:00",
       "matched_keywords": [
         "agent harness"
       ],
@@ -15599,42 +15630,10 @@
       "status": "indexed",
       "title": "MemArbiter: Decision-Time Memory Arbitration for Long-Horizon LLM Agents",
       "url": "https://arxiv.org/abs/2608.02113"
-    },
-    {
-      "abstract": "Search agents now answer questions that take dozens of searches to settle, yet how such an agent reads a page has drawn far less attention than how it finds one. Nearly all of them use one of two document interfaces, and both tie a page to the moment it is opened. \\emph{Visit-and-read} injects a reading of the page into the message history at fetch time, fixing that reading before the agent knows which fact it will need. Stateful \\emph{browsing} instead extracts on demand from the page in hand, but holds one page at a time and releases it as soon as the agent opens another. Either way, a page that turns out to matter many turns later has to be fetched and rendered into context all over again. We propose \\textbf{Fetch-then-Explore}, which separates page selection from evidence extraction and keeps what it selects: pages are recorded in a per-question workspace on the filesystem rather than the context window or a transient session, and evidence is pulled from them on demand later. Selection becomes almost free, extraction can wait until the agent knows what to look for and be repeated as its hypothesis sharpens, and pages are not released when the agent moves on, so evidence accumulates across the trajectory. In a unified ReAct harness with fixed search, we compare Fetch-then-Explore against snippet-only, visit-and-read, and browsing baselines on two open-web benchmarks, BrowseComp and WideSearch, across three agent backbones. It leads BrowseComp accuracy at every backbone and generally matches or exceeds the baselines on WideSearch, and a behavioral analysis traces the gains to the workspace's defining move: returning to a page after leaving it, which it does far more than any transient interface, so evidence missed on a first pass can still be recovered later.",
-      "arxiv_id": "2608.02097",
-      "arxiv_version": "v1",
-      "authors": [
-        "Qi Liu",
-        "Yiqun Chen",
-        "Zidan Chen",
-        "Yan Gao",
-        "Yi Wu",
-        "Yao Hu",
-        "Jiaxin Mao",
-        "Fengbin Zhu",
-        "Tat-Seng Chua"
-      ],
-      "external_ids": [
-        "arxiv:2608.02097"
-      ],
-      "first_seen_at": "2026-08-04T12:19:01+08:00",
-      "last_seen_at": "2026-08-04T12:19:01+08:00",
-      "matched_keywords": [
-        "\"LLM agent\" harness"
-      ],
-      "published": "2026-08-03",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "new",
-      "title": "Fetch-then-Explore: Decoupling Selection from Extraction over a Persistent Workspace for Search Agents",
-      "url": "https://arxiv.org/abs/2608.02097"
     }
   ],
   "last_run": {
-    "at": "2026-09-20T13:52:11+08:00",
+    "at": "2026-09-21T13:59:46+08:00",
     "sources": [
       "arxiv",
       "semanticscholar",
@@ -15645,11 +15644,11 @@
       "\"LLM agent\" harness",
       "test-time harness evolution"
     ],
-    "fetched": 10,
-    "merged": 5,
-    "new": 0
+    "fetched": 20,
+    "merged": 20,
+    "new": 1
   },
   "schema_version": 1,
   "topic": "agent harness",
-  "updated_at": "2026-09-20T13:52:11+08:00"
+  "updated_at": "2026-09-21T13:59:46+08:00"
 }

@@ -1,0 +1,52 @@
+{
+  "date": "2026-09-21",
+  "run": {
+    "at": "2026-09-21T13:59:46+08:00",
+    "sources": [
+      "arxiv",
+      "semanticscholar",
+      "dblp"
+    ],
+    "keywords": [
+      "agent harness",
+      "\"LLM agent\" harness",
+      "test-time harness evolution"
+    ],
+    "fetched": 20,
+    "merged": 20,
+    "new": 1
+  },
+  "new_candidates": [
+    {
+      "source": "semanticscholar",
+      "arxiv_id": "",
+      "doi": "10.3390/electronics15184166",
+      "title": "ReliHarness: A Self-Learning Reliability Harness for LLM Agent Tool Execution",
+      "authors": [
+        "Wen-Zhi Chen",
+        "Peng-Han Song",
+        "Qi-Chao Lu",
+        "Li-Bo Cao",
+        "B. Cheng",
+        "Wen-Di Feng",
+        "Chuanchang Liu"
+      ],
+      "published": "2026-09-14",
+      "url": "https://www.semanticscholar.org/paper/31c99a3ae8dd1cddf0939892cc9d8735b0867ed1",
+      "abstract": "Large language model agents invoke external tools through the Model Context Protocol to perform actions beyond text generation. Once a background thread is dispatched, even the latest Model Context Protocol Tasks extension exposes only coarse-grained, self-reported task states, so a thread that deadlocks or crashes silently remains reported as working and invisible to the client, which is not acceptable in some industrial applications that need long monitoring. We present ReliHarness, a self-learning dual-channel execution-layer reliability harness framework that instead probes each worker thread at a lower level through two independent checks: heartbeat timeout detection and operating system-level thread liveness detection. The proposed framework contributes a five-state lifecycle machine, dual-channel detection, bi-layer evidence logging, a four-stage cascade pipeline, and a self-learning command-matching module. Experiments on a Phytium S5000C and Ascend 310P platform achieve 100% detection coverage for the tested crash and deadlock scenarios with zero false positives. The self-learning module expands the knowledge base and lifts matching accuracy from 74.5% to 90.2% across 102 real-world test queries. The per-task overhead is 0.004 ms, and regex responses are 670 to 63,300 times faster than large language model inference. The architecture is application and logic decoupled and deployable in Model Context Protocol-compatible systems.",
+      "external_ids": [
+        "s2:31c99a3ae8dd1cddf0939892cc9d8735b0867ed1",
+        "doi:10.3390/electronics15184166"
+      ],
+      "sources": [
+        "semanticscholar"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-09-21T13:59:46+08:00",
+      "last_seen_at": "2026-09-21T13:59:46+08:00"
+    }
+  ]
+}
