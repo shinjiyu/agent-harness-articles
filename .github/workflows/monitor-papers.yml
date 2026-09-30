@@ -6,8 +6,12 @@ on:
     - cron: "0 1 * * *"
   workflow_dispatch:
 
+# IMPORTANT: bot pushes with GITHUB_TOKEN do NOT trigger other workflows.
+# Therefore we build + deploy Pages in THIS same job after monitoring.
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: monitor-papers
@@ -16,6 +20,9 @@ concurrency:
 jobs:
   monitor:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
@@ -47,3 +54,18 @@ jobs:
           git add indexes/agent-harness/watchlist.json indexes/agent-harness/inbox
           git commit -m "chore(monitor): ${{ steps.diff.outputs.new_count }} new paper candidates"
           git push
+
+      - name: Build site (so Pages reflects latest watchlist/index)
+        run: python scripts/build_site.py
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - id: deployment
+        name: Deploy GitHub Pages
+        uses: actions/deploy-pages@v4
