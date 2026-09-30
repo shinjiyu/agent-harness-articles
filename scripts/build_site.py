@@ -11,6 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CURRICULUM = ROOT / "curriculum"
 INDEX = ROOT / "indexes" / "agent-harness" / "index.json"
+WATCHLIST = ROOT / "indexes" / "agent-harness" / "watchlist.json"
 SITE = ROOT / "site"
 
 
@@ -362,6 +363,41 @@ def papers_section(papers: list[dict], chapter: dict) -> str:
     return "\n".join(blocks)
 
 
+def watchlist_section() -> str:
+    if not WATCHLIST.exists():
+        return ""
+    data = json.loads(WATCHLIST.read_text(encoding="utf-8"))
+    items = data.get("candidates") or data.get("papers") or []
+    last = data.get("last_run", {})
+    if not items:
+        return (
+            "<h2>每日候选项</h2>"
+            f"<p class=\"section-note\">暂无新候选。最近监控："
+            f"{html.escape(str(last.get('at', '—')))} · new={last.get('new', 0)}</p>"
+        )
+    items = sorted(items, key=lambda x: x.get("found_at") or x.get("published") or "", reverse=True)[:80]
+    blocks = [
+        '<h2>每日候选项 <span class="muted">(尚未入库)</span></h2>',
+        '<p class="section-note">monitor 自动抓取；分档入库后才会挂到知识点章节。</p>',
+        '<div class="paper-list">',
+    ]
+    for it in items:
+        title = html.escape(it.get("title") or "")
+        url = html.escape(it.get("url") or "#")
+        src = html.escape(str(it.get("source") or ""))
+        published = html.escape(str(it.get("published") or it.get("year") or ""))
+        blocks.append(
+            '<article class="paper-card">'
+            f'<p class="paper-headline">{title}</p>'
+            f'<div class="paper-actions"><a class="paper-btn paper-btn-ghost" href="{url}" '
+            f'target="_blank" rel="noopener noreferrer">打开</a></div>'
+            f'<div class="paper-meta"><span>{src}</span> <span>{published}</span></div>'
+            '</article>'
+        )
+    blocks.append('</div>')
+    return "\n".join(blocks)
+
+
 def build() -> None:
     catalog = json.loads((CURRICULUM / "catalog.json").read_text(encoding="utf-8"))
     index = json.loads(INDEX.read_text(encoding="utf-8"))
@@ -373,6 +409,8 @@ def build() -> None:
         body = md_to_html(md_path.read_text(encoding="utf-8"))
         related = select_papers(papers, ch)
         body += "\n" + papers_section(related, ch)
+        if ch["id"] in ("paper-index", "watchlist"):
+            body += "\n" + watchlist_section()
         keywords = ch.get("keywords", "")
         # also index paper titles for search
         for p in related:
@@ -388,9 +426,14 @@ def build() -> None:
         )
 
     SITE.mkdir(parents=True, exist_ok=True)
+    wl_count = 0
+    if WATCHLIST.exists():
+        wl = json.loads(WATCHLIST.read_text(encoding="utf-8"))
+        wl_count = len(wl.get("candidates") or wl.get("papers") or [])
     meta = {
         "built_from_index_updated_at": index.get("updated_at"),
         "paper_counts": index.get("tier_counts"),
+        "watchlist_count": wl_count,
         "chapter_count": len(chapters_out),
         "site": catalog["site"],
     }
