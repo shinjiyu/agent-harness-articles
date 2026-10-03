@@ -1,0 +1,98 @@
+{
+  "date": "2026-10-03",
+  "run": {
+    "at": "2026-10-03T14:11:04+08:00",
+    "sources": [
+      "arxiv",
+      "semanticscholar",
+      "dblp"
+    ],
+    "keywords": [
+      "agent harness",
+      "\"LLM agent\" harness",
+      "test-time harness evolution"
+    ],
+    "fetched": 55,
+    "merged": 23,
+    "new": 2
+  },
+  "new_candidates": [
+    {
+      "source": "semanticscholar",
+      "arxiv_id": "2609.36580",
+      "doi": "",
+      "title": "SafeCoEvo: Co-Evolving Safety Harnesses and Guards for LLM Agents at Test-Time",
+      "authors": [
+        "Yu Cheng",
+        "Yong-Kang Hu",
+        "Shuai-Jie Ma",
+        "Zhi-Hang Lin",
+        "Wei-Cheng Meng",
+        "Jing-Yang Qiao",
+        "Jiu-An Zhou",
+        "Yu-Shuo Zhang",
+        "Yi-Hang Chen",
+        "Wei-Lin Luo",
+        "Kun Shao",
+        "Dong Li",
+        "Zhi-Zhong Zhang",
+        "Yuan Xie",
+        "Zhao-Xia Yin"
+      ],
+      "published": "2026-09-29",
+      "url": "https://arxiv.org/abs/2609.36580",
+      "abstract": "LLM agents deployed in real-world environments continually encounter new tasks and safety risks, while execution feedback typically becomes available only after each task is completed. However, existing self-evolving approaches commonly rely on multiple rounds of optimization over fixed and repeatedly accessible task distributions, fundamentally differing from test-time adaptation in real-world deployment, where only experience accumulated from past tasks can be used to improve safety decisions on future unseen tasks. To address this limitation, we propose SafeCoEvo, a test-time Harness-Guard co-evolution framework for LLM agent safety that enables the external safety system to continually adapt from accumulated runtime experience. SafeCoEvo jointly improves two complementary safety capabilities at different timescales: S-Harness rapidly externalizes recent runtime experience into updatable explicit safety knowledge that can promptly influence subsequent tasks, while GuardVPO internalizes accumulated runtime safety experience over a longer timescale into parametric risk-judgment capabilities. By combining short-term rapid adaptation with long-term capability consolidation, SafeCoEvo continually improves the agent's safety capabilities, reducing the unsafe outcome rate by 10.05% while improving the task success rate by 12.15% over the strongest baseline, thereby achieving simultaneous gains in safety and task utility.",
+      "external_ids": [
+        "s2:03f4b35018ca3d15506983020502593229adf80f",
+        "arxiv:2609.36580"
+      ],
+      "sources": [
+        "semanticscholar"
+      ],
+      "matched_keywords": [
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-03T14:11:04+08:00",
+      "last_seen_at": "2026-10-03T14:11:04+08:00"
+    },
+    {
+      "source": "semanticscholar",
+      "arxiv_id": "2608.06216",
+      "doi": "",
+      "title": "Continual Learning in Transition",
+      "authors": [
+        "Zhi-Yan Hou",
+        "Dan Zhang",
+        "Tao Feng",
+        "Li-Yuan Wang",
+        "Wei Li",
+        "Xiangzhao Hao",
+        "Hongyan An",
+        "Jun-Feng Fang",
+        "Hao-Kai Ma",
+        "Zhaohui Xu",
+        "Xin-Yu Tang",
+        "Haiyun Guo",
+        "Jin-Qiao Wang",
+        "Tat-Seng Chua"
+      ],
+      "published": "2026-08-06",
+      "url": "https://arxiv.org/abs/2608.06216",
+      "abstract": "Classical continual learning (CL) has primarily focused on enabling models to update and retain knowledge through parameter-centric mechanisms, e.g., training strategies, architectural designs, and weight adaptation. However, emerging paradigms are reshaping the scope of CL beyond this traditional model adaptation view. For instance, on-policy learning broadens the space of update mechanisms; test-time training extends CL from the training phase to inference; and external harness components such as memory, skill libraries, and interaction protocols extend the evolutionary boundaries of model capabilities far beyond the static parameter space. Collectively, these developments indicate a transition from parameter-centric learning toward system-level adaptation. To characterize this transition, we examine the evolution of continual learning through three dimensions: When, How, and Where learning occurs. The How dimension encompasses off-policy, on-policy, and beyond-gradient optimization mechanics. The When dimension captures evolution across pre-training, post-training, and inference-time stages. The Where dimension delineates updates occurring within internal parameters versus external structural constraints. Anchored by this tri-axial framework, we systematically survey representative methods, trace the ongoing transition of continual learning, and discuss the key challenges, broader implications, and future directions arising from this paradigm shift.",
+      "external_ids": [
+        "s2:0703778160b0ab669b44c5606c4eea043940025c",
+        "arxiv:2608.06216"
+      ],
+      "sources": [
+        "semanticscholar"
+      ],
+      "matched_keywords": [
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-03T14:11:04+08:00",
+      "last_seen_at": "2026-10-03T14:11:04+08:00"
+    }
+  ]
+}

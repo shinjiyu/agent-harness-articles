@@ -1,6 +1,83 @@
 {
   "candidates": [
     {
+      "source": "semanticscholar",
+      "arxiv_id": "2609.36580",
+      "doi": "",
+      "title": "SafeCoEvo: Co-Evolving Safety Harnesses and Guards for LLM Agents at Test-Time",
+      "authors": [
+        "Yu Cheng",
+        "Yong-Kang Hu",
+        "Shuai-Jie Ma",
+        "Zhi-Hang Lin",
+        "Wei-Cheng Meng",
+        "Jing-Yang Qiao",
+        "Jiu-An Zhou",
+        "Yu-Shuo Zhang",
+        "Yi-Hang Chen",
+        "Wei-Lin Luo",
+        "Kun Shao",
+        "Dong Li",
+        "Zhi-Zhong Zhang",
+        "Yuan Xie",
+        "Zhao-Xia Yin"
+      ],
+      "published": "2026-09-29",
+      "url": "https://arxiv.org/abs/2609.36580",
+      "abstract": "LLM agents deployed in real-world environments continually encounter new tasks and safety risks, while execution feedback typically becomes available only after each task is completed. However, existing self-evolving approaches commonly rely on multiple rounds of optimization over fixed and repeatedly accessible task distributions, fundamentally differing from test-time adaptation in real-world deployment, where only experience accumulated from past tasks can be used to improve safety decisions on future unseen tasks. To address this limitation, we propose SafeCoEvo, a test-time Harness-Guard co-evolution framework for LLM agent safety that enables the external safety system to continually adapt from accumulated runtime experience. SafeCoEvo jointly improves two complementary safety capabilities at different timescales: S-Harness rapidly externalizes recent runtime experience into updatable explicit safety knowledge that can promptly influence subsequent tasks, while GuardVPO internalizes accumulated runtime safety experience over a longer timescale into parametric risk-judgment capabilities. By combining short-term rapid adaptation with long-term capability consolidation, SafeCoEvo continually improves the agent's safety capabilities, reducing the unsafe outcome rate by 10.05% while improving the task success rate by 12.15% over the strongest baseline, thereby achieving simultaneous gains in safety and task utility.",
+      "external_ids": [
+        "s2:03f4b35018ca3d15506983020502593229adf80f",
+        "arxiv:2609.36580"
+      ],
+      "sources": [
+        "semanticscholar"
+      ],
+      "matched_keywords": [
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-03T14:11:04+08:00",
+      "last_seen_at": "2026-10-03T14:11:04+08:00"
+    },
+    {
+      "source": "semanticscholar",
+      "arxiv_id": "2608.06216",
+      "doi": "",
+      "title": "Continual Learning in Transition",
+      "authors": [
+        "Zhi-Yan Hou",
+        "Dan Zhang",
+        "Tao Feng",
+        "Li-Yuan Wang",
+        "Wei Li",
+        "Xiangzhao Hao",
+        "Hongyan An",
+        "Jun-Feng Fang",
+        "Hao-Kai Ma",
+        "Zhaohui Xu",
+        "Xin-Yu Tang",
+        "Haiyun Guo",
+        "Jin-Qiao Wang",
+        "Tat-Seng Chua"
+      ],
+      "published": "2026-08-06",
+      "url": "https://arxiv.org/abs/2608.06216",
+      "abstract": "Classical continual learning (CL) has primarily focused on enabling models to update and retain knowledge through parameter-centric mechanisms, e.g., training strategies, architectural designs, and weight adaptation. However, emerging paradigms are reshaping the scope of CL beyond this traditional model adaptation view. For instance, on-policy learning broadens the space of update mechanisms; test-time training extends CL from the training phase to inference; and external harness components such as memory, skill libraries, and interaction protocols extend the evolutionary boundaries of model capabilities far beyond the static parameter space. Collectively, these developments indicate a transition from parameter-centric learning toward system-level adaptation. To characterize this transition, we examine the evolution of continual learning through three dimensions: When, How, and Where learning occurs. The How dimension encompasses off-policy, on-policy, and beyond-gradient optimization mechanics. The When dimension captures evolution across pre-training, post-training, and inference-time stages. The Where dimension delineates updates occurring within internal parameters versus external structural constraints. Anchored by this tri-axial framework, we systematically survey representative methods, trace the ongoing transition of continual learning, and discuss the key challenges, broader implications, and future directions arising from this paradigm shift.",
+      "external_ids": [
+        "s2:0703778160b0ab669b44c5606c4eea043940025c",
+        "arxiv:2608.06216"
+      ],
+      "sources": [
+        "semanticscholar"
+      ],
+      "matched_keywords": [
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-03T14:11:04+08:00",
+      "last_seen_at": "2026-10-03T14:11:04+08:00"
+    },
+    {
       "source": "arxiv",
       "arxiv_id": "2610.02206",
       "arxiv_version": "v1",
@@ -25,7 +102,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-02T14:50:08+08:00",
-      "last_seen_at": "2026-10-02T14:50:08+08:00"
+      "last_seen_at": "2026-10-03T14:11:04+08:00"
     },
     {
       "source": "arxiv",
@@ -62,7 +139,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-02T14:50:08+08:00",
-      "last_seen_at": "2026-10-02T14:50:08+08:00"
+      "last_seen_at": "2026-10-03T14:11:04+08:00"
     },
     {
       "source": "arxiv",
@@ -92,7 +169,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-02T14:50:08+08:00",
-      "last_seen_at": "2026-10-02T14:50:08+08:00"
+      "last_seen_at": "2026-10-03T14:11:04+08:00"
     },
     {
       "source": "arxiv",
@@ -123,7 +200,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-02T14:50:08+08:00",
-      "last_seen_at": "2026-10-02T14:50:08+08:00"
+      "last_seen_at": "2026-10-03T14:11:04+08:00"
     },
     {
       "source": "arxiv",
@@ -154,7 +231,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-02T14:50:08+08:00",
-      "last_seen_at": "2026-10-02T14:50:08+08:00"
+      "last_seen_at": "2026-10-03T14:11:04+08:00"
     },
     {
       "source": "arxiv",
@@ -184,7 +261,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-02T14:50:08+08:00",
-      "last_seen_at": "2026-10-02T14:50:08+08:00"
+      "last_seen_at": "2026-10-03T14:11:04+08:00"
     },
     {
       "source": "arxiv",
@@ -210,7 +287,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-02T14:50:08+08:00",
-      "last_seen_at": "2026-10-02T14:50:08+08:00"
+      "last_seen_at": "2026-10-03T14:11:04+08:00"
     },
     {
       "source": "arxiv",
@@ -240,7 +317,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-02T14:50:08+08:00",
-      "last_seen_at": "2026-10-02T14:50:08+08:00"
+      "last_seen_at": "2026-10-03T14:11:04+08:00"
     },
     {
       "source": "arxiv",
@@ -267,7 +344,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-02T14:50:08+08:00",
-      "last_seen_at": "2026-10-02T14:50:08+08:00"
+      "last_seen_at": "2026-10-03T14:11:04+08:00"
     },
     {
       "source": "arxiv",
@@ -291,7 +368,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-02T14:50:08+08:00",
-      "last_seen_at": "2026-10-02T14:50:08+08:00"
+      "last_seen_at": "2026-10-03T14:11:04+08:00"
     },
     {
       "source": "arxiv",
@@ -321,7 +398,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-02T14:50:08+08:00",
-      "last_seen_at": "2026-10-02T14:50:08+08:00"
+      "last_seen_at": "2026-10-03T14:11:04+08:00"
     },
     {
       "source": "arxiv",
@@ -346,7 +423,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-02T14:50:08+08:00",
-      "last_seen_at": "2026-10-02T14:50:08+08:00"
+      "last_seen_at": "2026-10-03T14:11:04+08:00"
     },
     {
       "source": "arxiv",
@@ -375,7 +452,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-02T14:50:08+08:00",
-      "last_seen_at": "2026-10-02T14:50:08+08:00"
+      "last_seen_at": "2026-10-03T14:11:04+08:00"
     },
     {
       "source": "arxiv",
@@ -403,7 +480,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-02T14:50:08+08:00",
-      "last_seen_at": "2026-10-02T14:50:08+08:00"
+      "last_seen_at": "2026-10-03T14:11:04+08:00"
     },
     {
       "source": "arxiv",
@@ -434,7 +511,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-02T14:50:08+08:00",
-      "last_seen_at": "2026-10-02T14:50:08+08:00"
+      "last_seen_at": "2026-10-03T14:11:04+08:00"
     },
     {
       "source": "arxiv",
@@ -465,7 +542,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-02T14:50:08+08:00",
-      "last_seen_at": "2026-10-02T14:50:08+08:00"
+      "last_seen_at": "2026-10-03T14:11:04+08:00"
     },
     {
       "source": "arxiv",
@@ -491,7 +568,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-02T14:50:08+08:00",
-      "last_seen_at": "2026-10-02T14:50:08+08:00"
+      "last_seen_at": "2026-10-03T14:11:04+08:00"
     },
     {
       "source": "arxiv",
@@ -9356,7 +9433,7 @@
       ],
       "first_seen_at": "2026-08-25T10:20:24+08:00",
       "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-09-27T14:24:25+08:00",
+      "last_seen_at": "2026-10-03T14:11:04+08:00",
       "matched_keywords": [
         "test-time harness evolution"
       ],
@@ -9383,7 +9460,7 @@
         "doi:10.48550/arxiv.2606.11144"
       ],
       "first_seen_at": "2026-08-25T10:20:24+08:00",
-      "last_seen_at": "2026-09-27T14:24:25+08:00",
+      "last_seen_at": "2026-10-03T14:11:04+08:00",
       "matched_keywords": [
         "test-time harness evolution"
       ],
@@ -9417,7 +9494,7 @@
       ],
       "first_seen_at": "2026-08-25T10:20:24+08:00",
       "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-09-27T14:24:25+08:00",
+      "last_seen_at": "2026-10-03T14:11:04+08:00",
       "matched_keywords": [
         "test-time harness evolution"
       ],
@@ -15544,64 +15621,10 @@
       "status": "new",
       "title": "Does Splitting a Triage Decision Across Agents Hide Bias or Help Catch It? A Multi-Agent Simulation Study of LLM-Based Resource Allocation Under Audit Capacity Constraints",
       "url": "https://arxiv.org/abs/2608.06949"
-    },
-    {
-      "abstract": "Negotiation is a demanding social task for LLM agents, requiring strategic reasoning, persuasion, and interpersonal adaptation. Yet existing benchmarks often treat agents as emotionally neutral, overlooking a key driver of human bargaining behavior. We study how prompt-conditioned emotions affect LLM-based price negotiation. In a controlled framework, buyer and seller agents are independently assigned one of six emotional states and negotiate over 350 real consumer products under two budget conditions. Across 36 emotion-pair settings and five widely used LLMs, we find that emotions strongly shape outcomes. Angry buyers almost never reach agreement (0.39% deal rate), while happy buyers agree most often (28.91%), but obtain worse prices than fearful buyers. Emotion effects are role-dependent: buyer emotion mainly drives acceptance and rejection, whereas seller emotion shapes concession dynamics. These effects influence not only language, but also termination behavior and price trajectories, raising concerns for emotion-conditioned agents in commerce.",
-      "arxiv_id": "2608.06922",
-      "arxiv_version": "v1",
-      "authors": [
-        "Massimiliano Luca",
-        "Apoorva Singh",
-        "Bruno Lepri"
-      ],
-      "external_ids": [
-        "arxiv:2608.06922"
-      ],
-      "first_seen_at": "2026-08-10T11:14:42+08:00",
-      "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-08-10T11:14:42+08:00",
-      "matched_keywords": [
-        "\"LLM agent\" harness"
-      ],
-      "published": "2026-08-07",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "indexed",
-      "title": "Deal Me Maybe: The Role of Emotions in Multi-Agent Negotiation",
-      "url": "https://arxiv.org/abs/2608.06922"
-    },
-    {
-      "abstract": "Deciding which of two agents is stronger means playing games until skill outweighs luck, and every game costs money, model inference, or expert time. Since the number of games needed is unknown, fixed-budget evaluations either keep paying after the result is settled or stop before the agents can be told apart, while naive optional stopping with an ordinary confidence interval invalidates the stated level. We make such an evaluation stop as soon as its evidence suffices, with the guarantee intact. The Action-Informed Value Assessment Tool (AIVAT) reduces variance in imperfect-information games through conditional mean-zero corrections, by a median $54\\times$ across 15 LLM agent configurations spanning 71,439 paired Heads-Up No-Limit Hold'em (HUNL) hands, but does not say when to stop. We combine AIVAT with continuously monitored Confidence Sequences (CSs) into anytime-valid AIVAT (AV-AIVAT), whose online value model learns only from past games so that no game scores its own correction. At the nominal 95\\% level and a target precision of $\\pm1$ Big Blind, raw outcomes need a median $74\\times$ as many hands as AIVAT-corrected outcomes to stop under the Asymptotic CS (AsympCS). Exact finite-sample certification uses the Empirical-Bernstein CS (EB-CS), which needs an independently justified bound on corrected payoffs. We establish such a bound structurally for Leduc hold'em and characterize a width floor set by the CS's bet cap and that bound, which governs how much of a variance gain becomes earlier stopping; the descriptive HUNL EB-CS runs show a median $1.37\\times$ stopping-time ratio. AV-AIVAT turns variance reduction into efficient, auditable early stopping while separating asymptotic screening from exact certification, so an evaluation can stop the moment its evidence suffices and hand a third party everything needed to recheck the verdict at that very stopping time.",
-      "arxiv_id": "2608.06362",
-      "arxiv_version": "v1",
-      "authors": [
-        "Boning Li",
-        "Yu Chen",
-        "Longbo Huang"
-      ],
-      "external_ids": [
-        "arxiv:2608.06362"
-      ],
-      "first_seen_at": "2026-08-07T11:52:28+08:00",
-      "last_seen_at": "2026-08-09T11:05:08+08:00",
-      "matched_keywords": [
-        "agent harness",
-        "\"LLM agent\" harness"
-      ],
-      "published": "2026-08-06",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "new",
-      "title": "AV-AIVAT: 74x Cheaper Agent Evaluation with Certified Anytime-Valid Stopping in Imperfect-Information Games",
-      "url": "https://arxiv.org/abs/2608.06362"
     }
   ],
   "last_run": {
-    "at": "2026-10-02T14:50:08+08:00",
+    "at": "2026-10-03T14:11:04+08:00",
     "sources": [
       "arxiv",
       "semanticscholar",
@@ -15612,11 +15635,11 @@
       "\"LLM agent\" harness",
       "test-time harness evolution"
     ],
-    "fetched": 45,
-    "merged": 17,
-    "new": 17
+    "fetched": 55,
+    "merged": 23,
+    "new": 2
   },
   "schema_version": 1,
   "topic": "agent harness",
-  "updated_at": "2026-10-02T14:50:08+08:00"
+  "updated_at": "2026-10-03T14:11:04+08:00"
 }
