@@ -1,6 +1,433 @@
 {
   "candidates": [
     {
+      "source": "arxiv",
+      "arxiv_id": "2610.03675",
+      "arxiv_version": "v1",
+      "title": "FrugalEvo: Towards Cost-Aware LLM-Guided Program Evolution",
+      "authors": [
+        "Hui Chen",
+        "Xuan Qi",
+        "James Xu Zhao",
+        "Zhaopeng Feng",
+        "Shilong Liu",
+        "Kuang Xu",
+        "Pang Wei Koh",
+        "Bryan Hooi"
+      ],
+      "published": "2026-10-02",
+      "url": "https://arxiv.org/abs/2610.03675",
+      "abstract": "LLM-guided evolutionary methods, such as AlphaEvolve, have emerged as powerful approaches for challenging computational optimization problems, such as circle packing. However, prior work typically optimizes performance gain over a fixed number of iterations. We argue that practical optimization should maximize gain per unit cost. To this end, we propose FrugalEvo, a cost-aware evolutionary framework where a stronger, higher-cost LLM explores solution strategies, and a cheaper LLM implements them and iteratively refines the resulting code. We also design a cache-efficient evolution process, where our harness and prompts maximize the sharing of prefixes across different evolution steps, to improve cache reuse. To measure solution quality throughout a fixed cost budget, we introduce Budget-Aware Area Under the Curve (BA-AUC), defined as the area under the best-so-far evaluation score curve over cumulative LLM cost, up to the budget. Across 10 mathematical and systems optimization tasks, FrugalEvo matches or surpasses state-of-the-art baselines, including OpenEvolve, ShinkaEvolve, AdaEvolve, and EvoX, in final solution quality and achieves higher BA-AUC on 9 tasks. It also achieves higher average performance than these baselines on 10 algorithmic optimization tasks from ALE-Bench-Lite. Notably, on circle packing, FrugalEvo achieves new state-of-the-art performance with GPT-5.6 Terra and Luna for only 1.68 USD and with GLM-5.3 and its Flash variant for only 0.55 USD, matching or surpassing all baselines, including multi-agent methods such as CORAL and SwarmResearch, which cost approximately 50 USD on average.",
+      "external_ids": [
+        "arxiv:2610.03675"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-05T14:39:43+08:00",
+      "last_seen_at": "2026-10-05T14:39:43+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.03631",
+      "arxiv_version": "v1",
+      "title": "NeutronGym: Physics-Graded Neutron Instrument Design for LLM Agents",
+      "authors": [
+        "Lijie Ding",
+        "Changwoo Do"
+      ],
+      "published": "2026-10-02",
+      "url": "https://arxiv.org/abs/2610.03631",
+      "abstract": "Designing a scientific instrument tests whether language-model agents can do physics rather than recall it, provided the grading cannot be argued with. We introduce NeutronGym, to our knowledge the first executable environment for neutron instrument design: agents build instruments through validating tools, McStas ray-traces what they build, and a level-resolved ladder grades syntax, runtime, structure and science with no LLM judge. Procedural families supply unlimited instances of a fixed layout whose design parameters the agent must set, with held-out parameter regimes; a curated slice, McStasBench, adds 16 tasks from published instruments behind memorization probes and a sandbox. Seven models reproduce at most 7 of the 16, none retrieves a reference, and none meets an improvement target. The environment also trains. Reinforcement learning on its reward takes Qwen3-8B from 11% to 77% of held-out instances of a family whose targets come from a hidden design (69% at a second seed), past an untrained Qwen3-32B, and the recipe holds, at one seed each, on three further gated families. The analysis says what that gain is. Without the ladder's partial credit it collapses by 60 points. From reward alone the trained model reaches what a classical optimizer reaches, at the agent's simulation budget, only when handed the closed-form physics (77% against 81%, a gap that does not separate at this size), while frontier models still solve 98-99%. Getting a trustworthy result meant failing four task designs that no-model baselines could solve, and we release the probes that found them.",
+      "external_ids": [
+        "arxiv:2610.03631"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-05T14:39:43+08:00",
+      "last_seen_at": "2026-10-05T14:39:43+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.03615",
+      "arxiv_version": "v1",
+      "title": "Bridging Frontier Reasoning and Robot Execution: From Autonomous Demonstration Generation to Dense Language Supervision",
+      "authors": [
+        "Bosung Kim",
+        "Alexander Trevithick",
+        "Ruiyi Wang",
+        "Prithviraj Ammanabrolu"
+      ],
+      "published": "2026-10-02",
+      "url": "https://arxiv.org/abs/2610.03615",
+      "abstract": "Recent advances in frontier models enable robot manipulation from only a few demonstrations, but high inference latency limits their use for real-time robot control. To bridge this gap, we study two complementary approaches that connect frontier reasoning with low-latency local execution. First, we use a frontier model to autonomously generate demonstrations that supplement human demonstrations for training a fast local policy. We augment its in-context examples with corrective demonstration segments that show how to recover from physical errors, improving generation reliability. Generation time and cost decrease as successful examples accumulate in context, suggesting a path toward more efficient data collection. At deployment, a harness combines frontier-generated instructions with a fast local policy, enabling efficient execution while preserving the frontier model's ability to guide and correct actions. With low-latency execution delegated to the local policy, the bottleneck shifts to its capacity to reliably follow the frontier model's diverse instructions. Our second bridge introduces dense language supervision across three nested granularities---primitive, atomic, and composite---with multi-aspect descriptions at each level. Across long-horizon tasks in RoboCasa 365 and BEHAVIOR-1K, where instructions change as execution progresses, the combined supervision achieves the highest performance under both oracle and frontier-model instructors, demonstrating more reliable instruction following through the policy's language interface. Finally, we evaluate both bridges together on a crossword task that combines semantic planning and manipulation within a fixed time budget. These results support autonomous demonstration generation and dense language supervision as complementary components for connecting frontier reasoning to low-latency local execution.",
+      "external_ids": [
+        "arxiv:2610.03615"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-05T14:39:43+08:00",
+      "last_seen_at": "2026-10-05T14:39:43+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.03574",
+      "arxiv_version": "v1",
+      "title": "HyperBrowseComp: A Multilingual and Multimodal Stress Test for Web-Browsing Agents",
+      "authors": [
+        "Alham Fikri Aji",
+        "Faiz Rizki Ramadhan",
+        "Zayd M. K. Zuhri",
+        "Seung Hun Eddie Han",
+        "Ryandito Diandaru",
+        "Qinrong Cui",
+        "Jan Christian Blaise Cruz",
+        "Badrinath Chandana",
+        "Peerawat Chomphooyod",
+        "Ahmed Attia",
+        "Jonibek Mansurov",
+        "Emilio Villa-Cueva",
+        "Canh Duong Nguyen",
+        "Imran Turganov",
+        "Minghao Wu",
+        "Peerat Limkonchotiwat",
+        "Irina Nikishina"
+      ],
+      "published": "2026-10-02",
+      "url": "https://arxiv.org/abs/2610.03574",
+      "abstract": "We introduce HyperBrowseComp, a multilingual and multimodal browsing benchmark comprising 423 manually authored and human-validated questions across 13 languages, written by native or highly proficient speakers. Questions are designed to be extremely challenging. Each question targets a concise, publicly verifiable answer whose discovery requires locating obscure evidence, following multi-step clue chains, or inspecting heterogeneous sources such as videos, scanned documents, images, or maps. Easier questions are filtered out by evaluating them with models without internet access to reduce the likelihood that they can be answered with parametric knowledge alone. We evaluate several models using provider-native search and a shared external retrieval harness under a common agent protocol. To contextualize model performance and effort, we also conduct a human evaluation on a sample of the questions. HyperBrowseComp provides a challenging testbed for persistent information seeking across languages and evidence modalities, with difficulty arising from discovering and connecting evidence on the open web.",
+      "external_ids": [
+        "arxiv:2610.03574"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-05T14:39:43+08:00",
+      "last_seen_at": "2026-10-05T14:39:43+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.03564",
+      "arxiv_version": "v1",
+      "title": "Knowledge or Calculator? Decomposing the Skill Premium in Verifiable Financial Agent Workflows",
+      "authors": [
+        "Jermyn Zhen Yong Bek",
+        "Zhuang Qiang Bok",
+        "Zhongtian Sun"
+      ],
+      "published": "2026-10-02",
+      "url": "https://arxiv.org/abs/2610.03564",
+      "abstract": "Financial AI agents must do more than retrieve facts: investment workflows require correct quantitative execution, reliable use of procedural resources, and auditable structured outputs. We introduce FinSkillBench, an evaluation suite of 2,603 point in time episodes across 12 subtasks in portfolio construction, risk management, and fundamental analysis, with hidden regenerable ground truth and task specific deterministic verifiers. Executing 17,820 episodes across 9 models and 3 resource conditions, the paired analysis across 8 models shows that curated skill packages raise mean scores by +16.2 points (0.366 to 0.528), whereas skills generated within a single episode add only +0.5 points while consuming more tokens and turns. We then decompose the curated premium by granting human authored procedural documents and executable domain tools separately: documents alone add +5.6 points, tools alone add +19.5 points, and their combination is subadditive. The premium is strongly workflow dependent: executable tools dominate numerically intensive workflows, documentation matters more when procedural or output schema guidance is the bottleneck, and interpretive tasks benefit from both. The effects are sign stable across 10 scoring variants and cluster bootstrap analyses, and an independently implemented second harness reproduces the directional pattern while showing that effect magnitudes depend on how tools and data are exposed. Overall, a measured \"skill premium\" is a property of the full model, resource, and harness system rather than of the underlying model alone.",
+      "external_ids": [
+        "arxiv:2610.03564"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-05T14:39:43+08:00",
+      "last_seen_at": "2026-10-05T14:39:43+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.03548",
+      "arxiv_version": "v1",
+      "title": "Recursive Harness Self-Improvement for Frontier Reasoning Data Synthesis",
+      "authors": [
+        "Wenlong Zhang",
+        "Zhengbo Jiao",
+        "Chenxu Zhang",
+        "Lekang Jiang",
+        "SiYuan Ma",
+        "Qituan Zhang",
+        "Guo Chen",
+        "Linfeng Zhang"
+      ],
+      "published": "2026-10-02",
+      "url": "https://arxiv.org/abs/2610.03548",
+      "abstract": "Generating progressively harder reasoning problems requires synthesis procedures that adapt as the task distribution evolves. Existing task-level recursion reuses generated problems as seeds but leaves the construction harness unchanged. We present task-harness co-evolution, a framework for recursive harness self-improvement (RSI) in reasoning-data synthesis. Online self-improvement converts intermediate solver failures into reusable skills during generation. Post-task self-improvement revises skills, prompts, and workflows after each batch, adopting candidates only when they generate harder valid tasks within a bounded cost increase. Model weights and verification criteria remain fixed. Across mathematics, coding, and science, mean solver accuracy decreases from 100.0% to 54.8% over fourteen evolution rounds. Ablations show that combining both update schedules produces harder tasks than fixed-harness recursion or either schedule alone. The resulting data improves downstream SFT and GRPO performance. In particular, a 27B student fine-tuned on 10K synthesized mathematics examples achieves 62.5% mean-16 accuracy on APEX, competitive with selected frontier-model references. These results support adapting the synthesis harness alongside the tasks to generate increasingly challenging data with downstream training value.",
+      "external_ids": [
+        "arxiv:2610.03548"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-05T14:39:43+08:00",
+      "last_seen_at": "2026-10-05T14:39:43+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.03448",
+      "arxiv_version": "v1",
+      "title": "Passing the Test You Trained On: Re-evaluating Prompt-Injection Detectors for LLM Agents",
+      "authors": [
+        "Zhuowen Liu"
+      ],
+      "published": "2026-10-02",
+      "url": "https://arxiv.org/abs/2610.03448",
+      "abstract": "LLM agents increasingly screen tool outputs with small prompt-injection detectors, and teams choose among detectors by their scores on public benchmarks. We ask whether those scores predict how a detector behaves inside an agent. We replay the ground-truth tool calls of two agent benchmarks, AgentDojo and tau-bench, without an LLM to obtain tool outputs that are benign by construction, label injected outputs by differential replay, and evaluate fifteen detectors, including Meta's Prompt Guard 2, and two task-aware LLM judges on these outputs and on the BIPIA benchmark. Detection rankings transfer poorly between benchmarks: the best detector on BIPIA catches 2% of AgentDojo injections at a 1% false-positive rate, and a detector that catches 72% of AgentDojo injections catches 15% on tau-bench. False-positive rates on tool outputs, which range from none to over 90%, do transfer between the two agent benchmarks. Where training data is public, the form of the training inputs explains the results. The BIPIA leader was trained on full BIPIA inputs, but having seen InjecAgent's attack strings as short prompts does not help it find them inside tool outputs; the best detector on both agent benchmarks shares no data with any benchmark and was trained on agent-style inputs. Evaluations meant to inform deployment should use the agent's own tool outputs, report detection at a low false-positive rate, and audit what the detector was trained on.",
+      "external_ids": [
+        "arxiv:2610.03448"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-05T14:39:43+08:00",
+      "last_seen_at": "2026-10-05T14:39:43+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.03286",
+      "arxiv_version": "v1",
+      "title": "VenusRL: A Fully Disaggregated Agentic RL System with Priority Scheduling and Scalable Interaction",
+      "authors": [
+        "Mingjun Zhang",
+        "Yucheng Li",
+        "Menghao Zhang",
+        "Shuyong Zhu",
+        "Ping Zhang",
+        "Xiaohe Hu",
+        "Jun Chen",
+        "Zhixin Wang",
+        "Xutong Wang",
+        "He Liu",
+        "Yanmin Jia",
+        "Shengrong Zhu",
+        "Peng Sun",
+        "Mingjie Zhang",
+        "Liming Liu",
+        "Jinlong Hou",
+        "Yuan Cheng",
+        "Yujun Zhang"
+      ],
+      "published": "2026-10-02",
+      "url": "https://arxiv.org/abs/2610.03286",
+      "abstract": "Agentic Reinforcement Learning (RL) trains LLM agents through multi-turn interactions with external tool environments. Its multi-turn nature exposes two system-level bottlenecks unaddressed by existing agentic RL frameworks. First, end-to-end training throughput is constrained by the slowest trajectories to complete, yet optimizing per-GPU utilization alone scatters rollout progress across many groups, delaying the completion of enough groups to unblock the next training step. Second, tool sandboxes are statically over-provisioned by their declared memory ceilings, leaving most physical memory stranded while replicating near-identical state across sandboxes launched from the same prompt. We present VenusRL, a fully disaggregated agentic RL system that addresses both bottlenecks. VenusRL's priority-aware action scheduler uses length-prediction heuristics to identify sample groups whose completion is most likely to unblock the next training step, and pushes them ahead of others across batch admission, KV Cache residency, and cross-worker request orchestration. VenusRL's environment resource manager combines a memory-aware admission threshold with a template-keyed page-sharing pool, packing more sandboxes per node while preserving strict memory isolation via write-protected page table entry aliasing and copy-on-write. Across representative agentic RL workloads, VenusRL achieves up to 4.24x end-to-end training speedup over state-of-the-art baselines and reduces environment cost by up to 89%.",
+      "external_ids": [
+        "arxiv:2610.03286"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-05T14:39:43+08:00",
+      "last_seen_at": "2026-10-05T14:39:43+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.03259",
+      "arxiv_version": "v1",
+      "title": "PaMIR: Open Benchmark of Public Credit-Default Datasets",
+      "authors": [
+        "Mikhail Liashkov",
+        "Ilyas Varshavskiy",
+        "Shuhratjon Khalilbekov",
+        "Azizjon Azimi",
+        "Bonu Boboeva"
+      ],
+      "published": "2026-10-02",
+      "url": "https://arxiv.org/abs/2610.03259",
+      "abstract": "We release PaMIR (Public Arrival-ordered Measurement for Inference in Risk), an open benchmark for credit-default prediction when labels are scarce and arrive late. The field's reference benchmark studies use eight datasets each, only two or four of them public. PaMIR brings together 19 public datasets with binary default labels -- 1.24M loans, firms and card accounts from nine countries -- rebuilt from pinned source snapshots by one leakage-audited recipe and never redistributed; to our knowledge it is the one of its kind as of today. Every model is a single function, scored under a repeated i.i.d. split and a label-delayed stream in which each application is scored on arrival, with AUC reported by label budget; fleet means are withheld unless every dataset is scored. A synthetic-data harness tests generated training rows without letting a generator see held-out rows. This report describes release 0.4.0 of this living benchmark.",
+      "external_ids": [
+        "arxiv:2610.03259"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-05T14:39:43+08:00",
+      "last_seen_at": "2026-10-05T14:39:43+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.03243",
+      "arxiv_version": "v1",
+      "title": "A Kinetic Theory of the Gated Self-Evolving LLM Agent",
+      "authors": [
+        "Haipeng Wang"
+      ],
+      "published": "2026-10-02",
+      "url": "https://arxiv.org/abs/2610.03243",
+      "abstract": "We find traces of fluid dynamics in the self-evolution of an LLM agent, and give the kinetic theory that predicts them. Gated self-evolution is the loop in which an agent rewrites its own skills under a validation gate. Self-evolution research has treated the agent as the unit; we study instead the individual instances inside it. Here the agent is DSH-plugin-based: it runs in production on DeepSeek Harness (DSH), and its plugins satisfy four architectural properties (permutation symmetry, reversibility, acyclicity, typed contracts), which license treating these instances as identical hard spheres; the theory is accordingly scoped to DSH-class plugin populations. On this scope the paper builds three theory layers. The rigorous layer, independent of any analogy, comprises an any-time hitting-time certificate bounding the expected rounds to any prescribed improvement, a resolution law that prices held-out validation budgets, and a separation theorem: the daemon must stay outside the population, because merging evaluator with evaluated voids the certificate. The kinetic layer is a master equation over the plugin x version x task grid with four operators (collision, reaction, external field, gate), where collision is co-activation. Its moment hierarchy, the step that turns a gas into fluid equations, generates the falsifiable statistical signatures. Throughout, the fluid reading is a bounded analogy: momentum is not conserved, so no Navier-Stokes limit exists. The measured layer runs on a faithful minimal instance, a large library of four-parameter skill plugins retrieved one per episode with a co-activation probe, in a one-model, one-task-family WebShop environment; every element maps to the DSH loop by architectural role. Population fluctuation scaling is density-gated: invisible at sparse edit density, it emerges at the predicted rate under tripled density, as directional evidence.",
+      "external_ids": [
+        "arxiv:2610.03243"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-05T14:39:43+08:00",
+      "last_seen_at": "2026-10-05T14:39:43+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.03226",
+      "arxiv_version": "v1",
+      "title": "D2K-Bench: Can LLM Agents Turn Expert Designs into Efficient GPU Kernels?",
+      "authors": [
+        "Daifeng Li",
+        "Huiqiang Jiang",
+        "Chengruidong Zhang",
+        "Wei Wu",
+        "Xudong Guo",
+        "Jianhong Tu",
+        "Jianwei Zhang",
+        "Binhang Yuan",
+        "Dayiheng Liu"
+      ],
+      "published": "2026-10-02",
+      "url": "https://arxiv.org/abs/2610.03226",
+      "abstract": "GPU kernels generated by large language model (LLM) agents can remain less efficient than expert implementations, but runtime alone does not reveal how the gap relates to design discovery and implementation. We introduce D2K-Bench, a diagnostic benchmark of 26 tasks and 85 workloads that measures how effectively agents translate expert design guidance into efficient GPU kernels. The guidance covers L1: high-level algorithmic insights, L2: dataflow design, and L3: low-level optimization tricks, including dependencies among these levels. Pairwise runs with and without guidance share task descriptions, workloads, tools, hardware, and a 350-turn budget. Complementary assessments examine independently proposed designs and the design properties implemented in generated code. Across five models on NVIDIA B200 GPUs, guidance raises correctness over 130 model-task pairs from 93.1% to 98.5% and increases the Performance Score over all 26 tasks from 1.46 to 1.95. For the three frontier models with correct submissions on all 26 tasks in both runs (GPT-6-Astra, Claude-Opus-4.8, and GPT-5.6-Sol), geometric mean speedup increases from $1.69\\times$ to $2.49\\times$. Across all five models, the mean combined implementation score increases from 57 to 70 out of 100. These results show the value of expert design guidance while identifying design properties that remain unimplemented.",
+      "external_ids": [
+        "arxiv:2610.03226"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-05T14:39:43+08:00",
+      "last_seen_at": "2026-10-05T14:39:43+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.03223",
+      "arxiv_version": "v1",
+      "title": "AdaStep: Adaptive Step Credit Weighting for Agentic Reinforcement Learning",
+      "authors": [
+        "Xin Wang",
+        "Wenhao Wu",
+        "Menghao Zhang",
+        "Zhi Wang",
+        "Kun Shao",
+        "Jian Luan"
+      ],
+      "published": "2026-10-02",
+      "url": "https://arxiv.org/abs/2610.03223",
+      "abstract": "Long-horizon LLM agents are typically trained with sparse outcome rewards, making trajectory-level objectives too coarse to distinguish the contribution of individual decisions. Step-level credit assignment provides finer-grained supervision, but its estimates can be unreliable because observed returns also depend on subsequent actions, environment transitions, and trajectory length. We propose AdaStep, an Adaptive Step-credit weighting method that controls how strongly each group-derived local advantage modifies the trajectory-level signal. We formulate this weighting as a mean-squared-error estimation problem for the latent step advantage and, under an explicit conditional sampling assumption, derive an optimal per-state shrinkage coefficient. The coefficient admits a signal-to-total-variance interpretation: it preserves local credit when return variation is attributable to the selected action and suppresses it when variation is dominated by downstream randomness. AdaStep requires only lightweight scalar computation, with no critic, additional rollouts, or extra model inference. Experiments with three model backbones on ALFWorld, WebShop, and ScienceWorld show consistent improvements over baselines at low computational cost.",
+      "external_ids": [
+        "arxiv:2610.03223"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-05T14:39:43+08:00",
+      "last_seen_at": "2026-10-05T14:39:43+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.03195",
+      "arxiv_version": "v1",
+      "title": "Source Preference in the Wild: How LLM Agents Favor Items by Source, and How to Reduce It",
+      "authors": [
+        "Jonghyun Song",
+        "Haewon Park",
+        "Jeonghoon Shim",
+        "Woojung Song",
+        "Yohan Jo"
+      ],
+      "published": "2026-10-02",
+      "url": "https://arxiv.org/abs/2610.03195",
+      "abstract": "As LLM agents decide on users' behalf which product to buy, which hotel to book, or which paper to cite, a preference for items from certain sources (the sites or services they come from) shapes what users receive and which sources are selected. We study source preference in end-to-end search with 12 agent models across three domains. Comparing items from different sources that satisfy the same requirements at the same position, we find that each model prefers some sources and avoids others in every domain, largely agreeing on which. This preference can outweigh how well items satisfy the request: an item satisfying one requirement fewer is selected about two-thirds of the time when it comes from a preferred source and the better one from a dispreferred source, but almost never in the reverse case. The information identifying an item's source affects selection by itself: hiding it weakens the preference, and relabeling an item with a preferred source raises its selection rate. We test two routes to this preference: training that rewards better items can make a source a shortcut for requirement satisfaction, and missing information can trigger preconceptions about the source. Supplying missing information or a prompt countering these preconceptions reduces source preference.",
+      "external_ids": [
+        "arxiv:2610.03195"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-05T14:39:43+08:00",
+      "last_seen_at": "2026-10-05T14:39:43+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.03153",
+      "arxiv_version": "v1",
+      "title": "EvoRiskBench: An Evolving Benchmark for Runtime Security Risks in Workspace Agents",
+      "authors": [
+        "Shiyi Kuang",
+        "Xuemei Luo",
+        "Kun Liu",
+        "Junhai Li",
+        "Rui Tian",
+        "Feng Shi",
+        "Bo Shen",
+        "Nianyu Li",
+        "Dehui Li",
+        "Ping Chen"
+      ],
+      "published": "2026-10-02",
+      "url": "https://arxiv.org/abs/2610.03153",
+      "abstract": "Workspace agents combine large language models with execution harnesses to perform stateful, multi-step tasks that access or modify external resources. Existing benchmarks leave gaps in executable coverage of their runtime security risks, while evolving model capabilities, harnesses, tools, and threats motivate benchmark evolution. We introduce EvoRiskBench, an evolving benchmark organized around the EP-Path-EF framework, which links an initial risk entry point to a one-hop technical effect through an agent-mediated risk path. The framework defines nine entry-point categories and five effect categories; a 20-participant study supports their interpretability and classification consistency on representative cases. Guided by this framework, an automated end-to-end workflow constructs and executes risk cases in isolated environments and independently verifies outcomes using runtime traces and environment states. The benchmark provides a reproducible dataset of 450 adversarial tasks across six scenarios. We evaluate nine model-harness configurations spanning three models (GPT-5.6 Sol, DeepSeek-V4-Pro-0813, and Claude Opus 5) and three harnesses (Claude Code, Codex, and OpenClaw). Our results reveal substantial vulnerabilities across systems. The most vulnerable configuration, Codex with DeepSeek-V4-Pro-0813, reaches a 68.44% attack success rate (ASR), indicating that configuration of workspace agent is insufficient to ensure secure autonomous execution. ASR varies more across models than harnesses, and harness differences depend on the model. The benchmark cases and evaluation platform will be released after completion of artifact safety and reproducibility checks.",
+      "external_ids": [
+        "arxiv:2610.03153"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-05T14:39:43+08:00",
+      "last_seen_at": "2026-10-05T14:39:43+08:00"
+    },
+    {
       "source": "semanticscholar",
       "arxiv_id": "2609.36580",
       "doi": "",
@@ -37,7 +464,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-03T14:11:04+08:00",
-      "last_seen_at": "2026-10-03T14:11:04+08:00"
+      "last_seen_at": "2026-10-05T14:39:43+08:00"
     },
     {
       "source": "semanticscholar",
@@ -75,7 +502,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-03T14:11:04+08:00",
-      "last_seen_at": "2026-10-03T14:11:04+08:00"
+      "last_seen_at": "2026-10-05T14:39:43+08:00"
     },
     {
       "source": "arxiv",
@@ -9433,7 +9860,7 @@
       ],
       "first_seen_at": "2026-08-25T10:20:24+08:00",
       "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-10-03T14:11:04+08:00",
+      "last_seen_at": "2026-10-05T14:39:43+08:00",
       "matched_keywords": [
         "test-time harness evolution"
       ],
@@ -9460,7 +9887,7 @@
         "doi:10.48550/arxiv.2606.11144"
       ],
       "first_seen_at": "2026-08-25T10:20:24+08:00",
-      "last_seen_at": "2026-10-03T14:11:04+08:00",
+      "last_seen_at": "2026-10-05T14:39:43+08:00",
       "matched_keywords": [
         "test-time harness evolution"
       ],
@@ -9494,7 +9921,7 @@
       ],
       "first_seen_at": "2026-08-25T10:20:24+08:00",
       "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-10-03T14:11:04+08:00",
+      "last_seen_at": "2026-10-05T14:39:43+08:00",
       "matched_keywords": [
         "test-time harness evolution"
       ],
@@ -15200,431 +15627,10 @@
       "status": "indexed",
       "title": "ActBench: Self-Evolving Benchmark of Behavioral Safety in Cowork Agents",
       "url": "https://arxiv.org/abs/2608.09476"
-    },
-    {
-      "abstract": "The total synthesis of a complex molecule is among the most demanding intellectual and experimental feats in chemistry: a chemist must plan many steps ahead for how to assemble simple building blocks into an intricate target, devise backup strategies, and anticipate procedural challenges. It is also a profoundly creative activity. For half a century, efforts to automate the retrosynthetic design of natural products and other complex molecules have drawn on catalogued reactions, and the resulting tools now report near-complete success on benchmarks built from that same source. But these tools were shaped to fit benchmarked chemistry, and they falter on many natural products, the frontier of the field, whose densely functionalized, polycyclic architectures demand precisely the inventive chemistry the record contains least. Whether a machine could reasonably design such syntheses like an expert chemist does has remained unclear. Here, we show that SynthEx, an agentic framework built on large language models, plans routes to complex natural products that lie beyond the reach of conventional design algorithms. SynthEx proposes competing strategies, assembles a sequence of routine and key steps into a cohesive route, and critiques and improves its own design; the chemistry it favours is more convergent than existing tools produce, and spans a region of reaction space that catalogue-based tools cannot match. Most notably, in blinded assessments, expert chemists judged its key steps comparable to those of published human syntheses and engaged with them as genuine synthesis plans, a response algorithmic route prediction has not previously accomplished. We release routes to more than a thousand natural products as SynthAtlas, an open, interactive database, and anticipate it will become a shared resource for a collection of complex target molecules that lack existing literature routes.",
-      "arxiv_id": "2608.07454",
-      "arxiv_version": "v1",
-      "authors": [
-        "Daniel Armstrong",
-        "Xuan-Vu Nguyen",
-        "Octavian Susanu",
-        "Gabriel Gibberd",
-        "Théo A. Neukomm",
-        "Taddäus Strunden",
-        "Dan Forster",
-        "Morgane Delattre",
-        "Shawn Teh",
-        "Clément Rols",
-        "John Federice",
-        "Hayden Leatherwood",
-        "M. Lavelle Barnes",
-        "Maarten R. Dobbelaere",
-        "Peter Wipf",
-        "Jon T. Njardarson",
-        "Jieping Zhu",
-        "Philippe Schwaller"
-      ],
-      "external_ids": [
-        "arxiv:2608.07454"
-      ],
-      "first_seen_at": "2026-08-10T11:14:42+08:00",
-      "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-08-10T11:14:42+08:00",
-      "matched_keywords": [
-        "agent harness"
-      ],
-      "published": "2026-08-07",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "indexed",
-      "title": "Strategy-first synthesis planning for complex natural products",
-      "url": "https://arxiv.org/abs/2608.07454"
-    },
-    {
-      "abstract": "LLM agents increasingly adapt to recurring tasks by accumulating procedural knowledge in skills. These skills are lightweight, reusable textual artifacts that are loaded into the agent's context without weight updates. Recent methods refine skills through iterative task execution, failure diagnosis, and trajectory-guided text-space updates. However, existing frameworks lack explicit diagnosis--outcome feedback and treat deletion as a generic edit operation rather than a dedicated mechanism for consolidating accumulated knowledge. We introduce SkillProx, a proximal-gradient-inspired forward--backward framework that couples closed-loop diagnostic evolution with utility-aware proximal refinement. Motivated by a composite objective balancing task loss and skill complexity, the forward stage re-executes diagnosis-driven edits on the same task batch, rolls back regressions, and feeds measured outcomes into subsequent diagnoses. The backward stage decomposes the resulting skill into auditable knowledge units, estimates their contributions using a frozen leave-one-out utility audit, and applies validation-gated consolidation, demotion, or removal. Experiments on in-distribution and out-of-distribution benchmarks across multiple backbone LLMs show that SkillProx improves average accuracy by 3.0 percentage points over the strongest gradient-based baseline. Component ablations demonstrate the complementary effects of closed-loop diagnosis and proximal refinement.",
-      "arxiv_id": "2608.07449",
-      "arxiv_version": "v1",
-      "authors": [
-        "Mingxuan Zheng",
-        "Yujin Zhou",
-        "Chuxue Cao",
-        "Boqin Yin",
-        "Yuyao Zhang",
-        "Jiapeng Sun",
-        "Shuaishuai Gong",
-        "Sirui Han",
-        "Yike Guo"
-      ],
-      "external_ids": [
-        "arxiv:2608.07449"
-      ],
-      "first_seen_at": "2026-08-10T11:14:42+08:00",
-      "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-08-10T11:14:42+08:00",
-      "matched_keywords": [
-        "agent harness",
-        "\"LLM agent\" harness",
-        "test-time harness evolution"
-      ],
-      "published": "2026-08-07",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "indexed",
-      "title": "SkillProx: Self-Evolving Agent Skills via Proximal Textual Gradient Descent",
-      "url": "https://arxiv.org/abs/2608.07449"
-    },
-    {
-      "abstract": "Agentic coding faces growing problems of affordability and wasted tokens. We introduce Blast Radius, a predictive memory management layer that estimates an incoming prompt's reach through coupled context and code channels. NECROPHORESIS enables reversible eviction by archiving dead context verbatim, while Recurring Dead Matter (RDM) identifies and buries repeatedly occurring transcripts. We formulate reversible context eviction over a Polish context space, providing a measurable foundation for retention, recurrence, and eviction while connecting context entropy to resurrection probability. Across seven OpenAI models, Blast Radius reduced token consumption by 17-26%, achieved the lowest overflow rate among tested policies, and remained byte exact reversible. Of 450 buried bodies, 378 were recurring dead matter and zero were recalled. Blast Radius operates beneath HCRC, determining which records to bury and how far an incoming prompt may reach into the codebase. This work contributes to the broader goal of Algosophy: making large language models and agentic coding more reusable and sustainable.",
-      "arxiv_id": "2608.07440",
-      "arxiv_version": "v1",
-      "authors": [
-        "MY Pitsane",
-        "Hope Mogale"
-      ],
-      "external_ids": [
-        "arxiv:2608.07440"
-      ],
-      "first_seen_at": "2026-08-10T11:14:42+08:00",
-      "last_seen_at": "2026-08-10T11:14:42+08:00",
-      "matched_keywords": [
-        "agent harness"
-      ],
-      "published": "2026-08-07",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "new",
-      "title": "Blast Radius",
-      "url": "https://arxiv.org/abs/2608.07440"
-    },
-    {
-      "abstract": "Human-like cognition does not select past experience by topical similarity alone: affective significance and unresolved conflict also shape what becomes accessible. We present PsychoAgent, a cognitive architecture for LLM agents that separates factual and affective memory and integrates both through a conflict-aware executive controller. Affective memories are first filtered by semantic relevance and then re-ranked by salience, preserving topical fit while allowing emotionally important traces to enter the prompt. Across three controlled conflict scenarios, the full architecture retrieved more conflict-critical memories than semantic-affective and single-memory RAG baselines (0.933 vs. 0.500 and 0.667), with a small semantic-similarity cost. Five blinded raters evaluated 27 outputs. After within-rater standardization, the full architecture had the highest overall mean (+0.22 SD), but corrected pairwise differences were not significant. A three-day illustrative trace further shows persistent affect, offline memory recombination, and selective memory reweighting. The findings support affect-sensitive retrieval as an inspectable mechanism for modeling human-like conflict effects in LLM agents.",
-      "arxiv_id": "2608.07438",
-      "arxiv_version": "v1",
-      "authors": [
-        "Mohammad Amanlou",
-        "Parham Abed Azad",
-        "Farbod Davoodi",
-        "Mostafa Masumi",
-        "Behnam Bahrak",
-        "Abdol-Hossein Vahabie"
-      ],
-      "external_ids": [
-        "arxiv:2608.07438"
-      ],
-      "first_seen_at": "2026-08-10T11:14:42+08:00",
-      "last_seen_at": "2026-08-10T11:14:42+08:00",
-      "matched_keywords": [
-        "agent harness",
-        "\"LLM agent\" harness"
-      ],
-      "published": "2026-08-07",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "new",
-      "title": "PsychoAgent: An Affect-Sensitive Cognitive Architecture for Conflict-Aware Memory in LLM Agents",
-      "url": "https://arxiv.org/abs/2608.07438"
-    },
-    {
-      "abstract": "Reliable hypothesis testing is the foundation of many empirical scientific claims. Large language model (LLM) agents are increasingly used to automate this process, as they can inspect datasets, generate code, and produce analyses end-to-end. However, we show that they frequently make subtle inferential errors that lead to incorrect conclusions despite correctly executed analyses. Existing benchmarks fail to capture this failure mode, as they rarely assess whether a reported p-value is statistically valid given the assumptions underlying the data. We address this gap by building P-Bench, a benchmark comprising 425 open-ended, realistic hypothesis-testing tasks spanning economics, biology, and medicine. Each task requires an agent to select a statistical method, compute a p-value, and draw a conclusion given only a scientific hypothesis and a dataset. We further introduce Fisher-R1, an open-weight LLM agent trained for rigorous hypothesis testing using synthetic tasks and reinforcement learning. On P-Bench, Fisher-R1-14B substantially improves over its backbone and outperforms strong proprietary and open-source baselines, including GPT-5.4 and DeepSeekV4-Pro, achieving a 21% average relative improvement in single-trial success over DeepSeek-V4-Pro, with gains up to 26% on the most challenging tasks. Our results demonstrate that current LLM agents lack reliable statistical reasoning for hypothesis testing and that reinforcement learning on tasks with verified statistical reward substantially improves reliability.",
-      "arxiv_id": "2608.07437",
-      "arxiv_version": "v1",
-      "authors": [
-        "Jiacheng Miao",
-        "Jin Mu",
-        "Guanhua Chen",
-        "James Zou"
-      ],
-      "external_ids": [
-        "arxiv:2608.07437"
-      ],
-      "first_seen_at": "2026-08-10T11:14:42+08:00",
-      "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-08-10T11:14:42+08:00",
-      "matched_keywords": [
-        "agent harness",
-        "\"LLM agent\" harness"
-      ],
-      "published": "2026-08-07",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "indexed",
-      "title": "Fisher-R1: Training LLM Agents for Reliable Hypothesis Testing",
-      "url": "https://arxiv.org/abs/2608.07437"
-    },
-    {
-      "abstract": "In this work we theoretically and experimentally investigate bound states in the continuum (BICs) in a reconfigurable integrated photonic structure, focusing on spontaneous four-wave mixing. We consider a configuration in which only one mode, the idler, is tuned to the BIC condition, and show that suppressing the radiative loss of this single mode profoundly reshapes the overall nonlinear dynamics. In particularly, we realize electrically tunable Friedrich-Wintgen BICs with Q > 10^6 in an interferometrically coupled silicon-nitride microresonator. Although inaccessible through linear excitation, the BIC is populated by four-wave mixing and read out through its radiative photon partner. In the low-gain regime, we investigate the spectral, correlation, and coherence properties of the generated photon pairs, revealing distinctive signatures in the signal-idler correlations and an extracted signal whose coherence time approaches the intrinsic-loss-limited lifetime of the dark idler. In the high-gain regime, making one mode participating in optical parametric amplification a BIC enhances the parametric gain by 12 dB and lowers the oscillation threshold by 1.6 dB. These results establish BICs as a tool for mode-selective lifetime engineering, enabling control over both biphoton wavepackets and the threshold dynamics of integrated parametric devices.",
-      "arxiv_id": "2608.07426",
-      "arxiv_version": "v1",
-      "authors": [
-        "Eduardo C. Lima",
-        "Marco Clementi",
-        "Alice Viola",
-        "Matteo Galli",
-        "Daniele Bajoni",
-        "Marco Liscidini",
-        "Massimo Borghi"
-      ],
-      "external_ids": [
-        "arxiv:2608.07426"
-      ],
-      "first_seen_at": "2026-08-10T11:14:42+08:00",
-      "last_seen_at": "2026-08-10T11:14:42+08:00",
-      "matched_keywords": [
-        "agent harness",
-        "\"LLM agent\" harness",
-        "test-time harness evolution"
-      ],
-      "published": "2026-08-07",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "new",
-      "title": "Harnessing bound states in the continuum for quantum and nonlinear photonics in silicon nitride microresonators",
-      "url": "https://arxiv.org/abs/2608.07426"
-    },
-    {
-      "abstract": "We present AutoOPT, a domain-specific harness for end-to-end automation of optimization research. AutoOPT organizes the discovery of optimal first-order methods into four stages: numerical design through the BnB-PEP methodology; symbolic discovery of the analytic description and a convergence proof through frontier large language models (LLMs); formal verification in the Lean 4 proof assistant; and human interpretation and write-up. We demonstrate the framework on two case studies, each of independent interest. The first, lemniscate acceleration, is a new accelerated gradient method for minimizing the gradient norm of a smooth convex function: after $N$ gradient steps it reduces the squared gradient norm at the optimal $O(1/N^{4})$ rate, with a constant governed by the lemniscate constant $\\varpi$, a classical elliptic-integral constant. The second is the analytic description of ITEM-f, a method previously known only numerically: for $L$-smooth, $μ$-strongly convex minimization it contracts the function-value gap at an accelerated linear rate with a per-step factor $(1-\\sqrt{μ/L})^{2}$. The convergence theorems of both case studies are formalized and machine-checked in Lean 4.",
-      "arxiv_id": "2608.07407",
-      "arxiv_version": "v1",
-      "authors": [
-        "Heechang Kim",
-        "Ernest K. Ryu",
-        "Shuvomoy Das Gupta"
-      ],
-      "external_ids": [
-        "arxiv:2608.07407"
-      ],
-      "first_seen_at": "2026-08-10T11:14:42+08:00",
-      "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-08-10T11:14:42+08:00",
-      "matched_keywords": [
-        "agent harness",
-        "\"LLM agent\" harness",
-        "test-time harness evolution"
-      ],
-      "published": "2026-08-07",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "indexed",
-      "title": "A Domain-Specific Harness for End-to-End Automation of Optimization Research",
-      "url": "https://arxiv.org/abs/2608.07407"
-    },
-    {
-      "abstract": "Recent agentic reinforcement learning methods use hindsight to complement sparse outcome rewards. However, a completed rollout can yield many such signals, leaving their appropriate allocation across turns unclear. We introduce TRIAL, a trajectory-relative hindsight distillation framework with a unified turn-aligned scoring protocol. For each decision turn, TRIAL extracts an outcome view of that decision's realized consequence and evaluates the same response under ordinary and hindsight-conditioned contexts. The signed log-probability gap determines the direction and local strength of token-level supervision, while turn-level magnitudes are normalized jointly over the realized trajectory. The resulting allocation multipliers have an eligible-token-weighted mean of one, redistributing dense supervision across turns while fixing its average multiplier. Experiments on WebShop and ALFWorld with different backbones show that TRIAL outperforms GRPO across all eight combinations of backbone, environment, and evaluation metric, while achieving the best or tied-best performance among six methods on six of them. On WebShop with Qwen3-1.7B, TRIAL improves the success rate from 56.4% to 75.2% and the task score from 78.7% to 85.7%. Controlled ablations further show that trajectory-relative turn allocation provides substantial gains beyond those of dense hindsight distillation alone.",
-      "arxiv_id": "2608.07371",
-      "arxiv_version": "v1",
-      "authors": [
-        "Haoyu Zheng",
-        "Yun Zhu",
-        "Qing Wang",
-        "Wenqiao Zhang"
-      ],
-      "external_ids": [
-        "arxiv:2608.07371"
-      ],
-      "first_seen_at": "2026-08-10T11:14:42+08:00",
-      "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-08-10T11:14:42+08:00",
-      "matched_keywords": [
-        "agent harness"
-      ],
-      "published": "2026-08-07",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "indexed",
-      "title": "Trajectory-Relative Hindsight Distillation for Agentic Reinforcement Learning",
-      "url": "https://arxiv.org/abs/2608.07371"
-    },
-    {
-      "abstract": "With the rapid advancement of large language models (LLMs), harnesses have become essential infrastructure for deploying agents across a wide range of domains. The fast-evolving harness ecosystem has also made rigorous capability evaluation increasingly important. However, efficiently building an end-to-end, systematic, and comprehensive evaluation pipeline remains a significant challenge. To address this challenge, we introduce $A^2E$ (Agent Auditing Engine), an end-to-end evaluation engine designed for agent harnesses. $A^2E$ leverages our newly proposed Agent Task Protocol (ATP) to enable the rapid integration of evaluation tasks with different harnesses. Through an automatically instrumented Monitor, it captures and generates standardized execution traces during experiments. In the Evaluation stage, $A^2E$ systematically assesses harness capabilities using a suite of multidimensional metrics. Compared with correctness alone, these metrics provide a more fine-grained characterization of differences among harnesses in execution efficiency, tool use, task planning, and error recovery. Experiments conducted with $A^2E$ further reveal that model-harness combinations exhibit substantial performance variation across different types of tasks, and that no single combination consistently outperforms all others across every task. These findings not only demonstrate the necessity of systematic evaluation but also provide useful guidance for the co-evolving of models and harnesses. Our code is available at https://github.com/datamllab/A2E.",
-      "arxiv_id": "2608.07346",
-      "arxiv_version": "v1",
-      "authors": [
-        "Haoning Wang",
-        "Mingxun Zhang",
-        "Chenyue Yu",
-        "Yingjun Shang",
-        "Xia Hu",
-        "Guanchu Wang",
-        "Na Zou"
-      ],
-      "external_ids": [
-        "arxiv:2608.07346"
-      ],
-      "first_seen_at": "2026-08-10T11:14:42+08:00",
-      "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-08-10T11:14:42+08:00",
-      "matched_keywords": [
-        "\"LLM agent\" harness",
-        "test-time harness evolution"
-      ],
-      "published": "2026-08-07",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "indexed",
-      "title": "An End-to-End Agent Auditing Engine",
-      "url": "https://arxiv.org/abs/2608.07346"
-    },
-    {
-      "abstract": "Memory systems have shown promise for improving agent performance, but their potential remains largely unexplored for small language models, which struggle to generate sufficient successful trajectories on their own. We propose Agent Memory Distillation (AMD), a training-free framework that transfers structured knowledge from a large teacher agent to a small student agent through hierarchical memory. AMD constructs three complementary memory types from successful teacher trajectories: Workflow memory encodes task-level strategies, Subtask memory provides concrete behavioral examples at an intermediate granularity, and Function memory captures per-function calling conventions and common pitfalls. Workflow and Subtask memories are injected proactively at the start of each task, while Function memory is retrieved reactively upon tool-calling errors. We evaluate AMD on three tool-use benchmarks using four student models (4B-8B parameters) with GPT-5-mini as the teacher, achieving average accuracy gains of 27.2%p, 11.2%p, and 3.4%p on AppWorld, BFCL V3, and ToolSandbox, while consistently outperforming existing memory-based baselines. Further analysis shows that Subtask memory contributes the largest gains, teacher effectiveness depends on both teacher capability and student compatibility, and 4B-sized students benefit most from AMD.",
-      "arxiv_id": "2608.07169",
-      "arxiv_version": "v1",
-      "authors": [
-        "Taeil Kim",
-        "Kangsan Kim",
-        "Sung Ju Hwang"
-      ],
-      "external_ids": [
-        "arxiv:2608.07169"
-      ],
-      "first_seen_at": "2026-08-10T11:14:42+08:00",
-      "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-08-10T11:14:42+08:00",
-      "matched_keywords": [
-        "\"LLM agent\" harness"
-      ],
-      "published": "2026-08-07",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "indexed",
-      "title": "Agent Memory Distillation: Empowering Small LLM Agents with Hierarchical Teacher Memory",
-      "url": "https://arxiv.org/abs/2608.07169"
-    },
-    {
-      "abstract": "Giving an AI agent the ability to send emails, query databases, or execute commands is useful--until the agent is tricked into doing something it shouldn't. Prompt injection, hallucinated reasoning, and unsafe tool calls form the primary attack surface for autonomous LLM agents. Existing defenses rely on software checks like system prompts or policy filters running on the same machine the attacker targets, offering no verifiable proof of execution. We introduce Niyam-AI, a framework that makes safety enforcement provable. At session start, permitted tools and constraints are locked into an Intent Contract committed via SHA-256. Every tool call is intercepted and validated by an isolated Judge model; upon passing, a zk-SNARK proof is generated via EZKL. The tool executes only after proof verification, allowing third parties to confirm enforcement without accessing Judge model weights. Evaluating Niyam-AI on 2,000 real-world scenarios from Agent-SafetyBench against NeMo Guardrails, Meta's Llama Prompt Guard 2, and OpenAI's GPT-OSS-Safeguard using 5-fold stratified cross-validation yields an F1 score of 88.5% with a 1.1% false-positive rate (bootstrap 95% CI: [85.19%, 91.88%], N=1000). McNemar's exact paired test confirms significant improvement: Niyam-AI wins 390 discordant scenarios against NeMo (vs 20 losses), 115 against Prompt Guard 2 (vs 13), and 384 against GPT-OSS-Safeguard (vs 19) with p < 0.0001 in all cases. Proof generation adds 2260.6 +/- 218.4 ms per approved action, while verification takes 53.1 +/- 11.8 ms. Niyam-AI provides a guardrail that is both highly accurate and mathematically verifiable--though this reflects a classifier adapted to Agent-SafetyBench evaluated against zero-shot baselines, a distinction discussed in Section IV.C.",
-      "arxiv_id": "2608.07167",
-      "arxiv_version": "v1",
-      "authors": [
-        "Aditya Katkar",
-        "Om Karkele",
-        "Kartik Mandhane",
-        "Manisha More",
-        "Yash Kashid"
-      ],
-      "external_ids": [
-        "arxiv:2608.07167"
-      ],
-      "first_seen_at": "2026-08-10T11:14:42+08:00",
-      "last_seen_at": "2026-08-10T11:14:42+08:00",
-      "matched_keywords": [
-        "\"LLM agent\" harness"
-      ],
-      "published": "2026-08-07",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "new",
-      "title": "NiyamAI - An Intent-Bound AI Agent with Cryptographically Verifiable Guardrails using Zero-Knowledge Proofs",
-      "url": "https://arxiv.org/abs/2608.07167"
-    },
-    {
-      "abstract": "This paper presents a sensor-minimal automated assembly system for bidirectional single-row flat ribbon cable harnesses (FRCHs). Unlike conventional peg-in-hole or single-terminal insertion tasks, FRCH assembly involves mechanically coupled multi-terminal insertion under flexible and dense geometric constraints. To address this problem, the proposed system performs the assembly through a purely mechanical sequence consisting of Cable Alignment, Lean & Slide, Weaving, and Clamping, without relying on active sensing or vision. Each mechanism is designed to progressively reduce correlated terminal misalignment, insertion interference, and instability before final locking. Experiments on bidirectional single-row FRCHs achieved an 83.75% end-to-end process success rate over 80 trials, with success rates of 85.0% and 82.5% in the first and second halves, respectively. The cycle time was 33 s under half-speed operation. To the best of our knowledge, this work presents the first automated prototype for FRCH terminal-to-housing assembly for multi-pin housings.",
-      "arxiv_id": "2608.06996",
-      "arxiv_version": "v1",
-      "authors": [
-        "Eunkyu Choi",
-        "Joonho Seo",
-        "Seungmin Lee",
-        "Seokhwan Jeong"
-      ],
-      "external_ids": [
-        "arxiv:2608.06996"
-      ],
-      "first_seen_at": "2026-08-10T11:14:42+08:00",
-      "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-08-10T11:14:42+08:00",
-      "matched_keywords": [
-        "\"LLM agent\" harness"
-      ],
-      "published": "2026-08-07",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "indexed",
-      "title": "Automated Terminal-to-Housing Assembly System for Flat Ribbon Cable Harness",
-      "url": "https://arxiv.org/abs/2608.06996"
-    },
-    {
-      "abstract": "Modern agent harnesses persist state across tasks and sessions through persistent carriers like memory, skills, tools, and shared artifacts. However, this capability creates delayed safety risks: attacker-influenced content can cross system boundaries and later affect the execution of a benign request. Existing benchmarks typically focus on a few carriers or harnesses, while end-to-end attack-success rates reveal little about how risks propagate. To this end, we present HarnessSafe, a benchmark comprising 328 executable cases across seven persistent-carrier families and evaluated on most mainstream agent harnesses. Each case is specified as a Persistent-Risk Lifecycle that traces attacker influence from its initial entry, through persistence across carriers and system boundaries, to a later benign trigger and an observable violation. We further introduce a multi-stage, trace-based evaluation that uses observable execution evidence to determine how far each attack chain progresses and where it is stopped. Experiments show that containment is carrier-specific and strongly depends on the harness-model configuration. Both the harness and model backend substantially shape containment outcomes, while attack success rates cannot reflect distinct lifecycle progression patterns.",
-      "arxiv_id": "2608.06984",
-      "arxiv_version": "v1",
-      "authors": [
-        "Xiao Zhang",
-        "Yusheng Wang",
-        "Yuhao Fei",
-        "Dongyuan Li",
-        "Zian Liang",
-        "Liuyu Xiang",
-        "Hongxun Gu",
-        "Zhaofeng He"
-      ],
-      "external_ids": [
-        "arxiv:2608.06984"
-      ],
-      "first_seen_at": "2026-08-10T11:14:42+08:00",
-      "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-08-10T11:14:42+08:00",
-      "matched_keywords": [
-        "\"LLM agent\" harness"
-      ],
-      "published": "2026-08-07",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "indexed",
-      "title": "HarnessSafe: Evaluating Safety Across Persistent Carriers in Agent Harnesses",
-      "url": "https://arxiv.org/abs/2608.06984"
-    },
-    {
-      "abstract": "Prior benchmarking work has shown that a single large language model (LLM), forced to make life-or-death resource-allocation decisions, exhibits measurable demographic bias. Real deployments, however, rarely use a single agent: they use pipelines, with review steps meant to catch exactly this kind of failure. We study what happens to bias when the same decision is distributed across a role-differentiated multi-agent pipeline (assessment, allocation, independent audit) instead of made and checked by one model alone. Using a synthetic disaster-triage simulator with paired cases that are clinically identical except for one demographic attribute, we run 192 episodes (2,304 resolved case pairs) on GPT-4o-mini comparing a single-agent control condition to a nine-agent pipeline under three independently varied pressure dimensions. We find no measurable difference in how often biased outcomes occur between the two conditions (6.9% vs. 6.1%, p = 0.498). We do find a large and significant effect of audit capacity on whether bias is caught: 30.0% of biased outcomes go entirely undetected, rising to 43.8% when the auditor is overloaded and falling to 18.4% when it is not. Decomposing this effect shows it is driven almost entirely by coverage (whether a case is reviewed at all, which collapses from 100.0% to 65.6% under load, p < 0.001) rather than by degraded judgment on the cases that are reviewed (81.6% vs. 85.7%, p = 1.000, direction reversed). A follow-up experiment shows that reordering the audit queue by estimated risk, rather than first-come-first-served, recovers most of the lost coverage under the same capacity constraint (65.6% to 91.7%, p = 0.028). We discuss the implications for any system that adds independent oversight to an LLM agent pipeline under resource constraints, and report the study's limitations honestly: one model, modest sample sizes, and no adversarial replication.",
-      "arxiv_id": "2608.06949",
-      "arxiv_version": "v1",
-      "authors": [
-        "Paul-Peter Arslan"
-      ],
-      "external_ids": [
-        "arxiv:2608.06949"
-      ],
-      "first_seen_at": "2026-08-10T11:14:42+08:00",
-      "last_seen_at": "2026-08-10T11:14:42+08:00",
-      "matched_keywords": [
-        "\"LLM agent\" harness"
-      ],
-      "published": "2026-08-07",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "new",
-      "title": "Does Splitting a Triage Decision Across Agents Hide Bias or Help Catch It? A Multi-Agent Simulation Study of LLM-Based Resource Allocation Under Audit Capacity Constraints",
-      "url": "https://arxiv.org/abs/2608.06949"
     }
   ],
   "last_run": {
-    "at": "2026-10-04T14:42:23+08:00",
+    "at": "2026-10-05T14:39:43+08:00",
     "sources": [
       "arxiv",
       "semanticscholar",
@@ -15635,11 +15641,11 @@
       "\"LLM agent\" harness",
       "test-time harness evolution"
     ],
-    "fetched": 45,
-    "merged": 17,
-    "new": 0
+    "fetched": 55,
+    "merged": 20,
+    "new": 14
   },
   "schema_version": 1,
   "topic": "agent harness",
-  "updated_at": "2026-10-04T14:42:23+08:00"
+  "updated_at": "2026-10-05T14:39:43+08:00"
 }
