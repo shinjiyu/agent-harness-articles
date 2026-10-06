@@ -2,6 +2,66 @@
   "candidates": [
     {
       "source": "arxiv",
+      "arxiv_id": "2610.06829",
+      "arxiv_version": "v1",
+      "title": "CLIFT: Conformal Self-Verification for Web Agent Training and Test-Time Scaling",
+      "authors": [
+        "Yifan Zhang",
+        "Yutong Dai",
+        "Viraj Prabhu",
+        "Zhiyuan Hu",
+        "Ran Xu",
+        "Zeyuan Chen"
+      ],
+      "published": "2026-10-05",
+      "url": "https://arxiv.org/abs/2610.06829",
+      "abstract": "Open-source web agents are now strong enough to execute realistic browser tasks, but training them with reinforcement learning still depends on weak supervision: binary task success is too sparse for credit assignment, while frontier-language-model judges are too expensive to call at every step and cannot be assumed available at deployment. We introduce CLIFT, a training and test-time scaling method built around conformal self-verification. During training, the agent answers natural-language verification questions about its own rollouts; a Compositional Conformal Certifier keeps only question signals whose URL-conditional evidence agrees with a training-time judge, assigns signed trust weights through polarity-aware lift, and blends the resulting verifier score into per-step rewards in a way that never subtracts from the judge baseline. At test time, the same certified bank is frozen and reused as structured evidence for Conformal Trajectory Selection (CTS): the agent samples a greedy rollout and one or more diverse retries, the self-verifier summarises each URL trace, and a conservative majority-vote rule chooses whether to swap away from the current incumbent without calling any external judge. This single mechanism supports three settings. On WebArena Infinity, CLIFT achieves state-of-the-art performance among open-source web agents. On VisualWebArena, a bank trained with the open model transfers to GPT-5.5 at test time and reaches state-of-the-art performance under the canonical harness. On Online Mind2Web, without training an agent on the benchmark, translating the certified question bank improves a live-web agent in zero-shot evaluation. Together these results position conformal self-verification as a way to turn costly judge feedback into a reusable training signal and a judge-free test-time scaling signal.",
+      "external_ids": [
+        "arxiv:2610.06829"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-06T15:22:22+08:00",
+      "last_seen_at": "2026-10-06T15:22:22+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.06782",
+      "arxiv_version": "v1",
+      "title": "T-Search: An Open Agentic Retriever and Playground for Hard Multi-Step Search",
+      "authors": [
+        "Olga Tsymboi",
+        "Ramil Latypov",
+        "Aleksandr Medvedev",
+        "Danil Taranets",
+        "Dmitrii Stoianov",
+        "Nikita Gulyakov",
+        "Gleb Alektorov",
+        "Anatolii Potapov"
+      ],
+      "published": "2026-10-05",
+      "url": "https://arxiv.org/abs/2610.06782",
+      "abstract": "We present T-Search, an open-weight agentic retriever for hard multi-step search. Given a question and a search tool over a fixed corpus, it runs a bounded multi-round search and returns a ranked list of evidence chunks with short justifications, leaving answer generation to a downstream model, so backend and generator can be swapped without retraining. T-Search is built on Qwen3.6-35B-A3B and trained on adversarially filtered synthetic search tasks with round-sliced supervised fine-tuning followed by GSPO on a recall reward. Averaged over seven English and Russian benchmarks with gold evidence annotations, it reaches 56.0 Recall@10 with one rollout, 14.4 points above its base, and 61.3 with three fused rollouts, outperforming larger open models. We release the model, harness, live demo, and three benchmarks, including TRuST, the first native-Russian hard-search benchmark.",
+      "external_ids": [
+        "arxiv:2610.06782"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-06T15:22:22+08:00",
+      "last_seen_at": "2026-10-06T15:22:22+08:00"
+    },
+    {
+      "source": "arxiv",
       "arxiv_id": "2610.03675",
       "arxiv_version": "v1",
       "title": "FrugalEvo: Towards Cost-Aware LLM-Guided Program Evolution",
@@ -15569,68 +15629,10 @@
       "status": "new",
       "title": "Capability Is Not Propensity: Measuring Pressure-Robust Cooperative Behavior in Civic LLM Agents",
       "url": "https://arxiv.org/abs/2608.09485"
-    },
-    {
-      "abstract": "A model alone does not determine how a programming agent acts. What the model sees, how actions enter the environment, how feedback returns, and how one run affects the next all depend on how the harness is organized. Minimal examples usually show only the basic interaction between a model and tools, while production systems spread these relationships across complex components and dependencies. This paper studies a compact harness design by following a single request through context formation, model decision, environmental action, observation return, and state continuation. Three boundaries---model, execution, and state---connect the model service, tool environment, and persistent state, while the request lifecycle determines the order in which these transitions occur. Together, they show the harness's core role: turning model generations into environmental actions, carrying runtime feedback into later decisions, and allowing state to continue across requests. On top of this runtime structure, a harness can also be gradually refined across runs through continued bootstrapping. The design is realized in the executable artifact https://github.com/lilinxi/Coderlet.",
-      "arxiv_id": "2608.09480",
-      "arxiv_version": "v1",
-      "authors": [
-        "Mengfan Li"
-      ],
-      "external_ids": [
-        "arxiv:2608.09480"
-      ],
-      "first_seen_at": "2026-08-11T11:09:54+08:00",
-      "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-08-11T11:09:54+08:00",
-      "matched_keywords": [
-        "\"LLM agent\" harness"
-      ],
-      "published": "2026-08-10",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "indexed",
-      "title": "From Prompt to Harness: Coderlet from Scratch",
-      "url": "https://arxiv.org/abs/2608.09480"
-    },
-    {
-      "abstract": "Cowork agents may complete benign tasks while disclosing protected data, manipulating unauthorized state, invocate unauthorized API. We define behavioral safety and introduce ActBench, a self-evolving benchmark that evaluates such behavior risk from execution trajectories rather than final responses. Each case pairs a benign task with an adversarial variant that preserves its instruction, configuration, initial state, rating model, and trusted records while injecting a task-reachable payload. ActBench contains 600 cases from 213 scenarios, spanning 15 risk behaviors, six execution spaces, and 48 web-service APIs.To move beyond static payloads, we propose a reward-guided beam search method that jointly optimizes attack effectiveness and task utility, while reflection diagnoses failed execution checkpoint and guides payload revision. Besides, we propose a dual evidence verification mechanism that verifies agent execution safety and utility through log evidence and LLM-based trajectory evidence.We evaluate 15 LLMs and 6 open-source cowork agents over 24,000 trajectories. Under a fixed harness, attack success rates ranges from 10.1% to 94.4% across models, while under a fixed base model, they range from 73.7% to 94.4% across agents.These results show greater variation across models than agent harness, while attacks remain highly successful across all tested harnesses.Our benchmark is released at: https://github.com/zjuicsr/ActBench.",
-      "arxiv_id": "2608.09476",
-      "arxiv_version": "v1",
-      "authors": [
-        "Hongwei Yao",
-        "Yiming Liu",
-        "Meihui Chen",
-        "Jieling Chen",
-        "Zikun Chen",
-        "Yiling He",
-        "Wangze Ni",
-        "Cong Wang",
-        "Kui Ren"
-      ],
-      "external_ids": [
-        "arxiv:2608.09476"
-      ],
-      "first_seen_at": "2026-08-11T11:09:54+08:00",
-      "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-08-11T11:09:54+08:00",
-      "matched_keywords": [
-        "\"LLM agent\" harness"
-      ],
-      "published": "2026-08-10",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "indexed",
-      "title": "ActBench: Self-Evolving Benchmark of Behavioral Safety in Cowork Agents",
-      "url": "https://arxiv.org/abs/2608.09476"
     }
   ],
   "last_run": {
-    "at": "2026-10-05T14:39:43+08:00",
+    "at": "2026-10-06T15:22:22+08:00",
     "sources": [
       "arxiv",
       "semanticscholar",
@@ -15641,11 +15643,11 @@
       "\"LLM agent\" harness",
       "test-time harness evolution"
     ],
-    "fetched": 55,
-    "merged": 20,
-    "new": 14
+    "fetched": 15,
+    "merged": 2,
+    "new": 2
   },
   "schema_version": 1,
   "topic": "agent harness",
-  "updated_at": "2026-10-05T14:39:43+08:00"
+  "updated_at": "2026-10-06T15:22:22+08:00"
 }
