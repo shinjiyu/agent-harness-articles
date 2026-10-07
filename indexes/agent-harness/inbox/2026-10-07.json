@@ -1,0 +1,534 @@
+{
+  "date": "2026-10-07",
+  "run": {
+    "at": "2026-10-07T14:59:34+08:00",
+    "sources": [
+      "arxiv",
+      "semanticscholar",
+      "dblp"
+    ],
+    "keywords": [
+      "agent harness",
+      "\"LLM agent\" harness",
+      "test-time harness evolution"
+    ],
+    "fetched": 55,
+    "merged": 25,
+    "new": 17
+  },
+  "new_candidates": [
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.08775",
+      "arxiv_version": "v1",
+      "title": "Agent in a Bottle: Can LLM Agents Turn Their Capabilities Into Cheap, Scalable Artifacts?",
+      "authors": [
+        "Ankit Sonthalia",
+        "Haritz Puerto",
+        "Alexander Rubinstein",
+        "Martin Gubri",
+        "Seong Joon Oh"
+      ],
+      "published": "2026-10-06",
+      "url": "https://arxiv.org/abs/2610.08775",
+      "abstract": "Large language models (LLMs) can solve many narrow tasks, but querying them separately for millions of related instances can be prohibitively expensive. Can LLM agents autonomously create cheaper solutions for such workloads? We call this ability \"bottling\": the ability to turn general capabilities into task-specific solutions that balance answer quality and amortised cost. We introduce BOTTLED, a benchmark in which agents receive an entire unlabelled workload and must complete it under fixed time, compute and LLM API budgets. Agents choose their own approach, such as training a small model or writing a reusable program. Across ten models and three tasks, we find that strong zero-shot task performance does not reliably translate into strong bottling capabilities. Models with similar zero-shot scores can differ substantially after bottling, and 48 of 60 bottling runs score below the lower bound of the 95% confidence interval of their model's zero-shot performance. Moreover, 31 of 60 runs underperform the stronger of two small-model distillation baselines with the same token budget. Nevertheless, bottling can yield substantial savings: on query-product relevance classification, Opus 5 retains about 82% of its zero-shot macro-F1 at roughly 657 times lower reported cost. Bottling is also competitive with Jev, a \"system one\" model built especially for cheap, repetitive inference: Opus 5 on the same task recovers about 94% of Jev's macro-F1 at a quarter of Jev's projected full-workload cost. BOTTLED provides a basis for evaluating and improving agents' ability to invest limited resources in reusable solutions for large, repetitive workloads.",
+      "external_ids": [
+        "arxiv:2610.08775"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-07T14:59:34+08:00",
+      "last_seen_at": "2026-10-07T14:59:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.08761",
+      "arxiv_version": "v1",
+      "title": "VeriFine: Scaling Verification for Self-Improvement in Embodied Reasoning",
+      "authors": [
+        "Zewei Zhou",
+        "Rachel Luo",
+        "Yulong Cao",
+        "Chaowei Xiao",
+        "Chensheng Peng",
+        "Boyi Li",
+        "Thomas Tian",
+        "Zheng Lian",
+        "Yan Wang",
+        "Jiaqi Ma",
+        "Boris Ivanovic",
+        "Marco Pavone",
+        "Wenhao Ding"
+      ],
+      "published": "2026-10-06",
+      "url": "https://arxiv.org/abs/2610.08761",
+      "abstract": "Self-improving policies continually expose new failure patterns, changing what their judges must be able to verify. However, current fixed judges constrain both optimization feedback and the discovery of useful training examples, limiting further self-improvement. This challenge is even more acute in embodied reasoning, where reliable evaluation must account for spatial grounding, causal reasoning, and safety-aware decision-making. We introduce VeriFine, an agent harness framework that scales verification through the co-evolution of the policy, training curriculum, and judge. The Policy Improvement Loop uses a rubric judge to diagnose recurring failures, construct an adaptive curriculum, and optimize the policy. When progress plateaus and verification becomes a bottleneck, the Judge Improvement Loop selectively queries human guidance on informative failure cases and refines the judge through coactive calibration, in which humans and agents resolve disagreements and converge toward the objective rubric of physical reasoning. The revised judge then guides the next stage of data selection and policy optimization. Experiments on driving and robot navigation tasks demonstrate continuous self-improvement in both policy and judge capability across reinforcement and supervised fine-tuning. These results show how scaling verification supports continuous self-improvement as policy failure patterns evolve.",
+      "external_ids": [
+        "arxiv:2610.08761"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-07T14:59:34+08:00",
+      "last_seen_at": "2026-10-07T14:59:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.08722",
+      "arxiv_version": "v1",
+      "title": "Does an Agent's History Tell You When Compaction Will Hurt? A Modest, Bounded Effect on the TRACE Paired-Replay Corpus",
+      "authors": [
+        "Egor Pakhomov",
+        "Erik Nijkamp"
+      ],
+      "published": "2026-10-06",
+      "url": "https://arxiv.org/abs/2610.08722",
+      "abstract": "Many long-horizon agents compact their context on a global rule, usually a token budget, blind to what the agent was doing. We ask whether the agent's recent behaviour predicts when a compaction will hurt. TRACE's public corpus of 590 harness-triggered AppWorld compaction boundaries replays each boundary from a re-executed prefix state under the pre-compaction context and under the summary, and records the burden of the next actions: calls that error or repeat a call already made. We find that pre-boundary history predicts post-compaction harm only weakly. An internally prespecified contrast by prefix placement is a wide null, and the naive \"has-written\" label behind it turns out to measure trajectory phase. The best extension-protocol trigger reaches held-out AUROC 0.66 (0.64 on the replicate's own label) against a same-boundary replicate of 0.72; the best frozen, interpretable trigger avoids 21% of harmful (positive-burden) boundaries while keeping 84% of compaction opportunities, and exceeds the random-rule expectation on count but not on burden mass (a post hoc comparison). Whether the best trigger beats a token-budget rule at matched retention cannot be evaluated on the release. We state what corpora should ship to answer it.",
+      "external_ids": [
+        "arxiv:2610.08722"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-07T14:59:34+08:00",
+      "last_seen_at": "2026-10-07T14:59:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.08720",
+      "arxiv_version": "v1",
+      "title": "WorldSolver: Can LLM Agents Simulate the Physical Dynamics via Solver Generation?",
+      "authors": [
+        "Siru Jiang",
+        "Yongzhe Lyu",
+        "Shuo Lu",
+        "Yubin Wang",
+        "Yuxiang Zhang",
+        "Yue Liao",
+        "Bin Wang",
+        "Jian Liang",
+        "Tieniu Tan"
+      ],
+      "published": "2026-10-06",
+      "url": "https://arxiv.org/abs/2610.08720",
+      "abstract": "LLM-based agents are increasingly advancing scientific and engineering problem solving, with physics simulation emerging as a challenging yet practical testbed for reproducing complex physical phenomena with application in embodied AI, games and films. As the workhorse of such simulation, a solver computes how the state of a dynamic system evolves over time. Building such solvers requires physical understanding to identify appropriate models, mathematical reasoning to formulate the underlying dynamics, and software engineering to implement them as executable code, yet this capability of LLM agents remains underexplored. To this end, we introduce WorldSolver, a benchmark of 168 simulation tasks derived from physical phenomena in 61 classic computer graphics papers, spanning 7 physical domains. Each task contains a code scaffold that provides a fixed simulation environment for the scene, with the solver implementation left for the agent to complete. Specifically, we evaluate them along three dimensions: Execution Checks for successful execution, Visual Fidelity for reproducing the intended dynamic behavior in the rendered simulation, and Physical Plausibility for physics-grounded verification of the generated dynamics. Experiments on frontier agents reveal that producing executable solvers is difficult itself, and satisfying visual and physical correctness is even harder. GPT-5.6-Sol and Claude-Opus-5 perform comparatively better than the other evaluated agents, yet achieve overall scores of only 48.7% and 46.7%, respectively. WorldSolver is an early step toward agentic solver generation, and we hope it helps drive progress toward agents that can faithfully simulate the dynamic physical world. Code is available at https://github.com/sirujiang/WorldSolver.",
+      "external_ids": [
+        "arxiv:2610.08720"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-07T14:59:34+08:00",
+      "last_seen_at": "2026-10-07T14:59:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.08668",
+      "arxiv_version": "v1",
+      "title": "Semantic Behavioral Watermarking: Paraphrase-Robust and Forgery-Resistant Provenance for LLM Agents",
+      "authors": [
+        "Suxin Ji",
+        "Hungtao Wan",
+        "Shaoxuan Chen",
+        "An Zhang"
+      ],
+      "published": "2026-10-06",
+      "url": "https://arxiv.org/abs/2610.08668",
+      "abstract": "Behavioral watermarking embeds an owner identifier in an LLM agent's high-level action choices, giving provenance without touching output tokens. Prior agent watermarks break in two ways. First, all three prior schemes bind the watermark to the exact action symbol, so renaming a tool desynchronizes decoding even when the observation is untouched; in AgentMark's own robustness test, paraphrasing the observation alone drops bit-recovery to 16.8%. Second, every prior agent watermark studies only removal: none asks whether an adversary can forge a trajectory that verifies as someone else's, a question answered affirmatively for text watermarks (Jovanović et al., 2024). We present Semantic Behavioral Watermarking (SBW): watermarking over semantic action clusters under history conditioning, with the public-cluster bin replaced by keyed collision-resistant binning whose fresh-bucket assignment is provably unpredictable in the random-oracle model. Across five agent models (3B-14B, four vendors) and three encoders the ordering holds on both benchmarks: on ToolBench (600 trajectories per model) detection under rewriting is 0.49-0.66 for cluster-level versus 0.05-0.17 for exact-symbol at a permutation-calibrated 1% FPR, at 72-83% choice agreement against 22-27% for logit biasing; on ALFWorld (100 episodes per model) it is 0.92-0.97 versus 0.00-0.01. Keyed binning takes adaptive forgery from 100% to the false-positive floor at the primary operating point (bge, r=64). We also mark the boundary that guarantee does not cover: when the adversary copies the victim's own steps, shuffled splicing is neutralized (0.000 on Qwen2.5-3B) but chained replay remains at 0.76-0.98 across the five models, reported as open. Paraphrase robustness costs about half of the per-step watermark capacity. Code is available at https://anonymous.4open.science/r/SBW-Agent-Watermark.",
+      "external_ids": [
+        "arxiv:2610.08668"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-07T14:59:34+08:00",
+      "last_seen_at": "2026-10-07T14:59:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.08662",
+      "arxiv_version": "v1",
+      "title": "ParanoiaEval: Benchmarking Unnecessary Defensive Work in Agentic Coding",
+      "authors": [
+        "Hanjun Luo",
+        "Xiucheng Zhang",
+        "Zhuoning Xu",
+        "Zhimu Huang",
+        "Yingbin Jin",
+        "Xinfeng Li",
+        "Hanan Salam"
+      ],
+      "published": "2026-10-06",
+      "url": "https://arxiv.org/abs/2610.08662",
+      "abstract": "As coding agents increasingly undertake real-world work autonomously, judging whether their risk treatments are warranted has become important. Existing work evaluates related agent behaviors from separate perspectives, but lacks a systematic framework for unifying these behaviors. To bridge this gap, we introduce ParanoiaEval, the first benchmark for unified evaluation of risk-treatment capabilities in coding agents. Grounded in the well-established Avoidance-Transfer-Mitigation-Acceptance framework in software engineering risk management, ParanoiaEval operationalizes its 4 fundamental treatments for coding-agent settings and contains 200 evidence-controlled repository-level task pairs, each differing only in treatment-defining evidence. We further introduce dedicated metrics for risk-treatment violations and evidence responsiveness, using a human-calibrated agentic judge for reliable evaluation. Large-scale experiments on 8 representative models and a post-hoc human study reveal that (I) unnecessary risk treatment occurs in 11.2%-58.7% of runs despite explicit evidence, with substantial variation across agent configurations; (II) stronger task capability does not ensure more appropriate risk treatment, while treatment violations substantially harm developers' experience, establishing risk treatment as an independent capability dimension; and (III) agents exhibit systematic patterns consistent with established risk-management findings, suggesting that knowledge from human practice can guide the diagnosis and improvement of this capability.",
+      "external_ids": [
+        "arxiv:2610.08662"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-07T14:59:34+08:00",
+      "last_seen_at": "2026-10-07T14:59:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.08630",
+      "arxiv_version": "v1",
+      "title": "Towards In-Parameter Memory Augmentation for Large Language Models",
+      "authors": [
+        "Haoyu Huang",
+        "Zhongwei Xie",
+        "Jiaxin Bai",
+        "Yisen Gao",
+        "Hong Ting Tsang",
+        "Wuganjing Song",
+        "Huihao Jing",
+        "Yufei Li",
+        "Yangqiu Song"
+      ],
+      "published": "2026-10-06",
+      "url": "https://arxiv.org/abs/2610.08630",
+      "abstract": "Recently Large Language Models (LLMs) and LLM-based agents increasingly need to incorporate knowledge acquired after pretraining, e.g., domain facts, user preferences, documents, and interaction experience. In-context learning (ICL) and ICL-based agent harness remain flexible, but they consume context capacity and incur repeated discretized encoding cost that grows with context length. \\textbf{In-parameter memory} offers a complementary substrate: reusable memory information is represented in model parameters, adapters, or other parameter-like objects that are composed into the forward pass at inference time. This survey focuses on methods that augment LLMs with such parametric memory at deployment: a memory-bearing parameter object is plugged into the forward pass during inference, whether it is acquired before or during deployment. We organize the landscape with two orthogonal axes: \\textbf{Parameter Placement}, which includes Embedding, Attention, FFN layers, or Hybrid when two or more layers are used; and \\textbf{Parameter Acquisition Time}, which distinguishes methods whose memory object is acquired during deployment (online) from those acquired before it (offline). We clarify boundaries, conduct comparisons, and discuss open directions in interference, safety, co-design with ICL, and recursive self-improvement.",
+      "external_ids": [
+        "arxiv:2610.08630"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-07T14:59:34+08:00",
+      "last_seen_at": "2026-10-07T14:59:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.08622",
+      "arxiv_version": "v1",
+      "title": "Agentic RCA for Internet-Scale Services Using Constrained Creativity",
+      "authors": [
+        "Sayan Sinha",
+        "Vipul Harsh",
+        "B. Aditya Prakash",
+        "Vyas Sekar",
+        "Hui Zhang"
+      ],
+      "published": "2026-10-06",
+      "url": "https://arxiv.org/abs/2610.08622",
+      "abstract": "System administrators of Internet-scale services need to resolve failure incidents to maintain reliability of such services. Ideally, we want a troubleshooting system to be: (1) expressive to known and unknown incidents with high accuracy; (2) cost efficient at scale; (3) explainable to provide actionable insights operators can act on; and (4) entail low effort from the operators. Unfortunately, most existing systems, including emerging LLM-assisted agentic workflows and structured frameworks for authoring diverse RCA algorithms fall short of achieving all four requirements. We present E4, a novel agentic system for troubleshooting for Internet-scale services. E4 embodies the paradigm of constrained creativity that combines the best of LLM-assisted automation and exploration with the explainability and efficiency of a structured approach. Instead of allowing an LLM agent to write arbitrary code or generate arbitrary responses, we provide the agent a restricted DSL to generate its response via simple loop-free data flow programs. This DSL, equipped with high level operators for troubleshooting, makes E4's output accurate, verifiable and explainable. On a mix of synthetic and real-world workloads, E4 achieves up to 62% better accuracy compared to state-of-the-art solutions, while providing more explainable responses at up to 12x reduced cost.",
+      "external_ids": [
+        "arxiv:2610.08622"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-07T14:59:34+08:00",
+      "last_seen_at": "2026-10-07T14:59:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.08621",
+      "arxiv_version": "v1",
+      "title": "Recursive Game Creator: An Agentic Product-Level Experience-Oriented Game Harness",
+      "authors": [
+        "Jiajun Chen",
+        "Haoyu Wu",
+        "Mingda Jia",
+        "Xihui Liu"
+      ],
+      "published": "2026-10-06",
+      "url": "https://arxiv.org/abs/2610.08621",
+      "abstract": "Recent game design agents have made substantial progress in generating playable games. However, program correctness does not ensure an enjoyable experience for players. We present Recursive Game Creator, an experience-oriented harness to advance agentic game development from rough game prototypes into entertaining games. Recursive Game Creator organizes recursive development around four components: Designer, Builder, Player, and Reviewer. The Designer translates user instructions and Reviewer's feedback into detailed plans. The Builder turns these plans into candidate games. The coding-native Player creates and executes reusable policies through programmatic interfaces to efficiently collect diverse gameplay trajectories, mitigating evaluation bias caused by slow GUI-based collection. The Reviewer uses carefully designed trajectory-based metrics to induce player preferences, integrating with visual evidence and explicit textual preferences to evaluate games against game-specific criteria. Finally, the Reviewer accepts the better version and provides improvement reviews for the next round, closing the recursive loop. Our method achieves state-of-the-art overall performance of 77.89 on GameCraft-Bench. On GameASG-Bench, it achieves a strict task success rate of 53.2%, a 34.1% improvement over the same-model baseline, and the highest mean runtime-check pass rate at 93.4% among compared methods. A user study shows longer playtime and higher ratings. Code is coming soon.",
+      "external_ids": [
+        "arxiv:2610.08621"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-07T14:59:34+08:00",
+      "last_seen_at": "2026-10-07T14:59:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.08452",
+      "arxiv_version": "v1",
+      "title": "Agentic AutoRAG: RAG Pipeline Optimization through Reasoning-Driven Agents",
+      "authors": [
+        "Lasse B. Strand",
+        "Robert Jakob",
+        "Kevin O'Sullivan",
+        "Markus Kreft"
+      ],
+      "published": "2026-10-06",
+      "url": "https://arxiv.org/abs/2610.08452",
+      "abstract": "Retrieval-augmented generation (RAG) is a widely used approach for grounding large language models (LLMs) in external knowledge. However, configuring a pipeline is an expensive hyperparameter optimization problem over many interacting choices, from chunking and embedding model to reranking and generation. Existing optimizers, from greedy search to Bayesian optimization, reduce each trial to an aggregate score and search without modeling why a configuration performed as it did, even though the retrieved chunks already provide evidence about whether each failure occurred during retrieval or after it. We introduce Agentic AutoRAG, an LLM-agent optimizer for multi-objective RAG hyperparameter optimization with retrieval-versus-generation failure attribution. It proposes configurations scored on a frozen exam from the corpus: after each trial a Diagnoser attributes each failed question to retrieval or generation, and a Proposer, grounded in a knowledge base of model rankings and pricing, selects the next configuration, weighing accuracy against cost to trace a Pareto frontier. On three multi-hop QA benchmarks it reaches higher LLM-judge accuracy than every baseline we compare, and within its first 10 trials it matches or beats the statistical baselines' full 30-trial judge accuracy. In its cost-aware mode on a real-world healthcare corpus it reaches a median exam accuracy of 77%, above the strongest baseline's 71.5%, at about 58% of that baseline's cost per query, and it matches that 71.5% at about 22% of the cost.",
+      "external_ids": [
+        "arxiv:2610.08452"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-07T14:59:34+08:00",
+      "last_seen_at": "2026-10-07T14:59:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.08438",
+      "arxiv_version": "v1",
+      "title": "Harnessing Post-selected von Neumann Measurements to Strengthen Entanglement and Quantum Signatures in Coherent States",
+      "authors": [
+        "Janarbek Yuanbek",
+        "Zelalem Abebe Bekele",
+        "Zhi-qiang Liu"
+      ],
+      "published": "2026-10-06",
+      "url": "https://arxiv.org/abs/2610.08438",
+      "abstract": "We investigate how post-selected von Neumann measurements modify the nonclassical properties of two-mode entangled coherent states (ECSs). From the conditional pointer state, we characterize squeezing, photon statistics, intermode correlations, entanglement, fidelity, and post-selection probability. Anomalous weak values with moderate coupling enhance squeezing, antibunching, sub-Poissonian statistics, intermode correlations, and bipartite entanglement, while fidelity captures the crossover from weak perturbation to strong distinguishability. These results demonstrate post-selection as a tunable approach to engineering ECSs.",
+      "external_ids": [
+        "arxiv:2610.08438"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-07T14:59:34+08:00",
+      "last_seen_at": "2026-10-07T14:59:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.08432",
+      "arxiv_version": "v1",
+      "title": "EMHO: EMbodied Agent Harness Optimization via Experience Traces",
+      "authors": [
+        "Hyun Jung Lee",
+        "Jungtaek Kim",
+        "Jongwon Jeong",
+        "Tae-Eui Kam",
+        "Donghyun Kim",
+        "Yong Jae Lee"
+      ],
+      "published": "2026-10-06",
+      "url": "https://arxiv.org/abs/2610.08432",
+      "abstract": "Improving embodied agents often focuses on optimizing the underlying model through training, while the surrounding agent harness that controls planning, context, and tool use is typically engineered. We ask whether this harness can instead improve itself directly from experience traces under sparse environmental feedback. We propose EMbodied Agent Harness Optimization (EMHO), a self-evolving framework that keeps the embodied model frozen and iteratively revises its harness by analyzing execution trajectories and prior harness history. EMHO optimizes beyond skills or recovery prompts, modifying how the agent monitors progress, uses vision tools, grounds observations, and responds to failures. To support multiple subtasks with a single harness, we introduce EMHO-Merge, which addresses trade-offs in jointly optimizing a single shared harness across subtasks by using episode-level gains and losses to guide evidence-supported refinement of when and how revised behaviors are applied. We evaluate EMHO on EmbodiedBench across navigation and manipulation tasks, and EMHO consistently improves task success for both Qwen 9B and 27B models. Qualitative analysis shows that EMHO goes beyond recovering from failures and unproductive actions to reshape how the embodied agent interprets and interacts with its environment.",
+      "external_ids": [
+        "arxiv:2610.08432"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-07T14:59:34+08:00",
+      "last_seen_at": "2026-10-07T14:59:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.08413",
+      "arxiv_version": "v1",
+      "title": "Knowing When Not to Answer: Cross-Domain and Multi-Turn Generalization of Latent Underspecification Signals",
+      "authors": [
+        "Jerzy Kamiński",
+        "Ilya Galyukshev",
+        "Artem Kuznetsov",
+        "Danil Fedorov",
+        "Kirill Redko",
+        "Sergey Chuprin",
+        "Aidar Shumbalov",
+        "Stanislav Chumakov",
+        "Anna Kalyuzhnaya"
+      ],
+      "published": "2026-10-06",
+      "url": "https://arxiv.org/abs/2610.08413",
+      "abstract": "Large language models routinely answer questions that cannot be answered from the information given, and in dialogue they answer before enough has been said. Unanswerability is linearly decodable from hidden states, but it is unclear which of its forms share a representation and whether the signal is useful in dialogue. We contribute a turn-labeled multi-turn benchmark (423 conversations, 1,661 labeled turn-states) and an evaluation harness with a simulated user who answers clarifying questions, and use them with six datasets and six open-weight LLMs to test how far probes for unanswerability carry. Probes transfer robustly between datasets that share a ground of unanswerability: missing information in math (AUROC 0.77-0.97) and in a passage (SQuAD 2.0<->MuSiQue, 0.77-0.90). Probes for epistemic \"known-unknowns\" transfer poorly to math, but this separation weakens under lexical controls and changes with layer and coordinate system, so it remains unresolved. Single-turn probes fail zero-shot to detect when a conversation becomes answerable; in-structure probes recover it, but no better than a bag-of-words classifier. A gate on the calibrated probe, with no model fine-tuning, fires on underspecified turns far more precisely than chance, and its end-task success comes within 0.08 of a gate given the true labels. Yet across four models it does not reliably beat vanilla generation or prompted consolidation. The remaining gap lies mostly in how models use a clarification, not in detection.",
+      "external_ids": [
+        "arxiv:2610.08413"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-07T14:59:34+08:00",
+      "last_seen_at": "2026-10-07T14:59:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.08402",
+      "arxiv_version": "v1",
+      "title": "VETTA: Coordinating Turn- and Token-Level Credit Assignment for Multi-Turn LLM Agents",
+      "authors": [
+        "Jiaju Chen",
+        "Min Yang",
+        "Jinghua Piao",
+        "Xiaochong Lan",
+        "Xu Xia",
+        "Xiangnan He",
+        "Yong Li"
+      ],
+      "published": "2026-10-06",
+      "url": "https://arxiv.org/abs/2610.08402",
+      "abstract": "Multi-turn LLM agents often receive sparse task feedback across several interactions, while generating each response token by token. This creates two related credit-assignment questions: which responses helped achieve the outcome, and which generation decisions mattered within each response? Existing methods typically focus on only one level: turn-level methods evaluate complete responses but do not distinguish the decisions within them; token-level methods can propagate feedback across turns but do not explicitly model credit for each response. These complementary limitations motivate learning credit at both levels and coordinating it in a single policy update. We introduce VETTA, a credit assignment method that jointly learns turn- and token-level values through separate heads on a shared lightweight critic. VETTA computes advantages along both temporal sequences and combines each turn advantage with a within-response-centered token residual for PPO updates. Furthermore, to reduce value-learning cost, the critic retains only early Transformer blocks from the pretrained checkpoint used to initialize the actor. On two challenging agent benchmarks, ALFWorld and WebShop, VETTA improves success rates over PPO by 37.5% and 22.3%, respectively, with Qwen2.5-1.5B-Instruct and achieves success rates of 95.5% and 76.0%, respectively, with Qwen2.5-7B-Instruct. Critic-depth comparisons further show strong task performance with substantially lower critic-side computation. These results suggest that a compact shared critic can coordinate turn- and token-level credit to improve agent performance while keeping value estimation efficient. Code is available at https://github.com/Jiaju-Chen/VETTA-official.",
+      "external_ids": [
+        "arxiv:2610.08402"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-07T14:59:34+08:00",
+      "last_seen_at": "2026-10-07T14:59:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.08378",
+      "arxiv_version": "v1",
+      "title": "Lachesis: Lifetime-Aware KV Cache Placement for Agent Serving across HBM and High-Bandwidth Flash",
+      "authors": [
+        "Jaehoon Yang",
+        "Jeongmin Lee",
+        "Haneul Park",
+        "Seung Yul Lee",
+        "Nam Sung Kim",
+        "Jae W. Lee"
+      ],
+      "published": "2026-10-06",
+      "url": "https://arxiv.org/abs/2610.08378",
+      "abstract": "Large language model (LLM) serving is increasingly dominated by agentic workloads, in which agents and their sub-agents accumulate context as KV cache across many requests, consuming substantial memory. High-bandwidth flash (HBF) is a promising solution, providing an order of magnitude greater capacity at HBM-class read bandwidth, but its finite write endurance is the key limiting factor. Our key insight is that KV cache should be placed across HBM and HBF by its lifetime. Placing shorter-lived data in HBM lets HBM absorb more of an agent run's writes and sends less of them to HBF. As the lifetime of KV cache in agentic serving is dictated by the harness, the program that orchestrates the agents, we analyze its behavior and identify three axes along which lifetime diverges, temporal, structural, and inter-worker. Guided by these observations, we present Lachesis, a lifetime-aware KV cache placement layer between the agent harness and the serving engine. At write time, it places each segment in HBM or HBF according to its lifetime, and frees its blocks once the segment is no longer read. In trace-driven simulation, Lachesis extends HBF lifetime by 1.19-3.13x over HBM-first placement, reaching 3.3-12.2 device-years. Even under continuous 24x7 operation at the full load a tight SLO admits, HBF outlasts its five-year warranty on the multi-agent trace.",
+      "external_ids": [
+        "arxiv:2610.08378"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-07T14:59:34+08:00",
+      "last_seen_at": "2026-10-07T14:59:34+08:00"
+    },
+    {
+      "source": "semanticscholar",
+      "arxiv_id": "2609.15195",
+      "doi": "",
+      "title": "HarnessVLN: Unifying Training-Free Embodied Navigation through an Agent Harness",
+      "authors": [
+        "Yang Chen",
+        "Li-Rong Che",
+        "Zhen-Yu Huang",
+        "Wenbo Fu",
+        "Chuang Wang",
+        "Xu Cao",
+        "Daqi Liu",
+        "Yuzhe Yang",
+        "Jiang-Feng Su",
+        "Lan-Zhe Guo"
+      ],
+      "published": "2026-09-14",
+      "url": "https://arxiv.org/abs/2609.15195",
+      "abstract": "Embodied navigation requires agents to ground instructions or object goals in spatial observations and translate plans into successful execution. As multimodal large language models (MLLMs) become increasingly capable, they offer stronger support for navigation without task-specific training; however, improved semantic reasoning alone does not ensure that proposed actions remain consistent with spatial evidence, task progress, and execution outcomes. We introduce HarnessVLN, a zero-shot, training-free framework that unifies instruction-following and object-goal navigation through a shared Agent Harness. The Harness coordinates perception, memory, and execution tools through a unified interface, validating planner proposals for evidential support, geometric feasibility, and subgoal consistency before dispatch. It jointly manages hierarchical event memory and a persistent Spatiotemporal Graph to track task progress, preserve spatial evidence, and contextualize failures. Structured execution feedback updates this shared state, guiding subsequent planning, recovery, and termination. Across R2R, RxR, HM3D-v2, and HM3D-OVON, HarnessVLN achieves success rates of 59.6%, 51.4%, 76.0%, and 59.3%, respectively, outperforming prior training-free methods. Humanoid robot deployment further demonstrates its applicability to both navigation tasks in real-world environments. The project page is available at [https://agibot-harnessvln.netlify.app/].",
+      "external_ids": [
+        "s2:3a2ad7032b5ac3f02a21c8873865c7bbfc890ae7",
+        "arxiv:2609.15195"
+      ],
+      "sources": [
+        "semanticscholar"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-07T14:59:34+08:00",
+      "last_seen_at": "2026-10-07T14:59:34+08:00"
+    },
+    {
+      "source": "semanticscholar",
+      "arxiv_id": "2609.12818",
+      "doi": "",
+      "title": "Online Video Agent Harness for Long Video Understanding",
+      "authors": [
+        "Sen Yang",
+        "Bo-Qiang Duan",
+        "Jing Yang",
+        "Wei-Hao Bo",
+        "Jie Liu",
+        "Bo-Yuan Tong",
+        "Ze Feng",
+        "Wen-Kang Zhang",
+        "Jing-Dong Wang",
+        "Hua Wu"
+      ],
+      "published": "2026-09-11",
+      "url": "https://arxiv.org/abs/2609.12818",
+      "abstract": "Long video understanding often behaves like a visual needle-in-a-haystack problem: query-relevant evidence is sparsely distributed across long temporal spans, while packing dense frames into a single VLM context incurs \\textit{context rot} and high cost. Existing video agents often rely on query-agnostic offline preprocessing or ad hoc tool sets, which can miss query-specific details and waste computation. In this work, we present VideoXAgent, a purely online video-agent harness for long video understanding that starts from the given video file and user query, plans and decomposes the task, invokes specialized expert tools on demand, and aggregates multimodal evidence to produce a final answer while resolving conflicts among observations. To support this on-demand invocation, we design a suite of heterogeneous expert tools guided by a data-driven taxonomy of atomic capabilities, spanning scripts, VLMs, and domain models (e.g., detection, OCR, ASR, face recognition). The harness further enforces objective evidence prompting and budget-aware control to curb hallucination and non-termination. Across Video-MME-Long, LongVideoBench-Long, LVBench, and MINERVA, VideoXAgent is competitive with frontier LMMs and video agents under a smaller context footprint---about 50k tokens of agent context per sample, even on hour-long videos. In particular, on complex video-reasoning benchmarks such as MINERVA, it matches this level while using only about 15\\% of the context of a 1,024-frame dense-packing baseline. Notably, the harness remains effective with a visually weak or even text-only orchestrator, suggesting that strong long-video understanding can emerge from progressive agentic evidence seeking rather than from packing the full video into a single context. Project page: https://go-agent-x.github.io/video_agent_harness/",
+      "external_ids": [
+        "s2:05f5d68d07b49faa0795dd26f5a61143928804db",
+        "arxiv:2609.12818"
+      ],
+      "sources": [
+        "semanticscholar"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-07T14:59:34+08:00",
+      "last_seen_at": "2026-10-07T14:59:34+08:00"
+    }
+  ]
+}
