@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-11",
+  "run": {
+    "at": "2026-10-11T14:54:55+08:00",
+    "sources": [
+      "arxiv",
+      "semanticscholar",
+      "dblp"
+    ],
+    "keywords": [
+      "agent harness",
+      "\"LLM agent\" harness",
+      "test-time harness evolution"
+    ],
+    "fetched": 65,
+    "merged": 37,
+    "new": 1
+  },
+  "new_candidates": [
+    {
+      "source": "semanticscholar",
+      "arxiv_id": "",
+      "doi": "10.14801/jkiit.2026.24.9.109",
+      "title": "A Harness Engineering Methodology for LLM Agent-based Data Quality Validation: Observation-Validation-Synthesis-based Agent Design",
+      "authors": [
+        "K. Choi"
+      ],
+      "published": "2026-09-30",
+      "url": "https://www.semanticscholar.org/paper/d0c85c0c7a9ae10998746c0ab8a49263ab715815",
+      "abstract": "",
+      "external_ids": [
+        "s2:d0c85c0c7a9ae10998746c0ab8a49263ab715815",
+        "doi:10.14801/jkiit.2026.24.9.109"
+      ],
+      "sources": [
+        "semanticscholar"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-11T14:54:55+08:00",
+      "last_seen_at": "2026-10-11T14:54:55+08:00"
+    }
+  ]
+}

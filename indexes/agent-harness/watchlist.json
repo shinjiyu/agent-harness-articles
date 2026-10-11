@@ -1,6 +1,31 @@
 {
   "candidates": [
     {
+      "source": "semanticscholar",
+      "arxiv_id": "",
+      "doi": "10.14801/jkiit.2026.24.9.109",
+      "title": "A Harness Engineering Methodology for LLM Agent-based Data Quality Validation: Observation-Validation-Synthesis-based Agent Design",
+      "authors": [
+        "K. Choi"
+      ],
+      "published": "2026-09-30",
+      "url": "https://www.semanticscholar.org/paper/d0c85c0c7a9ae10998746c0ab8a49263ab715815",
+      "abstract": "",
+      "external_ids": [
+        "s2:d0c85c0c7a9ae10998746c0ab8a49263ab715815",
+        "doi:10.14801/jkiit.2026.24.9.109"
+      ],
+      "sources": [
+        "semanticscholar"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-11T14:54:55+08:00",
+      "last_seen_at": "2026-10-11T14:54:55+08:00"
+    },
+    {
       "source": "arxiv",
       "arxiv_id": "2610.12457",
       "arxiv_version": "v1",
@@ -28,7 +53,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-10T14:48:13+08:00",
-      "last_seen_at": "2026-10-10T14:48:13+08:00"
+      "last_seen_at": "2026-10-11T14:54:55+08:00"
     },
     {
       "source": "arxiv",
@@ -54,7 +79,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-10T14:48:13+08:00",
-      "last_seen_at": "2026-10-10T14:48:13+08:00"
+      "last_seen_at": "2026-10-11T14:54:55+08:00"
     },
     {
       "source": "arxiv",
@@ -82,7 +107,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-10T14:48:13+08:00",
-      "last_seen_at": "2026-10-10T14:48:13+08:00"
+      "last_seen_at": "2026-10-11T14:54:55+08:00"
     },
     {
       "source": "arxiv",
@@ -111,7 +136,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-10T14:48:13+08:00",
-      "last_seen_at": "2026-10-10T14:48:13+08:00"
+      "last_seen_at": "2026-10-11T14:54:55+08:00"
     },
     {
       "source": "arxiv",
@@ -139,7 +164,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-10T14:48:13+08:00",
-      "last_seen_at": "2026-10-10T14:48:13+08:00"
+      "last_seen_at": "2026-10-11T14:54:55+08:00"
     },
     {
       "source": "arxiv",
@@ -169,7 +194,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-10T14:48:13+08:00",
-      "last_seen_at": "2026-10-10T14:48:13+08:00"
+      "last_seen_at": "2026-10-11T14:54:55+08:00"
     },
     {
       "source": "arxiv",
@@ -201,7 +226,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-10T14:48:13+08:00",
-      "last_seen_at": "2026-10-10T14:48:13+08:00"
+      "last_seen_at": "2026-10-11T14:54:55+08:00"
     },
     {
       "source": "arxiv",
@@ -228,7 +253,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-10T14:48:13+08:00",
-      "last_seen_at": "2026-10-10T14:48:13+08:00"
+      "last_seen_at": "2026-10-11T14:54:55+08:00"
     },
     {
       "source": "arxiv",
@@ -278,7 +303,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-10T14:48:13+08:00",
-      "last_seen_at": "2026-10-10T14:48:13+08:00"
+      "last_seen_at": "2026-10-11T14:54:55+08:00"
     },
     {
       "source": "arxiv",
@@ -310,7 +335,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-10T14:48:13+08:00",
-      "last_seen_at": "2026-10-10T14:48:13+08:00"
+      "last_seen_at": "2026-10-11T14:54:55+08:00"
     },
     {
       "source": "arxiv",
@@ -339,7 +364,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-10T14:48:13+08:00",
-      "last_seen_at": "2026-10-10T14:48:13+08:00"
+      "last_seen_at": "2026-10-11T14:54:55+08:00"
     },
     {
       "source": "arxiv",
@@ -365,7 +390,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-10T14:48:13+08:00",
-      "last_seen_at": "2026-10-10T14:48:13+08:00"
+      "last_seen_at": "2026-10-11T14:54:55+08:00"
     },
     {
       "source": "arxiv",
@@ -397,7 +422,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-10T14:48:13+08:00",
-      "last_seen_at": "2026-10-10T14:48:13+08:00"
+      "last_seen_at": "2026-10-11T14:54:55+08:00"
     },
     {
       "source": "arxiv",
@@ -431,7 +456,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-10T14:48:13+08:00",
-      "last_seen_at": "2026-10-10T14:48:13+08:00"
+      "last_seen_at": "2026-10-11T14:54:55+08:00"
     },
     {
       "source": "arxiv",
@@ -459,7 +484,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-10T14:48:13+08:00",
-      "last_seen_at": "2026-10-10T14:48:13+08:00"
+      "last_seen_at": "2026-10-11T14:54:55+08:00"
     },
     {
       "source": "arxiv",
@@ -490,7 +515,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-10T14:48:13+08:00",
-      "last_seen_at": "2026-10-10T14:48:13+08:00"
+      "last_seen_at": "2026-10-11T14:54:55+08:00"
     },
     {
       "source": "arxiv",
@@ -519,7 +544,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-10T14:48:13+08:00",
-      "last_seen_at": "2026-10-10T14:48:13+08:00"
+      "last_seen_at": "2026-10-11T14:54:55+08:00"
     },
     {
       "source": "arxiv",
@@ -547,7 +572,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-10T14:48:13+08:00",
-      "last_seen_at": "2026-10-10T14:48:13+08:00"
+      "last_seen_at": "2026-10-11T14:54:55+08:00"
     },
     {
       "source": "semanticscholar",
@@ -1517,7 +1542,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-07T14:59:34+08:00",
-      "last_seen_at": "2026-10-07T14:59:34+08:00"
+      "last_seen_at": "2026-10-11T14:54:55+08:00"
     },
     {
       "source": "semanticscholar",
@@ -4284,7 +4309,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-21T13:59:46+08:00",
-      "last_seen_at": "2026-09-27T14:24:25+08:00"
+      "last_seen_at": "2026-10-11T14:54:55+08:00"
     },
     {
       "source": "arxiv",
@@ -7938,7 +7963,7 @@
       ],
       "first_seen_at": "2026-09-02T13:34:02+08:00",
       "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-10-07T14:59:34+08:00",
+      "last_seen_at": "2026-10-11T14:54:55+08:00",
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
@@ -8714,7 +8739,7 @@
       ],
       "first_seen_at": "2026-09-01T14:08:00+08:00",
       "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-09-23T13:38:36+08:00",
+      "last_seen_at": "2026-10-11T14:54:55+08:00",
       "matched_keywords": [
         "agent harness"
       ],
@@ -9729,7 +9754,7 @@
       ],
       "first_seen_at": "2026-08-28T20:35:42+08:00",
       "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-09-27T14:24:25+08:00",
+      "last_seen_at": "2026-10-11T14:54:55+08:00",
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
@@ -9756,7 +9781,7 @@
       ],
       "first_seen_at": "2026-08-28T20:35:42+08:00",
       "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-09-27T14:24:25+08:00",
+      "last_seen_at": "2026-10-11T14:54:55+08:00",
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
@@ -14897,7 +14922,7 @@
       ],
       "first_seen_at": "2026-08-16T10:25:23+08:00",
       "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-09-27T14:24:25+08:00",
+      "last_seen_at": "2026-10-11T14:54:55+08:00",
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
@@ -15527,38 +15552,10 @@
       "status": "new",
       "title": "Controlling the dynamics of an electric-field-driven droplet on a lubricant-infused micropillar surface",
       "url": "https://arxiv.org/abs/2608.12868"
-    },
-    {
-      "abstract": "Self-improving LLM agents convert successful trajectories into persistent cross-task state. An unsafe success can thereby become reusable policy after its triggering input disappears. Skill evolution makes this failure measurable by distilling operational trajectories into executable, transferable, and inspectable procedures. Because evolution optimizes task outcomes rather than procedure safety, compromised experience can cause skill misevolution. Existing benchmarks measure current behavior or static artifacts but cannot attribute risk across authoring, retrieval, and later execution. To expose this lifecycle, we introduce SkillMisevo-Gym, a lifecycle-aware harness that versions skill state across agent frameworks, and SkillMisevo-Bench, a frozen design from malicious exposure to carryover tasks, with concept-aligned benign tasks and nine lifecycle metrics. We also introduce SafeEvolve, a wrapper that repairs unsafe content and governs subsequent reuse. Across 25 agent-method configurations, each covering 525 tasks in 25 episodes, all 21 evolved configurations author unsafe artifacts, while only fifteen lead to fresh-session harm. In the exposure sweep, three malicious tasks raise carryover ASR from 16.0% to 35.3%. Across representative skill evolution methods, SafeEvolve reduces unsafe retrieval and fresh-session harm by 26.7 and 17.3 percentage points, respectively, while mean benign utility changes by only 0.4 points. Together, persistent-adaptation safety must govern what updates write and what future executors reuse. Code is available at https://github.com/henrymao2004/misevolve.",
-      "arxiv_id": "2608.12851",
-      "arxiv_version": "v1",
-      "authors": [
-        "Xutao Mao",
-        "Liangjie Zhao",
-        "Xiang Zheng",
-        "Cong Wang"
-      ],
-      "external_ids": [
-        "arxiv:2608.12851"
-      ],
-      "first_seen_at": "2026-08-14T11:28:16+08:00",
-      "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-08-16T10:25:23+08:00",
-      "matched_keywords": [
-        "\"LLM agent\" harness"
-      ],
-      "published": "2026-08-13",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "indexed",
-      "title": "Practice Makes Unsafe: Skill Misevolution in Self-Improving LLM Agents",
-      "url": "https://arxiv.org/abs/2608.12851"
     }
   ],
   "last_run": {
-    "at": "2026-10-10T14:48:13+08:00",
+    "at": "2026-10-11T14:54:55+08:00",
     "sources": [
       "arxiv",
       "semanticscholar",
@@ -15569,11 +15566,11 @@
       "\"LLM agent\" harness",
       "test-time harness evolution"
     ],
-    "fetched": 55,
-    "merged": 25,
-    "new": 19
+    "fetched": 65,
+    "merged": 37,
+    "new": 1
   },
   "schema_version": 1,
   "topic": "agent harness",
-  "updated_at": "2026-10-10T14:48:13+08:00"
+  "updated_at": "2026-10-11T14:54:55+08:00"
 }
