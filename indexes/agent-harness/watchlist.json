@@ -2,6 +2,128 @@
   "candidates": [
     {
       "source": "arxiv",
+      "arxiv_id": "2610.13947",
+      "arxiv_version": "v1",
+      "title": "Towards Physically Grounded Articulated 3D Assets: A Multi-Agent Pipeline and Benchmark",
+      "authors": [
+        "Xudong Cai",
+        "Ruijie Zhu",
+        "Haoliang Shang",
+        "Ruining Li",
+        "Marc Pollefeys",
+        "Shangzhe Wu",
+        "Andrea Vedaldi",
+        "Chuanxia Zheng"
+      ],
+      "published": "2026-10-09",
+      "url": "https://arxiv.org/abs/2610.13947",
+      "abstract": "In this paper, we study physically grounded articulated 3D asset generation---moving the goal from reproducing how objects look to capturing how they move and function. Inspired by the literature on procedural and agentic generation, we present Artisan, a system that extends the latest method Articraft by introducing a multi-agent pipeline with physical simulation feedback, enabling comprehensive attributes beyond geometry, appearance, and physically plausible articulation, such as collision-free motion, stability under gravity, and accurate mass and material properties. Furthermore, we construct a unified benchmark spanning four key aspects: spatial fidelity, physical plausibility, downstream task performance, and overall quality. The benchmark encompasses 100 reference assets from ArtVIP and LightWheel, 50 stability prompts, and 50 ABO objects with reference masses, with protocols evaluating various metrics. Through extensive evaluation of more than 10 representative models, Artisan achieves competitive spatial fidelity while attaining the lowest collision rates and highest stability rates among the evaluated methods. Together, our system and benchmark establish insights for advancing 3D generation towards physically plausible, functionally usable assets.",
+      "external_ids": [
+        "arxiv:2610.13947"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-13T15:28:58+08:00",
+      "last_seen_at": "2026-10-13T15:28:58+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.13886",
+      "arxiv_version": "v1",
+      "title": "X-AgentRed: Red-Teaming Personal Agents in Evolving Multi-Service Ecosystems",
+      "authors": [
+        "Yeonsung Jung",
+        "Zhiyuan Wang",
+        "Zifan Wang",
+        "Vítor Albiero",
+        "Benjamin Newman",
+        "Edoardo Debenedetti",
+        "Ivan Evtimov",
+        "Ninareh Mehrabi"
+      ],
+      "published": "2026-10-09",
+      "url": "https://arxiv.org/abs/2610.13886",
+      "abstract": "Personal agents increasingly connect to services across the web and applications by using tools. As the effects of their actions accumulate and interact across services, unintended or harmful outcomes can arise when agents fulfill benign user requests. Proactively identifying these compositional failures requires systematically exploring diverse cross-service paths. Existing red-teaming methods often simply prompt LLMs to identify potentially harmful paths from task and environment descriptions or decompose harmful objectives specified by humans or LLMs into seemingly benign action combinations. However, generation is biased toward patterns learned during training, potentially favoring familiar tool combinations and leaving novel cross-service interactions underexplored. To address this, we propose X-AgentRed, a self-evolving red-teaming framework that discovers harmful tool call paths through a graph of tool dependencies and expands and refines them using execution feedback. By analyzing each tool's effects, potential harms, and preconditions for execution, the red-teaming agent constructs a directed graph that captures how one tool's effects can satisfy another's execution preconditions. Recipes sampled from this graph are instantiated as realistic scenarios in which agents can produce harmful outcomes. Execution feedback enables self-improvement by diversifying paths that produce harm through tool substitution and refining preconditions at blocked steps in unsuccessful paths to enable further execution. Across four frontier agentic models, X-AgentRed achieves $1.77\\times$ the harmful path rate of STAC and explores a more diverse set of tools, yielding $2.99\\times$ the tool coverage on average.",
+      "external_ids": [
+        "arxiv:2610.13886"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-13T15:28:58+08:00",
+      "last_seen_at": "2026-10-13T15:28:58+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.13870",
+      "arxiv_version": "v1",
+      "title": "Ask Your Advisor: Learning When to Consult Stronger Models in Agentic Systems",
+      "authors": [
+        "Pascal Sowietzki",
+        "Steffen Holter",
+        "Yannick Metz",
+        "Emil Kasper",
+        "Raphael Baur",
+        "Mennatallah El-Assady"
+      ],
+      "published": "2026-10-09",
+      "url": "https://arxiv.org/abs/2610.13870",
+      "abstract": "To balance task performance and computational cost, agentic workflows can use a lower-cost model for execution and selectively consult a stronger model. In such executor-advisor systems, the executor decides when to seek advice, making escalation depend on self-assessment, although current language models struggle to detect where their own reasoning fails. The need for stronger reasoning emerges during execution and varies across workflow phases. We introduce ARIA, a meta-controller that learns when to consult by balancing task success against consultation cost. Our approach formulates consultation as a sequential resource-allocation problem. At workflow contact points, ARIA maps execution evidence to a compact state abstraction and selects SILENT or CONSULT, with action values learned by Monte Carlo control from cost-penalized outcomes. Across evaluated tasks of SWE-bench Verified, Terminal-Bench 2.1, and $τ^2$-bench, ARIA recovers 44-81% of the executor-advisor success gap at less than half the advisor model's cost. ARIA achieves the best observed success-cost trade-off among ten other evaluated conditions, including routing and cascading methods, fixed and prompted consultation, and random placement at matched advice volume. The policies are compact and inspectable, with a single consultation-price parameter governing the success-cost trade-off without retraining either underlying model.",
+      "external_ids": [
+        "arxiv:2610.13870"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-13T15:28:58+08:00",
+      "last_seen_at": "2026-10-13T15:28:58+08:00"
+    },
+    {
+      "source": "semanticscholar",
+      "arxiv_id": "2605.29861",
+      "doi": "10.48550/arXiv.2605.29861",
+      "title": "Towards Verifiable Multimodal Deep Research: A Multi-Agent Harness for Interleaved Report Generation",
+      "authors": [
+        "Cheng-Hao Zhang",
+        "Guan-Ting Dong",
+        "Yu-Fan Liu",
+        "Tong Zhao",
+        "Xiaoxi Li",
+        "Zhi-Cheng Dou"
+      ],
+      "published": "2026-05-28",
+      "url": "https://arxiv.org/abs/2605.29861",
+      "abstract": "Large Language Models (LLMs) have advanced autonomous agents from deep search, which retrieves concise factual answers, to deep research, which synthesizes scattered evidence into long-form reports. However, verifiable multimodal deep research remains challenging due to open-ended synthesis without deterministic ground truth and the need to interleave textual arguments with visual evidence. We propose Ptah, a multi-agent harness for interleaved report generation. Ptah orchestrates the lifecycle from user query to rendered web report through planning, research, and writing stages, where specialized agents construct visual-aware plans, collect claim-grounded evidence, maintain source-aligned images in a Visual Working Memory, and compose reports through declarative multimodal tool use. A verifier agent serves as the harness's acceptance function, enforcing factual grounding, citation fidelity, and cross-modal consistency throughout the workflow. We further introduce PtahEval, an evaluation protocol that augments existing benchmarks with image-level and presentation-level assessments. Experiments on deep research benchmarks show that Ptah produces more reliable, visually informative, and usable human-facing multimodal reports than strong baselines. Our code is released at https://github.com/SnowNation101/Ptah",
+      "external_ids": [
+        "s2:9d7cee7e6b4a7e75712708a88ff73ce802d90162",
+        "arxiv:2605.29861",
+        "doi:10.48550/arxiv.2605.29861"
+      ],
+      "sources": [
+        "semanticscholar"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-13T15:28:58+08:00",
+      "last_seen_at": "2026-10-13T15:28:58+08:00"
+    },
+    {
+      "source": "arxiv",
       "arxiv_id": "2610.13894",
       "arxiv_version": "v1",
       "title": "Nimbus Studio reproduces reference BCI decoding pipelines: a validation study on public benchmarks across protocols and paradigms",
@@ -23,7 +145,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-12T15:09:21+08:00",
-      "last_seen_at": "2026-10-12T15:09:21+08:00"
+      "last_seen_at": "2026-10-13T15:28:58+08:00"
     },
     {
       "source": "arxiv",
@@ -49,7 +171,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-12T15:09:21+08:00",
-      "last_seen_at": "2026-10-12T15:09:21+08:00"
+      "last_seen_at": "2026-10-13T15:28:58+08:00"
     },
     {
       "source": "arxiv",
@@ -78,7 +200,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-12T15:09:21+08:00",
-      "last_seen_at": "2026-10-12T15:09:21+08:00"
+      "last_seen_at": "2026-10-13T15:28:58+08:00"
     },
     {
       "source": "arxiv",
@@ -108,7 +230,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-12T15:09:21+08:00",
-      "last_seen_at": "2026-10-12T15:09:21+08:00"
+      "last_seen_at": "2026-10-13T15:28:58+08:00"
     },
     {
       "source": "arxiv",
@@ -137,7 +259,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-12T15:09:21+08:00",
-      "last_seen_at": "2026-10-12T15:09:21+08:00"
+      "last_seen_at": "2026-10-13T15:28:58+08:00"
     },
     {
       "source": "arxiv",
@@ -162,7 +284,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-12T15:09:21+08:00",
-      "last_seen_at": "2026-10-12T15:09:21+08:00"
+      "last_seen_at": "2026-10-13T15:28:58+08:00"
     },
     {
       "source": "arxiv",
@@ -201,7 +323,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-12T15:09:21+08:00",
-      "last_seen_at": "2026-10-12T15:09:21+08:00"
+      "last_seen_at": "2026-10-13T15:28:58+08:00"
     },
     {
       "source": "arxiv",
@@ -239,7 +361,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-12T15:09:21+08:00",
-      "last_seen_at": "2026-10-12T15:09:21+08:00"
+      "last_seen_at": "2026-10-13T15:28:58+08:00"
     },
     {
       "source": "arxiv",
@@ -269,7 +391,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-12T15:09:21+08:00",
-      "last_seen_at": "2026-10-12T15:09:21+08:00"
+      "last_seen_at": "2026-10-13T15:28:58+08:00"
     },
     {
       "source": "arxiv",
@@ -304,7 +426,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-12T15:09:21+08:00",
-      "last_seen_at": "2026-10-12T15:09:21+08:00"
+      "last_seen_at": "2026-10-13T15:28:58+08:00"
     },
     {
       "source": "arxiv",
@@ -332,7 +454,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-12T15:09:21+08:00",
-      "last_seen_at": "2026-10-12T15:09:21+08:00"
+      "last_seen_at": "2026-10-13T15:28:58+08:00"
     },
     {
       "source": "arxiv",
@@ -360,7 +482,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-12T15:09:21+08:00",
-      "last_seen_at": "2026-10-12T15:09:21+08:00"
+      "last_seen_at": "2026-10-13T15:28:58+08:00"
     },
     {
       "source": "arxiv",
@@ -388,7 +510,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-12T15:09:21+08:00",
-      "last_seen_at": "2026-10-12T15:09:21+08:00"
+      "last_seen_at": "2026-10-13T15:28:58+08:00"
     },
     {
       "source": "arxiv",
@@ -417,7 +539,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-12T15:09:21+08:00",
-      "last_seen_at": "2026-10-12T15:09:21+08:00"
+      "last_seen_at": "2026-10-13T15:28:58+08:00"
     },
     {
       "source": "semanticscholar",
@@ -1961,7 +2083,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-07T14:59:34+08:00",
-      "last_seen_at": "2026-10-11T14:54:55+08:00"
+      "last_seen_at": "2026-10-13T15:28:58+08:00"
     },
     {
       "source": "semanticscholar",
@@ -8382,7 +8504,7 @@
       ],
       "first_seen_at": "2026-09-02T13:34:02+08:00",
       "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-10-11T14:54:55+08:00",
+      "last_seen_at": "2026-10-13T15:28:58+08:00",
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
@@ -15292,140 +15414,10 @@
       "status": "indexed",
       "title": "HELIX: Model-Harness Co-evolution for Recursive Self-Improvement",
       "url": "https://arxiv.org/abs/2608.13951"
-    },
-    {
-      "abstract": "LLM agents increasingly maintain personal memory across sessions, but it can conflict. Preferences depend on context, behavior evolves, and sources can conflict. When a query lacks context, time, or source authority to interpret conflict, treating one memory as definitive converts unresolved conflict into an unjustified, overconfident action. Existing benchmarks recover one answer from conflicting evidence, overlooking whether agents recognize underdetermination, preserve alternatives, seek missing information, and choose appropriate actions. We introduce \\underline{T}esting \\underline{A}gents' \\underline{N}avigation of \\underline{G}enuine, \\underline{L}atent, and \\underline{E}ntangled Memory Conflicts (\\textsc{TANGLE}), a benchmark for genuinely unresolvable memory conflicts. It comprises 541 instances across 40 personas and three types: Context-Partitioned Conflict (CPC), Behavior-Oscillation Conflict (BOC), and Source-Contradiction Conflict (SCC). We evaluate two tracks---an oracle track with curated memory and a pipeline track that extracts memory from multi-session dialogues---on five dimensions: conflict perception, causal reasoning, confidence calibration, clarification seeking, and memory faithfulness. Experiments reveal pipeline challenges. With curated memory, models recognize conflicts more reliably than they calibrate actions or seek targeted clarification. With end-to-end pipeline memory, extraction fails to preserve conflict-bearing relations needed for downstream reasoning. Policy comparisons show fixed rules are insufficient when actions must reflect conflict. These findings motivate Conflict-Aware Action Policy (CAAP), which adapts actions to each conflict using available evidence. \\textsc{TANGLE} frames conflict handling as recognizing underdetermination, retaining conflicting evidence, and acting without forcing a definitive answer.",
-      "arxiv_id": "2608.13921",
-      "arxiv_version": "v1",
-      "authors": [
-        "Lu Yang",
-        "Shusheng Xu",
-        "Zhuoran Li",
-        "Tongkai Yang",
-        "Longbo Huang"
-      ],
-      "external_ids": [
-        "arxiv:2608.13921"
-      ],
-      "first_seen_at": "2026-08-17T10:23:04+08:00",
-      "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-08-17T10:23:04+08:00",
-      "matched_keywords": [
-        "\"LLM agent\" harness"
-      ],
-      "published": "2026-08-14",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "indexed",
-      "title": "When Personal Memory Has No Single Answer: Evaluating LLM Agents under Irreducible Conflict",
-      "url": "https://arxiv.org/abs/2608.13921"
-    },
-    {
-      "abstract": "Machine learning models are increasingly embedded in everyday software, and most of their runtime is spent in a small set of compute kernels such as matrix multiplication, convolution, and normalization. Optimizing these kernels is one of the most direct ways to reduce latency and cost, but it has traditionally required expert engineers to hand-write low-level GPU code. Agentic systems built on large language models (LLMs) can now generate and optimize kernels with far less human effort, yet existing tools are largely evaluated on randomly generated tensors and isolated kernels, emit standalone CUDA code that developers must manually reintegrate, mostly target only LLM PyTorch models, and offer limited support for inspecting and debugging results. We present Kernel Forge, an open-source, end-to-end agentic harness that accepts any unmodified PyTorch model in place. Kernel Forge supports vision, diffusion, and LLM workloads, uses Monte Carlo Tree Search (MCTS) to explore multiple optimization paths rather than a single linear refinement chain, and ships with a graphical user interface for monitoring progress, inspecting candidate kernels, and debugging failures. We evaluate Kernel Forge on four PyTorch models spanning vision, diffusion, and LLM workloads on an NVIDIA DGX Spark with GB10 GPU. With only 50 optimization iterations per kernel, it optimizes 14 kernels to outperform PyTorch eager mode, reaching $1.52\\times$ on adaptive\\_avgpool2d in ResNet-50, $1.70\\times$ on group\\_norm in Stable Diffusion 3.5 Medium, $2.83\\times$ on softmax in Gemma 4 E2B, and $1.54\\times$ on softmax in Qwen 3.5 35B-A3B.",
-      "arxiv_id": "2607.24762",
-      "authors": [
-        "J. Brodsky",
-        "Dhravid Kumar",
-        "Savini Kashmira",
-        "Jayanaka Danatanarayana",
-        "Jason Mars",
-        "K. Flautner",
-        "Lingjia Tang"
-      ],
-      "doi": "",
-      "external_ids": [
-        "s2:af04acbd16f76140157ca0c4f973c807e1d1856e",
-        "arxiv:2607.24762"
-      ],
-      "first_seen_at": "2026-08-16T10:25:23+08:00",
-      "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-10-11T14:54:55+08:00",
-      "matched_keywords": [
-        "\"LLM agent\" harness"
-      ],
-      "published": "2026-06-02",
-      "source": "semanticscholar",
-      "sources": [
-        "semanticscholar"
-      ],
-      "status": "indexed",
-      "title": "Kernel Forge: An Agent Harness for LLM-based Generation and Optimization of CUDA Kernels",
-      "url": "https://arxiv.org/abs/2607.24762"
-    },
-    {
-      "abstract": "LLM agent benchmark scores are shaped not only by the model but also by the agent harness, environment, evaluator, and inference budget. Unified execution controls these non-model factors by evaluating candidate models under the same configuration, making observed differences more attributable to the models themselves. However, model comparison is only one use of agent benchmarks. Other evaluations compare complete agent systems or test whether a fixed model or system remains stable across predeclared changes in its operating conditions. These results can all be reported under the common label of\"LLM agent performance.\"Our position is that\"LLM agent performance\"does not denote a single evaluation target. Model comparisons under a reference stack and comparisons of complete agent systems answer different questions, while robustness asks whether either conclusion persists across predeclared conditions. The claim supported by a score therefore depends on the declared candidate boundary and condition policy. We derive implications for leaderboards, result reporting, and benchmark versioning, showing how distinguishing these classes preserves fair comparison while accommodating system innovation and robustness analysis.",
-      "arxiv_id": "2602.03238",
-      "authors": [
-        "Pengyu Zhu",
-        "Li Sun",
-        "Philip S. Yu",
-        "S. Su"
-      ],
-      "doi": "",
-      "external_ids": [
-        "s2:463cda71cbc075142fd9bcb5ae5763b79dd74862",
-        "arxiv:2602.03238"
-      ],
-      "first_seen_at": "2026-08-16T10:25:23+08:00",
-      "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-09-27T14:24:25+08:00",
-      "matched_keywords": [
-        "\"LLM agent\" harness"
-      ],
-      "published": "2026-02-03",
-      "source": "semanticscholar",
-      "sources": [
-        "semanticscholar"
-      ],
-      "status": "indexed",
-      "title": "\"LLM Agent Performance\"Is Not a Single Evaluation Target",
-      "url": "https://arxiv.org/abs/2602.03238"
-    },
-    {
-      "abstract": "Transforming multimodal sources into condensed and structured media outputs can be fundamentally conceptualized as a long-horizon agentic process centered on a model-harness system. While an ideal harness system should align with human design priors and accumulate reusable experience through empirical exploration to drive recursive self-improvement, existing paradigms remain static and fall short of this capability. In this paper, we present AutoDesign, a framework that aligns with human design priors, where a meta-harness optimizer guides a code agent to recursively improve harness based on rollout feedback. To instantiate and evaluate this framework, we focus on the academic paper-to-poster generation task and introduce PosterBench, comprising a 100-paper Main Track spanning five disciplines and PosterBench-mini, a shared 10-paper subset for controlled evaluation. On the PosterBench Main Track, AutoDesign achieves the highest score of 78.32, surpassing the closed-source commercial system Claude Design by 7.45 points. Across seven controlled code-agent-model configurations, integrating the learned DesignHarness consistently improves performance, increasing the average PosterBench Score from 54.99 to 67.39 (+12.4%). In a fully autonomous long-horizon loop, it executes 253 tool calls and 11 editing turns within 40 minutes for under $3, reaching average conference-poster quality in human evaluation. A system-blind human study further demonstrates that AutoDesign achieves the highest human preference among evaluated systems.",
-      "arxiv_id": "2608.13560",
-      "arxiv_version": "v1",
-      "authors": [
-        "Yaxin Luo",
-        "Haobin Jiang",
-        "Jialv Zou",
-        "Xu Huang",
-        "Wenhao Yan",
-        "Haodong Li",
-        "Zhengrong Yue",
-        "Jing Li",
-        "Xiaofu Chen",
-        "Xiaohan Zhao",
-        "Jiacheng Liu",
-        "Jiacheng Cui",
-        "Zhiqiang Shen",
-        "Xiaotong Li"
-      ],
-      "external_ids": [
-        "arxiv:2608.13560"
-      ],
-      "first_seen_at": "2026-08-14T11:28:16+08:00",
-      "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-08-16T10:25:23+08:00",
-      "matched_keywords": [
-        "agent harness",
-        "\"LLM agent\" harness",
-        "test-time harness evolution"
-      ],
-      "published": "2026-08-13",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "indexed",
-      "title": "AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design",
-      "url": "https://arxiv.org/abs/2608.13560"
     }
   ],
   "last_run": {
-    "at": "2026-10-12T15:09:22+08:00",
+    "at": "2026-10-13T15:28:58+08:00",
     "sources": [
       "arxiv",
       "semanticscholar",
@@ -15436,11 +15428,11 @@
       "\"LLM agent\" harness",
       "test-time harness evolution"
     ],
-    "fetched": 30,
-    "merged": 14,
-    "new": 14
+    "fetched": 55,
+    "merged": 27,
+    "new": 4
   },
   "schema_version": 1,
   "topic": "agent harness",
-  "updated_at": "2026-10-12T15:09:22+08:00"
+  "updated_at": "2026-10-13T15:28:58+08:00"
 }
