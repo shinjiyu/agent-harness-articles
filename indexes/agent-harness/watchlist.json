@@ -2,6 +2,643 @@
   "candidates": [
     {
       "source": "arxiv",
+      "arxiv_id": "2610.18874",
+      "arxiv_version": "v1",
+      "title": "ChunkAct: Action Chunking for Agentic Robotics",
+      "authors": [
+        "Bingxin Xu",
+        "Wenrui Bao",
+        "Xinxin Liu",
+        "Jiawei Zhou",
+        "Yuzhang Shang",
+        "Emilio Ferrara"
+      ],
+      "published": "2026-10-13",
+      "url": "https://arxiv.org/abs/2610.18874",
+      "abstract": "Agentic robotics places a large language model (LLM) agent in the robot control loop, where it composes perception, motion, and vision-language-action (VLA) tools under the guidance of a memory and thereby generalizes to new tasks without retraining. This generality comes at a steep price in efficiency. Every primitive requires a round of LLM reasoning over the full interaction history, so the cost of an episode grows with the number of primitives. We find this reasoning largely redundant: once a sub-goal is chosen, its primitives follow a routine already prescribed by memory. We present ChunkAct, which introduces action chunking to agentic robotics. Online, a single call launches a chunk of chained primitives, which executes autonomously and returns control only upon failure. Offline, ChunkAct compiles the memory into these chunks, so execution is memory-free at test time and the planner is reserved for decisions that require reasoning. LLM computation therefore scales with the number of decisions rather than the number of primitives. On LIBERO-Pro, ChunkAct improves task success by 5.0 points over the state of the art in agentic robotics while requiring 2.9x fewer LLM calls, 4.4x fewer input tokens, and 2.3x fewer output tokens.",
+      "external_ids": [
+        "arxiv:2610.18874"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-14T13:56:57+08:00",
+      "last_seen_at": "2026-10-14T13:56:57+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.18868",
+      "arxiv_version": "v1",
+      "title": "Tev: Scaling Long-Horizon Agentic Environments with Dense Progress Rewards",
+      "authors": [
+        "Wenbo Hu",
+        "Shraman Pramanick",
+        "Krishna Kumar Singh",
+        "Nanyun Peng",
+        "Kai-Wei Chang",
+        "Yong Jae Lee"
+      ],
+      "published": "2026-10-13",
+      "url": "https://arxiv.org/abs/2610.18868",
+      "abstract": "Long-horizon agents have drawn growing attention for their ability to work autonomously -- from hours to days -- on economically valuable tasks, a capability essential to automated discovery and recursive self-improvement (RSI). Yet open-source models still struggle on long-horizon tasks, largely for lack of both training data and a working recipe, and scaling both is hard: long, complex tasks are difficult to curate and verify, and their rewards are sparse. We address both. First, we introduce Tev-Gym, the first long-horizon agent training dataset with verifiable, dense, progressive rewards -- 1,170 verified task environments across 7 domains. It is built on a latent-world-first approach that first constructs a latent world: a complete and correct hidden specification of the task domain, workflow, and expected state after each step. Each task is then progressively rendered from this specification into an agent-facing environment, enabling controllable complexity and a natural progress metric. Second, we turn this metric into a training recipe: via progress-potential reward shaping (PPRS), we convert progress into a dense per-step reward that improves training efficiency and makes otherwise-intractable tasks trainable. Training with this recipe yields Tev-27B, which achieves substantial gains on the Agents' Last Exam computing and math sciences domains (ALE-CM), matching GPT-6 Astra and Claude Opus 5 at Pass@5. Despite training only on ALE-related data, it generalizes to the Terminal-Bench (TB) 3.0 and 4.0 subsets, surpassing GLM 5.2 and Gemini 3.7 Flash, and reaches Claude Opus 4.8-level performance on middle-horizon tasks such as TB 2.1.",
+      "external_ids": [
+        "arxiv:2610.18868"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-14T13:56:57+08:00",
+      "last_seen_at": "2026-10-14T13:56:57+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.18867",
+      "arxiv_version": "v1",
+      "title": "EmbodiedEvo: Self-improving Coding Agents for Physical Intelligence",
+      "authors": [
+        "Wenyi Li",
+        "Yizhe Chi",
+        "Youjie Zheng",
+        "Chunyu Liu",
+        "Xiaoqiu Wang",
+        "Mingju Gao",
+        "Zheng Jiang",
+        "Deyao Hong",
+        "Calvin Xiao",
+        "Kaisen Yang",
+        "Qinhuai Na"
+      ],
+      "published": "2026-10-13",
+      "url": "https://arxiv.org/abs/2610.18867",
+      "abstract": "Bringing general-purpose agents into the physical world calls for an executable representation of physical intelligence. Compared with vision-language-action (VLA) models, which map observations and language instructions directly to actions, code makes control logic explicit and reusable. Code can serve not only as a policy representation but also as the workspace in which the agent solves a task. Rather than following a prescribed workflow of planning, execution, and verification, the agent can autonomously inspect the state, revise and execute code, and use feedback to choose the next step. The success of this SWE-style loop in digital environments motivates its extension to physical tasks. Yet physical execution remains prone to recurring failures. To retain and refine experience for later scenes, we introduce EmbodiedEvo, where a coding agent evolves reusable Skills and Lessons through feedback on a single Playground scene, then freezes the resulting harness for diverse new scenes. On RoboDojo-Sim, EmbodiedEvo achieves an average score of 44.48 and a success rate of 37.82\\%, surpassing all officially verified results. Paired tests show the largest gains on memory-dependent tasks and successful reuse of coordinated procedures, while fine contact control remains difficult. Experience from stronger models also improves weaker executors: Astra's experience raises Sol and Luna's success rates by 8.86 and 5.50 percentage points over no experience. Compared with raw interaction history, Skills and Lessons achieve comparable task performance at 53.0\\% lower execution cost.",
+      "external_ids": [
+        "arxiv:2610.18867"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-14T13:56:57+08:00",
+      "last_seen_at": "2026-10-14T13:56:57+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.18866",
+      "arxiv_version": "v1",
+      "title": "AutoAgent0: An Agentic Runtime for Safe Closed-Loop Driving",
+      "authors": [
+        "Jiageng Liu",
+        "Seth Z. Zhao",
+        "Zewei Zhou",
+        "Alejandro Huerta",
+        "Aidan Bayer-Calvert",
+        "Yuxin Bao",
+        "Haotian Lin",
+        "Robert Spataru",
+        "Zijun Cui",
+        "Yining Hong",
+        "Bolei Zhou",
+        "Jiaqi Ma"
+      ],
+      "published": "2026-10-13",
+      "url": "https://arxiv.org/abs/2610.18866",
+      "abstract": "Safe autonomous driving requires more than accurate planning at a single frame: it demands reliable closed-loop execution in dynamic environments. Although end-to-end driving policies have advanced rapidly, the accumulated closed-loop errors, especially in unseen scenarios, can push vehicles into states from which the same policy struggles to recover. We address the challenge by treating closed-loop driving safety as a test-time execution problem. We introduce AutoAgent0, an agentic runtime and harness framework that augments existing driving experts with complementary detection skills, rule-based action verification, and feedback-driven recovery. To address inaccurate scene perception, an independent detection module constructs scene context using complementary perception skills, and a rule-based verifier checks proposed trajectories against this context before execution. When the nominal trajectories are unreliable, the orchestrator of the runtime activates Recovery Planning, where an agentic loop constructs alternative action proposals from action primitives and iteratively refines them using verification feedback. This design combines independent scene assessment with feasibility checks and online recovery, addressing both perception errors and the limited recovery capabilities of individual experts. Evaluations on Fail2Drive and NavSafe-$\\infty$ demonstrate improved closed-loop robustness over single-expert execution in long-tail and safety-critical scenarios. These results demonstrate that runtime supervision can improve closed-loop robustness across multiple driving experts without retraining the underlying policies.",
+      "external_ids": [
+        "arxiv:2610.18866"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-14T13:56:57+08:00",
+      "last_seen_at": "2026-10-14T13:56:57+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.18861",
+      "arxiv_version": "v1",
+      "title": "Hybrid Reasoning Agents",
+      "authors": [
+        "Jiaru Zou",
+        "Yunzhe Qi",
+        "Sirui Chen",
+        "Federico Bianchi",
+        "Shang Zhu",
+        "Pan Lu",
+        "Jingrui He",
+        "James Zou"
+      ],
+      "published": "2026-10-13",
+      "url": "https://arxiv.org/abs/2610.18861",
+      "abstract": "How can we build an agent that thinks beyond human language, yet still acts through it in the external environment? Modern LLM agents still reason and interact through text, while latent reasoning offers an efficient internal medium but lacks native tool access and reasoning transparency. We bridge these two directions with Hybrid Reasoning Agents (HybridAgents), which dynamically navigate between latent reasoning and text-based interaction throughout a unified generation process. Architecturally, a lightweight HybridLink enables seamless transitions between text and latent modes, while the agent's continuous working memory preserves lossless hybrid context across multiple turns. These designs preserve tool-integrated agentic capabilities while making latent thoughts directly inspectable. Building on this architecture, we further develop dedicated post-training algorithms for hybrid reasoning: HybridSFT stabilizes tool-integrated hybrid generation by teaching the backbone to coordinate with HybridLink, then HybridRL scales reasoning by learning when to think in latent space and when to act through text. We evaluate HybridAgent at 3 model scales across 11 benchmarks covering mathematics, science, medicine, search, and agentic reasoning. Compared with frontier LLM Agents and agentic frameworks spanning both text-based and latent methods, HybridAgent consistently improves performance by 10.4%, while delivering 35.5%-54.7% token reduction, 1.8x-2.6x faster inference, and 2.7x-3.7x cost savings. Code and data are available at https://github.com/togethercomputer/HybridAgent.",
+      "external_ids": [
+        "arxiv:2610.18861"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-14T13:56:57+08:00",
+      "last_seen_at": "2026-10-14T13:56:57+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.18845",
+      "arxiv_version": "v1",
+      "title": "The Last Remote Sensing Model Built by Humans? Casting Any Earth Observation Task as Recursive Self-Improvement",
+      "authors": [
+        "Sijie Zhao",
+        "Zeqi Zhou",
+        "Heli Qi",
+        "Xuanchao Fu",
+        "Zhuo Zheng",
+        "Junshi Xia",
+        "Junjue Wang",
+        "Weihao Xuan",
+        "Naoto Yokoya"
+      ],
+      "published": "2026-10-13",
+      "url": "https://arxiv.org/abs/2610.18845",
+      "abstract": "Earth observation (EO) models are still built by hand. For each new task, experts design a training recipe and tune it against a benchmark. We show that this loop can be handed to an agent. Any verifiable task can be cast as a harness and a verifier, where the harness defines what the agent may use and the verifier defines what counts as success. Every EO task can be made verifiable, through labeled benchmarks, independent sensors, physical models or the repeated observation of the same place. Given only these two components, a general-purpose coding agent builds the EO model and improves it recursively on its own outputs. Settings long treated as separate research problems, from learning with a handful of labels to adapting across domains, become choices of harness and verifier. On four EO benchmarks spanning optical, SAR and multispectral time-series imagery, agent-built models surpass the state of the art and keep most of that accuracy from about 1% of the training labels. This establishes a new paradigm for EO, in which people design harnesses and verifiers and agents build the models, so EO models improve as agents do.",
+      "external_ids": [
+        "arxiv:2610.18845"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-14T13:56:57+08:00",
+      "last_seen_at": "2026-10-14T13:56:57+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.18842",
+      "arxiv_version": "v1",
+      "title": "Who Improves the Robot? Toward Physical Recursive Self-Improvement",
+      "authors": [
+        "Hai Zhou",
+        "Fan Yang",
+        "Zeyi Chen",
+        "Lejun Zhang",
+        "Chenyang Fu",
+        "Jianping Li",
+        "Jiayi Zhu",
+        "Xianyang Liu",
+        "Yingxuan Yang",
+        "Lili Meng",
+        "Lu Wang",
+        "Xinyang Han",
+        "Jiankai Sun",
+        "Weirui Ye",
+        "Guanchu Wang",
+        "Wanhua Li",
+        "Ming Zhou",
+        "Boyi Li",
+        "Ming Jin",
+        "Kun Shao",
+        "Muhao Chen",
+        "Guang Chen",
+        "Lei Ma",
+        "Joey Tianyi Zhou",
+        "Costas Spanos",
+        "Xia Hu",
+        "Mac Schwager",
+        "Weinan Zhang",
+        "Qian Feng",
+        "Shangding Gu"
+      ],
+      "published": "2026-10-13",
+      "url": "https://arxiv.org/abs/2610.18842",
+      "abstract": "Robots are increasingly autonomous in task execution, yet their improvement remains largely human-driven. This study investigates Physical Recursive Self-Improvement (Physical RSI), in which physical experience guides lasting updates to both a robot's capabilities and its improvement procedure, making subsequent improvement more effective across tasks. Physical RSI faces challenges from noisy observations, continuous dynamics, costly trials, and irreversible consequences. We present an L0-L5 framework that differentiates capability-level from meta-level updates and within-task from across-task gains, reserving L5 for independently verified recursive gain. We study existing methods around harness adaptation and model training, alongside safety and control mechanisms that govern execution and successive updates. Our analysis reveals that, despite substantial progress in self-improvement, the surveyed literature does not yet demonstrate Physical RSI as defined by our framework. We identify research priorities in reliable feedback, causal attribution, safety preservation, and benchmarking, outlining a path toward robots that autonomously improve how they learn while ensuring safety. The GitHub repository for Physical RSI is available at https://github.com/SAIL-Research-Lab/Physical-RSI.",
+      "external_ids": [
+        "arxiv:2610.18842"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-14T13:56:57+08:00",
+      "last_seen_at": "2026-10-14T13:56:57+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.18835",
+      "arxiv_version": "v1",
+      "title": "RoboSimStudio: An Interactive Toolkit for Rapid Real2Sim of Robot Manipulation Tasks",
+      "authors": [
+        "Kaiyuan Chen",
+        "Shuangyu Xie",
+        "Uksang Yoo",
+        "Xinyue Zhu",
+        "Cael Magner",
+        "Alvin Zhu",
+        "Daehwa Kim",
+        "Eric Heiden",
+        "Erwin Coumans",
+        "Miles Macklin",
+        "Spencer Huang",
+        "Ken Goldberg"
+      ],
+      "published": "2026-10-13",
+      "url": "https://arxiv.org/abs/2610.18835",
+      "abstract": "It is difficult to accurately model the physics of the interaction between a robot and the objects it manipulates, including contact mechanics, coupled contact dynamics, deformations, stiffness and friction. We present RoboSimStudio (RSS), an interactive toolkit that makes choices of solver, contact model, and physical parameters explicit and editable, allowing both humans and coding agents to iteratively refine simulations based on observed physical behavior. We implement RSS with the open Newton physics simulation system and describe experiments with human-guided real2sim using (1) visual evaluation, (2) force-feedback and (3) agentic Real2Sim2Real. Code, video and additional information can be found on the project website.",
+      "external_ids": [
+        "arxiv:2610.18835"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-14T13:56:57+08:00",
+      "last_seen_at": "2026-10-14T13:56:57+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.18813",
+      "arxiv_version": "v1",
+      "title": "Self-Evolving Agent Harness",
+      "authors": [
+        "Chuyang Wei",
+        "Haoxiang Guan",
+        "Minghang Zhu",
+        "Kexin Zhou",
+        "Jiyan He",
+        "Xiren Zhou",
+        "Huanhuan Chen",
+        "Yifei Shen"
+      ],
+      "published": "2026-10-13",
+      "url": "https://arxiv.org/abs/2610.18813",
+      "abstract": "Harness self-evolution revises an agent's software scaffolding, including prompts, memory, workflows, and executable components, while keeping model weights fixed. We formalize a feedback-driven process in which accepted revisions persist across runs. The framework separates update targets from proposal and admission mechanisms. It distinguishes changes to interpreted state from revisions to tools and code, repository-level control logic, and plugin composition. We characterize search through evolutionary optimization and examine its reliability through continual PAC-learning. Under explicit assumptions, the analysis yields an expected generalization bound, a retention bound conditional on historical regression budgets, and a high-probability admission rule using fresh, independent validation data. We examine how persistent harness revisions affect knowledge sharing and organizational workflows, with implications for scientific reliability, physical safety, and institutional accountability. Cases from prior work illustrate model--harness co-design, distributed execution, and plugin reuse. Reliable deployment requires continual validation as task distributions and evaluators change, with independent safeguards for learning, runtime privileges, and consequential actions. We provide a comprehensive 66-page discussion of related work, theory, algorithms, evaluation, applications, and the broader impact of Harness RSI, together with continuously updated code and supplementary materials, at https://github.com/zgcagi/Harness-RSI.",
+      "external_ids": [
+        "arxiv:2610.18813"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-14T13:56:57+08:00",
+      "last_seen_at": "2026-10-14T13:56:57+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.18807",
+      "arxiv_version": "v1",
+      "title": "SkillScaffold: Scaffolding Agentic Reinforcement Learning with Policy-Adaptive Skill Credit Assignment and Selective Injection",
+      "authors": [
+        "Wenlin Zhong",
+        "Hao Wang",
+        "Kun Yuan",
+        "Fan Yang",
+        "Jinluan Yang",
+        "Dian Jin",
+        "Xu Tan",
+        "Yiquan Wu",
+        "Kun Kuang"
+      ],
+      "published": "2026-10-13",
+      "url": "https://arxiv.org/abs/2610.18807",
+      "abstract": "Agentic reinforcement learning (RL) enables large language models (LLMs) to learn from multi-turn interactions with verifiable outcomes. Textual skills can improve exploration by distilling prior interactions into reusable guidance. However, existing skill-based RL approaches often either assume skill injection is beneficial or rely on indirect feedback or rollout-intensive evaluation to assess its utility. Our pilot studies show that rollout-based utility estimation for skill credit assignment is costly and unstable under limited sampling, while skill benefits vary across candidates and depend on the current policy's competence on each query. To address these challenges, we introduce SkillScaffold, a policy-adaptive training scaffold that combines low-cost skill-utility estimation with selective skill injection. By reusing outcome-verified training trajectories, SkillScaffold generates candidate skills and estimates their utility through outcome-aware likelihood comparisons, without candidate-specific environment rollouts. The resulting utility guides whether and which skill to inject, retaining skill-free execution when no candidate is estimated to help. Joint training enables the Generator to produce skills tailored to the evolving Executor. Scaffolded RL encourages skill internalization for skill-free inference. Experiments on ALFWorld, WebShop, ScienceWorld, and $τ^2$-Bench demonstrate gains over strong agentic-RL and skill-based RL baselines across both short- and long-horizon tasks. Ablations and further analyses support the importance of utility-based selection and abstention. Our code is available at https://github.com/Vaidurya00/SkillScaffold.",
+      "external_ids": [
+        "arxiv:2610.18807"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-14T13:56:57+08:00",
+      "last_seen_at": "2026-10-14T13:56:57+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.18792",
+      "arxiv_version": "v1",
+      "title": "SEAR: Self-Evolving Agentic Robotics",
+      "authors": [
+        "Xinyi Wang",
+        "Bangzheng Li",
+        "Hanyu Wang",
+        "Lin Zhang",
+        "Andrea Yaoyun Cui",
+        "Zhenggang Tang",
+        "Shyamal Buch",
+        "Dejia Xu"
+      ],
+      "published": "2026-10-13",
+      "url": "https://arxiv.org/abs/2610.18792",
+      "abstract": "Frontier language-model agents can now improve robots on their own: they write control code, test it, and keep what works as skills and memories for the next task. We introduce SEAR (Self-Evolving Agentic Robotics), a framework and benchmark built around two questions. Is the agent really learning, or just trying more often? And does what it learns still help on new tasks, in a new simulator, and on a real robot? The framework runs an agent in three modes: it writes code that becomes the policy (code-as-policy), acts live in the control loop (agent-as-policy), or works as a researcher that fine-tunes a vision-language-action model (auto-research). The benchmark adds controls that separate retained experience from repeated attempts, familiar tasks, privileged simulator state, larger budgets, and luck. Across seven frontier language models, 330 simulated and five physical tasks, and over four years of agent runtime, we highlight three findings. First, the learning curve of a robotic agent depends both on the overall time budget and the task difficulty relative to model capability. Harder tasks make longer sessions worthwhile; on easier tasks, re-rolling short attempts does just as well. Second, control code and shared routines transfer across tasks and simulators, while task-specific solutions do not. On a real robot, we observe a performance gap between agent-designed practice and novel human-designed scenes. Third, different models evolve more effectively in different ways. Some do best acting live, others writing code first. And a text-only model keeps pace with a comparable multimodal one: perception helps with error assessment, but agentic reasoning and tool use can matter more. We release the benchmark and codebase to support future research.",
+      "external_ids": [
+        "arxiv:2610.18792"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-14T13:56:57+08:00",
+      "last_seen_at": "2026-10-14T13:56:57+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.18789",
+      "arxiv_version": "v1",
+      "title": "Trust Before Autonomy: Rethinking Agentic Remote Sensing for Crisis Response",
+      "authors": [
+        "Georgios Angelidis",
+        "Aggelos Psiris",
+        "Spyridon Evangelatos",
+        "Thomas Lagkas",
+        "Panagiotis Sarigiannidis",
+        "Iraklis Varlamis",
+        "Georgios Th. Papadopoulos"
+      ],
+      "published": "2026-10-13",
+      "url": "https://arxiv.org/abs/2610.18789",
+      "abstract": "Agentic remote sensing is evaluated on how many questions it can answer, whereas crisis response depends on whether its answers can be relied on and how much of the decision can safely be handed to the agent. This paper argues that \\emph{autonomy should be earned, not assumed}: An Earth-Observation (EO) agent should be granted autonomy in proportion to demonstrated reliability, epistemic honesty and verifiability. The position is supported by an evidential meta-analysis of twelve agentic RS/EO/GIS benchmark studies from peer-reviewed venues. Only one repeats runs, three contain unanswerable tasks and none measures calibration. Their own tables show that completed workflows are often not correct (task success exceeds tool-call correctness by up to 54pp on identical queries), that the gap to an expert trajectory widens overall with trajectory length (from 7 to 56pp), and that capability does not predict abstention (Spearman r from -0.25 to 0.50, all n.s.). The paper then contributes three EO-specific trust properties, an autonomy ladder for crisis EO tasks, and a readiness protocol that replays archived emergency activations before any live use. In this context, current evidence justifies assistive roles only.",
+      "external_ids": [
+        "arxiv:2610.18789"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-14T13:56:57+08:00",
+      "last_seen_at": "2026-10-14T13:56:57+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.18683",
+      "arxiv_version": "v1",
+      "title": "ProAS: A Progress-Aware Advantage Shaping Framework for Multi-Turn Agentic Reinforcement Learning",
+      "authors": [
+        "Bowen Ding",
+        "Mingda Wan",
+        "Yuhan Chen",
+        "Jiyao Yuan",
+        "Qi Zhu",
+        "Futing Wang",
+        "Heyuan Deng",
+        "Fei Mi",
+        "Lifeng Shang",
+        "Tao Lin"
+      ],
+      "published": "2026-10-13",
+      "url": "https://arxiv.org/abs/2610.18683",
+      "abstract": "Reinforcement learning (RL) has emerged as the primary paradigm for optimizing Large Language Model (LLM) agents, yet efficient critic-free algorithms (e.g., GRPO) suffer from a fundamental uniform credit assignment dilemma that broadcasts trajectory-level advantages equally to all actions. Our analysis reveals that this uniformity inherently reinforces structurally invalid actions in preferred trajectories and ignores the downstream cascading influence of early pivotal deviations in unpreferred ones. To resolve this without introducing critic overhead, we propose Progress-Aware Advantage Shaping (ProAS), a plug-and-play framework that leverages a dynamically evolving Agentic Reference Graph (ARG) to achieve fine-grained credit assignment via Masking Unreasonable Incentives (MUI) and Asymmetric Penalty Redistribution (APR). Extensive experiments across Qwen2.5-1.5B-Instruct and Qwen2.5-7B-Instruct demonstrate that ProAS universally elevates mainstream group-based baselines to new state-of-the-art performance, achieving peak success rates of 91.9\\% and 94.3\\% on ALFWorld, alongside 66.7\\% and 70.8\\% on WebShop, respectively. Furthermore, it accelerates training convergence by up to $2.44\\times$ while maintaining strong robustness against imperfect or distilled ARGs. Codes: https://github.com/LINs-lab/ProAS.",
+      "external_ids": [
+        "arxiv:2610.18683"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-14T13:56:57+08:00",
+      "last_seen_at": "2026-10-14T13:56:57+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.18641",
+      "arxiv_version": "v1",
+      "title": "HILO: Enabling Low-power, Dual-Band Communication using Tunnel Diode Oscillators",
+      "authors": [
+        "Dhairya Shah",
+        "Rajashekar Reddy Chinthalapani",
+        "Pramuka Sooriya Patabandige",
+        "Ambuj Varshney"
+      ],
+      "published": "2026-10-13",
+      "url": "https://arxiv.org/abs/2610.18641",
+      "abstract": "Wireless communication remains the most power-consuming operation in embedded systems. Low-power transmitters such as backscatter achieve microwatt-scale operation but produce weak signals susceptible to in-band interference and frequency-selective fading, particularly in non-line-of-sight settings. Multi-band transmission can mitigate these effects through spectral-domain redundancy rather than temporal-domain redundancy, improving reliability without sacrificing bitrate or latency. However, conventional multi-band radio transceivers require duplicated RF chains or power-hungry synthesizers. We introduce HILO, a tunnel diode-based frontend that enables dual-band operation from a single circuit. HILO inverts the conventional paradigm: rather than suppressing the harmonics inherent to tunnel diode nonlinearity, it harnesses them. An external device injection-locks the oscillator to a fundamental frequency, simultaneously stabilizing a higher harmonic and yielding two injection-locked carriers without a second oscillator or frequency multiplier. In transmit mode, HILO exploits self-oscillating mixing to modulate both carriers simultaneously; in receive mode, it uses autodyne downconversion at both frequencies. By turning an inherent nonlinearity into a feature, HILO achieves dual-band links while consuming under 210 $μ$W.",
+      "external_ids": [
+        "arxiv:2610.18641"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-14T13:56:57+08:00",
+      "last_seen_at": "2026-10-14T13:56:57+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.18616",
+      "arxiv_version": "v1",
+      "title": "Knowledge Graphs as Files: An Agent Harness Where Tool Creation and Tool Use Co-Evolve",
+      "authors": [
+        "Yuyang Bai",
+        "Yu Wang",
+        "Yu Zhang"
+      ],
+      "published": "2026-10-13",
+      "url": "https://arxiv.org/abs/2610.18616",
+      "abstract": "Searching text-rich knowledge graphs requires following relations while examining textual evidence. Predefined graph interfaces constrain what evidence agents can access, even when they write code to combine tool calls or process retrieved subgraphs. We propose direct knowledge graph interaction (DKGI), a harness in which language model agents create graph access tools directly over complete node and edge files. The agent writes Python code to follow relations, combine node sets, and select textual evidence, interleaving execution with shell search and file inspection. This lets agents process large node sets in bulk while returning selected text for the model to assess. Execution feedback guides tool creation and revision, while the evolving tools determine what evidence the agent gathers next. On benchmark datasets spanning three domains, training-free DKGI exceeds the strongest published baseline by at least 6.7 Hit@1 points on every graph, even with a minimal harness. Controlled ablations show the benefits of multi-turn programming over shell-only access and predefined graph tools, while trajectories show agents revising code to extend searches or address errors. These findings highlight the value of allowing tool creation and tool use to co-evolve during graph search. Our code and data are available at https://github.com/leopoldwhite/DKGI.",
+      "external_ids": [
+        "arxiv:2610.18616"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-14T13:56:57+08:00",
+      "last_seen_at": "2026-10-14T13:56:57+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.18614",
+      "arxiv_version": "v1",
+      "title": "Can an Agent Learn to Predict Its Own Failure? Outcome-Grounded Confidence Calibration in LLM Agents",
+      "authors": [
+        "Ashutosh Hathidara"
+      ],
+      "published": "2026-10-13",
+      "url": "https://arxiv.org/abs/2610.18614",
+      "abstract": "Controlling an acting LLM agent means deciding, at each step of a long-horizon task, whether to trust its next action, abstain, or hand off to a human. That decision needs a per-step confidence signal predicting whether the current rollout will eventually succeed. The agent's own self-reported verbalized confidence is the natural candidate, but existing reinforcement learning methods calibrate it against the correctness of a decision at the current step. We propose a method to calibrate it against the eventual outcome of a multi-step episode: under GRPO, the group of rollouts for a task supplies success labels, and a proper scoring rule scores each step's confidence against the realized outcome. In offline RL on recorded trajectories of a Qwen2.5-7B agent in ALFWorld, TextWorld, and WebShop environments, the AUROC of step confidence against episode outcome rises from near chance to 0.68-0.85, and the top-10% of steps the agent is most confident about succeed ~4.3x more often than average. In online RL on the live ALFWorld agent, four calibration rewards improve early-step AUROC, expected calibration error goes from 0.42 to below 0.12, and selective execution improves over both the untrained agent and a format-only RL control, without degrading task success. We also introduce an evaluation protocol that separates episode depth, task difficulty, and attempt-level foresight, which shows where the gain lies: the trained agent recognizes from its first step which tasks it will fail, while telling a succeeding attempt from a failing one at the same task is harder, with some early-window signal emerging on TextWorld.",
+      "external_ids": [
+        "arxiv:2610.18614"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-14T13:56:57+08:00",
+      "last_seen_at": "2026-10-14T13:56:57+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.18572",
+      "arxiv_version": "v1",
+      "title": "LLM Agents for Automated Post-Training via Structured Recipe Optimization",
+      "authors": [
+        "Ruohong Liu",
+        "Bohan Tang",
+        "Lekang Jiang",
+        "Jack Umenberger",
+        "Yiwen Guo"
+      ],
+      "published": "2026-10-13",
+      "url": "https://arxiv.org/abs/2610.18572",
+      "abstract": "Automated post-training transforms pre-trained large language models (LLMs) into models capable of handling diverse domains by automatically constructing and optimizing a recipe of coupled decisions over data sources, data processing, cross-domain composition, and training configuration under a limited experimental budget. Existing automation either searches predefined recipe spaces that enable systematic optimization but remain fixed rather than adapting their available choices to the target tasks, or uses open-ended agents that discover task-specific choices but leave them implicit in trial-level edits, limiting their systematic reuse and recombination across trials. To fill this gap, we introduce optimization over a task-adapted recipe space, a novel paradigm that can adapt the recipe space itself to the target tasks while representing its choices explicitly for systematic reuse, recombination, and joint optimization. We instantiate this paradigm with Structured Recipe Optimization (SRO), comprising an LLM-based Recipe-Space Designer that constructs the task-adapted recipe space and a Multi-Domain Recipe Optimizer that uses structured trial evidence to guide LLM candidate construction and multi-objective Bayesian trial selection. Extensive experiments show that SRO achieves the highest average score in all evaluated target-model and agent-LLM combinations. In joint post-training across three capability domains and six benchmarks, SRO reaches 41.1 versus 15.4 for the strongest baseline on Qwen3-1.7B with GPT-5.4, and 53.8 versus 40.8 on Qwen3-4B with DeepSeek-V4-Flash. Our code is available at https://github.com/RuohLiuq/SRO.",
+      "external_ids": [
+        "arxiv:2610.18572"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-14T13:56:57+08:00",
+      "last_seen_at": "2026-10-14T13:56:57+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.18522",
+      "arxiv_version": "v1",
+      "title": "Lost in Implicit Routing: How LLM Agents Fail to Load Relevant Skills at Scale",
+      "authors": [
+        "Jinlin Liu",
+        "Wei Chen",
+        "Xiaojin Zhang"
+      ],
+      "published": "2026-10-13",
+      "url": "https://arxiv.org/abs/2610.18522",
+      "abstract": "Reusable skills let LLM agents load task-specific instructions on demand, but they make execution depend on implicit routing over skill metadata. We test whether this design scales by holding SkillsBench tasks and their golden skills fixed while adding irrelevant skills. We find skill routing collapse: agents increasingly load fewer or no skills, even though the relevant skills remain available. With 1,000 irrelevant skills, loaded-skill recall falls from 73.6% to 27.4% and the zero-load rate rises from 9.3% to 51.6%, whereas explicit selection from the same library retains 73.9% recall. Loading other skills, including plausible alternatives to golden skills, is too rare to explain this decline. Masking only the descriptions of irrelevant skills largely restores skill loading, yet with the metadata intact, explicitly asking agents to plan skill use still yields lower recall than preselection. These findings point to semantic interference from descriptions and instruction interference when skill choice competes with task execution. We also evaluate explicit preselection as a practical mitigation, including its coverage and latency trade-offs. Our analysis informs skill protocols and evaluation for agents with growing skill libraries.",
+      "external_ids": [
+        "arxiv:2610.18522"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-14T13:56:57+08:00",
+      "last_seen_at": "2026-10-14T13:56:57+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.18507",
+      "arxiv_version": "v1",
+      "title": "The Last Mile of Coding Agents for Long-Document Tasks: An Empirical Study on Clinical Trial Protocol Digitization",
+      "authors": [
+        "Jiacheng Lin",
+        "Geoffrey Low",
+        "Nishit Agarwal",
+        "Rahul Jain",
+        "Afrah Shafquat",
+        "Mandis Beigi",
+        "Jimeng Sun"
+      ],
+      "published": "2026-10-13",
+      "url": "https://arxiv.org/abs/2610.18507",
+      "abstract": "Clinical trial protocols serve as the source of truth for study design, but are mostly written and used as unstructured PDF documents. Digitizing protocols turns static content into structured, machine-readable data that clinical software can analyze, validate, and execute. Coding agents, which select tools, execute code, and revise their approach as they work, are increasingly applied to such long-document tasks, yet it remains unclear how reliably they turn complete documents into accurate structured outputs. We study this question using protocol digitization as a testbed. We introduce TrialPD-Bench, an expert-annotated benchmark of 150 publicly available protocol PDFs spanning four task categories. Beyond final-answer performance, our evaluation measures evidence recall from agent traces, agent behavior, and cost. Across nine proprietary and open-weight models in five coding-agent harnesses, even the strongest agents do not fully solve protocol digitization. Our analysis further shows that agents usually locate the required evidence but fail in the last mile of transcribing and structuring it. We further develop TrialScribe, a domain-specific harness that equips coding agents with task skills and a verification loop. TrialScribe improves a locally served open-weight model by 6.2-59.4 points across eight metrics, enabling it to match or surpass proprietary models such as GPT-5.6-Sol.",
+      "external_ids": [
+        "arxiv:2610.18507"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-14T13:56:57+08:00",
+      "last_seen_at": "2026-10-14T13:56:57+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.18497",
+      "arxiv_version": "v1",
+      "title": "Judges Follow the Reference: The Derivation Gap in Verifying Tool-Call Arguments",
+      "authors": [
+        "Linhai Ma",
+        "Yan Wang",
+        "Lingfei Qian",
+        "Yupeng Cao",
+        "Victor Gutierrez Basulto"
+      ],
+      "published": "2026-10-13",
+      "url": "https://arxiv.org/abs/2610.18497",
+      "abstract": "Tool-call judges evaluate argument values proposed by LLM agents. We find that they accept a correct value less often when their input holds no reference for it, that is, no text that says what the value should be. This happens when the value is a default value from the function schema that the user did not mention, when it has to be inferred, or when the text it comes from was cut from the judge input. We call this drop in acceptance the derivation gap. It appears across all seven judges we evaluate, including System One models CLM and Jev. The gap is not only a truncation artifact: correct default values have the largest gap on a benchmark with no truncation. A controlled source-relocation test shows that judges follow the reference in their input: they favor a visible incorrect value over a correct value whose source is hidden. We introduce DeRef (Derived Reference): a separate model reads the full history without seeing the candidate and writes a reference for the judge. Across three benchmarks, DeRef improves overall argument AUROC for all judges tested. On the controlled test, it raises AUROC from chance or below to between 98.40 and 99.59.",
+      "external_ids": [
+        "arxiv:2610.18497"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-14T13:56:57+08:00",
+      "last_seen_at": "2026-10-14T13:56:57+08:00"
+    },
+    {
+      "source": "arxiv",
       "arxiv_id": "2610.13947",
       "arxiv_version": "v1",
       "title": "Towards Physically Grounded Articulated 3D Assets: A Multi-Agent Pipeline and Benchmark",
@@ -564,7 +1201,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-11T14:54:55+08:00",
-      "last_seen_at": "2026-10-11T14:54:55+08:00"
+      "last_seen_at": "2026-10-14T13:56:57+08:00"
     },
     {
       "source": "arxiv",
@@ -4850,7 +5487,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-09-21T13:59:46+08:00",
-      "last_seen_at": "2026-10-11T14:54:55+08:00"
+      "last_seen_at": "2026-10-14T13:56:57+08:00"
     },
     {
       "source": "arxiv",
@@ -10295,7 +10932,7 @@
       ],
       "first_seen_at": "2026-08-28T20:35:42+08:00",
       "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-10-11T14:54:55+08:00",
+      "last_seen_at": "2026-10-14T13:56:57+08:00",
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
@@ -10322,7 +10959,7 @@
       ],
       "first_seen_at": "2026-08-28T20:35:42+08:00",
       "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-10-11T14:54:55+08:00",
+      "last_seen_at": "2026-10-14T13:56:57+08:00",
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
@@ -14772,652 +15409,10 @@
       "status": "indexed",
       "title": "Mint-Agent: Introducing Finance-Native Agentic Foundation Models",
       "url": "https://arxiv.org/abs/2608.16386"
-    },
-    {
-      "abstract": "Large language model (LLM) agents may assist flight crews with complex decisions and task execution, but existing aviation evaluations centered on static knowledge do not support systematic testing of procedural execution and safety compliance in interactive environments. This paper presents the AeroCopilot Operational Environment (ACOE), a reproducible interactive virtual-cockpit test environment, and AeroCopilotBench, a two-tier aviation agent evaluation benchmark. Tier-1 evaluates aviation knowledge using 1,200 multiple-choice questions, while Tier-2 comprises 73 emergency and abnormal tasks derived from the manufacturers' Pilot's Operating Handbooks (POHs) and instantiated in ACOE. ACOE converts natural-language procedures into executable state transitions, final-state goal conditions, and hard safety constraints, enabling models to interpret cockpit state, diagnose faults, and operate aircraft systems through standardized tool interfaces. We establish a safety-gated evaluation framework in which a trajectory succeeds only when all task goals are achieved without violating any hard safety constraint, while safe goal progress and trajectory safety are measured separately. Across 12 models, the highest Tier-2 success rate is 72.6%, while static knowledge performance does not consistently translate into procedural execution. Analysis of 451 failed episodes from 3 representative models identifies recurring failures in procedural completeness, use of state feedback, and long-horizon execution management. These findings motivate state-aware agent orchestration, joint assessment of task completion and trajectory safety, and repeated regression testing. ACOE and AeroCopilotBench provide a reproducible foundation for testing knowledge application, interactive execution, and operational safety in aviation agents.",
-      "arxiv_id": "2608.16349",
-      "arxiv_version": "v1",
-      "authors": [
-        "Yuchen Yuan",
-        "Zhenghuang Wu",
-        "Yuangan Li",
-        "Liang Ma",
-        "Ke Li"
-      ],
-      "external_ids": [
-        "arxiv:2608.16349"
-      ],
-      "first_seen_at": "2026-08-18T10:19:05+08:00",
-      "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-08-18T10:19:05+08:00",
-      "matched_keywords": [
-        "\"LLM agent\" harness"
-      ],
-      "published": "2026-08-17",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "indexed",
-      "title": "AeroCopilotBench: A Two-Tier Benchmark for Evaluating LLM Agents as Aviation Copilots in an Interactive Virtual Cockpit Environment",
-      "url": "https://arxiv.org/abs/2608.16349"
-    },
-    {
-      "abstract": "This first release of Prior Labs in relational learning shows our continued commitment to open science. We open-source three pieces of software that we expect to accelerate research in the field towards meaningful real-world impact. We aim to steer further development based on feedback from, and in collaboration with, the community. Given the early stage of development, our $α$-release targets researchers and early-adopting practitioners. Over the past years, a variety of datasets and tasks for relational learning have emerged, but the community has not converged on a reliable, reproducible way to compare different methods on these tasks. Our $α$-release, RelArena-$α$, provides a unified framework for running and comparing baselines on RelBench v1 by standardizing data loading, evaluation protocols, tuning regimes, and support for systems with custom tuning, inspired by established tabular benchmarks such as TabArena. We plan to work with the research community to further develop RelArena-$α$ into a catalyst for progress in the relational learning community. We release the initial version of TabPFN-Rel, a purpose-built relational harness for TabPFN-3. Currently ranked first among models on RelArena-$α$, TabPFN-Rel makes key improvements upon RDBLearn. Beyond its ranking, TabPFN-Rel serves as a strong baseline, adding to the growing evidence that flattening a relational database into a single table remains competitive with specialized relational architectures on real-world tasks. To facilitate adoption of relational learning methods in research and industry, we release an initial $α$-version of our Relational Predictive Interface, RPI, an open-source, model-agnostic interface that enables early adopters to easily define problems on new databases and apply any model implemented in RelArena-$α$, including TabPFN-Rel, to these problems.",
-      "arxiv_id": "2608.16319",
-      "arxiv_version": "v1",
-      "authors": [
-        "Adrian Hayler",
-        "Klemens Flöge",
-        "Alan Arazi",
-        "Rishabh Ranjan",
-        "Jure Leskovec",
-        "Felix Birkel",
-        "Brendan Roof",
-        "Anurag Garg",
-        "Kristina Collins",
-        "Lydia Sidhoum",
-        "Jonas Kübler",
-        "Siyuan Guo",
-        "Oscar Key",
-        "Jan Hendrik Metzen",
-        "Rylee Grace",
-        "David Salinas",
-        "Arthur Cahu",
-        "Simon Bing",
-        "Benjamin Jäger",
-        "Tuana Çelik",
-        "Mihir Manium",
-        "Vitor Monteiro",
-        "Jake Robertson",
-        "Jerry Chen",
-        "Eliott Kalfon",
-        "Tomás Pereda",
-        "Lilly Wehrhahn",
-        "Dominik Safaric",
-        "Tobias Schroeder",
-        "Georg Grab",
-        "Diana Kriuchkova",
-        "Clara Cornu",
-        "Philipp Singer",
-        "Nick Erickson",
-        "Vahid Balazadeh",
-        "Marie Salmon",
-        "Simone Alessi",
-        "Kürşat Kaya",
-        "Philipp Jund",
-        "Léo Grinsztajn",
-        "Yann LeCun",
-        "Bernhard Schölkopf",
-        "Madelon Hulsebos",
-        "Lennart Purucker",
-        "Sauraj Gambhir",
-        "Frank Hutter",
-        "Noah Hollmann"
-      ],
-      "external_ids": [
-        "arxiv:2608.16319"
-      ],
-      "first_seen_at": "2026-08-18T10:19:05+08:00",
-      "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-08-18T10:19:05+08:00",
-      "matched_keywords": [
-        "\"LLM agent\" harness"
-      ],
-      "published": "2026-08-17",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "indexed",
-      "title": "Advancing Open and Reproducible Relational Learning: RelArena-$α$, TabPFN-Rel and RPI",
-      "url": "https://arxiv.org/abs/2608.16319"
-    },
-    {
-      "abstract": "Autonomous AI agents tackling Long Horizon Tasks depend on marketplace skills that are certified one at a time: a scanner returns a safety verdict for each skill and declares the ecosystem safe if every package passes. We show that this assumption fails under skill composition. A skill may pass the per-skill scanner individually yet participate in a risky composition when an agent connects its outputs, capabilities, or side effects with those of other scanner-passing skills. This makes skill composition risk a path level property rather than a node level property, explaining why existing skill scanners that inspect individual packages achieve limited interception. To study this threat, we present CompoSkill, a framework that constructs skill composition attacks through a dual attacker system. The white-box attacker knows the victim's installed skill pool and directly injects explicit skill-id sequences; the black-box attacker knows only a role profile, downloads the top marketplace skills for that scenario, builds a Skill Composition Graph, and searches for high risk chains whose implicit lures never name skill identifiers. We further construct CompoSkill-Bench, a benchmark of 1,140 records built from long-horizon professional workflows across five threats and six scenarios on OpenClaw and Nanobot. CompoSkill achieves risk Chain Formation Rates (CFR) up to 83.3% in the white box setting and 80.6% in the black box setting, while existing skill scanners block only a limited fraction of the risky compositions. Finally, we observe a bridge-bonus-then-hop-decay pattern: a bridge skill can increase attack success, but Attack Success Rate (ASR) decreases once additional hops make the risk chain longer than three skills. These results expose a systematic gap in single skill certification for autonomous AI agents.",
-      "arxiv_id": "2608.16246",
-      "arxiv_version": "v1",
-      "authors": [
-        "Mingxiao Liu",
-        "Zhoumian Jiang",
-        "Jianan Ma",
-        "Jian Zhang",
-        "Jialuo Chen",
-        "Xinhao Deng",
-        "Zhen Wang"
-      ],
-      "external_ids": [
-        "arxiv:2608.16246"
-      ],
-      "first_seen_at": "2026-08-18T10:19:05+08:00",
-      "last_seen_at": "2026-08-18T10:19:05+08:00",
-      "matched_keywords": [
-        "\"LLM agent\" harness"
-      ],
-      "published": "2026-08-17",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "new",
-      "title": "CompoSkill: Compositional Skill Chain Attacks from Individually Scanner-Passing LLM Agent Skills",
-      "url": "https://arxiv.org/abs/2608.16246"
-    },
-    {
-      "abstract": "Large language model (LLM) agents are increasingly used to modernize the legacy Fortran underlying production scientific software, but validation of these transformations emphasizes nominal executions and may not test whether a modernization preserves the original code's response to faults, perturbations, and reduced precision. We present a differential fault-injection validation method: a harness instruments the shared self-consistent-field driver of GAMESS at twelve sites and applies identical, deterministic faults to the original and LLM-modernized implementations, isolating the converted integral kernels. Across more than 2,200 runs, transient-fault absorption costs match a contraction-based model (predicted slopes 0.74 and 1.49 iterations per bit; measured 0.82 and 1.50), persistent perturbations halve final-energy error per additional bit, and the campaigns expose phase-dependent parallel deadlocks and false convergence under reduced precision. The original and modernized kernels agree in all 200 paired injections, and a measurement-guided synchronization change composes with the modernization, matching in all 40 pairs.",
-      "arxiv_id": "2608.14527",
-      "arxiv_version": "v1",
-      "authors": [
-        "Evan Coleman",
-        "Yuzhong Shen",
-        "Masha Sosonkina",
-        "Peng Xu"
-      ],
-      "external_ids": [
-        "arxiv:2608.14527"
-      ],
-      "first_seen_at": "2026-08-17T10:23:04+08:00",
-      "last_seen_at": "2026-08-17T10:23:04+08:00",
-      "matched_keywords": [
-        "agent harness",
-        "\"LLM agent\" harness",
-        "test-time harness evolution"
-      ],
-      "published": "2026-08-14",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "new",
-      "title": "Validating LLM-Modernized Scientific Software Through Differential Fault Injection",
-      "url": "https://arxiv.org/abs/2608.14527"
-    },
-    {
-      "abstract": "We present a Test-time World-model Inference (Twin) system, in which a frontier coding agent writes an executable world model for completing continual learning tasks, such as ARC-AGI-3 games. Traditional approaches hand-engineer such models, one custom design per task. Each game hides its rules and goal, and our system constructs them from simulation and interaction alone. Its inductive prior over grid games is strong enough to recover the true transitions of the game and the goal on nearly all levels. Replay validation happens in a twin world model. The harness enforces that an action is not made until the program reproduces every previous observed game transition. Each mismatch between a world model prediction and the actual action result becomes a counterexample that is used to repair the world model. Twin clears 179 out of 183 levels (97.8%), and does so more efficiently than humans in 158 out of 179 levels (88.3%). The system infers the goal before any reward on 156 of the levels it clears (87.2%), and in the remaining levels automatically discovers the goal by search. The benchmark scores completion and action efficiency, between 0 and 100, against humans playing each game for the first time. Played directly, the base model scores only 7.8%; an off-the-shelf harness increases it to 61.1%, whereas our twin world model increases the same base model to 93.3%, clearing 23 out of 25 games. Building a usable world model is simpler than anticipated, whereas the harder problem is inferring the right goal.",
-      "arxiv_id": "2608.14490",
-      "arxiv_version": "v1",
-      "authors": [
-        "Alexy Skoutnev",
-        "Kirill Acharya",
-        "Gaston Longhitano",
-        "Madeleine Udell",
-        "Kevin Ellis",
-        "Iddo Drori"
-      ],
-      "external_ids": [
-        "arxiv:2608.14490"
-      ],
-      "first_seen_at": "2026-08-17T10:23:04+08:00",
-      "last_seen_at": "2026-08-17T10:23:04+08:00",
-      "matched_keywords": [
-        "agent harness",
-        "\"LLM agent\" harness",
-        "test-time harness evolution"
-      ],
-      "published": "2026-08-14",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "new",
-      "title": "Twin: Playing an Unknown Game with a Test-Time Digital Twin",
-      "url": "https://arxiv.org/abs/2608.14490"
-    },
-    {
-      "abstract": "As heterogeneous robotic systems deploy across diverse urban zones, maintaining safety amid complex human-robot interactions remains a critical challenge. We present a unified framework that bridges systematic hazard analysis and runtime enforcement using hazard-informed safety envelopes. Rather than treating safety as a static constraint isolated within individual software modules, we introduce a cross-layer safety transformation process spanning symbolic, spatial, and dynamic world models. We show how this representation naturally interfaces with physical AI runtime harnesses to guarantee safe urban mobility.",
-      "arxiv_id": "2608.14481",
-      "arxiv_version": "v1",
-      "authors": [
-        "Alexei Odinokov",
-        "Rostislav Yavorskiy"
-      ],
-      "external_ids": [
-        "arxiv:2608.14481"
-      ],
-      "first_seen_at": "2026-08-17T10:23:04+08:00",
-      "last_seen_at": "2026-08-17T10:23:04+08:00",
-      "matched_keywords": [
-        "agent harness",
-        "\"LLM agent\" harness",
-        "test-time harness evolution"
-      ],
-      "published": "2026-08-14",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "new",
-      "title": "Ensuring Safe Physical AI in Urban Mobility via Hazard-Informed Synthesized Envelopes",
-      "url": "https://arxiv.org/abs/2608.14481"
-    },
-    {
-      "abstract": "Spreadsheets are widely used to organize, analyze, and manipulate semi-structured data, yet automated spreadsheet reasoning remains challenging for large language models (LLMs). Real-world workbooks often contain implicit cross-table associations, fine-grained column dependencies, and complex spatial layouts. Existing methods typically flatten these multidimensional structures into sequential strings, losing important intra-sheet boundaries and inter-sheet semantics. Consequently, LLMs cannot exploit the global spatial context that human experts naturally use when inspecting spreadsheets. We propose SheetCompass, a graph-guided and memory-driven agentic framework for spreadsheet reasoning and automation. SheetCompass explicitly models structural relationships within and across worksheets while maintaining task-relevant information in memory, enabling agents to reason more effectively over complex workbooks.",
-      "arxiv_id": "2608.14452",
-      "arxiv_version": "v1",
-      "authors": [
-        "Panjing He",
-        "Mingyue Cheng",
-        "Yucong Luo",
-        "Li Li",
-        "Xiaohan Zhang"
-      ],
-      "external_ids": [
-        "arxiv:2608.14452"
-      ],
-      "first_seen_at": "2026-08-17T10:23:04+08:00",
-      "last_seen_at": "2026-08-17T10:23:04+08:00",
-      "matched_keywords": [
-        "agent harness"
-      ],
-      "published": "2026-08-14",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "new",
-      "title": "SheetCompass: Hierarchical Relation Graphs for Agentic Spreadsheet Reasoning",
-      "url": "https://arxiv.org/abs/2608.14452"
-    },
-    {
-      "abstract": "In the current artificial intelligence-driven innovation era, the pace of knowledge growth is accelerating, and is hard to keep up with. While generative models are increasingly used to synthesize content, they often lack in information grounding. To address these peculiarities of our time, we propose Wyvern, a multi-agent framework for the automated generation of grounded, multimodal technical reports. Wyvern allows for the generation of multimodal outputs, integrating images, tables, and text with supporting references in a unified report. Additionally, a particular focus is placed on the grounding of the content, with the implementation of a claims auto-revision stage. We conduct a human evaluation study to assess the quality of our proposed framework. The results show that the figures' informativeness is perceived as superior to that of a recent baseline in 87% of cases. Furthermore, Wyvern's reports are rated as more useful than those produced by three alternative methods in 63% to 100% of instances. We also carry out automatic evaluations showing that Wyvern gains up to 2.3$\\times$ in citation recall and 1.6$\\times$ in citation precision with respect to the baselines.",
-      "arxiv_id": "2608.14446",
-      "arxiv_version": "v1",
-      "authors": [
-        "Beatrice Alessandra Motetti",
-        "Emilien Guandalino",
-        "Daniele Jahier Pagliari",
-        "Alessio Burrello",
-        "Lorenz K. Müller",
-        "Konstantin Berestizshevsky",
-        "Lukas Cavigelli"
-      ],
-      "external_ids": [
-        "arxiv:2608.14446"
-      ],
-      "first_seen_at": "2026-08-17T10:23:04+08:00",
-      "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-08-17T10:23:04+08:00",
-      "matched_keywords": [
-        "agent harness"
-      ],
-      "published": "2026-08-14",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "indexed",
-      "title": "Wyvern: An Agentic Framework for Generating Grounded Multimodal Reports",
-      "url": "https://arxiv.org/abs/2608.14446"
-    },
-    {
-      "abstract": "The advent of agentic AI is driving an unprecedented growth in data centre expansion. Using state-of-the-art life cycle assessment models for operational and embodied emissions from AI servers, we estimate the ensuing growth in overall CO2 emissions of AI data centres. The main contribution of this work is a rigorous quantification of emissions arising from projected AI data centre expansion using scenarios by the IEA and McKinsey. We show that the scenarios promoted by the AI industry would result in a dramatic rise in overall emissions and that the embodied carbon component is considerable.",
-      "arxiv_id": "2608.14421",
-      "arxiv_version": "v1",
-      "authors": [
-        "Wim Vanderbauwhede"
-      ],
-      "external_ids": [
-        "arxiv:2608.14421"
-      ],
-      "first_seen_at": "2026-08-17T10:23:04+08:00",
-      "last_seen_at": "2026-08-17T10:23:04+08:00",
-      "matched_keywords": [
-        "agent harness"
-      ],
-      "published": "2026-08-14",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "new",
-      "title": "Estimating the growth in emissions from AI data centres",
-      "url": "https://arxiv.org/abs/2608.14421"
-    },
-    {
-      "abstract": "The alternating direction method of multipliers (ADMM), as a landmark algorithm, has attracted tremendous research attention and extensive practical applications over the past two decades. It is well known that, although the two-block ADMM enjoys well-established theoretical convergence guarantees, its direct extension to the three-block case may fail to converge, as demonstrated by existing counterexamples [5]. However, to the best of our knowledge, the case in which the third constraint block is the identity remains unresolved: the existing literature gives neither a general convergence proof nor a counterexample for this subclass. In this paper, we give a negative answer: direct three-block ADMM may fail even when the first two blocks are strongly convex quadratics. Using Codex with GPT-5.6 Sol, we construct an explicit rational counterexample candidate and verify it along a piecewise-affine reduction path; exact checks show that direct three-block ADMM on this instance produces a bounded nonconvergent orbit of period 66. Within the same Codex workflow, we further guide a study of multiplier relaxation and clarify when convergence can be restored at the fixed-instance and class levels: a problem-dependent small dual step can restore convergence, whereas no positive relative step works uniformly over the whole class. Furthermore, we also test the recent Kimi Code with Kimi K3 model without the Codex candidate or project-specific route guidance; along a different path it produces an exact locally attracting period-23 certificate, convertible to an equivalent all-identity instance. The comparison suggests that different research-harness configurations can shape the mathematical objects explored and the certificates pursued.",
-      "arxiv_id": "2608.14396",
-      "arxiv_version": "v1",
-      "authors": [
-        "Kenan Xu",
-        "Xiangfeng Wang"
-      ],
-      "external_ids": [
-        "arxiv:2608.14396"
-      ],
-      "first_seen_at": "2026-08-17T10:23:04+08:00",
-      "last_seen_at": "2026-08-17T10:23:04+08:00",
-      "matched_keywords": [
-        "\"LLM agent\" harness",
-        "test-time harness evolution"
-      ],
-      "published": "2026-08-14",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "new",
-      "title": "AI-Assisted Discovery and Construction of a Counterexample to the Convergence of Three-Block ADMM with the Identity Matrix as its Third Constraint Block",
-      "url": "https://arxiv.org/abs/2608.14396"
-    },
-    {
-      "abstract": "Many real-world tasks require LLM agents to interact with their environments over long execution horizons. Errors that occur early in execution may propagate through both the agent context and environment state, and their effects may be difficult to reverse through subsequent actions. Existing methods mainly seek to reduce such errors through plan refinement and safety checks but provide little support after errors occur. To enable recovery during long-horizon execution, we present AgentRewind, a runtime recovery framework that records aligned checkpoints of the agent context and controlled environment, allowing agents to return to an earlier state and resume execution with information from previous attempts. We also construct MettleBench, a benchmark for evaluating task completion and partial progress on long-horizon engineering assignments containing a series of related requirements. Experiments across tasks, multiple models, execution strategies, and agent harnesses show that AgentRewind improves task success rate and average checklist progress over the compared baselines.",
-      "arxiv_id": "2608.14380",
-      "arxiv_version": "v1",
-      "authors": [
-        "Yu Zhuang",
-        "Kefei Chen",
-        "Yitong Duan",
-        "Shuxin Zheng",
-        "Jian Li",
-        "Xu-Yao Zhang"
-      ],
-      "external_ids": [
-        "arxiv:2608.14380"
-      ],
-      "first_seen_at": "2026-08-17T10:23:04+08:00",
-      "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-08-17T10:23:04+08:00",
-      "matched_keywords": [
-        "\"LLM agent\" harness",
-        "test-time harness evolution"
-      ],
-      "published": "2026-08-14",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "indexed",
-      "title": "AgentRewind: Recoverable Execution for Long-Horizon LLM Agents",
-      "url": "https://arxiv.org/abs/2608.14380"
-    },
-    {
-      "abstract": "Enabling LLM agents to sustain productive, stable, and goal-aligned research over extended horizons is a central challenge for autonomous machine learning and scientific discovery, as progress hinges on continuously managing evolving state, exploration decisions, and computational resources. Pioneering autoresearch agents, despite great success, still lack mechanisms for continuity, recovery from dead ends, and value-driven compute allocation, which inherently undermines overall search efficiency, wastes computational resources, and lowers the chance of ultimate success. To bridge this gap, we introduce ScienceFlow, an end-to-end autoresearch agent framework that organizes long-horizon research work into research segments grounded in executable workspaces. It represents research progress as recoverable executable states, enabling efficient exploration, revision, and execution. Transitions between research segments are governed by Executable-State Transition through Re-Anchoring (ESTRA), which selects either the live state or an archived state as the next anchor and determines whether to continue or redirect the research trajectory. An evidence-aware execution controller allocates resources to physical jobs based on resource availability, remaining budget, and validated progress. We evaluate ScienceFlow on tasks spanning machine learning, scientific modeling, and mathematical optimization. Results on diverse long-horizon benchmarks demonstrate its ability to sustain effective research processes, highlighted by a SOTA 70.22 percent Any-Medal score on the full MLE-bench within a 24-hour budget, outperforming prior reported results by 4.92 percentage points. The efficacy of ScienceFlow further demonstrates that efficient state management, adaptive exploration, and objective-aligned execution are critical for scaling autonomous research beyond short-horizon interactions.",
-      "arxiv_id": "2608.14354",
-      "arxiv_version": "v1",
-      "authors": [
-        "Mingming Zhao",
-        "Jiqian Dong",
-        "Kangping Xu",
-        "Zadid Hasan",
-        "Chengrui Fan",
-        "Shan Jiang",
-        "Shuai Mao",
-        "Ting Lingya",
-        "Linyi Zou",
-        "Tailin Zhou",
-        "Yun Hin Chan",
-        "Wenkai Zhang",
-        "Zhanhong Zhou",
-        "Guowei Huang",
-        "Hongliang Li",
-        "Wenjing Cun",
-        "Zhitang Chen",
-        "Mingxuan Yuan",
-        "Yanhui Geng"
-      ],
-      "external_ids": [
-        "arxiv:2608.14354"
-      ],
-      "first_seen_at": "2026-08-17T10:23:04+08:00",
-      "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-08-17T10:23:04+08:00",
-      "matched_keywords": [
-        "\"LLM agent\" harness"
-      ],
-      "published": "2026-08-14",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "indexed",
-      "title": "ScienceFlow: A long-horizon agent for ML research, scientific discovery and beyond",
-      "url": "https://arxiv.org/abs/2608.14354"
-    },
-    {
-      "abstract": "We study proactive exploration in LLM agents, i.e., the ability to explore an environment to acquire information that improves future decision-making. In this regard, we first identify two fundamental bottlenecks that hinder this capability and then propose \\ours, a novel method designed to instill and refine proactive exploration. Specifically, \\ours\\ consists of two components: (1) Exploratory Data Construction, which synthesizes exploration-rich trajectories to mitigate the hindsight bias of standard demonstrations; and (2) RL Optimization with Contrastive Signal Guidance, which leverages contrastive trajectory pairs to distinguish productive exploration from redundant wandering. Extensive experiments demonstrate the effectiveness of \\ours\\ and provide insights into the characteristics of proactive exploration. Our code is available at: https://github.com/GuanZhizhao/SAFARI.",
-      "arxiv_id": "2608.14339",
-      "arxiv_version": "v1",
-      "authors": [
-        "Zhizhao Guan",
-        "Chen Huang",
-        "Ziming Liu",
-        "Hongru Liang",
-        "Wenqiang Lei",
-        "See-Kiong Ng",
-        "Tat-Seng Chua",
-        "Anthony G Cohn"
-      ],
-      "external_ids": [
-        "arxiv:2608.14339"
-      ],
-      "first_seen_at": "2026-08-17T10:23:04+08:00",
-      "last_seen_at": "2026-08-17T10:23:04+08:00",
-      "matched_keywords": [
-        "\"LLM agent\" harness"
-      ],
-      "published": "2026-08-14",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "new",
-      "title": "Clearing the Fog: Towards Installing and Refining Proactive Exploration Capabilities in LLM Agents",
-      "url": "https://arxiv.org/abs/2608.14339"
-    },
-    {
-      "abstract": "Time series analysis in high-stakes domains relies on recurring data releases, where new observations can alter the evidence base and the validity of later conclusions. Existing time series QA benchmarks mostly rely on fixed snapshots, leaving temporal validity and cutoff-aware evidence use unevaluated. We introduce TimeSage-EV, a live benchmark for agentic time series analysis in evolving environments. It tracks 60 real institutional scenarios across 6 domains, comprising 1,485 scenario-period QA pairs from Feb 2023 to May 2026 and spanning monthly, weekly, daily, and irregular release cadences. At each period, large language model (LLM) agents receive time series data and source reports, while the withheld target release provides ground truth. TimeSage-EV evaluates state identification, data summarization, and outlook reasoning. Experiments with frontier LLM agents and TimeSage-1.0, a novel self-evolving agent with a reusable analytical skill library, reveal significant performance gaps across model tiers and recurring failures in temporal validity, exogenous context use, and adaptation. We release TimeSage-EV as a research resource with monthly updates, code, a leaderboard, and failure-mode analyses.",
-      "arxiv_id": "2608.14270",
-      "arxiv_version": "v1",
-      "authors": [
-        "Qingren Yao",
-        "Yaxuan Kong",
-        "Yuqi Nie",
-        "Yichen Li",
-        "Stefan Zohren",
-        "Anna Vettoruzzo",
-        "Qingsong Wen",
-        "Ming Jin",
-        "Joaquin Vanschoren"
-      ],
-      "external_ids": [
-        "arxiv:2608.14270"
-      ],
-      "first_seen_at": "2026-08-17T10:23:04+08:00",
-      "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-08-17T10:23:04+08:00",
-      "matched_keywords": [
-        "\"LLM agent\" harness"
-      ],
-      "published": "2026-08-14",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "indexed",
-      "title": "TimeSage-EV: A Live Benchmark for Agentic Time Series Analysis in Evolving Environments",
-      "url": "https://arxiv.org/abs/2608.14270"
-    },
-    {
-      "abstract": "Legacy and legacy-like enterprise systems often remain difficult to modernize because critical workflows expose limited programmable interfaces and still require manual GUI interaction. This paper reports a pre-deployment evaluation study motivated by the development of legacy-use, an industry-oriented framework for automating such workflows with multimodal LLM agents. During framework development, domain experts helped identify stateful workflows where successful demos are not sufficient: a failed agent run may still leave persistent invalid changes in business or healthcare records. We therefore evaluate computer-use agents using atomicity: a run should either complete the intended workflow correctly or fail without unintended persistent side effects. We construct a domain-expert-informed benchmark of 28 Windows GUI workflows, each specified with an initial state, goal state, and task-specific validator. We compare expert-crafted prompts with prompts generated from screen recordings of expert golden-path executions. Across six hosted computer-use agents, our results show that useful completion, safe failure, and non-atomic side effects are distinct operational profiles. We conclude that workflow capture, state validators, and atomicity-aware acceptance tests should be first-class requirements for AI-based legacy workflow automation.",
-      "arxiv_id": "2608.14131",
-      "arxiv_version": "v1",
-      "authors": [
-        "Thilo Reintjes",
-        "Sivajeet Chand",
-        "Derui Zhu",
-        "Sushant Kumar Pandey",
-        "Alexander Pretschner"
-      ],
-      "external_ids": [
-        "arxiv:2608.14131"
-      ],
-      "first_seen_at": "2026-08-17T10:23:04+08:00",
-      "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-08-17T10:23:04+08:00",
-      "matched_keywords": [
-        "\"LLM agent\" harness"
-      ],
-      "published": "2026-08-14",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "indexed",
-      "title": "LegacyWorld: Atomicity-Aware Evaluation of GUI Agents for Legacy Workflows",
-      "url": "https://arxiv.org/abs/2608.14131"
-    },
-    {
-      "abstract": "Autonomous LLM agents are increasingly deployed in complex real-world workflows, yet they remain vulnerable to runtime behavioral drift, a silent deviation from the original task that can lead to irreversible side effects on external systems. Existing approaches address drift at the prompt level but lack structured mechanisms for step-level detection, risk assessment, and recovery decision. Because the main task-executing agent is often a large and expensive model that cannot be re-trained on every deployment, this work targets a plug-and-play recovery module instead. It introduces a graph-based framework in which a single small language model is trained via reinforcement learning to specialize at each node of a recovery graph, external to the main agent. Each node has a precise role\\,: drift classification, operation detection, risk evaluation, or final decision and the model learns to produce structured XML-formatted reasoning adapted to that role. Training combines rule-based structural rewards with an LLM-as-judge semantic-quality signal, so that the model is graded both on how it answers (schema and length) and on what it says. Experiments on the public AppWorld benchmark show that the method generally exploits information about the suspected drift onset to issue correct recovery decisions using a small language model. In addition, the trained small language model reliably respects the prescribed output schema and produces semantically appropriate content in each field according to its assigned node role.",
-      "arxiv_id": "2608.14109",
-      "arxiv_version": "v1",
-      "authors": [
-        "Ismail El Hamraoui",
-        "Sagar Jose",
-        "Nicolas Bureau",
-        "Robert Plana"
-      ],
-      "external_ids": [
-        "arxiv:2608.14109"
-      ],
-      "first_seen_at": "2026-08-17T10:23:04+08:00",
-      "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-08-17T10:23:04+08:00",
-      "matched_keywords": [
-        "\"LLM agent\" harness"
-      ],
-      "published": "2026-08-14",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "indexed",
-      "title": "A Graph-Based Reinforcement Learning Framework for Structured Drift Diagnosis and Recovery in Autonomous LLM Agents",
-      "url": "https://arxiv.org/abs/2608.14109"
-    },
-    {
-      "abstract": "Skills have emerged as a practical and effective approach for enhancing LLM agents at inference time through structured packages of knowledge. However, existing evaluations largely measure whether skills improve aggregated task success, leaving a more fundamental question underexplored: \\emph{\\textbf{When do skills help, why do they work, and where do they fail?}} Through controlled experiments across various benchmarks, agent harnesses and LLMs, we isolate the effects of representation, outcome annotation, retrieval difficulty, and cross-framework robustness of skills. To further answer this question, we design a contrastive study that combines controlled quantitative experiments with paired trajectory analysis. We normalize 8,135 trial records from controlled experiments and retain 238 valid unique labels from 240 open-coded records. We consolidate these observations into a taxonomy of three high-level categories and twelve skill-use modes: skills work when noisy trajectories become procedural anchors that stabilize execution. Skills improve over Workflow Memory by 6.06 points in matched comparisons. Procedural anchoring accounts for 65.7\\% of skill cases, versus 4.5\\% for explicit knowledge injection, showing that skills stabilize action rather than inject missing facts. Retrieval is a separate bottleneck: as pools grow from 5 to 100, actual-use precision falls from 29.6\\% to 3.3\\%. Confusable distractors impair offline identification, yet downstream success remains stable; exact ground-truth invocation is neither sufficient nor necessary. Skills fail under brittle assumptions, incompatible contexts, or insufficient adaptation. These findings move evaluation beyond aggregate success rates and guide reliable self-evolving agents.",
-      "arxiv_id": "2608.14036",
-      "arxiv_version": "v1",
-      "authors": [
-        "Zhiyuan Jiang",
-        "Fangrui Huang",
-        "Hanwen Xing",
-        "Xander Wu",
-        "Yipeng Gao",
-        "Rui Cao",
-        "Mengdi Wang",
-        "Shilong Liu",
-        "Yijiang Li"
-      ],
-      "external_ids": [
-        "arxiv:2608.14036"
-      ],
-      "first_seen_at": "2026-08-17T10:23:04+08:00",
-      "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-08-17T10:23:04+08:00",
-      "matched_keywords": [
-        "\"LLM agent\" harness"
-      ],
-      "published": "2026-08-14",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "indexed",
-      "title": "Demystifying Agent Skills: Why They Work-Until They Don't",
-      "url": "https://arxiv.org/abs/2608.14036"
-    },
-    {
-      "abstract": "Understanding tens-of-minutes surgical videos requires long-horizon temporal reasoning, answering what happens before, after, or across stages of a procedure by grounding the question in visual evidence spread across time. Existing approaches handle this poorly: a one-shot vision-language model (VLM) compresses the whole procedure to fit its context window and loses the detail a \"before\" or \"after\" question depends on, while video agents that train the model where to look are data-hungry and transfer poorly to out-of-domain surgery. We build an agent harness that separates reasoning from perception and improves by evolving context rather than optimizing weights. A text-only orchestrator plans which evidence to gather and issues an auditable sequence of tool calls, while frozen vision-language sub-agents execute each call over the pixels, viewing, cropping, inspecting frames, and retrieving external knowledge. We further propose a gradient-free, reward-gated Heuristic Skill Distillation loop that mines the agent's own low-scoring traces and keeps a candidate skill only when it raises a validation reward, yielding reusable retrieval skills, notably directed re-look. Growing an external skill library rather than tuning weights, the loop adapts from only about 100 labeled examples, far fewer than supervised or reinforcement fine-tuning requires. To evaluate this agent, we introduce MedClawBench, a de-leaked, doctor-grounded benchmark of 1,123 questions over self-built long neurosurgery recordings and a held-out public lecture-video test split. Across both datasets and all four evaluation dimensions, our agent consistently outperforms one-shot VLMs and general video-agent frameworks, with the largest gains on the long, out-of-domain neurosurgery videos. Project page: https://fyycs.github.io/medclaw/.",
-      "arxiv_id": "2608.14015",
-      "arxiv_version": "v1",
-      "authors": [
-        "Yingying Fan",
-        "Penghui Du",
-        "Leyan Zhu",
-        "Runze He",
-        "Zimeng Wu",
-        "Yuxuan Zhang",
-        "Liang Chen",
-        "Jiahao Xie",
-        "Jiangtang Wang",
-        "Shuai Shao",
-        "Anchao Yang",
-        "Yutong Bai",
-        "Yan Wang"
-      ],
-      "external_ids": [
-        "arxiv:2608.14015"
-      ],
-      "first_seen_at": "2026-08-17T10:23:04+08:00",
-      "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-08-17T10:23:04+08:00",
-      "matched_keywords": [
-        "\"LLM agent\" harness"
-      ],
-      "published": "2026-08-14",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "indexed",
-      "title": "MedClaw: Heuristic Agent Harness for Long-Horizon Surgical Video Reasoning",
-      "url": "https://arxiv.org/abs/2608.14015"
-    },
-    {
-      "abstract": "Nanbeige4.2-3B is a 3B-parameter agentic model built around a Looped Transformer (LT) that reuses one stack of layers for a second forward pass, adding effective depth without additional parameters. Evaluated on Apple Silicon (MPS), we identify five independent bugs which prevent the released checkpoint from running via Hugging Face transformers out of the box (including a silently-zeroed RoPE buffer and calls to removed transformers cache APIs). Furthermore, we show that fixing these bugs is still not sufficient for agentic tasks, due to the LT's layer-reuse strategy (which effectively doubles peak attention memory) used to achieve parameter efficiency. We thus introduce a chunked-prefill strategy which alleviates the incurred memory-capacity penalty, extending allowable context width by $2.7 \\times$ on 32~GiB shared memory. However, even with the reduced memory overhead, we show that patches are required to render Nanbeige4.2-3B usable; resolving both system prompt and MPS-native memory bugs finally allows reliable evaluation on standard MCP and tool-calling benchmarks. On a subset of MCPMark, the debugged model completes up to 30\\% of real agentic tasks (up from the original's 0\\%), while, on BFCL, it is near-perfect at single tool calls (yet fails the majority of multi-tool tests). We release the patched checkpoint, system prompt optimizer, and evaluation harnesses at https://github.com/johnhalloran321/Nanbeige4.2-3B-mps-fix.",
-      "arxiv_id": "2608.13987",
-      "arxiv_version": "v1",
-      "authors": [
-        "John T. Halloran"
-      ],
-      "external_ids": [
-        "arxiv:2608.13987"
-      ],
-      "first_seen_at": "2026-08-17T10:23:04+08:00",
-      "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-08-17T10:23:04+08:00",
-      "matched_keywords": [
-        "\"LLM agent\" harness"
-      ],
-      "published": "2026-08-14",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "indexed",
-      "title": "Nanbeige4.2-3B on Apple Silicon: Fixing Deployment Bugs and Decreasing Looped Transformer Memory Overhead",
-      "url": "https://arxiv.org/abs/2608.13987"
-    },
-    {
-      "abstract": "Scaling agent capability has largely focused on improving the model, yet an interactive agent acts through a runtime harness that mediates context, tools, control flow, and stopping. The harness shapes both what a model can accomplish and the trajectories from which it learns. This coupling motivates model-harness co-evolution for recursive self-improvement: build harnesses for a fixed model, update the model from verified sibling trajectories, and rebuild the harnesses as model capabilities change. Realizing this loop requires a controlled way to evolve harnesses while preserving intervention identity and effect. We present HELIX, a source-traceable substrate for harness evolution. HELIX decomposes agent systems into typed ports, reusable atoms, recipes, product shells, and runtime policies. It makes interventions explicit and auditable while retaining trajectories, test outcomes, and provenance. Harness evolution thus serves two linked roles: improving fixed-model execution and producing matched successes, regressions, near misses, and alternative solutions as data for subsequent model improvement. We evaluate HELIX in one evolution round on code repair. A 65-candidate portfolio discovers a fixed harness that improves task coverage by 4.0% over Pi, while the full portfolio exposes up to 58.0% more verified coverage through complementary sibling behavior. Selected candidates are assessed with repeated runs and the SWE-bench evaluator. A 200-slot sibling slice yields 438 verified SFT, critic, filter, and preference records. These results show how harness, model, and data form a feedback system: harness evolution expands current capability and creates learning signal for the next model; model updates motivate the next round of harness evolution. HELIX provides an auditable interface for studying this recursive process. Code is available at https://github.com/HKUDS/HELIX.",
-      "arxiv_id": "2608.13951",
-      "arxiv_version": "v1",
-      "authors": [
-        "Tianyu Fan",
-        "Chao Huang"
-      ],
-      "external_ids": [
-        "arxiv:2608.13951"
-      ],
-      "first_seen_at": "2026-08-17T10:23:04+08:00",
-      "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-08-17T10:23:04+08:00",
-      "matched_keywords": [
-        "\"LLM agent\" harness"
-      ],
-      "published": "2026-08-14",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "indexed",
-      "title": "HELIX: Model-Harness Co-evolution for Recursive Self-Improvement",
-      "url": "https://arxiv.org/abs/2608.13951"
     }
   ],
   "last_run": {
-    "at": "2026-10-13T15:28:58+08:00",
+    "at": "2026-10-14T13:56:57+08:00",
     "sources": [
       "arxiv",
       "semanticscholar",
@@ -15429,10 +15424,10 @@
       "test-time harness evolution"
     ],
     "fetched": 55,
-    "merged": 27,
-    "new": 4
+    "merged": 29,
+    "new": 20
   },
   "schema_version": 1,
   "topic": "agent harness",
-  "updated_at": "2026-10-13T15:28:58+08:00"
+  "updated_at": "2026-10-14T13:56:57+08:00"
 }
