@@ -15354,7 +15354,7 @@
     }
   ],
   "last_run": {
-    "at": "2026-10-16T13:37:12+08:00",
+    "at": "2026-10-17T13:30:48+08:00",
     "sources": [
       "arxiv",
       "semanticscholar",
@@ -15365,11 +15365,11 @@
       "\"LLM agent\" harness",
       "test-time harness evolution"
     ],
-    "fetched": 45,
-    "merged": 15,
-    "new": 15
+    "fetched": 0,
+    "merged": 0,
+    "new": 0
   },
   "schema_version": 1,
   "topic": "agent harness",
-  "updated_at": "2026-10-16T13:37:12+08:00"
+  "updated_at": "2026-10-17T13:30:48+08:00"
 }
