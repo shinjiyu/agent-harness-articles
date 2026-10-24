@@ -1,6 +1,38 @@
 {
   "candidates": [
     {
+      "source": "semanticscholar",
+      "arxiv_id": "2610.22466",
+      "doi": "",
+      "title": "Harness-Delta Attribution: Dissecting Gains From Harness Evolution",
+      "authors": [
+        "Wen-Xuan Ding",
+        "Qin Lu",
+        "Chang-Long Yu",
+        "Sha Li",
+        "Shuo-Wei Jin",
+        "Xin Liu",
+        "Zhen-Yu Shi",
+        "Greg Durrett"
+      ],
+      "published": "2026-10-15",
+      "url": "https://arxiv.org/abs/2610.22466",
+      "abstract": "Harness evolution automatically optimizes the prompts, skills, tools, and orchestration code around a fixed-weight model, offering a way to improve agentic systems without updating model weights. The agent harness is iteratively optimized to achieve higher performance on the search set. But how much of this gain reflects benchmark-specific overfitting or additional inference-time compute, and how much may generalize beyond the search set? In this work, we introduce Harness-Delta Attribution (HDA), an evaluation protocol that dissects an evolution gain into artifact-driven overfitting, gains explained by test-time scaling, and the remainder, which gives an upper bound on residual generalizable improvement. We apply HDA to 11 executor models and three harness-evolution frameworks across math, coding, creativity, and agentic tasks. In 21 of these settings that show statistically significant search-set gains, we find that a large share of the improvement is explained by overfitting or test-time scaling. Specifically, among these 21 settings, overfitting and test-time scaling account for 54% and 14% of the gain on average; their combined share exceeds 50% in 14 settings. The residual and held-out transfer vary substantially across tasks, models, and frameworks. Importantly, search-set gains often fail to transfer to held-out tasks, and provide limited evidence that they will persist under practical distribution shifts. Moreover, validation-based signals are insufficient to prevent overfitting. These results motivate attribution-aware evaluation in future harness evolution research.",
+      "external_ids": [
+        "s2:eccc0716bef086e99e5430e9b4c72fcd3d817e60",
+        "arxiv:2610.22466"
+      ],
+      "sources": [
+        "semanticscholar"
+      ],
+      "matched_keywords": [
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-24T13:31:59+08:00",
+      "last_seen_at": "2026-10-24T13:31:59+08:00"
+    },
+    {
       "source": "arxiv",
       "arxiv_id": "2610.31651",
       "arxiv_version": "v1",
@@ -31,7 +63,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-23T13:51:27+08:00",
-      "last_seen_at": "2026-10-23T13:51:27+08:00"
+      "last_seen_at": "2026-10-24T13:31:59+08:00"
     },
     {
       "source": "arxiv",
@@ -62,7 +94,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-23T13:51:27+08:00",
-      "last_seen_at": "2026-10-23T13:51:27+08:00"
+      "last_seen_at": "2026-10-24T13:31:59+08:00"
     },
     {
       "source": "arxiv",
@@ -89,7 +121,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-23T13:51:27+08:00",
-      "last_seen_at": "2026-10-23T13:51:27+08:00"
+      "last_seen_at": "2026-10-24T13:31:59+08:00"
     },
     {
       "source": "arxiv",
@@ -117,7 +149,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-23T13:51:27+08:00",
-      "last_seen_at": "2026-10-23T13:51:27+08:00"
+      "last_seen_at": "2026-10-24T13:31:59+08:00"
     },
     {
       "source": "arxiv",
@@ -145,7 +177,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-23T13:51:27+08:00",
-      "last_seen_at": "2026-10-23T13:51:27+08:00"
+      "last_seen_at": "2026-10-24T13:31:59+08:00"
     },
     {
       "source": "arxiv",
@@ -173,7 +205,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-23T13:51:27+08:00",
-      "last_seen_at": "2026-10-23T13:51:27+08:00"
+      "last_seen_at": "2026-10-24T13:31:59+08:00"
     },
     {
       "source": "arxiv",
@@ -203,7 +235,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-23T13:51:27+08:00",
-      "last_seen_at": "2026-10-23T13:51:27+08:00"
+      "last_seen_at": "2026-10-24T13:31:59+08:00"
     },
     {
       "source": "arxiv",
@@ -231,7 +263,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-23T13:51:27+08:00",
-      "last_seen_at": "2026-10-23T13:51:27+08:00"
+      "last_seen_at": "2026-10-24T13:31:59+08:00"
     },
     {
       "source": "arxiv",
@@ -257,7 +289,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-23T13:51:27+08:00",
-      "last_seen_at": "2026-10-23T13:51:27+08:00"
+      "last_seen_at": "2026-10-24T13:31:59+08:00"
     },
     {
       "source": "arxiv",
@@ -282,7 +314,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-23T13:51:27+08:00",
-      "last_seen_at": "2026-10-23T13:51:27+08:00"
+      "last_seen_at": "2026-10-24T13:31:59+08:00"
     },
     {
       "source": "arxiv",
@@ -310,7 +342,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-23T13:51:27+08:00",
-      "last_seen_at": "2026-10-23T13:51:27+08:00"
+      "last_seen_at": "2026-10-24T13:31:59+08:00"
     },
     {
       "source": "arxiv",
@@ -341,7 +373,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-23T13:51:27+08:00",
-      "last_seen_at": "2026-10-23T13:51:27+08:00"
+      "last_seen_at": "2026-10-24T13:31:59+08:00"
     },
     {
       "source": "arxiv",
@@ -374,7 +406,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-23T13:51:27+08:00",
-      "last_seen_at": "2026-10-23T13:51:27+08:00"
+      "last_seen_at": "2026-10-24T13:31:59+08:00"
     },
     {
       "source": "arxiv",
@@ -403,7 +435,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-23T13:51:27+08:00",
-      "last_seen_at": "2026-10-23T13:51:27+08:00"
+      "last_seen_at": "2026-10-24T13:31:59+08:00"
     },
     {
       "source": "arxiv",
@@ -433,7 +465,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-23T13:51:27+08:00",
-      "last_seen_at": "2026-10-23T13:51:27+08:00"
+      "last_seen_at": "2026-10-24T13:31:59+08:00"
     },
     {
       "source": "arxiv",
@@ -463,7 +495,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-23T13:51:27+08:00",
-      "last_seen_at": "2026-10-23T13:51:27+08:00"
+      "last_seen_at": "2026-10-24T13:31:59+08:00"
     },
     {
       "source": "arxiv",
@@ -488,7 +520,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-23T13:51:27+08:00",
-      "last_seen_at": "2026-10-23T13:51:27+08:00"
+      "last_seen_at": "2026-10-24T13:31:59+08:00"
     },
     {
       "source": "arxiv",
@@ -1562,7 +1594,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-21T13:49:57+08:00",
-      "last_seen_at": "2026-10-21T13:49:57+08:00"
+      "last_seen_at": "2026-10-24T13:31:59+08:00"
     },
     {
       "source": "arxiv",
@@ -2814,7 +2846,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-19T13:53:41+08:00",
-      "last_seen_at": "2026-10-20T13:46:36+08:00"
+      "last_seen_at": "2026-10-24T13:31:59+08:00"
     },
     {
       "source": "arxiv",
@@ -5680,7 +5712,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-10T14:48:13+08:00",
-      "last_seen_at": "2026-10-18T13:32:32+08:00"
+      "last_seen_at": "2026-10-24T13:31:59+08:00"
     },
     {
       "source": "arxiv",
@@ -6624,7 +6656,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-07T14:59:34+08:00",
-      "last_seen_at": "2026-10-20T13:46:36+08:00"
+      "last_seen_at": "2026-10-24T13:31:59+08:00"
     },
     {
       "source": "semanticscholar",
@@ -7184,7 +7216,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-03T14:11:04+08:00",
-      "last_seen_at": "2026-10-18T13:32:32+08:00"
+      "last_seen_at": "2026-10-24T13:31:59+08:00"
     },
     {
       "source": "semanticscholar",
@@ -7222,7 +7254,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-10-03T14:11:04+08:00",
-      "last_seen_at": "2026-10-18T13:32:32+08:00"
+      "last_seen_at": "2026-10-24T13:31:59+08:00"
     },
     {
       "source": "arxiv",
@@ -13045,7 +13077,7 @@
       ],
       "first_seen_at": "2026-09-02T13:34:02+08:00",
       "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-10-20T13:46:36+08:00",
+      "last_seen_at": "2026-10-24T13:31:59+08:00",
       "matched_keywords": [
         "\"LLM agent\" harness"
       ],
@@ -15401,44 +15433,10 @@
       "status": "indexed",
       "title": "Tunable Tool-Call Rates in LLM Agents via Representation Steering",
       "url": "https://arxiv.org/abs/2608.25198"
-    },
-    {
-      "abstract": "Recursive self-improvement (RSI) remains hard in long-horizon tasks, where growing histories obscure the task state and misalign skill invocation. We introduce Recuris, a recursive Experiential-Working Memory architecture for long-horizon agent harnesses, in which Working Memory tracks task progress and guides skill selection from Experiential Memory, grounding skill use in current needs rather than the full history. This coupling also turns execution into structured evidence that localizes failures to specific memory components. Across tasks, a fixed Meta-Agent turns that evidence into localized, validation-gated updates to Skill Memory that reshape execution and yield new evidence, forming a bounded recursive memory-evolution loop. Across four long-horizon benchmarks and ten models, Recuris improves task success in 35 of the 37 completed model-benchmark pairs, carrying frontier models to SOTA-level task success: on tau-bench it adds +17.8 points to GPT-5.6 Sol and +15.6 to Claude Opus 5, taking Opus 5 to 87.9%, and +16.6/+13.5 points on Qwen3.6-27B/35B on SkillFlow. The advantage widens as the interaction horizon grows, to +32.2 points on the longest tasks, and common long-horizon failures fall by up to 80%. These results position recursively evolving memory as a scalable foundation for RSI, enabling agents to continuously transform accumulated experience into increasingly effective long-horizon behavior. Code: https://github.com/Gen-Verse/Recuris",
-      "arxiv_id": "2608.24876",
-      "arxiv_version": "v1",
-      "authors": [
-        "Zhaochen Yu",
-        "Yingcheng Wu",
-        "Zhenfei Yin",
-        "Kaiyuan Chen",
-        "Zhe Zhao",
-        "Mengdi Wang",
-        "Shuicheng Yan",
-        "Ling Yang"
-      ],
-      "external_ids": [
-        "arxiv:2608.24876"
-      ],
-      "first_seen_at": "2026-08-26T10:27:34+08:00",
-      "indexed_at": "2026-09-13T17:46:28+08:00",
-      "last_seen_at": "2026-08-26T10:27:34+08:00",
-      "matched_keywords": [
-        "agent harness",
-        "\"LLM agent\" harness",
-        "test-time harness evolution"
-      ],
-      "published": "2026-08-25",
-      "source": "arxiv",
-      "sources": [
-        "arxiv"
-      ],
-      "status": "indexed",
-      "title": "Recursive Experiential-Working Memory Evolution for Long-Horizon Agent Harnesses",
-      "url": "https://arxiv.org/abs/2608.24876"
     }
   ],
   "last_run": {
-    "at": "2026-10-23T13:51:27+08:00",
+    "at": "2026-10-24T13:31:59+08:00",
     "sources": [
       "arxiv",
       "semanticscholar",
@@ -15449,11 +15447,11 @@
       "\"LLM agent\" harness",
       "test-time harness evolution"
     ],
-    "fetched": 45,
-    "merged": 17,
-    "new": 17
+    "fetched": 65,
+    "merged": 35,
+    "new": 1
   },
   "schema_version": 1,
   "topic": "agent harness",
-  "updated_at": "2026-10-23T13:51:27+08:00"
+  "updated_at": "2026-10-24T13:31:59+08:00"
 }
