@@ -1,0 +1,575 @@
+{
+  "date": "2026-10-26",
+  "run": {
+    "at": "2026-10-26T13:52:59+08:00",
+    "sources": [
+      "arxiv",
+      "semanticscholar",
+      "dblp"
+    ],
+    "keywords": [
+      "agent harness",
+      "\"LLM agent\" harness",
+      "test-time harness evolution"
+    ],
+    "fetched": 45,
+    "merged": 18,
+    "new": 18
+  },
+  "new_candidates": [
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.32978",
+      "arxiv_version": "v1",
+      "title": "SceneBloom: Agentic Indoor Environment Generation with Realistic and Diverse Layouts for Embodied Learning",
+      "authors": [
+        "Yuhan Liu",
+        "Lianhui Qin",
+        "Shenji Wan"
+      ],
+      "published": "2026-10-23",
+      "url": "https://arxiv.org/abs/2610.32978",
+      "abstract": "Training generalizable embodied agents requires realistic, varied, and simulation-ready indoor environments. Language-guided methods support semantic planning and object-level reasoning, but precise spatial grounding remains difficult. Visual generative models offer rich priors over plausible arrangements, yet their outputs require geometric reasoning to become physically valid 3D scenes. We introduce SceneBloom, an agentic framework that combines visual layout sampling with contract-guided 3D compilation. A hierarchical sampler uses diffusion priors to generate furniture arrangements within functional zones. A compiler then uses relations extracted from each proposal to guide geometric fitting and local pose correction. Across five room types, SceneBloom attains the highest visual quality and physical stability among the compared methods and is the only method with no detected mesh collisions and out-of-bounds objects. Its layouts are also closer to the distribution of real rooms than those of all compared baselines. Object navigation policies trained in these realistic scenes achieve a higher success rate in held-out real scans than those trained on an equal number of real training scans. Code is available at https://github.com/Tinaliu0123/scenebloom.",
+      "external_ids": [
+        "arxiv:2610.32978"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-26T13:52:59+08:00",
+      "last_seen_at": "2026-10-26T13:52:59+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.32965",
+      "arxiv_version": "v1",
+      "title": "RynnUnify: Towards Unified Embodied Brain",
+      "authors": [
+        "Minghao Zhu",
+        "Bohan Hou",
+        "Kun Xiang",
+        "Zixuan Wang",
+        "Yinzhou Tang",
+        "Yifei Yang",
+        "Zhikai Wang",
+        "Tianyi Zhang",
+        "Kehan Li",
+        "Haoyu Zhao",
+        "Siteng Huang",
+        "Leigang Qu",
+        "Sicong Leng",
+        "Dongchi Huang",
+        "Mingxiu Chen",
+        "Shijian Lu",
+        "Yue Wang",
+        "Xiaodan Liang",
+        "Zhenyu Zeng",
+        "Deli Zhao",
+        "Chengju Liu",
+        "Jianfei Yang",
+        "Xin Li"
+      ],
+      "published": "2026-10-23",
+      "url": "https://arxiv.org/abs/2610.32965",
+      "abstract": "We introduce RynnUnify, a 16B unified embodied model that combines strong embodied understanding with long-horizon visual planning through interleaved video--language reasoning. With capabilities spanning spatial reasoning, physical prediction, and grounding, RynnUnify connects an understanding of the physical world with visual anticipation of how it evolves across successive subtasks. Building on these capabilities, we further develop an agentic extension through reinforcement learning to selectively use video predictions for reasoning about unobserved states and interaction outcomes. We also develop a world-action extension of the full RynnUnify model, translating its understanding and prediction capabilities into robot control. To evaluate these capabilities, we introduce Rynn-VP and Rynn-GEU for long-horizon visual planning and anticipatory reasoning. Experiments show that RynnUnify achieves the highest average embodied understanding score among the evaluated unified multimodal models and improves the Rynn-VP overall score by 9.75 points over Cosmos 3 Nano. Its agentic extension improves the Rynn-GEU average by 6.0 points over direct reasoning, while the world-action extension achieves 51.5\\% success on 20 selected composite RoboCasa365 tasks and 46.7\\% average success across three real-robot tasks. Together, these results establish RynnUnify as a shared foundation for embodied understanding, visual planning, and robot control, taking a step toward a unified embodied brain.",
+      "external_ids": [
+        "arxiv:2610.32965"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-26T13:52:59+08:00",
+      "last_seen_at": "2026-10-26T13:52:59+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.32926",
+      "arxiv_version": "v1",
+      "title": "ZENO: Nonlinear filtering with Zakai Equation Neural Operators",
+      "authors": [
+        "Aaditya Prasad",
+        "Steven W. Flavell",
+        "Brian DePasquale"
+      ],
+      "published": "2026-10-23",
+      "url": "https://arxiv.org/abs/2610.32926",
+      "abstract": "State inference and parameter learning for nonlinear filters is a core computation for scientific machine learning with varied applications in engineering and neuroscience. The unnormalized filtering distribution is governed by the Zakai equation, a stochastic partial differential equation (SPDE) that combines the forward Kolmogorov operator (known as the Fokker-Planck equation) with observed likelihood updates. Although solving these high-dimensional SPDEs is often impossible analytically and intractable numerically, advances in operator learning and physics-informed machine learning have made it feasible. Harnessing these advances, we introduce the Zakai Equation Neural Operator (ZENO), a model that optimizes a neural operator against a Zakai Equation based physics-informed loss to approximate the exact unnormalized filtering distribution for latent stochastic dynamical systems. We use this ZENO-inferred posterior distribution in an expectation-maximization (EM) framework to perform parameter learning and state inference. We demonstrate ZENO's ability to accurately infer the posterior distribution and learn its corresponding SDE parameters in three simulated stochastic dynamical systems (Double-Well bistable system, Van Der Pol (VDP) oscillator, and Lorenz system) and compare its performance against established methods for latent SDE inference and learning. We show that ZENO recovers previously observed limit cycles representing forward and backward locomotion from a whole-brain imaging dataset of immobilized \\textit{C. elegans} nematodes. ZENO is a novel approach to the problem of nonlinear filtering and dynamical inference through the lens of partial differential equations and operator theory.",
+      "external_ids": [
+        "arxiv:2610.32926"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-26T13:52:59+08:00",
+      "last_seen_at": "2026-10-26T13:52:59+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.32871",
+      "arxiv_version": "v1",
+      "title": "J-Comm: Jacobian-Guided Latent Communication between LLM Agents",
+      "authors": [
+        "Xiangwei Wang",
+        "Wei Wang",
+        "Sachith Seneviratne",
+        "Ken Chen",
+        "Yu Xia",
+        "Peng Wang",
+        "Saman Halgamuge"
+      ],
+      "published": "2026-10-23",
+      "url": "https://arxiv.org/abs/2610.32871",
+      "abstract": "Latent communication requires both an effective continuous reasoning process and an interface through which an external model can leverage its intermediate computation. We present J-Comm, a framework comprising two core components. First, a training-free Geometric Agreement for Latent Reasoning (GEAR) reweights token candidates over existing model embeddings, which monotonically optimizes geometric consensus among candidate tokens in embedding space at each step. Second, we introduce an H+J (Hidden-and-Jacobian) communication interface that gives the Receiver two complementary views of the Sender's reasoning. The H channel supplies continuous inputs derived from feedback distributions, while the J channel conveys intermediate-state cues in vocabulary-indexed Jacobian-lens coordinates. Intuitively, H provides inputs for the Receiver to reason from, while J offers additional guidance within its computation. The Receiver reconstructs these cues using its own dictionary and injects them into intermediate layers during prefill, enabling communication without sharing key-value caches or requiring identical model widths. In Qwen3-8B to Qwen3-4B communication, J-Comm achieves the highest mean score across seven benchmarks, including 94.80% on MATH500, 54.55% on GPQA-Diamond, 73.33% on AIME2024+2025, and 62.93% success on ALFWorld. Compared with TextMAS, it improves performance by 1.29-8.59 percentage points and reduces generated text tokens by 19.2-74.8%.",
+      "external_ids": [
+        "arxiv:2610.32871"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-26T13:52:59+08:00",
+      "last_seen_at": "2026-10-26T13:52:59+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.32851",
+      "arxiv_version": "v1",
+      "title": "Reimagining Enterprise RAG for Multi-Agent Systems: A Knowledge Layer That Organizes Before It Retrieves",
+      "authors": [
+        "Garima Agrawal",
+        "Prasun Das",
+        "Akshay Sarvade",
+        "Priyanka L",
+        "Minisha N",
+        "Sravani Joshna",
+        "Hemath Manivannan",
+        "Lavanya Korada",
+        "Sambhrit Pattanayak",
+        "Srashti Gupta",
+        "Siddu R",
+        "Prasad Kalyanasundaram"
+      ],
+      "published": "2026-10-23",
+      "url": "https://arxiv.org/abs/2610.32851",
+      "abstract": "Enterprises are deploying agentic AI across the software development lifecycle, and they need the behavioral logic of the systems they act on, not stakeholder documentation. A seven-agent reverse-engineering pipeline recovered this logic, processing 241 repositories across 18 services into thousands of artifacts describing scope, journeys, rules and acceptance criteria. Recovery does not confer usability. Entities like offer, eligibility, and activation recur across services under a shared vocabulary, related in name but operationally distinct, so one end-to-end journey implicates over a thousand near-identical rules that must not be conflated. Flat vector retrieval fails, returning an identical rule from the wrong service at high similarity with no signal of error. Content-level ontology, the traditional remedy, did not exist, and relating every occurrence of recurring entities would have cost more than the engagement and not survived a release cycle. We place the ontology at the artifact level. In this machine-generated corpus, each artifact retains its producer, component, service, domain and type, provenance that disambiguates before content is read. We present a knowledge layer that organizes before retrieving: a self-describing catalog, a sparse metadata registry, and a navigation hypergraph defined over artifacts rather than extracted entities. Queries resolve to artifact identifiers that constrain vector search, so the competing rule from another service is absent rather than outranked, making disambiguation structural, not statistical. Built in under a week and admitting new services by convention, the layer serves SDLC agents, developers, quality engineers and analysts. It supported root-cause analysis and resolution of 100+ production defects with developer verification and attributed 35 release regression failures to specific rules and services.",
+      "external_ids": [
+        "arxiv:2610.32851"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-26T13:52:59+08:00",
+      "last_seen_at": "2026-10-26T13:52:59+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.32813",
+      "arxiv_version": "v1",
+      "title": "HarnessMM: Recursive Self-Improvement for Harness Token Efficiency",
+      "authors": [
+        "Yuhua Jiang",
+        "Chang Xu",
+        "Feifei Gao",
+        "Li Zhao"
+      ],
+      "published": "2026-10-23",
+      "url": "https://arxiv.org/abs/2610.32813",
+      "abstract": "Agent harnesses repeatedly invoke reasoning after tool feedback, even when an earlier call has already fixed the next action. We introduce HarnessMM (Harness Minus Minus), a method for improving harness token efficiency through guarded decision reuse and recursive self-improvement (RSI). RSI iteratively refines companion harness configurations from training feedback, with validation selecting the configuration for deployment. A controller at the model-tool boundary reuses resolved decisions to replace later reasoning callbacks while actor weights remain fixed. Executable Decision Graphs store exact actions, literal arguments, causal dependencies, and public guards. Guarded Decision Reuse activates these persistent decisions from observed receipts; Certified Callback Substitution executes them through the native interface and records removal of the registered slow callback. New semantic decisions, unsupported evidence, and selector abstention invoke the original actor again. The representation restricts what feedback may change, while complete-task measurements establish quality and cost. On HumanEval, HarnessMM preserves Codex success at 90.82\\% while reducing Tokens/task (k) from 66.72 to 47.02 (29.54\\% saving). For DeepSeek Harness, success rises from 71.43\\% to 85.71\\% while Tokens/task (k) fall from 96.28 to 11.62 (87.93\\% saving). A separate MBPP ablation measures 26.91\\% lower cost than single-use graphs and 19.52\\% lower cost than retained callbacks. These results establish guarded decision reuse as a practical way to reduce repeated reasoning in existing harnesses.",
+      "external_ids": [
+        "arxiv:2610.32813"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-26T13:52:59+08:00",
+      "last_seen_at": "2026-10-26T13:52:59+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.32755",
+      "arxiv_version": "v1",
+      "title": "Semantic Representation for Agentic Self-Play in Automated Laboratories",
+      "authors": [
+        "Yves Delley",
+        "John Coller",
+        "Zachary Cutts",
+        "Alexander Daryin",
+        "Mathias Bellaiche",
+        "Jun W. Kim",
+        "Oscar Donosa",
+        "Srinidhi B. Seshadri",
+        "Tanner Clary",
+        "Sandy Klemm",
+        "Avinatan Hassidim",
+        "Yossi Matias",
+        "Pooja Rao",
+        "Petar Sirkovic",
+        "Annalisa Pawlosky"
+      ],
+      "published": "2026-10-23",
+      "url": "https://arxiv.org/abs/2610.32755",
+      "abstract": "Navigating complex, high-dimensional biological search spaces necessitates scalable physical and computational intelligence to explore beyond local optima through iterative self-play across ideation, experimentation, and automation. Translating experimental designs into reliable physical execution remains bottlenecked by static laboratory automation and unmodeled physical variability. To address this, we introduce VERified Infrastructure for Discovery Laboratories, or VERID, a foundational infrastructure designed to bridge the gap between the high-level reasoning of artificial intelligence (AI) agents and complex, error-prone physical realities of wet labs. VERID is a persistent, high-fidelity semantic digital twin of the laboratory workcell that provides four core services: queryable introspection for agentic reasoning, time-compressed simulation for protocol validation, comprehensive trace persistence for a complete scientific record, and a framework for safe execution. We present three case studies using aqueous dye and deionized water mixtures to validate the optical and fluidic foundations of VERID. These studies demonstrate how VERID enables pre-emptive detection of critical errors in experimental protocols, stateful mid-run error recovery and post-hoc identification of subtle physical failures. The simulation functions as a discrete accounting engine, allowing agents to safely and inexpensively explore experimental designs in silico and refine experimental strategies through iterative self-play. VERID also captures structured multimodal experimental data for downstream analysis, knowledge mining and agent training. We argue that this semantic layer is an essential prerequisite for deploying autonomous agents in the biochemical and biomedical sciences, ensuring data integrity, operational safety, and paving the way for tackling previously intractable grand challenges in biology.",
+      "external_ids": [
+        "arxiv:2610.32755"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-26T13:52:59+08:00",
+      "last_seen_at": "2026-10-26T13:52:59+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.32752",
+      "arxiv_version": "v1",
+      "title": "ActionRAG: Evidence-Refining Graph Diffusion for Long-Term Memory in LLM Agents",
+      "authors": [
+        "Navyansh Mahla",
+        "Sashank Vandrangi"
+      ],
+      "published": "2026-10-23",
+      "url": "https://arxiv.org/abs/2610.32752",
+      "abstract": "LLM agents need long-term memory that can recover precise and mutually consistent evidence from growing interaction histories, particularly when answers depend on relations among facts rather than isolated semantic matches. Current memory pipelines remain vulnerable at two stages: indexing errors can fragment repeated entities or merge distinct ones, and online retrieval often treats initial similarity scores as final even when the surrounding graph provides evidence for revising them. We introduce ActionRAG, a graph memory architecture that couples cautious indexing with query-time graph retroevaluation. Its indexing pipeline reconciles type labels and applies tiered entity resolution. Given a query, dual-channel entity and triple retrieval forms an initial evidence set and induces a bounded local graph. Query-conditioned receiver-normalized diffusion refines triple scores using local path structure. Seed protection, hub-penalized flux, and triple materialization preserve direct evidence while recovering missed connections. We evaluate ActionRAG on MemoryAgentBench (MAB), which tests accurate retrieval, conflict resolution, long-range understanding, and test-time learning. Across its eight deterministic-scoring columns, ActionRAG achieves 55.1 average accuracy, improving over the strongest retrieval-based memory baseline by 5.4 points. Under MAB's query-time cost accounting, mean synthesis cost stays below \\$0.001 per query on the four reported cost columns, and the sum of separately measured retrieval-side p99 components is 440.7 ms on our consumer Apple Silicon setup.",
+      "external_ids": [
+        "arxiv:2610.32752"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-26T13:52:59+08:00",
+      "last_seen_at": "2026-10-26T13:52:59+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.32726",
+      "arxiv_version": "v1",
+      "title": "The Butterfly Defects: Tracing Cooperation in LLM Agent Networks",
+      "authors": [
+        "Maria Sampani",
+        "Maria Lymperaiou",
+        "Angeliki Dimitriou",
+        "Giorgos Filandrianos",
+        "Chrysoula Zerva",
+        "Giorgos Stamou"
+      ],
+      "published": "2026-10-23",
+      "url": "https://arxiv.org/abs/2610.32726",
+      "abstract": "As large language models (LLMs) increasingly operate as interconnected agents, a fundamental question emerges: does individual cooperation translate into collective cooperation? We investigate this question through the Iterated Prisoner's Dilemma (IPD), moving from dyadic interactions to homogeneous and heterogeneous networks of open-weight LLMs. Our findings reveal that cooperation is highly sensitive to model composition and seemingly minor linguistic changes. Models that cooperate with identical peers can shift toward defection in mixed populations. A simple uncertainty cue can increase or decrease cooperation, redistribute costs, and affect unexposed agents several hops away. Even reversing action-label order can dramatically alter behavior, with uncertainty framing sometimes amplifying this sensitivity. Together, these findings challenge the notion of cooperation as a stable model-level property, revealing how strategic behavior depends on interaction partners, network positions, and the language used to frame decisions.",
+      "external_ids": [
+        "arxiv:2610.32726"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-26T13:52:59+08:00",
+      "last_seen_at": "2026-10-26T13:52:59+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.32648",
+      "arxiv_version": "v1",
+      "title": "StateMirror: Pre-Execution Detection of Hallucinated Tool Calls in Coding Agents",
+      "authors": [
+        "Shiwen Shan",
+        "Yintong Huo",
+        "Zhiying Wu",
+        "Yuxin Su"
+      ],
+      "published": "2026-10-23",
+      "url": "https://arxiv.org/abs/2610.32648",
+      "abstract": "Large language model (LLM)-based coding agents may propose invalid actions that are not applicable in the execution environment, such as accessing non-existent paths or missing packages. We term this mismatch hallucinated tool use. A preliminary study of 4,398 agent trajectories reveals that these hallucinations are pervasive and costly, requiring a median of 3 additional interaction steps and 22.4K tokens to recover. Existing frameworks rely on reactive, post-execution feedback, wasting runtime resources. Nevertheless, since an agent's execution environment is grounded in concrete codebase and harness components, many action prerequisites can be extracted and validated prior to execution. To this end, we introduce StateMirror, a lightweight pre-execution detector. StateMirror intercepts actions at the harness boundary, extracts state predicates via AST and command analysis, and deterministically validates them against the live repository. By pinpointing exact environment mismatches before execution, StateMirror preempts invalid actions and subsequent recovery cycles. Evaluation on 2,508 actions shows StateMirror achieves 0.940 precision and 0.817 F1 in detecting such hallucinations, surpassing the strongest LLM judge by 35.3% in F1 while reducing median detection latency from 17.73 s to 1.50 ms with zero token consumption. For practical mitigation, StateMirror's pre-execution feedback enables agents to rectify over 95% of hallucinated tool calls. During live mitigation on 79 tasks, StateMirror reduces agent execution time by 15.8% and token consumption by 11.8% while maintaining task resolution.",
+      "external_ids": [
+        "arxiv:2610.32648"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-26T13:52:59+08:00",
+      "last_seen_at": "2026-10-26T13:52:59+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.32620",
+      "arxiv_version": "v1",
+      "title": "What Transfers Across Protein Pockets? Experience Reuse in Molecular Optimization for Agentic Structure-Based Drug Design",
+      "authors": [
+        "Zaifei Yang",
+        "Weiyu Chen",
+        "Yaqing Wang",
+        "James Kwok"
+      ],
+      "published": "2026-10-23",
+      "url": "https://arxiv.org/abs/2610.32620",
+      "abstract": "LLM agents optimize a ligand in a protein pocket by editing it step by step and docking each edit. Recent agents first spend extra dockings probing the complex with controlled edits; guidance induced from these probes is reported to help more than the chemical knowledge the model already carries. The probes are then discarded with the instance that produced them, so the obvious next step is to keep them in an experience base, letting a new pocket inherit what earlier ones already paid for. Such a base is read through a \\emph{key}: the record properties under which past edits are pooled and a new one is looked up. Using the full log of one such run over the CrossDocked2020 test-set pockets, we ask whether its keys recur on a pocket the base has never seen and still separate improving from worsening edits. \\crchange{Using} the contacts at the site being edited, the action, and the round as \\crchange{a} key, the base separates them sharply. Within our analysis, this separation is largely explained by how much the edit changed the molecule's size, the action, and the round, none of which describes the target. That is not because the target is irrelevant: naming it outright separates them several times more sharply. For a pocket absent from the base, transfer must rely on a description rather than its identity. Among the exact-match descriptions we evaluate, the more specific ones rarely recur, whereas the coarser ones provide little separation; the signals that do transfer primarily describe the edit and the molecule it produced rather than the target. Under the representations and lookup scheme studied here, an experience base may be more useful for prioritizing an agent's own proposals for docking than for directly prescribing what to build.",
+      "external_ids": [
+        "arxiv:2610.32620"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-26T13:52:59+08:00",
+      "last_seen_at": "2026-10-26T13:52:59+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.32578",
+      "arxiv_version": "v1",
+      "title": "Lessons Outlive Their Failures: A Case Study of Rules for AI Coding Agents",
+      "authors": [
+        "Hassan Hassanzadeh Aliabadi"
+      ],
+      "published": "2026-10-23",
+      "url": "https://arxiv.org/abs/2610.32578",
+      "abstract": "AI coding agents increasingly work inside a harness: rule files such as AGENTS.md, on-demand skills, runtime hooks and automated checks. Most studies of harnesses look at a single point in time or at short benchmark runs. I report a six-week case study of my personal system of record, a plain-markdown repository that three AI agent tools edited daily under one shared rule set. I built a ledger of 118 agent failures, their fixes and whether they came back. I also tested the system's monthly LLM documentation audit against 47 known stale statements and 20 planted errors. Finally, I replayed five past failures in isolated git clones, with and without their fixes. All results come from one repository with three runs per condition, so I report them as exploratory. Stale documentation (drift) was the largest failure class (48 of 118), although 35 of those were found on one audit day. A single audit run found about half of the known drift (Claude Sonnet 5.5 mean: 50%), and at least 93% of its findings were correct. On Sonnet 5.5, the agent finished four of the five replayed tasks. In three of those four, the failure did not happen, with or without its fix. Only the stale-count failure came back without its check, and the check stopped it in every run. On older models, an agent drafted an em-dash once while the em-dash lint check was active, and the check rejected it. A written rule on run-time estimates did not change Sonnet 4.5's overestimates. These results suggest that harness lessons can outlive the failures they were written to fix, while drift persists and still needs mechanical checks. Tools that evolve a harness add lessons faster than they retire them, so they should re-test their rules from time to time and retire the obsolete ones.",
+      "external_ids": [
+        "arxiv:2610.32578"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-26T13:52:59+08:00",
+      "last_seen_at": "2026-10-26T13:52:59+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.32555",
+      "arxiv_version": "v1",
+      "title": "Tool-Calling LLM Agents Under Realistic MCP Faults: Scale Does Not Purchase Fault Tolerance",
+      "authors": [
+        "Antonio Ken Iannillo",
+        "Joshua Segun Owotogbe",
+        "Roberto Natella",
+        "Francesco Avallone",
+        "Kristina Kudryavtseva",
+        "Indika Kumara"
+      ],
+      "published": "2026-10-23",
+      "url": "https://arxiv.org/abs/2610.32555",
+      "abstract": "LLM agents increasingly rely on external tools exposed via the Model Context Protocol (MCP), yet current benchmarks assume tools respond correctly and on time, leaving agent resilience to realistic tool failures untested. We introduce MCP-Injector, a drop-in, protocol-aware fault-injection middleware that interposes on the MCP tool-call path with controlled persistence (permanent, transient, intermittent) and seedable schedules. Its fault model is calibrated to the observed incident distribution (failure mode x persistence) of the public MCP ecosystem, mined from 57,240 issue and pull-request threads across 1,774 open-source MCP repositories. In a 1,350-cell experiment crossing two backbone sizes (20B, 120B), three agent stacks (custom multi-round plan-and-execute, OpenAI Agents SDK, LangChain), and three fault injection conditions, we find that faults drawn from this permanent-heavy stress profile cause severe quality degradation (task-completion score falls by 60%, from 8.08 to 3.23 out of 10), and that scale does not purchase fault tolerance for the two gpt-oss backbones we test: the 120B retains no larger share of its fault-free score under faults (resilience-ratio model, $p = 0.96$), and its completion rate under faults is, if anything, lower (91.1% vs. 95.6%; difference 4.4 points, 95% CI $[-0.2, 9.3]$). Agent stacks differ in how well they absorb faults, which suggests that framework-level error handling matters more than model scale. These results demonstrate that capability benchmarks alone can mask operational brittleness, motivating protocol-aware fault injection as a complementary evaluation dimension for tool-calling agents.",
+      "external_ids": [
+        "arxiv:2610.32555"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-26T13:52:59+08:00",
+      "last_seen_at": "2026-10-26T13:52:59+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.32483",
+      "arxiv_version": "v1",
+      "title": "When Agents Fail: Model or Harness--Who's to Blame?",
+      "authors": [
+        "Shao Zhang",
+        "Hangfan Zhang",
+        "Yuanyuan Shi",
+        "Hao Li",
+        "Min-Le Su",
+        "Kangcong Li",
+        "Jingping Wang",
+        "Chunjiang Mu",
+        "Chen Zhang",
+        "Yang Chen",
+        "Bo Zhang",
+        "Shuyue Hu"
+      ],
+      "published": "2026-10-23",
+      "url": "https://arxiv.org/abs/2610.32483",
+      "abstract": "LLM agents combine models with execution harnesses, so agentic benchmark performance reflects their joint behavior. We argue that harnesses should therefore be evaluated through their interactions with underlying models. We develop a framework combining five complementary measures: (i) Valid Completion Rate (VCR), how reliably agents finish normally and deliver evaluable results, irrespective of task correctness; (ii) Model-Harness Fit, how well a harness supports task achievement through valid completion for a given model; (iii) Cross-Model Fit, a harness's overall suitability across evaluated models; (iv) Interaction Residuals, pairing-specific execution strengths and weaknesses hidden by component-level summaries; and (v) Token Load, the token demands of agent execution, including failed attempts. We evaluate four general-purpose harnesses (OpenCode, Codex CLI, Pi CLI, and DeepAgents) with four core models, plus two fixed native model-harness systems, on six benchmarks covering context management, tool use, long-context planning, multimodal interaction, and artifact handoff. Including native references and stress conditions, 111 evaluation settings yield 52,168 trajectories. Harness rankings vary across models and benchmarks; task performance and valid completion can favor different pairings, and similar task scores can accompany distinct execution profiles. OpenCode ranks first in cross-model performance, while DeepSeek V4 Flash Preview maintains consistently high Mean VCR across harnesses on the shared four-benchmark panel. These findings support evaluating model-harness interactions, training transferable harness-use capabilities in models, and harness designs adapted to the model and task.",
+      "external_ids": [
+        "arxiv:2610.32483"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-26T13:52:59+08:00",
+      "last_seen_at": "2026-10-26T13:52:59+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.32477",
+      "arxiv_version": "v1",
+      "title": "CauProphet: Teaching Agents to Develop Causal Cognition like Humans",
+      "authors": [
+        "Kaiwen Wu",
+        "Chaochao Lu"
+      ],
+      "published": "2026-10-23",
+      "url": "https://arxiv.org/abs/2610.32477",
+      "abstract": "Large language model (LLM) agents increasingly support long-horizon tasks by leveraging external memory and past experience. However, existing agents mainly retrieve records or summaries, lacking the ability to form and refine causal understanding of the world. Inspired by human causal cognition, we introduce CauProphet, an agent that develops and updates causal knowledge within its Causal Cognition. For each task, CauProphet combines relevant knowledge in Causal Cognition with current evidence to construct a Causal Belief, a structured belief capturing causal factors and the effects of possible actions. It uses this belief for decision-making and continuously updates both the belief and Causal Cognition as new observations emerge, enabling causal knowledge that persists beyond individual experiences. Evaluations demonstrate that CauProphet progressively acquires causal knowledge and transfers it to future decision-making. In financial research, CauProphet leverages prior discoveries to improve downstream analyses and outperforms all baselines in mean rank correlation with next-day returns, achieving a 25.4% improvement over a baseline agent. It also improves prediction accuracy from 21.3% to 28.6% in dynamic real-world settings. Further experiments validate its ability to perform reliable causal analysis and action selection across scientific and everyday tasks, demonstrating the potential of causal experience learning for next-generation LLM agents.",
+      "external_ids": [
+        "arxiv:2610.32477"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-26T13:52:59+08:00",
+      "last_seen_at": "2026-10-26T13:52:59+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.32441",
+      "arxiv_version": "v1",
+      "title": "SCI-AGENT-EXAM: Benchmarking Agents on Scientific Research Tasks",
+      "authors": [
+        "Tianyun Zhong",
+        "Wei Wang",
+        "Jialin Li",
+        "Jianhong Tu",
+        "Liyao Li",
+        "Chuqiao Kuang",
+        "Tianshi Zheng",
+        "Songchi Zhou",
+        "Weiqi Zhai",
+        "Qile Jin",
+        "Jiajia Li",
+        "Jiasheng Zheng",
+        "Boxi Cao",
+        "Yaojie Lu",
+        "Hongyu Lin",
+        "Shiwei Ye",
+        "Bing Zhao",
+        "Hu Wei",
+        "Lin Qu",
+        "Xianpei Han"
+      ],
+      "published": "2026-10-23",
+      "url": "https://arxiv.org/abs/2610.32441",
+      "abstract": "Large language model (LLM) agents are increasingly capable of supporting scientific workflows, but their capabilities across diverse research activities remain difficult to assess systematically. Existing benchmarks often focus on selected scientific capabilities or task types, limiting a comprehensive characterization of scientific agents' strengths and weaknesses in realistic research workflows. We introduce SCI-AGENT-EXAM, a workflow-oriented benchmark comprising 120 expert-curated tasks across 11 scientific fields and 7 research task types defined by the Scientific Workflow Task Taxonomy (SWTT). Each task requires both executable artifacts (e.g., code and scripts) and textual artifacts (e.g., reports and explanations). To evaluate the heterogeneous task outputs, we develop a hybrid evaluation protocol combining deterministic programmatic verification for executable artifacts with a calibrated, expert-validated LLM-based judge for textual artifacts. Beyond outcome assessment, we analyze progress and solution stability along execution trajectories to characterize how agents reach their final results. Experiments with 10 frontier LLM agents reveal substantial performance gaps: GPT-6 Astra achieves the highest overall score of 80.9, yet only 26.0% of its runs exceed the 0.95 success threshold. Further analyses uncover distinct capability profiles across scientific task types and substantial variation in execution efficiency and stability. Our code and data are available at https://github.com/SKYLENAGE-AI/Sci-Agent-Exam.",
+      "external_ids": [
+        "arxiv:2610.32441"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-26T13:52:59+08:00",
+      "last_seen_at": "2026-10-26T13:52:59+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.32429",
+      "arxiv_version": "v1",
+      "title": "Async-RBench: Benchmarking Asynchronous Task Execution in LLM Agents",
+      "authors": [
+        "Detao Zeng",
+        "Guilin Ou",
+        "Nuo Chen",
+        "Yunhao Feng",
+        "Hongliang Wang",
+        "Qinli Yang",
+        "Junming Shao",
+        "Zhong Zhang"
+      ],
+      "published": "2026-10-23",
+      "url": "https://arxiv.org/abs/2610.32429",
+      "abstract": "Large language model (LLM) agents increasingly execute tasks asynchronously: a main agent continues working while its subagents run, and the task state may change before their results arrive. The main agent must decide which work to update or preserve and which checks to repeat, while avoiding prohibited changes. Final task success alone does not reveal whether these results were handled correctly, and natural asynchronous arrivals are hard to reproduce. We introduce Async-RBench, a benchmark for asynchronous task execution in LLM agents, with 200 executable tasks covering eight scenarios. A scenario controller regulates result delivery using predefined task-state conditions, while an Event Response Contract (ERC) specifies what each response must change, preserve, avoid, and re-verify. The Dynamic Replanning Score (DRS) weights the response process and outcome equally and is reported separately from task success. We evaluate nine agents and find DRS scores of 19.2 to 45.1, with the lowest scores on duplicate reports and subagent failures. Under our execution protocol, all nine agents obtain lower task success with asynchronous than with batched delivery (26.0% vs. 29.7% on average). For three agents, prompting the main agent to rebuild its plan after every result improves DRS by only 2.6 to 3.5 points. Together, these findings highlight the challenges of reliable asynchronous task execution and the need to evaluate how agents handle incoming results alongside end-to-end task success.",
+      "external_ids": [
+        "arxiv:2610.32429"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-26T13:52:59+08:00",
+      "last_seen_at": "2026-10-26T13:52:59+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2610.32419",
+      "arxiv_version": "v1",
+      "title": "Electron Wavefronts Capture Nanoscale Movies of Hypersound at Surfaces",
+      "authors": [
+        "Johannes Otto",
+        "Leon Brauns",
+        "Benjamin Schroeder",
+        "Claus Ropers"
+      ],
+      "published": "2026-10-23",
+      "url": "https://arxiv.org/abs/2610.32419",
+      "abstract": "Acoustic waves transport mechanical energy and elastic strain through solids, with material composition and shape governing their propagation. In the gigahertz hypersound regime, acoustic wavelengths reach tens to hundreds of nanometres, comparable to nanoscale device dimensions. Harnessing these waves underpins high-frequency signal processing, sensing, electromagnetic coupling and quantum control. Acoustic metrology probes elastic modes and internal interfaces. Yet directly imaging how nanoscale acoustic waves interact with local structure remains challenging, requiring picometre displacement sensitivity combined with high spatiotemporal resolution. Here we demonstrate full-field imaging of laser-induced hypersound at surfaces using reflected electron wavefronts. We introduce ultrafast low-energy electron microscopy (ULEEM), exploiting the intrinsic surface sensitivity of few-electronvolt electrons. Coherent electron pulses down to femtosecond durations reflect from the topmost atomic layers, imprinting the evolving surface profile onto their wavefronts. Defocus converts phase variations into image contrast. In a thin van der Waals material, we image the thermoelastic generation and propagation of picometre-amplitude acoustic waves. Measured dispersion relations, interpreted through elastodynamic modelling, distinguish substrate-supported and locally detached regions, revealing how interfacial contact shapes propagation. Delayed wave emission reveals scattering at buried mechanical defects. Our results establish electron-wavefront imaging of nanoscale surface dynamics, enabling the exploration of ultrafast energy transport, structural transformations and coupled mechanical, electronic and magnetic phenomena.",
+      "external_ids": [
+        "arxiv:2610.32419"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-10-26T13:52:59+08:00",
+      "last_seen_at": "2026-10-26T13:52:59+08:00"
+    }
+  ]
+}
