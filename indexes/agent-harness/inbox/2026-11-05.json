@@ -1,0 +1,533 @@
+{
+  "date": "2026-11-05",
+  "run": {
+    "at": "2026-11-05T15:48:34+08:00",
+    "sources": [
+      "arxiv",
+      "semanticscholar",
+      "dblp"
+    ],
+    "keywords": [
+      "agent harness",
+      "\"LLM agent\" harness",
+      "test-time harness evolution"
+    ],
+    "fetched": 45,
+    "merged": 17,
+    "new": 17
+  },
+  "new_candidates": [
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.06914",
+      "arxiv_version": "v1",
+      "title": "A Framework for Context Enrichment and Selective Robustness in LLM Social Agents",
+      "authors": [
+        "Mattia Greiche",
+        "Reihaneh Rabbany",
+        "Maximilian Puelma Touzel"
+      ],
+      "published": "2026-11-04",
+      "url": "https://arxiv.org/abs/2611.06914",
+      "abstract": "Researchers use large language models as agents in social simulations, where agents are prompted with observations and background information intended to shape their actions. Yet LLM agents have been shown to substantially change their behavior under meaning-preserving prompt variations, creating a validation problem for social simulation. One plausible hypothesis is that this brittleness reflects a lack of grounding and can be reduced by enriching the context provided to the agents. Whether richer context improves robustness remains unclear, in part because context richness and robustness are rarely defined in ways that support controlled comparisons. We address the first need with controlled context enrichment, a set of prompt substitution rules that systematically enriches distinct types of context: neutral padding, generic social background, descriptive decision grounding, and normative decision grounding. We address the second by introducing selective robustness as a validation criterion: insensitivity to meaning-preserving prompt variation combined with a directional response to decision-relevant changes in the social world. We demonstrate the framework in a Prisoner's Dilemma-like game, showing how it can be used to identify which forms of context enrichment produce more desirable and robust agent behavior. We find that these forms of enrichment produce distinct behavioral patterns that vary between the two models tested.",
+      "external_ids": [
+        "arxiv:2611.06914"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-05T15:48:34+08:00",
+      "last_seen_at": "2026-11-05T15:48:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.06897",
+      "arxiv_version": "v1",
+      "title": "MCP-Eco: A Linked Dataset of MCP Servers, Consumers, and Development Activity",
+      "authors": [
+        "Khalid Tounoussi",
+        "Mohammed Sayagh",
+        "Ali Ouni",
+        "Yutaro Kashiwa"
+      ],
+      "published": "2026-11-04",
+      "url": "https://arxiv.org/abs/2611.06897",
+      "abstract": "The Model Context Protocol (MCP) enables LLM agents to access external tools and data. Studying its software ecosystem requires connecting server interfaces, the projects that configure these servers, and their development activity. However, this information is scattered across directories, package registries, configuration files, and repository histories. We present MCP-Eco, a relational dataset that integrates these sources and links consumer configuration declarations to candidate server projects. Its frozen release contains 16,880,899 records across 19 Parquet tables, covering 78,302 candidate server projects, 16,165 candidate consuming repositories, and 9,200 configuration declarations. Of these declarations, 5,975 resolve to 5,138 distinct repository-server pairs. The dataset also includes tool, resource, and prompt descriptions, declared dependencies, and associated development records, including pull requests, reviews, issues, and commits. Provenance fields distinguish directory-reported capabilities from those observed through live probing and document discovery sources and declaration-matching methods. These connections support research on MCP interface design, configuration practices, and repository maintenance, while enabling practitioners to inspect tool schemas and existing integration configurations. The dataset and accompanying analysis scripts are publicly available at https://huggingface.co/datasets/mcp-research-alliance/mcp-ecosystem Demo video: https://www.youtube.com/watch?v=N7TqnNneSfU",
+      "external_ids": [
+        "arxiv:2611.06897"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-05T15:48:34+08:00",
+      "last_seen_at": "2026-11-05T15:48:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.06881",
+      "arxiv_version": "v1",
+      "title": "VABAR: A Variational Automation Benchmark for Agentic Robotics",
+      "authors": [
+        "Shuangyu Xie",
+        "Kaiyuan Chen",
+        "Uksang Yoo",
+        "Xinyue Zhu",
+        "Meadow Shen",
+        "Jaimyn Drake",
+        "Eugen Solowjow",
+        "Lionel Gulich",
+        "Alexander Millane",
+        "Rafael Cathomen",
+        "Tuur Stuyck",
+        "Sangeeta Subramanian",
+        "Yichao Pan",
+        "Bruce McGowan",
+        "Michael Benedict",
+        "Linxi Fan",
+        "Yuke Zhu",
+        "Spencer Huang",
+        "Ken Goldberg"
+      ],
+      "published": "2026-11-04",
+      "url": "https://arxiv.org/abs/2611.06881",
+      "abstract": "For robots to operate reliably in commercial and industrial applications, they must persistently perform specific tasks with known variations in object shape and pose. We call this Variational Automation (VA) to differentiate these settings from fixed automation. Inspired by recent papers on Agentic Robotics, where pretrained LLM and VLM coding agents combine interpretable robot programming with the open-world adaptability of model free policies, we propose a general set of agentic robotics benchmark design criteria that includes accessibility, repeatability, diversity, relevance to agentic robotics and practical applications, physical realizability, resistance to benchmark saturation, and computational efficiency. We instantiate these principles in six manipulation task classes spanning industrial, medical, and infrastructure applications: tool sorting, tool hanging, gear meshing, syringe packing, cable insertion, and cable routing. We introduce the Variational Automation Benchmark for Agentic Robotics (VABAR), an open, easily replicable, simulation-based manipulation benchmark to systematically evaluating agentic robotics systems. Built fully on open-source tools, VABAR features detailed implementations using the Newton physics engine, standardized task variations, difficulty tiers, success metrics, and a library of 33 generalizable skills with human-authored programmatic reference solutions. We provide initial baseline evaluations using an open agentic manipulation harness, Graph-as-Policy (GaP), and Isaac Lab Arena.",
+      "external_ids": [
+        "arxiv:2611.06881"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-05T15:48:34+08:00",
+      "last_seen_at": "2026-11-05T15:48:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.06876",
+      "arxiv_version": "v1",
+      "title": "SpecCompact: Accelerating LLM Agent Context Compaction with Slot-Parallel Semantic Speculative Verification",
+      "authors": [
+        "Yulu An",
+        "Yifei Feng",
+        "Xiangyang Yin"
+      ],
+      "published": "2026-11-04",
+      "url": "https://arxiv.org/abs/2611.06876",
+      "abstract": "LLM agents use context compaction to manage growing interaction histories, but summarizing long histories with large models can introduce substantial delays. Compaction therefore requires balancing information retention against latency. We observe that structured summary slots can retain information when generated independently. Based on this observation, we present SpecCompact, a framework that accelerates compaction through slot-parallel semantic speculation. SpecCompact fine-tunes a small drafter and generates slots in parallel. The target model verifies each proposed line and repairs rejected content, while subsequent drafting uses the updated slot prefix. System optimizations further reduce repeated context processing and model calls. Across AppWorld and $τ^3$ benchmarks with two target models, SpecCompact achieves $2.04$--$5.63\\times$ compaction speedups over Hermes-style summarization. Separate downstream evaluations reveal model- and task-dependent performance trade-offs. A user study within Hermes further shows an $8.68\\times$ median compaction speedup.",
+      "external_ids": [
+        "arxiv:2611.06876"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-05T15:48:34+08:00",
+      "last_seen_at": "2026-11-05T15:48:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.06868",
+      "arxiv_version": "v1",
+      "title": "On Turn-Level Best-of-N Sampling for Scaling LLM Agents",
+      "authors": [
+        "Jalaj Bhandari",
+        "Dhawal Gupta",
+        "Hongli Zhan",
+        "Zhenting Wang",
+        "Varad Pimpalkhute",
+        "Zhengzhong Liu",
+        "Eric Xing",
+        "Rupesh Srivastava"
+      ],
+      "published": "2026-11-04",
+      "url": "https://arxiv.org/abs/2611.06868",
+      "abstract": "In this work, we evaluate a simple inference-time scaling approach based on \\textit{turn-level best-of-N sampling} (\\method) for large language model (LLM) agents on complex, long-horizon tasks. We instantiate this using a \\textit{generator-selector} framework with two LLMs; at each turn, a \\emph{generator} model generates $N$ candidate actions and a \\emph{selector} model selects one of them, which is then executed in the environment. This paper is closely related to the work of \\cite{zainullina2025guided} who used critic models for guided search at inference time. Different from their work, we evaluate if off-the-shelf, open-weight LLMs can be effective at comparing different candidate actions directly. Experiments on long-horizon terminal tasks show that \\method can lead to significant performance improvements, both in terms of accuracy (5--10\\%) and consistency across repeated attempts. Analysis of agent trajectories reveal a shift in agent behaviour towards desirable patterns such as reduction in number of attempts to solve the task, improved task instruction following, debugging and testing.",
+      "external_ids": [
+        "arxiv:2611.06868"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-05T15:48:34+08:00",
+      "last_seen_at": "2026-11-05T15:48:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.06866",
+      "arxiv_version": "v1",
+      "title": "GH-AWTrace: A Large-Scale Dataset of GitHub Agentic Workflow Execution Logs",
+      "authors": [
+        "Jasem Khelifi",
+        "Hao Li",
+        "Ali Ouni",
+        "Mohammed Sayagh",
+        "Mohamed Aymen Saied"
+      ],
+      "published": "2026-11-04",
+      "url": "https://arxiv.org/abs/2611.06866",
+      "abstract": "Agentic workflows enable AI agents to perform recurring repository tasks on schedules or in response to repository events. Existing studies examine workflow definitions and outputs, but provide limited evidence of what happens during execution. We present GH-AWTrace, a dataset linking 25,014 verified GitHub Agentic Workflows across 5,051 repositories to 4,112,526 run records and 562,877 nonempty execution log archives. The dataset preserves execution evidence subject to GitHub's log-retention limits and links it to repository metadata and generated workflow configurations. Illustrative cases show how the logs expose tool denials, provider failures, changes in an agent's approach, and delegation among agents. These observations enable research on execution failures, tool use, and the relationship between reported run outcomes and visible task progress. Coverage varies across workflows, and the logs provide partial observations rather than complete agent trajectories. Video: https://youtu.be/KIlfmZhHxtA",
+      "external_ids": [
+        "arxiv:2611.06866"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-05T15:48:34+08:00",
+      "last_seen_at": "2026-11-05T15:48:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.06856",
+      "arxiv_version": "v1",
+      "title": "LongBanana: An Expert-Verified Benchmark for Long-Context Multi-Reference Image Synthesis",
+      "authors": [
+        "Haoxiang Cao",
+        "Yuxuan Zhang",
+        "Penghui Du",
+        "Bo Li",
+        "Jiajiong Cao",
+        "Yingying Fan",
+        "Zimeng Wu",
+        "Yifu Luo",
+        "Mingzhe Zheng",
+        "Junwen Miao",
+        "Huaisong Zhang",
+        "Yang Yao",
+        "Yu Wang",
+        "Dongfu Jiang",
+        "Ping Nie",
+        "Wenhu Chen",
+        "Chaoqun Wang",
+        "Changqian Yu",
+        "Kelsey R. Allen"
+      ],
+      "published": "2026-11-04",
+      "url": "https://arxiv.org/abs/2611.06856",
+      "abstract": "We introduce LongBanana, to our knowledge the first expert-designed and expert-verified benchmark for long-context multi-reference image synthesis in the age of agent-driven image generation. The task requires retrieving dispersed visual evidence, rejecting distractors, binding entities and relations, and composing one coherent final image from multiple references. LongBanana contains 90 carefully designed tasks organized by a 3-by-3 taxonomy; each task includes about 32 reference images, 20 constraints, and 50 evaluation items, yielding 4,670 expert-specified atomic evaluation items in total. Its graph-grounded evaluation design instantiates each task with reference images and an entity-relation graph, then converts node, edge, and whole-graph obligations into checklist items for Content Fidelity, Relational Binding, and Global Constraint Satisfaction. Reviewed expert labels include a 15% double-labeled subset with 89.4% exact agreement and 0.83 quadratic weighted kappa. We further introduce LongBanana-Gen, an agent-harness framework for long-horizon image generation; experiments show that minimal agent harnesses improve over direct generation, while a ReAct-Plan-Exec-Reflect (RPR) workflow yields harness-dependent gains by strengthening evidence grounding and repair. Together, LongBanana provides an auditable testbed for measuring dense visual evidence use and a shared target for developing stronger agent-driven image-generation systems. Code and data are available at the project page: https://long-banana.com/.",
+      "external_ids": [
+        "arxiv:2611.06856"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-05T15:48:34+08:00",
+      "last_seen_at": "2026-11-05T15:48:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.06841",
+      "arxiv_version": "v1",
+      "title": "ServerBench: How can your coding agents design specialized LLM serving systems?",
+      "authors": [
+        "Xinrui Zhong",
+        "Zhiming Wang",
+        "Yongqi Liu",
+        "Zhaohui Wang",
+        "Shanglin Yang",
+        "Zikun Li",
+        "Zhuoming Chen",
+        "Beidi Chen"
+      ],
+      "published": "2026-11-04",
+      "url": "https://arxiv.org/abs/2611.06841",
+      "abstract": "Large language model (LLM) coding agents develop software through experimentation, offering an opportunity to design the serving systems supporting their own operation. Effective serving requires coordinating implementation and operating decisions under session dependencies, latency constraints, and correctness requirements. We introduce ServerBench, a benchmark for agentic design of complete, specialized LLM serving systems. Agents experiment against a common objective, dollars per dollar: latency-qualified token value per dollar of GPU cost. Stateful replay preserves session dependencies, and independent verification checks the submitted system. Across 11 coding-agent models and three deployments, Claude Sonnet 5.5 achieves 2.97 dollars per dollar on Gemma E4B, $4.87\\times$ the vLLM reference; 22 of 33 runs yield verified systems, and 13 exceed the strongest baseline. Our analysis identifies three findings: high-value designs coordinate capacity improvements with load selection; agents interpret performance feedback through workload-relevant experiments; and reliable delivery requires verification of the execution paths introduced by optimization. Overall, ServerBench supports systematic study of how agents translate service objectives and feedback into effective, verified serving systems for given task specifications.",
+      "external_ids": [
+        "arxiv:2611.06841"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-05T15:48:34+08:00",
+      "last_seen_at": "2026-11-05T15:48:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.06803",
+      "arxiv_version": "v1",
+      "title": "Task-Efficient Agent Evaluation Using Cached Traces",
+      "authors": [
+        "Ben Johnson",
+        "Hayden Helm"
+      ],
+      "published": "2026-11-04",
+      "url": "https://arxiv.org/abs/2611.06803",
+      "abstract": "Efficient benchmarking estimates a system's full benchmark performance from a small number of task executions. Standard approaches rely solely on the binary correctness of executions from a collection of already-evaluated reference systems. An agentic system, however, produces a rich trace for each execution that can reveal substantially more about its capabilities. Leveraging this information requires useful trace representations. We propose representing a trace by extracting a structured summary of it with an LLM and embedding the summary with a standard text encoder. These representations preserve correctness- and task-related signal while minimizing the presence of system identity-, model family- and harness-related signals that dominate raw trace embeddings. Given this representation for each task execution from all reference systems, we construct low-dimensional representations of the systems and predict a new system's score from its position among the reference systems. On SWE-bench Verified and Terminal-Bench 2.0, augmenting an item-response model with this geometry-based prediction reduces mean absolute error from 0.13 to 0.08 (Wilcoxon $p < 10^{-4}$) and from 0.14 to 0.12 (Wilcoxon $p < 10^{-3}$), respectively, when provided a single random executed task. Further, given access to the full set of reference systems, our approach dominates baselines for any given number of executed tasks on both benchmarks.",
+      "external_ids": [
+        "arxiv:2611.06803"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-05T15:48:34+08:00",
+      "last_seen_at": "2026-11-05T15:48:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.06777",
+      "arxiv_version": "v1",
+      "title": "WISE: An Agentic Framework for Whole-page Multimodal Search Experience Attribution",
+      "authors": [
+        "Wenyi Xu",
+        "Renzhe Zhou",
+        "Songyang Li",
+        "Feiran Zhu",
+        "Ruoqi Zhao",
+        "Chenglei Dai",
+        "Xuanping Li",
+        "Kaiqiao Zhan",
+        "Jingwei Zhuo"
+      ],
+      "published": "2026-11-04",
+      "url": "https://arxiv.org/abs/2611.06777",
+      "abstract": "Algorithm-driven services, including search, recommendation, and advertising, rely on multi-stage model pipelines. While research prioritizes model optimization, post-deployment monitoring focuses on operational reliability. Yet operationally healthy systems may still produce poor-quality results, exposing a gap in existing evaluation and monitoring practices. However, a systematic problem formulation and benchmark for this task remain lacking. To bridge this gap, we formulate System Quality Diagnosis (SQD) for algorithm-driven services, a new task that extends quality evaluation beyond identifying poor outcomes to attributing their causes across system components. Focusing on industrial search, we propose WISE, an agentic framework for end-to-end quality diagnosis that discovers user-facing issues and traces their origins to underlying algorithmic components. To improve diagnostic reliability, we introduce ReTrace for constructing evidence-consistent trajectory supervision and Adaptive Harness-Policy Optimization (AHPO) for failure-guided optimization of the agent harness and model policy. To enable systematic evaluation, we construct WISE-BENCH, a real-world multimodal search benchmark that combines user-facing evidence, internal pipeline traces, and expert diagnosis annotations. Extensive experiments show consistent gains across model scales, with WISE achieving 75.20% end-to-end accuracy on Qwen3.5-35B-A3B. In production, WISE supports quality auditing, online quality assurance, and model optimization, reducing diagnosis costs and improving downstream relevance models.",
+      "external_ids": [
+        "arxiv:2611.06777"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-05T15:48:34+08:00",
+      "last_seen_at": "2026-11-05T15:48:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.06759",
+      "arxiv_version": "v1",
+      "title": "Continual Classification Beyond the Kernel Regime: Harnessing the Sparsity Bias of L2 Regularization in Diagonal Linear Networks",
+      "authors": [
+        "Gilad Karpel",
+        "Itay Evron",
+        "Ron Meir",
+        "Daniel Soudry"
+      ],
+      "published": "2026-11-04",
+      "url": "https://arxiv.org/abs/2611.06759",
+      "abstract": "We study logistic regression for continual learning with linear predictors in a high-dimensional statistical setting. Existing theoretical work has largely focused on continual linear regression with variants of L2 regularization, motivated by their analytical simplicity and connection to the kernel regime of neural networks. We first derive the optimal L2 regularization strength for continual linear classification and characterize its generalization performance, recovering behavior analogous to prior results for continual linear regression. Next, we examine the effect of L2 regularization in deeper models using a minimal two-layer diagonal linear network. In the single-task setting, L2 regularization on the weights of such models is known to promote sparsity in the resulting predictor, yielding a rich, sparse feature-learning regime beyond the kernel regime (a similar effect arises in two-layer ReLU networks). However, in continual learning, where L2 regularization is typically centered on previous-task weights, this sparsity bias is no longer preserved. We therefore propose a weighted variant of L2 regularization that extends this beneficial sparsity bias to continual learning. We show theoretically and empirically that, for a sufficiently sparse teacher, our variant converges substantially faster than directly learning a linear predictor with conventional continual L2 or L1 regularization, trading some long-horizon bias for markedly improved performance over moderate task horizons.",
+      "external_ids": [
+        "arxiv:2611.06759"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-05T15:48:34+08:00",
+      "last_seen_at": "2026-11-05T15:48:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.06727",
+      "arxiv_version": "v1",
+      "title": "Airlock: Bounding the Multi-Agent Blast Radius via Selective Online Containment",
+      "authors": [
+        "Zhonghao Zhan",
+        "Javad Forough",
+        "Yefan Zhang",
+        "Krinos Li",
+        "Xiao Ma",
+        "Hamed Haddadi"
+      ],
+      "published": "2026-11-04",
+      "url": "https://arxiv.org/abs/2611.06727",
+      "abstract": "When multi-agent systems act on the external world, a single agent's faulty output can spread across tasks before detection, creating a system-wide blast radius. Single-agent guardrails are confined to individual harnesses, while existing multi-agent controls either cancel only the faulty source and miss downstream consumers or halt and roll back the entire workflow at the cost of healthy work. We present Airlock, a multi-agent runtime and guardrail for selective post-alert fault containment. Its tree-structured runtime, EdgeCitadel, narrows permissions vertically from parent to child agents to establish node boundaries and control switches. Meanwhile, an append-only provenance DAG records cross-agent data consumption horizontally. Upon an alert, Airlock traces forward on this DAG to isolate tainted executions and pending actions, and backward to narrow root causes. At the site switches, a default full quarantine tier freezes affected branches without a solver, while an assured optimized cut tier uses fence-then-prune to enforce a deadline-aware minimum cut minimizing collateral disruption. Across 1,832 testbed runs, 161 physical smart-home LLM runs, and 24,266 simulation records, Airlock blocks all post-alert faulty actuations on our main testbed and smart-home grids with zero post-convergence leaks. Whereas native controls in A2A and LangGraph either contain at most 33.3% of faults or retain at most 16% of work without redo, Airlock retains +68 pp to +96 pp more healthy work, and its optimized cut retains +46 pp more than full quarantine under dense spread. These results show that co-designing runtime authority boundaries with online provenance enables surgical fault containment without sacrificing healthy work (code: https://github.com/EdgeCitadelTeam/EdgeCitadel).",
+      "external_ids": [
+        "arxiv:2611.06727"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-05T15:48:34+08:00",
+      "last_seen_at": "2026-11-05T15:48:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.06712",
+      "arxiv_version": "v1",
+      "title": "Phase-Locked Quantum Battery Charging via Dissipative Mode Selection",
+      "authors": [
+        "Borhan Ahmadi",
+        "Lei Du",
+        "André H. A. Malavazi",
+        "Shabir Barzanjeh",
+        "Adam Miranowicz",
+        "Paweł Horodecki"
+      ],
+      "published": "2026-11-04",
+      "url": "https://arxiv.org/abs/2611.06712",
+      "abstract": "We investigate how dynamical instability and reservoir engineering can be harnessed to enhance the quality of quantum-battery charging in a bosonic two-mode system. We show that reservoir-engineered dissipative coupling selectively amplifies a single unstable quasi-dark mode, enabling phase-locked exponential charging at a reduced gain threshold, whereas coherent coupling can amplify two frequency-split unstable modes, resulting in persistent beating. This dissipative mode selection yields a near-unit ergotropy fraction and a substantially higher work-like signal-to-noise ratio (SNR), defined as ergotropy divided by the standard deviation of battery energy. Although optimizing the driving frequency enables coherent coupling to achieve faster charging and higher ergotropy power, dissipative coupling retains its advantage in the work-like SNR. An exact finite-time source-noise relation reveals that this advantage arises from a more constructive accumulation of coherent driving relative to incoherent fluctuations. Our results establish dissipative mode selection as a promising route to high-quality quantum-battery charging.",
+      "external_ids": [
+        "arxiv:2611.06712"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-05T15:48:34+08:00",
+      "last_seen_at": "2026-11-05T15:48:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.06682",
+      "arxiv_version": "v1",
+      "title": "SecureGARD: Dynamic Ontology-Guided Governance for Secure Tool-Using LLM Agents",
+      "authors": [
+        "Guoqin Xiong",
+        "Shengtao Wen",
+        "Xiang Chen",
+        "Xinyi Zeng",
+        "Zhaoxin Fan",
+        "Wei Ye",
+        "Xiaofeng Cao",
+        "Sheng-Jun Huang"
+      ],
+      "published": "2026-11-04",
+      "url": "https://arxiv.org/abs/2611.06682",
+      "abstract": "Tool-using large language model (LLM) agents translate model outputs into consequential actions, turning indirect prompt injection into an execution-security problem. Existing defenses constrain tool calls, trajectories, or information flows, but often leave action semantics, state dependencies, and evidence relations implicit, limiting generalization across heterogeneous tools and complicating safe updates. We present \\ours{}, a dynamic ontology-guided governance framework. \\ours{} grounds heterogeneous calls in a shared semantic representation and combines an executable ontology with episode-level task state to derive deterministic ready, waiting, and forbidden decisions. A waiting decision identifies an unmet but recoverable obligation, enabling bounded replanning without expanding the agent's authorization boundary. \\ours{} evolves its ontology offline from verified training executions. An offline LLM proposes instance-independent action--state axioms, which are accepted only if they address ontology errors exposed by training failures, preserve logical consistency and protected entailments, and pass held-out validation before the ontology is frozen. We evaluate \\ours{} on AgentDojo, ASB, and AgentDyn under benign and indirect prompt-injection settings. \\ours{} achieves a 0\\% attack success rate (ASR) across all three benchmarks while improving task utility under attack compared with existing baselines. These results show that explicit semantic governance can strengthen execution security without indiscriminate blocking.",
+      "external_ids": [
+        "arxiv:2611.06682"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-05T15:48:34+08:00",
+      "last_seen_at": "2026-11-05T15:48:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.06674",
+      "arxiv_version": "v1",
+      "title": "AgentTrustCI: Build-Time Policy, Grounding, and Trajectory Tests for Java LLM Agents",
+      "authors": [
+        "Sachin Gupta"
+      ],
+      "published": "2026-11-04",
+      "url": "https://arxiv.org/abs/2611.06674",
+      "abstract": "Infrastructure security does not establish whether an LLM agent selected an allowed tool, grounded its answer in tool output, or followed a required workflow. AgentTrustCI is a Java/JUnit 5 framework that expresses these application-layer expectations as policy, grounding, and trajectory checks over recorded traces. A deterministic replay implementation supports repeatable build-time tests; a judge interface provides an extension point for optional semantic evaluation. On 55 synthetic cases spanning seven enterprise domains, the full pipeline correctly classifies all 30 injected faults and 25 passing controls, including ten non-trivial controls, and misses none of 12 designated critical cases. Each single-layer configuration correctly classifies 35 cases because the corpus deliberately isolates ten faults per layer. A grounded answer obtained through a disallowed sequence illustrates the additional coverage of trajectory checks. Repeated measurements quantify validator execution separately from process startup and reporting. These results establish coverage of the authored regression suite, not production accuracy. We describe a production-trace validation protocol, optional LLM-judge integration, and maintenance of expectations as workflows evolve. The contribution is a practical pattern for expressing behavioral contracts within an existing Java release pipeline.",
+      "external_ids": [
+        "arxiv:2611.06674"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-05T15:48:34+08:00",
+      "last_seen_at": "2026-11-05T15:48:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.06597",
+      "arxiv_version": "v1",
+      "title": "A trust layer for fast pedestal-stability surrogates: calibrated error bars, out-of-distribution alarms and few-shot recalibration",
+      "authors": [
+        "Amin Vakhshouri"
+      ],
+      "published": "2026-11-04",
+      "url": "https://arxiv.org/abs/2611.06597",
+      "abstract": "Machine-learning surrogates of linear peeling-ballooning stability now run in milliseconds, but they are mostly deployed as point estimators: they do not say how wrong they may be, or when a query lies outside what they were trained on. For a fusion company designing a new device, every equilibrium of interest is outside the training data of existing surrogates, so this is the case that matters. We describe a model-agnostic trust layer for stability surrogates, made of conformal error bars, out-of-distribution alarms that route doubtful cases to the physics code, and recalibration from a few simulations of a new design, and we test it with pre-registered hypotheses. On a large public dataset of JET-like equilibria with ideal-MHD growth rates, the error bars hold their nominal coverage in distribution and fall short under a shift in plasma shape; a few dozen simulations of the new shape, or routing the cases the alarms flag, restore it. On resistive BOUT++ surrogates, the bars stay calibrated on held-out runs, the alarm flags tokamaks absent from training, and a scenario scan is screened in seconds instead of hours. Across equilibria from the SPARC library and the DIII-D coil set, a surrogate trained on our own graded BOUT++ labels beats the baseline on unseen equilibria, while a surrogate trained elsewhere ranks the same cases backwards and its alarm declines them. Building our own neural-operator surrogate, the harness exposed two input defects whose fix closed its gap to a simple network. For every surrogate tested, the trust layer keeps coverage near target, with a bar width set by that surrogate's own error. Not every pre-registered hypothesis held, and we report those results and the limits of all of them.",
+      "external_ids": [
+        "arxiv:2611.06597"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-05T15:48:34+08:00",
+      "last_seen_at": "2026-11-05T15:48:34+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.06572",
+      "arxiv_version": "v1",
+      "title": "Does Personality Persuade? Investigating Personality Trait Prompting and Persuasion in Large Language Models",
+      "authors": [
+        "Ruben Boone",
+        "Gilles Eerlings",
+        "Sebe Vanbrabant",
+        "Davy Vanacken",
+        "Kris Luyten"
+      ],
+      "published": "2026-11-04",
+      "url": "https://arxiv.org/abs/2611.06572",
+      "abstract": "Large language models (LLMs) can be prompted to express different personality profiles, but it remains unclear how reliably they do so or whether personality affects their persuasiveness. We investigate these questions in two evaluations. First, we assess Big Five personality prompting using the IPIP-NEO-120, examining reproducibility, trait controllability, cross-trait effects, and unconditioned model profiles. Second, we conduct a within-subjects user study (N=32) in which participants discuss moral dilemmas with LLM agents whose personalities are aligned, mismatched, neutral, or unconditioned. We find that prompted profiles can be reproducible and responsive to requested traits, although controllability varies across models and changes to one trait can affect others. Unconditioned models also exhibit systematic personality profiles rather than neutral baselines. In the user study, personality alignment did not significantly affect perceived persuasiveness, stance switching, or confidence changes. Participants switched their initial stance in only 8 of 128 conversations, while confidence changes were more common. Participants' Big Five traits were not significantly associated with susceptibility to persuasion, but higher self-reported AI persuasion literacy was associated with less frequent confidence changes. Exploratory analysis showed that logical appeals dominated agent messages. These findings distinguish technical control over prompted LLM personality from observable influence on users and motivate evaluating persuasive interactions beyond explicit changes in decisions.",
+      "external_ids": [
+        "arxiv:2611.06572"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-05T15:48:34+08:00",
+      "last_seen_at": "2026-11-05T15:48:34+08:00"
+    }
+  ]
+}
