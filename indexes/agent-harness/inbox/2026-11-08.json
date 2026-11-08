@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-08",
+  "run": {
+    "at": "2026-11-08T15:01:14+08:00",
+    "sources": [
+      "arxiv",
+      "semanticscholar",
+      "dblp"
+    ],
+    "keywords": [
+      "agent harness",
+      "\"LLM agent\" harness",
+      "test-time harness evolution"
+    ],
+    "fetched": 45,
+    "merged": 16,
+    "new": 0
+  },
+  "new_candidates": []
+}
