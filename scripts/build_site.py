@@ -202,17 +202,32 @@ def short_date(iso: str) -> str:
     return iso[:10]
 
 
+_GENERIC_NOTES = {
+    "与主线弱相关",
+    "harness 实例，外推未坐实",
+    "harness 评测/演化，摘要级可作工程参考",
+    "动词 harnessing，不是编排层",
+    "关联偏弱",
+    "主线外误命中",
+    "主线方法，外推偏软",
+    "主线方法，摘要级可跟",
+    "摘要相关",
+    "主线综述",
+}
+
+
+def _generic_note(notes: str) -> bool:
+    return (not notes) or notes in _GENERIC_NOTES or notes.startswith("promoted from watchlist")
+
+
 def chinese_blurb(p: dict) -> tuple[str, str]:
-    """Return (headline, subline) prioritizing Chinese notes / tier_reason."""
+    """Headline is the paper title. A unique note stays as the subline; bulk stamps do not."""
+    title = (p.get("title") or "").strip()
     notes = (p.get("notes") or "").strip()
     reason = (p.get("tier_reason") or "").strip()
-    if notes and reason:
-        return notes, reason
-    if reason:
-        return reason, ""
-    if notes:
-        return notes, ""
-    return p.get("title") or "", ""
+    if not _generic_note(notes) and notes != title:
+        return title, notes
+    return title, reason
 
 
 def has_analysis(p: dict) -> bool:
@@ -228,6 +243,7 @@ def paper_card(p: dict, *, show_intro: bool = False, intro_html: str = "") -> st
     tier_cls = {"A": "tier-a", "B": "tier-b", "C": "tier-c"}.get(tier, "")
     arxiv_id = p["arxiv_id"]
     url = p.get("url") or f"http://arxiv.org/abs/{arxiv_id}"
+    title = (p.get("title") or "").strip()
     headline, subline = chinese_blurb(p)
     analysis = has_analysis(p)
 
@@ -261,10 +277,11 @@ def paper_card(p: dict, *, show_intro: bool = False, intro_html: str = "") -> st
     if subline:
         body.append(f'<p class="paper-subline">{html.escape(subline)}</p>')
     body.append(f'<div class="paper-actions">{"".join(actions)}</div>')
-    body.append(
-        f'<p class="paper-title-en" title="{html.escape(p.get("title", ""))}">'
-        f'{html.escape(p.get("title", ""))}</p>'
-    )
+    if title and headline != title:
+        body.append(
+            f'<p class="paper-title-en" title="{html.escape(title)}">'
+            f'{html.escape(title)}</p>'
+        )
     body.append(f'<div class="paper-meta">{" ".join(meta_bits)}</div>')
     if tags:
         body.append(f'<div class="paper-tags">{tags}</div>')
