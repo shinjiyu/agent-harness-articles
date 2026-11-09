@@ -1,3 +1,504 @@
+## 2026-11-09
+
+Watchlist 积压分档入库：+497（A22 / B46 / C429）。摘要级分档；A 档已补 `papers/a/*.md`。
+
+- [A] `2609.35530` AutoRef: Harness Optimization for Agentic Multi-Reference Image Generation
+- [A] `2611.09218` BOXBOX: Recursive Harness Self-Improvement for Long-Running Performance Optimization
+- [A] `2609.39958` Better Deck or Different Judge? Evaluating Agentic Harness Gains in Corporate and Investment Banking
+- [A] `2610.10426` CoTrace: Data Recipes for Training Terminal Agents with Harness-Model Co-Evolution
+- [A] `2610.20344` Doc2Harness: Benchmarking LLMs on Long-Horizon Harness Engineering of Coding Agents
+- [A] `2610.08432` EMHO: EMbodied Agent Harness Optimization via Experience Traces
+- [A] `2610.40023` HEMO: Harness Self-Evolution for Multi-Objective Combinatorial Optimization
+- [A] `2610.30042` HGM-Dual: Lineage-Aware Guided Agent Harness Optimization for Long-Horizon Planning
+- [A] `2610.22466` Harness-Delta Attribution: Dissecting Gains From Harness Evolution
+- [A] `2610.32813` HarnessMM: Recursive Self-Improvement for Harness Token Efficiency
+- [A] `2610.26770` HarnessPro: Recursive Harness Self-Improvement with Pareto Optimization for Performance-Cost Trade-offs
+- [A] `2610.39884` KARMA: Training-Free Knowledge-Atomic Harness Evolution for Industrial Advertising Agents
+- [A] `2609.40169` Learning from Research: Toward Lifelong Agent Harness Evolution
+- [A] `2610.37046` Learning to Code the World: Harness Evolution for Compositional 3D Reconstruction
+- [A] `2611.05139` Meta$^2$: Precomputing Reusable Knowledge for Online Harness Evolution in Long-Horizon Agents
+- [A] `2609.37834` Mixture of Self-Improving Branches For Agent Harness Optimization
+- [A] `2611.03434` Optimize the Harness, Not the Model: Fitting a Minimal Agent to a Self-Hostable LLM for Investigative Analysis
+- [A] `2609.27612` RegenHarness: A Robot Agent Harness with Evidence-Gated Recursive Self-Improvement
+- [A] `2609.38024` Retrieval-Augmented Skill Optimization via Cross-Harness Adaptation
+- [A] `2609.40330` Turbo Harness: Instance-Adaptive Harness Optimization
+- [A] `2610.40191` Video Generation Meets Agent Harness: Agentic Video Generation, Agentic World Modeling and Recursive Self-I...
+- [A] `2609.37950` Video-RSI: Recursive Self-Improvement of Video Understanding Agents via Harness Evolution
+- [B] `s2-d0c85c0c7a9ae109` A Harness Engineering Methodology for LLM Agent-based Data Quality Validation: Observation-Validation-Synth...
+- [B] `2609.37864` AgentBug-Smith: Automatically Reproducing Real-World Harness Bugs in Agentic Systems
+- [B] `2609.17527` Agentic Societies Need a Social Harness
+- [B] `2610.31376` Certified Execution Harness for Agentic AI: Safe and Least-Intrusive Petri-Net Supervisory Control Between ...
+- [B] `2610.21910` CoWorld Reasoner: Agentic Multimodal Reasoning with the Evolving Video World Model-Driven Harness
+- [B] `2610.21755` DeciCAD: Harness-Grounded Learning of Action Policies for CAD Agents
+- [B] `2610.23791` DrugHarness: An Evolvable Agent Harness for Computational Drug Discovery
+- [B] `2609.40306` DynaHarness: A Dynamic Physical Harness for Self-Evolving Robot Agents
+- [B] `2610.31427` FastHarness: Experience-Driven Review Scheduling for Vision-Language-Action Policies
+- [B] `2610.35767` Free to Look, Free to Reason: Simple LLM Harnesses Outdiagnose Hand-Crafted Root Cause Analysis Agents
+- [B] `2611.04579` FreeForm Harness: A Mobile-Native Agent Harness for Open and Composable Extensions
+- [B] `2610.29560` From VLM Planners to Robotic Agents: Self-Evolving Harnesses for History-Dependent Manipulation
+- [C] `2610.26781` Game of Phones: Harnessing Game Theory and LLMs in 'Bot Wars' to Counteract Phone Scams
+- [B] `2611.04481` Goal-Driven Autonomous Optical Experimentation via a Self-Recursive Hardware-Software Harness
+- [B] `2611.08039` HITCH: Teaching a Vision-Language Model to Operate a Humanoid through a Whole-Body Harness
+- [B] `2609.35738` Harness Learning Enables Generalizable Test-Time Adaptation
+- [B] `2610.20261` Harness Policy Distillation: Aligning Agent Policies with Runtime Semantics
+- [B] `2610.29458` Harness Scaling for Generalizable Agentic Reinforcement Learning
+- [C] `2610.10133` HarnessIR: Harnessing Multimodal Foundation Models for Universal Real-World Image Restoration
+- [B] `2610.12274` HarnessSQL: Harness-Native Training for SQL Agents in Realistic Database Environments
+- [B] `2609.15195` HarnessVLN: Unifying Training-Free Embodied Navigation through an Agent Harness
+- [C] `2610.12146` Harnessing Machine Learning for Ultrafast Science in Facility Settings: Opportunities and Challenges
+- [B] `2610.23479` HexaShell: A Thin Harness for Exploring the Limits of VLM Agents as Robot Coding Agents
+- [C] `2610.31162` HiSTEVE 1.0: Harnessing Human-Interface VLA Agents for Open-World Games
+- [B] `2609.40303` How Much of a Harness Does a Strong Agent Need for Autonomous ML Engineering?
+- [B] `2610.02142` Keyword Harnesses Fail Open: A Cheap Diagnostic Ladder for Tool-Use Claims in Small Language Models
+- [B] `2610.18616` Knowledge Graphs as Files: An Agent Harness Where Tool Creation and Tool Use Co-Evolve
+- [B] `2609.38143` Learning Meta-Skills for Agent Harness Design in Test-Time AI4AI
+- [B] `2609.38137` LongHarness Bench: Stress-Testing Language Model Harnesses for Long-Context Reasoning
+- [B] `2610.35349` MarkovSim: an LLM Agent Harness with Bounded Context for Long-Horizon Computational Simulation
+- [B] `2609.39982` Mid-Harness: Scaling Actions Between Model and Harness for Terminal Agents
+- [B] `2610.02001` Mingbird: A Local-First Agent Harness Enabling Small Open Models to Complete Real Tasks
+- [B] `2610.28380` Object-Oriented Harness: Evolving Agent Harnesses through Object-Oriented Design
+- [B] `2609.12818` Online Video Agent Harness for Long Video Understanding
+- [B] `2610.26860` OpenVLHarness: Real World Visual Agentic Tool-Use with Multimodal Memory
+- [B] `2610.35832` Profiling a Frontier Agent with EBench: From Direct Control to Harness with Policy
+- [B] `2610.24744` ReTRACE: Feedback-Guided LLM Agent in a Chemistry Harness for Retrosynthesis Planning
+- [B] `2610.29812` Real PMIDs, Wrong Papers: Harness Design for Biomedical Claim-Verification Agents
+- [B] `2610.08621` Recursive Game Creator: An Agentic Product-Level Experience-Oriented Game Harness
+- [B] `s2-31c99a3ae8dd1cdd` ReliHarness: A Self-Learning Reliability Harness for LLM Agent Tool Execution
+- [B] `2609.35501` SRHarness: A Harness for Agentic Symbolic Regression
+- [B] `2609.36580` SafeCoEvo: Co-Evolving Safety Harnesses and Guards for LLM Agents at Test-Time
+- [B] `2610.18813` Self-Evolving Agent Harness
+- [C] `2610.40627` ShallowDefend: Harnessing Shallow Safety Alignment for Multi-Turn Defender
+- [B] `2610.20442` Towards Agentic Robots: Model, Data, Environment, and Harness
+- [B] `2605.29861` Towards Verifiable Multimodal Deep Research: A Multi-Agent Harness for Interleaved Report Generation
+- [B] `2610.02200` VISTA: A Visual Harness for Reasoning in an Interactive World
+- [B] `2610.32483` When Agents Fail: Model or Harness--Who's to Blame?
+- [B] `2611.09088` When Routine Operations Break Architectural Pattern Relationships in LLM Agent Harnesses
+- [B] `2610.26632` When the harness decides success: state that cannot be re-observed
+- [B] `2610.37255` Your Policy Is Secretly a Harness: The Decision Geometry of Agent Interfaces
+- [C] `2609.37976` $S^3$: Spectral Null-Space Swap Makes Reasoning Models Efficient
+- [C] `2610.22341` 3DCodeVerse: Exploring 3D Worlds as Code
+- [C] `2610.12183` A Closer Look at Agentic BBO: Benchmarking LLM Agents for Black-Box Optimization
+- [C] `2611.06914` A Framework for Context Enrichment and Selective Robustness in LLM Social Agents
+- [C] `2610.03243` A Kinetic Theory of the Gated Self-Evolving LLM Agent
+- [C] `2611.07887` A Low Similarity Score Does Not Show Independence after Source-Conditioned Repository Rewriting
+- [C] `2609.17236` A Memorization Floor for LLM Refinement of Decompiled Code
+- [C] `2610.35773` A Unified Arena for LLM Agents across Diverse Eurogame
+- [C] `2611.06597` A trust layer for fast pedestal-stability surrogates: calibrated error bars, out-of-distribution alarms and...
+- [C] `2610.23656` ABF-Bench: A Verifiable Benchmark for Agentic Blockchain Forensics
+- [C] `2610.35840` ACARE: Agent-Context-Aware Reranker for Iterative Search
+- [C] `2610.23845` AI-Driven Reproducibility and Analytical Robustness in Scientific Discovery
+- [C] `2610.12360` Accurate but Not Humble: Evaluating Epistemic Humility in LLM Agents under Knowledge Conflict
+- [C] `2610.32752` ActionRAG: Evidence-Refining Graph Diffusion for Long-Term Memory in LLM Agents
+- [C] `2610.20474` AdaRSI: On-Demand Recursive Self-Improvement for Embodied Agents
+- [C] `2610.03223` AdaStep: Adaptive Step Credit Weighting for Agentic Reinforcement Learning
+- [C] `2610.20040` Advances in quantum optomechanical control based on cavity cold-atom systems
+- [C] `2610.40556` Advancing Clinical Genomic Analysis with a Skill-Centred Agent
+- [C] `2611.05345` Adversarial Speculative Reasoning Improves Long Horizon Agents
+- [C] `2610.28425` After the Attacker Leaves: Benchmarking Carryover Attacks on LLM Agents
+- [C] `2610.31366` AfterDeleteBench: Auditing Post-Deletion Information Persistence in LLM Agents
+- [C] `2610.30014` Agent Behavior Maps: Locating Agents by What They Would Do, Without Running Them
+- [C] `2609.40111` Agent Error Dataset: Scaling 50,000 Error--Diagnosis Pairs for Failure Analysis and Error-Aware Post-Training
+- [C] `2610.08775` Agent in a Bottle: Can LLM Agents Turn Their Capabilities Into Cheap, Scalable Artifacts?
+- [C] `2610.13361` AgentSWE: Can Coding Agents Build the Agent You Actually Want?
+- [C] `2610.09944` AgentTime: Can Agents Estimate and Control Their Own Runtime?
+- [C] `2611.06674` AgentTrustCI: Build-Time Policy, Grounding, and Trajectory Tests for Java LLM Agents
+- [C] `2610.13335` AgentTune: A Unified Training Lifecycle for Tool-Using LLM Agents
+- [C] `2610.31494` AgentVQA: A Unified Benchmark for Agentic Visual Understanding
+- [C] `2610.23724` Agentic AI for Heterogeneous System Design Across Chip, Scale-Up, and Scale-Out Domains
+- [C] `2610.08452` Agentic AutoRAG: RAG Pipeline Optimization through Reasoning-Driven Agents
+- [C] `2610.37611` Agentic Distributional Regression: Conditional Density Estimation through Agent-Written Programs
+- [C] `2610.28560` Agentic Ensemble with Vision-Language Models for Visual Anomaly Detection
+- [C] `2610.40379` Agentic LLM reasoning in pediatric diabetes outcome prediction from multimodal medical records
+- [C] `2610.08622` Agentic RCA for Internet-Scale Services Using Constrained Creativity
+- [C] `2610.10479` Agentic RSR: Real-to-Sim-to-Real through Scene Reconstruction and Execution-Grounded Robot Policies
+- [C] `2609.16309` Agentic Search Spaces for Tabular Machine Learning
+- [C] `2610.40492` Agentic University: Collaborative Agents for Personalized Learning
+- [C] `2610.30136` Agentic World Action Models
+- [C] `2611.04813` AgenticFinBench: Benchmarking Financial Agents on Diverse Tasks from Real-World Requests
+- [C] `2610.28589` AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics
+- [C] `2611.06727` Airlock: Bounding the Multi-Agent Blast Radius via Selective Online Containment
+- [C] `2610.26662` AllPath: Layered Verification for a Deployed, Self-Revising LLM Trading Agent under Human-Gated and Autonom...
+- [C] `2610.23762` An exact finite-state representation of viscoelastic memory for accelerated sea-level modeling: SLEvolve v1.0
+- [C] `2610.37319` AnalogScout: Simulation-Efficient PVT-Aware Analog Sizing with LLM Agents
+- [C] `2609.37853` AnthroDial: Benchmarking LLM Anthropomorphism in Autonomous Social Interaction
+- [C] `2610.20571` Any Time, Any Space: A World-State-Centric Framework for Agentic Video Generation
+- [C] `2610.13870` Ask Your Advisor: Learning When to Consult Stronger Models in Agentic Systems
+- [C] `2610.41378` Ask on Demand: Targeted Peer Communication for Parallel Agentic Systems
+- [C] `2611.03517` Ask, Don't Equip: Question-Driven Coding Agents for Deep Kernel Optimization
+- [C] `2610.32429` Async-RBench: Benchmarking Asynchronous Task Execution in LLM Agents
+- [C] `2611.07932` AttnSR: Attention Step Reward for Long-Horizon Agentic RL
+- [C] `2609.38021` Auditable Long-Term Memory: A Deterministic Retrieval Chain Measured at 479/475 of 500 on LongMemEval-S
+- [C] `2611.09113` Authorization Drift in LLM Agents: Evaluating Boundary Compliance in Multi-Step Tool Use
+- [C] `2610.35866` Auto-Research Arena: Benchmarking and Advancing Auto-Research in Language Modeling
+- [C] `2610.18866` AutoAgent0: An Agentic Runtime for Safe Closed-Loop Driving
+- [C] `2610.37228` AutoRSE: Evaluating LLM Agents as Recommendation Engineers for Self-Evolving Recommender Systems
+- [C] `2610.36980` AutoVend: Benchmarking LLM Agents on Long-Horizon Autonomous Vending Operations
+- [C] `2610.29850` Automated Discovery of Physically Interpretable Subgrid Length Scales for Detached Eddy Simulation via Agen...
+- [C] `2610.41574` BYOD: Build Your Own DLM - Efficient Autoregressive-to-Diffusion Language Model Conversion
+- [C] `2610.10478` Before They Can Solve: Predicting Post-Training Coding-Agent Performance from Base Models
+- [C] `2610.37283` BenchMeUp: Building Software Engineering Benchmarks from Natural-Language Specifications
+- [C] `2611.08417` Benchmarks as Software: Terminal-Bench and the Case for Continuous Benchmarks
+- [C] `2610.20573` Beyond LLM Judge: Mechanical Verification for Agentic Autoformalization
+- [C] `2610.31158` Beyond Watching and Searching: Benchmarking Agents for Video-centered Deep Research Reports
+- [C] `2610.37055` Blindfold: Keeping the Audit Coin Secret from LLM Agents
+- [C] `2610.12452` BrickBench: Evaluating Agentic Brick Design
+- [C] `2610.31651` BrickWright: Agentic Creation of Physically Feasible Brick Builds
+- [C] `2610.03615` Bridging Frontier Reasoning and Robot Execution: From Autonomous Demonstration Generation to Dense Language...
+- [C] `2609.16582` CLASH: Counterfactual Auditing of Lexical and Prosodic Reliance in Spoken Sarcasm Detection
+- [C] `2610.06829` CLIFT: Conformal Self-Verification for Web Agent Training and Test-Time Scaling
+- [C] `2611.07859` CORE: Coarse-to-Fine Search with Context Management for Deep Research
+- [C] `2611.09891` CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse
+- [C] `2611.04972` Caging Vision-Language Navigation for Legged Robots via Barrier-Certified Safety Architecture
+- [C] `2610.12341` Can AI Agents Learn Their Way to the Top? Evaluating Heuristic Learning in a Long-Running Game Agent Compet...
+- [C] `2611.09836` Can Agentic Systems Close the Gap in Radiology with Production AI Tools?
+- [C] `2611.03219` Can Coding Agents Sustain Continual Evolution without Forgetting?
+- [C] `2610.26861` Can It Actually Work? Synthesizing Functional CAD Mechanisms
+- [C] `2611.03551` Can LLM Agents Be Forward-Deployed Engineers? Requirement Discovery and Delivery for Enterprise Text-to-SQL
+- [C] `2611.03543` Can LLM Agents Improve Imperfect Earth System Model Parameterizations?
+- [C] `2610.37649` Can LLMs Uncover Hidden Physical Laws through Free Exploration?
+- [C] `2609.35627` Can LLMs Value the Right Evidence? Evidence-Value Misalignment in Dynamic Medical Diagnosis
+- [C] `2610.31636` Can an Agent Debug a Web Corpus? Agentic Auditing of Slovak FineWeb2
+- [C] `2610.18614` Can an Agent Learn to Predict Its Own Failure? Outcome-Grounded Confidence Calibration in LLM Agents
+- [C] `2610.28586` Capable Teacher, Myopic Scorer: Reward-Free Teacher Repair for Agentic On-Policy Distillation
+- [C] `2610.32477` CauProphet: Teaching Agents to Develop Causal Cognition like Humans
+- [C] `2610.12445` Caught in the Act: Probes Effectively Detect Sabotage and Catch Unverbalized Deception
+- [C] `2610.31566` CellTrack-Bench: Microscopic Cell Tracking Benchmark for Vision-Language Models
+- [C] `2610.30072` Charts as Epistemic Actions for Experience-Driven Agentic Data Analysis
+- [C] `2610.13728` Chiroptical Nonlinearity Found in Covalent Organic Frameworks
+- [C] `2610.18874` ChunkAct: Action Chunking for Agentic Robotics
+- [C] `2610.37405` Clearing the FoG: Training KG Agents to Retrieve the Evidence Behind Their Answers
+- [C] `2610.20597` Co-Evolving Acting and Forecasting for Language Agents
+- [C] `2609.40324` Cogentic: Multi-Agent Orchestration for Automated Proof Discovery
+- [C] `2611.08456` Cognitive Tours: Making Understanding a Deliverable in AI-Assisted Development
+- [C] `2610.29869` Compaction Laundering: Provenance Destruction in Context-Compacting Coding Agents
+- [C] `2610.41905` Completeness and Cost of Retrieval Structures for Multi-Tool Requests in LLM Agents
+- [C] `2610.37461` Concordat: Typed Sessions for LLM Agents
+- [C] `2610.12348` Constructing Large and Structured Decoherence-Free Subspaces in Hybrid Quantum Systems
+- [C] `2610.28364` Context-Aware Prompt Injection Detection via Small Language Models in RAG Pipelines: nokast-secureRAG
+- [C] `2609.37743` ContextRender: From Execution Dependencies to Agent Context
+- [C] `2611.06759` Continual Classification Beyond the Kernel Regime: Harnessing the Sparsity Bias of L2 Regularization in Dia...
+- [C] `2608.06216` Continual Learning in Transition
+- [C] `2610.01833` Continuous Process-Level Evaluation for Evolving Enterprise AI Agent Skills
+- [C] `2610.37352` Coulomb Crystallization in Free Electron Beams
+- [C] `2611.03178` CoworkOS:Scaling Agent Coworkers for Real-world Automation
+- [C] `2610.40324` Crowds Believe in You: Online Prediction Markets Overestimate How Often People Achieve Their Own Goals
+- [C] `2610.03226` D2K-Bench: Can LLM Agents Turn Expert Designs into Efficient GPU Kernels?
+- [C] `2610.23787` DLite: History-free Speculative Decoding for Agentic AI
+- [C] `2610.23574` Darwin-Claw: Environment-Adaptive Experience Consolidation for Recursively Self-Evolving Agents
+- [C] `2610.01914` DecomVoxel: Harnessing 3D-Native Priors with Guided In-situ Denoising Optimization for Decompositional Scen...
+- [C] `2610.29742` Delay-Doppler Domain Aided OFDM (DD-a-OFDM): Pulsone Pilot and Cross-Domain Iterative Receiver Design
+- [C] `2611.03412` DeliverBench: Benchmarking AI Agents on Delivering Realistic Multi-Stage Professional Projects
+- [C] `2611.03601` DiabAgent: Toward Agentic Physiological Control
+- [C] `2610.28315` Disclosure Begets Disclosure: A Self-Reinforcing Privacy Loop in LLM Agents with Persistent Memory
+- [C] `2610.23839` DiscoveryRSI: Recursively Learning to Discover Valuable Hypotheses
+- [C] `2611.03523` DistDebug-Bench: Can LLM Agents Diagnose Bugs in Distributed Systems?
+- [C] `2611.03223` Do Agents Still Follow the Rules? Benchmarking Rule Compliance under Agent Context Compaction
+- [C] `2609.38108` Do LLM Agents Execute the Plans They Declare? From Planning-Mode Declaration to Pattern-Specific Execution
+- [C] `2610.01955` Do Your Own Research: Learning to Forecast by Learning to Search
+- [C] `2611.06572` Does Personality Persuade? Investigating Personality Trait Prompting and Persuasion in Large Language Models
+- [C] `2610.08722` Does an Agent's History Tell You When Compaction Will Hurt? A Modest, Bounded Effect on the TRACE Paired-Re...
+- [C] `2610.40350` Don't Lose the Thread: Empowering Long-Horizon LLM Agents with Cognitive Resource Self-Allocation
+- [C] `2611.04439` DualEvolve: Dual-Level Self-Evolution of Mechanism and Orchestration for Recommendation
+- [C] `2610.02161` DuoMind: Enabling Distributed Multi-Robot Coordination with Semantic Communication
+- [C] `2610.20330` Dynamic morphing of non-Euclidean active shells enabled by flutter under a steady stimulus
+- [C] `2609.16635` EchoPath: Execution-Level Replayable Memory for GUI Agents
+- [C] `2610.23530` EduWild: How Teacher-Configured Chatbots Fail in Real-World Use and How to Fix Them
+- [C] `2610.32419` Electron Wavefronts Capture Nanoscale Movies of Hypersound at Surfaces
+- [C] `2610.42078` Embodied Movable Antennas
+- [C] `2610.12369` Embodied Turing Machines: Stateful Code for Robot Recursive Self-Improvement
+- [C] `2610.18867` EmbodiedEvo: Self-improving Coding Agents for Physical Intelligence
+- [C] `2610.10498` EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution
+- [C] `2610.23782` Enforcing Code Reasoning in Agentic Scaffold for More Effective Issue Resolution
+- [C] `2610.37609` EnvSched: Environment-Aware Scheduling for Rollout-Efficient Agent Reinforcement Learning
+- [C] `2610.30116` Environment Duels: A Microcosm of LLM Co-Evolution
+- [C] `2610.40227` EpiAgent: Epistemic Self-Play for LLM Agents
+- [C] `2609.37923` EpiCon: Collective Agent Learning through Co-Evolving Multimodal Memory
+- [C] `2610.31650` EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence
+- [C] `2610.20099` EvalBuilder: Can LLMs Build Efficient Benchmarks?
+- [C] `2610.41717` Evaluating Instrument-Centered AI Agents for Table-Top Science Experiments
+- [C] `2609.17439` Evaluating Verified Autonomy in Quantum Engineering
+- [C] `2610.03153` EvoRiskBench: An Evolving Benchmark for Runtime Security Risks in Workspace Agents
+- [C] `2610.28601` Evolving Agent Interfaces
+- [C] `2610.28361` FALCA: Falsification-Aware Reinforcement Learning with Hierarchical Credit Assignment for Long-Horizon Deep...
+- [C] `2610.35801` FOCUS: Active Critic Learning for Long-Horizon Language Model Agents
+- [C] `2609.35732` Failure-Transparent Agents: Benchmarking Post-Failure Reporting in Tool-Using Language Models
+- [C] `2611.03586` FedReady: Bounded Agents for Federation Formation
+- [C] `2609.17391` FlashVector: Agent for Hierarchical Model Serving Stack Optimization
+- [C] `2611.08946` Flex-RSI: Benchmarking Recursive Self-Improvement of Frontier Agents
+- [C] `2610.42148` Flide: Accelerating Decision Inference with Exact State Forking
+- [C] `2610.09973` From Expected Harmfulness to Likelihood: A Probabilistic Reformulation of Jailbreaking LLM Agents
+- [C] `2609.35559` From Search to Research: Exploring Search Scaling in Autonomous Quantitative Factor Mining
+- [C] `2610.23599` From Trajectories to Differentiated Skills: Cognitive Differentiation for Self-Improving Agents
+- [C] `2610.40641` From extreme weather to agricultural consequences with agentic AI
+- [C] `2611.09017` Frontier3DBench: Benchmarking Coding Agents for 3D Creation across Objects, Scenes, and Interactive Open Wo...
+- [C] `2610.29932` FrontierCS 2: A Benchmark for Computer Science R&D
+- [C] `2610.03675` FrugalEvo: Towards Cost-Aware LLM-Guided Program Evolution
+- [C] `2610.28629` GBClaw: An agentic AI framework for atomistic grain boundary research and mechanistic discovery
+- [C] `2610.37651` GEPA-Curator: Curated Learning for Self Improving Agents
+- [C] `2611.06866` GH-AWTrace: A Large-Scale Dataset of GitHub Agentic Workflow Execution Logs
+- [C] `2610.23709` GLOBE: Evolving Structured Agentic Memory for E-commerce Product Optimization in Generative Search
+- [C] `2609.35639` GPUPhysBench: Benchmarking Coding Agents for Correct and Efficient GPU Physics Simulation
+- [C] `2610.23449` GatewayBench: Unified Capability and Security Evaluation Platform for MCP Gateways
+- [C] `2610.31096` GeoAgent: Contract-Constrained LLM Agents for Seismic Data Processing
+- [C] `2610.13542` Giant geometric nonlinear transport in inhomogeneously strained Bi$_2$Se$_3$ single crystalline slabs
+- [C] `2610.35614` Giant third-order nonlinearity amplifies second-harmonic transport in Ca3Ru2O7
+- [C] `2610.02036` Global Coherence: When Every Agent Is Right and the Team Is Still Wrong - A Local-to-Global Semantic Founda...
+- [C] `2610.01937` Graph Representation via Elements of Discrete Morse and Cobordism Theories
+- [C] `2610.22031` GraphACM: Graph-based Action Consistency Measurement for Uncertainty Quantification in LLM Agents
+- [C] `2610.37242` Grounding LLM Agents in Business Processes: Process-Aware Knowledge Graphs for Reliable Multi-Step Service ...
+- [C] `2610.37567` Gym-Anything-RT: Scaling Real-Time Environments for Vision-Language Agents
+- [C] `2611.05319` HARP: Training-Free Dual-Profile Agentic Communication for LLM-Based Recommendation
+- [C] `2610.31401` HERD: Harness-Evolving Recursive Distillation for Continual Learning
+- [C] `2610.18641` HILO: Enabling Low-power, Dual-Band Communication using Tunnel Diode Oscillators
+- [C] `2610.22195` HTN-Orchestrate: A Hierarchical Task Network Framework for Multi-Agent Orchestration
+- [C] `2610.26426` HarnessRL: Co-Evolving Policies with a Just-in-Time Training Harness for Open-Ended RL
+- [C] `2610.02123` Harnessing Domain Specialists in Multimodal Mixture-of-Experts for Efficient Adaptation
+- [C] `2611.03193` Harnessing Mutual Coupling in Cell-Free mMIMO
+- [C] `2610.08438` Harnessing Post-selected von Neumann Measurements to Strengthen Entanglement and Quantum Signatures in Cohe...
+- [C] `2609.40105` Harnessing problem structure for end-to-end quantum speed-ups
+- [C] `2610.37657` Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness
+- [C] `2610.35616` Hierarchical Skill Evolution for Coding Agent
+- [C] `2610.13494` Humanize MLE Agents: Multi-Agent Session Alternation Beyond Single-Agent Limits
+- [C] `2610.22196` Hy-Memory-30B-A3B: Attributed Reinforcement Learning for Long-Term Memory Writing
+- [C] `2610.18861` Hybrid Reasoning Agents
+- [C] `2610.03574` HyperBrowseComp: A Multilingual and Multimodal Stress Test for Web-Browsing Agents
+- [C] `2610.35835` I-HITL: Inalienable Human-in-the-Loop
+- [C] `2611.03424` IdeaTaste: Do LLMs Share the Research Taste of Human Researchers?
+- [C] `2611.09445` Incentive Pathologies in a Live LLM Agent Arena: An Empirical Study of Concentration, Reward-Rule Implement...
+- [C] `2610.35579` Infinity Machine: a self-improving AI agent for research
+- [C] `2610.35790` Information-theoretic entropy imaging of quantum matter
+- [C] `2611.08286` Interactive Visual Gym: Evaluating Visual Interaction Models with Simulated Users in Interactive Worlds
+- [C] `2609.16436` Interpreting and Steering LLM Agents for Social Simulations
+- [C] `2610.32871` J-Comm: Jacobian-Guided Latent Communication between LLM Agents
+- [C] `2610.23804` Jarvis: Coordination Deserves a Brain of Its Own in Agentic Interactive Models
+- [C] `2610.20527` JetStream: Generating Verified Query Accelerators for Existing Database Systems
+- [C] `2610.18497` Judges Follow the Reference: The Derivation Gap in Verifying Tool-Call Arguments
+- [C] `2610.41482` KEEPER: Learning Control-Sufficient Textual Memory for Long-Horizon LLM Agents
+- [C] `2610.41521` KITE: Retrieval as a Decision Procedure for Long-Term Conversational Memory
+- [C] `2609.35750` KV-streams for Efficient Compaction in Agentic Reinforcement Learning
+- [C] `2610.02206` KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable R...
+- [C] `2610.08413` Knowing When Not to Answer: Cross-Domain and Multi-Turn Generalization of Latent Underspecification Signals
+- [C] `2611.09792` Knowing When to Intervene: Causal Evaluation of AI Agents
+- [C] `2610.03564` Knowledge or Calculator? Decomposing the Skill Premium in Verifiable Financial Agent Workflows
+- [C] `2610.18572` LLM Agents for Automated Post-Training via Structured Recipe Optimization
+- [C] `2610.10320` LLM-Assisted Generation of Transparent, Open-Source Multiphysics Models of Electrochemical Devices
+- [C] `2611.03308` LLMs Depend on Specialist Tools for Out-of-Distribution Generalization in MS/MS Structural Elucidation
+- [C] `2610.10487` LOCAA: An Agentic System for Automated Lossy Compressor Tuning
+- [C] `2610.08378` Lachesis: Lifetime-Aware KV Cache Placement for Agent Serving across HBM and High-Bandwidth Flash
+- [C] `2610.42147` Latent Sparse Attention: Towards Subquadratic Ultra-Long Context Attention
+- [C] `2610.22322` Learning Self-Orchestration in Decentralized Agent Swarms
+- [C] `2610.10332` Learning to Act with Task Progress: Distilling Small Agents from Compact Teacher Supervision
+- [C] `2610.22316` Learning to Steer LLM Agents and Multi-Agent Systems
+- [C] `2610.32578` Lessons Outlive Their Failures: A Case Study of Rules for AI Coding Agents
+- [C] `2610.23832` Leveraging verifiable structure in quantum circuits to find more efficient compilations with agentic AI
+- [C] `2610.22273` Librarian Agents: Training LLMs to Curate Long-Context Workspaces that Anticipate Future Queries
+- [C] `2610.01863` LiteReality-Agent: An Agentic System for Interactable 3D Indoor Scene Reconstruction
+- [C] `2610.09872` LiveMACE: Process-Aware Evaluation of LLM Agent Capabilities in Evolving Markets
+- [C] `2610.40186` Locating and Closing Information Gaps in Multi-Agent Systems
+- [C] `2611.06856` LongBanana: An Expert-Verified Benchmark for Long-Context Multi-Reference Image Synthesis
+- [C] `2610.18522` Lost in Implicit Routing: How LLM Agents Fail to Load Relevant Skills at Scale
+- [C] `2611.03555` MCP Tool Poisoning in Agentic AI Frameworks: A Cross-Framework Measurement Study
+- [C] `2611.06897` MCP-Eco: A Linked Dataset of MCP Servers, Consumers, and Development Activity
+- [C] `2611.07689` MCPHallu: Benchmarking Reasoning, Execution, and Memory Hallucinations in MCP Agents
+- [C] `2611.07631` MEMOIR: A Training-Free Memory Lifecycle for Long-Horizon LLM Agents
+- [C] `2611.04685` MIMIC-Note-Extract: A Large-Scale Structured Dataset Extracted from MIMIC-IV-Note Discharge Summaries
+- [C] `2610.22344` MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering
+- [C] `2609.16331` ManiSkillFormer: Demonstration-Free Compositional Manipulation via Task-Conditioned Geometric Contracts
+- [C] `2610.13573` MatQuery: Execution-Grounded Natural-Language Querying over Heterogeneous Materials Databases
+- [C] `2610.13755` Matched-Context Group Policy Optimization for LLM Agent Training
+- [C] `2610.41919` Matching Workloads to Blackwell: Power-Resolved Benchmarking of NVIDIA B200 and B300 across HPC and AI Work...
+- [C] `2610.02002` Mem++: Non-Destructive Memory for Long-Term Organizational LLM Agents
+- [C] `2610.26825` MemT-1.0: Towards Memory-Native Evolution
+- [C] `2610.20022` Memorizing Who, Knowing How: Benchmarking Personal and Procedural Memory for Persistent Assistants
+- [C] `2611.09721` MemoryDojo: Benchmarking Poisoning Through LLM Agent Memory
+- [C] `2610.12453` Mental-Models for Multi-Agent Systems
+- [C] `2610.02038` Mimir: Physics-Grounded LLM Agents for Long-Horizon Irrigation Control
+- [C] `2610.22314` MindEval2: Clinically Grounded Patients and Rubrics for Evaluating Language Models in Mental Health Support
+- [C] `2611.09065` MongoBench: Do LLMs Know What a MongoDB Query Will Do?
+- [C] `2609.38078` MotorMind: Scaffolding General Vision Language Models for Zero-Shot Robot Manipulation
+- [C] `2611.08281` Multimodal-SEA: Benchmarking AI Agent Security under Multimodal Social Engineering Attacks
+- [C] `2610.23480` MuninAI: A Self-Hosted Agentic Framework for Independent Research Groups
+- [C] `2611.09474` Nebula: Distributed Position-Independent Caching for LLM Serving
+- [C] `2610.03631` NeutronGym: Physics-Graded Neutron Instrument Design for LLM Agents
+- [C] `2610.13894` Nimbus Studio reproduces reference BCI decoding pipelines: a validation study on public benchmarks across p...
+- [C] `2611.09264` Nudging Decision Models: Do Digital Nudges Steer Fast, Generation-Free AI Agents?
+- [C] `2609.17380` OPEN-1B: A Fully Auditable Training Run
+- [C] `2610.12415` ORCAGen: Orchestrating Context-Aware Malware Deception with RAG-Guided Generative AI
+- [C] `2610.41563` ORION: An Outcome-Driven LLM Advisor for RL-Based Multi-Domain 6G Slice Placement
+- [C] `2609.39903` OSWorld-Science: A Benchmark of Computer Use Agents for Learning and Using Scientific Software
+- [C] `2610.02148` Omni-Embed-Mini: Binding Modalities Without Forgetting via Dense Distillation
+- [C] `2610.02181` OmniSeek: Native Tool Integration for Multi-turn Audio-Visual Reasoning
+- [C] `2611.09892` On Agentic Manipulation Policies
+- [C] `2611.06868` On Turn-Level Best-of-N Sampling for Scaling LLM Agents
+- [C] `2610.12375` OnTrack: Real-Time Monitoring and Intervention in LLM Agent Trajectories via Streaming Structure-Aware Opti...
+- [C] `2610.20576` One Task, Many Interfaces: Simple Cross-Interface Consistency Training Improves LLM Agent Robustness
+- [C] `2609.40296` Open Capacity Pooling in Agentic Supply Chains: Coordination-Directed LLM Discovery and Distributed Re-opti...
+- [C] `2610.22200` OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use
+- [C] `2610.37081` OpenGray: a benchmark for evaluating the decisions of radiotherapy planning agents
+- [C] `2611.05179` OperAItor: An Agentic Framework for Fault-Tolerant Operation of Chemical Processes
+- [C] `2610.41350` Operon-S1: a fast decision controller for long-horizon biomedical agents
+- [C] `2610.28562` OptScientist: Automated Discovery of Optimization Laws
+- [C] `2610.29870` PAUSE: Search-Free Steering of Coding Agents Before Their First Source-Code Edit
+- [C] `2611.08175` PCBRouteAgent: How Close Are LLM Agents to Becoming PCB Routing Engineers?
+- [C] `2610.22124` PROBE: Learning to Audit Policy Compliance in Tool-Using LLM Agents
+- [C] `2610.03259` PaMIR: Open Benchmark of Public Credit-Default Datasets
+- [C] `2610.08662` ParanoiaEval: Benchmarking Unnecessary Defensive Work in Agentic Coding
+- [C] `2610.03448` Passing the Test You Trained On: Re-evaluating Prompt-Injection Detectors for LLM Agents
+- [C] `2609.40118` Persistent Context Graphs for Efficient Memory Compaction in LLM Agents
+- [C] `2609.40221` PhantomEnvironments: Training LLM Agents in Fictional Worlds
+- [C] `2611.06712` Phase-Locked Quantum Battery Charging via Dissipative Mode Selection
+- [C] `2610.20560` PhySGA: A Physics-Space Grounded Agentic Framework for Generalizable and Interactive 3D Composition
+- [C] `2609.40358` Physis-Lang: Self-Evolving Language as a Physical Representation for Video World Model
+- [C] `2609.16491` PipeSwift: Revisiting Pipeline Parallelism for Large-Scale Completion-Oriented Agentic Serving
+- [C] `2609.35366` Planarian: Managing Agent State with Statepoints
+- [C] `2610.26410` Policy-Adaptive Credit Assignment for Spatial Reasoning with Verifiable Rewards
+- [C] `2610.39685` Practical Assessment of Agentic Systems in Acoustics
+- [C] `2610.35817` Pretraining Knows What, Simulation Teaches How: Compositional Generalization in a Sim-Trained Robot Agent
+- [C] `2610.20587` Price of Anarchy of First-Price Auctions in Agentic Markets
+- [C] `2610.22019` Priming Base Models for Agentic Post-Training: An Open Midtraining Recipe
+- [C] `2610.18683` ProAS: A Progress-Aware Advantage Shaping Framework for Multi-Turn Agentic Reinforcement Learning
+- [C] `2610.13485` Proactive Agentic Orchestration
+- [C] `2610.26829` ProteinGeoBench: Frontier Structural-Biology Agents Are Fluent at Lookup but Lost in Geometry
+- [C] `2611.04701` Proving the Wrong Program: Miscompilations as a Threat to zkVM Guarantees
+- [C] `2611.05320` PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data
+- [C] `2611.07976` QRAE: Query-Relevant Attention Entropy for Context Compression in DeepSearch Agents
+- [C] `2610.30113` Quant-Arena: Benchmarking LLM Agents for Quantitative Trading Research
+- [C] `2610.42053` REA: A Routed Embodied Agent Runtime for Asynchronous Brain-Cerebellum Control
+- [C] `2610.10507` RECAST: Learning to Compute the Right Context through Adaptive Evidence Routing
+- [C] `2610.12185` RESETTLE: Robotic Recovery through Disagreement-Triggered Retrieval and Efficient Corrective Control
+- [C] `2610.23598` RL-Guided Temporal Localization for Dual-Channel Retrieval in Long-Horizon Agent Memory
+- [C] `2610.21791` RSIFlow: Adaptive Self-Improvement Workflows with an Evolving Meta-Agent
+- [C] `2610.10310` RSIGym: A Flexible Environment for Recursive Self-Improvement
+- [C] `2609.35549` RareDx: Controlled Knowledge Integration and Graph-Grounded Policy Optimization for Rare-Disease Diagnosis
+- [C] `2610.31185` Realization of a Superleak in a Quantum Gas
+- [C] `2610.03548` Recursive Harness Self-Improvement for Frontier Reasoning Data Synthesis
+- [C] `2610.13399` RegulaTutor: A Theory-Informed Framework for Long-Term Personalized Learning
+- [C] `2610.32851` Reimagining Enterprise RAG for Multi-Agent Systems: A Knowledge Layer That Organizes Before It Retrieves
+- [C] `2609.35706` Reinforcing Agentic Creativity in Scientific Ideation with Night Science
+- [C] `2610.35829` Reva: Real-Time Vulnerability Detection through Contextual Probing of Large Language Models
+- [C] `2611.03602` Reviso: Not All Visual Evidence Deserves Equal Attention in Video Captioning
+- [C] `2610.28409` Rewards for Budget-Aware Multi-Turn Agents That Adapt to Arbitrary Test-Time Constraints
+- [C] `2611.04673` Right Tool, Wrong Parameters: Defending LLM Agents Against Parameter Poisoning
+- [C] `2610.42141` RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory
+- [C] `2610.35604` RoboDoctor: Training-Free Recursive Self-Improvement for Robot Policies
+- [C] `2610.18835` RoboSimStudio: An Interactive Toolkit for Rapid Real2Sim of Robot Manipulation Tasks
+- [C] `2610.13438` Rollout-Time Intervention: Unlocking Agentic Reinforcement Learning Beyond Policy Limits
+- [C] `2611.05275` Route Anything: A Study of Model and Policy Routing for General-Purpose AI Systems
+- [C] `2610.10444` RunningTab: Direct Workspace Interaction with Environment-Side Tabs
+- [C] `2610.32965` RynnUnify: Towards Unified Embodied Brain
+- [C] `2610.28354` S-Agent 2.0: Spatial Reasoning with a General Coding Agent
+- [C] `2610.31169` SARIA: Persistence-Aware KV Caching with Coordinated DRAM--SSD Reload for LLM Agents
+- [C] `2611.08390` SCALE: Real-Time Latent Communication for Cyber-Physical Agents
+- [C] `2610.32441` SCI-AGENT-EXAM: Benchmarking Agents on Scientific Research Tasks
+- [C] `2610.31062` SCOPE: Compiling Natural-Language Policies into Neurosymbolic Predicate Programs
+- [C] `2609.35596` SEABench: Benchmarking Endogenous Misalignment In Self-Evolving Agents
+- [C] `2610.39758` SEAL: Sealed Queries for Local Sanitization against Indirect Prompt Injection
+- [C] `2610.18792` SEAR: Self-Evolving Agentic Robotics
+- [C] `2611.03298` SQLoom: Set-Contrastive Learning of Syntactic, Semantic, and Logical Dependencies for Text-to-SQL
+- [C] `2610.28578` Sage-A1.5: From Long-Horizon Execution to Scientific Exploration with Capability Composition
+- [C] `2610.20457` Same Claim, Different Interpretations: How LLM Agents Resolve Ambiguity in Scientific Claims
+- [C] `2610.31544` Same Luck, Different Choice: Twin-World Credit Assignment for Agentic Reinforcement Learning
+- [C] `2610.13823` Same Query, Different Answer: Run-to-Run Variance in Semantic Query Processing
+- [C] `2610.26836` Same Simulation, Different Evidence: Where Retrieved Tool Output Costs LLM Agents Accuracy
+- [C] `2610.29588` SatCraft: Agentic Optimization of Scheduling Policies for Satellite-Cellular Edge Services
+- [C] `2610.20563` Scaling Discovery Requires Forgetting
+- [C] `2609.16466` Scaling LLM Agents for Materials Design through Hierarchical Collective Reasoning
+- [C] `2609.35759` Scaling Long-Form Story Generation via Narrative State Tracking
+- [C] `2611.09888` Scenario Orchestration for Closed-loop Policy Evaluation of Autonomous Driving
+- [C] `2610.32978` SceneBloom: Agentic Indoor Environment Generation with Realistic and Diverse Layouts for Embodied Learning
+- [C] `2610.28585` SceneRig: An Agentic System for Simulation-Ready 3D Scene Reconstruction from Single Images
+- [C] `2610.02202` ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research
+- [C] `2609.17523` ScienceBuddy: Recursive-in-Recursive Self-Improvement for Interactive Scientific Agents
+- [C] `2611.06682` SecureGARD: Dynamic Ontology-Guided Governance for Secure Tool-Using LLM Agents
+- [C] `2610.28388` Self-Credit: Credit Assignment for Long-Horizon Agentic RL via Intra-group Rescaling
+- [C] `2609.35432` Self-Evolving Coding Agents: From Digital Programs to Physical-World Intelligence
+- [C] `2609.37968` SelfSearch: Reward-Free Search for Self-Improving Agents
+- [C] `2610.08668` Semantic Behavioral Watermarking: Paraphrase-Robust and Forgery-Resistant Provenance for LLM Agents
+- [C] `2610.32755` Semantic Representation for Agentic Self-Play in Automated Laboratories
+- [C] `2611.06841` ServerBench: How can your coding agents design specialized LLM serving systems?
+- [C] `2609.35576` Share-Borne AI Virus: Memory-Hopping Attacks Across LLM Agents
+- [C] `2609.35741` Shockingly Simple Self-retrospection Improves Agentic Models Without RL
+- [C] `2609.40272` Skill-Based AI Agents for Power-System Studies
+- [C] `2609.38178` Skill-Space Shooting for Autonomous Robot Policy Improvement
+- [C] `2610.18807` SkillScaffold: Scaffolding Agentic Reinforcement Learning with Policy-Adaptive Skill Credit Assignment and ...
+- [C] `2610.03195` Source Preference in the Wild: How LLM Agents Favor Items by Source, and How to Reduce It
+- [C] `2610.12457` SpatialHarness: Test-Time Spatial Scaffolding for Fine Robotic Manipulation
+- [C] `2611.06876` SpecCompact: Accelerating LLM Agent Context Compaction with Slot-Parallel Semantic Speculative Verification
+- [C] `2611.05266` Stabilizing On-Policy Targeted Guidance in Agentic Reinforcement Learning
+- [C] `2610.26811` State World Models: Execute the Rules, Generate the Pixels
+- [C] `2610.32648` StateMirror: Pre-Execution Detection of Hallucinated Tool Calls in Coding Agents
+- [C] `2610.42112` Subquadratic Attention with a Hierarchical Tree-Structured Indexer
+- [C] `2610.12126` SuperNav: An Agentic Navigation System for Any Task in Any Scene
+- [C] `2610.06782` T-Search: An Open Agentic Retriever and Playground for Hard Multi-Step Search
+- [C] `2611.03584` TAMPAgent: Agentic Belief-Space Planning for Mobile Manipulation
+- [C] `2610.30043` TARSphere: A Robot-Oriented Full-Stack Framework for Long-Horizon Embodied Agents in Evolving Physical and ...
+- [C] `2611.06803` Task-Efficient Agent Evaluation Using Cached Traces
+- [C] `2610.12289` TestPrism: Rethinking Test Evaluation Beyond a Single Reference
+- [C] `2611.08313` Testing Gravitationally-Induced-Entanglement with Massive Particles and Quantum Clocks
+- [C] `2610.18868` Tev: Scaling Long-Horizon Agentic Environments with Dense Progress Rewards
+- [C] `2610.40370` The Athlete as a Scientist of One: Agentic Bayesian Experimental Design for Individualized Physiology from ...
+- [C] `2610.32726` The Butterfly Defects: Tracing Cooperation in LLM Agent Networks
+- [C] `2610.20068` The Code of Theseus: Can Agents Rebuild Software from Recovered Design Documents?
+- [C] `2609.35557` The Compiler May Read It, the Agent May Not: Keeping Part of a Research Code Away from a Coding Agent
+- [C] `2610.30114` The End of Consensus Research?
+- [C] `2610.37415` The Envelope Layer: An Underestimated Surface of LLM Agent Defense
+- [C] `2610.18507` The Last Mile of Coding Agents for Long-Document Tasks: An Empirical Study on Clinical Trial Protocol Digit...
+- [C] `2610.18845` The Last Remote Sensing Model Built by Humans? Casting Any Earth Observation Task as Recursive Self-Improve...
+- [C] `2611.08428` The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI
+- [C] `2610.40259` The Price of a Chance in Artificial Societies
+- [C] `2610.20518` The Wealth of Agents: Scaling Agentic AI Across Developers
+- [C] `2610.42082` Think in 360°: Benchmarking and Bootstrapping Panoramic Video Reasoning
+- [C] `2609.38147` Thinking Before Thinking: Scaling Agentic Inference Through Meta-Reasoning
+- [C] `2609.40082` Tide: Reclaiming Phased Memory in Agent MicroVMs
+- [C] `2610.13651` ToFu: Exploiting and Fuzzing the LLM-Orchestrator-Tool Trust Boundary
+- [C] `2609.35760` TokenCast: Forecasting Token Consumption During LLM Agent Execution
+- [C] `2610.32555` Tool-Calling LLM Agents Under Realistic MCP Faults: Scale Does Not Purchase Fault Tolerance
+- [C] `2611.05269` ToolSched: Resource-Efficient Tool Scheduling for Shared-Host LLM Agents
+- [C] `2609.17317` Towards Detecting AI-Assisted Responses in Online Surveys
+- [C] `2610.08630` Towards In-Parameter Memory Augmentation for Large Language Models
+- [C] `2610.13947` Towards Physically Grounded Articulated 3D Assets: A Multi-Agent Pipeline and Benchmark
+- [C] `2609.35659` Tracekit: Tamper-Evident Intent-Reasoning-Action Auditing for Autonomous Coding Agents
+- [C] `2610.42004` TradeWar: A Benchmark for Execution-Grounded Trade Negotiation with Adaptive LLM Agents
+- [C] `2610.31483` Training Small Language Models for Transferable Tool Selection
+- [C] `2610.12232` Training on the Future: A Delay-Aware Audit of Test-Time Adaptation for Time-Series Forecasting
+- [C] `2610.20334` TreeFlex: Agents Navigating Their Own Search Trees
+- [C] `2610.18789` Trust Before Autonomy: Rethinking Agentic Remote Sensing for Crisis Response
+- [C] `2609.16760` Turn-level Multiscale Density Ratio Estimation for LLM Agents
+- [C] `2610.35784` Twist-controlled imaginary-time Mpemba effect in quantum spin systems
+- [C] `2610.12124` Use and Disuse: Intent-Structured Experience Consolidation for Memory and Learning in LLM Agents
+- [C] `2611.06881` VABAR: A Variational Automation Benchmark for Agentic Robotics
+- [C] `2610.08402` VETTA: Coordinating Turn- and Token-Level Credit Assignment for Multi-Turn LLM Agents
+- [C] `2610.03286` VenusRL: A Fully Disaggregated Agentic RL System with Priority Scheduling and Scalable Interaction
+- [C] `2610.40578` VeriCUA: Verification as Agentic Exploration for Computer-Using Agents
+- [C] `2610.08761` VeriFine: Scaling Verification for Self-Improvement in Embodied Reasoning
+- [C] `2611.03192` Verification Allocation in Stylized LLM Agent Pipelines under Hidden Tool Degradation: A Discrete-Time Mean...
+- [C] `2610.35864` VibeVideoBench:Evaluating Multimodal Agents on Code-Driven Video Generation
+- [C] `2611.09894` Video-Coder: Reinforcing Agentic Coding for Video Generation
+- [C] `2609.38119` VideoLoop: Looped Working Memory Against Semantic Thrashing in Long-Form Video Agents
+- [C] `2611.06777` WISE: An Agentic Framework for Whole-page Multimodal Search Experience Attribution
+- [C] `2611.09307` Wake 5: A Python Framework for Solidity Testing, Fuzzing, and Static Analysis
+- [C] `2611.04538` Wavefront engineering with atomic Huygens' surfaces made simple
+- [C] `2610.13416` Web$hell: A Unified Interface for Agentic Web Access
+- [C] `2609.39989` What Can Component-Replacement Evidence Establish? A Critical Scoping Review of Local Decisions in LLM Agents
+- [C] `2610.28595` What Do RTL Repair Benchmarks Actually Measure?
+- [C] `2610.26805` What Language Adds, and at What Cost: Four Controlled Probes of Pathology Vision-Language Models
+- [C] `2610.41803` What Standard Evaluations Hide About Detectors of Hijacked LLM Agents: Rare Attacks, Unseen Tools and Bench...
+- [C] `2610.32620` What Transfers Across Protein Pockets? Experience Reuse in Molecular Optimization for Agentic Structure-Bas...
+- [C] `2610.26394` When Coding Agents Outpace Review: Evaluating PRD-Driven Development in Mature Enterprise Repositories
+- [C] `2610.41401` When Safety Checks Become Privacy Risks: A Privacy-Preserving Paradigm for LLM Agent Safety Auditing
+- [C] `s2-8812e6030605f482` When failure becomes a function: From avoiding to exploiting failure in the Mechano-X era
+- [C] `2611.04805` Where Is the Truth When AI Agents Disagree? Dependence-Aware Belief Propagation for Unsupervised Truth Disc...
+- [C] `2610.26676` Which Model for Which Role? Cost-Efficient Pareto Recommendation for LLM Agentic Workflows
+- [C] `2610.10422` Which Rollout Taught It That? BehaviorTrace and the Limits of Training-Data Attribution in Online RL
+- [C] `2610.18842` Who Improves the Robot? Toward Physical Recursive Self-Improvement
+- [C] `2611.07667` Who Should Know What? Empirical Information Design for Multi-Agent LLM Economies
+- [C] `2610.35845` Work Agents: Systems, Capabilities, and Optimization
+- [C] `2610.28423` WorldSR: Harnessing World Knowledge Search for Grounded Image Super-Resolution
+- [C] `2610.08720` WorldSolver: Can LLM Agents Simulate the Physical Dynamics via Solver Generation?
+- [C] `2610.13886` X-AgentRed: Red-Teaming Personal Agents in Evolving Multi-Service Ecosystems
+- [C] `2610.32926` ZENO: Nonlinear filtering with Zakai Equation Neural Operators
+- [C] `2609.40284` cua-speedrun: Standardized Benchmarking of the Speed of Computer-Use Agents
+- [C] `2610.40488` rTaste: Do Research Agents Have Taste? Evaluating Early Stage Research Judgment
 
 ## 2026-09-13
 

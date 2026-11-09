@@ -2,8 +2,8 @@
 
 - 主题关键词：`agent harness`
 - 创建时间：`2026-07-13T17:32:31+08:00`
-- 最近更新：`2026-09-13T17:46:28+08:00`
-- 条目数：**412**（A 17 / B 186 / C 209）
+- 最近更新：`2026-11-09T18:50:20+08:00`
+- 条目数：**909**（A 39 / B 232 / C 638）
 - 评级依据：abstract-level review (titles/authors/abstracts); not full-text peer review
 
 权威数据源是 [`index.json`](index.json)。更新约定见 [`SCHEMA.md`](SCHEMA.md)。变更历史见 [`CHANGELOG.md`](CHANGELOG.md)。
@@ -17,6 +17,160 @@
 | **C** | 愿景、平台、技术报告或与主线关联偏弱 |
 
 ## A 档（含核心介绍）
+
+### [2611.09218](https://arxiv.org/abs/2611.09218) · BOXBOX: Recursive Harness Self-Improvement for Long-Running Performance Optimization
+
+- 分档：`A` — 标题直接讨论 agent harness 的演化或优化，摘要有实验信号，可指导编排层怎么改。
+- 入库时间：`2026-11-09T18:50:20+08:00`
+- ArXiv 公布：`2026-11-06`
+- [核心介绍](papers/a/2611.09218.md)
+
+### [2611.05139](https://arxiv.org/abs/2611.05139) · Meta$^2$: Precomputing Reusable Knowledge for Online Harness Evolution in Long-Horizon Agents
+
+- 分档：`A` — 标题直接讨论 agent harness 的演化或优化，摘要有实验信号，可指导编排层怎么改。
+- 入库时间：`2026-11-09T18:50:20+08:00`
+- ArXiv 公布：`2026-11-03`
+- [核心介绍](papers/a/2611.05139.md)
+
+### [2611.03434](https://arxiv.org/abs/2611.03434) · Optimize the Harness, Not the Model: Fitting a Minimal Agent to a Self-Hostable LLM for Investigative Analysis
+
+- 分档：`A` — 标题直接讨论 agent harness 的演化或优化，摘要有实验信号，可指导编排层怎么改。
+- 入库时间：`2026-11-09T18:50:20+08:00`
+- ArXiv 公布：`2026-11-02`
+- [核心介绍](papers/a/2611.03434.md)
+
+### [2610.40191](https://arxiv.org/abs/2610.40191) · Video Generation Meets Agent Harness: Agentic Video Generation, Agentic World Modeling and Recursive Self-Improvement
+
+- 分档：`A` — 标题直接讨论 agent harness 的演化或优化，摘要有实验信号，可指导编排层怎么改。
+- 入库时间：`2026-11-09T18:50:20+08:00`
+- ArXiv 公布：`2026-10-29`
+- [核心介绍](papers/a/2610.40191.md)
+
+### [2610.40023](https://arxiv.org/abs/2610.40023) · HEMO: Harness Self-Evolution for Multi-Objective Combinatorial Optimization
+
+- 分档：`A` — 标题直接讨论 agent harness 的演化或优化，摘要有实验信号，可指导编排层怎么改。
+- 入库时间：`2026-11-09T18:50:20+08:00`
+- ArXiv 公布：`2026-10-29`
+- [核心介绍](papers/a/2610.40023.md)
+
+### [2610.39884](https://arxiv.org/abs/2610.39884) · KARMA: Training-Free Knowledge-Atomic Harness Evolution for Industrial Advertising Agents
+
+- 分档：`A` — 标题直接讨论 agent harness 的演化或优化，摘要有实验信号，可指导编排层怎么改。
+- 入库时间：`2026-11-09T18:50:20+08:00`
+- ArXiv 公布：`2026-10-29`
+- [核心介绍](papers/a/2610.39884.md)
+
+### [2610.37046](https://arxiv.org/abs/2610.37046) · Learning to Code the World: Harness Evolution for Compositional 3D Reconstruction
+
+- 分档：`A` — 标题直接讨论 agent harness 的演化或优化，摘要有实验信号，可指导编排层怎么改。
+- 入库时间：`2026-11-09T18:50:20+08:00`
+- ArXiv 公布：`2026-10-27`
+- [核心介绍](papers/a/2610.37046.md)
+
+### [2610.32813](https://arxiv.org/abs/2610.32813) · HarnessMM: Recursive Self-Improvement for Harness Token Efficiency
+
+- 分档：`A` — 标题直接讨论 agent harness 的演化或优化，摘要有实验信号，可指导编排层怎么改。
+- 入库时间：`2026-11-09T18:50:20+08:00`
+- ArXiv 公布：`2026-10-23`
+- [核心介绍](papers/a/2610.32813.md)
+
+### [2610.30042](https://arxiv.org/abs/2610.30042) · HGM-Dual: Lineage-Aware Guided Agent Harness Optimization for Long-Horizon Planning
+
+- 分档：`A` — 标题直接讨论 agent harness 的演化或优化，摘要有实验信号，可指导编排层怎么改。
+- 入库时间：`2026-11-09T18:50:20+08:00`
+- ArXiv 公布：`2026-10-21`
+- [核心介绍](papers/a/2610.30042.md)
+
+### [2610.26770](https://arxiv.org/abs/2610.26770) · HarnessPro: Recursive Harness Self-Improvement with Pareto Optimization for Performance-Cost Trade-offs
+
+- 分档：`A` — 标题直接讨论 agent harness 的演化或优化，摘要有实验信号，可指导编排层怎么改。
+- 入库时间：`2026-11-09T18:50:20+08:00`
+- ArXiv 公布：`2026-10-19`
+- [核心介绍](papers/a/2610.26770.md)
+
+### [2610.22466](https://arxiv.org/abs/2610.22466) · Harness-Delta Attribution: Dissecting Gains From Harness Evolution
+
+- 分档：`A` — 标题直接讨论 agent harness 的演化或优化，摘要有实验信号，可指导编排层怎么改。
+- 入库时间：`2026-11-09T18:50:20+08:00`
+- ArXiv 公布：`2026-10-15`
+- [核心介绍](papers/a/2610.22466.md)
+
+### [2610.20344](https://arxiv.org/abs/2610.20344) · Doc2Harness: Benchmarking LLMs on Long-Horizon Harness Engineering of Coding Agents
+
+- 分档：`A` — 标题把 agent harness 本身当作评测或审计对象，摘要有对照信号，可用来检查自建 harness 的缺口。
+- 入库时间：`2026-11-09T18:50:20+08:00`
+- ArXiv 公布：`2026-10-14`
+- [核心介绍](papers/a/2610.20344.md)
+
+### [2610.10426](https://arxiv.org/abs/2610.10426) · CoTrace: Data Recipes for Training Terminal Agents with Harness-Model Co-Evolution
+
+- 分档：`A` — 标题直接讨论 agent harness 的演化或优化，摘要有实验信号，可指导编排层怎么改。
+- 入库时间：`2026-11-09T18:50:20+08:00`
+- ArXiv 公布：`2026-10-07`
+- [核心介绍](papers/a/2610.10426.md)
+
+### [2610.08432](https://arxiv.org/abs/2610.08432) · EMHO: EMbodied Agent Harness Optimization via Experience Traces
+
+- 分档：`A` — 标题直接讨论 agent harness 的演化或优化，摘要有实验信号，可指导编排层怎么改。
+- 入库时间：`2026-11-09T18:50:20+08:00`
+- ArXiv 公布：`2026-10-06`
+- [核心介绍](papers/a/2610.08432.md)
+
+### [2609.40330](https://arxiv.org/abs/2609.40330) · Turbo Harness: Instance-Adaptive Harness Optimization
+
+- 分档：`A` — 标题直接讨论 agent harness 的演化或优化，摘要有实验信号，可指导编排层怎么改。
+- 入库时间：`2026-11-09T18:50:20+08:00`
+- ArXiv 公布：`2026-09-30`
+- [核心介绍](papers/a/2609.40330.md)
+
+### [2609.40169](https://arxiv.org/abs/2609.40169) · Learning from Research: Toward Lifelong Agent Harness Evolution
+
+- 分档：`A` — 标题直接讨论 agent harness 的演化或优化，摘要有实验信号，可指导编排层怎么改。
+- 入库时间：`2026-11-09T18:50:20+08:00`
+- ArXiv 公布：`2026-09-30`
+- [核心介绍](papers/a/2609.40169.md)
+
+### [2609.39958](https://arxiv.org/abs/2609.39958) · Better Deck or Different Judge? Evaluating Agentic Harness Gains in Corporate and Investment Banking
+
+- 分档：`A` — 标题把 agent harness 本身当作评测或审计对象，摘要有对照信号，可用来检查自建 harness 的缺口。
+- 入库时间：`2026-11-09T18:50:20+08:00`
+- ArXiv 公布：`2026-09-30`
+- [核心介绍](papers/a/2609.39958.md)
+
+### [2609.38024](https://arxiv.org/abs/2609.38024) · Retrieval-Augmented Skill Optimization via Cross-Harness Adaptation
+
+- 分档：`A` — 标题直接讨论 agent harness 的演化或优化，摘要有实验信号，可指导编排层怎么改。
+- 入库时间：`2026-11-09T18:50:20+08:00`
+- ArXiv 公布：`2026-09-29`
+- [核心介绍](papers/a/2609.38024.md)
+
+### [2609.37950](https://arxiv.org/abs/2609.37950) · Video-RSI: Recursive Self-Improvement of Video Understanding Agents via Harness Evolution
+
+- 分档：`A` — 标题直接讨论 agent harness 的演化或优化，摘要有实验信号，可指导编排层怎么改。
+- 入库时间：`2026-11-09T18:50:20+08:00`
+- ArXiv 公布：`2026-09-29`
+- [核心介绍](papers/a/2609.37950.md)
+
+### [2609.37834](https://arxiv.org/abs/2609.37834) · Mixture of Self-Improving Branches For Agent Harness Optimization
+
+- 分档：`A` — 标题直接讨论 agent harness 的演化或优化，摘要有实验信号，可指导编排层怎么改。
+- 入库时间：`2026-11-09T18:50:20+08:00`
+- ArXiv 公布：`2026-09-29`
+- [核心介绍](papers/a/2609.37834.md)
+
+### [2609.35530](https://arxiv.org/abs/2609.35530) · AutoRef: Harness Optimization for Agentic Multi-Reference Image Generation
+
+- 分档：`A` — 标题直接讨论 agent harness 的演化或优化，摘要有实验信号，可指导编排层怎么改。
+- 入库时间：`2026-11-09T18:50:20+08:00`
+- ArXiv 公布：`2026-09-28`
+- [核心介绍](papers/a/2609.35530.md)
+
+### [2609.27612](https://arxiv.org/abs/2609.27612) · RegenHarness: A Robot Agent Harness with Evidence-Gated Recursive Self-Improvement
+
+- 分档：`A` — 标题直接讨论 agent harness 的演化或优化，摘要有实验信号，可指导编排层怎么改。
+- 入库时间：`2026-11-09T18:50:20+08:00`
+- ArXiv 公布：`2026-09-23`
+- [核心介绍](papers/a/2609.27612.md)
 
 ### [2609.01437](https://arxiv.org/abs/2609.01437) · HarnessDev: Can LLMs Create and Evolve Their Own Agent Harness?
 
@@ -141,6 +295,51 @@
 
 | ArXiv | 标题 | 入库时间 | 理由 |
 |-------|------|----------|------|
+| [2611.09088](https://arxiv.org/abs/2611.09088) | When Routine Operations Break Architectural Pattern Relationships in LLM Agent Harnesses | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2611.08039](https://arxiv.org/abs/2611.08039) | HITCH: Teaching a Vision-Language Model to Operate a Humanoid through a Whole-Body Harness | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2611.04579](https://arxiv.org/abs/2611.04579) | FreeForm Harness: A Mobile-Native Agent Harness for Open and Composable Extensions | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2611.04481](https://arxiv.org/abs/2611.04481) | Goal-Driven Autonomous Optical Experimentation via a Self-Recursive Hardware-Software Harness | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2610.37255](https://arxiv.org/abs/2610.37255) | Your Policy Is Secretly a Harness: The Decision Geometry of Agent Interfaces | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2610.35349](https://arxiv.org/abs/2610.35349) | MarkovSim: an LLM Agent Harness with Bounded Context for Long-Horizon Computational Simulation | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2610.35832](https://arxiv.org/abs/2610.35832) | Profiling a Frontier Agent with EBench: From Direct Control to Harness with Policy | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2610.35767](https://arxiv.org/abs/2610.35767) | Free to Look, Free to Reason: Simple LLM Harnesses Outdiagnose Hand-Crafted Root Cause Analysis Agents | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2610.32483](https://arxiv.org/abs/2610.32483) | When Agents Fail: Model or Harness--Who's to Blame? | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2610.31427](https://arxiv.org/abs/2610.31427) | FastHarness: Experience-Driven Review Scheduling for Vision-Language-Action Policies | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2610.31376](https://arxiv.org/abs/2610.31376) | Certified Execution Harness for Agentic AI: Safe and Least-Intrusive Petri-Net Supervisory Control Between Reasoning and Action | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2610.29812](https://arxiv.org/abs/2610.29812) | Real PMIDs, Wrong Papers: Harness Design for Biomedical Claim-Verification Agents | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2610.29560](https://arxiv.org/abs/2610.29560) | From VLM Planners to Robotic Agents: Self-Evolving Harnesses for History-Dependent Manipulation | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2610.29458](https://arxiv.org/abs/2610.29458) | Harness Scaling for Generalizable Agentic Reinforcement Learning | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2610.28380](https://arxiv.org/abs/2610.28380) | Object-Oriented Harness: Evolving Agent Harnesses through Object-Oriented Design | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2610.26860](https://arxiv.org/abs/2610.26860) | OpenVLHarness: Real World Visual Agentic Tool-Use with Multimodal Memory | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2610.26632](https://arxiv.org/abs/2610.26632) | When the harness decides success: state that cannot be re-observed | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2610.24744](https://arxiv.org/abs/2610.24744) | ReTRACE: Feedback-Guided LLM Agent in a Chemistry Harness for Retrosynthesis Planning | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2610.23791](https://arxiv.org/abs/2610.23791) | DrugHarness: An Evolvable Agent Harness for Computational Drug Discovery | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2610.23479](https://arxiv.org/abs/2610.23479) | HexaShell: A Thin Harness for Exploring the Limits of VLM Agents as Robot Coding Agents | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2610.21910](https://arxiv.org/abs/2610.21910) | CoWorld Reasoner: Agentic Multimodal Reasoning with the Evolving Video World Model-Driven Harness | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2610.21755](https://arxiv.org/abs/2610.21755) | DeciCAD: Harness-Grounded Learning of Action Policies for CAD Agents | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2610.20442](https://arxiv.org/abs/2610.20442) | Towards Agentic Robots: Model, Data, Environment, and Harness | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2610.20261](https://arxiv.org/abs/2610.20261) | Harness Policy Distillation: Aligning Agent Policies with Runtime Semantics | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2610.18813](https://arxiv.org/abs/2610.18813) | Self-Evolving Agent Harness | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2610.18616](https://arxiv.org/abs/2610.18616) | Knowledge Graphs as Files: An Agent Harness Where Tool Creation and Tool Use Co-Evolve | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2610.12274](https://arxiv.org/abs/2610.12274) | HarnessSQL: Harness-Native Training for SQL Agents in Realistic Database Environments | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2610.08621](https://arxiv.org/abs/2610.08621) | Recursive Game Creator: An Agentic Product-Level Experience-Oriented Game Harness | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2610.02200](https://arxiv.org/abs/2610.02200) | VISTA: A Visual Harness for Reasoning in an Interactive World | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2610.02142](https://arxiv.org/abs/2610.02142) | Keyword Harnesses Fail Open: A Cheap Diagnostic Ladder for Tool-Use Claims in Small Language Models | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2610.02001](https://arxiv.org/abs/2610.02001) | Mingbird: A Local-First Agent Harness Enabling Small Open Models to Complete Real Tasks | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [s2-d0c85c0c7a9ae109](https://www.semanticscholar.org/paper/d0c85c0c7a9ae10998746c0ab8a49263ab715815) | A Harness Engineering Methodology for LLM Agent-based Data Quality Validation: Observation-Validation-Synthesis-based Agent Design | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2609.40306](https://arxiv.org/abs/2609.40306) | DynaHarness: A Dynamic Physical Harness for Self-Evolving Robot Agents | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2609.40303](https://arxiv.org/abs/2609.40303) | How Much of a Harness Does a Strong Agent Need for Autonomous ML Engineering? | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2609.39982](https://arxiv.org/abs/2609.39982) | Mid-Harness: Scaling Actions Between Model and Harness for Terminal Agents | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2609.36580](https://arxiv.org/abs/2609.36580) | SafeCoEvo: Co-Evolving Safety Harnesses and Guards for LLM Agents at Test-Time | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2609.38143](https://arxiv.org/abs/2609.38143) | Learning Meta-Skills for Agent Harness Design in Test-Time AI4AI | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2609.38137](https://arxiv.org/abs/2609.38137) | LongHarness Bench: Stress-Testing Language Model Harnesses for Long-Context Reasoning | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2609.37864](https://arxiv.org/abs/2609.37864) | AgentBug-Smith: Automatically Reproducing Real-World Harness Bugs in Agentic Systems | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2609.35738](https://arxiv.org/abs/2609.35738) | Harness Learning Enables Generalizable Test-Time Adaptation | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2609.35501](https://arxiv.org/abs/2609.35501) | SRHarness: A Harness for Agentic Symbolic Regression | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2609.17527](https://arxiv.org/abs/2609.17527) | Agentic Societies Need a Social Harness | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2609.15195](https://arxiv.org/abs/2609.15195) | HarnessVLN: Unifying Training-Free Embodied Navigation through an Agent Harness | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [s2-31c99a3ae8dd1cdd](https://www.semanticscholar.org/paper/31c99a3ae8dd1cddf0939892cc9d8735b0867ed1) | ReliHarness: A Self-Learning Reliability Harness for LLM Agent Tool Execution | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
+| [2609.12818](https://arxiv.org/abs/2609.12818) | Online Video Agent Harness for Long Video Understanding | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
 | [2609.11225](https://arxiv.org/abs/2609.11225) | Harness Robotic OS: A Unified Embodied-Agent Runtime for Closed-Loop Quadruped Inspection | `2026-09-13T17:46:28+08:00` | 与 agent harness / agentic orchestration 相关且有一定实证或方法描述，但样本或外推边界未完全坐实 |
 | [2609.11682](https://arxiv.org/abs/2609.11682) | COBRA-Skills: Contextual Bandit-Guided Evolution for Agent Skill Optimization | `2026-09-13T17:46:28+08:00` | 与 agent harness / agentic orchestration 相关且有一定实证或方法描述，但样本或外推边界未完全坐实 |
 | [2609.11677](https://arxiv.org/abs/2609.11677) | Ecdysis: Efficient and Effective Training of Runtime Harnesses for LLM Agents | `2026-09-13T17:46:28+08:00` | 与 agent harness / agentic orchestration 相关且有一定实证或方法描述，但样本或外推边界未完全坐实 |
@@ -314,6 +513,7 @@
 | [2605.30621](http://arxiv.org/abs/2605.30621) | Harness Updating Is Not Harness Benefit: Disentangling Evolution Capabilities in Self-Evolving LLM Agents | `2026-07-14T17:32:32+08:00` | 区分「能更新 harness」与「更新带来收益」；对自演化叙事有纠偏。 |
 | [2605.30611](https://arxiv.org/abs/2605.30611) | Crafter: A Multi-Agent Harness for Editable Scientific Figure Generation from Diverse Inputs | `2026-09-13T17:46:28+08:00` | 以领域应用为主的 harness 实例，实证有限或外推到通用 harness 工程偏弱，作 B 档地图 |
 | [2606.20629](https://arxiv.org/abs/2606.20629) | Specialize Roles, Mix Deployments: Pushing the Cost-Accuracy Frontier of LLM Agent Teams | `2026-09-13T17:46:28+08:00` | 与 agent harness / agentic orchestration 相关且有一定实证或方法描述，但样本或外推边界未完全坐实 |
+| [2605.29861](https://arxiv.org/abs/2605.29861) | Towards Verifiable Multimodal Deep Research: A Multi-Agent Harness for Interleaved Report Generation | `2026-11-09T18:50:20+08:00` | 标题是 agent harness 的方法或领域实例，摘要有做法，但样本或外推边界还没坐实。 |
 | [2605.26731](https://arxiv.org/abs/2605.26731) | It's Not the Capability: Harness Sensitivity Is Non-Monotone Across LLM Agent Tiers | `2026-09-13T17:46:28+08:00` | 与 agent harness / agentic orchestration 相关且有一定实证或方法描述，但样本或外推边界未完全坐实 |
 | [2605.21825](http://arxiv.org/abs/2605.21825) | Toward AI VIS Co-Scientists: A General and End-to-End Agent Harness for Solving Complex Data Visualization Tasks | `2026-07-21T17:18:19+08:00` | 端到端 VIS 应用设计 harness，SciVis 竞赛验证；域专属。 |
 | [2605.21404](https://arxiv.org/abs/2605.21404) | What Twelve LLM Agent Benchmark Papers Disclose About Themselves: A Pilot Audit and an Open Scoring Schema | `2026-09-13T17:46:28+08:00` | 与 agent harness / agentic orchestration 相关且有一定实证或方法描述，但样本或外推边界未完全坐实 |
@@ -332,6 +532,433 @@
 
 | ArXiv | 标题 | 入库时间 | 理由 |
 |-------|------|----------|------|
+| [2611.09894](https://arxiv.org/abs/2611.09894) | Video-Coder: Reinforcing Agentic Coding for Video Generation | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.09892](https://arxiv.org/abs/2611.09892) | On Agentic Manipulation Policies | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.09891](https://arxiv.org/abs/2611.09891) | CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.09836](https://arxiv.org/abs/2611.09836) | Can Agentic Systems Close the Gap in Radiology with Production AI Tools? | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.09792](https://arxiv.org/abs/2611.09792) | Knowing When to Intervene: Causal Evaluation of AI Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.09721](https://arxiv.org/abs/2611.09721) | MemoryDojo: Benchmarking Poisoning Through LLM Agent Memory | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.09474](https://arxiv.org/abs/2611.09474) | Nebula: Distributed Position-Independent Caching for LLM Serving | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.09445](https://arxiv.org/abs/2611.09445) | Incentive Pathologies in a Live LLM Agent Arena: An Empirical Study of Concentration, Reward-Rule Implementation Discrepancy, and Network Dilution | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.09307](https://arxiv.org/abs/2611.09307) | Wake 5: A Python Framework for Solidity Testing, Fuzzing, and Static Analysis | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.09264](https://arxiv.org/abs/2611.09264) | Nudging Decision Models: Do Digital Nudges Steer Fast, Generation-Free AI Agents? | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.09113](https://arxiv.org/abs/2611.09113) | Authorization Drift in LLM Agents: Evaluating Boundary Compliance in Multi-Step Tool Use | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.09065](https://arxiv.org/abs/2611.09065) | MongoBench: Do LLMs Know What a MongoDB Query Will Do? | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.09017](https://arxiv.org/abs/2611.09017) | Frontier3DBench: Benchmarking Coding Agents for 3D Creation across Objects, Scenes, and Interactive Open Worlds | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.08946](https://arxiv.org/abs/2611.08946) | Flex-RSI: Benchmarking Recursive Self-Improvement of Frontier Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.09888](https://arxiv.org/abs/2611.09888) | Scenario Orchestration for Closed-loop Policy Evaluation of Autonomous Driving | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.08456](https://arxiv.org/abs/2611.08456) | Cognitive Tours: Making Understanding a Deliverable in AI-Assisted Development | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.08428](https://arxiv.org/abs/2611.08428) | The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.08417](https://arxiv.org/abs/2611.08417) | Benchmarks as Software: Terminal-Bench and the Case for Continuous Benchmarks | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.08390](https://arxiv.org/abs/2611.08390) | SCALE: Real-Time Latent Communication for Cyber-Physical Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.08313](https://arxiv.org/abs/2611.08313) | Testing Gravitationally-Induced-Entanglement with Massive Particles and Quantum Clocks | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.08286](https://arxiv.org/abs/2611.08286) | Interactive Visual Gym: Evaluating Visual Interaction Models with Simulated Users in Interactive Worlds | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.08281](https://arxiv.org/abs/2611.08281) | Multimodal-SEA: Benchmarking AI Agent Security under Multimodal Social Engineering Attacks | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.08175](https://arxiv.org/abs/2611.08175) | PCBRouteAgent: How Close Are LLM Agents to Becoming PCB Routing Engineers? | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.07976](https://arxiv.org/abs/2611.07976) | QRAE: Query-Relevant Attention Entropy for Context Compression in DeepSearch Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.07932](https://arxiv.org/abs/2611.07932) | AttnSR: Attention Step Reward for Long-Horizon Agentic RL | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.07887](https://arxiv.org/abs/2611.07887) | A Low Similarity Score Does Not Show Independence after Source-Conditioned Repository Rewriting | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.07859](https://arxiv.org/abs/2611.07859) | CORE: Coarse-to-Fine Search with Context Management for Deep Research | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.07689](https://arxiv.org/abs/2611.07689) | MCPHallu: Benchmarking Reasoning, Execution, and Memory Hallucinations in MCP Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.07667](https://arxiv.org/abs/2611.07667) | Who Should Know What? Empirical Information Design for Multi-Agent LLM Economies | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.07631](https://arxiv.org/abs/2611.07631) | MEMOIR: A Training-Free Memory Lifecycle for Long-Horizon LLM Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.06914](https://arxiv.org/abs/2611.06914) | A Framework for Context Enrichment and Selective Robustness in LLM Social Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.06897](https://arxiv.org/abs/2611.06897) | MCP-Eco: A Linked Dataset of MCP Servers, Consumers, and Development Activity | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.06881](https://arxiv.org/abs/2611.06881) | VABAR: A Variational Automation Benchmark for Agentic Robotics | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.06876](https://arxiv.org/abs/2611.06876) | SpecCompact: Accelerating LLM Agent Context Compaction with Slot-Parallel Semantic Speculative Verification | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.06868](https://arxiv.org/abs/2611.06868) | On Turn-Level Best-of-N Sampling for Scaling LLM Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.06866](https://arxiv.org/abs/2611.06866) | GH-AWTrace: A Large-Scale Dataset of GitHub Agentic Workflow Execution Logs | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.06856](https://arxiv.org/abs/2611.06856) | LongBanana: An Expert-Verified Benchmark for Long-Context Multi-Reference Image Synthesis | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.06841](https://arxiv.org/abs/2611.06841) | ServerBench: How can your coding agents design specialized LLM serving systems? | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.06803](https://arxiv.org/abs/2611.06803) | Task-Efficient Agent Evaluation Using Cached Traces | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.06777](https://arxiv.org/abs/2611.06777) | WISE: An Agentic Framework for Whole-page Multimodal Search Experience Attribution | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.06759](https://arxiv.org/abs/2611.06759) | Continual Classification Beyond the Kernel Regime: Harnessing the Sparsity Bias of L2 Regularization in Diagonal Linear Networks | `2026-11-09T18:50:20+08:00` | 检索命中 harnessing 这个词，不是 agent harness，作地图收录。 |
+| [2611.06727](https://arxiv.org/abs/2611.06727) | Airlock: Bounding the Multi-Agent Blast Radius via Selective Online Containment | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.06712](https://arxiv.org/abs/2611.06712) | Phase-Locked Quantum Battery Charging via Dissipative Mode Selection | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.06682](https://arxiv.org/abs/2611.06682) | SecureGARD: Dynamic Ontology-Guided Governance for Secure Tool-Using LLM Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.06674](https://arxiv.org/abs/2611.06674) | AgentTrustCI: Build-Time Policy, Grounding, and Trajectory Tests for Java LLM Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.06597](https://arxiv.org/abs/2611.06597) | A trust layer for fast pedestal-stability surrogates: calibrated error bars, out-of-distribution alarms and few-shot recalibration | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.06572](https://arxiv.org/abs/2611.06572) | Does Personality Persuade? Investigating Personality Trait Prompting and Persuasion in Large Language Models | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.05345](https://arxiv.org/abs/2611.05345) | Adversarial Speculative Reasoning Improves Long Horizon Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.05320](https://arxiv.org/abs/2611.05320) | PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.05319](https://arxiv.org/abs/2611.05319) | HARP: Training-Free Dual-Profile Agentic Communication for LLM-Based Recommendation | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.05275](https://arxiv.org/abs/2611.05275) | Route Anything: A Study of Model and Policy Routing for General-Purpose AI Systems | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.05269](https://arxiv.org/abs/2611.05269) | ToolSched: Resource-Efficient Tool Scheduling for Shared-Host LLM Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.05266](https://arxiv.org/abs/2611.05266) | Stabilizing On-Policy Targeted Guidance in Agentic Reinforcement Learning | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.05179](https://arxiv.org/abs/2611.05179) | OperAItor: An Agentic Framework for Fault-Tolerant Operation of Chemical Processes | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.04972](https://arxiv.org/abs/2611.04972) | Caging Vision-Language Navigation for Legged Robots via Barrier-Certified Safety Architecture | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.04813](https://arxiv.org/abs/2611.04813) | AgenticFinBench: Benchmarking Financial Agents on Diverse Tasks from Real-World Requests | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.04805](https://arxiv.org/abs/2611.04805) | Where Is the Truth When AI Agents Disagree? Dependence-Aware Belief Propagation for Unsupervised Truth Discovery (Extended Version) | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.04701](https://arxiv.org/abs/2611.04701) | Proving the Wrong Program: Miscompilations as a Threat to zkVM Guarantees | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.04685](https://arxiv.org/abs/2611.04685) | MIMIC-Note-Extract: A Large-Scale Structured Dataset Extracted from MIMIC-IV-Note Discharge Summaries | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.04673](https://arxiv.org/abs/2611.04673) | Right Tool, Wrong Parameters: Defending LLM Agents Against Parameter Poisoning | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.04538](https://arxiv.org/abs/2611.04538) | Wavefront engineering with atomic Huygens' surfaces made simple | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.04439](https://arxiv.org/abs/2611.04439) | DualEvolve: Dual-Level Self-Evolution of Mechanism and Orchestration for Recommendation | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.03602](https://arxiv.org/abs/2611.03602) | Reviso: Not All Visual Evidence Deserves Equal Attention in Video Captioning | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.03601](https://arxiv.org/abs/2611.03601) | DiabAgent: Toward Agentic Physiological Control | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.03586](https://arxiv.org/abs/2611.03586) | FedReady: Bounded Agents for Federation Formation | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.03584](https://arxiv.org/abs/2611.03584) | TAMPAgent: Agentic Belief-Space Planning for Mobile Manipulation | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.03555](https://arxiv.org/abs/2611.03555) | MCP Tool Poisoning in Agentic AI Frameworks: A Cross-Framework Measurement Study | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.03551](https://arxiv.org/abs/2611.03551) | Can LLM Agents Be Forward-Deployed Engineers? Requirement Discovery and Delivery for Enterprise Text-to-SQL | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.03543](https://arxiv.org/abs/2611.03543) | Can LLM Agents Improve Imperfect Earth System Model Parameterizations? | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.03523](https://arxiv.org/abs/2611.03523) | DistDebug-Bench: Can LLM Agents Diagnose Bugs in Distributed Systems? | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.03517](https://arxiv.org/abs/2611.03517) | Ask, Don't Equip: Question-Driven Coding Agents for Deep Kernel Optimization | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.03424](https://arxiv.org/abs/2611.03424) | IdeaTaste: Do LLMs Share the Research Taste of Human Researchers? | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.03412](https://arxiv.org/abs/2611.03412) | DeliverBench: Benchmarking AI Agents on Delivering Realistic Multi-Stage Professional Projects | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.03308](https://arxiv.org/abs/2611.03308) | LLMs Depend on Specialist Tools for Out-of-Distribution Generalization in MS/MS Structural Elucidation | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.03298](https://arxiv.org/abs/2611.03298) | SQLoom: Set-Contrastive Learning of Syntactic, Semantic, and Logical Dependencies for Text-to-SQL | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.03223](https://arxiv.org/abs/2611.03223) | Do Agents Still Follow the Rules? Benchmarking Rule Compliance under Agent Context Compaction | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.03219](https://arxiv.org/abs/2611.03219) | Can Coding Agents Sustain Continual Evolution without Forgetting? | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.03193](https://arxiv.org/abs/2611.03193) | Harnessing Mutual Coupling in Cell-Free mMIMO | `2026-11-09T18:50:20+08:00` | 检索命中 harnessing 这个词，不是 agent harness，作地图收录。 |
+| [2611.03192](https://arxiv.org/abs/2611.03192) | Verification Allocation in Stylized LLM Agent Pipelines under Hidden Tool Degradation: A Discrete-Time Mean-Field Analysis | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2611.03178](https://arxiv.org/abs/2611.03178) | CoworkOS:Scaling Agent Coworkers for Real-world Automation | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.42148](https://arxiv.org/abs/2610.42148) | Flide: Accelerating Decision Inference with Exact State Forking | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.42147](https://arxiv.org/abs/2610.42147) | Latent Sparse Attention: Towards Subquadratic Ultra-Long Context Attention | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.42141](https://arxiv.org/abs/2610.42141) | RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.42112](https://arxiv.org/abs/2610.42112) | Subquadratic Attention with a Hierarchical Tree-Structured Indexer | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.42082](https://arxiv.org/abs/2610.42082) | Think in 360°: Benchmarking and Bootstrapping Panoramic Video Reasoning | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.42078](https://arxiv.org/abs/2610.42078) | Embodied Movable Antennas | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.42053](https://arxiv.org/abs/2610.42053) | REA: A Routed Embodied Agent Runtime for Asynchronous Brain-Cerebellum Control | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.42004](https://arxiv.org/abs/2610.42004) | TradeWar: A Benchmark for Execution-Grounded Trade Negotiation with Adaptive LLM Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.41919](https://arxiv.org/abs/2610.41919) | Matching Workloads to Blackwell: Power-Resolved Benchmarking of NVIDIA B200 and B300 across HPC and AI Workloads | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.41905](https://arxiv.org/abs/2610.41905) | Completeness and Cost of Retrieval Structures for Multi-Tool Requests in LLM Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.41803](https://arxiv.org/abs/2610.41803) | What Standard Evaluations Hide About Detectors of Hijacked LLM Agents: Rare Attacks, Unseen Tools and Benchmark Transfer | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.41717](https://arxiv.org/abs/2610.41717) | Evaluating Instrument-Centered AI Agents for Table-Top Science Experiments | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.41574](https://arxiv.org/abs/2610.41574) | BYOD: Build Your Own DLM - Efficient Autoregressive-to-Diffusion Language Model Conversion | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.41563](https://arxiv.org/abs/2610.41563) | ORION: An Outcome-Driven LLM Advisor for RL-Based Multi-Domain 6G Slice Placement | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.41521](https://arxiv.org/abs/2610.41521) | KITE: Retrieval as a Decision Procedure for Long-Term Conversational Memory | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.41482](https://arxiv.org/abs/2610.41482) | KEEPER: Learning Control-Sufficient Textual Memory for Long-Horizon LLM Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.41401](https://arxiv.org/abs/2610.41401) | When Safety Checks Become Privacy Risks: A Privacy-Preserving Paradigm for LLM Agent Safety Auditing | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.41378](https://arxiv.org/abs/2610.41378) | Ask on Demand: Targeted Peer Communication for Parallel Agentic Systems | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.41350](https://arxiv.org/abs/2610.41350) | Operon-S1: a fast decision controller for long-horizon biomedical agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.40627](https://arxiv.org/abs/2610.40627) | ShallowDefend: Harnessing Shallow Safety Alignment for Multi-Turn Defender | `2026-11-09T18:50:20+08:00` | 检索命中 harnessing 这个词，不是 agent harness，作地图收录。 |
+| [2610.40641](https://arxiv.org/abs/2610.40641) | From extreme weather to agricultural consequences with agentic AI | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.40578](https://arxiv.org/abs/2610.40578) | VeriCUA: Verification as Agentic Exploration for Computer-Using Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.40556](https://arxiv.org/abs/2610.40556) | Advancing Clinical Genomic Analysis with a Skill-Centred Agent | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.40492](https://arxiv.org/abs/2610.40492) | Agentic University: Collaborative Agents for Personalized Learning | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.40488](https://arxiv.org/abs/2610.40488) | rTaste: Do Research Agents Have Taste? Evaluating Early Stage Research Judgment | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.40379](https://arxiv.org/abs/2610.40379) | Agentic LLM reasoning in pediatric diabetes outcome prediction from multimodal medical records | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.40370](https://arxiv.org/abs/2610.40370) | The Athlete as a Scientist of One: Agentic Bayesian Experimental Design for Individualized Physiology from Consumer Wearables | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.40350](https://arxiv.org/abs/2610.40350) | Don't Lose the Thread: Empowering Long-Horizon LLM Agents with Cognitive Resource Self-Allocation | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.40324](https://arxiv.org/abs/2610.40324) | Crowds Believe in You: Online Prediction Markets Overestimate How Often People Achieve Their Own Goals | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.40259](https://arxiv.org/abs/2610.40259) | The Price of a Chance in Artificial Societies | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.40227](https://arxiv.org/abs/2610.40227) | EpiAgent: Epistemic Self-Play for LLM Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.40186](https://arxiv.org/abs/2610.40186) | Locating and Closing Information Gaps in Multi-Agent Systems | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.39758](https://arxiv.org/abs/2610.39758) | SEAL: Sealed Queries for Local Sanitization against Indirect Prompt Injection | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.39685](https://arxiv.org/abs/2610.39685) | Practical Assessment of Agentic Systems in Acoustics | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.37657](https://arxiv.org/abs/2610.37657) | Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.37651](https://arxiv.org/abs/2610.37651) | GEPA-Curator: Curated Learning for Self Improving Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.37649](https://arxiv.org/abs/2610.37649) | Can LLMs Uncover Hidden Physical Laws through Free Exploration? | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.37611](https://arxiv.org/abs/2610.37611) | Agentic Distributional Regression: Conditional Density Estimation through Agent-Written Programs | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.37609](https://arxiv.org/abs/2610.37609) | EnvSched: Environment-Aware Scheduling for Rollout-Efficient Agent Reinforcement Learning | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.37567](https://arxiv.org/abs/2610.37567) | Gym-Anything-RT: Scaling Real-Time Environments for Vision-Language Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.37461](https://arxiv.org/abs/2610.37461) | Concordat: Typed Sessions for LLM Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.37415](https://arxiv.org/abs/2610.37415) | The Envelope Layer: An Underestimated Surface of LLM Agent Defense | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.37405](https://arxiv.org/abs/2610.37405) | Clearing the FoG: Training KG Agents to Retrieve the Evidence Behind Their Answers | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.37352](https://arxiv.org/abs/2610.37352) | Coulomb Crystallization in Free Electron Beams | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.37319](https://arxiv.org/abs/2610.37319) | AnalogScout: Simulation-Efficient PVT-Aware Analog Sizing with LLM Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.37283](https://arxiv.org/abs/2610.37283) | BenchMeUp: Building Software Engineering Benchmarks from Natural-Language Specifications | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.37242](https://arxiv.org/abs/2610.37242) | Grounding LLM Agents in Business Processes: Process-Aware Knowledge Graphs for Reliable Multi-Step Service Invocation | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.37228](https://arxiv.org/abs/2610.37228) | AutoRSE: Evaluating LLM Agents as Recommendation Engineers for Self-Evolving Recommender Systems | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.37081](https://arxiv.org/abs/2610.37081) | OpenGray: a benchmark for evaluating the decisions of radiotherapy planning agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.37055](https://arxiv.org/abs/2610.37055) | Blindfold: Keeping the Audit Coin Secret from LLM Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.36980](https://arxiv.org/abs/2610.36980) | AutoVend: Benchmarking LLM Agents on Long-Horizon Autonomous Vending Operations | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.35866](https://arxiv.org/abs/2610.35866) | Auto-Research Arena: Benchmarking and Advancing Auto-Research in Language Modeling | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.35864](https://arxiv.org/abs/2610.35864) | VibeVideoBench:Evaluating Multimodal Agents on Code-Driven Video Generation | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.35845](https://arxiv.org/abs/2610.35845) | Work Agents: Systems, Capabilities, and Optimization | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.35840](https://arxiv.org/abs/2610.35840) | ACARE: Agent-Context-Aware Reranker for Iterative Search | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.35835](https://arxiv.org/abs/2610.35835) | I-HITL: Inalienable Human-in-the-Loop | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.35829](https://arxiv.org/abs/2610.35829) | Reva: Real-Time Vulnerability Detection through Contextual Probing of Large Language Models | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.35817](https://arxiv.org/abs/2610.35817) | Pretraining Knows What, Simulation Teaches How: Compositional Generalization in a Sim-Trained Robot Agent | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.35801](https://arxiv.org/abs/2610.35801) | FOCUS: Active Critic Learning for Long-Horizon Language Model Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.35790](https://arxiv.org/abs/2610.35790) | Information-theoretic entropy imaging of quantum matter | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.35784](https://arxiv.org/abs/2610.35784) | Twist-controlled imaginary-time Mpemba effect in quantum spin systems | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.35773](https://arxiv.org/abs/2610.35773) | A Unified Arena for LLM Agents across Diverse Eurogame | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.35616](https://arxiv.org/abs/2610.35616) | Hierarchical Skill Evolution for Coding Agent | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.35614](https://arxiv.org/abs/2610.35614) | Giant third-order nonlinearity amplifies second-harmonic transport in Ca3Ru2O7 | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.35604](https://arxiv.org/abs/2610.35604) | RoboDoctor: Training-Free Recursive Self-Improvement for Robot Policies | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.35579](https://arxiv.org/abs/2610.35579) | Infinity Machine: a self-improving AI agent for research | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.32978](https://arxiv.org/abs/2610.32978) | SceneBloom: Agentic Indoor Environment Generation with Realistic and Diverse Layouts for Embodied Learning | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.32965](https://arxiv.org/abs/2610.32965) | RynnUnify: Towards Unified Embodied Brain | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.32926](https://arxiv.org/abs/2610.32926) | ZENO: Nonlinear filtering with Zakai Equation Neural Operators | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.32871](https://arxiv.org/abs/2610.32871) | J-Comm: Jacobian-Guided Latent Communication between LLM Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.32851](https://arxiv.org/abs/2610.32851) | Reimagining Enterprise RAG for Multi-Agent Systems: A Knowledge Layer That Organizes Before It Retrieves | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.32755](https://arxiv.org/abs/2610.32755) | Semantic Representation for Agentic Self-Play in Automated Laboratories | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.32752](https://arxiv.org/abs/2610.32752) | ActionRAG: Evidence-Refining Graph Diffusion for Long-Term Memory in LLM Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.32726](https://arxiv.org/abs/2610.32726) | The Butterfly Defects: Tracing Cooperation in LLM Agent Networks | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.32648](https://arxiv.org/abs/2610.32648) | StateMirror: Pre-Execution Detection of Hallucinated Tool Calls in Coding Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.32620](https://arxiv.org/abs/2610.32620) | What Transfers Across Protein Pockets? Experience Reuse in Molecular Optimization for Agentic Structure-Based Drug Design | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.32578](https://arxiv.org/abs/2610.32578) | Lessons Outlive Their Failures: A Case Study of Rules for AI Coding Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.32555](https://arxiv.org/abs/2610.32555) | Tool-Calling LLM Agents Under Realistic MCP Faults: Scale Does Not Purchase Fault Tolerance | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.32477](https://arxiv.org/abs/2610.32477) | CauProphet: Teaching Agents to Develop Causal Cognition like Humans | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.32441](https://arxiv.org/abs/2610.32441) | SCI-AGENT-EXAM: Benchmarking Agents on Scientific Research Tasks | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.32429](https://arxiv.org/abs/2610.32429) | Async-RBench: Benchmarking Asynchronous Task Execution in LLM Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.32419](https://arxiv.org/abs/2610.32419) | Electron Wavefronts Capture Nanoscale Movies of Hypersound at Surfaces | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.31162](https://arxiv.org/abs/2610.31162) | HiSTEVE 1.0: Harnessing Human-Interface VLA Agents for Open-World Games | `2026-11-09T18:50:20+08:00` | 检索命中 harnessing 这个词，不是 agent harness，作地图收录。 |
+| [2610.31651](https://arxiv.org/abs/2610.31651) | BrickWright: Agentic Creation of Physically Feasible Brick Builds | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.31650](https://arxiv.org/abs/2610.31650) | EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.31636](https://arxiv.org/abs/2610.31636) | Can an Agent Debug a Web Corpus? Agentic Auditing of Slovak FineWeb2 | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.31566](https://arxiv.org/abs/2610.31566) | CellTrack-Bench: Microscopic Cell Tracking Benchmark for Vision-Language Models | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.31544](https://arxiv.org/abs/2610.31544) | Same Luck, Different Choice: Twin-World Credit Assignment for Agentic Reinforcement Learning | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.31494](https://arxiv.org/abs/2610.31494) | AgentVQA: A Unified Benchmark for Agentic Visual Understanding | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.31483](https://arxiv.org/abs/2610.31483) | Training Small Language Models for Transferable Tool Selection | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.31401](https://arxiv.org/abs/2610.31401) | HERD: Harness-Evolving Recursive Distillation for Continual Learning | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.31366](https://arxiv.org/abs/2610.31366) | AfterDeleteBench: Auditing Post-Deletion Information Persistence in LLM Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.31185](https://arxiv.org/abs/2610.31185) | Realization of a Superleak in a Quantum Gas | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.31169](https://arxiv.org/abs/2610.31169) | SARIA: Persistence-Aware KV Caching with Coordinated DRAM--SSD Reload for LLM Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.31158](https://arxiv.org/abs/2610.31158) | Beyond Watching and Searching: Benchmarking Agents for Video-centered Deep Research Reports | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.31096](https://arxiv.org/abs/2610.31096) | GeoAgent: Contract-Constrained LLM Agents for Seismic Data Processing | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.31062](https://arxiv.org/abs/2610.31062) | SCOPE: Compiling Natural-Language Policies into Neurosymbolic Predicate Programs | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.30136](https://arxiv.org/abs/2610.30136) | Agentic World Action Models | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.30116](https://arxiv.org/abs/2610.30116) | Environment Duels: A Microcosm of LLM Co-Evolution | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.30114](https://arxiv.org/abs/2610.30114) | The End of Consensus Research? | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.30113](https://arxiv.org/abs/2610.30113) | Quant-Arena: Benchmarking LLM Agents for Quantitative Trading Research | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.30072](https://arxiv.org/abs/2610.30072) | Charts as Epistemic Actions for Experience-Driven Agentic Data Analysis | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.30043](https://arxiv.org/abs/2610.30043) | TARSphere: A Robot-Oriented Full-Stack Framework for Long-Horizon Embodied Agents in Evolving Physical and Social Environments | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.30014](https://arxiv.org/abs/2610.30014) | Agent Behavior Maps: Locating Agents by What They Would Do, Without Running Them | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.29932](https://arxiv.org/abs/2610.29932) | FrontierCS 2: A Benchmark for Computer Science R&D | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.29870](https://arxiv.org/abs/2610.29870) | PAUSE: Search-Free Steering of Coding Agents Before Their First Source-Code Edit | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.29869](https://arxiv.org/abs/2610.29869) | Compaction Laundering: Provenance Destruction in Context-Compacting Coding Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.29850](https://arxiv.org/abs/2610.29850) | Automated Discovery of Physically Interpretable Subgrid Length Scales for Detached Eddy Simulation via Agentic AI | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.29742](https://arxiv.org/abs/2610.29742) | Delay-Doppler Domain Aided OFDM (DD-a-OFDM): Pulsone Pilot and Cross-Domain Iterative Receiver Design | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.29588](https://arxiv.org/abs/2610.29588) | SatCraft: Agentic Optimization of Scheduling Policies for Satellite-Cellular Edge Services | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.28629](https://arxiv.org/abs/2610.28629) | GBClaw: An agentic AI framework for atomistic grain boundary research and mechanistic discovery | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.28601](https://arxiv.org/abs/2610.28601) | Evolving Agent Interfaces | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.28595](https://arxiv.org/abs/2610.28595) | What Do RTL Repair Benchmarks Actually Measure? | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.28589](https://arxiv.org/abs/2610.28589) | AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.28586](https://arxiv.org/abs/2610.28586) | Capable Teacher, Myopic Scorer: Reward-Free Teacher Repair for Agentic On-Policy Distillation | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.28585](https://arxiv.org/abs/2610.28585) | SceneRig: An Agentic System for Simulation-Ready 3D Scene Reconstruction from Single Images | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.28578](https://arxiv.org/abs/2610.28578) | Sage-A1.5: From Long-Horizon Execution to Scientific Exploration with Capability Composition | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.28562](https://arxiv.org/abs/2610.28562) | OptScientist: Automated Discovery of Optimization Laws | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.28560](https://arxiv.org/abs/2610.28560) | Agentic Ensemble with Vision-Language Models for Visual Anomaly Detection | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.28425](https://arxiv.org/abs/2610.28425) | After the Attacker Leaves: Benchmarking Carryover Attacks on LLM Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.28423](https://arxiv.org/abs/2610.28423) | WorldSR: Harnessing World Knowledge Search for Grounded Image Super-Resolution | `2026-11-09T18:50:20+08:00` | 检索命中 harnessing 这个词，不是 agent harness，作地图收录。 |
+| [2610.28409](https://arxiv.org/abs/2610.28409) | Rewards for Budget-Aware Multi-Turn Agents That Adapt to Arbitrary Test-Time Constraints | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.28388](https://arxiv.org/abs/2610.28388) | Self-Credit: Credit Assignment for Long-Horizon Agentic RL via Intra-group Rescaling | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.28364](https://arxiv.org/abs/2610.28364) | Context-Aware Prompt Injection Detection via Small Language Models in RAG Pipelines: nokast-secureRAG | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.28361](https://arxiv.org/abs/2610.28361) | FALCA: Falsification-Aware Reinforcement Learning with Hierarchical Credit Assignment for Long-Horizon Deep Search Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.28354](https://arxiv.org/abs/2610.28354) | S-Agent 2.0: Spatial Reasoning with a General Coding Agent | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.28315](https://arxiv.org/abs/2610.28315) | Disclosure Begets Disclosure: A Self-Reinforcing Privacy Loop in LLM Agents with Persistent Memory | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.26781](https://arxiv.org/abs/2610.26781) | Game of Phones: Harnessing Game Theory and LLMs in 'Bot Wars' to Counteract Phone Scams | `2026-11-09T18:50:20+08:00` | 检索命中 harnessing 这个词，不是 agent harness，作地图收录。 |
+| [2610.26861](https://arxiv.org/abs/2610.26861) | Can It Actually Work? Synthesizing Functional CAD Mechanisms | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.26836](https://arxiv.org/abs/2610.26836) | Same Simulation, Different Evidence: Where Retrieved Tool Output Costs LLM Agents Accuracy | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.26829](https://arxiv.org/abs/2610.26829) | ProteinGeoBench: Frontier Structural-Biology Agents Are Fluent at Lookup but Lost in Geometry | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.26811](https://arxiv.org/abs/2610.26811) | State World Models: Execute the Rules, Generate the Pixels | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.26676](https://arxiv.org/abs/2610.26676) | Which Model for Which Role? Cost-Efficient Pareto Recommendation for LLM Agentic Workflows | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.26662](https://arxiv.org/abs/2610.26662) | AllPath: Layered Verification for a Deployed, Self-Revising LLM Trading Agent under Human-Gated and Autonomous Regimes | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.26426](https://arxiv.org/abs/2610.26426) | HarnessRL: Co-Evolving Policies with a Just-in-Time Training Harness for Open-Ended RL | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.26410](https://arxiv.org/abs/2610.26410) | Policy-Adaptive Credit Assignment for Spatial Reasoning with Verifiable Rewards | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.26394](https://arxiv.org/abs/2610.26394) | When Coding Agents Outpace Review: Evaluating PRD-Driven Development in Mature Enterprise Repositories | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.26825](https://arxiv.org/abs/2610.26825) | MemT-1.0: Towards Memory-Native Evolution | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.26805](https://arxiv.org/abs/2610.26805) | What Language Adds, and at What Cost: Four Controlled Probes of Pathology Vision-Language Models | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.23845](https://arxiv.org/abs/2610.23845) | AI-Driven Reproducibility and Analytical Robustness in Scientific Discovery | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.23839](https://arxiv.org/abs/2610.23839) | DiscoveryRSI: Recursively Learning to Discover Valuable Hypotheses | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.23832](https://arxiv.org/abs/2610.23832) | Leveraging verifiable structure in quantum circuits to find more efficient compilations with agentic AI | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.23804](https://arxiv.org/abs/2610.23804) | Jarvis: Coordination Deserves a Brain of Its Own in Agentic Interactive Models | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.23787](https://arxiv.org/abs/2610.23787) | DLite: History-free Speculative Decoding for Agentic AI | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.23782](https://arxiv.org/abs/2610.23782) | Enforcing Code Reasoning in Agentic Scaffold for More Effective Issue Resolution | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.23762](https://arxiv.org/abs/2610.23762) | An exact finite-state representation of viscoelastic memory for accelerated sea-level modeling: SLEvolve v1.0 | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.23724](https://arxiv.org/abs/2610.23724) | Agentic AI for Heterogeneous System Design Across Chip, Scale-Up, and Scale-Out Domains | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.23709](https://arxiv.org/abs/2610.23709) | GLOBE: Evolving Structured Agentic Memory for E-commerce Product Optimization in Generative Search | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.23656](https://arxiv.org/abs/2610.23656) | ABF-Bench: A Verifiable Benchmark for Agentic Blockchain Forensics | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.23599](https://arxiv.org/abs/2610.23599) | From Trajectories to Differentiated Skills: Cognitive Differentiation for Self-Improving Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.23598](https://arxiv.org/abs/2610.23598) | RL-Guided Temporal Localization for Dual-Channel Retrieval in Long-Horizon Agent Memory | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.23574](https://arxiv.org/abs/2610.23574) | Darwin-Claw: Environment-Adaptive Experience Consolidation for Recursively Self-Evolving Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.23530](https://arxiv.org/abs/2610.23530) | EduWild: How Teacher-Configured Chatbots Fail in Real-World Use and How to Fix Them | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.23480](https://arxiv.org/abs/2610.23480) | MuninAI: A Self-Hosted Agentic Framework for Independent Research Groups | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.23449](https://arxiv.org/abs/2610.23449) | GatewayBench: Unified Capability and Security Evaluation Platform for MCP Gateways | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.22344](https://arxiv.org/abs/2610.22344) | MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.22341](https://arxiv.org/abs/2610.22341) | 3DCodeVerse: Exploring 3D Worlds as Code | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.22322](https://arxiv.org/abs/2610.22322) | Learning Self-Orchestration in Decentralized Agent Swarms | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.22316](https://arxiv.org/abs/2610.22316) | Learning to Steer LLM Agents and Multi-Agent Systems | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.22314](https://arxiv.org/abs/2610.22314) | MindEval2: Clinically Grounded Patients and Rubrics for Evaluating Language Models in Mental Health Support | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.22273](https://arxiv.org/abs/2610.22273) | Librarian Agents: Training LLMs to Curate Long-Context Workspaces that Anticipate Future Queries | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.22200](https://arxiv.org/abs/2610.22200) | OpenGCUA: Toward a Fully Open Stack for Generalist Computer Use | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.22196](https://arxiv.org/abs/2610.22196) | Hy-Memory-30B-A3B: Attributed Reinforcement Learning for Long-Term Memory Writing | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.22195](https://arxiv.org/abs/2610.22195) | HTN-Orchestrate: A Hierarchical Task Network Framework for Multi-Agent Orchestration | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.22124](https://arxiv.org/abs/2610.22124) | PROBE: Learning to Audit Policy Compliance in Tool-Using LLM Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.22031](https://arxiv.org/abs/2610.22031) | GraphACM: Graph-based Action Consistency Measurement for Uncertainty Quantification in LLM Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.22019](https://arxiv.org/abs/2610.22019) | Priming Base Models for Agentic Post-Training: An Open Midtraining Recipe | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.21791](https://arxiv.org/abs/2610.21791) | RSIFlow: Adaptive Self-Improvement Workflows with an Evolving Meta-Agent | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.20597](https://arxiv.org/abs/2610.20597) | Co-Evolving Acting and Forecasting for Language Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.20587](https://arxiv.org/abs/2610.20587) | Price of Anarchy of First-Price Auctions in Agentic Markets | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.20576](https://arxiv.org/abs/2610.20576) | One Task, Many Interfaces: Simple Cross-Interface Consistency Training Improves LLM Agent Robustness | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.20573](https://arxiv.org/abs/2610.20573) | Beyond LLM Judge: Mechanical Verification for Agentic Autoformalization | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.20571](https://arxiv.org/abs/2610.20571) | Any Time, Any Space: A World-State-Centric Framework for Agentic Video Generation | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.20563](https://arxiv.org/abs/2610.20563) | Scaling Discovery Requires Forgetting | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.20560](https://arxiv.org/abs/2610.20560) | PhySGA: A Physics-Space Grounded Agentic Framework for Generalizable and Interactive 3D Composition | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.20527](https://arxiv.org/abs/2610.20527) | JetStream: Generating Verified Query Accelerators for Existing Database Systems | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.20518](https://arxiv.org/abs/2610.20518) | The Wealth of Agents: Scaling Agentic AI Across Developers | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.20474](https://arxiv.org/abs/2610.20474) | AdaRSI: On-Demand Recursive Self-Improvement for Embodied Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.20457](https://arxiv.org/abs/2610.20457) | Same Claim, Different Interpretations: How LLM Agents Resolve Ambiguity in Scientific Claims | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.20334](https://arxiv.org/abs/2610.20334) | TreeFlex: Agents Navigating Their Own Search Trees | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.20330](https://arxiv.org/abs/2610.20330) | Dynamic morphing of non-Euclidean active shells enabled by flutter under a steady stimulus | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.20099](https://arxiv.org/abs/2610.20099) | EvalBuilder: Can LLMs Build Efficient Benchmarks? | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.20068](https://arxiv.org/abs/2610.20068) | The Code of Theseus: Can Agents Rebuild Software from Recovered Design Documents? | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.20040](https://arxiv.org/abs/2610.20040) | Advances in quantum optomechanical control based on cavity cold-atom systems | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.20022](https://arxiv.org/abs/2610.20022) | Memorizing Who, Knowing How: Benchmarking Personal and Procedural Memory for Persistent Assistants | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.18874](https://arxiv.org/abs/2610.18874) | ChunkAct: Action Chunking for Agentic Robotics | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.18868](https://arxiv.org/abs/2610.18868) | Tev: Scaling Long-Horizon Agentic Environments with Dense Progress Rewards | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.18867](https://arxiv.org/abs/2610.18867) | EmbodiedEvo: Self-improving Coding Agents for Physical Intelligence | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.18866](https://arxiv.org/abs/2610.18866) | AutoAgent0: An Agentic Runtime for Safe Closed-Loop Driving | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.18861](https://arxiv.org/abs/2610.18861) | Hybrid Reasoning Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.18845](https://arxiv.org/abs/2610.18845) | The Last Remote Sensing Model Built by Humans? Casting Any Earth Observation Task as Recursive Self-Improvement | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.18842](https://arxiv.org/abs/2610.18842) | Who Improves the Robot? Toward Physical Recursive Self-Improvement | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.18835](https://arxiv.org/abs/2610.18835) | RoboSimStudio: An Interactive Toolkit for Rapid Real2Sim of Robot Manipulation Tasks | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.18807](https://arxiv.org/abs/2610.18807) | SkillScaffold: Scaffolding Agentic Reinforcement Learning with Policy-Adaptive Skill Credit Assignment and Selective Injection | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.18792](https://arxiv.org/abs/2610.18792) | SEAR: Self-Evolving Agentic Robotics | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.18789](https://arxiv.org/abs/2610.18789) | Trust Before Autonomy: Rethinking Agentic Remote Sensing for Crisis Response | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.18683](https://arxiv.org/abs/2610.18683) | ProAS: A Progress-Aware Advantage Shaping Framework for Multi-Turn Agentic Reinforcement Learning | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.18641](https://arxiv.org/abs/2610.18641) | HILO: Enabling Low-power, Dual-Band Communication using Tunnel Diode Oscillators | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.18614](https://arxiv.org/abs/2610.18614) | Can an Agent Learn to Predict Its Own Failure? Outcome-Grounded Confidence Calibration in LLM Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.18572](https://arxiv.org/abs/2610.18572) | LLM Agents for Automated Post-Training via Structured Recipe Optimization | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.18522](https://arxiv.org/abs/2610.18522) | Lost in Implicit Routing: How LLM Agents Fail to Load Relevant Skills at Scale | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.18507](https://arxiv.org/abs/2610.18507) | The Last Mile of Coding Agents for Long-Document Tasks: An Empirical Study on Clinical Trial Protocol Digitization | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.18497](https://arxiv.org/abs/2610.18497) | Judges Follow the Reference: The Derivation Gap in Verifying Tool-Call Arguments | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.13947](https://arxiv.org/abs/2610.13947) | Towards Physically Grounded Articulated 3D Assets: A Multi-Agent Pipeline and Benchmark | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.13886](https://arxiv.org/abs/2610.13886) | X-AgentRed: Red-Teaming Personal Agents in Evolving Multi-Service Ecosystems | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.13870](https://arxiv.org/abs/2610.13870) | Ask Your Advisor: Learning When to Consult Stronger Models in Agentic Systems | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.13894](https://arxiv.org/abs/2610.13894) | Nimbus Studio reproduces reference BCI decoding pipelines: a validation study on public benchmarks across protocols and paradigms | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.13823](https://arxiv.org/abs/2610.13823) | Same Query, Different Answer: Run-to-Run Variance in Semantic Query Processing | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.13755](https://arxiv.org/abs/2610.13755) | Matched-Context Group Policy Optimization for LLM Agent Training | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.13728](https://arxiv.org/abs/2610.13728) | Chiroptical Nonlinearity Found in Covalent Organic Frameworks | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.13651](https://arxiv.org/abs/2610.13651) | ToFu: Exploiting and Fuzzing the LLM-Orchestrator-Tool Trust Boundary | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.13573](https://arxiv.org/abs/2610.13573) | MatQuery: Execution-Grounded Natural-Language Querying over Heterogeneous Materials Databases | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.13542](https://arxiv.org/abs/2610.13542) | Giant geometric nonlinear transport in inhomogeneously strained Bi$_2$Se$_3$ single crystalline slabs | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.13494](https://arxiv.org/abs/2610.13494) | Humanize MLE Agents: Multi-Agent Session Alternation Beyond Single-Agent Limits | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.13485](https://arxiv.org/abs/2610.13485) | Proactive Agentic Orchestration | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.13438](https://arxiv.org/abs/2610.13438) | Rollout-Time Intervention: Unlocking Agentic Reinforcement Learning Beyond Policy Limits | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.13416](https://arxiv.org/abs/2610.13416) | Web$hell: A Unified Interface for Agentic Web Access | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.13399](https://arxiv.org/abs/2610.13399) | RegulaTutor: A Theory-Informed Framework for Long-Term Personalized Learning | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.13361](https://arxiv.org/abs/2610.13361) | AgentSWE: Can Coding Agents Build the Agent You Actually Want? | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.13335](https://arxiv.org/abs/2610.13335) | AgentTune: A Unified Training Lifecycle for Tool-Using LLM Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.12146](https://arxiv.org/abs/2610.12146) | Harnessing Machine Learning for Ultrafast Science in Facility Settings: Opportunities and Challenges | `2026-11-09T18:50:20+08:00` | 检索命中 harnessing 这个词，不是 agent harness，作地图收录。 |
+| [2610.12457](https://arxiv.org/abs/2610.12457) | SpatialHarness: Test-Time Spatial Scaffolding for Fine Robotic Manipulation | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.12453](https://arxiv.org/abs/2610.12453) | Mental-Models for Multi-Agent Systems | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.12452](https://arxiv.org/abs/2610.12452) | BrickBench: Evaluating Agentic Brick Design | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.12445](https://arxiv.org/abs/2610.12445) | Caught in the Act: Probes Effectively Detect Sabotage and Catch Unverbalized Deception | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.12375](https://arxiv.org/abs/2610.12375) | OnTrack: Real-Time Monitoring and Intervention in LLM Agent Trajectories via Streaming Structure-Aware Optimal Transport | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.12369](https://arxiv.org/abs/2610.12369) | Embodied Turing Machines: Stateful Code for Robot Recursive Self-Improvement | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.12360](https://arxiv.org/abs/2610.12360) | Accurate but Not Humble: Evaluating Epistemic Humility in LLM Agents under Knowledge Conflict | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.12348](https://arxiv.org/abs/2610.12348) | Constructing Large and Structured Decoherence-Free Subspaces in Hybrid Quantum Systems | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.12341](https://arxiv.org/abs/2610.12341) | Can AI Agents Learn Their Way to the Top? Evaluating Heuristic Learning in a Long-Running Game Agent Competition | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.12289](https://arxiv.org/abs/2610.12289) | TestPrism: Rethinking Test Evaluation Beyond a Single Reference | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.12232](https://arxiv.org/abs/2610.12232) | Training on the Future: A Delay-Aware Audit of Test-Time Adaptation for Time-Series Forecasting | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.12185](https://arxiv.org/abs/2610.12185) | RESETTLE: Robotic Recovery through Disagreement-Triggered Retrieval and Efficient Corrective Control | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.12183](https://arxiv.org/abs/2610.12183) | A Closer Look at Agentic BBO: Benchmarking LLM Agents for Black-Box Optimization | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.12126](https://arxiv.org/abs/2610.12126) | SuperNav: An Agentic Navigation System for Any Task in Any Scene | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.12124](https://arxiv.org/abs/2610.12124) | Use and Disuse: Intent-Structured Experience Consolidation for Memory and Learning in LLM Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.12415](https://arxiv.org/abs/2610.12415) | ORCAGen: Orchestrating Context-Aware Malware Deception with RAG-Guided Generative AI | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.10133](https://arxiv.org/abs/2610.10133) | HarnessIR: Harnessing Multimodal Foundation Models for Universal Real-World Image Restoration | `2026-11-09T18:50:20+08:00` | 检索命中 harnessing 这个词，不是 agent harness，作地图收录。 |
+| [2610.10507](https://arxiv.org/abs/2610.10507) | RECAST: Learning to Compute the Right Context through Adaptive Evidence Routing | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.10498](https://arxiv.org/abs/2610.10498) | EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.10487](https://arxiv.org/abs/2610.10487) | LOCAA: An Agentic System for Automated Lossy Compressor Tuning | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.10479](https://arxiv.org/abs/2610.10479) | Agentic RSR: Real-to-Sim-to-Real through Scene Reconstruction and Execution-Grounded Robot Policies | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.10478](https://arxiv.org/abs/2610.10478) | Before They Can Solve: Predicting Post-Training Coding-Agent Performance from Base Models | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.10444](https://arxiv.org/abs/2610.10444) | RunningTab: Direct Workspace Interaction with Environment-Side Tabs | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.10422](https://arxiv.org/abs/2610.10422) | Which Rollout Taught It That? BehaviorTrace and the Limits of Training-Data Attribution in Online RL | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.10332](https://arxiv.org/abs/2610.10332) | Learning to Act with Task Progress: Distilling Small Agents from Compact Teacher Supervision | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.10320](https://arxiv.org/abs/2610.10320) | LLM-Assisted Generation of Transparent, Open-Source Multiphysics Models of Electrochemical Devices | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.10310](https://arxiv.org/abs/2610.10310) | RSIGym: A Flexible Environment for Recursive Self-Improvement | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.09973](https://arxiv.org/abs/2610.09973) | From Expected Harmfulness to Likelihood: A Probabilistic Reformulation of Jailbreaking LLM Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.09944](https://arxiv.org/abs/2610.09944) | AgentTime: Can Agents Estimate and Control Their Own Runtime? | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.09872](https://arxiv.org/abs/2610.09872) | LiveMACE: Process-Aware Evaluation of LLM Agent Capabilities in Evolving Markets | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.08775](https://arxiv.org/abs/2610.08775) | Agent in a Bottle: Can LLM Agents Turn Their Capabilities Into Cheap, Scalable Artifacts? | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.08761](https://arxiv.org/abs/2610.08761) | VeriFine: Scaling Verification for Self-Improvement in Embodied Reasoning | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.08722](https://arxiv.org/abs/2610.08722) | Does an Agent's History Tell You When Compaction Will Hurt? A Modest, Bounded Effect on the TRACE Paired-Replay Corpus | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.08720](https://arxiv.org/abs/2610.08720) | WorldSolver: Can LLM Agents Simulate the Physical Dynamics via Solver Generation? | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.08668](https://arxiv.org/abs/2610.08668) | Semantic Behavioral Watermarking: Paraphrase-Robust and Forgery-Resistant Provenance for LLM Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.08662](https://arxiv.org/abs/2610.08662) | ParanoiaEval: Benchmarking Unnecessary Defensive Work in Agentic Coding | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.08630](https://arxiv.org/abs/2610.08630) | Towards In-Parameter Memory Augmentation for Large Language Models | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.08622](https://arxiv.org/abs/2610.08622) | Agentic RCA for Internet-Scale Services Using Constrained Creativity | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.08452](https://arxiv.org/abs/2610.08452) | Agentic AutoRAG: RAG Pipeline Optimization through Reasoning-Driven Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.08438](https://arxiv.org/abs/2610.08438) | Harnessing Post-selected von Neumann Measurements to Strengthen Entanglement and Quantum Signatures in Coherent States | `2026-11-09T18:50:20+08:00` | 检索命中 harnessing 这个词，不是 agent harness，作地图收录。 |
+| [2610.08413](https://arxiv.org/abs/2610.08413) | Knowing When Not to Answer: Cross-Domain and Multi-Turn Generalization of Latent Underspecification Signals | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.08402](https://arxiv.org/abs/2610.08402) | VETTA: Coordinating Turn- and Token-Level Credit Assignment for Multi-Turn LLM Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.08378](https://arxiv.org/abs/2610.08378) | Lachesis: Lifetime-Aware KV Cache Placement for Agent Serving across HBM and High-Bandwidth Flash | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.06829](https://arxiv.org/abs/2610.06829) | CLIFT: Conformal Self-Verification for Web Agent Training and Test-Time Scaling | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.06782](https://arxiv.org/abs/2610.06782) | T-Search: An Open Agentic Retriever and Playground for Hard Multi-Step Search | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.03675](https://arxiv.org/abs/2610.03675) | FrugalEvo: Towards Cost-Aware LLM-Guided Program Evolution | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.03631](https://arxiv.org/abs/2610.03631) | NeutronGym: Physics-Graded Neutron Instrument Design for LLM Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.03615](https://arxiv.org/abs/2610.03615) | Bridging Frontier Reasoning and Robot Execution: From Autonomous Demonstration Generation to Dense Language Supervision | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.03574](https://arxiv.org/abs/2610.03574) | HyperBrowseComp: A Multilingual and Multimodal Stress Test for Web-Browsing Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.03564](https://arxiv.org/abs/2610.03564) | Knowledge or Calculator? Decomposing the Skill Premium in Verifiable Financial Agent Workflows | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.03548](https://arxiv.org/abs/2610.03548) | Recursive Harness Self-Improvement for Frontier Reasoning Data Synthesis | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.03448](https://arxiv.org/abs/2610.03448) | Passing the Test You Trained On: Re-evaluating Prompt-Injection Detectors for LLM Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.03286](https://arxiv.org/abs/2610.03286) | VenusRL: A Fully Disaggregated Agentic RL System with Priority Scheduling and Scalable Interaction | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.03259](https://arxiv.org/abs/2610.03259) | PaMIR: Open Benchmark of Public Credit-Default Datasets | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.03243](https://arxiv.org/abs/2610.03243) | A Kinetic Theory of the Gated Self-Evolving LLM Agent | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.03226](https://arxiv.org/abs/2610.03226) | D2K-Bench: Can LLM Agents Turn Expert Designs into Efficient GPU Kernels? | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.03223](https://arxiv.org/abs/2610.03223) | AdaStep: Adaptive Step Credit Weighting for Agentic Reinforcement Learning | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.03195](https://arxiv.org/abs/2610.03195) | Source Preference in the Wild: How LLM Agents Favor Items by Source, and How to Reduce It | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.03153](https://arxiv.org/abs/2610.03153) | EvoRiskBench: An Evolving Benchmark for Runtime Security Risks in Workspace Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.02206](https://arxiv.org/abs/2610.02206) | KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.02202](https://arxiv.org/abs/2610.02202) | ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.02181](https://arxiv.org/abs/2610.02181) | OmniSeek: Native Tool Integration for Multi-turn Audio-Visual Reasoning | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.02161](https://arxiv.org/abs/2610.02161) | DuoMind: Enabling Distributed Multi-Robot Coordination with Semantic Communication | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.02148](https://arxiv.org/abs/2610.02148) | Omni-Embed-Mini: Binding Modalities Without Forgetting via Dense Distillation | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.02123](https://arxiv.org/abs/2610.02123) | Harnessing Domain Specialists in Multimodal Mixture-of-Experts for Efficient Adaptation | `2026-11-09T18:50:20+08:00` | 检索命中 harnessing 这个词，不是 agent harness，作地图收录。 |
+| [2610.02038](https://arxiv.org/abs/2610.02038) | Mimir: Physics-Grounded LLM Agents for Long-Horizon Irrigation Control | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.02036](https://arxiv.org/abs/2610.02036) | Global Coherence: When Every Agent Is Right and the Team Is Still Wrong - A Local-to-Global Semantic Foundation for Multi-Agent Collaboration | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.02002](https://arxiv.org/abs/2610.02002) | Mem++: Non-Destructive Memory for Long-Term Organizational LLM Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.01955](https://arxiv.org/abs/2610.01955) | Do Your Own Research: Learning to Forecast by Learning to Search | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.01937](https://arxiv.org/abs/2610.01937) | Graph Representation via Elements of Discrete Morse and Cobordism Theories | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.01914](https://arxiv.org/abs/2610.01914) | DecomVoxel: Harnessing 3D-Native Priors with Guided In-situ Denoising Optimization for Decompositional Scene Reconstruction | `2026-11-09T18:50:20+08:00` | 检索命中 harnessing 这个词，不是 agent harness，作地图收录。 |
+| [2610.01863](https://arxiv.org/abs/2610.01863) | LiteReality-Agent: An Agentic System for Interactable 3D Indoor Scene Reconstruction | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2610.01833](https://arxiv.org/abs/2610.01833) | Continuous Process-Level Evaluation for Evolving Enterprise AI Agent Skills | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.40358](https://arxiv.org/abs/2609.40358) | Physis-Lang: Self-Evolving Language as a Physical Representation for Video World Model | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.40324](https://arxiv.org/abs/2609.40324) | Cogentic: Multi-Agent Orchestration for Automated Proof Discovery | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.40296](https://arxiv.org/abs/2609.40296) | Open Capacity Pooling in Agentic Supply Chains: Coordination-Directed LLM Discovery and Distributed Re-optimization | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.40284](https://arxiv.org/abs/2609.40284) | cua-speedrun: Standardized Benchmarking of the Speed of Computer-Use Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.40272](https://arxiv.org/abs/2609.40272) | Skill-Based AI Agents for Power-System Studies | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.40221](https://arxiv.org/abs/2609.40221) | PhantomEnvironments: Training LLM Agents in Fictional Worlds | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.40118](https://arxiv.org/abs/2609.40118) | Persistent Context Graphs for Efficient Memory Compaction in LLM Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.40111](https://arxiv.org/abs/2609.40111) | Agent Error Dataset: Scaling 50,000 Error--Diagnosis Pairs for Failure Analysis and Error-Aware Post-Training | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.40105](https://arxiv.org/abs/2609.40105) | Harnessing problem structure for end-to-end quantum speed-ups | `2026-11-09T18:50:20+08:00` | 检索命中 harnessing 这个词，不是 agent harness，作地图收录。 |
+| [2609.40082](https://arxiv.org/abs/2609.40082) | Tide: Reclaiming Phased Memory in Agent MicroVMs | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.39989](https://arxiv.org/abs/2609.39989) | What Can Component-Replacement Evidence Establish? A Critical Scoping Review of Local Decisions in LLM Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.39903](https://arxiv.org/abs/2609.39903) | OSWorld-Science: A Benchmark of Computer Use Agents for Learning and Using Scientific Software | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.38178](https://arxiv.org/abs/2609.38178) | Skill-Space Shooting for Autonomous Robot Policy Improvement | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.38147](https://arxiv.org/abs/2609.38147) | Thinking Before Thinking: Scaling Agentic Inference Through Meta-Reasoning | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.38119](https://arxiv.org/abs/2609.38119) | VideoLoop: Looped Working Memory Against Semantic Thrashing in Long-Form Video Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.38108](https://arxiv.org/abs/2609.38108) | Do LLM Agents Execute the Plans They Declare? From Planning-Mode Declaration to Pattern-Specific Execution | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.38078](https://arxiv.org/abs/2609.38078) | MotorMind: Scaffolding General Vision Language Models for Zero-Shot Robot Manipulation | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.38021](https://arxiv.org/abs/2609.38021) | Auditable Long-Term Memory: A Deterministic Retrieval Chain Measured at 479/475 of 500 on LongMemEval-S | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.37976](https://arxiv.org/abs/2609.37976) | $S^3$: Spectral Null-Space Swap Makes Reasoning Models Efficient | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.37968](https://arxiv.org/abs/2609.37968) | SelfSearch: Reward-Free Search for Self-Improving Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.37923](https://arxiv.org/abs/2609.37923) | EpiCon: Collective Agent Learning through Co-Evolving Multimodal Memory | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.37853](https://arxiv.org/abs/2609.37853) | AnthroDial: Benchmarking LLM Anthropomorphism in Autonomous Social Interaction | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.37743](https://arxiv.org/abs/2609.37743) | ContextRender: From Execution Dependencies to Agent Context | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.35759](https://arxiv.org/abs/2609.35759) | Scaling Long-Form Story Generation via Narrative State Tracking | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.35760](https://arxiv.org/abs/2609.35760) | TokenCast: Forecasting Token Consumption During LLM Agent Execution | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.35750](https://arxiv.org/abs/2609.35750) | KV-streams for Efficient Compaction in Agentic Reinforcement Learning | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.35741](https://arxiv.org/abs/2609.35741) | Shockingly Simple Self-retrospection Improves Agentic Models Without RL | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.35732](https://arxiv.org/abs/2609.35732) | Failure-Transparent Agents: Benchmarking Post-Failure Reporting in Tool-Using Language Models | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.35706](https://arxiv.org/abs/2609.35706) | Reinforcing Agentic Creativity in Scientific Ideation with Night Science | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.35659](https://arxiv.org/abs/2609.35659) | Tracekit: Tamper-Evident Intent-Reasoning-Action Auditing for Autonomous Coding Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.35639](https://arxiv.org/abs/2609.35639) | GPUPhysBench: Benchmarking Coding Agents for Correct and Efficient GPU Physics Simulation | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.35627](https://arxiv.org/abs/2609.35627) | Can LLMs Value the Right Evidence? Evidence-Value Misalignment in Dynamic Medical Diagnosis | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.35596](https://arxiv.org/abs/2609.35596) | SEABench: Benchmarking Endogenous Misalignment In Self-Evolving Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.35576](https://arxiv.org/abs/2609.35576) | Share-Borne AI Virus: Memory-Hopping Attacks Across LLM Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.35559](https://arxiv.org/abs/2609.35559) | From Search to Research: Exploring Search Scaling in Autonomous Quantitative Factor Mining | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.35557](https://arxiv.org/abs/2609.35557) | The Compiler May Read It, the Agent May Not: Keeping Part of a Research Code Away from a Coding Agent | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.35549](https://arxiv.org/abs/2609.35549) | RareDx: Controlled Knowledge Integration and Graph-Grounded Policy Optimization for Rare-Disease Diagnosis | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.35432](https://arxiv.org/abs/2609.35432) | Self-Evolving Coding Agents: From Digital Programs to Physical-World Intelligence | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.35366](https://arxiv.org/abs/2609.35366) | Planarian: Managing Agent State with Statepoints | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.17523](https://arxiv.org/abs/2609.17523) | ScienceBuddy: Recursive-in-Recursive Self-Improvement for Interactive Scientific Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.17439](https://arxiv.org/abs/2609.17439) | Evaluating Verified Autonomy in Quantum Engineering | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.17391](https://arxiv.org/abs/2609.17391) | FlashVector: Agent for Hierarchical Model Serving Stack Optimization | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.17380](https://arxiv.org/abs/2609.17380) | OPEN-1B: A Fully Auditable Training Run | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.17317](https://arxiv.org/abs/2609.17317) | Towards Detecting AI-Assisted Responses in Online Surveys | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.17236](https://arxiv.org/abs/2609.17236) | A Memorization Floor for LLM Refinement of Decompiled Code | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.16760](https://arxiv.org/abs/2609.16760) | Turn-level Multiscale Density Ratio Estimation for LLM Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.16635](https://arxiv.org/abs/2609.16635) | EchoPath: Execution-Level Replayable Memory for GUI Agents | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.16582](https://arxiv.org/abs/2609.16582) | CLASH: Counterfactual Auditing of Lexical and Prosodic Reliance in Spoken Sarcasm Detection | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.16491](https://arxiv.org/abs/2609.16491) | PipeSwift: Revisiting Pipeline Parallelism for Large-Scale Completion-Oriented Agentic Serving | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.16466](https://arxiv.org/abs/2609.16466) | Scaling LLM Agents for Materials Design through Hierarchical Collective Reasoning | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.16436](https://arxiv.org/abs/2609.16436) | Interpreting and Steering LLM Agents for Social Simulations | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.16331](https://arxiv.org/abs/2609.16331) | ManiSkillFormer: Demonstration-Free Compositional Manipulation via Task-Conditioned Geometric Contracts | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
+| [2609.16309](https://arxiv.org/abs/2609.16309) | Agentic Search Spaces for Tabular Machine Learning | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
 | [2609.11911](https://arxiv.org/abs/2609.11911) | Artificial Id: Drive and Persistent Alignment in Agentic AI | `2026-09-13T17:46:28+08:00` | 与主线弱相关或偏愿景/周边，作地图扩展收录 |
 | [2609.11493](https://arxiv.org/abs/2609.11493) | From Document Silos to Process Intelligence: A Multi-Layer Knowledge Graph for CMC Process Development | `2026-09-13T17:46:28+08:00` | 与主线弱相关或偏愿景/周边，作地图扩展收录 |
 | [2609.11147](https://arxiv.org/abs/2609.11147) | Autonomous Chemical Mechanistic Discovery through Agentic Reasoning and Validation | `2026-09-13T17:46:28+08:00` | 与主线弱相关或偏愿景/周边，作地图扩展收录 |
@@ -375,6 +1002,7 @@
 | [2609.01491](https://arxiv.org/abs/2609.01491) | GlossoGen: Emergent Language in Complex Multi-Agent LLM Interactions | `2026-09-13T17:46:28+08:00` | 与主线弱相关或偏愿景/周边，作地图扩展收录 |
 | [2609.01354](https://arxiv.org/abs/2609.01354) | Where the Verifier Fails: A Category-Level Audit of Reward Signals in RLVR | `2026-09-13T17:46:28+08:00` | 与主线弱相关或偏愿景/周边，作地图扩展收录 |
 | [2609.01503](https://arxiv.org/abs/2609.01503) | The Data Problem in Software Vulnerability Analysis: Artifacts, Quality, and Consumption | `2026-09-13T17:46:28+08:00` | 与主线弱相关或偏愿景/周边，作地图扩展收录 |
+| [s2-8812e6030605f482](https://www.semanticscholar.org/paper/8812e6030605f482f75ed9d7b1f3a8c17e22e8e1) | When failure becomes a function: From avoiding to exploiting failure in the Mechano-X era | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
 | [2608.30730](https://arxiv.org/abs/2608.30730) | E-Commerce Bench: Evaluating LLM Agents on Long-Horizon Autonomous Business Operation | `2026-09-13T17:46:28+08:00` | 与主线弱相关或偏愿景/周边，作地图扩展收录 |
 | [2608.30803](https://arxiv.org/abs/2608.30803) | Schwarz: Solver-Aware Agentic Program Verification | `2026-09-13T17:46:28+08:00` | 与主线弱相关或偏愿景/周边，作地图扩展收录 |
 | [2608.30724](https://arxiv.org/abs/2608.30724) | BAITBENCH: Measuring Agent Reward Hacking with Optional Shortcuts Planted in ML Tasks | `2026-09-13T17:46:28+08:00` | 与主线弱相关或偏愿景/周边，作地图扩展收录 |
@@ -493,6 +1121,7 @@
 | [2608.06346](https://arxiv.org/abs/2608.06346) | TRAJDEBUG: Tracing Error Lifecycle to Identify Critical Failures in Long-Horizon Agent Trajectories | `2026-09-13T17:46:28+08:00` | 与主线弱相关或偏愿景/周边，作地图扩展收录 |
 | [2608.05906](https://arxiv.org/abs/2608.05906) | Causal Episodic Memory for Feedback-Driven Agent Repair | `2026-09-13T17:46:28+08:00` | 与主线弱相关或偏愿景/周边，作地图扩展收录 |
 | [2608.05810](https://arxiv.org/abs/2608.05810) | When Self-Evolution Backfires: Pre-Commit Gating against Skill Contamination in LLM Agents | `2026-09-13T17:46:28+08:00` | 与主线弱相关或偏愿景/周边，作地图扩展收录 |
+| [2608.06216](https://arxiv.org/abs/2608.06216) | Continual Learning in Transition | `2026-11-09T18:50:20+08:00` | 检索命中 agent/harness 关键词，但标题不在编排层，作地图收录。 |
 | [2608.05108](https://arxiv.org/abs/2608.05108) | Agent Against Agent: An Agentic System for Automatic Prompt Injection Red Teaming | `2026-09-13T17:46:28+08:00` | 与主线弱相关或偏愿景/周边，作地图扩展收录 |
 | [2608.05144](https://arxiv.org/abs/2608.05144) | Argus: A General-Purpose Agentic Runtime for Long-Horizon Reasoning | `2026-09-13T17:46:28+08:00` | 与主线弱相关或偏愿景/周边，作地图扩展收录 |
 | [2608.04719](https://arxiv.org/abs/2608.04719) | Diagnosing Tool-Selection Reasoning in LLM Agents with Canary Tools | `2026-09-13T17:46:28+08:00` | 与主线弱相关或偏愿景/周边，作地图扩展收录 |
