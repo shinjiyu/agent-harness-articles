@@ -1,0 +1,556 @@
+{
+  "date": "2026-11-10",
+  "run": {
+    "at": "2026-11-10T16:06:25+08:00",
+    "sources": [
+      "arxiv",
+      "semanticscholar",
+      "dblp"
+    ],
+    "keywords": [
+      "agent harness",
+      "\"LLM agent\" harness",
+      "test-time harness evolution"
+    ],
+    "fetched": 45,
+    "merged": 18,
+    "new": 18
+  },
+  "new_candidates": [
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.12886",
+      "arxiv_version": "v1",
+      "title": "Reframe: Observation-Aligned Multi-Teacher On-Policy Distillation for Agentic Visual Reasoning",
+      "authors": [
+        "Haozhi Yuan",
+        "Handong Li",
+        "Yifan Zhang",
+        "Qianshan Wei"
+      ],
+      "published": "2026-11-09",
+      "url": "https://arxiv.org/abs/2611.12886",
+      "abstract": "Agentic reinforcement learning (RL) and multi-teacher on-policy distillation (MOPD) offer complementary routes to post-training. For visual agents, however, tool use presents two related challenges. Models may overlook useful tool-returned observations, while poorly grounded actions can limit the evidence available for subsequent distillation. We introduce Reframe, a post-training framework that treats the observation state, rather than only the output distribution, as an object of alignment. First, Ground-Drop-GRPO (GD-GRPO) trains spatial and temporal specialists with evidence-aware rewards and stochastic removal of the original visual input, encouraging them to acquire grounded evidence and use the returned observations. Second, Observation-Gated-MOPD (OG-MOPD) replaces deficient tool actions with canonical ones mid-rollout and resumes distillation from the repaired observation. The two stages complement each other, as learning to rely on tool-returned observations can help the policy benefit from observation repair. Neither stage requires a task-specific SFT cold start. Extensive experiments over 14 image and video benchmarks demonstrate that Reframe outperforms both Mix-RL and vanilla MOPD. Ablation results show that GD-GRPO increases observation dependence and tool gain compared with outcome-based GRPO.",
+      "external_ids": [
+        "arxiv:2611.12886"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-10T16:06:25+08:00",
+      "last_seen_at": "2026-11-10T16:06:25+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.12885",
+      "arxiv_version": "v1",
+      "title": "World In-Context Learning for Agentic Robot Manipulation",
+      "authors": [
+        "Heng Fang",
+        "Zehui Guo",
+        "Yuehan Zhang",
+        "Mingyang Du",
+        "Dingkang Liang",
+        "Xiang Bai"
+      ],
+      "published": "2026-11-09",
+      "url": "https://arxiv.org/abs/2611.12885",
+      "abstract": "Trained action policies write manipulation skill into network weights, tying what is learned to the distribution it is learned from. In-context learning (ICL) avoids this coupling but has not matched trained policies, because a demonstration recorded in another scene carries no feedback from the world the robot currently faces. We observe that what an agent learns in context is semantic, recording task steps and object roles rather than visual appearance, so experience gathered in one world transfers to another. Based on this insight, we propose World In-Context Learning (WICL), a paradigm in which a frozen model starts from a demonstration, rehearses the task in a world such as a simulator, and writes the feedback into its context rather than its weights. We build RoboScript, a modular infrastructure that implements WICL for agentic manipulation. From a single demonstration, RoboScript learns each task through rehearsal in simulation, freezes the learned knowledge as a Task Memory, and deploys the frozen memory on new scenes with data isolation that ensures every deployment input is available on a real robot. On all 50 tasks of RoboTwin 2.0, RoboScript reaches 83.4% mean success across clean and randomized settings with one demonstration per task and no gradient updates, exceeding the strongest trained action policy by over 20 points. The method generalizes across visual distributions, improves through reflection, scales with the foundation model, and transfers to a physical dual-arm robot through cross-embodiment memory adaptation. With a world in the loop, a robot can learn a manipulation task in its context as well as it learns one in its weights. All code is available at https://github.com/ArcheOne-AI/RoboScript",
+      "external_ids": [
+        "arxiv:2611.12885"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-10T16:06:25+08:00",
+      "last_seen_at": "2026-11-10T16:06:25+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.12856",
+      "arxiv_version": "v1",
+      "title": "WorkflowArena: Benchmarking Executable Workflow Orchestration in LLM-Based Multi-Agent Systems",
+      "authors": [
+        "Zheng Jiang",
+        "Fang Niu",
+        "Bo Peng",
+        "Houde Qian",
+        "Wenyi Li",
+        "Deyao Hong",
+        "Mingju Gao",
+        "Yizhe Chi",
+        "Youjie Zheng",
+        "Kaisen Yang",
+        "Calvin Xiao",
+        "Lifeng Sun",
+        "Huan-ang Gao"
+      ],
+      "published": "2026-11-09",
+      "url": "https://arxiv.org/abs/2611.12856",
+      "abstract": "Large language model agents are increasingly deployed as multi-agent systems rather than as a standalone model operating within a single context. Recent agent harnesses allow the model to instantiate worker agents and to author the executable workflow that coordinates them, shifting the design of system structure from developers to the model at run time. The quality of this organization therefore constitutes a distinct capability, yet existing benchmarks either measure end-to-end task completion or evaluate coordination under structures specified in advance. We formalize this capability as workflow orchestration and introduce WorkflowArena, a benchmark of 145 long-horizon tasks spanning 8 professional domains, from software engineering and formal mathematics to legal analysis and 3D production. Each task specifies an initial workspace and an integrated deliverable composed of interdependent components, which is assessed by a hidden verifier. Agents determine autonomously whether and how to delegate, and all delegation is recorded, enabling joint evaluation of deliverable quality and the organization of the underlying work. Experiments with nine models show that no single configuration performs best across all domains and that systems exhibit distinct delegation strategies: at high effort, Claude models in Claude Code invoke workflows less frequently but with larger worker groups, whereas GPT models in Codex delegate more frequently in smaller units. When the executing model is held fixed on a challenging subset of tasks, workflows authored by Claude Opus 5.5 substantially improve weaker executors, indicating that workflow organization is itself a measurable determinant of task performance.",
+      "external_ids": [
+        "arxiv:2611.12856"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-10T16:06:25+08:00",
+      "last_seen_at": "2026-11-10T16:06:25+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.12835",
+      "arxiv_version": "v1",
+      "title": "Mitigating Agentic Deception via Evaluation-Side Partially Observable Games",
+      "authors": [
+        "Hanxiao Li",
+        "Shutong Liu",
+        "Yongjia Ma",
+        "Jiaming Ji",
+        "Juntao Dai",
+        "Shuning Zhang",
+        "Kejian Shi",
+        "Kai Chen",
+        "Pu Feng",
+        "Yuqing Ma",
+        "Qi Dou",
+        "Yaodong Yang",
+        "Xianglong Liu",
+        "Simin Li"
+      ],
+      "published": "2026-11-09",
+      "url": "https://arxiv.org/abs/2611.12835",
+      "abstract": "As large language models become more capable agents, they can exhibit deceptive behaviors, cheating human for higher rewards while appearing helpful. We attribute this failure to evaluation-side partial observability, where models are evaluated mainly from final outcome, without checking the faithfulness of underlying reasoning, tool use, and environmental effects. Prior mitigations address this partial observability by predefined evaluator latent belief space or one-shot monitoring, which do not extend to free-form language space and vulnerable to stronger deceptions that evade simple monitoring. In this work, we formulate deception mitigation as an Evaluation-Side Partially Observable Extensive Form Game (e-PoG), a max-min framework in which an agent maximizes reward, a monitor minimizes the agent's payoff by exposing deception from the full interaction trajectory, and a fixed verifier validates the monitor's claims and converts them into penalties. We define the solution concept as a Subgame-Perfect Oversight Equilibrium (SPOE) between agent and monitor, and prove its existence in finite games. With a perfect verifier, every SPOE is faithful; with an imperfect verifier, the guarantee persists if verifier errors do not reverse the ranking of monitor actions. To achieve faithful SPOE, we derive a two-timescale policy gradient algorithm and enhance the pipeline empirically with NLI verification and deterministic checks. Experiments with Gemma3-4B-IT and Qwen3-4B/8B on Agentic Role-Playing, SearchQA, and WebShop show that e-PoG mitigates multiple emergent deception modes, outperforming the strongest baselines by 26.0% in deception mitigation and by up to 39.8% in task success. These gains persist under weak-to-strong supervision. Code is available at https://github.com/Toyoid/deceptive-agent.",
+      "external_ids": [
+        "arxiv:2611.12835"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-10T16:06:25+08:00",
+      "last_seen_at": "2026-11-10T16:06:25+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.12799",
+      "arxiv_version": "v1",
+      "title": "Agentic-OPD: Recovering Forgotten Agent Capabilities via On-Policy Distillation for Agentic Tasks",
+      "authors": [
+        "Tingcheng Bian",
+        "Kangye Gong",
+        "Jinchang Luo",
+        "MingQuan Cheng",
+        "Feiran Liu",
+        "Ni Li",
+        "Xiaoling Xia",
+        "Haiwei Wang",
+        "Hui Li"
+      ],
+      "published": "2026-11-09",
+      "url": "https://arxiv.org/abs/2611.12799",
+      "abstract": "Reinforcement learning is now the mainstream paradigm for training LLMs on agentic tasks, yet standard practice keeps only the best-validation checkpoint and discards the rest. We show that this is lossy: in GRPO training of LLM agents, the best-validation checkpoint fails on problems that earlier checkpoints from the same run had already solved, and the union of problems solved across checkpoints far exceeds any single one. The discarded checkpoints thus form a teacher pool obtained at no additional training cost, which on-policy distillation (OPD) can mine to recover the lost coverage. Mining this pool raises two challenges: i) which checkpoint to distill from, as no checkpoint dominates the others and complementarity to the student is problem-specific; ii) where to trust it, as even a well-chosen teacher is only locally superior, so indiscriminate distillation overwrites behavior the student has already mastered. We propose Agentic-OPD, which treats the best-validation checkpoint as the student and all saved checkpoints as frozen teacher candidates, using the student's evolving capability gaps to guide both teacher selection and supervision filtering: the HCN policy (Highest Coverage Next) dynamically selects teachers by weighted coverage of the student's unsolved problems, while the LAD module (Locality-Aware Distillation) confines transfer to failed student rollouts on problems where the teacher performs better. Across five agentic task domains and 24 benchmarks and task subsets, Agentic-OPD improves over its initialization checkpoint by up to 7.4 points, with a 4B student surpassing the latest frontier models GPT-5.6 and DeepSeek-V4.1 on deep search. Agentic-OPD recasts a finished RL run as a reusable pool of policies and establishes post-RL capability recovery as a stage orthogonal to improvements in the RL algorithm itself.",
+      "external_ids": [
+        "arxiv:2611.12799"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-10T16:06:25+08:00",
+      "last_seen_at": "2026-11-10T16:06:25+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.12737",
+      "arxiv_version": "v1",
+      "title": "Inference Validation for Regulated AI: Building a Decision Pipeline on NVIDIA AIPerf",
+      "authors": [
+        "Dev Akre",
+        "Roman Bobalo",
+        "Manoj Dobbali"
+      ],
+      "published": "2026-11-09",
+      "url": "https://arxiv.org/abs/2611.12737",
+      "abstract": "Deploying large language models in regulated industries requires more than picking the fastest inference engine: it requires evidence that a configuration meets contractual and legal obligations before it serves a single customer request. We describe Runway, an internal validation harness built at MasterControl that builds a governed decision pipeline around NVIDIA AIPerf. The key insight is separating concerns: AIPerf provides the trusted measurement, while Runway provides the experiment design that comes before it and the compliance, cost, and audit decisions that come after. We describe the architecture and the storage model that makes caching and audit one mechanism. We report three findings from Runway sweeps: TensorRT-LLM and vLLM rankings invert with concurrency; a newer, pricier GPU instance can be the cheaper one per request; and speculative decoding behaves differently across engines under load, so engine configuration can outweigh engine choice.",
+      "external_ids": [
+        "arxiv:2611.12737"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-10T16:06:25+08:00",
+      "last_seen_at": "2026-11-10T16:06:25+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.12705",
+      "arxiv_version": "v1",
+      "title": "Multi-Agent Screening: What Agreement and Acceptance Cannot Tell You",
+      "authors": [
+        "Benjamin Chang",
+        "Dell Zhang"
+      ],
+      "published": "2026-11-09",
+      "url": "https://arxiv.org/abs/2611.12705",
+      "abstract": "When AI agents screen items for a costly human assessor, as in agentic search, e-discovery and AI reviewing of papers, only what they pass gets judged. We show what each kind of evidence can establish about their errors, even with unlimited data. Agreement shows that agents concur, not that they are right, however many there are. Acceptance by the assessor gives precision but only a lower bound on recall. Knowing which agents found which relevant items gives an upper bound on recall if agents' finds are not negatively correlated, and caps what one more agent can add if agents are interchangeable. Without assumptions about the agents, recall can be pinned down only by judging items they did not pass: a random sample of these estimates how many relevant items were missed, to any chosen accuracy, and the sample needed does not grow with the number of agents.",
+      "external_ids": [
+        "arxiv:2611.12705"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-10T16:06:25+08:00",
+      "last_seen_at": "2026-11-10T16:06:25+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.12552",
+      "arxiv_version": "v1",
+      "title": "SciMARS: Multi-Agent Recursive Self-Improvement for Closed-Loop Scientific Discovery",
+      "authors": [
+        "Weimin Wu",
+        "Han Liu"
+      ],
+      "published": "2026-11-09",
+      "url": "https://arxiv.org/abs/2611.12552",
+      "abstract": "We propose SciMARS, a framework for recursive task-local adaptation of multi-agent harnesses in closed-loop scientific discovery. Multi-agent systems coordinate analysis, experimental design, and verification as scientific evidence evolves. However, two problems limit their effectiveness: (i) without shared memory, agents lose observations and repeat work; (ii) fixed role procedures, handoffs, and memory policies perpetuate mistakes despite retained evidence. We address these problems with a shared evidence graph and separate component editors. SciMARS adapts roles and coordination; SciMARS + Memory adds a third editor for how agents record, retrieve, and receive evidence. Candidate probes guide composition and selection of the next harness. We evaluate scientific discovery through experimental-data replay and a digital twin. SciMARS + Memory resolves 12/18 GPT-6-Astra and 2/18 GLM-5.3 attempts on Autonomous Science Bench, compared with 8/18 and 1/18 for the base multi-agent team. On ScienceAgentBench and AppWorld, it solves 14/38 and 11/20 tasks, compared with 11/38 and 5/20 for the base team. These results support combining shared memory with harness adaptation across scientific and interactive tasks.",
+      "external_ids": [
+        "arxiv:2611.12552"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-10T16:06:25+08:00",
+      "last_seen_at": "2026-11-10T16:06:25+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.12481",
+      "arxiv_version": "v1",
+      "title": "Universal two-qubit control across dilution refrigerators via a 10-km coherent optical link",
+      "authors": [
+        "Chuanlong Ma",
+        "Jiajun Chen",
+        "Jia-Qi Wang",
+        "Zheng-Xu Zhu",
+        "Jia-Hua Zou",
+        "Linze Li",
+        "Dingran Gu",
+        "Yuan-Hao Yang",
+        "Lintao Xiao",
+        "Xiaoxuan Pan",
+        "Xin-Biao Xu",
+        "Baile Chen",
+        "Haifeng Yu",
+        "Weiting Wang",
+        "Chang-Ling Zou",
+        "Luyan Sun"
+      ],
+      "published": "2026-11-09",
+      "url": "https://arxiv.org/abs/2611.12481",
+      "abstract": "Distributed quantum networks are important for scalable quantum processors and for potential applications in communication, distributed computation, and sensing, in which direct classical links for adaptive control are essential to harness the shared entanglement. However, controlling superconducting quantum processors from a separate refrigerator over long distances remains elusive. Here, we introduce a coherent optical link (COL) that delivers microwave waveforms and their phase references between dilution refrigerators. Combining a laser, a microwave-to-optical transducer and an optical-to-microwave photodiode, the COL transmits microwave control signals over 10~km of fiber, while optical references derived from the same laser compensate for the frequency mismatch between devices. Through the COL, we deliver a universal gate set to a transmon qubit and a cavity qubit in another refrigerator and entangle them, and achieve a Bell-state fidelity of 80.6\\%. Quantum control delivered through the COL thus provides a classical backbone for modular quantum processors.",
+      "external_ids": [
+        "arxiv:2611.12481"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-10T16:06:25+08:00",
+      "last_seen_at": "2026-11-10T16:06:25+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.12429",
+      "arxiv_version": "v1",
+      "title": "Can Frontier Auto Researchers Reconstruct Human Research Decisions in AI?",
+      "authors": [
+        "Shengyun Si",
+        "Junjie Chu",
+        "Ye Leng",
+        "Yang Zhang"
+      ],
+      "published": "2026-11-09",
+      "url": "https://arxiv.org/abs/2611.12429",
+      "abstract": "Scientific research has long been driven by substantial human effort, from reviewing prior work and identifying research gaps to designing specific solutions. Recent advances in harness-based agent systems have given rise to increasingly capable Auto Researchers, which can autonomously carry out these tasks and, increasingly, entire end-to-end research workflows. Yet despite their rapidly growing capabilities, how closely the research decisions and outputs produced by auto researchers align with those of human experts remains underexplored. We investigate this gap through the lens of research reconstruction and study: Given comparable research context, how similar are the research decisions and outputs produced by Auto Researchers to those of human researchers in AI research? To answer this question, we introduce AutoResearcher-Human Research Similarity (AutoHRS), a stage-wise evaluation framework for assessing how faithfully auto researchers reconstruct human research artifacts across different stages of the scientific workflow. Using 152 ICLR oral papers as our corpus, we generate 456 research trajectories spanning different stages of the research process. Applying AutoHRS to these trajectories, we find that current Auto Researchers frequently fail to recover key research decisions and their resulting artifacts across multiple stages of the research process.",
+      "external_ids": [
+        "arxiv:2611.12429"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-10T16:06:25+08:00",
+      "last_seen_at": "2026-11-10T16:06:25+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.12412",
+      "arxiv_version": "v1",
+      "title": "Unprompted coordination through shared memory in LLM agents: a locked two-implementation replication and extension",
+      "authors": [
+        "Pekka Abrahamsson",
+        "Muhammad Waseem",
+        "Esa Karjalainen",
+        "Petrus Jussila",
+        "Henri Hansen",
+        "Jussi Rasku",
+        "Bilhanan Silverajan",
+        "Kai-Kristian Kemell"
+      ],
+      "published": "2026-11-09",
+      "url": "https://arxiv.org/abs/2611.12412",
+      "abstract": "Coordination between large language-model agents has become a central question for AI safety and software engineering, as such agents are deployed in groups that share infrastructure. Existing research tells the agents that partners exist or asks them to coordinate. Whether coordination arises through shared state alone, with nothing disclosing that anyone else is present, is the key question for deployments that share caches and memory between agents, yet it has rarely been examined, and never with independent replication; this study does both. Four agents each received a short arithmetic task and a key-value store presented to each as its own scratch space; two held complementary halves of one computation, and no prompt mentioned other agents, sharing or collaboration. For reliability, the environment was rebuilt independently from a written protocol, and both implementations ran under hashed locks on design, data and analysis. The results bear novelty value in three respects. Joint success occurred only through the shared store. Whether a model coordinated depended not on its vendor tier but on whether it wrote its intermediate result and looked at the store again, and one ordinary sentence, \"check your workspace again before submitting\", switched that second look on and off. The findings held under replication. For practice, state shared between agents is a communication channel and should be separated, namespaced and logged. For research, designs should be locked before the data, and the parse rule, endpoint and parameters reported. Future work should test open-weight models and separate using another agent's output from intending to communicate.",
+      "external_ids": [
+        "arxiv:2611.12412"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-10T16:06:25+08:00",
+      "last_seen_at": "2026-11-10T16:06:25+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.12393",
+      "arxiv_version": "v1",
+      "title": "AutoBuddy: Evaluating Proactive, Always-On Agents on Task Discovery and Execution in a Simulated Workplace",
+      "authors": [
+        "Shiqi Chen",
+        "Daniel Madrigal Diaz",
+        "Wei-Ning Chen",
+        "Gbola Afonja",
+        "Fangkai Yang",
+        "Rujia Wang",
+        "Chetan Bansal",
+        "Victor Rühle",
+        "Saravan Rajmohan",
+        "Dongge Han"
+      ],
+      "published": "2026-11-09",
+      "url": "https://arxiv.org/abs/2611.12393",
+      "abstract": "As LLM agents become more autonomous, they are increasingly expected to run as always-on assistants on a user's behalf, identifying work to be done and completing it without being asked. Yet existing benchmarks usually give the agent its task, whereas in knowledge work the requests sit in the user's workspace and the agent must first recognise which obligations exist. We study proactive task discovery and execution, in which an agent must infer a user's pending tasks from their workspace and complete them in the systems where the work lives. This setting poses two challenges. For the agent, the tasks are buried in a large volume of mail, chat, documents and records. For evaluation, a benchmark needs a simulated organisation whose people, events and documents are mutually consistent, so that tasks arise realistically and their correct outcomes are known. We introduce AutoBuddy-Bench, a simulator that addresses these challenges. It models an organisation's employees, projects, business systems and event history as a temporal graph, renders it into realistic workspace artefacts, derives ground-truth tasks from the events that create obligations, and computes each task's outcome from the world state; execution is judged by the agent's changes to the workspace. To evaluate current LLMs, we build AutoBuddy, a reference agent with interchangeable backbone LLMs: it identifies tasks from the workspace, grounding each in its source records, and executes each in a separate session with write access. Varying only the backbone, we find a systematic shift in where tasks are lost: weaker models fail mainly at discovery, intermediate models identify tasks but often stop short of carrying them out, and the strongest models fail mainly during execution, most often on business-system operations. Discovery precision is only weakly related to execution quality, suggesting the two are distinct capabilities.",
+      "external_ids": [
+        "arxiv:2611.12393"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-10T16:06:25+08:00",
+      "last_seen_at": "2026-11-10T16:06:25+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.12386",
+      "arxiv_version": "v1",
+      "title": "Say Shibboleth: Fingerprinting the LLMs and Harnesses Behind Agentic Attacks",
+      "authors": [
+        "Dario Pasquini",
+        "Reworr",
+        "Giuseppe Ateniese",
+        "Manish Bhatt",
+        "Sergej Epp"
+      ],
+      "published": "2026-11-09",
+      "url": "https://arxiv.org/abs/2611.12386",
+      "abstract": "We study the fingerprinting of agentic cyberattacks. Our objective is to reliably infer information about the attacker's configuration, such as LLM version and harness, from telemetry. To achieve this, we introduce a technique we call shibboleth traps: modular honeypot services designed to elicit discriminative behaviors from agentic attackers. The traps make informative interactions a condition for obtaining resources the agent seeks, eliciting model declarations and characteristic writing without requiring a successful prompt injection. To achieve harness fingerprinting, we introduce general mechanisms to indirectly probe peculiar execution behaviors of harnesses. These probes reveal how a harness masks secrets in tool output, enforces command time limits, and schedules tool calls, using only the effects visible in subsequent requests. We show that combined declarative and behavioral inference distinguishes among 15 candidate models with an average 90% top-1 accuracy, with behavioral classifiers evaluated on held-out harnesses or task families. In a separate experiment across four harnesses, fixed probe rules identify the correct harness with 92% accuracy. When instructed to conceal their identity, agents still leave useful behavioral evidence even as their declarations become uninformative.",
+      "external_ids": [
+        "arxiv:2611.12386"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-10T16:06:25+08:00",
+      "last_seen_at": "2026-11-10T16:06:25+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.12377",
+      "arxiv_version": "v1",
+      "title": "Detecting Shadow AI: Unsanctioned LLM Agents on Enterprise Endpoints: A Taxonomy, an Open Detector and a Controlled Evaluation",
+      "authors": [
+        "Jeremy Canale",
+        "Fabien Soulis"
+      ],
+      "published": "2026-11-09",
+      "url": "https://arxiv.org/abs/2611.12377",
+      "abstract": "Shadow IT, the use of technology that the IT organisation has not approved, is a long-standing governance problem. We argue that autonomous AI agents can make it grow much faster: agents make building tools nearly free, act with their user's privileges, and leave behind scripts, automations and MCP servers that are themselves unsanctioned. A simple compounding model shows that, under its assumptions, shadow IT grows exponentially once agentic artifacts reproduce faster than the organisation retires them; retiring them starts with detecting them. We then ask whether unsanctioned agents can be detected on Windows endpoints. We propose a taxonomy of nine classes of agents and six layers of endpoint footprint, and argue that rules based only on the structure of processes and connections cannot separate an agent from its behavioural twin, the same program talking to a non-AI service. We present Agent Detector, an open-source Windows detector that anchors behaviour to the identity of the remote service and correlates it with configuration, installation and execution history, using a catalog of 39 tools and 184 LLM endpoint entries; it informs users through a notice they must acknowledge instead of blocking. On a controlled bench of 12 synthetic agents, 3 AI components and 9 benign workloads, repeated 5 times on one workstation, two behavioural rules flagged every behavioural twin, while Agent Detector flagged none and detected every agent in the majority of runs. Its limits are temporal: a connection to a provider behind a shared content-delivery network is attributable only while the DNS cache holds the provider's name, one to five minutes, and an intermittent agent was seen by about one scan in three. A scan costs about 154 ms. The bench is too small to rank detectors; it maps what each kind of evidence can see: unsanctioned agents can be partly detected, and not by behaviour alone.",
+      "external_ids": [
+        "arxiv:2611.12377"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-10T16:06:25+08:00",
+      "last_seen_at": "2026-11-10T16:06:25+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.12300",
+      "arxiv_version": "v1",
+      "title": "Reconfigurable Action Theories: A Formal Foundation for Dynamically Composable Agent Harnesses",
+      "authors": [
+        "Jianmin Ji"
+      ],
+      "published": "2026-11-09",
+      "url": "https://arxiv.org/abs/2611.12300",
+      "abstract": "Action theories typically fix their vocabulary and causal laws, whereas agent harnesses can change their tools, providers, and policies during execution. We introduce Reconfigurable Action Theories (RAT), in which actions can change the action theory itself. A theory module in RAT contains a vocabulary, causal laws, and an initializer. A RAT configuration records the active modules and the world state. Module loading and unloading are represented by actions governed by ordinary causal laws. RAT retains the standard causal action semantics of its language fragment when the active module set is fixed. We give sufficient conditions for at most one next configuration, preservation of existing behavior when a module is added, and equal results when modules are loaded in either order. We establish the computational complexity of reasoning tasks in RAT and translate finite RAT systems into nonmonotonic causal theories and Answer Set Programming (ASP), preserving bounded executions. Experiments compare finite RAT models with executions of official DeepSeek Harness, Pi, and OpenHands implementations. RAT provides a formal basis for checking how component changes affect a harness's available actions, behavior, and reachable goals.",
+      "external_ids": [
+        "arxiv:2611.12300"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-10T16:06:25+08:00",
+      "last_seen_at": "2026-11-10T16:06:25+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.12288",
+      "arxiv_version": "v1",
+      "title": "ForgeSystem: An Architecture for Demand-Specific Artefact Production with AI Agents",
+      "authors": [
+        "Qingfeng He",
+        "Zhui Zhu",
+        "Yaojian Chen",
+        "Shangzhan Li",
+        "Leshan Li",
+        "Tingjian Zhang",
+        "Qian Xie",
+        "Yuxuan Li",
+        "Xu Han",
+        "Zhiyuan Liu"
+      ],
+      "published": "2026-11-09",
+      "url": "https://arxiv.org/abs/2611.12288",
+      "abstract": "General-purpose software serves many different demands, but this flexibility costs performance and efficiency on any specific demand. Software tailored to a specific demand avoids these losses, yet developing it requires substantial time and effort from human experts. AI agents offer an alternative: they can design, implement and test artefacts tailored to individual demands. We call this production paradigm Forge. Forging for a demand is economically justified when the cumulative benefit of specialisation exceeds the total cost of construction, verification and maintenance. To make Forge a repeatable production process, we propose ForgeSystem, which consists of a control layer, a forge loop and a recursive self-improvement (RSI) loop. The control layer selects which artefact serves each demand and decides which demands to forge, when to forge them and from which starting point; the forge loop iterates between production and verification until a candidate artefact passes verification; and the RSI loop draws on accumulated production records to supply starting points, refine the harness and train models. We implement ForgeSystem for training frameworks, decoding megakernels and individual computational kernels. Forged training engines reach 1.047-1.332x the model-FLOPs utilisation of their reference frameworks, forged megakernels achieve a geometric-mean decoding speedup of 1.21x over SGLang across thirteen configurations, and forged kernels match or exceed expert libraries in eighteen of twenty-two configurations, while satisfying task-specific quality requirements. Controlled comparisons show that explicit quality requirements steer agents towards optimisations that preserve training quality. We also discuss a gradual transition to Forge through service routing, and how demand-specific production may shift value accumulation and trust towards production systems.",
+      "external_ids": [
+        "arxiv:2611.12288"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-10T16:06:25+08:00",
+      "last_seen_at": "2026-11-10T16:06:25+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.12256",
+      "arxiv_version": "v1",
+      "title": "Predictability of Collective Behavior in Networks of LLM Agents",
+      "authors": [
+        "Fabian Baumann",
+        "Michele Starnini"
+      ],
+      "published": "2026-11-09",
+      "url": "https://arxiv.org/abs/2611.12256",
+      "abstract": "As AI agents built on large language models (LLMs) increasingly interact at scale, anticipating their collective behavior becomes necessary. Unlike humans, individual LLM agents can be probed in {controlled scenarios}; however, the predictability of their collective outcomes hinges on what such measurements capture. We study information cascades on networks of LLM agents that decide whether to share a post given how many of their contacts have shared it. At the same fraction of sharing contacts, an agent's response depends on how many contacts it has and on the post. Responses that ignore the number of contacts mispredict the cascades, increasingly on heterogeneous networks, by an error we derive analytically and that network topology alone cannot reveal. Measured in context, the response predicts, through mean-field theory, the cascades of full LLM simulations, tipping points included. Anticipating the collective behavior of AI agents thus requires evaluating them in their local network context.",
+      "external_ids": [
+        "arxiv:2611.12256"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-10T16:06:25+08:00",
+      "last_seen_at": "2026-11-10T16:06:25+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.12222",
+      "arxiv_version": "v1",
+      "title": "PARIS: A multi-agent LLM framework for end-to-end, PRISMA-guided systematic literature reviews with pre-synthesis corpus quality assessment",
+      "authors": [
+        "Christophe Cruz",
+        "Hussam Ghanem",
+        "Samir Jabbar",
+        "Ait Kbir",
+        "Hocine Cherifi"
+      ],
+      "published": "2026-11-09",
+      "url": "https://arxiv.org/abs/2611.12222",
+      "abstract": "Systematic literature reviews (SRs) remain slow and labor-intensive, and most automation tools address single stages of the workflow. We present PARIS (PRISMA Agentic Research Intelligence System), an open-source framework in which a conductor agent running in Claude Code orchestrates 15 specialized large language model (LLM) agents, from scoping a research question to exporting a manuscript draft. Agents are specified declaratively, coordinate exclusively through persisted artifacts that the conductor validates before every transition, and delegate retrieval, bibliometric analysis and scoring to deterministic Python utilities. Three human checkpoints gate study inclusion, corpus adequacy and the synthesis outline. We also introduce QualityScore, a pre-synthesis index that aggregates normalized network, bibliometric, semantic and process sub-scores into a 0-100 grade. Two case studies illustrate both: AI chatbots and university students' learning (388 records, 100 included) and AI-assisted SR methods (131 records, 123 included, QualityScore 69.1 recomputed with a proxy network sub-score). They show end-to-end feasibility across domains and the diagnostic use of QualityScore: in the first run, corpus improvements chosen at the corpus-adequacy checkpoint raised the score from 74.6 to 81.9 and the number of pre-2023 studies from 1 to 19. Audits of both runs exposed failure modes: incomplete retrieval, counts that drifted between agents, unrecorded or delegated checkpoint decisions and a grade that depends on how citation data are handled. PARIS fully supports 8 of the 27 PRISMA 2020 items and partially supports 11. Output quality has so far been judged only by an internal reviewer agent; independent validation against human reviews is the next step.",
+      "external_ids": [
+        "arxiv:2611.12222"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-10T16:06:25+08:00",
+      "last_seen_at": "2026-11-10T16:06:25+08:00"
+    }
+  ]
+}
