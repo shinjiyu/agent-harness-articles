@@ -26,7 +26,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-11-13T15:42:32+08:00",
-      "last_seen_at": "2026-11-13T15:42:32+08:00"
+      "last_seen_at": "2026-11-14T15:29:16+08:00"
     },
     {
       "source": "arxiv",
@@ -52,7 +52,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-11-13T15:42:32+08:00",
-      "last_seen_at": "2026-11-13T15:42:32+08:00"
+      "last_seen_at": "2026-11-14T15:29:16+08:00"
     },
     {
       "source": "arxiv",
@@ -85,7 +85,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-11-13T15:42:32+08:00",
-      "last_seen_at": "2026-11-13T15:42:32+08:00"
+      "last_seen_at": "2026-11-14T15:29:16+08:00"
     },
     {
       "source": "arxiv",
@@ -124,7 +124,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-11-13T15:42:32+08:00",
-      "last_seen_at": "2026-11-13T15:42:32+08:00"
+      "last_seen_at": "2026-11-14T15:29:16+08:00"
     },
     {
       "source": "arxiv",
@@ -148,7 +148,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-11-13T15:42:32+08:00",
-      "last_seen_at": "2026-11-13T15:42:32+08:00"
+      "last_seen_at": "2026-11-14T15:29:16+08:00"
     },
     {
       "source": "arxiv",
@@ -176,7 +176,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-11-13T15:42:32+08:00",
-      "last_seen_at": "2026-11-13T15:42:32+08:00"
+      "last_seen_at": "2026-11-14T15:29:16+08:00"
     },
     {
       "source": "arxiv",
@@ -203,7 +203,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-11-13T15:42:32+08:00",
-      "last_seen_at": "2026-11-13T15:42:32+08:00"
+      "last_seen_at": "2026-11-14T15:29:16+08:00"
     },
     {
       "source": "arxiv",
@@ -241,7 +241,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-11-13T15:42:32+08:00",
-      "last_seen_at": "2026-11-13T15:42:32+08:00"
+      "last_seen_at": "2026-11-14T15:29:16+08:00"
     },
     {
       "source": "arxiv",
@@ -272,7 +272,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-11-13T15:42:32+08:00",
-      "last_seen_at": "2026-11-13T15:42:32+08:00"
+      "last_seen_at": "2026-11-14T15:29:16+08:00"
     },
     {
       "source": "arxiv",
@@ -309,7 +309,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-11-13T15:42:32+08:00",
-      "last_seen_at": "2026-11-13T15:42:32+08:00"
+      "last_seen_at": "2026-11-14T15:29:16+08:00"
     },
     {
       "source": "arxiv",
@@ -341,7 +341,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-11-13T15:42:32+08:00",
-      "last_seen_at": "2026-11-13T15:42:32+08:00"
+      "last_seen_at": "2026-11-14T15:29:16+08:00"
     },
     {
       "source": "arxiv",
@@ -370,7 +370,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-11-13T15:42:32+08:00",
-      "last_seen_at": "2026-11-13T15:42:32+08:00"
+      "last_seen_at": "2026-11-14T15:29:16+08:00"
     },
     {
       "source": "arxiv",
@@ -412,7 +412,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-11-13T15:42:32+08:00",
-      "last_seen_at": "2026-11-13T15:42:32+08:00"
+      "last_seen_at": "2026-11-14T15:29:16+08:00"
     },
     {
       "source": "arxiv",
@@ -443,7 +443,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-11-13T15:42:32+08:00",
-      "last_seen_at": "2026-11-13T15:42:32+08:00"
+      "last_seen_at": "2026-11-14T15:29:16+08:00"
     },
     {
       "source": "arxiv",
@@ -470,7 +470,7 @@
       ],
       "status": "new",
       "first_seen_at": "2026-11-13T15:42:32+08:00",
-      "last_seen_at": "2026-11-13T15:42:32+08:00"
+      "last_seen_at": "2026-11-14T15:29:16+08:00"
     },
     {
       "source": "arxiv",
@@ -1501,7 +1501,7 @@
     }
   ],
   "last_run": {
-    "at": "2026-11-13T15:42:32+08:00",
+    "at": "2026-11-14T15:29:16+08:00",
     "sources": [
       "arxiv",
       "semanticscholar",
@@ -1512,11 +1512,11 @@
       "\"LLM agent\" harness",
       "test-time harness evolution"
     ],
-    "fetched": 45,
-    "merged": 15,
-    "new": 15
+    "fetched": 55,
+    "merged": 25,
+    "new": 0
   },
   "schema_version": 1,
   "topic": "agent harness",
-  "updated_at": "2026-11-13T15:42:32+08:00"
+  "updated_at": "2026-11-14T15:29:16+08:00"
 }
