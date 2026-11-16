@@ -1,0 +1,572 @@
+{
+  "date": "2026-11-16",
+  "run": {
+    "at": "2026-11-16T15:45:56+08:00",
+    "sources": [
+      "arxiv",
+      "semanticscholar",
+      "dblp"
+    ],
+    "keywords": [
+      "agent harness",
+      "\"LLM agent\" harness",
+      "test-time harness evolution"
+    ],
+    "fetched": 55,
+    "merged": 29,
+    "new": 19
+  },
+  "new_candidates": [
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.18562",
+      "arxiv_version": "v1",
+      "title": "Training Reasoning Models in Simulation to Natively Use Real Robots",
+      "authors": [
+        "Jiaming Tang",
+        "Zhuoyang Zhang",
+        "Junxian Guo",
+        "Fangzhou Zhao",
+        "Yilong Zhao",
+        "Zekai Li",
+        "Xingyang Li",
+        "Yuyang Zhao",
+        "Song Bian",
+        "Zhijian Liu",
+        "Song Han"
+      ],
+      "published": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.18562",
+      "abstract": "Robot-use agents (RUAs) have emerged as a promising approach to general-purpose robot control. However, strong performance has so far been achieved only by frontier proprietary models such as GPT-6 Astra and Claude Fable 5.2, whereas open-weight models remain substantially less capable. We show that an open-weight 27B reasoning model can be trained to use real robots natively through reinforcement learning, entirely in simulation and without demonstrations. Like a computer-use agent (CUA), the model observes the environment, reasons in a chain of thought, and generates the next end-effector pose, without any harness. We build a Post-training Engine for Agentic Robotics (PEAR) and use it to train the model on simulated robot tasks at scale with robot-use reinforcement learning (RURL), mirroring how frontier models acquire computer use. We find that the skills acquired in simulation generalize well beyond the training tasks: they transfer to an unseen robot, to the real world, and to novel instructions. After training on LIBERO and RoboDojo in simulation, the model succeeds in 60% of our trials on a real dual-arm robot, whereas the base model succeeds in none. On LIBERO, training raises the success rate from 1.6% to 74.4%, approaching GPT-6 Astra and GPT-6.1 Sol at maximum reasoning effort. Compared with $π_{0.5}$, a vision-language-action model fine-tuned on demonstrations, our model is substantially more robust to changes in the task itself. On LIBERO-Pro, $π_{0.5}$ succeeds in only 0.75% of episodes when assigned a new task in a familiar scene whereas our model succeeds in 57.4%. Finally, the model retains its general capabilities, with no measurable degradation on nine reasoning, coding and vision benchmarks. These results highlight robot-use reinforcement learning as a promising component of foundation-model post-training.",
+      "external_ids": [
+        "arxiv:2611.18562"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-16T15:45:56+08:00",
+      "last_seen_at": "2026-11-16T15:45:56+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.18553",
+      "arxiv_version": "v1",
+      "title": "WeightBench: Evaluating Language Models as Weight-Space Programmers",
+      "authors": [
+        "Aayush Marasini",
+        "Barsat Khadka",
+        "Nick Rahimi"
+      ],
+      "published": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.18553",
+      "abstract": "Recent work shows that large language models (LLMs) can operate directly on the parameters of other neural networks. They can read what a network was trained to do, fix a network that fails, and write working networks from scratch, all without gradient descent. This capability has been termed Weight-Space Programming (WSP). Exploring this new paradigm systematically requires a robust benchmark. We introduce WEIGHTBENCH, a benchmark that evaluates LLMs of increasing capability on 42 WSP tasks across five tracks: reading, fixing and writing weights, recognizing edits that are impossible, and data-free compression. The networks whose weights the LLMs read and edit range from 2K-parameter control policies to 7B-parameter language models. Experimental benchmark results show that frontier agents can already read small networks and write working control policies without ever running them, but cannot yet patch language models, compress them without data, or tell an impossible edit from a hard one. On all 42 tasks, Claude Opus 5.5 reaches a macro score of 0.535 (Sonnet 5.5 0.466, Haiku 5.5 0.402, DeepSeek v4-flash 0.215); on the 38 tasks it was run on, GPT-6.1-sol reaches 0.568 against Opus's 0.546. Code, the task registry, our OS-level sandbox harness, and the live leaderboard are publicly available at https://github.com/Aayush-Marasini/WeightBench.",
+      "external_ids": [
+        "arxiv:2611.18553"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-16T15:45:56+08:00",
+      "last_seen_at": "2026-11-16T15:45:56+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.18533",
+      "arxiv_version": "v1",
+      "title": "ModHarness-RL: Recasting Harnesses as Learnable and Evolving Programs for Agentic RL",
+      "authors": [
+        "Zelin He",
+        "Siyu Zhu",
+        "Jacob Helwig",
+        "Yujian Liu",
+        "Li An",
+        "Rohit Jain",
+        "Shiyu Chang",
+        "Alborz Geramifard"
+      ],
+      "published": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.18533",
+      "abstract": "Agentic reinforcement learning (RL) increasingly relies on a harness, the scaffold around the model that decides what it sees of its own interaction and what guidance it receives. Most existing approaches train under a hand-written harness that stays fixed throughout. However, an effective harness depends on the domain, the data and the model, and keeps changing as the model trains. We introduce ModHarness-RL, which recasts the harness as programs that are learned from data and evolve as the model trains with RL. ModHarness-RL records the interaction as structured State, a set of typed blocks, and two core components of the harness are programs over these blocks, a Compression program that assembles the accumulated history into the model's context and a Steering program that supplies guidance when behavior deviates. During RL training, candidate programs are proposed from recent trajectories, verified by execution, and replayed over past trajectories, so the harness tracks how the model's behavior shifts. We study CodeSearch in depth and further analyze ALFWorld and BIRD SQL, with models from 1.5B to 8B. The proposed Compression and Steering mechanisms improve held-out performance over the fixed-harness baseline in most settings. These results suggest that a harness for agentic RL can be learned from the task's data and evolved with the model.",
+      "external_ids": [
+        "arxiv:2611.18533"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-16T15:45:56+08:00",
+      "last_seen_at": "2026-11-16T15:45:56+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.18517",
+      "arxiv_version": "v1",
+      "title": "OpenLayout: An Open and Agentic-Driven Platform for Holistic VLSI Physical Design and Benchmarking",
+      "authors": [
+        "Qiufeng Li",
+        "Sizhe Tang",
+        "Quan Cheng",
+        "Zirui Wang",
+        "Wantong Li",
+        "Tian Lan",
+        "Weidong Cao"
+      ],
+      "published": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.18517",
+      "abstract": "Physical design automation of very large-scale integrated circuits (VLSI) has made significant strides, progressing from single-stage placement and routing toward increasingly integrated full-flow implementation. Yet, existing approaches struggle with the vast design space optimization (DSO) arising from diverse technology nodes, circuit designs, and varied constraints. The substantial runtime of physical-design tools further exacerbates this challenge, leaving industrial workflows heavily dependent on experienced engineers to navigate the design space and achieve power, performance, and area (PPA) targets, incurring significant engineering effort. We argue that large language models (LLMs) with strong reasoning capabilities, enriched with distilled human design expertise, offer a promising path toward efficient and automated DSO. Unlike traditional algorithms, LLMs can interpret complex design contexts and naturally incorporate human expertise expressed in natural language for reasoning, acting, observing, and adapting throughout the design process, a capability that conventional optimization methods cannot exploit. To this end, we present OpenLayout, an agentic platform that leverages multi-agent collaboration with embedded design knowledge to enable self-iterative DSO. We further introduce OpenLayout-Bench, a benchmark targeting advanced technology nodes with commercial EDA tools to systematically evaluate physical design automation capabilities of LLMs. Experimental results demonstrate that OpenLayout achieves state-of-the-art performance, with approximately 20% accuracy improvement over baseline methods. Our work is open-sourced at https://github.com/fenggev56/OpenLayout",
+      "external_ids": [
+        "arxiv:2611.18517"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-16T15:45:56+08:00",
+      "last_seen_at": "2026-11-16T15:45:56+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.18514",
+      "arxiv_version": "v1",
+      "title": "Can Mechanistic Interpretability Help Explain LLM Agent Failures? A Case Study on Web Element Hallucination",
+      "authors": [
+        "Mohamed Aghzal",
+        "Mor Geva",
+        "Gregory J. Stein",
+        "Ziyu Yao"
+      ],
+      "published": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.18514",
+      "abstract": "Mechanistic Interpretability (MI) has made significant progress in explaining the internal computations of Large Language Models (LLMs); however, these advances have yet to demonstrate comparable success in explaining the decision-making processes of LLM-based agents. This paper examines the challenges MI tools face when applied to realistic agentic failures. We focus on one such failure: web agents hallucinating actions that are not available on a website. We apply a series of mechanistic analyzes to Qwen2.5-7B-Instruct as it interacts with live websites. We find that a linear probe trained on the last prompt token can predict hallucinations before generation begins (0.80 AUC) and steering along a probe direction corrects 85\\% of hallucinations, but disrupts 7\\% of valid actions. However, these results only provide a partial explanation of why the agent hallucinates. The probe direction is sensitive to prompt formatting, losing much of its steering effect after a minor change to how actions are represented. Additionally, circuit identification can be difficult as the computation is distributed across multiple components and positions, and the information the agent relies on varies across examples. We discuss how these observations challenge the assumptions underlying standard MI methods for circuit discovery and feature identification, and outline future directions for making these methods better suited to explain failures in LLM-based agents.",
+      "external_ids": [
+        "arxiv:2611.18514"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-16T15:45:56+08:00",
+      "last_seen_at": "2026-11-16T15:45:56+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.18506",
+      "arxiv_version": "v1",
+      "title": "Agentic induction of common data elements and information extraction from sarcoma case report abstracts",
+      "authors": [
+        "Daniel Reichenpfader",
+        "Kwaku Appiagyei",
+        "Manovah Nadarajah",
+        "Ahmed Reda Bahr",
+        "Irina Filchenko",
+        "Fabio Dennstädt"
+      ],
+      "published": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.18506",
+      "abstract": "Common data elements (CDEs) support clinical data comparability but are usually defined manually. We investigated whether large language model agents could derive a CDE schema from sarcoma case report abstracts and apply it at scale. An agent proposed 72,909 candidate CDEs from 24,588 PubMed abstracts; agentic consolidation yielded 1,570 CDEs. We retained 53 supported by at least 50 abstracts and attempted evidence-linked extraction across the corpus. Processing succeeded for all retained CDEs in 79.2% of abstracts, including responses indicating non-mention. Two human reviewers approved 83.0% of retained CDEs for relevance, 67.9% for clarity, and 56.6% for correctness. In 100 sampled abstracts, exact agreement with the value extracted by the LLM was 94.9% among 1,116 pairs with a non-empty answer (abstract-level bootstrap 95% CI, 93.0-96.4%). Errors concentrated in anatomical and temporal fields. These findings support agent-assisted schema drafting followed by expert curation before large-scale extraction.",
+      "external_ids": [
+        "arxiv:2611.18506"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-16T15:45:56+08:00",
+      "last_seen_at": "2026-11-16T15:45:56+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.18504",
+      "arxiv_version": "v1",
+      "title": "Agentic AI for Discovering Fault-Tolerant Quantum Circuits",
+      "authors": [
+        "Aritra Lahiri",
+        "Florian Marquardt"
+      ],
+      "published": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.18504",
+      "abstract": "Scaling quantum computing toward practical quantum advantage is currently limited by the efficiency of circuits that operate on information encoded by quantum error-correcting codes. The full stack of quantum computing encompasses several tasks: preparation of logical code states, implementation of logical gates, logical routines on encoded qubits, etc. Yet, these circuits are largely designed by hand for individual cases, with some recent works incorporating machine learning for certain aspects. We formulate this problem as agentic evolutionary program synthesis, wherein a large language model, leveraging its pretraining knowledge and tool-use proficiency, and guided by a circuit verifier, evolves a program that defines a Clifford circuit for a wide range of curated tasks such as logical state preparation, logical gate design, and logical routines such as code-switching, code growth, etc. Our approach consistently finds fault-tolerant circuits for all of these tasks, each verified by an exhaustive check over faults.",
+      "external_ids": [
+        "arxiv:2611.18504"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-16T15:45:56+08:00",
+      "last_seen_at": "2026-11-16T15:45:56+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.18493",
+      "arxiv_version": "v1",
+      "title": "TradeGauntlet: Evaluating Compliance Controls for Autonomous Trading Agents",
+      "authors": [
+        "Sandip Nandi",
+        "Aishwarya Bose",
+        "Apurba Bose",
+        "Soovadeep Bakshi"
+      ],
+      "published": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.18493",
+      "abstract": "Autonomous trading agents need controls that prevent problematic orders without making legitimate tasks impractical. We study this aspect of agentic compliance with TradeGauntlet, a replayable limit-order-book simulator that separates detection, prevention, and execution cost. In 1,680 simulated sessions with Claude Haiku 5.5 and Sonnet 5.5, all conduct alerts were self-matches. Gates eliminated those alerts by rejecting self-crossing orders, while the aggregate-gate condition reduced Sonnet's two-sided fills by about 15%. A conduct reminder reduced Sonnet's alert rate but reduced Haiku's fills without a detectable alert benefit. These results show why zero alerts alone do not establish an agent's compliance. Scripted probes and two search methods test weaknesses beyond those observed in the LLM runs. The searches find split-order schedules that evade the implemented conduct rules; a learned baseline catches all 2,400 tested searched episodes but also flags 15% of a large maker's sessions. Aggregate caps reduce the response-dependent gain unevenly, with smaller reductions when only near-touch depth affects prices. A response fitted to five Nasdaq stocks and a separate ABIDES experiment expose the dependence of these estimates on market assumptions. A distinct adversarial prompt elicited refusals from Sonnet in all 240 rounds, yielding no candidate strategies to evaluate. TradeGauntlet provides reproducible tests of controls around trading agents; the experiments do not establish legal compliance or real-market detection accuracy.",
+      "external_ids": [
+        "arxiv:2611.18493"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-16T15:45:56+08:00",
+      "last_seen_at": "2026-11-16T15:45:56+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.18484",
+      "arxiv_version": "v1",
+      "title": "From AI-Enabled Remote Patient Monitoring Toward Agentic Robotics: Embodiment, Governance, and Care Integration",
+      "authors": [
+        "Ivana Ragusa",
+        "Lorenzo Guiducci",
+        "Filippo Cavallo"
+      ],
+      "published": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.18484",
+      "abstract": "AI-enabled remote patient monitoring is evolving beyond passive data collection toward agentic AI systems that interpret patient states, coordinate care, and initiate action across domestic and clinical settings. This structured scoping review finds that mature agentic care has not yet emerged: Most systems remain human led, while stronger decision-action coupling and embodied AI remain largely confined to prototypes and pilots. Healthcare robotics makes the transition from monitoring to action especially visible by translating AI-generated recommendations and decisions into speech, movement, prompting, physical assistance, escalation, and care coordination, making embodiment, clinical integration, human oversight, and governance fundamental design requirements. Further progress requires safe and interoperable care architectures in which intelligent components operate through clinically validated and accountable workflows. We propose agentic robotics as a future direction for supervised systems embedded in the care ecosystem, connecting AI agents and robots with clinicians, caregivers, and patients through auditable workflows that can be interrupted and remain subject to human oversight and explicit AI governance.",
+      "external_ids": [
+        "arxiv:2611.18484"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-16T15:45:56+08:00",
+      "last_seen_at": "2026-11-16T15:45:56+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.18471",
+      "arxiv_version": "v1",
+      "title": "Do Verifier Judgments Survive Abstraction? Measuring Verification Transport for LLM Agent Evaluation",
+      "authors": [
+        "Disha Sheshanarayana",
+        "Sai Linisha Reddy Goli"
+      ],
+      "published": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.18471",
+      "abstract": "LLM-based verifiers are increasingly used to evaluate agent executions, but their reliability is typically measured under a single representation of the trajectory. In deployed agent systems, the same execution may be exposed through composed tools, delegation boundaries, or compacted histories, changing what execution evidence is directly observable to the verifier. It therefore remains unclear whether correct verifier judgments persist across such abstraction boundaries. We introduce Verification Transport, a reliability test that measures judgment stability under abstraction-induced changes in execution observability. We construct matched native, abstracted, and restored views of the same frozen executions while holding the task, realized trajectory, outcome, ground truth, evaluation criterion, and verifier fixed. Across four agent-evaluation benchmarks, seven verifier backbones, four verification protocols, and three abstraction boundaries, we find substantial transport failure, reaching about 31% under macro abstraction and delegation. Verification protocols exhibit distinct failure modes: direct verification more often produces incorrect verdicts, whereas evidence-grounded and deliberative protocols tend to abstain under limited observability. This suggests that lower transport failure rates do not necessarily imply greater reliability. Restoring the corresponding execution provenance recovers 85.5% of transport failures, while recovery is lower when provenance is lossy or unavailable. These results show that native-view accuracy alone is insufficient to characterize verifier reliability when execution evidence crosses abstraction boundaries.",
+      "external_ids": [
+        "arxiv:2611.18471"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-16T15:45:56+08:00",
+      "last_seen_at": "2026-11-16T15:45:56+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.18443",
+      "arxiv_version": "v1",
+      "title": "HerAgent: A Block-Level Checkpointing Harness for Coding-Agent Environment Setup",
+      "authors": [
+        "Xiang Li",
+        "Siyu Lu",
+        "Federica Sarro",
+        "Claire Le Goues",
+        "He Ye"
+      ],
+      "published": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.18443",
+      "abstract": "Modern coding agents rely on establishing executable software environments before they can perform software engineering tasks such as testing, debugging, and patch validation. Existing setup agents typically control progress at either single-command or whole-script granularity, making recovery either too local to remove polluted state or too coarse to preserve useful progress. We present HerAgent (Harness EnviRonment Setup Agent), a block-level harness for coding-agent environment setup. HerAgent's main contribution is semantic setup blocks: a single progress-control abstraction used for execution, validation, checkpointing, repair, and rollback. Evaluated against six prior agents on four environment-setup datasets, HerAgent improves setup success in every comparison, achieving the largest gains on Installamatic-Bench (52.0% to 85.0%) and SetupBench (46.3% to 70.4%). It also reduces setup costs by up to 94.5%, showing that block-level progress control improves reliability and efficiency.",
+      "external_ids": [
+        "arxiv:2611.18443"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-16T15:45:56+08:00",
+      "last_seen_at": "2026-11-16T15:45:56+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.18442",
+      "arxiv_version": "v1",
+      "title": "CANTraj: Recovering Vehicle Trajectories from CAN Signals in Naturalistic Driving",
+      "authors": [
+        "Yuhang Wang",
+        "Jingxin Yang",
+        "Chuheng Wei",
+        "Suyang Chen",
+        "Haozhuang Chi",
+        "Hao Zhou"
+      ],
+      "published": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.18442",
+      "abstract": "Open driving releases and usage-based insurance programs often claim to prevent privacy breaches by omitting GPS records when sharing or collecting vehicle data. However, removing GPS coordinates from driving logs does not erase the location information carried by vehicle signals. While prior route-inference attacks have demonstrated that speed, steering, and driving events can be matched to road networks to reconstruct trajectories, existing studies rely on inconsistent prior assumptions and evaluation metrics and are tested only on small, restricted datasets, making their results difficult to compare and their real-world effectiveness uncertain. We release CANTraj, a naturalistic driving dataset pairing decoded CAN events with time-aligned GNSS trajectories (3,940 drives, 454 drivers), and CANTraj-Bench for evaluating trajectory recovery (3,675 drives, 431 drivers, 1,380 hours, 85,919 km). On 776 evaluation drives from 94 unseen drivers, we compare six re-implemented attacks and benchmark baselines under explicit information-access protocols, paired comparisons, and metrics incorporating failures. Experiments show that combining steering signals with road-network constraints yields the largest gain: With a known start and heading, adding steering to speed raises the online map filter's five-minute route recovery from 56% to 87%, with a median average displacement error of 43 m versus 921 m for map-free dead reckoning. Offline beam search recovers 88% of test routes with the heading and 81% without it. Because methods fail on different windows, we also evaluate an LLM harness that selects among candidate routes on 659 five-minute windows; its best configuration recovers 79% of routes on test and 83% on few-shot, outperforming the best baseline on test and matching it on few-shot. Data and code at huggingface.co/datasets/HenryYHW/CANTraj and github.com/WangYuHang-cmd/GPS--CAN.",
+      "external_ids": [
+        "arxiv:2611.18442"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-16T15:45:56+08:00",
+      "last_seen_at": "2026-11-16T15:45:56+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.18359",
+      "arxiv_version": "v1",
+      "title": "Envisioning Agentic Robotics: A New Era of Robotic Systems",
+      "authors": [
+        "Grid Robotics",
+        ":",
+        "Qingfeng Lan",
+        "Duo Li",
+        "Siyao Li",
+        "Yiheng Lyu",
+        "Shijian Lu",
+        "Zhenghao Qi",
+        "Shizun Wang",
+        "Xinchao Wang",
+        "Ming Yang",
+        "Zhiqin Yang",
+        "Zuhao Yang",
+        "Tao Yu"
+      ],
+      "published": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.18359",
+      "abstract": "The release of GPT-6 Astra marks the emergence of a new paradigm in robotics: agentic robotics. Within weeks, frontier models with agentic harnesses matched or exceeded task-specific policies on many embodied benchmarks. Instead of training a dedicated policy for each family of tasks, an agentic robotic system applies a foundation model to open-world embodied tasks. It operates in a closed loop: observing the environment, interpreting user intent, reasoning about the task, invoking skills and tools, verifying outcomes, and adapting its strategy. Despite these advances, the community has yet to converge on a shared definition, a reliable evaluation framework, or a research roadmap. We argue that Embodied System 2, realized by a foundation model together with an embodied harness, forms the decision-making core of agentic robotics. Its central challenge is to translate general-purpose reasoning into effective and verifiable actions under physical constraints such as limited reaction time, mechanical limits, unpredictable environment changes, and irreversible consequences. Motivated by this perspective, we propose an evaluation framework that measures both model capabilities and closed-loop system performance. Furthermore, we identify the principles that carry over from digital to physical agents and the challenges that must be addressed to achieve reliable physical autonomy. On top of the Embodied System 2 and the evaluation framework, we envision a research roadmap toward sustained autonomy: the ability to perform work safely and reliably with progressively broader responsibility, from executing individual primitives to fulfilling standing roles.",
+      "external_ids": [
+        "arxiv:2611.18359"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-16T15:45:56+08:00",
+      "last_seen_at": "2026-11-16T15:45:56+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.18315",
+      "arxiv_version": "v1",
+      "title": "Experts Across Schemas: Agent-Guided Mixture-of-Relational-Experts for Cross-Database Generalization",
+      "authors": [
+        "Hiren Madhu",
+        "Sukanta Ganguly",
+        "Kiran Srinivasan",
+        "Smita Krishnaswamy",
+        "Rex Ying"
+      ],
+      "published": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.18315",
+      "abstract": "Web platforms record user and item activity in relational databases whose schemas differ from platform to platform, which makes it difficult to transfer predictive models between them. Relational foundation models address this through cross-database pretraining, yet recent improvements have relied on increasingly large pretraining corpora. We ask whether a better architecture, together with features specific to the target database, can deliver comparable gains from far less pretraining data. We introduce MoREGT, a mixture-of-relational-experts graph transformer that represents both rows and cells as tokens, adds the log-ages of rows and the names of foreign-key relationships to attention, and routes cells and rows to experts by column metadata rather than by values. A label-blind LLM agent complements the model: it reads the target database's schema and column statistics and adds validated single-row derived columns, without access to labels or model scores. On 21 RelBench tasks with leave-one-database-out pretraining on six databases, the MoREGT backbone improves on the Relational Transformer pretrained on the same databases by 2.25 points of mean AUROC and 5.83 points of mean nMAE. The agent's columns raise mean AUROC from 78.45 to 79.63 and lower mean nMAE from 27.91 to 26.98, the highest means on both metrics among the compared methods, including RT-J, which pretrains on about 400 times as many databases.",
+      "external_ids": [
+        "arxiv:2611.18315"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-16T15:45:56+08:00",
+      "last_seen_at": "2026-11-16T15:45:56+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.18293",
+      "arxiv_version": "v1",
+      "title": "PrivacyPR: A Dataset of Real-World Privacy Fixes for Benchmarking Privacy-Aware Code Review",
+      "authors": [
+        "Hua Yang",
+        "Aditya Bhardwaj",
+        "Shidong Pan",
+        "Bowen Xu"
+      ],
+      "published": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.18293",
+      "abstract": "Coding agents increasingly review code, yet whether they catch the privacy defects that laws such as the GDPR require software to avoid remains largely untested, partly because few datasets connect real privacy defects to their accepted fixes and review context. We present PrivacyPR, a dataset of 4,131 merged GitHub pull requests (PRs) from 1,469 repositories, created between June 2018 and January 2024. Each PR includes its commits, diffs, review discussion, and LLM-generated labels for privacy relevance, fix type, and GDPR principles. PrivacyPR provides 1,169 high-confidence privacy fixes and 1,643 non-fix PRs, together with Verified, a manually checked split of 250 privacy fixes and 250 non-fix PRs, and Small, a 100 + 100 subset for evaluation. On Verified, both annotators endorsed 72% of the LLM's GDPR-principle assignments. Beyond supporting empirical study of how privacy defects arise and are fixed, PrivacyPR provides a benchmark for privacy-aware code review on real, developer-accepted fixes. Its evaluation harness reverts each fix to reintroduce the defect. On Small, two coding agents detect only 42-51% of defects under a generic review prompt, but 88-91% when explicitly asked to check privacy, while flagging 11-15% of non-fix PRs. These results show that privacy defects can be detected by coding agents, but that detection depends strongly on review intent and comes with false alarms. Data, code, reviews, judge verdicts, and an extensible evaluation harness are publicly available at https://doi.org/10.5281/zenodo.23744765.",
+      "external_ids": [
+        "arxiv:2611.18293"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-16T15:45:56+08:00",
+      "last_seen_at": "2026-11-16T15:45:56+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.18140",
+      "arxiv_version": "v1",
+      "title": "Large Language Model-Empowered Intelligent Agent for Adaptive Fast-Charging Control of Lithium-Ion Batteries",
+      "authors": [
+        "Joey Chan",
+        "Haoyu Pan",
+        "Zhen Chen",
+        "ErShun Pan"
+      ],
+      "published": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.18140",
+      "abstract": "Fast charging of lithium-ion batteries is a multi-objective control problem that requires reducing charging time and sustaining high energy throughput while suppressing accelerated degradation and safety-critical electrochemical reactions. Conventional protocols are easy to implement but have limited ability to adapt to variations in battery chemistry, operating conditions, and aging state. Model-based optimization and conventional data-driven control often require accurate models, costly iterative search, or task-specific policies. We develop a large language model (LLM)-empowered intelligent agent for adaptive battery fast-charging control. In this closed-loop framework, the agent interprets structured battery states, generates executable charging actions, observes the resulting battery response, and continuously adjusts subsequent decisions. We construct a large-scale simulation corpus with PyBaMM across five battery chemistries and 11 parameter sets and convert the resulting state-action-response trajectories into structured process data for agent training. Our two-stage strategy combines supervised fine-tuning (SFT) and Group Relative Policy Optimization (GRPO). SFT establishes battery-control semantics and feasible decision priors from simulation-derived demonstrations. GRPO aligns the agent with a multi-objective control objective covering energy throughput, degradation mitigation, and operational constraints. Closed-loop simulations show that, under matched energy-throughput requirements, the agent achieves longer cycling life than conventional charging baselines and optimization-based strategies across heterogeneous battery configurations. This study provides a simulation-grounded proof of concept for using LLM agents as sequential decision makers in battery management and takes a step toward language-model-enabled control of physical energy systems.",
+      "external_ids": [
+        "arxiv:2611.18140"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-16T15:45:56+08:00",
+      "last_seen_at": "2026-11-16T15:45:56+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.18114",
+      "arxiv_version": "v1",
+      "title": "Interpretable weight-space programming builds transparent transformers and brain encoding models",
+      "authors": [
+        "Yash Mehta",
+        "Chandan Singh",
+        "Weijia Xu",
+        "Richard J. Antonello",
+        "Adeen Flinker",
+        "Nima Mesgarani",
+        "Michael F. Bonner",
+        "Nebojsa Jojic",
+        "Jianfeng Gao"
+      ],
+      "published": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.18114",
+      "abstract": "Neural networks are powerful predictors, yet their opacity limits their usefulness in science, where the goal is explanation rather than mere prediction. In neuroscience, for example, deep encoding models accurately predict brain activity in response to natural stimuli, but struggle to reveal which stimulus features drive those predictions. Here we introduce interpretable weight-space programming (iWSP), a method in which an LLM agent iteratively builds interpretable models by explicitly programming their weights and features in code, without gradient-based training (backpropagation). Without backpropagation to tune parameters, the agent must draw on its prior knowledge and reason over previous trials to hypothesize, hand-craft, and refine human-interpretable computations mirroring the workflow of a human scientist. LLM audits confirm the interpretability of the hand-crafted models. We first validate iWSP by tasking it with constructing transformers for canonical benchmarks such as arithmetic and sentiment classification, finding that LLM agents can successfully craft compact, accurate networks directly. Next, we apply iWSP to build neural encoding models across vision, language, and audition. In the visual cortex, iWSP outpredicts existing interpretable baselines, uncovers distinct computations across early/higher visual areas, and generalizes to unseen data. In language fMRI, iWSP surfaces a confound in the data and in auditory ECoG, it systematically discovers interpretable acoustic features that predict neural activity. Together, these results establish iWSP as a general paradigm for aligning high predictive performance with human-interpretable scientific discovery.",
+      "external_ids": [
+        "arxiv:2611.18114"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-16T15:45:56+08:00",
+      "last_seen_at": "2026-11-16T15:45:56+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.17971",
+      "arxiv_version": "v1",
+      "title": "Efficient and Practical Clustering of Variables in Causal Graphs",
+      "authors": [
+        "Otto Tabell",
+        "Jani Nykänen",
+        "Santtu Tikka",
+        "Juha Karvanen"
+      ],
+      "published": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.17971",
+      "abstract": "Clustering variables in a graph may improve visual clarity and simplify causal inference. Harnessing the full potential of clustering requires an automated method to detect useful clusters in a graph. We introduce a novel class of clusters called conduits, and present a sound, complete and efficient algorithm for detecting all conduits in the graph. In addition to algorithmic detectability, conduits appear naturally in causal graphs stemming from real-world applications, enabling substantial size reduction. Furthermore, the structure of conduits enables the application of known identifiability results regarding clustering. We demonstrate these properties in a simulation study with real-world graphs.",
+      "external_ids": [
+        "arxiv:2611.17971"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-16T15:45:56+08:00",
+      "last_seen_at": "2026-11-16T15:45:56+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.17966",
+      "arxiv_version": "v1",
+      "title": "From Images to Grounded Edits: A Real-World Benchmark for Chinese Grammatical Error Correction in Handwritten Essays",
+      "authors": [
+        "Weiru Zhang",
+        "Yuzhong Hong",
+        "Junwei Bao",
+        "Lemao Liu",
+        "Dejing Dou"
+      ],
+      "published": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.17966",
+      "abstract": "Chinese Grammatical Error Correction (CGEC) is typically formulated as a text-to-text problem. While suitable for digital texts, this formulation falls short in real-world K-12 education, where AI-assisted corrections are expected directly on essay images, which are primarily handwritten and exhibit many irregularities. To bridge this gap, we introduce Grounded Chinese Grammatical Error Correction (G-CGEC), an image-to-grounded-edit task requiring systems to predict both corrections and their positions on essay images. We propose G-CGEC-Eval, a benchmark comprising real-world images of K-12 Chinese essays with fine-grained annotations. For evaluation, we adapt IoU-based metrics from object detection and propose a more tolerant alternative based on center-distance matching. Using this benchmark, we evaluate open-source and proprietary vision-language models under a direct single-pass setting, as well as settings with auxiliary components (OCR and character grounding) coordinated via pipelining or agentic harnessing. Results show that even top-tier proprietary models perform surprisingly poorly in the single-pass setting, while pipelining and agentic harnessing yield meaningful improvements. Notably, an error-type-based multi-agent workflow achieves the best performance, establishing it as the strongest baseline for future G-CGEC research. Through ablations and fine-grained analysis, we find the task remains far from solved, with linguistic error discovery and character-level grounding as the primary bottlenecks. This underscores the need for models that better integrate visual perception with linguistic reasoning and visual grounding.",
+      "external_ids": [
+        "arxiv:2611.17966"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-16T15:45:56+08:00",
+      "last_seen_at": "2026-11-16T15:45:56+08:00"
+    }
+  ]
+}
