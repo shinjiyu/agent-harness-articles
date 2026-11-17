@@ -2,6 +2,435 @@
   "candidates": [
     {
       "source": "arxiv",
+      "arxiv_id": "2611.21553",
+      "arxiv_version": "v1",
+      "title": "BLIP-Live: Balancing Timeliness & Firing Precision in Proactive Streaming Video Agents",
+      "authors": [
+        "Kanchana Ranasinghe",
+        "Honglu Zhou",
+        "Dominick Reilly",
+        "Le Xue",
+        "Shusheng Yang",
+        "Juan Carlos Niebles",
+        "Silvio Savarese",
+        "Ran Xu"
+      ],
+      "published": "2026-11-16",
+      "url": "https://arxiv.org/abs/2611.21553",
+      "abstract": "Streaming video understanding is becoming increasingly important for real-world interactive systems. Such systems must be proactive for natural and useful human interaction: they should respond as soon as sufficient evidence becomes available while avoiding premature, redundant, or incorrect responses. We present BLIP-Live, a framework unifying data, metrics, harness, and training around a shared formulation of proactivity as effective causal response decisions balancing the two competing objectives of responding vs silence. First, we construct BLIP-Live-780K dataset containing human annotations of proactive response content and timing, which defines this desired behavior. We then propose PAUC-F, a metric to effectively measure our desired proactive behavior. PAUC-F combines existing response timeliness metrics with firing precision to reward early useful responses without rewarding excessive firing. With our desired behavior defined and measurable, we finally investigate model-agnostic inference harnesses that draw out proactive streaming capabilities of offline vision language models (VLMs), together with training pipelines that learn to further improve their proactive responsiveness. Across both settings, we find that combinations of sliding visual windows, online interaction memory, and structured response outputs consistently yield strongest proactive performance. Our experiments result in two models, with our BLIP-Live-Qwen model achieving state-of-the-art performance across four proactive streaming benchmarks, with gains up to 44% over baselines and outperforming multiple closed API models. Our code and data will be released publicly.",
+      "external_ids": [
+        "arxiv:2611.21553"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-17T16:56:06+08:00",
+      "last_seen_at": "2026-11-17T16:56:06+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.21541",
+      "arxiv_version": "v1",
+      "title": "SciResearch-Eval: Evaluating Scientific Judgment in Autonomous Experimental Agents",
+      "authors": [
+        "Brian T. Weston",
+        "Alondra Torres Contreras",
+        "Aldair E. Gongora"
+      ],
+      "published": "2026-11-16",
+      "url": "https://arxiv.org/abs/2611.21541",
+      "abstract": "We introduce SciResearch-Eval, an interactive benchmark of scientific judgment built on a standard laboratory problem: measuring a material's thermal properties by heating it and fitting a heat-conduction simulator. An agent designs its own experiments, uses a supplied simulator that may be under-resolved or physically wrong, and reports each property with a 95% interval. To our knowledge it is the first benchmark to combine agent-designed experiments, a deliberately flawed simulator, and proper scoring of calibrated intervals against exact ground truth. On a held-out split (93 tasks, 9 models, 2,511 episodes), models handle procedural traps. When the simulator is missing physics, most report wrong values while stating they are 95% sure: their ranges contain the truth in 20-62% of cases, against 94% for GPT-6 Astra and 99% for Claude Fable 5.2. At default effort the failing Claude 5.5 models rarely diagnose the missing physics (Opus in 35% of episodes, against 66% for Astra), and even when they do, their ranges often miss; Astra and Fable design experiments in which the flawed simulator is accurate, such as gentle heating, which keeps Astra calibrated even when it does not name the cause. Asking for wider intervals does not help; stating the strategy improves interval scores 1.6-2.5-fold, replicated on a pre-registered fresh split, but coverage barely moves. A pre-registered effort ablation shows that the correction is latent in the Claude 5.5 models: at maximum effort Opus improves more than tenfold and is no longer detectably behind Astra at default, but only with 13-31 times more reasoning; older and open-weight models gain nothing. Fable 5.2 is the most accurate model at default effort (interval score 1.9 times better than Astra's) but writes 6 times as many tokens, and at Astra's token count it falls short. We release the environment, graders and harness.",
+      "external_ids": [
+        "arxiv:2611.21541"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-17T16:56:06+08:00",
+      "last_seen_at": "2026-11-17T16:56:06+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.21515",
+      "arxiv_version": "v1",
+      "title": "Beyond Leaderboard Ranks: Selecting Software Engineering Agents Under Budget Constraints",
+      "authors": [
+        "Srinath Srinivasan",
+        "Tim Menzies"
+      ],
+      "published": "2026-11-16",
+      "url": "https://arxiv.org/abs/2611.21515",
+      "abstract": "Teams that adopt LLM agents for issue resolution must decide which agent to pay for, and how much to spend finding out. Leaderboard ranks give weak evidence for this decision. Accuracy differences may be statistically unresolved, reported costs may be inconsistent, and evaluating candidate agents can itself be expensive. We investigate budget-constrained agent selection using 58,197 run--task records extracted from the Holistic Agent Leaderboard (HAL), focusing on SWE-bench and six additional benchmarks. Across seven benchmarks, 27 of 35 steps along the accuracy--cost Pareto frontiers are statistically unresolved. On SWE-bench, a run costing $34.16 trails the $170.78 leader by 14.6 percentage points, but the available tasks cannot statistically distinguish their accuracy. Reported costs also differ from standardized token-based estimates by up to 11.7x, while selective task evaluation can bias estimates of full-benchmark execution cost. We therefore compare evaluation strategies under explicit evaluation budgets and deployment-cost caps. Under advance knowledge of task costs, successive halving reaches our uncertainty-aware selection target on SWE-bench using 6.6% of exhaustive evaluation spend, achieving the lowest cost on six of seven benchmarks and tying on the seventh. Its advantage narrows when task costs are unknown before execution or exact-best selection is required. Our findings motivate decision-oriented agent evaluation that accounts for accuracy uncertainty, validates execution costs, and compares complex selection methods against simple adaptive allocation.",
+      "external_ids": [
+        "arxiv:2611.21515"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-17T16:56:06+08:00",
+      "last_seen_at": "2026-11-17T16:56:06+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.21485",
+      "arxiv_version": "v1",
+      "title": "Lost in the Hallway: Benchmarking Persistent Spatial Memory Across Revisits",
+      "authors": [
+        "Henry Zheng",
+        "Weibo Gong",
+        "Yang Yue",
+        "Rui Huang",
+        "Yang Zhang",
+        "Gao Huang"
+      ],
+      "published": "2026-11-16",
+      "url": "https://arxiv.org/abs/2611.21485",
+      "abstract": "Persistent spatial understanding is essential for embodied agents to operate reliably in environments they repeatedly encounter. It requires recognizing revisited places despite viewpoint changes, distinguishing them from similar-looking rooms, and updating memories as environments change. Yet existing evaluations often leave physical place identity across separated visits implicit. We introduce ReSpaceBench, a benchmark comprising 3,244 questions across 590 synthetic and real-home scenes, organized into 9 tasks spanning room association, persistent state tracking, and downstream reasoning. Controlled walkthroughs define visits by physical room entry and deliberately include same-type room distractors and cross-session object changes. Our evaluation of 32 models and 3 agentic video-understanding frameworks reveals substantial limitations: the strongest evaluated zero-shot model achieves 50.5% overall accuracy and 52.2% on a 450-question subset, compared with 90.1% for human annotators. The evaluated agentic frameworks offer no overall improvement over direct inference with the same base model. Analysis of agent execution traces reveals evidence omissions and incorrect cross-visit room associations as major failure modes, suggesting that iterative evidence seeking alone does not ensure consistent spatial memory. Further analyses expose a gap between recognizing familiar rooms and identifying the correct visited room, while annotation-guided sampling highlights the importance of preserving intervening visits and transitions. We also provide RS-30K, a separate training dataset from synthetic sources with no template, scene, route, or video overlap with the benchmark. Fine-tuning Qwen3-VL-8B raises overall accuracy from 35.5% to 60.4%, with the largest gains in association and improvements extending to real-life scenes.",
+      "external_ids": [
+        "arxiv:2611.21485"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-17T16:56:06+08:00",
+      "last_seen_at": "2026-11-17T16:56:06+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.21407",
+      "arxiv_version": "v1",
+      "title": "Harness Leverage Across Model Size: A Ladder of Five Local Agent Harnesses from 0.75B to 4.7B",
+      "authors": [
+        "Hao Wang",
+        "Ting Huang"
+      ],
+      "published": "2026-11-16",
+      "url": "https://arxiv.org/abs/2611.21407",
+      "abstract": "A harness turns a model into a system that completes tasks: it builds the prompt, exposes tools and decides when work is done. Harness comparisons hold the model fixed. Model comparisons hold the harness fixed. We vary both: five shipped harnesses, 18 artifact-producing tasks, four locally deployable open-weight models from 0.75B to 4.7B and a 35.5B anchor, with one deterministic checker scoring all 360 ladder cells. The completion-controlling harness, Mingbird, has the highest mean at every size. Of four pre-registered paired contrasts, two survive Holm correction, at 0.75B and 4.7B. Thirteen of sixteen paired intervals exclude zero under the deployment reading, with leads from 0.075 over the strongest rival to 0.819 over the weakest. The completion gate is not the carrier: disabling all six executable checks moves the mean by +0.080, +0.117, +0.003 and -0.004, every interval including zero, and only at 1.9B does disabling it create empty runs. Removing one repeat-blocking rule alone costs 0.411 at 0.75B and leaves eight of eighteen tasks with no artifact. The harness effect is a progress effect: it decides whether a run leaves anything on disk. Of 357 usable cells, 127 leave none of their declared artifacts and 85 of those exit normally, so a scorer that reads exit status credits work that was never written. Whether the effect grows or shrinks with size, four rungs cannot settle: a floor arm produces a rise, a ceiling a decline, and a cross-family rung a peak.",
+      "external_ids": [
+        "arxiv:2611.21407"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-17T16:56:06+08:00",
+      "last_seen_at": "2026-11-17T16:56:06+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.21392",
+      "arxiv_version": "v1",
+      "title": "VideoNexus: Video Perception Beyond the Reasoning Context",
+      "authors": [
+        "Yancheng Long",
+        "Xuanyu Zheng",
+        "Wei Chen",
+        "Luoyuan Zhang",
+        "Haoyang Xu",
+        "Bin Wen",
+        "Tingting Gao"
+      ],
+      "published": "2026-11-16",
+      "url": "https://arxiv.org/abs/2611.21392",
+      "abstract": "Understanding long videos requires locating evidence, resolving visual details, and integrating observations into an answer. Even when relevant evidence is present, performing these operations within long, dense visual sequences burdens both perception and reasoning. Video agents enable selective inspection, but returning frames to the planner still accumulates visual information in its reasoning context. Delegating perception reduces this burden, yet sparse sampling can miss decisive details, and per-frame descriptions can preserve context growth. We introduce VideoNexus, a training-free framework that separates detailed video perception from evidence-driven planning and reasoning. The planner controls where to inspect, what to resolve, and how densely to sample. Perception sub-agents process native audio-video in independent contexts and return compact, temporally grounded evidence for iterative search and verification. Using Gemini 3.8 Flash for both planning and perception, VideoNexus achieves 88.6% accuracy on full LVBench, exceeding same-backbone static ingestion and built-in agentic processing by 3.6 and 1.1 points, respectively, at 44% of the latter's measured API cost. A paired LVBench subset ablation shows lower planner input and higher accuracy. With Kimi K3 as the shared backbone, VideoNexus improves over the official Video-GAIA ReAct harness by 8.5 points in our evaluation. These results support compact evidence exchange for combining detailed observation with efficient planning and reasoning.",
+      "external_ids": [
+        "arxiv:2611.21392"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-17T16:56:06+08:00",
+      "last_seen_at": "2026-11-17T16:56:06+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.21382",
+      "arxiv_version": "v1",
+      "title": "VisualArtifactSpec 1.0: Evaluating Visual Artifacts under Task Specifications",
+      "authors": [
+        "Shuyi Ouyang",
+        "Xiaojun Tang",
+        "Zijian Zou",
+        "Xintong Zhang",
+        "Mingli Song",
+        "Guannan Zhang",
+        "Hongwei Xue"
+      ],
+      "published": "2026-11-16",
+      "url": "https://arxiv.org/abs/2611.21382",
+      "abstract": "Visual artifact tasks test agents' ability to translate task specifications and source materials into outputs that meet practical needs. Evaluation across artifact families helps distinguish broadly applicable authoring capabilities from strengths confined to a particular medium. We introduce VisualArtifactSpec 1.0 (VAS), a benchmark of 211 creation and modification tasks spanning presentations, static graphics, animations and videos, and web interfaces. Each task specifies authoring objectives, source materials, constraints, and deliverables. Existing benchmarks provide limited support for systematically evaluating how authoring choices suit different audiences, purposes, and media across artifact families. VAS evaluates two aspects separately: Task Fulfillment verifies explicit requirements and applicable functionality, while Artifact Performance assesses Content, Organization, Visuals, and Delivery. Task-specific rating anchors instantiate shared criteria for the intended audience, purpose, and medium, with judgments grounded in source materials and artifact inspection records. We evaluate nine model-harness configurations on all 211 tasks. Overall scores range from 42.12 to 70.52, with Artifact Performance accounting for 73.4% of the gap between the highest- and lowest-scoring configurations.",
+      "external_ids": [
+        "arxiv:2611.21382"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-17T16:56:06+08:00",
+      "last_seen_at": "2026-11-17T16:56:06+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.21299",
+      "arxiv_version": "v1",
+      "title": "Turing Agent: Agentic Formal Verification for Mathematical Research",
+      "authors": [
+        "Yang Chen",
+        "Qianyi Wang",
+        "Ronghui Yang",
+        "Zhanhao Li",
+        "Yu Cong",
+        "Chen Zhang",
+        "Hangfan Zhang",
+        "Shao Zhang",
+        "Shuai Li",
+        "Toru Takisaka",
+        "Chao Xu",
+        "Yi Zhou",
+        "Zhihao Tang",
+        "Xiao Wang",
+        "Bo Zhang",
+        "Shuyue Hu"
+      ],
+      "published": "2026-11-16",
+      "url": "https://arxiv.org/abs/2611.21299",
+      "abstract": "Large language models (LLMs) are rapidly advancing mathematical discovery, moving beyond benchmark-level problem solving to tackle frontier research problems. This progress is ushering mathematics into an era of proof abundance, raising a fundamental challenge: how can we ensure the correctness of the ever-growing volume of AI-generated proofs and transform them into trustworthy, machine-verified mathematical knowledge? We introduce Turing Agent, an agent harness designed to orchestrate end-to-end formal verification of research-level mathematics. Its wo-scale architecture integrates theorem formalization and proof formalization agents, empowered by structured proof decomposition, parallel verification, accumulated proof experience, and selective semantic review. Leveraging our collaborations with theoretical computer science (TCS) researchers, we focus our evaluation on TCS, a particularly demanding domain characterized by intricate quantification, complex dependencies, and stringent semantic requirements. Against direct generation and general-purpose coding harnesses, including Codex CLI and Claude Code, Turing Agent achieves approximately 57-62% faithful formalization success on Formal TCS Bench and 83% overall pass@1 on a TCS-focused subset of RLMEval, using GLM-5.3 and DeepSeek-V4-Pro. Notably, Turing Agent, built on DeepSeek, successfully completes the formal verification of three previously unresolved TCS tasks from OpenAI's October 2026 collection. One particularly challenging TCS problem required about a hundred formally verified auxiliary claims. Moreover, by actively exploring and refining the formalization process, Turing Agent can uncover simpler alternative proofs, expose unnecessary dependencies in original proofs, and generate reusable mathematical knowledge as a byproduct of verification.",
+      "external_ids": [
+        "arxiv:2611.21299"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-17T16:56:06+08:00",
+      "last_seen_at": "2026-11-17T16:56:06+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.21176",
+      "arxiv_version": "v1",
+      "title": "Scientific Coding with Large Language Models: Evidence from Finite Element Analysis",
+      "authors": [
+        "Erfan Hamdi",
+        "Joel Shor",
+        "Emma Lejeune"
+      ],
+      "published": "2026-11-16",
+      "url": "https://arxiv.org/abs/2611.21176",
+      "abstract": "Large language models (LLMs) offer a potential route to automating scientific programming, but their usefulness depends on consistently producing numerically correct code. We extend FEM-Bench to 17 finite element tasks involving nonlinear and history-dependent mechanics and structural dynamics, and evaluate 15 models on implementation and test generation without execution feedback. The best model succeeds in 87.1% of single-pass implementation trials, but rankings differ between tracks. The leading implementer achieves 49.9% joint test success, while the leading tester reaches 82.6%. For six models, we compare single-pass generation with two agentic harnesses that allow code execution and revision. Agentic execution solves some tasks that never succeeded in single-pass trials and improves consistency on others, but gains vary across models and harnesses, and regressions also occur. Claude Opus 5 with SimpleAgent reaches 96.5% Pass@3, the probability of at least one success in three attempts, but 77.1% Pass$^3$, the probability that all three succeed. No model-harness combination exceeds 78.8% Pass$^3$. To understand why agents submit incorrect code after passing their own checks, we analyze 249 failed agentic trajectories and identify six categories of self-verification failure. The most common are inadequate test coverage (73.1%) and reliance on generic consistency checks (70.3%), and in 28.5% of cases the tests share an error with the implementation. Motivated by these findings, an exploratory configuration with separate coder and tester agents achieves the highest observed scores, with 97.6% Pass@3 and 88.8% Pass$^3$. These results identify consistency across attempts and independent verification as the main obstacles to trusting LLM-generated scientific code.",
+      "external_ids": [
+        "arxiv:2611.21176"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-17T16:56:06+08:00",
+      "last_seen_at": "2026-11-17T16:56:06+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.21129",
+      "arxiv_version": "v1",
+      "title": "Linglong Agent Service: A Runtime for Centralized Agent Reasoning and Distributed Execution",
+      "authors": [
+        "Hua Zhang",
+        "Min Jiang"
+      ],
+      "published": "2026-11-16",
+      "url": "https://arxiv.org/abs/2611.21129",
+      "abstract": "LLM agents can use remote tools and cloud sandboxes, but integrating reasoning, session state, and heterogeneous execution sites remains a runtime design problem. We present Linglong Agent Service (agentsvc), a self-hosted HTTP service and embeddable Python runtime that treats execution site as a configurable dimension alongside model, tools, and context. A parent service retains inference orchestration, tool descriptions, and conversation history; each inference request selects one child environment for file, shell, terminal, and MCP operations. Direct HTTP and child-initiated WebSocket tunnels carry the same application interfaces, including portable request context and centrally managed updates. The normal core path requires no third-party Python packages, with an optional Windows pseudo-terminal dependency. We further present online_debugger as the process-scale special case of execution-site separation: an instrumented program submits exception evidence, executes session-scoped inspection tools inside the incident process, and resumes the same diagnostic session. Its default prompt requires failing-then-passing reproduction evidence for source changes, while runtime patch activation and failed-call recovery remain unimplemented. We explain the design through constrained expected-utility reasoning, compare concrete mechanisms with Hermes Agent, Pi, Codex, and Claude Code, and report implementation and regression-test evidence. The current evidence establishes executable contracts, not performance advantages, repair accuracy, or production recovery. The source code is open source under the MIT license at https://github.com/mz24cn/agents.",
+      "external_ids": [
+        "arxiv:2611.21129"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-17T16:56:06+08:00",
+      "last_seen_at": "2026-11-17T16:56:06+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.21099",
+      "arxiv_version": "v1",
+      "title": "ForceHarness: Turning Force into Action and Physics for Frozen Frontier Models",
+      "authors": [
+        "Ke Sun",
+        "Kevin Yuchen Ma",
+        "Yike Zhang",
+        "Yanzhe Chen",
+        "Mike Zheng Shou"
+      ],
+      "published": "2026-11-16",
+      "url": "https://arxiv.org/abs/2611.21099",
+      "abstract": "Frontier multimodal models can now control robots zero-shot from images, yet many manipulation tasks depend on contact forces that images cannot show. Bringing force to an API-only frozen model raises two challenges. First, contact evolves much faster than an API model can decide, so the system must close the loop on force beneath the model. Second, a frozen model cannot interpret raw force streams, so force must be returned in a form the model can reason about. Therefore, we present ForceHarness, a harness that lets frozen models use force without demonstrations or finetuning. After calibrating hand force from a wrist sensor or joint torques alone, ForceHarness addresses the first challenge with self-terminating force primitives that regulate force on their own and return at a contact event. To address the second challenge, a physics translation layer turns each force trace into physical quantities with uncertainty as the tool result. To evaluate ForceHarness against expert force controllers and learned policies under identical conditions, we also build HiddenPhys, a seven-task MuJoCo benchmark with hidden physical variables. On a real arm without a wrist force sensor, ForceHarness raises the zero-shot success rate of GPT-6 Astra from 3.3% to 90.0%. In simulation, it adds 17.5 percentage points on the public ForceBench suite and 34.3 percentage points on HiddenPhys, surpassing force-aware policies trained on demonstrations on both benchmarks and matching hand-written expert controllers on HiddenPhys. Ablations further show that smaller models make significantly better decisions when given physical quantities rather than raw force values.",
+      "external_ids": [
+        "arxiv:2611.21099"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-17T16:56:06+08:00",
+      "last_seen_at": "2026-11-17T16:56:06+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.21084",
+      "arxiv_version": "v1",
+      "title": "CompCert4Lean: Porting a Verified C Compiler to Lean in Six Weeks with Parallel Coding Agents",
+      "authors": [
+        "Cong Wang",
+        "Zhiyang Chen",
+        "Fan Long",
+        "Martin Rinard"
+      ],
+      "published": "2026-11-16",
+      "url": "https://arxiv.org/abs/2611.21084",
+      "abstract": "We present CompCert4Lean, a large-scale port of CompCert 3.17's verified compiler core from Rocq to Lean, completed in approximately six weeks by one expert directing parallel LLM agents. Our migration workflow partitions the development along its dependencies, audits translated definitions and theorem statements before large-scale proof reconstruction, and then reconstructs proofs in parallel against stable interfaces. The resulting compiler covers typed CompCert C through x86-64 assembly, discharges all 4,908 recorded proof obligations without project-specific axioms, and produces executable Linux binaries. The workflow enabled the expert to concentrate on organizing the work rather than supplying technical solutions. Of 1,071 human interactions, 88.8% concerned workflow and coordination, while only three supplied technical direction. Optimization campaigns further demonstrate the benefit of the Lean port for agent-driven verified development. Under matched budgets of 24 active hours, GPT-6-astra produced a Lean candidate with 11.7% lower generated-program runtime across 29 small-tests programs, compared with 2.3% lower for its Rocq candidate, both relative to original CompCert 3.17 and while preserving the end-to-end correctness theorem. These results show that parallel LLM agents can support large-scale migration with limited human technical direction and subsequently improve the migrated compiler while retaining its formal guarantees.",
+      "external_ids": [
+        "arxiv:2611.21084"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-17T16:56:06+08:00",
+      "last_seen_at": "2026-11-17T16:56:06+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.21053",
+      "arxiv_version": "v1",
+      "title": "System 1 agents: a method for local, reliable and fast agentic AI",
+      "authors": [
+        "Eleftherios Tzanis",
+        "Michail E. Klontzas"
+      ],
+      "published": "2026-11-16",
+      "url": "https://arxiv.org/abs/2611.21053",
+      "abstract": "Agentic artificial intelligence could automate analyses of sensitive clinical data, but current agents depend on large language models (LLMs). Cloud LLMs expose patient data. Local LLMs hallucinate, and an invented value in a tool call propagates through every later step. Here we present a method to build System 1 agents: local agents that call tools without generating text. A deterministic compiler turns each tool's schema and the request into multiple-choice questions whose options come from the request and the schema, then a one-pass decision model answers them. On 1,952 requests to 157 biomedical tools, the best System 1 agent chose the right tool, or correctly declined, for 97.0% of requests, significantly ahead of all 18 local LLM-agent settings (best 95.2%). The System 1 agent filled 97.0% of 6,056 stated argument values. No System 1 call contained invented content, against 5.5-19.7% of LLM calls. The System 1 Agents framework is freely available as open-source software at https://github.com/eltzanis/SystemOneAgents.",
+      "external_ids": [
+        "arxiv:2611.21053"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-17T16:56:06+08:00",
+      "last_seen_at": "2026-11-17T16:56:06+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.20997",
+      "arxiv_version": "v1",
+      "title": "OpenMAS-GApp: A Comprehensive Benchmark for Domain-Adaptive Multi-Agent Application Construction",
+      "authors": [
+        "Xunkai Li",
+        "Kairui Yang",
+        "Jiaxi Li",
+        "Yuecong Mao",
+        "Zekai Chen",
+        "Xinle Zhang",
+        "Rong-Hua Li",
+        "Guoren Wang"
+      ],
+      "published": "2026-11-16",
+      "url": "https://arxiv.org/abs/2611.20997",
+      "abstract": "Constructing multi-agent system (MAS) applications across domains requires translating diverse requirements into executable systems, involving task decomposition, agent and tool selection, and execution organization. Existing studies have explored individual aspects of MAS construction, including agent generation, architecture design, workflow generation, and component selection. However, these methods are often developed and evaluated independently, using different task specifications, component resources, and execution settings. This makes it difficult to compare their construction capabilities or determine how they can be applied to different domains. To address this problem, we propose OpenMAS-GApp, a One-for-All benchmark for MAS application construction across diverse domains. It standardizes task inputs, component resources, construction interfaces, and execution environments to support MAS construction under consistent conditions. Within OpenMAS-GApp, we provide Graph Harness as a reference construction method that derives task dependencies, selects compatible agents and tools, and organizes their interactions into executable graphs. We evaluate construction methods across 19 benchmark datasets under 20 evaluation settings spanning four application types and four professional domains.",
+      "external_ids": [
+        "arxiv:2611.20997"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-17T16:56:06+08:00",
+      "last_seen_at": "2026-11-17T16:56:06+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.20983",
+      "arxiv_version": "v1",
+      "title": "GRACE: Parallel Best-of-N Multi-Agent Analysis of Closed-Form Questions over Dataframes with Guardrail Selection and Adaptive Retry",
+      "authors": [
+        "Fabio Picariello",
+        "Salvatore Cipolla",
+        "Susanna Bonura",
+        "Vito Morreale"
+      ],
+      "published": "2026-11-16",
+      "url": "https://arxiv.org/abs/2611.20983",
+      "abstract": "LLM agents answer closed-form questions over a tabular dataframe by writing and executing Python, almost always as a single rollout: one interpretation, one script, one result, accepted without comparison. The few pipelines that produce several candidates reconcile them by answer-agreement voting, which needs a single comparable scalar and always returns one, even when every candidate is wrong. We present GRACE (Generative, Ranked, Adaptive Code Ensemble), a production-oriented pipeline that instead runs parallel best-of-N selection specialised to dataframe code. N agents run concurrently under a strict, machine-checkable output contract, diversified by persona hints, per-retry rotation, and a two-regime temperature schedule. Rather than vote, GRACE judges the executed artefacts: a pairwise tournament pre-filters the pool and a domain-specialised guardrail either selects the best candidate or, when none is defensible, rejects the whole pool and abstains with a diagnosis (an option voting structurally lacks), which in turn drives an adaptive retry with per-agent feedback. On InfiAgent-DABench (DAEval, M = 246), using Qwen3.6-35B-A3B as the backbone, GRACE raises answer match from 39% for a single-rollout baseline to 71% (+32 pp, 1.8x), recovering 53% of previously wrong answers. On the same DAEval task, the smaller dense Qwen3.5-9B lifts answer match from 38% to 63% (+25 pp, 1.7x). A controlled 3 x 3 study that sweeps the number of parallel agents against the retry budget finds, on the 35B backbone, the two levers largely substitutable: once either one is generous, the other adds little, identifying a cheap operating point for deployment. The same directional pattern replicates on the independent DataBench benchmark, again on the Qwen3.6-35B-A3B backbone, where answer match rises by 15 percentage points (from 70% to 85%) across 400 sampled questions.",
+      "external_ids": [
+        "arxiv:2611.20983"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-17T16:56:06+08:00",
+      "last_seen_at": "2026-11-17T16:56:06+08:00"
+    },
+    {
+      "source": "arxiv",
       "arxiv_id": "2611.18562",
       "arxiv_version": "v1",
       "title": "Training Reasoning Models in Simulation to Natively Use Real Robots",
@@ -2052,7 +2481,7 @@
     }
   ],
   "last_run": {
-    "at": "2026-11-16T15:45:56+08:00",
+    "at": "2026-11-17T16:56:06+08:00",
     "sources": [
       "arxiv",
       "semanticscholar",
@@ -2063,11 +2492,11 @@
       "\"LLM agent\" harness",
       "test-time harness evolution"
     ],
-    "fetched": 55,
-    "merged": 29,
-    "new": 19
+    "fetched": 45,
+    "merged": 15,
+    "new": 15
   },
   "schema_version": 1,
   "topic": "agent harness",
-  "updated_at": "2026-11-16T15:45:56+08:00"
+  "updated_at": "2026-11-17T16:56:06+08:00"
 }
