@@ -1,0 +1,520 @@
+{
+  "date": "2026-11-20",
+  "run": {
+    "at": "2026-11-20T16:13:37+08:00",
+    "sources": [
+      "arxiv",
+      "semanticscholar",
+      "dblp"
+    ],
+    "keywords": [
+      "agent harness",
+      "\"LLM agent\" harness",
+      "test-time harness evolution"
+    ],
+    "fetched": 45,
+    "merged": 15,
+    "new": 15
+  },
+  "new_candidates": [
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.26595",
+      "arxiv_version": "v1",
+      "title": "Coda-DaVinci: Reimagining Video Generation with Code2Video",
+      "authors": [
+        "Yiyan Ji",
+        "Qixun Wang",
+        "Yang Shi",
+        "Zhuoran Zhang",
+        "Yifan Xu",
+        "Tengfei Liu",
+        "Yuqi Tang",
+        "Xiaohan Zhang",
+        "Shujie Li",
+        "Jiafu Tang",
+        "Xuanyu Zhu",
+        "Xinyu Liu",
+        "Yan He",
+        "Yushuo Guan",
+        "Zihao Wang",
+        "Xianghua Ying",
+        "Shixuan Liu",
+        "Haotian Wang",
+        "Wenjing Yang",
+        "Zhaoxiang Zhang",
+        "Yuanxing Zhang",
+        "Pengfei Wan",
+        "Jiaheng Liu"
+      ],
+      "published": "2026-11-19",
+      "url": "https://arxiv.org/abs/2611.26595",
+      "abstract": "Code2Video uses agent-authored 3D proxies to guide video generation, enabling explicit control over structure and dynamics. However, how to construct proxies and prompts for optimal downstream quality remains underexplored, as do the capabilities and limitations of this paradigm. Through controlled experiments and blinded human evaluation, we study proxy granularity, physics simulation, and prompting. The results reveal task-dependent trade-offs: coarse proxies favor natural motion, while medium-grained proxies favor consistency. Physics simulation and proxy-aligned prompting further improve average quality. Guided by these findings, we introduce Coda-DaVinci, a task-adaptive agentic framework for Code2Video generation that selects between proxy-guided and direct generation, adapts modeling granularity to each entity, and coordinates simulation with proxy-grounded prompting. Its multi-agent harness preserves scene assets and guides repairs through visual inspection and independent review. Experiments demonstrate leading instruction following on VTR and scene consistency on R2M, improved physical plausibility over direct generation, and higher visual realism than the compared Code2Video baselines. Long-video evaluations further show gains in event structure and consistency across successive interactions, while revealing limitations in transition stability and adherence to scene settings.",
+      "external_ids": [
+        "arxiv:2611.26595"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-20T16:13:37+08:00",
+      "last_seen_at": "2026-11-20T16:13:37+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.26553",
+      "arxiv_version": "v1",
+      "title": "Replication of Agentic Security Events: Audit and Investigation (ROGUE-AI)",
+      "authors": [
+        "Mengxiao Wang",
+        "Mahbub Alam",
+        "Kalyan Nakka",
+        "Nitesh Saxena"
+      ],
+      "published": "2026-11-19",
+      "url": "https://arxiv.org/abs/2611.26553",
+      "abstract": "Agents based on large language models (LLMs) can now delete files and send payments on behalf of their users. News media reports routinely describe failures of these agents (e.g., Replit's coding agent deleting a production database), but a report often only says what went wrong and rarely (in)validates the incident or finds its root cause. Incident catalogs collect these reports, and benchmarks record whether agents fail, but neither replicates an incident nor tests the cause its report might identify. In this paper, we present ROGUE-AI (Replication of Agentic Security Events: Audit and Investigation), a multi-agent framework that closes the above gap and rebuilds each reported incident offline together with a matched control that lacks only the blamed cause, and runs agents on both. Our results suggest that ROGUE-AI is able to reproduce the reported harm in 89% of its 108 attempted replications. Agents built on five current GPT, Claude, Gemini and DeepSeek models made the reported mistake in 18% to 33% of runs, against at most 1% without the blamed cause. Of the 72 incidents with real-world harm, 62 had no underlying attacker, and in these, agents did what their task asked for but missed an ordinary hazard, such as a database shared with the live site. Replications without an attacker caused more harm than replications of prompt injection for all five models. Defenses against prompt injection look for injected instructions, but these replications contain none. Further, a warning after each tool output that names the hazard and its consequence lowered harm for all five models, whereas a note of the same length that does not mention the hazard left most of the harm in place. Built from real incidents, the ROGUE-AI replications form a reusable audit framework that vendors can rerun before each new release.",
+      "external_ids": [
+        "arxiv:2611.26553"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-20T16:13:37+08:00",
+      "last_seen_at": "2026-11-20T16:13:37+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.26531",
+      "arxiv_version": "v1",
+      "title": "Cost-Aware Agentic Feature Optimization System for Fleet-Scale Ranking Models",
+      "authors": [
+        "Chang Yang",
+        "Yao Xuan",
+        "Wendan Yan",
+        "Nhat Le",
+        "Jiang Liu",
+        "Longhao Jin",
+        "Zhen Peggy Yao",
+        "Alireza Vahdatpour",
+        "Djordje Gligorijevic"
+      ],
+      "published": "2026-11-19",
+      "url": "https://arxiv.org/abs/2611.26531",
+      "abstract": "Large Web platforms operate large fleets of ranking models, each selecting features from a shared pool of tens of thousands. We present an end-to-end agentic system that optimizes features across the fleet under resource constraints shared across models and those set per model, such as feature pipeline cost and serving throughput (QPS), respectively. In this system, LLM agents propose hypotheses, and deterministic tools execute experiments and verify them. For each model, an LLM generates and shortlists cross features from a combinatorial candidate space, and all features are then ranked by several importance methods. Feature blending mixes these rankings into a single selection, using Pareto fronts across tasks for multi-task models. An LLM Researcher agent then tunes the feature selection in 10--25 asynchronous trials under resource caps, and a trimming step keeps the pipeline cost within budget. Across production models, the system improves normalized entropy by 0.31% on average within each model's budget, and the trimming step cuts pipeline cost by 2.3% with no regression beyond measurement noise. The optimized models were launched, and in online A/B tests they improved a primary online metric by 0.20%.",
+      "external_ids": [
+        "arxiv:2611.26531"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-20T16:13:37+08:00",
+      "last_seen_at": "2026-11-20T16:13:37+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.26517",
+      "arxiv_version": "v1",
+      "title": "From Seed to BLOOM: Autonomously Growing a Better Out-of-Order Core",
+      "authors": [
+        "Angela Cui",
+        "Ferran Hermida-Rivera",
+        "Jack Toubes",
+        "Jim Fang",
+        "Chengyi Lux Zhang",
+        "Borivoje Nikolić",
+        "Christopher W. Fletcher",
+        "Sagar Karandikar"
+      ],
+      "published": "2026-11-19",
+      "url": "https://arxiv.org/abs/2611.26517",
+      "abstract": "Improving microprocessor performance while meeting ASIC implementation constraints like area and frequency is a complex and labor-intensive task that requires expertise across computer architecture, hardware design, and performance analysis and profiling. While large teams in industry can afford the engineering resources to target this problem across performance modeling, RTL design, and ASIC implementations, small teams of researchers and engineers cannot take on this huge engineering burden while keeping up with the pace of advancement in processor microarchitecture. Recent advancements in large language model (LLM) agents present a promising substrate to accelerate this traditionally human-intensive process. In this work, we build and evaluate MiracleGro, an agentic AI-based system that, without human intervention, analyzes cycle-level RTL behavior and synthesis results, identifies performance bottlenecks, and translates architectural ideas into RTL implementation in a leading open-source out-of-order superscalar application core, the Berkeley Out-of-Order Machine (BOOM). Taking into account cycle-exact performance, area, and critical path, MiracleGro automatically produces improved BOOM designs that drastically increase the human-optimized BOOM's performance on substantial workload suites such as SPEC CPU2017 with full reference inputs. MiracleGro achieves an 85% IPC speedup and a frequency improvement of 27% in SkyWater 130nm, resulting in a 2.34x wall-clock time speedup on the full SPEC CPU2017 intspeed benchmarks (30 trillion instructions). This result demonstrates the enormous opportunity to harness frontier models to improve state-of-the-art RTL-driven platforms for implementation-grounded microarchitecture research across hardware designs.",
+      "external_ids": [
+        "arxiv:2611.26517"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-20T16:13:37+08:00",
+      "last_seen_at": "2026-11-20T16:13:37+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.26510",
+      "arxiv_version": "v1",
+      "title": "AutoMaster: Autonomous Post-Training by Making the Same Model a Better Teacher",
+      "authors": [
+        "Guoxin Chen",
+        "Shuang Sun",
+        "Fanzhe Meng",
+        "Xinyu Tang",
+        "Ruihua Song",
+        "Wayne Xin Zhao"
+      ],
+      "published": "2026-11-19",
+      "url": "https://arxiv.org/abs/2611.26510",
+      "abstract": "Task success alone does not specify which behaviors post-training should reinforce. Even successful teacher trajectories can contain unsupported assumptions, unproductive repetition, or superficial verification. We propose Skill-FT (Skill-Guided Fine-Tuning), which uses natural-language skills to suppress undesirable habits and elicit underrepresented effective behaviors during teacher rollouts, then fine-tunes a target model on the resulting trajectories. We introduce AutoMaster, an autonomous post-training system in which an LLM agent develops these interventions through trajectory analysis, skill design, data selection, and feedback from rollouts and target-model evaluation. Across Terminal, Search, and software engineering tasks with 4B and 9B target models, AutoMaster improves mean performance over Vanilla SFT on successful unguided teacher trajectories by 1.42-8.99 percentage points, with the teacher, task pool, training set size, and SFT recipe held fixed. Together with the ablations and trajectory analyses, these results suggest that behavioral shaping can make a fixed model a more effective teacher. We further find that retaining skill instructions during SFT yields higher mean performance than removing them across all six settings, despite their absence at evaluation and identical supervised outputs. These findings suggest that preserving skill context as part of a training demonstration can support better behavioral internalization.",
+      "external_ids": [
+        "arxiv:2611.26510"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-20T16:13:37+08:00",
+      "last_seen_at": "2026-11-20T16:13:37+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.26480",
+      "arxiv_version": "v1",
+      "title": "Held While Waiting: What LLM Agent Sessions Reserve on Serverless and Agent Runtimes",
+      "authors": [
+        "Mekhala Hithyshini Sreenivasa"
+      ],
+      "published": "2026-11-19",
+      "url": "https://arxiv.org/abs/2611.26480",
+      "abstract": "LLM agents spend nearly all their time waiting for the model. On Amazon Bedrock AgentCore, our agents waited a median of 2.7 seconds for each model reply, then computed for an estimated 5 to 40 milliseconds. AgentCore does not charge for CPU during the wait. But it reserves a separate environment, a virtual machine with its own memory, for every conversation, and keeps it reserved until the conversation is closed. So 1,000 conversations reserve 1,000 environments to do the work of 2 to 15 processor cores. A service runs out of environments long before it runs out of processing power. The shortage has two causes, and each has a fix. An environment stays reserved after its conversation ends: in the customer-service benchmark we ran, a conversation lasts 33 seconds on average, but its environment is held for 15 minutes more unless the client closes it. And an environment serves only one conversation, which is mostly waiting: in our simulation, 64 conversations sharing one environment need 59 times fewer environments, and 99 of every 100 replies are delayed by at most 40 milliseconds. The milliseconds are an estimate because they are hard to measure: a stubbed model, a timer around the model call, and steps run back to back each gave a plausible number that was too low. We show how to avoid all three. Of the two fixes, closing needs only the client. Sharing needs the platform, and of the agent runtimes we surveyed only one allows it, in part. They keep conversations apart because an agent runs tools, and sometimes code, chosen by a model. The open problem is to keep them apart without reserving an environment for each while it waits.",
+      "external_ids": [
+        "arxiv:2611.26480"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-20T16:13:37+08:00",
+      "last_seen_at": "2026-11-20T16:13:37+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.26444",
+      "arxiv_version": "v1",
+      "title": "Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation",
+      "authors": [
+        "Yuzhi Huang",
+        "Jie Wu",
+        "Fanding Huang",
+        "Junchao Lin",
+        "Weichen Zhang",
+        "Ziyi Xiong",
+        "Yang Li",
+        "Zhengwei Xie",
+        "Zhimin Wang",
+        "Zhen Liu",
+        "Jiazhen Huang",
+        "Yuzheng Zhang",
+        "Yuche Liu",
+        "Hongyi Yang",
+        "Chen Tang",
+        "Shixiang Tang",
+        "Hakan Aktas",
+        "Adam Wu",
+        "Duo Wu",
+        "Kangye Ji",
+        "Shuzhao Xie",
+        "Huanan Liu",
+        "Weijue Bu",
+        "Chenxin Li",
+        "Xinyuan Wang",
+        "Tianyi Bai",
+        "Yinan Mao",
+        "Jiawei Wang",
+        "Minglei Li",
+        "Heng Yu",
+        "Ehsan Adeli",
+        "Minchen Li",
+        "Yong-Lu Li",
+        "Cengiz Öztireli",
+        "Huazhe Xu",
+        "Chao Yu",
+        "Jing Zhang",
+        "Shanghang Zhang",
+        "Weitao Zhou",
+        "Wenwu Zhu",
+        "Cheng Chi",
+        "Jingyan Jiang",
+        "Zhi Wang"
+      ],
+      "published": "2026-11-19",
+      "url": "https://arxiv.org/abs/2611.26444",
+      "abstract": "Embodied intelligence aims to let robots perform complex physical tasks with human-like adaptability and reliability, which requires three complementary capabilities: history-based cognitive reasoning, precise and timely physical execution, and the composition of reasoning and execution through environmental feedback. Yet existing benchmarks either evaluate reasoning and execution within the same tasks or assess them separately without their composition, so they reveal little about whether a failure comes from reasoning, execution, or their composition. We introduce Mind2Act World, a diagnostic benchmark of 30 simulated manipulation tasks from five real-world application domains. Each task has three difficulty levels and two scene settings (Clean and Random), yielding 180 configurations. The tasks form three views: Mind tests decisions based on past observations, Act tests precise and timely execution, and Mind2Act combines both in closed-loop tasks where action outcomes guide later decisions. Comparing the three views shows whether a system lacks a capability or fails to compose capabilities it already has. A diagnosis harness further attributes the failed episodes of three representative systems to Mind, Act, or their composition and summarizes each system in a profile card. Our evaluation of multimodal agents, vision-language-action models (VLAs), and world-action models (WAMs) shows that competence in a single view does not carry over to Mind2Act tasks. Even the strongest agent succeeds in 52.7% of Mind and 39.0% of Act episodes but in only 12.0% of Mind2Act episodes. The strongest agent retains task state but struggles with sustained contact, whereas end-to-end policies execute practiced motions but retain little task state. These findings point to composing reasoning and execution through environmental feedback as the main open problem.",
+      "external_ids": [
+        "arxiv:2611.26444"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-20T16:13:37+08:00",
+      "last_seen_at": "2026-11-20T16:13:37+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.26435",
+      "arxiv_version": "v1",
+      "title": "Aggron: Aggressive Compression of Agentic KV Caches during Head-of-Line Stalls in the Request Queue",
+      "authors": [
+        "Rishabh Ravi",
+        "Tony Hong",
+        "Chen Wang",
+        "Yue Zhu",
+        "Mengmei Ye",
+        "Hubertus Franke",
+        "Fan Lai",
+        "Josep Torrellas"
+      ],
+      "published": "2026-11-19",
+      "url": "https://arxiv.org/abs/2611.26435",
+      "abstract": "LLM agents run long, multi-turn programs whose contexts grow at every step, and serving them is limited by KV cache capacity. To alleviate this limitation, systems use context compression techniques, which typically wait until the KV cache crosses a large threshold and then summarize large spans of history at once, either in the background while the agent progresses or on the critical path. These summarizations can be done using the same model running on the same engine, or using the same or a different model running on extra hardware. When running on the same engine, summarization competes with the requests being served for both compute and memory capacity. To maximize the cost-effectiveness of summarization, this paper presents a new serving system called {\\em Aggron}. Aggron summarizes agentic requests at every turn and selectively summarizes only certain parts of the KV cache. As a result, Aggron retains accuracy and keeps summarization requests lightweight. Moreover, Aggron launches summarization requests from a separate {\\em Summarization Queue} while the corresponding agentic request whose KV cache we want to compress is stalled in the main request queue due to head-of-line stalls. The Summarization queue utilizes compute and memory capacity left over by the head-of-line stalls in the main queue. Further, to maximize efficiency, the server issues summarizations only when it predicts that they can complete before the corresponding agentic request will finally execute. In our evaluation, we compare Aggron to state-of-the-art asynchronous summarization. At high load, Aggron reduces P99 program latency by $27$--$31\\%$, and raises throughput by $1.34$--$1.40\\times$.",
+      "external_ids": [
+        "arxiv:2611.26435"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-20T16:13:37+08:00",
+      "last_seen_at": "2026-11-20T16:13:37+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.26361",
+      "arxiv_version": "v1",
+      "title": "How Much Should an Agent Remember? Deployment Lessons from Self-Distilled Memory for LLM Agents",
+      "authors": [
+        "K. R. Jayaram",
+        "Vatche Isahagian",
+        "Aswath Vaithinathan Aravindan",
+        "Vinod Muthusamy",
+        "Punleuk Oum",
+        "Gaodan Fang",
+        "Michal Ulewicz",
+        "Gegi Thomas",
+        "Evelyn Duesterwald"
+      ],
+      "published": "2026-11-19",
+      "url": "https://arxiv.org/abs/2611.26361",
+      "abstract": "LLM agents on long-horizon tasks fail in recurring, procedural ways. They mis-paginate an API, resolve the wrong entity, or answer when no answer was asked. We built a pipeline that lets an agent learn from its own history. It first mines short \\emph{lessons} from the agent's own trajectories, one to three per episode. It then consolidates those lessons into a smaller set of \\emph{guidelines}, where each guideline records how many lessons it merged. At inference the agent receives either all guidelines or a selected subset. The pipeline ships in the open-source altk-evolve library and is deployed in IBM's CUGA agent and watsonx Orchestrate platform. We report what we learned building, measuring, and productizing it. Our primary instrument is the AppWorld benchmark, across models spanning 40--92\\% baseline task completion. The central finding is that the right amount of memory is a property of the model, not the memory. A strong model keeps improving as guidelines are added. DeepSeek-V3.2 gains +9.5 points of task completion and +16.1 points of scenario completion with its full 191-guideline set. A weak model gains less from the same full set than from a small selected subset. gpt-oss-120b starts at 39.9\\% task completion. It reaches 51.2\\% with all 199 of its guidelines but 55.4\\% (mean of two runs) with a selected subset of about 29. Around that result we report what went wrong: a high-support guideline that backfired, provenance silently dropped during consolidation, a swallowed API error that failed every task while producing a plausible log, and a baseline confound that nearly produced a misleading comparison with a prior method. We distill these into recommendations for teams deploying agent memory.",
+      "external_ids": [
+        "arxiv:2611.26361"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-20T16:13:37+08:00",
+      "last_seen_at": "2026-11-20T16:13:37+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.26256",
+      "arxiv_version": "v1",
+      "title": "SkillBridge: Cost-Aware Diagnosis and Repair of Cross-OS Compatibility Defects in Agent Skills",
+      "authors": [
+        "Anjie Xu",
+        "Zixing Wang",
+        "Yifeng Cai",
+        "Leye Wang"
+      ],
+      "published": "2026-11-19",
+      "url": "https://arxiv.org/abs/2611.26256",
+      "abstract": "LLM agents increasingly reuse executable capabilities through skills, but a skill that works on one OS may fail on another because OS assumptions are spread across guide text, scripts, metadata, install contracts, and local entrypoints. Diagnosing such failures by running every skill on every OS is expensive: many executions spend model tokens, runner time, and review effort before revealing whether the failure is truly OS-related. We present SkillBridge, a contract-based workflow with three stages: static analysis, dynamic validation, and repair. SkillBridge first screens 3,270 skill-target-OS cases, covering 1,090 skills across Linux, macOS, and Windows, to find OS-sensitive contract evidence. It then runs dynamic tasks and root-cause review on selected cases to confirm whether a failure is caused by an OS assumption, and repairs the contract field that caused the failure, such as guide text, package scripts, dependencies, or platform declarations. Repair raises the reviewer-judged target-task pass rate from 30.6% to 38.4%, a gain of 7.8 percentage points. A retrospective Linux/macOS budget analysis further shows the efficiency effect: SkillBridge reaches 38 confirmed OS issues with 185 dynamic validations, where uniform random selection would require about 865 validations in expectation.",
+      "external_ids": [
+        "arxiv:2611.26256"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-20T16:13:37+08:00",
+      "last_seen_at": "2026-11-20T16:13:37+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.26248",
+      "arxiv_version": "v1",
+      "title": "TwinLab-Bench: Evaluating AI Scientists in Agentic Twins of Real Labs",
+      "authors": [
+        "Yang Wan",
+        "Linchao Zhu"
+      ],
+      "published": "2026-11-19",
+      "url": "https://arxiv.org/abs/2611.26248",
+      "abstract": "AI agents are increasingly expected to act as AI scientists, which requires three increasingly open abilities: carrying out a given computational workflow correctly, choosing the next measurements from a given design space, and designing their own experiments. Existing benchmarks mainly evaluate the first two abilities, in a terminal or in a closed loop that selects from predefined candidates. Evaluating the third ability requires reliably executing an experiment that an agent designs, with readings grounded in a real laboratory. We introduce TwinLab-Bench, which evaluates AI scientists on self-designed experiments in 52 tasks from laboratories in the physical sciences, the life sciences, and engineering. The benchmark supports more than 100 experimental action types, and the agent's report is scored by comparison with a hidden answer taken from real laboratory records. Each task has its own TwinLab agent, an agent that serves as the environment and executes the experiments that the tested agent designs, reading the raw materials of the laboratory and calling calculators that are built from its records. Compared with a language model that sees only the task description, the TwinLab agent almost eliminates readings that deviate from the real records and inconsistent answers to a repeated request, and closed-book probes control for answers recalled from memory. We find that these tasks remain hard for frontier models: the strongest, Claude Fable 5.2, averages a score of only 45.0, and we conduct an empirical study of where it fails.",
+      "external_ids": [
+        "arxiv:2611.26248"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-20T16:13:37+08:00",
+      "last_seen_at": "2026-11-20T16:13:37+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.26221",
+      "arxiv_version": "v1",
+      "title": "Sightline: Calibrated Data-Flow Summaries for LLM-Integrated Applications",
+      "authors": [
+        "Zihao Xu",
+        "Yuekang Li",
+        "Ruitao Feng",
+        "Haifeng Shen"
+      ],
+      "published": "2026-11-19",
+      "url": "https://arxiv.org/abs/2611.26221",
+      "abstract": "Programs increasingly call large language models (LLMs), filling prompt placeholders with program values and consuming the output. Such a call crosses the boundary between natural language and programming language (NL/PL). To follow data across it, an analysis needs a data-flow summary of which placeholders the output uses, but no code describes what the model does. Analyses of these LLM-integrated applications therefore taint every output with every input, creating spurious flows, or ask a second model to label each call, which is costly. We prove, and mechanize in Lean 4, that a placeholder flows to the output of a transformer, to first order, only through the attention that reads it (no reading, no flow), and that a faint reading or sensitivity cannot certify that a placeholder does not flow. Unlike reading, the log-probability gradients and Fisher signals of existing methods vanish on confident outputs, and single-span removal fails on duplicated content. Our tool, Sightline, reads a recorded call in one forward pass, learns from labels which reads are uses, and calibrates the pruning to miss at most a chosen fraction $α$ of true flows, on average over call sites, when deployment is exchangeable with calibration. On 2,103 unseen repository families and four models, Sightline is the most accurate summary against the seven closest methods and a hidden-state probe. Calibrated at $α$ = 1%, it misses about 1% of true flows and prunes 43.9-65.6% of spurious flows, 1.6 to 2.6 times as many as the best baseline, and still 43.8-60.1% when calibrated on another collection. Through an open surrogate, it reads models treated as closed about as accurately as they read themselves, without their labels. In the information-flow control of an LLM agent, it removes about half of the labels from inputs that do not flow.",
+      "external_ids": [
+        "arxiv:2611.26221"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-20T16:13:37+08:00",
+      "last_seen_at": "2026-11-20T16:13:37+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.26171",
+      "arxiv_version": "v1",
+      "title": "The FrontierOR Challenge: Agentic Algorithm Design for Operations Research",
+      "authors": [
+        "Hai Wang",
+        "Bretislav Hajek",
+        "Chonghe Jiang",
+        "Minwei Kong",
+        "Ao Qu",
+        "Huatian Gong",
+        "Bo Dong",
+        "Cynthia Barnhart",
+        "Jinhua Zhao"
+      ],
+      "published": "2026-11-19",
+      "url": "https://arxiv.org/abs/2611.26171",
+      "abstract": "Operations research (OR) relies on algorithms that experts tailor to each problem: a new routing, scheduling or network design problem can take weeks of specialist work before it is solved well at scale. Large language model (LLM) agents now write, test and improve code, but whether they can design algorithms that scale to realistic instances is open: in the FrontierOR benchmark's one-shot evaluation, the strongest model matches Gurobi, with an objective within 1% of Gurobi's and no slower, on only 39% of the large instances. The FrontierOR Challenge asks teams to build agentic workflows that design, test, and improve algorithms for many optimization problems at once. Stage 1 releases 60 of the benchmark's 180 audited problems, spanning six application categories and five formulation types, in weekly rounds of 15; Stage 2 introduces new problems outside the benchmark, with unseen instances. Two tracks are ranked separately: in the Main track we run the submitted algorithms in a network-isolated sandbox with open-source dependencies only; in the Self-hosted track teams solve the instances on their own machines, with any software, within a timed window. Every solution is checked for feasibility, and a feasible solution scores the ratio of its objective to a frozen known reference, averaged over hidden instances.",
+      "external_ids": [
+        "arxiv:2611.26171"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-20T16:13:37+08:00",
+      "last_seen_at": "2026-11-20T16:13:37+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.26158",
+      "arxiv_version": "v1",
+      "title": "Sliding-ferroelectric control of dipolar and quadrupolar excitons in R-stacked WSe$_2$",
+      "authors": [
+        "Asmund Ottesen",
+        "Shun Feng",
+        "Edoardo Lopriore",
+        "Yaroslav Zhumagulov",
+        "Kenji Watanabe",
+        "Takashi Taniguchi",
+        "Oleg V. Yazyev",
+        "Andras Kis"
+      ],
+      "published": "2026-11-19",
+      "url": "https://arxiv.org/abs/2611.26158",
+      "abstract": "A fundamental property of interlayer excitons is their dipolar character, enabling electrical tunability, enhanced exciton-exciton interactions and extended lifetime. It is important for studying collective phenomena and realizing novel optoelectronic devices. However, in homo- or heterostructures based on two-dimensional semiconductors, the magnitude and orientation of the dipole moment are commonly locked due to spatially confined charges and nature of the band transition. Here, we use gate-dependent photoluminescence of few-layer R-WSe2 to harness sliding ferroelectricity for controlling the exciton dipole configuration of emerging layer-hybridised excitons. The sliding-ferroelectric control enables a pronounced on/off switching of the diffusive transport of hybrid dipolar excitons, while further facilitating gradual and abrupt dipole reconfigurations with emerging quadrupolar excitons. Our optical probe reveals intermediate states of vertically aligned interfacial polarisation with magnitudes that confirm cumulative polarisation in multilayers. Overall, our work presents sliding ferroelectricity as a powerful tool to tune interlayer coupling and layer hybridisation. These results represent a step toward ferroelectric-controlled exciton interconnects and novel multi-bit optical memories.",
+      "external_ids": [
+        "arxiv:2611.26158"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-20T16:13:37+08:00",
+      "last_seen_at": "2026-11-20T16:13:37+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.26132",
+      "arxiv_version": "v1",
+      "title": "Sage-Evolve-Preview:Adaptive Observation for Post-Training Self-Improvement",
+      "authors": [
+        "Yinhao Tang",
+        "Youqing Fang",
+        "Yanan Sun",
+        "Xintian Shen",
+        "Hanyu Sun",
+        "Wenran Liu",
+        "Yue Wu",
+        "Weiming Zhang",
+        "Bin Liu",
+        "Wenwei Zhang"
+      ],
+      "published": "2026-11-19",
+      "url": "https://arxiv.org/abs/2611.26132",
+      "abstract": "Post-training recursive self-improvement (RSI) iteratively improves a target capability, operationalized by a fixed anchor benchmark, through repeated intervention, training, and evaluation. Yet most loops use the anchor's aggregate score as their sole observation, so early gains give way to stalled progress and repetitive exploration. When this anchor-only feedback ceases to reveal actionable gaps, a plateau may reflect an exhausted observation rather than an exhausted capability. We introduce adaptive observation (AdaObs), an observation-side mechanism of harness evolution that keeps the anchor objective fixed while adapting the active observation. At a plateau, a controller refines diagnostic granularity, escalates difficulty, and adds related tasks; validated increments are fused back into training, while every checkpoint remains evaluated against the anchor. Across eight independently optimized anchors in long-context reading comprehension and instruction following, AdaObs raises the mean score from $66.4$ to $73.7$ under a matched data budget, outperforming FixedObs, the anchor-only baseline. The evolved harness further improves the seven-task average on the independent PostTrainBench across two agent backends. These results identify observation adaptation as a missing mechanism of harness evolution for sustaining post-training RSI.",
+      "external_ids": [
+        "arxiv:2611.26132"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-20T16:13:37+08:00",
+      "last_seen_at": "2026-11-20T16:13:37+08:00"
+    }
+  ]
+}
