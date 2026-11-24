@@ -1,0 +1,604 @@
+{
+  "date": "2026-11-24",
+  "run": {
+    "at": "2026-11-24T18:45:58+08:00",
+    "sources": [
+      "arxiv",
+      "semanticscholar",
+      "dblp"
+    ],
+    "keywords": [
+      "agent harness",
+      "\"LLM agent\" harness",
+      "test-time harness evolution"
+    ],
+    "fetched": 45,
+    "merged": 18,
+    "new": 18
+  },
+  "new_candidates": [
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.31233",
+      "arxiv_version": "v1",
+      "title": "TowerBridge: Bridging the Dual-Encoder Modality Gap via Weight-Space Programming",
+      "authors": [
+        "Hani Alomari",
+        "Md Atabuzzaman",
+        "Chris Thomas"
+      ],
+      "published": "2026-11-23",
+      "url": "https://arxiv.org/abs/2611.31233",
+      "abstract": "CLIP-style dual encoders map images and text through two separate towers into a shared embedding space, where the two modalities occupy distinct regions separated by a modality gap. Retrieval fails when wrong matches, or hard negatives, outrank the correct one, and the gap is the usual suspect. Yet removing it post hoc degrades retrieval on every CLIP checkpoint we test. We introduce a paired statistic that identifies directions where the two towers agree more on hard negatives than on matched pairs. Mildly attenuating these directions improves retrieval while largely preserving the gap. We arrive at this correction through weight-space programming: guided by the statistic, an LLM agent inspects both towers and writes closed-form weight edits without backpropagation. Free to edit any component, the agent improves COCO test retrieval on all 13 CLIP checkpoints and edits an output projection in 12 of the 13. We distill and refine its recurring correction into TowerBridge, a closed-form recipe motivated by a first-order analysis of the hard-negative margin. Computed in seconds from 25,000 labelled pairs, it requires no model-specific tuning and leaves the architecture and inference cost unchanged. TowerBridge improves COCO test retrieval by 16.8 RSUM and Flickr30k test retrieval by 6.6 on average across all 21 evaluated CLIP checkpoints, including 8 unseen by the agent, while limiting any drop in ImageNet zero-shot accuracy to 0.5 points. It also reduces hubness on all 21 checkpoints and improves retrieval on 4 of 5 dual encoders from other families.",
+      "external_ids": [
+        "arxiv:2611.31233"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-24T18:45:58+08:00",
+      "last_seen_at": "2026-11-24T18:45:58+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.31228",
+      "arxiv_version": "v1",
+      "title": "Language Models Steer on Injected Uncertainty Tokens, but Fail to Self-Monitor In Situ",
+      "authors": [
+        "Daniel Theron"
+      ],
+      "published": "2026-11-23",
+      "url": "https://arxiv.org/abs/2611.31228",
+      "abstract": "Prompting language models to verbalize stepwise numerical confidence during generation is an increasingly popular approach for triggering backtracking and error correction in agentic reasoning. This strategy presupposes two capabilities: (1) in-situ monitoring fidelity (does confidence drop when an error occurs?) and (2) downstream steering control (does an uncertainty token causally steer the model to repair its error?). We evaluated four open-weights models (Qwen2.5-7B, Llama-3.1-8B, Mistral-7B, and Phi-4, 14.7B) across 15,200 math benchmark attempts, isolating 2,017 reasoning errors within each model's capability frontier. Applying 27,568 counterfactual continuations across these failure points, we demonstrate a consistent decoupling between monitoring and control. On monitoring, all four models fail to detect their own errors. Verbalized confidence does not distinguish mistake steps from sound reasoning, yielding near-chance within-position AUROCs between 0.500 and 0.561. Even at a model's first reasoning error, trajectory confidence remains saturated at 95.1% to 99.9%, with noticeable drops ($\\ge 10$ points) appearing on fewer than 9% of errors in Llama and under 1.6% in the other three models. In contrast, models respond readily to external uncertainty: injecting a low-confidence tag (10%) at the error step significantly increases downstream correction across all models (+3.7 to +22.5 points over format-matched 95% certainty; all $p \\le 0.0022$), reaching up to 38.5% under active rethinking instructions. However, injecting doubt onto already-correct steps causes models to discard valid reasoning, reducing solve rates by up to 22.8 points. Inference-time self-correction is thus bottlenecked by in-situ error detection rather than downstream repair capacity: models readily steer toward recovery when prompted with doubt, yet fail to self-monitor during generation.",
+      "external_ids": [
+        "arxiv:2611.31228"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-24T18:45:58+08:00",
+      "last_seen_at": "2026-11-24T18:45:58+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.31223",
+      "arxiv_version": "v1",
+      "title": "Agentic AI for Intent Management and Control in Autonomous Communication Networks",
+      "authors": [
+        "Burak Demirel",
+        "Yu Wang",
+        "Pablo Soldati"
+      ],
+      "published": "2026-11-23",
+      "url": "https://arxiv.org/abs/2611.31223",
+      "abstract": "Artificial intelligence (AI)-driven automation will help future mobile networks translate high-level network intents into concrete network optimization or control actions. However, existing approaches often focus on intent management and orchestration, leaving the adaptation of underlying network optimization and control functions largely unaddressed. This article proposes a triadic agentic AI framework that co-designs intent management and intent fulfillment through three agents: an interpreter, powered by a language model, that translates and refines intents into machine-readable optimization templates; an optimizer that adapts controller policies to intent specifications; and a controller that performs fast decision-making. We discuss the design space of each agent and how the workflow can be embedded across network architectural domains. Finally, we develop a concrete realization combining a language-model interpreter with Bayesian optimization for the optimizer and multi-objective reinforcement learning for the controller, and evaluate it in a radio resource management case study for differentiated connectivity. Results demonstrate how the agentic AI framework can connect high-level intents with runtime network control, showing adaptability of intent specifications and control policies to service requirements and changing network conditions.",
+      "external_ids": [
+        "arxiv:2611.31223"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-24T18:45:58+08:00",
+      "last_seen_at": "2026-11-24T18:45:58+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.31201",
+      "arxiv_version": "v1",
+      "title": "Embo-Harness: Towards Understanding Frontier-Model-as-Policy Harness",
+      "authors": [
+        "Xiao-Ming Wu",
+        "Kang Liao",
+        "Yuexiao Ma",
+        "Taolin Zhang",
+        "Mingqian Zhou",
+        "Nuo Chen",
+        "Ziming Li",
+        "Yihang Luo",
+        "Rui Li",
+        "Zhonghua Wu",
+        "Tianyu Xie",
+        "Xiawu Zheng",
+        "Zhongang Cai",
+        "Zhi Hou",
+        "Chen Change Loy"
+      ],
+      "published": "2026-11-23",
+      "url": "https://arxiv.org/abs/2611.31201",
+      "abstract": "Frontier multimodal models exhibit extraordinary generalization in generating robot actions from observations and instructions, enabling a new paradigm in which they serve directly as policies within closed-loop robotic harnesses. However, the design principles of such harnesses, and the capabilities underlying their strong performance, remain unclear. We present Embo-Harness, a framework for systematically studying frontier-model-as-policy harnesses. We investigate four components of the robotic agentic loop, namely, prompting, planning, action execution, and tool use, and distill six empirical findings into a practical recipe. This recipe prioritizes interfaces that exploit the model's native visual reasoning and tool-use capabilities over handcrafted plans, skills, or action priors, and identifies effective choices for action representation, chunking, reasoning effort, visual observations, short multi-action sequences, and policy refinement. On RoboLab-120, Embo-Harness achieves an 83.3\\% success rate, outperforming the strongest reported baseline by 26.2 percentage points. It also succeeds in 15 of 20 zero-shot trials across four real-world manipulation tasks. Beyond performance, controlled interventions indicate that the studied model depends more strongly on accurate spatial target estimation than on explicit low-level joint or trajectory generation. These results provide both a practical recipe for building strong frontier-model-as-policy harnesses and a clearer account of the capabilities that drive their performance.",
+      "external_ids": [
+        "arxiv:2611.31201"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-24T18:45:58+08:00",
+      "last_seen_at": "2026-11-24T18:45:58+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.31173",
+      "arxiv_version": "v1",
+      "title": "EmboEagle: An Efficient Agentic Embodied Framework for Long-horizon Robotic Manipulation",
+      "authors": [
+        "Fan Xu",
+        "Zhongtao Wang",
+        "Hao Wu",
+        "Yitong Zhu",
+        "Wenzhuo Ma",
+        "Long Li",
+        "Zhuohao Li",
+        "Zhisheng Chen",
+        "Rui Su",
+        "Kun Wang",
+        "Xian Wu",
+        "Wanli Ouyang"
+      ],
+      "published": "2026-11-23",
+      "url": "https://arxiv.org/abs/2611.31173",
+      "abstract": "Long-horizon robotic manipulation demands reliable execution across interdependent stages, yet standalone World-Action Models (WAMs) suffer from compounding physical errors, while stateless Vision-Language Model (VLM) supervision incurs prohibitive chunkwise latency and lacks 3D spatial persistence. We present EmboEagle, a closed-loop agentic framework that unifies subtask-conditioned WAM control, latent-space adaptive supervision, and memory-guided geometric recovery. First, we adapt sequential WAMs via decoupled two-stage flow matching that preserves cross-stage visual history while calibrating truncated action supervision at subtask boundaries. Second, without an auxiliary vision encoder, we distill teacher intervention decisions into a lightweight routing gate driven solely by the WAM Action Expert's pre- and post-chunk latent transitions and subtask embeddings. Third, upon invocation, the VLM decouples diagnostic status from discrete routing actions and executes parameterized recovery primitives grounded in structured memory (initial references, active grasp bindings, and tool traces), followed by mandatory post-repair verification. Across RMBench and LIBERO-Mem, EmboEagle achieves 91.3\\% and 90.6\\% average success, surpassing the strongest baselines by 8.0 and 9.8 percentage points, while boosting real-world success over VoLoAgent under identical executor weights. Moreover, adaptive gating cuts VLM calls by 74.2\\% versus chunkwise monitoring (91.3\\% vs. 93.7\\% success).",
+      "external_ids": [
+        "arxiv:2611.31173"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-24T18:45:58+08:00",
+      "last_seen_at": "2026-11-24T18:45:58+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.31118",
+      "arxiv_version": "v1",
+      "title": "TideSand: Performance-Accurate Sandbox Multiplexing for LLM Agents",
+      "authors": [
+        "Shulu Li",
+        "Hanchen Li",
+        "Xiaokun Chen",
+        "Qiuyang Mang",
+        "Hanfei Chen",
+        "Jacky Kwok",
+        "Hanfei Yu",
+        "Alvin Cheung",
+        "Edward A. Lee",
+        "Joseph E. Gonzalez",
+        "Ion Stoica"
+      ],
+      "published": "2026-11-23",
+      "url": "https://arxiv.org/abs/2611.31118",
+      "abstract": "We propose TideSand, a sandbox system that intelligently multiplexes resources for performance-sensitive LLM agents, such as auto research agents working on system measurement tasks. TideSand combines three key ideas: agent-aware scheduling, which schedules sandbox execution intelligently at the tool call level to avoid resource contention; speculative swapping, which offloads the memory of sandboxes waiting on inference and restores it before their next tool call; and selective rollback, which checkpoints selected sandboxes when contention occurs and restores them when machines are idle. We evaluate TideSand across six model-workload pairs on AlgoTune, Terminal-Bench 4.0, and Terminal-Bench Science. TideSand achieves 3.8-10x higher throughput than strict reservation while maintaining tool-call fidelity, or 7-44% higher fidelity than overcommit baselines at similar throughput. Moreover, TideSand reduces the evaluation error on Algotune by 19x through improved tool-call fidelity. We hope the work motivates future research to maintain tool call fidelity while keeping resource utilization high through statistical multiplexing.",
+      "external_ids": [
+        "arxiv:2611.31118"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-24T18:45:58+08:00",
+      "last_seen_at": "2026-11-24T18:45:58+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.31117",
+      "arxiv_version": "v1",
+      "title": "Self-Upgrading Embodied Agents",
+      "authors": [
+        "Jiajun Fan",
+        "Neil He",
+        "Qinglong Zheng",
+        "Changyi Yang",
+        "Tong Wei",
+        "Andy Mao",
+        "Zetian Li",
+        "Chaoran Cheng",
+        "Hui Ren",
+        "Ruihan Guo",
+        "Xianrui Zhong",
+        "Xizheng Yu",
+        "Jingyuan Li",
+        "Xi Zhu",
+        "Kaiqu Liang",
+        "Chang Xu",
+        "Zun Qian",
+        "Zidi Xiong",
+        "Yuezhu Zhao",
+        "Xu Huang",
+        "Ge Liu"
+      ],
+      "published": "2026-11-23",
+      "url": "https://arxiv.org/abs/2611.31117",
+      "abstract": "An embodied agent built on a language model goes to work with the weights it was given and keeps them for life. To get better, it needs more training, or reflection, memory, search or prompts that cost every step and are lost when the task changes. Editing weights by reasoning, weight-space programming, could end this, but has stayed with models that only reason or relied on a far larger commercial model. We introduce the self-upgrading embodied agent, to our knowledge the first that learns from its own experience by upgrading its own weights on the job, between its tasks, with no training, no gradient, no reward model, no second model, no test-time scaling and no harness or prompt engineering. By day a 27B agent works in a household environment. At night it reads its record, finds many of its steps wasted on replies that reach the token limit before any action, traces the habit to one direction in its hidden states, and rewrites one tensor of its weights. An agent that rewrites itself must first never break itself, so it is its own examiner: it tests every change against its unchanged self on practice tasks and keeps only what holds. When an edit holds, the next day it is a better agent, at the same cost per step: over thousands of held-out episodes, 48 fresh seeds a task, its one kept edit makes it complete significantly more tasks, in fewer steps, with fewer wasted and fewer tokens. This self-improvement is multi-round, stable and continual: through the nights that follow, the upgrade holds, without collapse. Of four sizes of its family, only the 27B agent does this. From here on, an embodied agent need not keep training and inference apart: as it works, it gathers its own experience and upgrades itself, with no separate pre-training or post-training and no human intervention. We believe this opens lifelong continual learning for robots: stable, continual, recursive self-improvement.",
+      "external_ids": [
+        "arxiv:2611.31117"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-24T18:45:58+08:00",
+      "last_seen_at": "2026-11-24T18:45:58+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.31110",
+      "arxiv_version": "v1",
+      "title": "Preflight: Agentic Last-Mile Verification for AI Software Supply Chains",
+      "authors": [
+        "Yaman Jandali",
+        "Nojan Sheybani",
+        "Farinaz Koushanfar",
+        "Tara Javidi"
+      ],
+      "published": "2026-11-23",
+      "url": "https://arxiv.org/abs/2611.31110",
+      "abstract": "Software dependencies execute within the trust boundary of downstream applications, yet provenance, static analysis, and package-level behavioral approaches do not directly determine how a released artifact behaves for a specific program. We present Preflight, a program-scoped pre-execution verifier for Python dependencies that extracts application-referenced symbols, iteratively synthesizes and validates function-level harnesses, executes resolved artifacts in a restricted environment, records behavioral fingerprints, and compares target behavior against prior versions when suitable baselines exist. We evaluate Preflight on four real software-supply-chain incidents under five application contexts, a 100-package benign corpus, and a controlled function-level versus import-only ablation. Preflight returns malicious verdicts in four incident contexts and a clean verdict in the LiteLLM client context, where the affected proxy-server path is not exercised. All 100 evaluated benign packages receive clean verdicts, with zero observed false positives. In a controlled ablation on Ultralytics and ctx, function-level harnesses expose malicious behavior in both incidents, whereas import-only probing exposes neither. Together, these results show that conditioning behavioral verification on the downstream program can expose security-relevant dependency behavior while remaining selective on benign workloads.",
+      "external_ids": [
+        "arxiv:2611.31110"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness",
+        "test-time harness evolution"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-24T18:45:58+08:00",
+      "last_seen_at": "2026-11-24T18:45:58+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.31105",
+      "arxiv_version": "v1",
+      "title": "LiveLoRA: Exact KV Cache Migration Across LoRA Updates for LLM Agents",
+      "authors": [
+        "Tianyi Huang",
+        "Samuel Xu",
+        "Ivy Gu",
+        "Nathan Huang",
+        "Siqi Zhang"
+      ],
+      "published": "2026-11-23",
+      "url": "https://arxiv.org/abs/2611.31105",
+      "abstract": "Updating an LLM adapter should not require replaying the full interaction history of every active session. Yet reusing key-value (KV) cache entries computed under an earlier version mixes model versions, while full-history re-prefill becomes increasingly costly as histories and session fleets grow. We introduce LiveLora, a model-runtime co-design for exact final-block KV cache migration. Frozen lower decoder blocks and fixed K/V adapter down-projections preserve each token's base projections and low-rank coordinates across adapter versions. The runtime reconstructs candidate K/V, reevaluates the latest token through the final block, and commits the adapter, cache, and next-token logits together. We prove continuation equivalence to full-history re-prefill in exact arithmetic under the stated model assumptions. On Qwen2.5-3B-Instruct, median paired publication speedups over full-history re-prefill average $68.98\\times$ across five runs for 32 active sessions with 8K tokens each. Serving benchmarks show approximately 4.8% decoding overhead relative to native cached decoding. Compared with retained-boundary replay, compact retention gives a $3.42\\times$ reduction in additional session storage at 8K, with similar measured publication-plus-decoding cost. LiveLora allows persistent LLM agents to adopt new adapter versions without replaying their full interaction histories.",
+      "external_ids": [
+        "arxiv:2611.31105"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "agent harness",
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-24T18:45:58+08:00",
+      "last_seen_at": "2026-11-24T18:45:58+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.31098",
+      "arxiv_version": "v1",
+      "title": "Real2Worlds2Real: Scaling Self-Improving Agentic Real2Sim2Real for Robot Manipulation",
+      "authors": [
+        "Jinzhong Gu",
+        "Jiakai Chen",
+        "Xinyi Cao",
+        "Yan Shen",
+        "Hangke Sui",
+        "Shutian Zheng",
+        "Xiang Xiao",
+        "Haoran Lu",
+        "Fan Xu",
+        "Lu Shi",
+        "Daochen Shi",
+        "Ruihua Zhang",
+        "Wei Zhan",
+        "Masayoshi Tomizuka",
+        "Ruihai Wu"
+      ],
+      "published": "2026-11-23",
+      "url": "https://arxiv.org/abs/2611.31098",
+      "abstract": "Scaling robot manipulation learning remains challenging due to the high cost of collecting real-world interaction data. Real-to-Sim-to-Real (Real2Sim2Real) offers a promising route by enabling policy learning in simulation grounded in real-world observations, yet scaling this paradigm across diverse tasks and physical interactions remains difficult. We introduce Real2Worlds2Real, a self-improving agentic framework that integrates scalable simulation-world construction with policy development. Given limited visual observations and task descriptions, its tool-orchestration harness constructs faithful digital twins and expands them into diverse, physically executable digital cousins. The agent adaptively selects tools and revisits construction decisions, using visual and execution feedback to refine geometry and physical behavior. Building on these worlds, the agent orchestrates policy development by coordinating data generation, policy learning, and refinement based on task requirements and simulation rollout feedback. Across both stages, the agent distills validated procedures into reusable skills that guide subsequent tasks. Experiments demonstrate improved world fidelity and successful real-world policy transfer, with performance gains from increasing world diversity and interaction-data volume. Skill reuse further improves world-building efficiency and long-horizon task success.",
+      "external_ids": [
+        "arxiv:2611.31098"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-24T18:45:58+08:00",
+      "last_seen_at": "2026-11-24T18:45:58+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.31082",
+      "arxiv_version": "v1",
+      "title": "ChiProgramBench: Can LLM Agents Rebuild Efficient Circuits from Pin-Level Experiments?",
+      "authors": [
+        "Tianrun Gou",
+        "Qingyao Yang",
+        "Wendong Xu",
+        "Liang Chen",
+        "Kuan Li",
+        "Ngai Wong"
+      ],
+      "published": "2026-11-23",
+      "url": "https://arxiv.org/abs/2611.31082",
+      "abstract": "Understanding a system that can be run but not inspected is a core engineering skill: one designs experiments, forms hypotheses about hidden state and timing, discards those that observations refute, and finally builds a replacement that works and is efficient. To evaluate this capability of LLM agents in the hardware domain, we present ChiProgramBench, 18 tasks derived from open-source processors, accelerators, codecs, transforms, interconnects, and control circuits. Agents can only drive and read the pins of a hidden, stateful simulated reference, then submit a gate-level netlist made of public library cells. Agents work in two settings: black-box discovery gives only anonymized functional pins and the interfaces of fixed memories, while function-guided reconstruction adds the circuit's purpose and each pin's role. Hidden test cases compare outputs with the reference cycle by cycle; power, delay, and area earn credit relative to the reference only when every case passes. Across 432 trials of 6 LLM agent configurations, successful agents recover algorithms and numerical conventions, yet only 12.0% of black-box and 14.8% of function-guided trials pass every case. Function-guided reconstruction raises the mean functional score, the cycle-weighted share of passed cases, from 24.6% to 30.9%. Of the 58 fully passing designs, only three improve on the reference's combined power, area, and delay, so behavioral recovery and efficient implementation remain distinct challenges.",
+      "external_ids": [
+        "arxiv:2611.31082"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-24T18:45:58+08:00",
+      "last_seen_at": "2026-11-24T18:45:58+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.31053",
+      "arxiv_version": "v1",
+      "title": "ReWeave: Emergent Physical Task Topologies for Embodied Harness Optimization and Cross-Task Meta-Distillation",
+      "authors": [
+        "Yicheng Xu",
+        "Wencan Jiang",
+        "Zihao Zhu",
+        "Keru Zhou",
+        "Chang Zhou",
+        "Li Liu",
+        "Maoqing Yao",
+        "Yong Liu",
+        "Jiangning Zhang"
+      ],
+      "published": "2026-11-23",
+      "url": "https://arxiv.org/abs/2611.31053",
+      "abstract": "Long-horizon embodied tasks involve physical dependencies that may only become clear through interaction. As task understanding deepens, past trials can reveal new information for adaptation and transfer. However, coarse progress feedback cannot identify which physical preconditions held, leaving search unguided, while task-specific optimization easily overfits to individual scenes, making cross-task transfer brittle. We introduce ReWeave, a framework that jointly optimizes an embodied agent harness and an emergent physical task topology from interaction without updating policy weights. Keeping execution policies and perception frozen, ReWeave co-optimizes coupled context, workflows, and control loops. As new evidence revises the topology, ReWeave reprojects past trials onto the updated task understanding, exposing retained progress, regressions, and bottlenecks that guide parent selection and search width. Across tasks, matching verified local mechanisms to unmet preconditions consolidates 72 specialist units into 44 reusable groups ($0.34\\times$ full concatenation) within a compact shared harness capable of continual learning. ReWeave improves held-out success from 89.00% to 98.75% on LIBERO-PRO and from 25.50% to 58.25% on RoboDojo, while uncovering retained progress in 89% of 159 failed RoboDojo development trials and translating stronger offline reasoning into higher online performance. On eight unseen LIBERO-PRO tasks, the shared harness reaches 51.3% success versus 41.3% for direct distillation, rising to 75.0% after continual learning.",
+      "external_ids": [
+        "arxiv:2611.31053"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-24T18:45:58+08:00",
+      "last_seen_at": "2026-11-24T18:45:58+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.31037",
+      "arxiv_version": "v1",
+      "title": "SurgeCount: A Protocol-Guided Composition Harness for Bimanual Surgical Sponge Counting",
+      "authors": [
+        "Sung Eun Kim",
+        "Xiaoman Zhang",
+        "Xucheng Wang",
+        "Pranav Rajpurkar"
+      ],
+      "published": "2026-11-23",
+      "url": "https://arxiv.org/abs/2611.31037",
+      "abstract": "We present SurgeCount, a system for auditable robotic surgical sponge counting that composes learned skills under a written procedural protocol. Retained sponges cause preventable harm, and surgical teams count every sponge before closure to reduce that risk. The robot repeatedly isolates one deformable sponge from a tangled pile and places it in the next numbered counting-tray slot, requiring handling of occluded grasp threads while preserving step order. We train one subtask-conditioned policy on eleven short skills and learn when each skill ends. At each learned boundary, a stateful vision-language model selects the next skill from an operator-authored specification of step order, visual verification, and recovery. This creates temporal commitment to each subtask and enables failures to be recovered by recomposing existing skills rather than using a dedicated recovery policy. We evaluate five methods across 100 real-robot trials using 20 matched layouts. SurgeCount fills 47 of 60 ordered slots and completes 12 of 20 procedures, compared with 27 of 60 and 3 of 20 for the strongest of four end-to-end policies trained on the same data. Replacing the detailed protocol prompt with a minimal prompt reduces performance to 29 of 60 slots and 5 of 20 completed procedures. These results show that long-horizon performance depends not only on visuomotor capacity, but also on how learned skills are committed, verified, and composed. This tabletop proof of concept motivates further evaluation of protocol-guided robotic sponge counting in clinically representative settings.",
+      "external_ids": [
+        "arxiv:2611.31037"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-24T18:45:58+08:00",
+      "last_seen_at": "2026-11-24T18:45:58+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.31027",
+      "arxiv_version": "v1",
+      "title": "ComputeWise: Measuring and Fixing GPU Waste by AI Research Agents",
+      "authors": [
+        "Egor Pakhomov",
+        "Nina Pakhomova",
+        "Anurag Koul",
+        "Shafiq Joty",
+        "Erik Nijkamp"
+      ],
+      "published": "2026-11-23",
+      "url": "https://arxiv.org/abs/2611.31027",
+      "abstract": "AI agents are given GPUs to do AI research on their own. Do they use those GPUs well? A busy GPU does not tell us, because it can be busy with work the answer did not need. This matters, because the tokens the agent spends cost almost nothing next to the GPUs its experiments run on, so using those GPUs better has a huge impact. So we built ComputeWise, an open benchmark of research tasks on which this waste can be measured and reduced. For it we developed our own simulated GPU, which replays recorded runs to the agent's code. With no real GPU needed, we ran hundreds of experiments, far more than would be reasonable on real GPUs. With no help, the agents put only 52% of their GPU time into work the answer needed. Another 22% went to work it did not need, and 26% sat idle. Asking the agent to finish the work faster, telling it to keep every GPU busy, or giving it a job scheduler does not fix this. So we built an open-source harness, part prompting and part deterministic code. Across five models, it removed over 80% of the extra time to the answer.",
+      "external_ids": [
+        "arxiv:2611.31027"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-24T18:45:58+08:00",
+      "last_seen_at": "2026-11-24T18:45:58+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.31022",
+      "arxiv_version": "v1",
+      "title": "OmniV-Bench: Can MLLMs Comprehend Immersive Spatio-temporal Scenes?",
+      "authors": [
+        "Liu Yang",
+        "Huiyu Duan",
+        "Yixuan Gao",
+        "Sirui Liu",
+        "Lu Liu",
+        "Zhaolin Cai",
+        "Ke Gu",
+        "Xiongkuo Min",
+        "Xiaoping Zhang",
+        "Guangtao Zhai"
+      ],
+      "published": "2026-11-23",
+      "url": "https://arxiv.org/abs/2611.31022",
+      "abstract": "Omnidirectional videos (ODVs) capture dynamic environments with a full $360^\\circ$ field of view, providing rich spatial context and temporal dynamics for applications such as virtual reality (VR), augmented reality (AR), and embodied intelligence. Recent multimodal large language models (MLLMs) have made great progress in spatial and temporal understanding, yet their ability to comprehend the immersive 360 spatio-temporal information conveyed by ODVs remains largely unexplored. To bridge this gap, we first introduce OmniV-Bench, a Benchmark designed to comprehensively evaluate the capabilities of MLLMs on spatio-temporal Omnidirectional Video understanding. OmniV-Bench contains 4,123 high-quality ODVs collected from diverse scenes, along with 8,923 human-annotated question-answer pairs spanning 11 fine-grained tasks across three categories, i.e., general, spatial, and spatio-temporal understanding. Extensive benchmark experiments reveal that the spatio-temporal complexity of ODVs poses significant challenges for current MLLMs. To address these limitations, we further propose OmniV-Harness, an agentic harness that enhances ODV understanding through viewpoint-guided evidence initialization and task-relevant evidence acquisition with adaptive tool use. Comprehensive experiments demonstrate that OmniV-Harness consistently improves immersive spatio-temporal reasoning ability of MLLMs. Both OmniV-Bench and OmniV-Harness will be released upon publication.",
+      "external_ids": [
+        "arxiv:2611.31022"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-24T18:45:58+08:00",
+      "last_seen_at": "2026-11-24T18:45:58+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.31010",
+      "arxiv_version": "v1",
+      "title": "Airlock: Robust Sandboxing and Governance of Rogue Agents",
+      "authors": [
+        "Sina Abdollahi",
+        "Amir Al Sadi",
+        "Marios Kogias",
+        "Hamed Haddadi",
+        "Adrien Ghosn",
+        "Antoine Delignat-Lavaud",
+        "Manuel Costa",
+        "Mark Russinovich"
+      ],
+      "published": "2026-11-23",
+      "url": "https://arxiv.org/abs/2611.31010",
+      "abstract": "Recent incidents involving agents bypassing sandboxing and network isolation have raised concerns about existing agent harnesses, prompting frontier labs such as OpenAI to reevaluate the security of their training platforms. Incident reviews show that determined agents can escape processes, containers, and VMs, or bypass their isolation through advanced side and covert channels. Follow-up audits also found that some agents concealed their actions by disabling monitoring and tampering with logs. We propose Airlock, an architecture that pairs each agent's VM with an Airlock VM, each running in a separate hardware-isolated Trusted Execution Environment (TEE). The Airlock VM fully mediates the agent's interactions with the outside world, including network and storage operations. We modify the firmware layer of Arm's Confidential Computing Architecture, Realm Management Monitor (RMM), and the kernels of both VMs so that the Airlock VM serves the agent VM's IO without involving the host. We adapt OpenShell, an agent runtime supporting sandboxing and governance policies, to this architecture. Airlock keeps network and filesystem policies, and credential protection effective even if the agent VM is fully compromised, and it removes the host from the agent's IO path, reducing opportunities for collusion and covert channels with the host. Finally, we extend the Airlock VM's capabilities to provide tamper-proof auditing of all agent operations, preserving forensic evidence even if the Airlock VM is compromised. We implement and evaluate Airlock on a Radxa development board. Our evaluation shows a loss of filesystem performance and network latency for small messages under 15% and a drop of network bandwidth by half or more, which in practice has a limited effect on typical agent tasks.",
+      "external_ids": [
+        "arxiv:2611.31010"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-24T18:45:58+08:00",
+      "last_seen_at": "2026-11-24T18:45:58+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.31002",
+      "arxiv_version": "v1",
+      "title": "RoboUniverse-10K: Toward the Scaling Era of Agentic Robotics via Real-to-Sim Environments",
+      "authors": [
+        "Jinkun Liu",
+        "Yingze Wang",
+        "Situ Wang",
+        "Deyao Hong",
+        "Mingju Gao",
+        "Wenyi Li",
+        "Yizhe Chi",
+        "Youjie Zheng",
+        "Kaisen Yang",
+        "Xiangyang Wang",
+        "Bingxiang He",
+        "Yuxin Zuo",
+        "Boyuan Chen",
+        "Yue Chen",
+        "Cheng Qian",
+        "Tianxing Chen",
+        "Huichi Zhou",
+        "Huaxiu Yao",
+        "Hao Tang",
+        "Hao Zhou",
+        "Ya-Qin Zhang",
+        "Calvin Xiao",
+        "Tiga Altman",
+        "Huan-ang Gao"
+      ],
+      "published": "2026-11-23",
+      "url": "https://arxiv.org/abs/2611.31002",
+      "abstract": "Agentic Robotics, in which foundation models act as coding agents to control robots through executable programs, has emerged as a compelling paradigm for embodied intelligence. Yet unlike software engineering, where massive executable environments power post-training, robotics remains constrained by small, manual benchmarks and in-distribution evaluation. To bridge this gap, we introduce RoboUniverse-10K, 10,807 interactive, resettable, and verifiable physics environments built from real-world videos via an automated Real2Sim and quality assurance pipeline. Each runs in an isolated, Harbor-compatible harness that hides privileged states and grading logic to mirror real-world sensing. From the same pipeline, we hold out 500 unseen tasks to establish RoboUniverse-Verified, an expert-verified zero-shot benchmark. Evaluating 11 closed- and open-source models reveals a huge gap: frontier models reach 85.8\\% success, while open-source baselines lag at 2.6\\% to 10.0\\%, bottlenecked by low-level grasping, deformable-object manipulation, and post-contact physical control. Finally, we collect about 17K multi-turn trajectories totaling 0.79B tokens with GPT-6 Astra and perform full-parameter supervised fine-tuning on Qwen3.6-35B-A3B, yielding RoboUniverse-35B-A3B. Our model achieves substantial zero-shot gains on RoboUniverse-Verified, lifting the success rate from 0.8\\% to 21.2\\%, while achieving zero-shot task completions across LIBERO-MAX, RoboCasa, RoboTwin 2.0, and a real Franka arm. We open-source the RL-ready environments and model to lay the foundation for large-scale reinforcement learning in Agentic Robotics.",
+      "external_ids": [
+        "arxiv:2611.31002"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-24T18:45:58+08:00",
+      "last_seen_at": "2026-11-24T18:45:58+08:00"
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2611.30932",
+      "arxiv_version": "v1",
+      "title": "Carried-Over and Agent-Native Threats in the Supply Chain of LLM Agent Skills",
+      "authors": [
+        "Kaixuan Li",
+        "Wenbo Guo",
+        "Sen Chen",
+        "Yang Liu"
+      ],
+      "published": "2026-11-23",
+      "url": "https://arxiv.org/abs/2611.30932",
+      "abstract": "Agent skills are reusable packages that extend a large language model (LLM) agent with scripts, third-party dependencies, and natural-language instructions. An agent builds a skill's arguments from user requests and untrusted external content, so a flaw left by a benign author can escalate a prompt injection to code execution. Existing studies target malicious skills or a single attack vector, and none tests whether an agent can reach such flaws. We present the first registry-scale empirical study of the supply chain attack surface arising from unintentional vulnerabilities in agent skills, over all 48,682 skills in ClawHub. The study covers two carried-over risks, dependencies and first-party code, and two agent-native ones, install instructions and credentials printed to stdout. We screen all skills by static analysis, manually review all 3,428 cases flagged by the four main detectors, and test reachability by running sampled flagged skills in a sandbox and with a live LLM agent under indirect prompt injection. First, dependency risk carries over in a different form: 49.6% of the skills with resolvable dependencies depend on a version with a known CVE, and unlike npm packages, which mostly become vulnerable after release, 78.3% of them are born vulnerable, already exposed at publication. Second, few of these CVEs are reachable: agent input reaches the vulnerable function in only 3.0% of the affected skills, whereas 21 of 22 sampled first-party flaws are exploited end to end in the sandbox. Third, a live agent executes the injected payload in 48.5% of the sampled flagged skills, but almost always in its own shell before the skill runs, and the payload reaches a flaw in the skill itself in only 5.0%. Hence, registries should prioritize first-party flaws over dependency alerts, and agent runtimes should not pass skill arguments through a shell.",
+      "external_ids": [
+        "arxiv:2611.30932"
+      ],
+      "sources": [
+        "arxiv"
+      ],
+      "matched_keywords": [
+        "\"LLM agent\" harness"
+      ],
+      "status": "new",
+      "first_seen_at": "2026-11-24T18:45:58+08:00",
+      "last_seen_at": "2026-11-24T18:45:58+08:00"
+    }
+  ]
+}
